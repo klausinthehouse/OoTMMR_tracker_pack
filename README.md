@@ -49,6 +49,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Pre-Completed Dungeons
 - Soul Shuffle
 - Entrance Shuffle
+- JP layouts
 
 ## TODOs:
 

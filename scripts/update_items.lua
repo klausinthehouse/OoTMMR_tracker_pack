@@ -125,6 +125,7 @@ local OOTMM_SHARED = {
     ["Scales"] = {"SCALE"},
     ["Strength"] = {"STRENGTH"},
     ["SongElegy"] = {"SONG_EMPTINESS"},
+    ["Hammer"] = {"HAMMER"},
 }
 local OOTMM_SHARED_PREV = {
     ["BombBags"] = { 0 },
@@ -163,6 +164,7 @@ local OOTMM_SHARED_PREV = {
     ["Scales"] = { 0 },
     ["Strength"] = { 0 },
     ["SongElegy"] = { 0 },
+    ["Hammer"] = { 0 },
 }
 function on_update_shared_items()
     for setting, items in pairs(OOTMM_SHARED) do

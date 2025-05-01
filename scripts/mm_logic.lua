@@ -487,6 +487,7 @@ function _mm_logic()
         ["blastMaskOot"] = true,
         ["extraChildSwordsOot"] = true,
         ["progressiveClocks_separate"] = true,
+        ["setting_hammerMm"] = true,
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for

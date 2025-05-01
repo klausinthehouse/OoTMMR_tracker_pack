@@ -592,6 +592,11 @@
         "type": "item",
         "item": "setting_sharedStrength",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedHammer",
+        "height": 16
       }
     ]
   },

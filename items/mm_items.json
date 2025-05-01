@@ -1346,6 +1346,21 @@
     ]
   },
   {
+    "name": "Hammer",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/hammer.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/hammer.png",
+        "codes": "MM_HAMMER"
+      }
+    ]
+  },
+  {
     "name": "A Button",
     "type": "progressive",
     "allow_disabled": false,

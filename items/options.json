@@ -1656,6 +1656,26 @@
     ]
   },
   {
+    "name": "Shared Megaton Hammer",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedHammer_true.png",
+        "codes": "setting_sharedHammer,setting_sharedHammer_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedHammer_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedHammer,setting_sharedHammer_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Shared Magic",
     "type": "progressive",
     "allow_disabled": false,
