@@ -297,6 +297,7 @@
             "sections": [
               {
                 "name": "Grass Near Saria's (Child)",
+                "short_name": "Near Saria's Child",
                 "access_rules": [
                   "$oot|Kokiri Forest Grass Child 1"
                 ],
@@ -306,6 +307,7 @@
               },
               {
                 "name": "Grass Near Saria's (Adult)",
+                "short_name": "Near Saria's Adult",
                 "access_rules": [
                   "$oot|Kokiri Forest Grass Adult 01"
                 ],
@@ -329,9 +331,20 @@
             "name": "KF Training Area Grass",
             "sections": [
               {
-                "name": "Training Area Grass",
+                "name": "Training Area Grass (Child)",
+                "short_name": "Training Area Child",
                 "access_rules": [
-                  "$oot|Kokiri Forest Grass 1"
+                  "$oot|Kokiri Forest Grass Child Near Crawl 1"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 8
+              },
+              {
+                "name": "Training Area Grass (Adult)",
+                "short_name": "Training Area Adult",
+                "access_rules": [
+                  "$oot|Kokiri Forest Grass Adult Near Crawl 1"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
