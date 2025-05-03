@@ -4,6 +4,10 @@
 
 Logic updated to version v27.0 of the OOTMM Randomizer.
 
+New Setting:
+
+- Megaton Hammer in MM
+
 Bugfixes:
 
 - Remove some duplicate checks
