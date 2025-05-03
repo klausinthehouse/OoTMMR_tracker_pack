@@ -1,5 +1,15 @@
 # Releases
 
+## v27.0.1
+
+Logic updated to version v27.0 of the OOTMM Randomizer.
+
+Bugfixes:
+
+- Remove some duplicate checks
+- Fix checks near owls only showing with owl shuffle enabled
+- Fix linked locations and items on reset and load
+
 ## v25.0.1
 
 Logic updated to version v25.0 of the OOTMM Randomizer.
