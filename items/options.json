@@ -2196,41 +2196,59 @@
     ]
   },
   {
-    "name": "Bombchu Bag (OoT)",
+    "name": "Bombchu Behavior (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_bombchuBagOot_true.png",
-        "codes": "setting_bombchuBagOot,setting_bombchuBagOot_true",
+        "img": "images/setting_bombchuBehaviorOot_free.png",
+        "codes": "setting_bombchuBehaviorOot,setting_bombchuBehaviorOot_free",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_bombchuBagOot_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_bombchuBagOot,setting_bombchuBagOot_false",
+        "img": "images/setting_bombchuBehaviorOot_bombBag.png",
+        "codes": "setting_bombchuBehaviorOot,setting_bombchuBehaviorOot_bombBag",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bombchuBehaviorOot_bagFirst.png",
+        "codes": "setting_bombchuBehaviorOot,setting_bombchuBehaviorOot_bagFirst",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bombchuBehaviorOot_bagSeparate.png",
+        "codes": "setting_bombchuBehaviorOot,setting_bombchuBehaviorOot_bagSeparate",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Bombchu Bag (MM)",
+    "name": "Bombchu Behavior (MM)",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_bombchuBagMm_true.png",
-        "codes": "setting_bombchuBagMm,setting_bombchuBagMm_true",
+        "img": "images/setting_bombchuBehaviorMm_free.png",
+        "codes": "setting_bombchuBehaviorMm,setting_bombchuBehaviorMm_free",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_bombchuBagMm_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_bombchuBagMm,setting_bombchuBagMm_false",
+        "img": "images/setting_bombchuBehaviorMm_bombBag.png",
+        "codes": "setting_bombchuBehaviorMm,setting_bombchuBehaviorMm_bombBag",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bombchuBehaviorMm_bagFirst.png",
+        "codes": "setting_bombchuBehaviorMm,setting_bombchuBehaviorMm_bagFirst",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bombchuBehaviorMm_bagSeparate.png",
+        "codes": "setting_bombchuBehaviorMm,setting_bombchuBehaviorMm_bagSeparate",
         "inherit_codes": false
       }
     ]
