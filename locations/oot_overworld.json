@@ -476,6 +476,16 @@
                   "$oot|Lost Woods Skull Kid"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Sell Skull Mask",
+                "access_rules": [
+                  "$oot|Lost Woods Sell Skull Mask"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleMaskTrades_true"
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1235,6 +1245,28 @@
                 ],
                 "x": 1346,
                 "y": 816
+              }
+            ]
+          },
+          {
+            "name": "Running Man",
+            "sections": [
+              {
+                "name": "Sell Bunny Hood",
+                "access_rules": [
+                  "$oot|Hyrule Field Sell Bunny Mask"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleMaskTrades_true"
+                ],
+                "x": 1155,
+                "y": 555
               }
             ]
           }
@@ -2527,6 +2559,28 @@
             ]
           },
           {
+            "name": "Guard",
+            "sections": [
+              {
+                "name": "Sell Keaton Mask",
+                "access_rules": [
+                  "$oot|Kakariko Sell Keaton Mask"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleMaskTrades_true"
+                ],
+                "x": 1780,
+                "y": 305
+              }
+            ]
+          },
+          {
             "name": "Graveyard",
             "children": [
               {
@@ -2773,7 +2827,29 @@
                       "setting_shuffleGrassOot_true"
                     ],
                     "x": 1992,
-                    "y": 384
+                    "y": 405
+                  }
+                ]
+              },
+              {
+                "name": "Spooky Kid",
+                "sections": [
+                  {
+                    "name": "Sell Spooky Mask",
+                    "access_rules": [
+                      "$oot|Graveyard Sell Spooky Mask"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "oot",
+                    "visibility_rules": [
+                      "setting_shuffleMaskTrades_true"
+                    ],
+                    "x": 2000,
+                    "y": 370
                   }
                 ]
               }
@@ -5428,7 +5504,7 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 2
-              }              
+              }
             ],
             "map_locations": [
               {

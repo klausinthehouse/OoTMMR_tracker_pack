@@ -472,6 +472,26 @@
       }
     ]
   },
+    {
+    "name": "Mask Trade Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shuffleMaskTrades_true.png",
+        "codes": "setting_shuffleMaskTrades,setting_shuffleMaskTrades_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleMaskTrades_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffleMaskTrades,setting_shuffleMaskTrades_false",
+        "inherit_codes": false
+      }
+    ]
+  },
   {
     "name": "Merchants Shuffle (MM)",
     "type": "progressive",
