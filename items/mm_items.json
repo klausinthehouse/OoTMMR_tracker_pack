@@ -862,7 +862,7 @@
       },
       {
         "img": "images/items/mm_blast.png",
-        "codes": "MM_MASK_BLAST,MM_MASK_REGULAR,MM_MASK"
+        "codes": "MM_MASK_BLAST,MM_MASK_REGULAR,MM_MASK,MM_SHARED_MASK_BLAST"
       }
     ]
   },

@@ -807,7 +807,7 @@
       },
       {
         "img": "images/items/mm_blast.png",
-        "codes": "OOT_MASK_BLAST,OOT_MASK"
+        "codes": "OOT_MASK_BLAST,OOT_MASK, OOT_SHARED_MASK_BLAST"
       }
     ]
   },
