@@ -19,10 +19,23 @@
                 "header": "Items OOT",
                 "dock": "top",
                 "header_content": {
-                  "type": "button_popup",
-                  "style": "settings",
-                  "popup_background": "#FF212121",
-                  "layout": "options_popup"
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "content": [
+                    {
+                      "type": "button_popup",
+                      "style": "settings",
+                      "popup_background": "#FF212121",
+                      "layout": "options_popup"
+                    },
+                    {
+                      "type": "button_popup",
+                      "style": "image",
+                      "image": "images/skulltula_token.png",
+                      "popup_background": "#FF212121",
+                      "layout": "souls_popup"
+                    }
+                  ]
                 },
                 "content": {
                   "type": "layout",

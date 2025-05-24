@@ -842,6 +842,14 @@
     ]
   },
   {
+    "name": "Soul of Gohma",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/setting_soulsBossOot_true.png",
+    "initial_active_state": false,
+    "codes": "OOT_SOUL_BOSS_QUEEN_GOHMA"
+  },
+  {
     "name": "Dummy",
     "type": "toggle",
     "img": "images/rupee.png",

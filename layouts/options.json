@@ -186,6 +186,11 @@
       },
       {
         "type": "item",
+        "item": "setting_soulsBossOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_agelessSwords",
         "height": 16
       },
@@ -1647,6 +1652,18 @@
       }
     ]
   },
+  "layout_boss_souls_oot": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "OOT_SOUL_BOSS_QUEEN_GOHMA",
+        "height": 16
+      }
+    ]
+  },
   "options_popup": {
     "type": "tabbed",
     "tabs": [
@@ -1799,6 +1816,25 @@
           "type": "layout",
           "key": "layout_items_only",
           "h_alignment": "left"
+        }
+      }
+    ]
+  },
+  "souls_popup": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Boss Souls OOT",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_boss_souls_oot",
+            "h_alignment": "left"
+          }
         }
       }
     ]
