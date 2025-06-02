@@ -1,5 +1,9 @@
 # Releases
 
+## v27.0.2
+
+Hotfix release for Emotracker-breaking bug with clocks and All-Night-Mask.
+
 ## v27.0.1
 
 Logic updated to version v27.0 of the OOTMM Randomizer.
