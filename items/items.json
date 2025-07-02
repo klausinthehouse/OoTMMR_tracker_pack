@@ -446,7 +446,7 @@
       },
       {
         "img": "images/hammer.png",
-        "codes": "OOT_HAMMER"
+        "codes": "OOT_HAMMER, OOT_SHARED_HAMMER"
       }
     ]
   },

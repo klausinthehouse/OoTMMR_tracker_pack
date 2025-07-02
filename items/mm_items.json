@@ -1356,7 +1356,7 @@
       },
       {
         "img": "images/hammer.png",
-        "codes": "MM_HAMMER"
+        "codes": "MM_HAMMER, MM_SHARED_HAMMER"
       }
     ]
   },
