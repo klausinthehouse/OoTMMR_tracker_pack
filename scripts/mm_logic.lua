@@ -489,6 +489,7 @@ function _mm_logic()
         ["progressiveClocks_separate"] = true,
         ["hammerMm"] = true,
         ["regionState_dungeonBeaten"] = true,
+        ["shuffleMasterSword"] = true,
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for
