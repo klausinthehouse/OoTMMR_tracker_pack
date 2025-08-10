@@ -1824,7 +1824,105 @@
     "type": "tabbed",
     "tabs": [
       {
+        "title": "Enemy Souls OOT",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_boss_souls_oot",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
         "title": "Boss Souls OOT",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_boss_souls_oot",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "NPC Souls OOT",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_boss_souls_oot",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "Misc Souls OOT",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_boss_souls_oot",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "Enemy Souls MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_boss_souls_oot",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "Boss Souls MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_boss_souls_oot",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "NPC Souls MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_boss_souls_oot",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "Misc Souls MM",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
