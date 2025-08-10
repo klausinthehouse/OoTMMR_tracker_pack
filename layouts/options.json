@@ -1661,7 +1661,42 @@
         "type": "item",
         "item": "OOT_SOUL_BOSS_QUEEN_GOHMA",
         "height": 16
-      }
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_BOSS_KING_DODONGO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_BOSS_BARINADE",
+        "height": 16
+      },   
+      {
+        "type": "item",
+        "item": "OOT_SOUL_BOSS_PHANTOM_GANON",
+        "height": 16
+      },   
+      {
+        "type": "item",
+        "item": "OOT_SOUL_BOSS_VOLVAGIA",
+        "height": 16
+      },   
+      {
+        "type": "item",
+        "item": "OOT_SOUL_BOSS_MORPHA",
+        "height": 16
+      },   
+      {
+        "type": "item",
+        "item": "OOT_SOUL_BOSS_BONGO_BONGO",
+        "height": 16
+      },   
+      {
+        "type": "item",
+        "item": "OOT_SOUL_BOSS_TWINROVA",
+        "height": 16
+      }      
     ]
   },
   "options_popup": {

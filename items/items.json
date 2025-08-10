@@ -836,18 +836,130 @@
         "img_mods": "@disabled"
       },
       {
-    "img": "images/items/mm_elegy.png",
-    "codes": "OOT_SONG_EMPTINESS,OOT_SHARED_SONG_EMPTINESS"
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_EMPTINESS,OOT_SHARED_SONG_EMPTINESS"
       }
     ]
   },
   {
-    "name": "Soul of Gohma",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/setting_soulsBossOot_true.png",
-    "initial_active_state": false,
-    "codes": "OOT_SOUL_BOSS_QUEEN_GOHMA"
+    "name": "Soul of Queen Gohma",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "codes": "OOT_SOUL_BOSS_QUEEN_GOHMA"
+      }
+    ]
+  },
+    {
+    "name": "Soul of King Dodongo",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "codes": "OOT_SOUL_BOSS_KING_DODONGO"
+      }
+    ]
+  },
+    {
+    "name": "Soul of Barinade",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "codes": "OOT_SOUL_BOSS_BARINADE"
+      }
+    ]
+  },
+    {
+    "name": "Soul of Phantom Ganon",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "codes": "OOT_SOUL_BOSS_PHANTOM_GANON"
+      }
+    ]
+  },
+    {
+    "name": "Soul of Volvagia",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "codes": "OOT_SOUL_BOSS_VOLVAGIA"
+      }
+    ]
+  },
+    {
+    "name": "Soul of Morpha",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "codes": "OOT_SOUL_BOSS_MORPHA"
+      }
+    ]
+  },
+    {
+    "name": "Soul of Bongo Bongo",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "codes": "OOT_SOUL_BOSS_BONGO_BONGO"
+      }
+    ]
+  },
+    {
+    "name": "Soul of Twinrova",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "codes": "OOT_SOUL_BOSS_TWINROVA"
+      }
+    ]
   },
   {
     "name": "Dummy",
