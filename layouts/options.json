@@ -1652,6 +1652,23 @@
       }
     ]
   },
+  "layout_misc_souls_oot": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "OOT_SOUL_MISC_GS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_MISC_BUSINESS_SCRUB",
+        "height": 16
+      }
+    ]
+  },
   "layout_boss_souls_oot": {
     "type": "array",
     "orientation": "vertical",
@@ -1671,32 +1688,486 @@
         "type": "item",
         "item": "OOT_SOUL_BOSS_BARINADE",
         "height": 16
-      },   
+      },
       {
         "type": "item",
         "item": "OOT_SOUL_BOSS_PHANTOM_GANON",
         "height": 16
-      },   
+      },
       {
         "type": "item",
         "item": "OOT_SOUL_BOSS_VOLVAGIA",
         "height": 16
-      },   
+      },
       {
         "type": "item",
         "item": "OOT_SOUL_BOSS_MORPHA",
         "height": 16
-      },   
+      },
       {
         "type": "item",
         "item": "OOT_SOUL_BOSS_BONGO_BONGO",
         "height": 16
-      },   
+      },
       {
         "type": "item",
         "item": "OOT_SOUL_BOSS_TWINROVA",
         "height": 16
-      }      
+      }
+    ]
+  },
+  "layout_npc_souls_oot": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_SARIA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_DARUNIA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_RUTO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_KING_ZORA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_ZELDA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_SHEIK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_ANJU",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_CARPENTERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_GURU_GURU",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_MIDO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_KOKIRI",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_KOKIRI_SHOPKEEPER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_HYLIAN_GUARD",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_CITIZEN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_MALON",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_TALON",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_FISHING_POND_OWNER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_GORON",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_MEDIGORON",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_BIGGORON",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_GORON_CHILD",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_GORON_SHOPKEEPER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_ZORA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_ZORA_SHOPKEEPER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_BAZAAR_SHOPKEEPER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_BOMBCHU_SHOPKEEPER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_POTION_SHOPKEEPER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_BOMBCHU_BOWLING_LADY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_CHEST_GAME_OWNER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_SHOOTING_GALLERY_OWNER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_DAMPE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_BOMBERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_POE_COLLECTOR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_COMPOSER_BROS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_HONEY_DARLING",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_ASTRONOMER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_ROOFTOP_MAN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_BEAN_SALESMAN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_SCIENTIST",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_GORMAN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_GROG",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_DOG_LADY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_CARPET_MAN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_OLD_HAG",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_BANKER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_THIEVES",
+        "height": 16
+      }
+    ]
+  },
+  "layout_enemy_souls_oot": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_STALFOS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_OCTOROK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_WALLMASTER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_DODONGO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_KEESE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_TEKTITE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_LEEVER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_PEAHAT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_LIZALFOS_DINALFOS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_GOHMA_LARVA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_SHABOM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_BABY_DODONGO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_DARK_LINK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_BIRI_BARI",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_TAILPASARN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_PARASITE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_SKULLTULA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_TORCH_SLUG",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_MOBLIN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_ARMOS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_DEKU_BABA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_DEKU_SCRUB",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_BUBBLE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_BEAMOS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_FLOORMASTER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_REDEAD_GIBDO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_SKULLWALLTULA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_FLARE_DANCER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_DEAD_HAND",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_SHELL_BLADE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_LIKE_LIKE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_SPIKE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_ANUBIS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_IRON_KNUCKLE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_SKULL_KID",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_FLYING_POT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_FREEZARD",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_STINGER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_WOLFOS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_STALCHILD",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_GUAY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_THIEVES",
+        "height": 16
+      }
     ]
   },
   "options_popup": {
@@ -1867,7 +2338,7 @@
           "max_height": 500,
           "content": {
             "type": "layout",
-            "key": "layout_boss_souls_oot",
+            "key": "layout_enemy_souls_oot",
             "h_alignment": "left"
           }
         }
@@ -1895,7 +2366,7 @@
           "max_height": 500,
           "content": {
             "type": "layout",
-            "key": "layout_boss_souls_oot",
+            "key": "layout_npc_souls_oot",
             "h_alignment": "left"
           }
         }
@@ -1909,7 +2380,7 @@
           "max_height": 500,
           "content": {
             "type": "layout",
-            "key": "layout_boss_souls_oot",
+            "key": "layout_misc_souls_oot",
             "h_alignment": "left"
           }
         }
