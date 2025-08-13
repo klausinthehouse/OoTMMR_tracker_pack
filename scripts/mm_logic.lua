@@ -4106,8 +4106,8 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Kafei Hideout Pendant of Memories"] = function () return soul_npc(SOUL_NPC_KAFEI) and event('MAIL_LETTER') and between(DAY2_PM_02_00, NIGHT2_PM_10_00) end,
-            ["Kafei Hideout Owner Reward 1"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
-            ["Kafei Hideout Owner Reward 2"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
+            ["Kafei Hideout Owner Reward 1"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) and event('MEET_KAFEI') end,
+            ["Kafei Hideout Owner Reward 2"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) and event('MEET_KAFEI') end,
         },
         ["age_change"] = false,
     },
