@@ -1966,7 +1966,7 @@
               },
               {
                 "name": "Kak Impa's House Pots",
-                "short_name": "Cow",
+                "short_name": "In Front",
                 "access_rules": [
                   "$oot|Kakariko Pot 07"
                 ],
@@ -4017,7 +4017,7 @@
                   },
                   {
                     "name": "Market Guard House Child Pots (42x)",
-                    "short_name": "Pots",
+                    "short_name": "Child Ground (42x)",
                     "access_rules": [
                       "$oot|Market Pot House Child Pot Ground 1"
                     ],
@@ -4030,7 +4030,7 @@
                   },
                   {
                     "name": "Market Guard House Child Pots Above",
-                    "short_name": "Pots",
+                    "short_name": "Child Above",
                     "access_rules": [
                       "$oot|Market Pot House Child Pot Above 1"
                     ],
@@ -4043,7 +4043,7 @@
                   },
                   {
                     "name": "Market Guard House Adult Pots (11x)",
-                    "short_name": "Pots",
+                    "short_name": "Adult",
                     "access_rules": [
                       "$oot|Market Pot House Adult Pot 1"
                     ],
