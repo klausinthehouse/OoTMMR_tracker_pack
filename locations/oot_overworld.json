@@ -604,7 +604,7 @@
             "name": "LW Scrubs Grotto",
             "sections": [
               {
-                "name": "LW Before Srubs Grotto Grass",
+                "name": "LW Before Scrubs Grotto Grass",
                 "short_name": "Grass",
                 "access_rules": [
                   "$oot|Lost Woods Grass Deep 1"
@@ -617,7 +617,7 @@
                 "item_count": 3
               },
               {
-                "name": "LW Near Srubs Grotto Grass",
+                "name": "LW Near Scrubs Grotto Grass",
                 "short_name": "Grass",
                 "access_rules": [
                   "$oot|Lost Woods Grass Deep 4"
@@ -1201,7 +1201,7 @@
             ]
           },
           {
-            "name": "HF Grass Near South East Grott",
+            "name": "HF Grass Near South East Grotto",
             "sections": [
               {
                 "name": "Grass",
