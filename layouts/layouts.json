@@ -31,7 +31,7 @@
                     {
                       "type": "button_popup",
                       "style": "image",
-                      "image": "images/skulltula_token.png",
+                      "image": "images/soul_enemy.png",
                       "popup_background": "#FF212121",
                       "layout": "souls_popup"
                     }
