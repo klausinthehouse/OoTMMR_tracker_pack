@@ -359,7 +359,7 @@
                     "name": "Stray Fairy",
                     "access_rules": [
                       "$mm|Clock Town Great Fairy",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   },
@@ -369,7 +369,7 @@
                     "chest_opened_img": "images/system/chest_brown_open.png",
                     "access_rules": [
                       "$mm|Clock Town Great Fairy Alt",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   }
@@ -576,7 +576,7 @@
                     "name": "Midnight Item From Anju - Night 1: 11:30 PM",
                     "access_rules": [
                       "$mm|Stock Pot Inn Letter to Kafei",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   },
@@ -586,7 +586,7 @@
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
                       "$mm|Stock Pot Inn Couple's Mask",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   },
@@ -635,7 +635,7 @@
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
                       "$mm|Milk Bar Troupe Leader Mask",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   },
@@ -643,7 +643,7 @@
                     "name": "Delivery To Madame Aroma - Final Night",
                     "access_rules": [
                       "$mm|Milk Bar Madame Aroma Bottle",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   },
@@ -739,7 +739,7 @@
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
                       "$mm|Clock Town Bank Reward 3",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   }
@@ -2181,7 +2181,7 @@
                 "name": "Night 1: 2:30 AM - 3:45 AM - Save the Cows",
                 "access_rules": [
                   "$mm|Romani Ranch Aliens",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -2191,7 +2191,7 @@
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
                   "$mm|Romani Ranch Cremia Escort",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               }
@@ -2286,7 +2286,7 @@
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
                   "$mm|Cucco Shack Bunny Mask",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -2658,7 +2658,7 @@
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
                   "$mm|Tourist Information Boat Archery",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               }
@@ -3159,7 +3159,7 @@
                         "chest_opened_img": "images/system/unknownmask_grey.png",
                         "access_rules": [
                           "$mm|Deku Shrine Mask of Scents",
-                          "{$hintable}"
+                          "{gossip_stone}"
                         ],
                         "item_count": 1
                       },
@@ -3300,7 +3300,7 @@
                     "name": "15 Stray Fairies in Woodfall Temple",
                     "access_rules": [
                       "$mm|Woodfall Great Fairy",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   }
@@ -3353,7 +3353,7 @@
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
                   "$mm|Mountain Village Frog Choir HP",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               }
@@ -3426,7 +3426,7 @@
                 "name": "Melt the ice and buy it for 100 Rupees - Day 1",
                 "access_rules": [
                   "$mm|Blacksmith Razor Blade",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -3434,7 +3434,7 @@
                 "name": "Show the Gold Dust - Day 2",
                 "access_rules": [
                   "$mm|Blacksmith Gilded Sword",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -3835,7 +3835,7 @@
                 "name": "Win Race After Beating Snowhead Temple",
                 "access_rules": [
                   "$mm|Goron Race Reward",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -3904,7 +3904,7 @@
                 "name": "Talk to him after opening the track",
                 "access_rules": [
                   "$mm|Goron Powder Keg",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               }
@@ -4099,7 +4099,7 @@
                     "name": "15 Stray Fairies in Snowhead Temple",
                     "access_rules": [
                       "$mm|Snowhead Great Fairy",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   }
@@ -4342,7 +4342,7 @@
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
                       "$mm|Great Bay Coast Fisherman HP",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   }
@@ -4467,7 +4467,7 @@
                     "chest_opened_img": "images/system/unknownsong_check.png",
                     "access_rules": [
                       "$mm|Laboratory Zora Song",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   },
@@ -4514,7 +4514,7 @@
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
                   "$mm|Pinnacle Rock HP",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -4784,7 +4784,7 @@
                     "name": "15 Stray Fairies in Great Bay Temple",
                     "access_rules": [
                       "$mm|Great Bay Great Fairy",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   }
@@ -4807,7 +4807,7 @@
                     "name": "Beaver Brothers Race Prize",
                     "access_rules": [
                       "$mm|Waterfall Rapids Beaver Race 1",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "item_count": 1
                   },
@@ -4815,7 +4815,7 @@
                     "name": "Beaver Brothers Race Rematch",
                     "access_rules": [
                       "$mm|Waterfall Rapids Beaver Race 2",
-                      "{$hintable}"
+                      "{gossip_stone}"
                     ],
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
@@ -5166,7 +5166,7 @@
                 "name": "Defeat Big Poe",
                 "access_rules": [
                   "$mm|Beneath The Graveyard Dampe Chest",
-                  "{$hintable}"
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -5621,7 +5621,7 @@
                         "name": "15 Stray Fairies in Stone Tower Temple",
                         "access_rules": [
                           "$mm|Ikana Great Fairy",
-                          "{$hintable}"
+                          "{gossip_stone}"
                         ],
                         "item_count": 1
                       }

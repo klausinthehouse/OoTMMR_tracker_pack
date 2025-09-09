@@ -3024,7 +3024,7 @@
         "short_name": "Scarecrow",
         "access_rules": [
           "$oot|Fire Temple Scarecrow Chest",
-          "{$hintable}"
+          "{gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -3084,7 +3084,7 @@
         "short_name": "Hammer",
         "access_rules": [
           "$oot|Fire Temple Hammer",
-          "{$hintable}"
+          "{gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -7017,7 +7017,7 @@
         "short_name": "Toilet",
         "access_rules": [
           "$oot|Gerudo Training Water",
-          "{$hintable}"
+          "{gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_false"
