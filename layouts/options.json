@@ -1749,6 +1749,11 @@
       },
       {
         "type": "item",
+        "item": "OOT_SOUL_ENEMY_THIEVES",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "OOT_SOUL_ENEMY_FLARE_DANCER",
         "height": 16
       },
@@ -1769,11 +1774,6 @@
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_ENEMY_THIEVES",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "OOT_SOUL_ENEMY_GOHMA_LARVA",
         "height": 16
       },
@@ -1785,6 +1785,11 @@
       {
         "type": "item",
         "item": "OOT_SOUL_ENEMY_IRON_KNUCKLE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ENEMY_PARASITE",
         "height": 16
       },
       {
@@ -1815,11 +1820,6 @@
       {
         "type": "item",
         "item": "OOT_SOUL_ENEMY_OCTOROK",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_SOUL_ENEMY_PARASITE",
         "height": 16
       },
       {
@@ -2008,7 +2008,7 @@
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_NPC_GORON_CHILD",
+        "item": "OOT_SOUL_NPC_CITIZEN",
         "height": 16
       },
       {
@@ -2043,12 +2043,12 @@
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_NPC_THIEVES",
+        "item": "OOT_SOUL_NPC_GORON",
         "height": 16
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_NPC_GORON",
+        "item": "OOT_SOUL_NPC_GORON_CHILD",
         "height": 16
       },
       {
@@ -2068,7 +2068,7 @@
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_NPC_CITIZEN",
+        "item": "OOT_SOUL_NPC_HONEY_DARLING",
         "height": 16
       },
       {
@@ -2098,11 +2098,6 @@
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_NPC_HONEY_DARLING",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "OOT_SOUL_NPC_MALON",
         "height": 16
       },
@@ -2119,6 +2114,11 @@
       {
         "type": "item",
         "item": "OOT_SOUL_NPC_OLD_HAG",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_THIEVES",
         "height": 16
       },
       {
@@ -2195,12 +2195,12 @@
     "content": [
       {
         "type": "item",
-        "item": "OOT_SOUL_MISC_GS",
+        "item": "OOT_SOUL_MISC_BUSINESS_SCRUB",
         "height": 16
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_MISC_BUSINESS_SCRUB",
+        "item": "OOT_SOUL_MISC_GS",
         "height": 16
       }
     ]
@@ -2292,6 +2292,11 @@
       },
       {
         "type": "item",
+        "item": "MM_SOUL_ENEMY_THIEVES",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "MM_SOUL_ENEMY_FLOORMASTER",
         "height": 16
       },
@@ -2368,11 +2373,6 @@
       {
         "type": "item",
         "item": "MM_SOUL_ENEMY_PEAHAT",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MM_SOUL_ENEMY_THIEVES",
         "height": 16
       },
       {
@@ -2501,11 +2501,6 @@
       },
       {
         "type": "item",
-        "item": "MM_SOUL_NPC_GORON_CHILD",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "MM_SOUL_NPC_BANKER",
         "height": 16
       },
@@ -2526,17 +2521,12 @@
       },
       {
         "type": "item",
-        "item": "MM_SOUL_NPC_TOURIST_CENTER",
+        "item": "MM_SOUL_NPC_BOMBCHU_SHOPKEEPER",
         "height": 16
       },
       {
         "type": "item",
         "item": "MM_SOUL_NPC_BOMBERS",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MM_SOUL_NPC_BOMBCHU_SHOPKEEPER",
         "height": 16
       },
       {
@@ -2591,12 +2581,17 @@
       },
       {
         "type": "item",
+        "item": "MM_SOUL_NPC_POE_COLLECTOR",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "MM_SOUL_NPC_GORMAN",
         "height": 16
       },
       {
         "type": "item",
-        "item": "MM_SOUL_NPC_GORON",
+        "item": "MM_SOUL_NPC_GORON_CHILD",
         "height": 16
       },
       {
@@ -2607,6 +2602,11 @@
       {
         "type": "item",
         "item": "MM_SOUL_NPC_GORON_SHOPKEEPER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_SOUL_NPC_GORON",
         "height": 16
       },
       {
@@ -2656,11 +2656,6 @@
       },
       {
         "type": "item",
-        "item": "MM_SOUL_NPC_SCIENTIST",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "MM_SOUL_NPC_MAYOR_DOTOUR",
         "height": 16
       },
@@ -2691,12 +2686,12 @@
       },
       {
         "type": "item",
-        "item": "MM_SOUL_NPC_POE_COLLECTOR",
+        "item": "MM_SOUL_NPC_MALON",
         "height": 16
       },
       {
         "type": "item",
-        "item": "MM_SOUL_NPC_MALON",
+        "item": "MM_SOUL_NPC_SCIENTIST",
         "height": 16
       },
       {
@@ -2722,6 +2717,11 @@
       {
         "type": "item",
         "item": "MM_SOUL_NPC_TOTO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_SOUL_NPC_TOURIST_CENTER",
         "height": 16
       },
       {
@@ -2758,12 +2758,12 @@
     "content": [
       {
         "type": "item",
-        "item": "OOT_SOUL_MISC_BUSINESS_SCRUB",
+        "item": "MM_SOUL_MISC_BUSINESS_SCRUB",
         "height": 16
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_MISC_GS",
+        "item": "MM_SOUL_MISC_GS",
         "height": 16
       }
     ]

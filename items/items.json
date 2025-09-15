@@ -842,167 +842,32 @@
     ]
   },
   {
-    "name": "Soul of Stalfos",
+    "name": "Soul of Anubis",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_enemy_stalfos.png",
+        "img": "images/oot_soul_enemy_anubis.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_enemy_stalfos.png",
-        "codes": "OOT_SOUL_ENEMY_STALFOS"
+        "img": "images/oot_soul_enemy_anubis.png",
+        "codes": "OOT_SOUL_ENEMY_ANUBIS"
       }
     ]
   },
   {
-    "name": "Soul of Octoroks",
+    "name": "Soul of Armos (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_enemy_octorok.png",
+        "img": "images/oot_soul_enemy_armos.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_enemy_octorok.png",
-        "codes": "OOT_SOUL_ENEMY_OCTOROK"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Wallmasters",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_wallmaster.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_wallmaster.png",
-        "codes": "OOT_SOUL_ENEMY_WALLMASTER"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Dodongos",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_dodongo.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_dodongo.png",
-        "codes": "OOT_SOUL_ENEMY_DODONGO"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Keeses",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_keese.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_keese.png",
-        "codes": "OOT_SOUL_ENEMY_KEESE"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Tektites",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_tektite.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_tektite.png",
-        "codes": "OOT_SOUL_ENEMY_TEKTITE"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Leevers",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_leever.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_leever.png",
-        "codes": "OOT_SOUL_ENEMY_LEEVER"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Peahats",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_peahat.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_peahat.png",
-        "codes": "OOT_SOUL_ENEMY_PEAHAT"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Lizalfos/Dinalfos",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_lizalfos_dinalfos.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_lizalfos_dinalfos.png",
-        "codes": "OOT_SOUL_ENEMY_LIZALFOS_DINALFOS"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Gohma Larvae",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_gohma_larva.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_gohma_larva.png",
-        "codes": "OOT_SOUL_ENEMY_GOHMA_LARVA"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Shaboms",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_shabom.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_shabom.png",
-        "codes": "OOT_SOUL_ENEMY_SHABOM"
+        "img": "images/oot_soul_enemy_armos.png",
+        "codes": "OOT_SOUL_ENEMY_ARMOS"
       }
     ]
   },
@@ -1022,17 +887,17 @@
     ]
   },
   {
-    "name": "Soul of Dark Link",
+    "name": "Soul of Beamos (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_enemy_dark_link.png",
+        "img": "images/oot_soul_enemy_beamos.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_enemy_dark_link.png",
-        "codes": "OOT_SOUL_ENEMY_DARK_LINK"
+        "img": "images/oot_soul_enemy_beamos.png",
+        "codes": "OOT_SOUL_ENEMY_BEAMOS"
       }
     ]
   },
@@ -1052,127 +917,7 @@
     ]
   },
   {
-    "name": "Soul of Tailpasarans",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_tailpasarn.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_tailpasarn.png",
-        "codes": "OOT_SOUL_ENEMY_TAILPASARN"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Parasites",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_parasite.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_parasite.png",
-        "codes": "OOT_SOUL_ENEMY_PARASITE"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Skulltulas",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_skulltula.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_skulltula.png",
-        "codes": "OOT_SOUL_ENEMY_SKULLTULA"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Torch Slugs",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_torch_slug.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_torch_slug.png",
-        "codes": "OOT_SOUL_ENEMY_TORCH_SLUG"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Moblins",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_moblin.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_moblin.png",
-        "codes": "OOT_SOUL_ENEMY_MOBLIN"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Armos",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_armos.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_armos.png",
-        "codes": "OOT_SOUL_ENEMY_ARMOS"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Deku Babas",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_deku_baba.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_deku_baba.png",
-        "codes": "OOT_SOUL_ENEMY_DEKU_BABA"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Deku Scrubs",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_deku_scrub.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_deku_scrub.png",
-        "codes": "OOT_SOUL_ENEMY_DEKU_SCRUB"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Bubbles",
+    "name": "Soul of Bubbles (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1187,77 +932,17 @@
     ]
   },
   {
-    "name": "Soul of Beamos",
+    "name": "Soul of Dark Link",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_enemy_beamos.png",
+        "img": "images/oot_soul_enemy_dark_link.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_enemy_beamos.png",
-        "codes": "OOT_SOUL_ENEMY_BEAMOS"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Floormasters",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_floormaster.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_floormaster.png",
-        "codes": "OOT_SOUL_ENEMY_FLOORMASTER"
-      }
-    ]
-  },
-  {
-    "name": "Soul of ReDeads/Gibdos",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_redead_gibdo.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_redead_gibdo.png",
-        "codes": "OOT_SOUL_ENEMY_REDEAD_GIBDO"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Skullwalltulas",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_skullwalltula.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_skullwalltula.png",
-        "codes": "OOT_SOUL_ENEMY_SKULLWALLTULA"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Flare Dancers",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_flare_dancer.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_flare_dancer.png",
-        "codes": "OOT_SOUL_ENEMY_FLARE_DANCER"
+        "img": "images/oot_soul_enemy_dark_link.png",
+        "codes": "OOT_SOUL_ENEMY_DARK_LINK"
       }
     ]
   },
@@ -1277,7 +962,307 @@
     ]
   },
   {
-    "name": "Soul of Shell Blades",
+    "name": "Soul of Deku Babas (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_deku_baba.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_deku_baba.png",
+        "codes": "OOT_SOUL_ENEMY_DEKU_BABA"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Deku Scrubs (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_deku_scrub.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_deku_scrub.png",
+        "codes": "OOT_SOUL_ENEMY_DEKU_SCRUB"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Dodongos (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_dodongo.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_dodongo.png",
+        "codes": "OOT_SOUL_ENEMY_DODONGO"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Flare Dancers",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_flare_dancer.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_flare_dancer.png",
+        "codes": "OOT_SOUL_ENEMY_FLARE_DANCER"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Floormasters (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_floormaster.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_floormaster.png",
+        "codes": "OOT_SOUL_ENEMY_FLOORMASTER"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Flying Pots (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_flying_pot.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_flying_pot.png",
+        "codes": "OOT_SOUL_ENEMY_FLYING_POT"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Freezards (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_freezard.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_freezard.png",
+        "codes": "OOT_SOUL_ENEMY_FREEZARD"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Gohma Larvaes",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_gohma_larva.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_gohma_larva.png",
+        "codes": "OOT_SOUL_ENEMY_GOHMA_LARVA"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Guays (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_guay.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_guay.png",
+        "codes": "OOT_SOUL_ENEMY_GUAY"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Iron Knuckles (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_iron_knuckle.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_iron_knuckle.png",
+        "codes": "OOT_SOUL_ENEMY_IRON_KNUCKLE"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Keese (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_keese.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_keese.png",
+        "codes": "OOT_SOUL_ENEMY_KEESE"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Leevers (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_leever.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_leever.png",
+        "codes": "OOT_SOUL_ENEMY_LEEVER"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Like Likes (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_like_like.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_like_like.png",
+        "codes": "OOT_SOUL_ENEMY_LIKE_LIKE"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Lizalfos/Dinolfos (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_lizalfos_dinalfos.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_lizalfos_dinalfos.png",
+        "codes": "OOT_SOUL_ENEMY_LIZALFOS_DINALFOS"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Moblins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_moblin.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_moblin.png",
+        "codes": "OOT_SOUL_ENEMY_MOBLIN"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Octoroks (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_octorok.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_octorok.png",
+        "codes": "OOT_SOUL_ENEMY_OCTOROK"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Jabu-Jabu's Parasites",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_parasite.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_parasite.png",
+        "codes": "OOT_SOUL_ENEMY_PARASITE"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Peahats (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_peahat.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_peahat.png",
+        "codes": "OOT_SOUL_ENEMY_PEAHAT"
+      }
+    ]
+  },
+  {
+    "name": "Soul of ReDeads/Gibdos (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_redead_gibdo.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_redead_gibdo.png",
+        "codes": "OOT_SOUL_ENEMY_REDEAD_GIBDO"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Shaboms",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_shabom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_shabom.png",
+        "codes": "OOT_SOUL_ENEMY_SHABOM"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Shell Blades (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1292,17 +1277,47 @@
     ]
   },
   {
-    "name": "Soul of Like-Likes",
+    "name": "Soul of Skull Kids (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_enemy_like_like.png",
+        "img": "images/oot_soul_enemy_skull_kid.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_enemy_like_like.png",
-        "codes": "OOT_SOUL_ENEMY_LIKE_LIKE"
+        "img": "images/oot_soul_enemy_skull_kid.png",
+        "codes": "OOT_SOUL_ENEMY_SKULL_KID"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Skulltulas (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_skulltula.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_skulltula.png",
+        "codes": "OOT_SOUL_ENEMY_SKULLTULA"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Skullwalltulas (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_skullwalltula.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_skullwalltula.png",
+        "codes": "OOT_SOUL_ENEMY_SKULLWALLTULA"
       }
     ]
   },
@@ -1322,77 +1337,32 @@
     ]
   },
   {
-    "name": "Soul of Anubis",
+    "name": "Soul of Stalchildren (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_enemy_anubis.png",
+        "img": "images/oot_soul_enemy_stalchild.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_enemy_anubis.png",
-        "codes": "OOT_SOUL_ENEMY_ANUBIS"
+        "img": "images/oot_soul_enemy_stalchild.png",
+        "codes": "OOT_SOUL_ENEMY_STALCHILD"
       }
     ]
   },
   {
-    "name": "Soul of Iron Knuckles",
+    "name": "Soul of Stalfos (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_enemy_iron_knuckle.png",
+        "img": "images/oot_soul_enemy_stalfos.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_enemy_iron_knuckle.png",
-        "codes": "OOT_SOUL_ENEMY_IRON_KNUCKLE"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Skull Kids",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_skull_kid.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_skull_kid.png",
-        "codes": "OOT_SOUL_ENEMY_SKULL_KID"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Flying Pots",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_flying_pot.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_flying_pot.png",
-        "codes": "OOT_SOUL_ENEMY_FLYING_POT"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Freezards",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_freezard.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_freezard.png",
-        "codes": "OOT_SOUL_ENEMY_FREEZARD"
+        "img": "images/oot_soul_enemy_stalfos.png",
+        "codes": "OOT_SOUL_ENEMY_STALFOS"
       }
     ]
   },
@@ -1412,7 +1382,67 @@
     ]
   },
   {
-    "name": "Soul of Wolfos",
+    "name": "Soul of Tailpasarans",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_tailpasarn.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_tailpasarn.png",
+        "codes": "OOT_SOUL_ENEMY_TAILPASARN"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Tektites (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_tektite.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_tektite.png",
+        "codes": "OOT_SOUL_ENEMY_TEKTITE"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Torch Slugs",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_torch_slug.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_torch_slug.png",
+        "codes": "OOT_SOUL_ENEMY_TORCH_SLUG"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Wallmasters (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_wallmaster.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_wallmaster.png",
+        "codes": "OOT_SOUL_ENEMY_WALLMASTER"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Wolfoses (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1427,37 +1457,7 @@
     ]
   },
   {
-    "name": "Soul of Stalchildren",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_stalchild.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_stalchild.png",
-        "codes": "OOT_SOUL_ENEMY_STALCHILD"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Guays",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_enemy_guay.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_enemy_guay.png",
-        "codes": "OOT_SOUL_ENEMY_GUAY"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Gerudo Fighters",
+    "name": "Soul of the Fighting Gerudos",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1468,36 +1468,6 @@
       {
         "img": "images/oot_soul_enemy_thieves.png",
         "codes": "OOT_SOUL_ENEMY_THIEVES"
-      }
-    ]
-  },
-  {
-    "name": "Soul of Queen Gohma",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_boss_queen_gohma.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_boss_queen_gohma.png",
-        "codes": "OOT_SOUL_BOSS_QUEEN_GOHMA"
-      }
-    ]
-  },
-  {
-    "name": "Soul of King Dodongo",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/oot_soul_boss_king_dodongo.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/oot_soul_boss_king_dodongo.png",
-        "codes": "OOT_SOUL_BOSS_KING_DODONGO"
       }
     ]
   },
@@ -1517,32 +1487,32 @@
     ]
   },
   {
-    "name": "Soul of Phantom Ganon",
+    "name": "Soul of Bongo Bongo",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_boss_phantom_ganon.png",
+        "img": "images/oot_soul_boss_bongo_bongo.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_boss_phantom_ganon.png",
-        "codes": "OOT_SOUL_BOSS_PHANTOM_GANON"
+        "img": "images/oot_soul_boss_bongo_bongo.png",
+        "codes": "OOT_SOUL_BOSS_BONGO_BONGO"
       }
     ]
   },
   {
-    "name": "Soul of Volvagia",
+    "name": "Soul of King Dodongo",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_boss_volvagia.png",
+        "img": "images/oot_soul_boss_king_dodongo.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_boss_volvagia.png",
-        "codes": "OOT_SOUL_BOSS_VOLVAGIA"
+        "img": "images/oot_soul_boss_king_dodongo.png",
+        "codes": "OOT_SOUL_BOSS_KING_DODONGO"
       }
     ]
   },
@@ -1562,17 +1532,32 @@
     ]
   },
   {
-    "name": "Soul of Bongo-Bongo",
+    "name": "Soul of Phantom Ganon",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/oot_soul_boss_bongo_bongo.png",
+        "img": "images/oot_soul_boss_phantom_ganon.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/oot_soul_boss_bongo_bongo.png",
-        "codes": "OOT_SOUL_BOSS_BONGO_BONGO"
+        "img": "images/oot_soul_boss_phantom_ganon.png",
+        "codes": "OOT_SOUL_BOSS_PHANTOM_GANON"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Queen Gohma",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_boss_queen_gohma.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_boss_queen_gohma.png",
+        "codes": "OOT_SOUL_BOSS_QUEEN_GOHMA"
       }
     ]
   },
@@ -1588,6 +1573,21 @@
       {
         "img": "images/oot_soul_boss_twinrova.png",
         "codes": "OOT_SOUL_BOSS_TWINROVA"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Volvagia",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_boss_volvagia.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_boss_volvagia.png",
+        "codes": "OOT_SOUL_BOSS_VOLVAGIA"
       }
     ]
   },
@@ -1622,7 +1622,7 @@
     ]
   },
   {
-    "name": "Soul of Ruto",
+    "name": "Soul of Ruto (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1682,7 +1682,7 @@
     ]
   },
   {
-    "name": "Soul of Cucco Lady",
+    "name": "Soul of Cucco Lady (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1697,7 +1697,7 @@
     ]
   },
   {
-    "name": "Soul of Carpenters",
+    "name": "Soul of Carpenters (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1712,7 +1712,7 @@
     ]
   },
   {
-    "name": "Soul of Guru-Guru",
+    "name": "Soul of Guru-Guru (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1787,7 +1787,7 @@
     ]
   },
   {
-    "name": "Soul of Hylian Citizen",
+    "name": "Soul of the Citizens (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1802,7 +1802,7 @@
     ]
   },
   {
-    "name": "Soul of Malon",
+    "name": "Soul of Malon (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1817,7 +1817,7 @@
     ]
   },
   {
-    "name": "Soul of Talon",
+    "name": "Soul of Talon (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1832,7 +1832,7 @@
     ]
   },
   {
-    "name": "Soul of Fishing Pond Owner",
+    "name": "Soul of Fishing Pond Owner (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1847,7 +1847,7 @@
     ]
   },
   {
-    "name": "Soul of Goron",
+    "name": "Soul of Goron (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1862,7 +1862,7 @@
     ]
   },
   {
-    "name": "Soul of Medigoron",
+    "name": "Soul of Medigoron (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1877,7 +1877,7 @@
     ]
   },
   {
-    "name": "Soul of Biggoron",
+    "name": "Soul of Biggoron (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1892,7 +1892,7 @@
     ]
   },
   {
-    "name": "Soul of Child Goron",
+    "name": "Soul of Goron Child (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1907,7 +1907,7 @@
     ]
   },
   {
-    "name": "Soul of Goron Shopkeeper",
+    "name": "Soul of Goron Shopkeeper (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1922,7 +1922,7 @@
     ]
   },
   {
-    "name": "Soul of Zora",
+    "name": "Soul of Zora (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1937,7 +1937,7 @@
     ]
   },
   {
-    "name": "Soul of Zora Shopkeeper",
+    "name": "Soul of Zora Shopkeeper (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1952,7 +1952,7 @@
     ]
   },
   {
-    "name": "Soul of Bazaar Shopkeeper",
+    "name": "Soul of Bazaar Shopkeeper (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1967,7 +1967,7 @@
     ]
   },
   {
-    "name": "Soul of Bombchu Shopkeeper",
+    "name": "Soul of Bombchu Shopkeeper (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -1997,7 +1997,7 @@
     ]
   },
   {
-    "name": "Soul of Bombchu Bowling Lady",
+    "name": "Soul of Bombchu Bowling Lady (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2012,7 +2012,7 @@
     ]
   },
   {
-    "name": "Soul of Chest Game Owner",
+    "name": "Soul of Chest Game Owner (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2027,7 +2027,7 @@
     ]
   },
   {
-    "name": "Soul of Shooting Gallery Owner",
+    "name": "Soul of Shooting Gallery Owner (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2042,7 +2042,7 @@
     ]
   },
   {
-    "name": "Soul of Dampe",
+    "name": "Soul of Dampe (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2057,7 +2057,7 @@
     ]
   },
   {
-    "name": "Soul of Graveyard Kid",
+    "name": "Soul of Graveyard Kid (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2072,7 +2072,7 @@
     ]
   },
   {
-    "name": "Soul of Poe Collector",
+    "name": "Soul of Poe Collector (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2087,7 +2087,7 @@
     ]
   },
   {
-    "name": "Soul of Composer Bros.",
+    "name": "Soul of Composer Bros. (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2102,7 +2102,7 @@
     ]
   },
   {
-    "name": "Soul of Lovers",
+    "name": "Soul of Honey & Darling (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2117,7 +2117,7 @@
     ]
   },
   {
-    "name": "Soul of Astronomer",
+    "name": "Soul of the Astronomer (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2132,7 +2132,7 @@
     ]
   },
   {
-    "name": "Soul of Rooftop Man",
+    "name": "Soul of the Rooftop Man (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2147,7 +2147,7 @@
     ]
   },
   {
-    "name": "Soul of Bean Salesman",
+    "name": "Soul of the Bean Salesman (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2162,7 +2162,7 @@
     ]
   },
   {
-    "name": "Soul of Scientist",
+    "name": "Soul of the Scientist (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2177,7 +2177,7 @@
     ]
   },
   {
-    "name": "Soul of Ingo",
+    "name": "Soul of Ingo (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2192,7 +2192,7 @@
     ]
   },
   {
-    "name": "Soul of Punk Boy",
+    "name": "Soul of the Punk Kid (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2207,7 +2207,7 @@
     ]
   },
   {
-    "name": "Soul of Dog Lady",
+    "name": "Soul of the Dog Lady (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2222,7 +2222,7 @@
     ]
   },
   {
-    "name": "Soul of Carpet Man",
+    "name": "Soul of the Carpet Man (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2237,7 +2237,7 @@
     ]
   },
   {
-    "name": "Soul of Old Hag",
+    "name": "Soul of the Old Hag (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2252,7 +2252,7 @@
     ]
   },
   {
-    "name": "Soul of Beggar",
+    "name": "Soul of the Beggar (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2267,7 +2267,7 @@
     ]
   },
   {
-    "name": "Soul of Gerudo Guards",
+    "name": "Soul of the Patrolling Gerudos",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2282,7 +2282,7 @@
     ]
   },
     {
-    "name": "Soul of Gold Skulltulas",
+    "name": "Soul of Gold Skulltulas (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -2297,7 +2297,7 @@
     ]
   },
   {
-    "name": "Soul of Business Scrubs",
+    "name": "Soul of Business Scrubs (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
