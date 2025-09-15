@@ -38,7 +38,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Wonder Items Shuffle
 - Snowball Shuffle
 - Butterflies Shuffle
-- Mask Trade Shuffle
 - Freestanding Rupees Shuffle
 - Freestanding Hearts Shuffle
 - Fishing Pond Fish Shuffle
@@ -47,7 +46,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Open Dungeons
 - Clear State Dungeons
 - Pre-Completed Dungeons
-- Soul Shuffle
 - Entrance Shuffle
 - JP layouts
 

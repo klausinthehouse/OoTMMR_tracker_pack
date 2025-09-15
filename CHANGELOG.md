@@ -1,5 +1,20 @@
 # Releases
 
+## v29.0.1
+
+Logic updated to version v29.0 of the OOTMM Randomizer.
+
+New Setting:
+
+- Soul Shuffle (OOT + MM; Enemies, NPCs, Bosses and Misc)
+
+Bugfixes:
+
+- Fix shared megaton hammer setting
+- Fix swordless adult settings
+- Fix logic for Kafei's hideout owner reward
+- Fix hintable locations setting after save file load
+
 ## v27.0.2
 
 Hotfix release for Emotracker-breaking bug with clocks and All-Night-Mask.
