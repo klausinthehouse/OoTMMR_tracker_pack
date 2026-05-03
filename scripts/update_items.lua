@@ -314,6 +314,57 @@ function on_update_oot_small_key_amounts()
     OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV = oot_smallkeysanity_active
 end
 
+local OOTMM_SILVER_RUPEE_SHUFFLEOOT_REMOVED_PREV = false
+local OOTMM_SILVER_RUPEE_AMOUNTS = {
+    ["OOT_RUPEE_SILVER_SPIRIT_CHILD"] = {
+        dungeon_name = "Spirit Temple",
+        vanilla = 5,
+        mq = 0,
+    },
+    ["OOT_RUPEE_SILVER_SPIRIT_SUN"] = {
+        dungeon_name = "Spirit Temple",
+        vanilla = 5,
+        mq = 0,
+    },
+    ["OOT_RUPEE_SILVER_SPIRIT_BOULDERS"] = {
+        dungeon_name = "Spirit Temple",
+        vanilla = 5,
+        mq = 0,
+    }
+} --[[
+function on_update_oot_silver_rupee_amounts()
+    local oot_silverrupeeshuffle_active = Tracker:ProviderCountForCode("setting_SilverRupeeShuffle_true") > 0
+    for key_code, key_data in pairs(OOTMM_SILVER_RUPEE_AMOUNTS) do
+        local item = Tracker:FindObjectForCode(key_code)
+        local mq_setting_name = "setting_mq_" .. key_data.dungeon_name:gsub(" ", "") .. '_true'
+        local is_mq = Tracker:ProviderCountForCode(mq_setting_name) > 0
+
+        local max_amount = key_data.vanilla
+
+        if is_mq then
+            max_amount = key_data.mq
+        end
+
+        if type(max_amount) == "function" then
+            max_amount = max_amount()
+        end
+
+        item.MaxCount = max_amount
+
+        -- Handle keysanity; if active, set all keys to their max amount
+        if oot_silverrupeeshuffle_active ~= OOTMM_SILVER_RUPEE_SHUFFLEOOT_REMOVED_PREV then
+            if (oot_silverrupeeshuffle_active and item.AcquiredCount == 0) then
+                item.AcquiredCount = item.MaxCount
+            elseif not oot_silverrupeeshuffle_active and item.AcquiredCount == item.MaxCount then
+                -- Try to be smart about small key handling; users would not like having to manually
+                -- reset these to 0 if they're just cycling through small key settings.
+                item.AcquiredCount = 0
+            end
+        end
+    end
+    OOTMM_SILVER_RUPEE_SHUFFLEOOT_REMOVED_PREV = oot_silverrupeeshuffle_active
+end ]]
+
 local OOTMM_BOSS_KEY_SHUFFLEOOT_REMOVED_PREV = false
 function on_update_oot_boss_key_amounts()
     local oot_bosskeysanity_active = Tracker:ProviderCountForCode("setting_bossKeyShuffleOot_removed") > 0
@@ -329,7 +380,7 @@ function on_update_oot_boss_key_amounts()
         end
     end
     OOTMM_BOSS_KEY_SHUFFLEOOT_REMOVED_PREV = oot_bosskeysanity_active
-end
+end --
 
 local OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV = false
 function on_update_mm_small_key_amounts()

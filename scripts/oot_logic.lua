@@ -223,7 +223,7 @@ function _oot_logic()
         ["OOT"] = true,
         ["MM"] = true,
     }
-    local CUSTOM_EVENT_ITEMS = {
+--[[local CUSTOM_EVENT_ITEMS = {
         ["RUPEE_SILVER_BOTW"] = true,
         ["RUPEE_SILVER_DC"] = true,
         ["RUPEE_SILVER_GANON_FIRE"] = true,
@@ -245,8 +245,9 @@ function _oot_logic()
         ["RUPEE_SILVER_SPIRIT_BOULDERS"] = true,
         ["RUPEE_SILVER_SPIRIT_CHILD"] = true,
         ["RUPEE_SILVER_SPIRIT_LOBBY"] = true,
-        ["RUPEE_SILVER_SPIRIT_SUN"] = true,
+        ["RUPEE_SILVER_SPIRIT_SUN"] = true,         
     }
+    ]]
     function has(item, min_count, use_prefix)
         if use_prefix == nil then
             use_prefix = true
@@ -778,11 +779,11 @@ function _oot_logic()
         ["MQ Dodongo Cavern SR Upper Corner High"] = "RUPEE_SILVER_DC",
         ["MQ Dodongo Cavern SR Upper Corner Low"] = "RUPEE_SILVER_DC",
         ["MQ Dodongo Cavern SR Vines"] = "RUPEE_SILVER_DC",
-        ["MQ Ganon Castle SR Fire Back-Left"] = "RUPEE_SILVER_GANON_FIRE",
-        ["MQ Ganon Castle SR Fire Center-Left"] = "RUPEE_SILVER_GANON_FIRE",
-        ["MQ Ganon Castle SR Fire Front-Left"] = "RUPEE_SILVER_GANON_FIRE",
-        ["MQ Ganon Castle SR Fire High Above Lava"] = "RUPEE_SILVER_GANON_FIRE",
-        ["MQ Ganon Castle SR Fire Under Pillar"] = "RUPEE_SILVER_GANON_FIRE",
+        ["MQ Ganon Castle SR Fire Back-Left"] = "RUPEE_SILVER_GANON_FIRE_MQ",
+        ["MQ Ganon Castle SR Fire Center-Left"] = "RUPEE_SILVER_GANON_FIRE_MQ",
+        ["MQ Ganon Castle SR Fire Front-Left"] = "RUPEE_SILVER_GANON_FIRE_MQ",
+        ["MQ Ganon Castle SR Fire High Above Lava"] = "RUPEE_SILVER_GANON_FIRE_MQ",
+        ["MQ Ganon Castle SR Fire Under Pillar"] = "RUPEE_SILVER_GANON_FIRE_MQ",
         ["MQ Ganon Castle SR Shadow Back-Center"] = "RUPEE_SILVER_GANON_SHADOW",
         ["MQ Ganon Castle SR Shadow Back-Left"] = "RUPEE_SILVER_GANON_SHADOW",
         ["MQ Ganon Castle SR Shadow Front-Center"] = "RUPEE_SILVER_GANON_SHADOW",
@@ -793,20 +794,20 @@ function _oot_logic()
         ["MQ Ganon Castle SR Water Deep Hole"] = "RUPEE_SILVER_GANON_WATER",
         ["MQ Ganon Castle SR Water Shallow Hole"] = "RUPEE_SILVER_GANON_WATER",
         ["MQ Ganon Castle SR Water Under Alcove"] = "RUPEE_SILVER_GANON_WATER",
-        ["MQ Gerudo Training Grounds SR Lava Back-Left"] = "RUPEE_SILVER_GTG_LAVA",
-        ["MQ Gerudo Training Grounds SR Lava Back-Right"] = "RUPEE_SILVER_GTG_LAVA",
-        ["MQ Gerudo Training Grounds SR Lava Center"] = "RUPEE_SILVER_GTG_LAVA",
-        ["MQ Gerudo Training Grounds SR Lava Front"] = "RUPEE_SILVER_GTG_LAVA",
-        ["MQ Gerudo Training Grounds SR Lava Front-Left"] = "RUPEE_SILVER_GTG_LAVA",
-        ["MQ Gerudo Training Grounds SR Lava Front-Right"] = "RUPEE_SILVER_GTG_LAVA",
-        ["MQ Gerudo Training Grounds SR Slopes Front"] = "RUPEE_SILVER_GTG_SLOPES",
-        ["MQ Gerudo Training Grounds SR Slopes Front-Left"] = "RUPEE_SILVER_GTG_SLOPES",
-        ["MQ Gerudo Training Grounds SR Slopes Front-Right"] = "RUPEE_SILVER_GTG_SLOPES",
-        ["MQ Gerudo Training Grounds SR Slopes Middle"] = "RUPEE_SILVER_GTG_SLOPES",
-        ["MQ Gerudo Training Grounds SR Slopes Top Right"] = "RUPEE_SILVER_GTG_SLOPES",
-        ["MQ Gerudo Training Grounds SR Water Bottom-Right"] = "RUPEE_SILVER_GTG_WATER",
-        ["MQ Gerudo Training Grounds SR Water Center"] = "RUPEE_SILVER_GTG_WATER",
-        ["MQ Gerudo Training Grounds SR Water Top-Left"] = "RUPEE_SILVER_GTG_WATER",
+        ["MQ Gerudo Training Grounds SR Lava Back-Left"] = "RUPEE_SILVER_GTG_LAVA_MQ",
+        ["MQ Gerudo Training Grounds SR Lava Back-Right"] = "RUPEE_SILVER_GTG_LAVA_MQ",
+        ["MQ Gerudo Training Grounds SR Lava Center"] = "RUPEE_SILVER_GTG_LAVA_MQ",
+        ["MQ Gerudo Training Grounds SR Lava Front"] = "RUPEE_SILVER_GTG_LAVA_MQ",
+        ["MQ Gerudo Training Grounds SR Lava Front-Left"] = "RUPEE_SILVER_GTG_LAVA_MQ",
+        ["MQ Gerudo Training Grounds SR Lava Front-Right"] = "RUPEE_SILVER_GTG_LAVA_MQ",
+        ["MQ Gerudo Training Grounds SR Slopes Front"] = "RUPEE_SILVER_GTG_SLOPES_MQ",
+        ["MQ Gerudo Training Grounds SR Slopes Front-Left"] = "RUPEE_SILVER_GTG_SLOPES_MQ",
+        ["MQ Gerudo Training Grounds SR Slopes Front-Right"] = "RUPEE_SILVER_GTG_SLOPES_MQ",
+        ["MQ Gerudo Training Grounds SR Slopes Middle"] = "RUPEE_SILVER_GTG_SLOPES_MQ",
+        ["MQ Gerudo Training Grounds SR Slopes Top Right"] = "RUPEE_SILVER_GTG_SLOPES_MQ",
+        ["MQ Gerudo Training Grounds SR Water Bottom-Right"] = "RUPEE_SILVER_GTG_WATER_MQ",
+        ["MQ Gerudo Training Grounds SR Water Center"] = "RUPEE_SILVER_GTG_WATER_MQ",
+        ["MQ Gerudo Training Grounds SR Water Top-Left"] = "RUPEE_SILVER_GTG_WATER_MQ",
         ["MQ Shadow Temple SR Invisible Blades Ground 1"] = "RUPEE_SILVER_SHADOW_BLADES",
         ["MQ Shadow Temple SR Invisible Blades Ground 2"] = "RUPEE_SILVER_SHADOW_BLADES",
         ["MQ Shadow Temple SR Invisible Blades Ground 3"] = "RUPEE_SILVER_SHADOW_BLADES",
@@ -817,26 +818,26 @@ function _oot_logic()
         ["MQ Shadow Temple SR Invisible Blades Ground 8"] = "RUPEE_SILVER_SHADOW_BLADES",
         ["MQ Shadow Temple SR Invisible Blades Ground 9"] = "RUPEE_SILVER_SHADOW_BLADES",
         ["MQ Shadow Temple SR Invisible Blades Time Block"] = "RUPEE_SILVER_SHADOW_BLADES",
-        ["MQ Shadow Temple SR Pit Back"] = "RUPEE_SILVER_SHADOW_PIT",
-        ["MQ Shadow Temple SR Pit Front"] = "RUPEE_SILVER_SHADOW_PIT",
-        ["MQ Shadow Temple SR Pit Midair High"] = "RUPEE_SILVER_SHADOW_PIT",
-        ["MQ Shadow Temple SR Pit Midair Low"] = "RUPEE_SILVER_SHADOW_PIT",
-        ["MQ Shadow Temple SR Pit Right"] = "RUPEE_SILVER_SHADOW_PIT",
-        ["MQ Shadow Temple SR Scythe 1"] = "RUPEE_SILVER_SHADOW_SCYTHE",
-        ["MQ Shadow Temple SR Scythe 2"] = "RUPEE_SILVER_SHADOW_SCYTHE",
-        ["MQ Shadow Temple SR Scythe 3"] = "RUPEE_SILVER_SHADOW_SCYTHE",
-        ["MQ Shadow Temple SR Scythe 4"] = "RUPEE_SILVER_SHADOW_SCYTHE",
-        ["MQ Shadow Temple SR Scythe 5"] = "RUPEE_SILVER_SHADOW_SCYTHE",
-        ["MQ Shadow Temple SR Spikes Center Ground"] = "RUPEE_SILVER_SHADOW_SPIKES",
-        ["MQ Shadow Temple SR Spikes Center Midair"] = "RUPEE_SILVER_SHADOW_SPIKES",
-        ["MQ Shadow Temple SR Spikes Center Platforms"] = "RUPEE_SILVER_SHADOW_SPIKES",
-        ["MQ Shadow Temple SR Spikes Front Midair"] = "RUPEE_SILVER_SHADOW_SPIKES",
-        ["MQ Shadow Temple SR Spikes Left Corner"] = "RUPEE_SILVER_SHADOW_SPIKES",
-        ["MQ Shadow Temple SR Spikes Left Midair"] = "RUPEE_SILVER_SHADOW_SPIKES",
-        ["MQ Shadow Temple SR Spikes Left Wall"] = "RUPEE_SILVER_SHADOW_SPIKES",
-        ["MQ Shadow Temple SR Spikes Right Back Wall"] = "RUPEE_SILVER_SHADOW_SPIKES",
-        ["MQ Shadow Temple SR Spikes Right Ground"] = "RUPEE_SILVER_SHADOW_SPIKES",
-        ["MQ Shadow Temple SR Spikes Right Lateral Wall"] = "RUPEE_SILVER_SHADOW_SPIKES",
+        ["MQ Shadow Temple SR Pit Back"] = "RUPEE_SILVER_SHADOW_PIT_MQ",
+        ["MQ Shadow Temple SR Pit Front"] = "RUPEE_SILVER_SHADOW_PIT_MQ",
+        ["MQ Shadow Temple SR Pit Midair High"] = "RUPEE_SILVER_SHADOW_PIT_MQ",
+        ["MQ Shadow Temple SR Pit Midair Low"] = "RUPEE_SILVER_SHADOW_PIT_MQ",
+        ["MQ Shadow Temple SR Pit Right"] = "RUPEE_SILVER_SHADOW_PIT_MQ",
+        ["MQ Shadow Temple SR Scythe 1"] = "RUPEE_SILVER_SHADOW_SCYTHE_MQ",
+        ["MQ Shadow Temple SR Scythe 2"] = "RUPEE_SILVER_SHADOW_SCYTHE_MQ",
+        ["MQ Shadow Temple SR Scythe 3"] = "RUPEE_SILVER_SHADOW_SCYTHE_MQ",
+        ["MQ Shadow Temple SR Scythe 4"] = "RUPEE_SILVER_SHADOW_SCYTHE_MQ",
+        ["MQ Shadow Temple SR Scythe 5"] = "RUPEE_SILVER_SHADOW_SCYTHE_MQ",
+        ["MQ Shadow Temple SR Spikes Center Ground"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        ["MQ Shadow Temple SR Spikes Center Midair"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        ["MQ Shadow Temple SR Spikes Center Platforms"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        ["MQ Shadow Temple SR Spikes Front Midair"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        ["MQ Shadow Temple SR Spikes Left Corner"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        ["MQ Shadow Temple SR Spikes Left Midair"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        ["MQ Shadow Temple SR Spikes Left Wall"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        ["MQ Shadow Temple SR Spikes Right Back Wall"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        ["MQ Shadow Temple SR Spikes Right Ground"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        ["MQ Shadow Temple SR Spikes Right Lateral Wall"] = "RUPEE_SILVER_SHADOW_SPIKES_MQ",
         ["MQ Spirit Temple SR Adult Bottom"] = "RUPEE_SILVER_SPIRIT_ADULT",
         ["MQ Spirit Temple SR Adult Bottom-Center"] = "RUPEE_SILVER_SPIRIT_ADULT",
         ["MQ Spirit Temple SR Adult Center-Top"] = "RUPEE_SILVER_SPIRIT_ADULT",
@@ -1191,6 +1192,10 @@ function _oot_logic()
 		return shared_soul_enemy(SOUL_ENEMY_PEAHAT, SHARED_SOUL_ENEMY_PEAHAT)
 	end
 
+    function soul_poe()
+		return shared_soul_enemy(SOUL_ENEMY_POE, SHARED_SOUL_ENEMY_POE)
+	end
+
 	function soul_lizalfos_dinalfos()
 		return shared_soul_enemy(SOUL_ENEMY_LIZALFOS_DINALFOS, SHARED_SOUL_ENEMY_LIZALFOS_DINALFOS)
 	end
@@ -1283,6 +1288,26 @@ function _oot_logic()
 		return shared_soul_misc(SOUL_MISC_BUSINESS_SCRUB, SHARED_SOUL_MISC_BUSINESS_SCRUB)
 	end
 
+    function shared_soul_animals(a, b)
+		return cond(setting('sharedSoulsAnimals'), soul_animals(b), soul_animals(a))
+	end
+
+	function soul_butterfly()
+		return shared_soul_animals(SOUL_ANIMAL_BUTTERFLY, SHARED_SOUL_ANIMAL_BUTTERFLY)
+	end
+	
+	function soul_cow()
+		return shared_soul_animals(SOUL_ANIMAL_COW, SHARED_SOUL_ANIMAL_COW)
+	end
+	
+	function soul_cucco()
+		return shared_soul_animals(SOUL_ANIMAL_CUCCO, SHARED_SOUL_ANIMAL_CUCCO)
+	end
+	
+	function soul_dog()
+		return shared_soul_animals(SOUL_ANIMAL_DOG, SHARED_SOUL_ANIMAL_DOG)
+	end
+	
 	function shared_soul_npc(a, b)
 		return cond(setting('sharedSoulsNpc'), soul_npc(b), soul_npc(a))
 	end
@@ -1688,7 +1713,7 @@ function _oot_logic()
 	end
 
 	function has_big_poe()
-		return has_bottle() and (event('BIG_POE') or renewable(BOTTLE_BIG_POE) or renewable(BIG_POE))
+		return has_bottle() and (event('BIG_POE') and soul_poe() or renewable(BOTTLE_BIG_POE) or renewable(BIG_POE))
 	end
 
 	function can_use_beans()
@@ -2244,7 +2269,8 @@ function _oot_logic()
 	end
 
 	function small_keys_tcg(n)
-		return cond(setting('smallKeyShuffleChestGame', 'vanilla'), has_lens_strict() and can_use_wallet(1) and soul_chest_game_owner(), has_skeleton_key() or has('KEY_RING_TCG') or has('SMALL_KEY_TCG', n))
+        return has_skeleton_key() or has('SMALL_KEY_TCG', n)
+	--	return cond(setting('smallKeyShuffleChestGame', 'vanilla'), has_lens_strict() and can_use_wallet(1) and soul_chest_game_owner(), has_skeleton_key() or has('KEY_RING_TCG') or has('SMALL_KEY_TCG', n))
 	end
 
 	function small_keys_hideout_all()
@@ -2264,103 +2290,119 @@ function _oot_logic()
 	end
 
 	function silver_rupees(type, rupee, pouch, count)
-		return setting('magicalRupee') and has('RUPEE_MAGICAL') or cond(setting('silverRupeePouches', type), has(pouch), has(rupee, count))
+		return setting('magicalRupee') and has('RUPEE_MAGICAL') or (setting('SilverRupeeShuffle', 'false') or cond(setting('silverRupeePouches', type), has(pouch), has(rupee, count)))
 	end
 
-	function silver_rupees_ganon_light()
-		return silver_rupees('Ganon_Light', 'RUPEE_SILVER_GANON_LIGHT', 'POUCH_SILVER_GANON_LIGHT', 5)
+	function silver_rupees_ganon_light(n)
+		return silver_rupees('Ganon_Light', 'RUPEE_SILVER_GANON_LIGHT', 'POUCH_SILVER_GANON_LIGHT', n)
 	end
 
-	function silver_rupees_ganon_forest()
-		return silver_rupees('Ganon_Forest', 'RUPEE_SILVER_GANON_FOREST', 'POUCH_SILVER_GANON_FOREST', 5)
+	function silver_rupees_ganon_forest(n)
+		return silver_rupees('Ganon_Forest', 'RUPEE_SILVER_GANON_FOREST', 'POUCH_SILVER_GANON_FOREST', n)
 	end
 
-	function silver_rupees_ganon_fire()
-		return silver_rupees('Ganon_Fire', 'RUPEE_SILVER_GANON_FIRE', 'POUCH_SILVER_GANON_FIRE', 5)
+	function silver_rupees_ganon_fire(n)
+		return silver_rupees('Ganon_Fire', 'RUPEE_SILVER_GANON_FIRE', 'POUCH_SILVER_GANON_FIRE', n)
 	end
 
-	function silver_rupees_ganon_spirit()
-		return silver_rupees('Ganon_Spirit', 'RUPEE_SILVER_GANON_SPIRIT', 'POUCH_SILVER_GANON_SPIRIT', 5)
+	function silver_rupees_ganon_spirit(n)
+		return silver_rupees('Ganon_Spirit', 'RUPEE_SILVER_GANON_SPIRIT', 'POUCH_SILVER_GANON_SPIRIT', n)
 	end
 
-	function silver_rupees_ganon_water()
-		return silver_rupees('Ganon_Water', 'RUPEE_SILVER_GANON_WATER', 'POUCH_SILVER_GANON_WATER', 5)
+    function silver_rupees_ganon_fire_mq(n)
+		return silver_rupees('Ganon_Fire', 'RUPEE_SILVER_GANON_FIRE_MQ', 'POUCH_SILVER_GANON_FIRE', n)
 	end
 
-	function silver_rupees_ganon_shadow()
-		return silver_rupees('Ganon_Shadow', 'RUPEE_SILVER_GANON_SHADOW', 'POUCH_SILVER_GANON_SHADOW', 5)
+	function silver_rupees_ganon_water(n)
+		return silver_rupees('Ganon_Water', 'RUPEE_SILVER_GANON_WATER', 'POUCH_SILVER_GANON_WATER', n)
 	end
 
-	function silver_rupees_gtg_slopes()
-		return silver_rupees('GTG_Slopes', 'RUPEE_SILVER_GTG_SLOPES', 'POUCH_SILVER_GTG_SLOPES', 5)
+	function silver_rupees_ganon_shadow(n)
+		return silver_rupees('Ganon_Shadow', 'RUPEE_SILVER_GANON_SHADOW', 'POUCH_SILVER_GANON_SHADOW', n)
 	end
 
-	function silver_rupees_gtg_lava()
-		return silver_rupees('GTG_Lava', 'RUPEE_SILVER_GTG_LAVA', 'POUCH_SILVER_GTG_LAVA', 5)
+	function silver_rupees_gtg_slopes(n)
+		return silver_rupees('GTG_Slopes', 'RUPEE_SILVER_GTG_SLOPES', 'POUCH_SILVER_GTG_SLOPES', n)
 	end
 
-	function silver_rupees_gtg_water()
-		return silver_rupees('GTG_Water', 'RUPEE_SILVER_GTG_WATER', 'POUCH_SILVER_GTG_WATER', 5)
+	function silver_rupees_gtg_lava(n)
+		return silver_rupees('GTG_Lava', 'RUPEE_SILVER_GTG_LAVA', 'POUCH_SILVER_GTG_LAVA', n)
 	end
 
-	function silver_rupees_gtg_lava_mq()
-		return silver_rupees('GTG_Lava', 'RUPEE_SILVER_GTG_LAVA', 'POUCH_SILVER_GTG_LAVA', 6)
+	function silver_rupees_gtg_water(n)
+		return silver_rupees('GTG_Water', 'RUPEE_SILVER_GTG_WATER', 'POUCH_SILVER_GTG_WATER', n)
 	end
 
-	function silver_rupees_gtg_water_mq()
-		return silver_rupees('GTG_Water', 'RUPEE_SILVER_GTG_WATER', 'POUCH_SILVER_GTG_WATER', 3)
+    function silver_rupees_gtg_slopes_mq(n)
+		return silver_rupees('GTG_Slopes', 'RUPEE_SILVER_GTG_SLOPES_MQ', 'POUCH_SILVER_GTG_SLOPES', n)
 	end
 
-	function silver_rupees_ic_scythe()
-		return silver_rupees('IC_Scythe', 'RUPEE_SILVER_IC_SCYTHE', 'POUCH_SILVER_IC_SCYTHE', 5)
+	function silver_rupees_gtg_lava_mq(n)
+		return silver_rupees('GTG_Lava', 'RUPEE_SILVER_GTG_LAVA_MQ', 'POUCH_SILVER_GTG_LAVA', n)
 	end
 
-	function silver_rupees_ic_block()
-		return silver_rupees('IC_Block', 'RUPEE_SILVER_IC_BLOCK', 'POUCH_SILVER_IC_BLOCK', 5)
+	function silver_rupees_gtg_water_mq(n)
+		return silver_rupees('GTG_Water', 'RUPEE_SILVER_GTG_WATER_MQ', 'POUCH_SILVER_GTG_WATER', n)
 	end
 
-	function silver_rupees_shadow_scythe()
-		return silver_rupees('Shadow_Scythe', 'RUPEE_SILVER_SHADOW_SCYTHE', 'POUCH_SILVER_SHADOW_SCYTHE', 5)
+	function silver_rupees_ic_scythe(n)
+		return silver_rupees('IC_Scythe', 'RUPEE_SILVER_IC_SCYTHE', 'POUCH_SILVER_IC_SCYTHE', n)
 	end
 
-	function silver_rupees_shadow_pit()
-		return silver_rupees('Shadow_Pit', 'RUPEE_SILVER_SHADOW_PIT', 'POUCH_SILVER_SHADOW_PIT', 5)
+	function silver_rupees_ic_block(n)
+		return silver_rupees('IC_Block', 'RUPEE_SILVER_IC_BLOCK', 'POUCH_SILVER_IC_BLOCK', n)
 	end
 
-	function silver_rupees_shadow_spikes()
-		return silver_rupees('Shadow_Spikes', 'RUPEE_SILVER_SHADOW_SPIKES', 'POUCH_SILVER_SHADOW_SPIKES', 5)
+	function silver_rupees_shadow_scythe(n)
+		return silver_rupees('Shadow_Scythe', 'RUPEE_SILVER_SHADOW_SCYTHE', 'POUCH_SILVER_SHADOW_SCYTHE', n)
 	end
 
-	function silver_rupees_shadow_blades()
-		return silver_rupees('Shadow_Blades', 'RUPEE_SILVER_SHADOW_BLADES', 'POUCH_SILVER_SHADOW_BLADES', 10)
+	function silver_rupees_shadow_pit(n)
+		return silver_rupees('Shadow_Pit', 'RUPEE_SILVER_SHADOW_PIT', 'POUCH_SILVER_SHADOW_PIT', n)
+	end  
+
+	function silver_rupees_shadow_spikes(n)
+		return silver_rupees('Shadow_Spikes', 'RUPEE_SILVER_SHADOW_SPIKES', 'POUCH_SILVER_SHADOW_SPIKES', n)
 	end
 
-	function silver_rupees_shadow_spikes_mq()
-		return silver_rupees('Shadow_Spikes', 'RUPEE_SILVER_SHADOW_SPIKES', 'POUCH_SILVER_SHADOW_SPIKES', 10)
+	function silver_rupees_shadow_blades(n)
+		return silver_rupees('Shadow_Blades', 'RUPEE_SILVER_SHADOW_BLADES', 'POUCH_SILVER_SHADOW_BLADES', n)
 	end
 
-	function silver_rupees_dc()
-		return silver_rupees('DC', 'RUPEE_SILVER_DC', 'POUCH_SILVER_DC', 5)
+    function silver_rupees_shadow_scythe_mq(n)
+		return silver_rupees('Shadow_Scythe', 'RUPEE_SILVER_SHADOW_SCYTHE_MQ', 'POUCH_SILVER_SHADOW_SCYTHE', n)
 	end
 
-	function silver_rupees_spirit_child()
-		return silver_rupees('Spirit_Child', 'RUPEE_SILVER_SPIRIT_CHILD', 'POUCH_SILVER_SPIRIT_CHILD', 5)
+    function silver_rupees_shadow_pit_mq(n)
+		return silver_rupees('Shadow_Pit', 'RUPEE_SILVER_SHADOW_PIT_MQ', 'POUCH_SILVER_SHADOW_PIT', n)
 	end
 
-	function silver_rupees_spirit_sun()
-		return silver_rupees('Spirit_Sun', 'RUPEE_SILVER_SPIRIT_SUN', 'POUCH_SILVER_SPIRIT_SUN', 5)
+	function silver_rupees_shadow_spikes_mq(n)
+		return silver_rupees('Shadow_Spikes', 'RUPEE_SILVER_SHADOW_SPIKES_MQ', 'POUCH_SILVER_SHADOW_SPIKES', n)
 	end
 
-	function silver_rupees_spirit_boulders()
-		return silver_rupees('Spirit_Boulders', 'RUPEE_SILVER_SPIRIT_BOULDERS', 'POUCH_SILVER_SPIRIT_BOULDERS', 5)
+	function silver_rupees_dc(n)
+		return silver_rupees('DC', 'RUPEE_SILVER_DC', 'POUCH_SILVER_DC', n)
 	end
 
-	function silver_rupees_spirit_lobby()
-		return silver_rupees('Spirit_Lobby', 'RUPEE_SILVER_SPIRIT_LOBBY', 'POUCH_SILVER_SPIRIT_LOBBY', 5)
+	function silver_rupees_spirit_child(n)
+		return silver_rupees('Spirit_Child', 'RUPEE_SILVER_SPIRIT_CHILD', 'POUCH_SILVER_SPIRIT_CHILD', n)
 	end
 
-	function silver_rupees_spirit_adult()
-		return silver_rupees('Spirit_Adult', 'RUPEE_SILVER_SPIRIT_ADULT', 'POUCH_SILVER_SPIRIT_ADULT', 5)
+	function silver_rupees_spirit_sun(n)
+		return silver_rupees('Spirit_Sun', 'RUPEE_SILVER_SPIRIT_SUN', 'POUCH_SILVER_SPIRIT_SUN', n)
+	end
+
+	function silver_rupees_spirit_boulders(n)        
+		return silver_rupees('Spirit_Boulders', 'RUPEE_SILVER_SPIRIT_BOULDERS', 'POUCH_SILVER_SPIRIT_BOULDERS', n)
+	end
+
+	function silver_rupees_spirit_lobby(n)
+		return silver_rupees('Spirit_Lobby', 'RUPEE_SILVER_SPIRIT_LOBBY', 'POUCH_SILVER_SPIRIT_LOBBY', n)
+	end
+
+	function silver_rupees_spirit_adult(n)
+		return silver_rupees('Spirit_Adult', 'RUPEE_SILVER_SPIRIT_ADULT', 'POUCH_SILVER_SPIRIT_ADULT', n)
 	end
 
 	function has_mask_keaton()
@@ -2425,6 +2467,10 @@ function _oot_logic()
 
 	function soul_misc(x)
 		return not setting('soulsMiscOot') or has(x)
+	end
+
+    function soul_animals(x)
+		return not setting('soulsAnimalsOot') or has(x)
 	end
 
 	function climb_anywhere()
@@ -3421,7 +3467,7 @@ function _oot_logic()
     },
     ["Forest Temple Poe 1"] = {
         ["events"] = {
-            ["FOREST_POE_1"] = function () return can_use_bow() end,
+            ["FOREST_POE_1"] = function () return can_use_bow() and soul_poe() end,
         },
         ["exits"] = {
             ["Forest Temple Mini-Boss 2"] = function () return true end,
@@ -3446,7 +3492,7 @@ function _oot_logic()
     },
     ["Forest Temple Poe 2"] = {
         ["events"] = {
-            ["FOREST_POE_2"] = function () return can_use_bow() end,
+            ["FOREST_POE_2"] = function () return can_use_bow() and soul_poe() end,
         },
         ["exits"] = {
             ["Forest Temple Twisted 2 Normal"] = function () return small_keys_forest(4) end,
@@ -3497,7 +3543,7 @@ function _oot_logic()
     },
     ["Forest Temple Poe 3"] = {
         ["events"] = {
-            ["FOREST_POE_3"] = function () return can_use_bow() end,
+            ["FOREST_POE_3"] = function () return can_use_bow() and soul_poe() end,
         },
         ["exits"] = {
             ["Forest Temple Checkerboard"] = function () return true end,
@@ -3579,7 +3625,7 @@ function _oot_logic()
     },
     ["Ganon Castle Light 2"] = {
         ["exits"] = {
-            ["Ganon Castle Light End"] = function () return silver_rupees_ganon_light() and has_lens() end,
+            ["Ganon Castle Light End"] = function () return silver_rupees_ganon_light(5) and has_lens() end,
         },
         ["locations"] = {
             ["Ganon Castle SR Light Alcove Right"] = function () return true end,
@@ -3615,7 +3661,7 @@ function _oot_logic()
     },
     ["Ganon Castle Forest 2"] = {
         ["exits"] = {
-            ["Ganon Castle Forest End"] = function () return silver_rupees_ganon_forest() end,
+            ["Ganon Castle Forest End"] = function () return silver_rupees_ganon_forest(5) end,
         },
         ["locations"] = {
             ["Ganon Castle SR Forest Center Right"] = function () return true end,
@@ -3638,7 +3684,7 @@ function _oot_logic()
     },
     ["Ganon Castle Fire"] = {
         ["exits"] = {
-            ["Ganon Castle Fire End"] = function () return silver_rupees_ganon_fire() and has_tunic_goron_strict() and (can_longshot() or climb_anywhere()) end,
+            ["Ganon Castle Fire End"] = function () return silver_rupees_ganon_fire(5) and has_tunic_goron_strict() and (can_longshot() or climb_anywhere()) end,
         },
         ["locations"] = {
             ["Ganon Castle SR Fire Back Right"] = function () return has_tunic_goron() end,
@@ -3708,7 +3754,7 @@ function _oot_logic()
     },
     ["Ganon Castle Spirit"] = {
         ["exits"] = {
-            ["Ganon Castle Spirit 2"] = function () return silver_rupees_ganon_spirit() end,
+            ["Ganon Castle Spirit 2"] = function () return silver_rupees_ganon_spirit(5) end,
         },
         ["locations"] = {
             ["Ganon Castle SR Spirit Center Midair"] = function () return can_hookshot() end,
@@ -4117,7 +4163,7 @@ function _oot_logic()
     ["Gerudo Training Grounds Slopes End"] = {
         ["exits"] = {
             ["Gerudo Training Grounds Slopes"] = function () return can_hookshot() or climb_anywhere() end,
-            ["Gerudo Training Grounds Left Side"] = function () return silver_rupees_gtg_slopes() end,
+            ["Gerudo Training Grounds Left Side"] = function () return silver_rupees_gtg_slopes(5) end,
         },
         ["age_change"] = true,
     },
@@ -4168,7 +4214,7 @@ function _oot_logic()
         ["exits"] = {
             ["Gerudo Training Grounds Maze Side"] = function () return can_play_time() or is_child() or climb_anywhere() or hookshot_anywhere() end,
             ["Gerudo Training Grounds Hammer"] = function () return can_hookshot() and (can_longshot() or has_hover_boots() or can_play_time() or hookshot_anywhere() or is_child()) or climb_anywhere() end,
-            ["Gerudo Training Grounds Water"] = function () return silver_rupees_gtg_lava() end,
+            ["Gerudo Training Grounds Water"] = function () return silver_rupees_gtg_lava(5) end,
         },
         ["locations"] = {
             ["Gerudo Training Grounds SR Lava Front Left"] = function () return true end,
@@ -4198,7 +4244,7 @@ function _oot_logic()
             ["Gerudo Training Grounds Underwater"] = function () return can_play_time() and has_iron_boots() and has_tunic_zora() end,
         },
         ["locations"] = {
-            ["Gerudo Training Water"] = function () return silver_rupees_gtg_water() end,
+            ["Gerudo Training Water"] = function () return silver_rupees_gtg_water(5) end,
         },
         ["age_change"] = true,
     },
@@ -4274,7 +4320,7 @@ function _oot_logic()
         ["exits"] = {
             ["Ice Cavern HP Room"] = function () return has_blue_fire() end,
             ["Ice Cavern Block Room"] = function () return has_blue_fire() end,
-            ["Ice Cavern First Fire Room"] = function () return (is_adult() or climb_anywhere() or hookshot_anywhere()) and silver_rupees_ic_scythe() end,
+            ["Ice Cavern First Fire Room"] = function () return (is_adult() or climb_anywhere() or hookshot_anywhere()) and silver_rupees_ic_scythe(5) end,
         },
         ["locations"] = {
             ["Ice Cavern GS Scythe Room"] = function () return gs() and (can_collect_distance() or (climb_anywhere() and (can_use_sword() or can_use_sticks() or has_ranged_weapon() or has_explosives() or can_use_din()))) end,
@@ -4349,7 +4395,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Ice Cavern Scythe"] = function () return true end,
-            ["Ice Cavern End"] = function () return silver_rupees_ic_block() end,
+            ["Ice Cavern End"] = function () return silver_rupees_ic_block(5) end,
         },
         ["locations"] = {
             ["Ice Cavern GS Block Room"] = function () return gs() and (can_collect_distance() or (climb_anywhere() and (has_ranged_weapon() or has_explosives() or can_use_din()))) end,
@@ -4358,8 +4404,8 @@ function _oot_logic()
             ["Ice Cavern SR Blocks Center"] = function () return true end,
             ["Ice Cavern SR Blocks Alcove"] = function () return has_blue_fire() end,
             ["Ice Cavern SR Blocks Front Left"] = function () return true end,
-            ["Ice Cavern Pot Red Ice 1"] = function () return silver_rupees_ic_block() end,
-            ["Ice Cavern Pot Red Ice 2"] = function () return silver_rupees_ic_block() end,
+            ["Ice Cavern Pot Red Ice 1"] = function () return silver_rupees_ic_block(5) end,
+            ["Ice Cavern Pot Red Ice 2"] = function () return silver_rupees_ic_block(5) end,
             ["Ice Cavern Rupee Midair 1"] = function () return can_play_time() end,
             ["Ice Cavern Rupee Midair 2"] = function () return can_play_time() end,
             ["Ice Cavern Rupee Midair 3"] = function () return can_play_time() end,
@@ -4684,7 +4730,9 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Kokiri Forest GS Soil"] = function () return gs_soil() and can_damage_skull() end,
+            ["Kokiri Forest Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
             ["Kokiri Forest GS Night Adult"] = function () return is_adult() and (can_collect_distance() or (climb_anywhere() and can_damage_skull())) and gs_night() end,
+            ["Kokiri Forest Rock Circle"] = function () return true end,
         },
         ["age_change"] = true,
     },
@@ -4711,6 +4759,7 @@ function _oot_logic()
             ["Kokiri Forest Wonder Item Platforms 1"] = function () return true end,
             ["Kokiri Forest Wonder Item Platforms 2"] = function () return true end,
             ["Kokiri Forest Wonder Item Sign"] = function () return can_use_sword() end,
+            ["Kokiri Forest Child Rocks"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4862,15 +4911,16 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Kokiri Forest Storms Grotto"] = function () return true end,
+            ["Kokiri Forest Storms Grotto Big Fairy"] = function () return true end,
             ["Kokiri Forest Storms Grotto Grass 1"] = function () return can_cut_grass() end,
             ["Kokiri Forest Storms Grotto Grass 2"] = function () return can_cut_grass() end,
             ["Kokiri Forest Storms Grotto Grass 3"] = function () return can_cut_grass() end,
             ["Kokiri Forest Storms Grotto Grass 4"] = function () return can_cut_grass() end,
             ["Kokiri Forest Storms Grotto Hive 1"] = function () return break_hive_low() end,
             ["Kokiri Forest Storms Grotto Hive 2"] = function () return break_hive_low() end,
-            ["Kokiri Forest Storms Grotto Butterfly 1"] = function () return can_use_sticks() end,
-            ["Kokiri Forest Storms Grotto Butterfly 2"] = function () return can_use_sticks() end,
-            ["Kokiri Forest Storms Grotto Butterfly 3"] = function () return can_use_sticks() end,
+            ["Kokiri Forest Storms Grotto Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Kokiri Forest Storms Grotto Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Kokiri Forest Storms Grotto Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -4903,6 +4953,7 @@ function _oot_logic()
             ["Hyrule Field Red Boulders"] = function () return is_adult() and can_hammer() end,
         },
         ["locations"] = {
+            ["Hyrule Field Rocks"] = function () return true end,
             ["Hyrule Field Ocarina of Time"] = function () return is_child() and has_spiritual_stones() and soul_npc(SOUL_NPC_ZELDA) and can_swim_or_sink() end,
             ["Hyrule Field Song of Time"] = function () return is_child() and has_spiritual_stones() and soul_npc(SOUL_NPC_ZELDA) and can_swim_or_sink() end,
             ["Hyrule Field Sell Bunny Mask"] = function () return is_child() and has_spiritual_stones() and has_mask_bunny() and soul_citizen() end,
@@ -4910,6 +4961,11 @@ function _oot_logic()
             ["Hyrule Field Wonder Item 1"] = function () return is_child() end,
             ["Hyrule Field Wonder Item 2"] = function () return is_child() end,
             ["Hyrule Field Wonder Item 3"] = function () return is_child() end,
+            ["Hyrule Field Trees"] = function () return true end,
+            ["Hyrule Field Bushes"] = function () return true end,
+            ["Hyrule Field Child Bushes"] = function () return is_child() end,
+            ["Hyrule Field Child Trees"] = function () return is_child() end,
+            ["Hyrule Field Adult Tree"] = function () return is_adult() end,
         },
         ["age_change"] = true,
     },
@@ -5005,9 +5061,9 @@ function _oot_logic()
             ["Hyrule Field Grotto Open Grass 4"] = function () return can_cut_grass() end,
             ["Hyrule Field Grotto Open Hive 1"] = function () return break_hive_low() end,
             ["Hyrule Field Grotto Open Hive 2"] = function () return break_hive_low() end,
-            ["Hyrule Field Grotto Open Butterfly 1"] = function () return can_use_sticks() end,
-            ["Hyrule Field Grotto Open Butterfly 2"] = function () return can_use_sticks() end,
-            ["Hyrule Field Grotto Open Butterfly 3"] = function () return can_use_sticks() end,
+            ["Hyrule Field Grotto Open Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Field Grotto Open Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Field Grotto Open Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -5024,9 +5080,9 @@ function _oot_logic()
             ["Hyrule Field Grotto Southeast Grass 4"] = function () return can_cut_grass() end,
             ["Hyrule Field Grotto Southeast Hive 1"] = function () return break_hive_low() end,
             ["Hyrule Field Grotto Southeast Hive 2"] = function () return break_hive_low() end,
-            ["Hyrule Field Grotto Southeast Butterfly 1"] = function () return can_use_sticks() end,
-            ["Hyrule Field Grotto Southeast Butterfly 2"] = function () return can_use_sticks() end,
-            ["Hyrule Field Grotto Southeast Butterfly 3"] = function () return can_use_sticks() end,
+            ["Hyrule Field Grotto Southeast Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Field Grotto Southeast Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Field Grotto Southeast Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -5043,9 +5099,9 @@ function _oot_logic()
             ["Hyrule Field Grotto Market Grass 4"] = function () return can_cut_grass() end,
             ["Hyrule Field Grotto Market Hive 1"] = function () return break_hive_low() end,
             ["Hyrule Field Grotto Market Hive 2"] = function () return break_hive_low() end,
-            ["Hyrule Field Grotto Market Butterfly 1"] = function () return can_use_sticks() end,
-            ["Hyrule Field Grotto Market Butterfly 2"] = function () return can_use_sticks() end,
-            ["Hyrule Field Grotto Market Butterfly 3"] = function () return can_use_sticks() end,
+            ["Hyrule Field Grotto Market Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Field Grotto Market Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Field Grotto Market Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -5154,6 +5210,7 @@ function _oot_logic()
     },
     ["Market Grass"] = {
         ["locations"] = {
+            ["Market Tree"] = function () return true end,
             ["Market Grass 1"] = function () return true end,
             ["Market Grass 2"] = function () return true end,
             ["Market Grass 3"] = function () return true end,
@@ -5335,7 +5392,7 @@ function _oot_logic()
             ["Back Alley"] = function () return true end,
         },
         ["locations"] = {
-            ["Market Dog Lady HP"] = function () return event('RICHARD') and is_night() and soul_dog_lady() end,
+            ["Market Dog Lady HP"] = function () return event('RICHARD') and is_night() and soul_dog_lady() and soul_dog() end,
             ["Market Dog Lady Crate"] = function () return true end,
         },
         ["age_change"] = true,
@@ -5428,8 +5485,8 @@ function _oot_logic()
             ["Lon Lon Ranch"] = function () return true end,
         },
         ["locations"] = {
-            ["Lon Lon Ranch Stables Cow Left"] = function () return can_play_epona() end,
-            ["Lon Lon Ranch Stables Cow Right"] = function () return can_play_epona() end,
+            ["Lon Lon Ranch Stables Cow Left"] = function () return can_play_epona() and soul_cow() end,
+            ["Lon Lon Ranch Stables Cow Right"] = function () return can_play_epona() and soul_cow() end,
         },
         ["age_change"] = true,
     },
@@ -5439,8 +5496,8 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Lon Lon Ranch Silo HP"] = function () return is_child() end,
-            ["Lon Lon Ranch Silo Cow Front"] = function () return can_play_epona() end,
-            ["Lon Lon Ranch Silo Cow Back"] = function () return can_play_epona() end,
+            ["Lon Lon Ranch Silo Cow Front"] = function () return can_play_epona() and soul_cow() end,
+            ["Lon Lon Ranch Silo Cow Back"] = function () return can_play_epona() and soul_cow() end,
         },
         ["age_change"] = true,
     },
@@ -5488,6 +5545,7 @@ function _oot_logic()
         ["locations"] = {
             ["Malon Egg"] = function () return event('MALON') end,
             ["Hyrule Castle GS Tree"] = function () return gs() and can_damage_skull() end,
+            ["Hyrule Castle Rocks"] = function () return true end,
             ["Hyrule Castle Grass 1"] = function () return can_cut_grass() end,
             ["Hyrule Castle Grass 2"] = function () return can_cut_grass() end,
             ["Hyrule Castle Pot 1"] = function () return true end,
@@ -5504,18 +5562,19 @@ function _oot_logic()
             ["Hyrule Castle Wonder Item Moat 08"] = function () return can_swim_or_sink() end,
             ["Hyrule Castle Wonder Item Moat 09"] = function () return can_swim_or_sink() end,
             ["Hyrule Castle Wonder Item Moat 10"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Butterfly Pack 1 Butterfly 1"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 1 Butterfly 2"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 2 Butterfly 1"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 2 Butterfly 2"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 3 Butterfly 1"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 3 Butterfly 2"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 3 Butterfly 3"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 4 Butterfly 1"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 4 Butterfly 2"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 4 Butterfly 3"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 4 Butterfly 4"] = function () return can_use_sticks() end,
-            ["Hyrule Castle Butterfly Pack 4 Butterfly 5"] = function () return can_use_sticks() end,
+            ["Hyrule Castle Butterfly Pack 1 Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 1 Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 2 Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 2 Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 3 Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 3 Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 3 Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 4 Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 4 Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 4 Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 4 Butterfly 4"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Butterfly Pack 4 Butterfly 5"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Hyrule Castle Trees"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5579,6 +5638,7 @@ function _oot_logic()
             ["Hyrule Castle Grotto Pot 2"] = function () return has_explosives_or_hammer() end,
             ["Hyrule Castle Grotto Pot 3"] = function () return has_explosives_or_hammer() end,
             ["Hyrule Castle Grotto Pot 4"] = function () return has_explosives_or_hammer() end,
+            ["Hyrule Castle Grotto Rocks"] = function () return has_explosives_or_hammer() end,
         },
         ["age_change"] = false,
     },
@@ -5692,6 +5752,7 @@ function _oot_logic()
             ["Lost Woods Odd Mushroom"] = function () return soul_grog() and adult_trade(COJIRO) end,
             ["Lost Woods Poacher's Saw"] = function () return adult_trade(ODD_POTION) and soul_npc(SOUL_NPC_KOKIRI) end,
             ["Lost Woods GS Soil Bridge"] = function () return gs_soil() and can_damage_skull() end,
+            ["Lost Woods Bridge Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
             ["Lost Woods Grass 1"] = function () return can_cut_grass() end,
             ["Lost Woods Grass 2"] = function () return can_cut_grass() end,
             ["Lost Woods Grass 3"] = function () return can_cut_grass() end,
@@ -5728,9 +5789,9 @@ function _oot_logic()
             ["Lost Woods Grotto Generic Grass 4"] = function () return can_cut_grass() end,
             ["Lost Woods Grotto Generic Hive 1"] = function () return break_hive_low() end,
             ["Lost Woods Grotto Generic Hive 2"] = function () return break_hive_low() end,
-            ["Lost Woods Grotto Generic Butterfly 1"] = function () return can_use_sticks() end,
-            ["Lost Woods Grotto Generic Butterfly 2"] = function () return can_use_sticks() end,
-            ["Lost Woods Grotto Generic Butterfly 3"] = function () return can_use_sticks() end,
+            ["Lost Woods Grotto Generic Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Lost Woods Grotto Generic Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Lost Woods Grotto Generic Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -5776,6 +5837,7 @@ function _oot_logic()
             ["Lost Woods Scrub Near Theater Left"] = function () return is_child() and business_scrub(1) end,
             ["Lost Woods Scrub Near Theater Right"] = function () return is_child() and business_scrub(2) end,
             ["Lost Woods GS Soil Theater"] = function () return gs_soil() and can_damage_skull() end,
+            ["Lost Woods Theatre Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
             ["Lost Woods GS Bean Ride"] = function () return is_adult() and gs_night() and ((can_ride_bean(BEAN_LOST_WOODS_LATE) or climb_anywhere()) and can_damage_skull() or hookshot_anywhere() or (trick('OOT_LOST_WOODS_ADULT_GS') and can_collect_distance() and (can_longshot() or can_use_bow() or has_bombchu() or can_use_din()))) end,
             ["Lost Woods Grass Deep 1"] = function () return can_cut_grass() end,
             ["Lost Woods Grass Deep 2"] = function () return can_cut_grass() end,
@@ -5784,11 +5846,11 @@ function _oot_logic()
             ["Lost Woods Grass Deep 5"] = function () return can_cut_grass() end,
             ["Lost Woods Grass Deep 6"] = function () return can_cut_grass() end,
             ["Lost Woods Rupee Boulder"] = function () return has_explosives_or_hammer() end,
-            ["Lost Woods Butterfly 1"] = function () return is_child() and can_use_sticks() end,
-            ["Lost Woods Butterfly 2"] = function () return is_child() and can_use_sticks() end,
-            ["Lost Woods Butterfly 3"] = function () return is_child() and can_use_sticks() end,
-            ["Lost Woods Butterfly 4"] = function () return is_child() and can_use_sticks() end,
-            ["Lost Woods Butterfly 5"] = function () return is_child() and can_use_sticks() end,
+            ["Lost Woods Butterfly 1"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Lost Woods Butterfly 2"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Lost Woods Butterfly 3"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Lost Woods Butterfly 4"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Lost Woods Butterfly 5"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = true,
     },
@@ -5911,7 +5973,7 @@ function _oot_logic()
             ["ReDead Grotto"] = function () return hidden_grotto_bomb() end,
         },
         ["locations"] = {
-            ["Kakariko Anju Bottle"] = function () return is_child() and is_day() and soul_anju() end,
+            ["Kakariko Anju Bottle"] = function () return is_child() and is_day() and soul_anju() and soul_cucco() end,
             ["Kakariko Anju Egg"] = function () return is_adult() and is_day() and soul_anju() end,
             ["Kakariko Anju Cojiro"] = function () return event('TALON_AWAKE') and is_day() and soul_anju() end,
             ["Kakariko Song Shadow"] = function () return is_adult() and soul_npc(SOUL_NPC_SHEIK) and has('MEDALLION_FOREST') and has('MEDALLION_FIRE') and has('MEDALLION_WATER') end,
@@ -5953,9 +6015,10 @@ function _oot_logic()
             ["Kakariko Grass 6"] = function () return can_cut_grass() end,
             ["Kakariko Grass 7"] = function () return can_cut_grass() end,
             ["Kakariko Grass 8"] = function () return can_cut_grass() end,
+            ["Kakariko Rocks"] = function () return true end,
             ["Kakariko Wonder Item"] = function () return is_child() end,
-            ["Kakariko Butterfly 1"] = function () return is_day() and is_child() and can_use_sticks() end,
-            ["Kakariko Butterfly 2"] = function () return is_day() and is_child() and can_use_sticks() end,
+            ["Kakariko Butterfly 1"] = function () return is_day() and is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Kakariko Butterfly 2"] = function () return is_day() and is_child() and can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = true,
     },
@@ -6079,7 +6142,7 @@ function _oot_logic()
             ["Kakariko"] = function () return true end,
         },
         ["locations"] = {
-            ["Kakariko Cow"] = function () return can_play_epona() end,
+            ["Kakariko Cow"] = function () return can_play_epona() and soul_cow() end,
             ["Kakariko Impa House Wonder Item"] = function () return true end,
         },
         ["age_change"] = true,
@@ -6089,7 +6152,7 @@ function _oot_logic()
             ["Kakariko Balcony"] = function () return true end,
         },
         ["locations"] = {
-            ["Kakariko Cow"] = function () return can_play_epona() end,
+            ["Kakariko Cow"] = function () return can_play_epona() and soul_cow() end,
             ["Kakariko Impa House HP"] = function () return true end,
         },
         ["age_change"] = true,
@@ -6159,9 +6222,9 @@ function _oot_logic()
             ["Kakariko Grotto Back Grass 4"] = function () return can_cut_grass() end,
             ["Kakariko Grotto Back Hive 1"] = function () return break_hive_low() end,
             ["Kakariko Grotto Back Hive 2"] = function () return break_hive_low() end,
-            ["Kakariko Grotto Butterfly 1"] = function () return can_use_sticks() end,
-            ["Kakariko Grotto Butterfly 2"] = function () return can_use_sticks() end,
-            ["Kakariko Grotto Butterfly 3"] = function () return can_use_sticks() end,
+            ["Kakariko Grotto Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Kakariko Grotto Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Kakariko Grotto Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -6190,6 +6253,7 @@ function _oot_logic()
             ["Graveyard Crate HP"] = function () return can_ride_bean(BEAN_GRAVEYARD) or can_longshot() or climb_anywhere() or hookshot_anywhere() end,
             ["Graveyard Crate"] = function () return can_ride_bean(BEAN_GRAVEYARD) or can_longshot() or climb_anywhere() or hookshot_anywhere() end,
             ["Graveyard GS Soil"] = function () return gs_soil() and can_damage_skull() end,
+            ["Graveyard Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
             ["Graveyard GS Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_ranged_weapon() or has_explosives() or can_use_din()))) end,
             ["Graveyard Grass 01"] = function () return can_cut_grass() end,
             ["Graveyard Grass 02"] = function () return can_cut_grass() end,
@@ -6203,9 +6267,9 @@ function _oot_logic()
             ["Graveyard Grass 10"] = function () return can_cut_grass() end,
             ["Graveyard Grass 11"] = function () return can_cut_grass() end,
             ["Graveyard Grass 12"] = function () return can_cut_grass() end,
-            ["Graveyard Butterfly 1"] = function () return is_child() and can_use_sticks() end,
-            ["Graveyard Butterfly 2"] = function () return is_child() and can_use_sticks() end,
-            ["Graveyard Butterfly 3"] = function () return is_child() and can_use_sticks() end,
+            ["Graveyard Butterfly 1"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Graveyard Butterfly 2"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Graveyard Butterfly 3"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = true,
     },
@@ -6332,8 +6396,10 @@ function _oot_logic()
         ["locations"] = {
             ["Death Mountain Trail Chest"] = function () return has_explosives_or_hammer() end,
             ["Death Mountain Trail HP"] = function () return true end,
+            ["Death Mountain Trail Lower Rocks"] = function () return true end,
             ["Death Mountain Trail GS Entrance"] = function () return gs() and (has_explosives() or (can_hammer() and (can_use_sticks() or can_use_sword_master() or can_use_sword_gilded() or (age_sword_adult() and has('SWORD_BIGGORON')) or has_ranged_weapon() or can_use_din()))) end,
             ["Death Mountain Trail GS Soil"] = function () return gs_soil() and has_bombflowers() and can_damage_skull() end,
+            ["Death Mountain Trail Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
             ["Death Mountain Trail GS Above Dodongo"] = function () return gs_night() and is_adult() and (can_hammer() or (trick('OOT_DMT_RED_ROCK_GS') and can_use_sword())) end,
             ["Death Mountain Trail Rupee Upper"] = function () return is_child() and event('BOULDER_DEATH_MOUNTAIN') end,
             ["Death Mountain Trail Rupee Lower"] = function () return is_child() and has_explosives_or_hammer() end,
@@ -6367,6 +6433,7 @@ function _oot_logic()
             ["Death Mountain Trail Claim Check"] = function () return adult_trade(EYE_DROPS) and soul_biggoron() end,
             ["Death Mountain Trail Biggoron Sword"] = function () return adult_trade(CLAIM_CHECK) and soul_biggoron() end,
             ["Death Mountain Trail GS Before Climb"] = function () return is_adult() and gs_night() and (can_hammer() or (trick('OOT_DMT_RED_ROCK_GS') and can_use_sword())) end,
+            ["Death Mountain Trail Rock Upper"] = function () return is_child() end,
         },
         ["age_change"] = true,
     },
@@ -6391,9 +6458,9 @@ function _oot_logic()
             ["Death Mountain Trail Grotto Grass 4"] = function () return can_cut_grass() end,
             ["Death Mountain Trail Grotto Hive 1"] = function () return break_hive_low() end,
             ["Death Mountain Trail Grotto Hive 2"] = function () return break_hive_low() end,
-            ["Death Mountain Trail Grotto Butterfly 1"] = function () return can_use_sticks() end,
-            ["Death Mountain Trail Grotto Butterfly 2"] = function () return can_use_sticks() end,
-            ["Death Mountain Trail Grotto Butterfly 3"] = function () return can_use_sticks() end,
+            ["Death Mountain Trail Grotto Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Death Mountain Trail Grotto Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Death Mountain Trail Grotto Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -6405,7 +6472,7 @@ function _oot_logic()
             ["Death Mountain"] = function () return true end,
         },
         ["locations"] = {
-            ["Death Mountain Trail Cow"] = function () return can_play_epona() end,
+            ["Death Mountain Trail Cow"] = function () return can_play_epona() and soul_cow() end,
             ["Death Mountain Trail Cow Grotto Grass 1"] = function () return can_cut_grass() end,
             ["Death Mountain Trail Cow Grotto Grass 2"] = function () return can_cut_grass() end,
             ["Death Mountain Trail Cow Grotto Rupee 1"] = function () return true end,
@@ -6464,6 +6531,7 @@ function _oot_logic()
         ["locations"] = {
             ["Goron City Maze Center 1"] = function () return has_explosives_or_hammer() or can_lift_silver() or climb_anywhere() or hookshot_anywhere() end,
             ["Goron City Maze Center 2"] = function () return has_explosives_or_hammer() or can_lift_silver() or climb_anywhere() or hookshot_anywhere() end,
+            ["Goron City Maze Rock"] = function () return has_explosives_or_hammer() or can_lift_silver() or climb_anywhere() or hookshot_anywhere() end,
             ["Goron City Maze Left"] = function () return can_hammer() or can_lift_silver() or climb_anywhere() or hookshot_anywhere() end,
             ["Goron City Big Pot HP"] = function () return is_child() and has_bombs() and (event('DARUNIA_TORCH') or has_fire()) end,
             ["Goron City Tunic"] = function () return is_adult() and (has_explosives() or can_use_bow() or has_goron_bracelet()) and soul_goron_child() end,
@@ -6582,11 +6650,12 @@ function _oot_logic()
             ["Zora River Behind Falls"] = function () return can_play_zelda() or (trick('OOT_ZR_FALLS_HOOK') and hookshot_anywhere()) or (trick('OOT_DOMAIN_CUCCO') and is_child()) or (trick('OOT_DOMAIN_HOVER') and has_hover_boots()) end,
             ["Lost Woods"] = function () return can_dive_small() or hookshot_anywhere() end,
             ["Zora River Storms Grotto"] = function () return hidden_grotto_storms() end,
-            ["Zora River Open Grotto"] = function () return true end,
-            ["Zora River Boulder Grotto"] = function () return has_explosives_or_hammer() end,
+            ["Zora River Open Grotto"] = function () return is_adult() or is_child and soul_cucco() end,
+            ["Zora River Boulder Grotto"] = function () return has_explosives_or_hammer() and (is_adult() or is_child and soul_cucco()) end,
         },
         ["locations"] = {
             ["Zora River Bean Seller"] = function () return is_child() and can_use_wallet(1) and soul_bean_salesman() end,
+            ["Bean Seller Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
             ["Zora River HP Pillar"] = function () return is_child() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() or glitch_megaflip() end,
             ["Zora River HP Platform"] = function () return is_child() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() or glitch_megaflip() end,
             ["Zora River Frogs Storms"] = function () return is_child() and can_play_storms() end,
@@ -6631,11 +6700,14 @@ function _oot_logic()
             ["Zora River Wonder Item Back 25"] = function () return is_child() and can_swim_or_sink() end,
             ["Zora River Wonder Item Back 26"] = function () return is_child() and can_swim_or_sink() end,
             ["Zora River Wonder Item Back 27"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Butterfly Near Beans 1"] = function () return is_child() and can_use_sticks() end,
-            ["Zora River Butterfly Near Beans 2"] = function () return is_child() and can_use_sticks() end,
-            ["Zora River Butterfly Near Waterfall 1"] = function () return is_child() and can_use_sticks() end,
-            ["Zora River Butterfly Near Waterfall 2"] = function () return is_child() and can_use_sticks() end,
-            ["Zora River Butterfly Near Waterfall 3"] = function () return is_child() and can_use_sticks() end,
+            ["Zora River Rock Circle"] = function () return true end,
+            ["Zora River Dry Rock"] = function () return true end,
+            ["Zora River Wet Rock"] = function () return is_adult() or is_child() and has_explosives() end,
+            ["Zora River Butterfly Near Beans 1"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Zora River Butterfly Near Beans 2"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Zora River Butterfly Near Waterfall 1"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Zora River Butterfly Near Waterfall 2"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Zora River Butterfly Near Waterfall 3"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = true,
     },
@@ -6670,9 +6742,9 @@ function _oot_logic()
             ["Zora River Grotto Grass 4"] = function () return can_cut_grass() end,
             ["Zora River Grotto Hive 1"] = function () return break_hive_low() end,
             ["Zora River Grotto Hive 2"] = function () return break_hive_low() end,
-            ["Zora River Grotto Butterfly 1"] = function () return can_use_sticks() end,
-            ["Zora River Grotto Butterfly 2"] = function () return can_use_sticks() end,
-            ["Zora River Grotto Butterfly 3"] = function () return can_use_sticks() end,
+            ["Zora River Grotto Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Zora River Grotto Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Zora River Grotto Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = true,
     },
@@ -6689,6 +6761,7 @@ function _oot_logic()
             ["Zora River Fairy Fountain Fairy 6"] = function () return true end,
             ["Zora River Fairy Fountain Fairy 7"] = function () return true end,
             ["Zora River Fairy Fountain Fairy 8"] = function () return true end,
+            ["Zora River Fairy Fountain Rock Circle"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6723,6 +6796,7 @@ function _oot_logic()
             ["Zora Domain Pot 3"] = function () return true end,
             ["Zora Domain Pot 4"] = function () return true end,
             ["Zora Domain Pot 5"] = function () return true end,
+            ["Zora Domain Rock Circle"] = function () return true end,
             ["Zora Domain Hive Front 1"] = function () return is_child() and break_hive_high() end,
             ["Zora Domain Hive Front 2"] = function () return is_child() and break_hive_high() end,
         },
@@ -6813,6 +6887,7 @@ function _oot_logic()
             ["Lake Hylia GS Lab Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (trick('OOT_LAB_WALL_GS') and (can_use_sword() or can_use_sticks())) or (time_travel_at_will() and (scarecrow_hookshot() or hookshot_anywhere() or can_ride_bean(BEAN_LAKE_HYLIA)) and (has_explosives_or_hammer() or can_use_din() or can_use_slingshot()))) end,
             ["Lake Hylia GS Island"] = function () return is_child() and gs_night() and can_damage_skull() and (can_swim() or (has_iron_boots() and can_longshot()) or (time_travel_at_will() and (scarecrow_longshot() or hookshot_anywhere() or climb_anywhere()))) end,
             ["Lake Hylia GS Soil"] = function () return gs_soil() and can_damage_skull() end,
+            ["Lake Hylia Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
             ["Lake Hylia GS Big Tree"] = function () return is_adult() and gs_night() and (can_longshot() or (climb_anywhere() and can_damage_skull())) end,
             ["Lake Hylia Island Big Fairy"] = function () return can_play_sun() and (is_child() and (can_swim() or (has_iron_boots() and longshot_anywhere())) or (is_adult() and (lake_water_control() and can_swim() or scarecrow_longshot() or hookshot_anywhere() or climb_anywhere()))) end,
             ["Lake Hylia Pot 1"] = function () return is_child() end,
@@ -6863,9 +6938,10 @@ function _oot_logic()
             ["Lake Hylia Rupee 1"] = function () return is_child() and can_swim_or_sink() end,
             ["Lake Hylia Rupee 2"] = function () return is_child() and can_dive_small() end,
             ["Lake Hylia Rupee 3"] = function () return is_child() and can_dive_small() end,
-            ["Lake Hylia Butterfly 1"] = function () return is_child() and can_use_sticks() end,
-            ["Lake Hylia Butterfly 2"] = function () return is_child() and can_use_sticks() end,
-            ["Lake Hylia Butterfly 3"] = function () return is_child() and can_use_sticks() end,
+            ["Lake Hylia Butterfly 1"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Lake Hylia Butterfly 2"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Lake Hylia Butterfly 3"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
+            ["Lake Hylia Rock"] = function () return true end,
         },
         ["age_change"] = true,
     },
@@ -6982,13 +7058,14 @@ function _oot_logic()
             ["Zora Fountain Adult Pot 1"] = function () return is_adult() and (can_lift_silver() and has_explosives_or_hammer() or climb_anywhere()) end,
             ["Zora Fountain Adult Pot 2"] = function () return is_adult() and (can_lift_silver() and has_explosives_or_hammer() or climb_anywhere()) end,
             ["Zora Fountain Adult Pot 3"] = function () return is_adult() and (can_lift_silver() and has_explosives_or_hammer() or climb_anywhere()) end,
+            ["Zora Fountain Bushes"] = function () return is_child() end,
         },
         ["age_change"] = true,
     },
     ["Zora Fountain Butterflies"] = {
         ["locations"] = {
-            ["Zora Fountain Butterfly 1"] = function () return true end,
-            ["Zora Fountain Butterfly 2"] = function () return true end,
+            ["Zora Fountain Butterfly 1"] = function () return soul_butterfly() end,
+            ["Zora Fountain Butterfly 2"] = function () return soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -7076,6 +7153,8 @@ function _oot_logic()
         ["locations"] = {
             ["Death Mountain Crater GS Crate"] = function () return gs() and is_child() and can_damage_skull() end,
             ["Death Mountain Crater Alcove HP"] = function () return true end,
+            ["Death Mountain Crater Rock Circle"] = function () return true end,
+            ["Death Mountain Crater Child Rocks"] = function () return is_child() end,
             ["Death Mountain Crater Scrub Child"] = function () return is_child() and business_scrub(14) end,
         },
         ["age_change"] = true,
@@ -7148,7 +7227,9 @@ function _oot_logic()
         ["locations"] = {
             ["Death Mountain Crater Volcano HP"] = function () return can_ride_bean(BEAN_DEATH_MOUNTAIN_CRATER) or climb_anywhere() end,
             ["Death Mountain Crater Sheik Song"] = function () return is_adult() and soul_npc(SOUL_NPC_SHEIK) end,
+            ["Death Mountain Crater Adult Rocks"] = function () return is_adult() end,
             ["Death Mountain Crater GS Soil"] = function () return gs_soil() and can_damage_skull() end,
+            ["Death Mountain Crater Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
         },
         ["age_change"] = true,
     },
@@ -7172,9 +7253,9 @@ function _oot_logic()
             ["Death Mountain Crater Grotto Grass 4"] = function () return can_cut_grass() end,
             ["Death Mountain Crater Grotto Hive 1"] = function () return break_hive_low() end,
             ["Death Mountain Crater Grotto Hive 2"] = function () return break_hive_low() end,
-            ["Death Mountain Crater Grotto Butterfly 1"] = function () return can_use_sticks() end,
-            ["Death Mountain Crater Grotto Butterfly 2"] = function () return can_use_sticks() end,
-            ["Death Mountain Crater Grotto Butterfly 3"] = function () return can_use_sticks() end,
+            ["Death Mountain Crater Grotto Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Death Mountain Crater Grotto Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
+            ["Death Mountain Crater Grotto Butterfly 3"] = function () return can_use_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -7217,11 +7298,13 @@ function _oot_logic()
             ["Octorok Grotto Ledge"] = function () return true end,
         },
         ["locations"] = {
-            ["Gerudo Valley Crate HP"] = function () return is_child() or can_longshot() or climb_anywhere() end,
+            ["Gerudo Valley Rocks"] = function () return true end,
+            ["Gerudo Valley Crate HP"] = function () return is_child() and soul_cucco() or can_longshot() or climb_anywhere() end,
             ["Gerudo Valley Waterfall HP"] = function () return is_child() or can_swim() or can_longshot() or (has_iron_boots() and can_hookshot()) end,
             ["Gerudo Valley GS Soil"] = function () return gs_soil() and can_damage_skull() end,
+            ["Gerudo Valley Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
             ["Gerudo Valley GS Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (climb_anywhere() and (can_use_sword_master() or (age_sword_adult() and has('SWORD_BIGGORON')) or has_explosives() or can_use_din() or can_use_sticks() or can_use_slingshot()))) end,
-            ["Gerudo Valley Cow"] = function () return is_child() and can_play_epona() end,
+            ["Gerudo Valley Cow"] = function () return is_child() and can_play_epona() and soul_cow() end,
             ["Gerudo Valley Crate Ledge"] = function () return is_child() or can_longshot() or climb_anywhere() end,
             ["Gerudo Valley Crate Child Bottom"] = function () return is_child() end,
             ["Gerudo Valley Wonder Item Lower"] = function () return is_adult() end,
@@ -7242,6 +7325,7 @@ function _oot_logic()
         ["locations"] = {
             ["Gerudo Valley Chest"] = function () return is_adult() and (can_hammer() or hookshot_anywhere() or climb_anywhere()) or time_travel_at_will() end,
             ["Gerudo Valley Broken Goron Sword"] = function () return adult_trade(POACHER_SAW) and soul_carpenters() end,
+            ["Gerudo Valley Adult Rocks"] = function () return true end,
             ["Gerudo Valley GS Tent"] = function () return is_adult() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_explosives() or has('SWORD_BIGGORON') or has_ranged_weapon() or can_use_din()))) end,
             ["Gerudo Valley GS Pillar"] = function () return is_adult() and can_collect_distance() and gs_night() end,
             ["Gerudo Valley Crate HP"] = function () return climb_anywhere() end,
@@ -7506,8 +7590,10 @@ function _oot_logic()
             ["Desert Colossus Oasis"] = function () return can_play_storms() end,
         },
         ["locations"] = {
+            ["Desert Colossus Rocks"] = function () return true end,
             ["Desert Colossus HP"] = function () return can_ride_bean(BEAN_DESERT_COLOSSUS) end,
             ["Desert Colossus GS Soil"] = function () return gs_soil() and can_damage_skull() end,
+            ["Desert Colossus Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
             ["Desert Colossus GS Tree"] = function () return is_adult() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_explosives() or has_ranged_weapon() or can_use_din()))) end,
             ["Desert Colossus GS Plateau"] = function () return is_adult() and gs_night() and (can_collect_distance() and trick('OOT_COLOSSUS_GS_NO_BEAN') or (can_ride_bean(BEAN_DESERT_COLOSSUS) and can_damage_skull())) end,
             ["Desert Colossus Wonder Item Oasis 1"] = function () return can_use_bow() or can_use_slingshot() end,
@@ -7620,7 +7706,7 @@ function _oot_logic()
             ["Shadow Temple SR Scythe 3"] = function () return true end,
             ["Shadow Temple SR Scythe 4"] = function () return true end,
             ["Shadow Temple SR Scythe 5"] = function () return true end,
-            ["Shadow Temple Silver Rupees"] = function () return silver_rupees_shadow_scythe() end,
+            ["Shadow Temple Silver Rupees"] = function () return silver_rupees_shadow_scythe(5) end,
         },
         ["age_change"] = true,
     },
@@ -7629,7 +7715,7 @@ function _oot_logic()
             ["SHADOW_INVISIBLE_SCYTHE_GATE"] = function () return soul_like_like() and soul_keese() and (has_ranged_weapon_adult() or can_use_slingshot() or can_use_sticks() or has_explosives_or_hammer() or can_use_sword()) end,
         },
         ["exits"] = {
-            ["Shadow Temple Falling Spikes"] = function () return silver_rupees_shadow_pit() end,
+            ["Shadow Temple Falling Spikes"] = function () return silver_rupees_shadow_pit(5) end,
             ["Shadow Temple Invisible Spikes"] = function () return cond(not setting('climbMostSurfacesOot', 'off'), small_keys_shadow(4), small_keys_shadow(2)) end,
             ["Shadow Temple Wallmaster"] = function () return soul_wallmaster() end,
         },
@@ -7665,7 +7751,7 @@ function _oot_logic()
         ["exits"] = {
             ["Shadow Temple Open"] = function () return small_keys_shadow(4) end,
             ["Shadow Temple Wind Front"] = function () return cond(not setting('climbMostSurfacesOot', 'off'), small_keys_shadow(4), small_keys_shadow(3) and (is_adult() and (can_use_sword_or_sticks() or can_use_din()) and soul_redead_gibdo() and can_hookshot() or can_longshot())) end,
-            ["Shadow Temple Skull Pot"] = function () return silver_rupees_shadow_spikes() end,
+            ["Shadow Temple Skull Pot"] = function () return silver_rupees_shadow_spikes(5) end,
         },
         ["locations"] = {
             ["Shadow Temple SR Spikes Back Left"] = function () return has_lens() and (can_hookshot() or climb_anywhere()) end,
@@ -7818,7 +7904,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Spirit Temple Child Entrance"] = function () return true end,
-            ["Spirit Temple Child Back Right"] = function () return silver_rupees_spirit_child() end,
+            ["Spirit Temple Child Back Right"] = function () return silver_rupees_spirit_child(5) end,
         },
         ["locations"] = {
             ["Spirit Temple GS Child Fence"] = function () return gs() and (can_collect_distance() or (climb_anywhere() and (can_use_din() or has_ranged_weapon() or has_explosives()))) end,
@@ -7850,7 +7936,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Spirit Temple Child Second Chest"] = function () return event('SPIRIT_CHEST_CHILD') end,
-            ["Spirit Temple GS Child Fence"] = function () return gs() and ((has_ranged_weapon() or has_explosives() or can_use_din() or can_use_sticks() or can_use_sword_master() or (age_sword_adult() and has('SWORD_BIGGORON'))) and silver_rupees_spirit_child()) end,
+            ["Spirit Temple GS Child Fence"] = function () return gs() and ((has_ranged_weapon() or has_explosives() or can_use_din() or can_use_sticks() or can_use_sword_master() or (age_sword_adult() and has('SWORD_BIGGORON'))) and silver_rupees_spirit_child(5)) end,
             ["Spirit Temple SR Child 1"] = function () return true end,
             ["Spirit Temple SR Child 2"] = function () return true end,
             ["Spirit Temple SR Child 3"] = function () return true end,
@@ -7893,7 +7979,7 @@ function _oot_logic()
             ["Spirit Temple Child Hand"] = function () return small_keys_spirit(5) and soul_iron_knuckle() end,
         },
         ["locations"] = {
-            ["Spirit Temple Sun Block Room Torches"] = function () return event('SPIRIT_CHILD_DOOR') and can_use_sticks() and silver_rupees_spirit_sun() or (has_fire_spirit() and silver_rupees_spirit_sun()) or can_use_din() or (has_fire_arrows() and event('SPIRIT_ADULT_DOOR')) end,
+            ["Spirit Temple Sun Block Room Torches"] = function () return event('SPIRIT_CHILD_DOOR') and can_use_sticks() and silver_rupees_spirit_sun(5) or (has_fire_spirit() and silver_rupees_spirit_sun(5)) or can_use_din() or (has_fire_arrows() and event('SPIRIT_ADULT_DOOR')) end,
             ["Spirit Temple SR Sun 1"] = function () return true end,
             ["Spirit Temple SR Sun 2"] = function () return true end,
             ["Spirit Temple SR Sun 3"] = function () return true end,
@@ -7930,8 +8016,8 @@ function _oot_logic()
     ["Spirit Temple Adult Boulders"] = {
         ["locations"] = {
             ["Spirit Temple GS Boulders"] = function () return gs() and can_play_time() end,
-            ["Spirit Temple Adult Silver Rupees"] = function () return silver_rupees_spirit_boulders() end,
-            ["Spirit Temple Adult Silver Rupees Big Fairy"] = function () return silver_rupees_spirit_boulders() and can_play_sun() end,
+            ["Spirit Temple Adult Silver Rupees"] = function () return silver_rupees_spirit_boulders(5) end,
+            ["Spirit Temple Adult Silver Rupees Big Fairy"] = function () return silver_rupees_spirit_boulders(5) and can_play_sun() end,
             ["Spirit Temple SR Boulders 1"] = function () return true end,
             ["Spirit Temple SR Boulders 2"] = function () return true end,
             ["Spirit Temple SR Boulders 3"] = function () return true end,
@@ -9027,7 +9113,7 @@ function _oot_logic()
     },
     ["Dodongo Cavern Staircase Room Upper"] = {
         ["exits"] = {
-            ["Dodongo Cavern Room After Upper Staircase"] = function () return silver_rupees_dc() end,
+            ["Dodongo Cavern Room After Upper Staircase"] = function () return silver_rupees_dc(5) end,
             ["Dodongo Cavern Staircase Room Lower"] = function () return true end,
         },
         ["locations"] = {
@@ -10332,7 +10418,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Ganon Castle Main Room"] = function () return true end,
-            ["Ganon Castle Fire Trial Ending Ledge"] = function () return has_tunic_goron() and (longshot_anywhere() or has_hover_boots()) or (has_tunic_goron_strict() and (can_longshot() and silver_rupees_ganon_fire() or (hookshot_anywhere() and event('GANON_MQ_FIRE_MONOLITH')))) end,
+            ["Ganon Castle Fire Trial Ending Ledge"] = function () return has_tunic_goron() and (longshot_anywhere() or has_hover_boots()) or (has_tunic_goron_strict() and (can_longshot() and silver_rupees_ganon_fire_mq(5) or (hookshot_anywhere() and event('GANON_MQ_FIRE_MONOLITH')))) end,
         },
         ["locations"] = {
             ["MQ Ganon Castle SR Fire Under Pillar"] = function () return event('GANON_MQ_FIRE_MONOLITH') end,
@@ -10346,7 +10432,7 @@ function _oot_logic()
     ["Ganon Castle Fire Trial Ending Ledge"] = {
         ["exits"] = {
             ["Ganon Castle Fire Trial Entrance Ledge"] = function () return has_tunic_goron() and longshot_anywhere() or (climb_anywhere() and has_tunic_goron_strict()) end,
-            ["Ganon Castle Fire Trial Ending Room"] = function () return silver_rupees_ganon_fire() end,
+            ["Ganon Castle Fire Trial Ending Room"] = function () return silver_rupees_ganon_fire_mq(5) end,
         },
         ["locations"] = {
             ["MQ Ganon Castle SR Fire Under Pillar"] = function () return longshot_anywhere() and has_tunic_goron_strict() and can_lift_gold() end,
@@ -10439,7 +10525,7 @@ function _oot_logic()
     ["Ganon Castle Water Trial Silver Rupee Room Behind Red Ice"] = {
         ["exits"] = {
             ["Ganon Castle Water Trial Silver Rupee Room"] = function () return has_blue_fire() or climb_anywhere() or hookshot_anywhere() end,
-            ["Ganon Castle Water Trial Ending Room"] = function () return silver_rupees_ganon_water() end,
+            ["Ganon Castle Water Trial Ending Room"] = function () return silver_rupees_ganon_water(5) end,
         },
         ["locations"] = {
             ["MQ Ganon Castle Red Ice Block Silver Rupee Room 1"] = function () return has_blue_fire() end,
@@ -10576,7 +10662,7 @@ function _oot_logic()
     ["Ganon Castle Shadow Trial Ending Side"] = {
         ["exits"] = {
             ["Ganon Castle Shadow Trial Middle Beamos Area 2"] = function () return has_lens() or hookshot_anywhere() end,
-            ["Ganon Castle Shadow Trial Ending Room"] = function () return silver_rupees_ganon_shadow() end,
+            ["Ganon Castle Shadow Trial Ending Room"] = function () return silver_rupees_ganon_shadow(5) end,
             ["Ganon Castle Shadow Trial Entrance Side"] = function () return climb_anywhere() end,
         },
         ["age_change"] = true,
@@ -10743,7 +10829,7 @@ function _oot_logic()
     },
     ["Gerudo Training Grounds Lava Room Near Beginning"] = {
         ["events"] = {
-            ["GTG_LAVA_HOOK_TARGETS"] = function () return silver_rupees_gtg_lava_mq() end,
+            ["GTG_LAVA_HOOK_TARGETS"] = function () return silver_rupees_gtg_lava_mq(6) end,
             ["GTG_MQ_LAVA_TORCH_ENTRANCE_SIDE"] = function () return can_use_bow() end,
             ["GTG_MQ_LAVA_TORCH_FAR"] = function () return has_fire_arrows() end,
             ["GTG_MQ_LAVA_TORCH_COMMON_PLATFORMS_ENTRANCE"] = function () return event('GTG_MQ_LAVA_TORCH_ENTRANCE_SIDE') and (is_adult() or (has_hover_boots() or climb_anywhere() or (event('GTG_LAVA_HOOK_TARGETS') and can_hookshot() or hookshot_anywhere()))) or (trick('OOT_MQ_GTG_FLAMES') and (has_hover_boots() or (can_hookshot() and event('GTG_LAVA_HOOK_TARGETS')) or hookshot_anywhere())) end,
@@ -10766,7 +10852,7 @@ function _oot_logic()
     },
     ["Gerudo Training Grounds Lava Room Ledge Before Water Room"] = {
         ["events"] = {
-            ["GTG_LAVA_HOOK_TARGETS"] = function () return silver_rupees_gtg_lava_mq() end,
+            ["GTG_LAVA_HOOK_TARGETS"] = function () return silver_rupees_gtg_lava_mq(6) end,
             ["GTG_MQ_LAVA_TORCH_WATER_ROOM_SIDE"] = function () return has_fire() end,
             ["GTG_MQ_LAVA_TORCH_COMMON_PLATFORMS_WATER_SIDE"] = function () return event('GTG_MQ_LAVA_TORCH_WATER_ROOM_SIDE') and (is_adult() or (has_hover_boots() or climb_anywhere() or (event('GTG_LAVA_HOOK_TARGETS') and can_hookshot() or hookshot_anywhere()))) or (trick('OOT_MQ_GTG_FLAMES') and (has_hover_boots() or (can_hookshot() and event('GTG_LAVA_HOOK_TARGETS')) or hookshot_anywhere())) end,
         },
@@ -10774,7 +10860,7 @@ function _oot_logic()
             ["Gerudo Training Grounds Lava Room Near Beginning"] = function () return can_longshot() or event('GTG_MQ_LAVA_TORCH_WATER_ROOM_SIDE') or (trick('OOT_MQ_GTG_FLAMES') and (has_hover_boots() or can_hookshot())) or hookshot_anywhere() or climb_anywhere() end,
             ["Gerudo Training Grounds Lava Room Maze Ledge"] = function () return event('GTG_MQ_LAVA_HAMMER_SWITCH') and can_longshot() or hookshot_anywhere() or (climb_anywhere() and event('GTG_LAVA_HOOK_TARGETS') and event('GTG_MQ_LAVA_TORCH_WATER_ROOM_SIDE')) or (event('GTG_MQ_LAVA_HAMMER_SWITCH') and can_hookshot() and event('GTG_MQ_LAVA_TORCH_WATER_ROOM_SIDE')) end,
             ["Gerudo Training Grounds Lava Room Deep Side Ledge"] = function () return hookshot_anywhere() and trick('OOT_MQ_GTG_FLAMES') or climb_anywhere() or longshot_anywhere() end,
-            ["Gerudo Training Grounds Water Room"] = function () return silver_rupees_gtg_lava_mq() end,
+            ["Gerudo Training Grounds Water Room"] = function () return silver_rupees_gtg_lava_mq(6) end,
         },
         ["locations"] = {
             ["MQ Gerudo Training Grounds SR Lava Back-Left"] = function () return event('GTG_MQ_LAVA_TORCH_COMMON_PLATFORMS_WATER_SIDE') end,
@@ -10788,7 +10874,7 @@ function _oot_logic()
     },
     ["Gerudo Training Grounds Lava Room Maze Ledge"] = {
         ["events"] = {
-            ["GTG_LAVA_HOOK_TARGETS"] = function () return silver_rupees_gtg_lava_mq() end,
+            ["GTG_LAVA_HOOK_TARGETS"] = function () return silver_rupees_gtg_lava_mq(6) end,
             ["GTG_MQ_LAVA_TORCH_FAR"] = function () return has_fire_arrows() end,
             ["GTG_MQ_LAVA_TORCH_COMMON_PLATFORMS_FAR"] = function () return event('GTG_MQ_LAVA_TORCH_FAR') and (is_adult() or (has_hover_boots() or climb_anywhere() or (event('GTG_LAVA_HOOK_TARGETS') and can_hookshot() or hookshot_anywhere()))) or (trick('OOT_MQ_GTG_FLAMES') and (has_hover_boots() or (can_hookshot() and event('GTG_LAVA_HOOK_TARGETS')) or hookshot_anywhere())) end,
         },
@@ -10810,7 +10896,7 @@ function _oot_logic()
     },
     ["Gerudo Training Grounds Lava Room Deep Side Ledge"] = {
         ["events"] = {
-            ["GTG_LAVA_HOOK_TARGETS"] = function () return silver_rupees_gtg_lava_mq() end,
+            ["GTG_LAVA_HOOK_TARGETS"] = function () return silver_rupees_gtg_lava_mq(6) end,
             ["GTG_MQ_LAVA_HAMMER_SWITCH"] = function () return can_hammer() end,
             ["GTG_MQ_LAVA_TORCH_FAR"] = function () return has_fire_arrows() end,
             ["GTG_MQ_LAVA_TORCH_COMMON_PLATFORMS_FAR"] = function () return event('GTG_MQ_LAVA_TORCH_FAR') and (is_adult() or (has_hover_boots() or climb_anywhere() or (event('GTG_LAVA_HOOK_TARGETS') and can_hookshot() or hookshot_anywhere()))) or (trick('OOT_MQ_GTG_FLAMES') and (has_hover_boots() or (can_hookshot() and event('GTG_LAVA_HOOK_TARGETS')) or hookshot_anywhere())) end,
@@ -10835,7 +10921,7 @@ function _oot_logic()
             ["Gerudo Training Grounds Lava Room Ledge Before Water Room"] = function () return true end,
         },
         ["locations"] = {
-            ["MQ Gerudo Training Grounds Water Room Chest"] = function () return silver_rupees_gtg_water_mq() end,
+            ["MQ Gerudo Training Grounds Water Room Chest"] = function () return silver_rupees_gtg_water_mq(3) end,
             ["MQ Gerudo Training Grounds SR Water Top-Left"] = function () return has_iron_boots() and has_tunic_zora() and has_fire() end,
             ["MQ Gerudo Training Grounds SR Water Center"] = function () return has_iron_boots() and has_tunic_zora() and has_fire() end,
             ["MQ Gerudo Training Grounds SR Water Bottom-Right"] = function () return has_iron_boots() and has_tunic_zora() and has_fire() end,
@@ -10862,7 +10948,7 @@ function _oot_logic()
         ["exits"] = {
             ["Gerudo Training Grounds Wallmaster"] = function () return soul_wallmaster() end,
             ["Gerudo Training Grounds Left Path First Room"] = function () return true end,
-            ["Gerudo Training Grounds Stalfos Room"] = function () return silver_rupees_gtg_slopes() end,
+            ["Gerudo Training Grounds Stalfos Room"] = function () return silver_rupees_gtg_slopes_mq(5) end,
         },
         ["locations"] = {
             ["MQ Gerudo Training Grounds SR Slopes Top Right"] = function () return event('GTG_MQ_SLOPES_STALAGMITES') end,
@@ -11346,7 +11432,7 @@ function _oot_logic()
             ["Jabu-Jabu Main Elevator Room High Ledge"] = function () return can_play_elegy() and (climb_anywhere() or longshot_anywhere() or can_boomerang()) or (can_boomerang() and event('MQ_JABU_AFTER_ABOVE_BIG_OCTO_SPAWN_COW_AND_CRATES')) end,
         },
         ["locations"] = {
-            ["MQ Jabu-Jabu Cow"] = function () return can_play_epona() and event('MQ_JABU_AFTER_ABOVE_BIG_OCTO_SPAWN_COW_AND_CRATES') end,
+            ["MQ Jabu-Jabu Cow"] = function () return can_play_epona() and soul_cow() and event('MQ_JABU_AFTER_ABOVE_BIG_OCTO_SPAWN_COW_AND_CRATES') end,
             ["MQ Jabu-Jabu Grass Room After Big Octo"] = function () return can_cut_grass() end,
             ["MQ Jabu-Jabu Wonder Item Platforms Cow"] = function () return event('MQ_JABU_AFTER_ABOVE_BIG_OCTO_SPAWN_COW_AND_CRATES') end,
             ["MQ Jabu-Jabu Room After Above Big Octo Small Crate 1"] = function () return event('MQ_JABU_AFTER_ABOVE_BIG_OCTO_SPAWN_COW_AND_CRATES') end,
@@ -11661,7 +11747,7 @@ function _oot_logic()
     },
     ["Shadow Temple Scythe Room"] = {
         ["events"] = {
-            ["SHADOW_MQ_SCYTHE_ROOM_SKULTULLAS_CLEAR"] = function () return soul_skulltula() and (can_use_din() or (silver_rupees_shadow_scythe() and (can_damage() or has_ranged_weapon_adult() or can_use_slingshot() or can_hammer()))) end,
+            ["SHADOW_MQ_SCYTHE_ROOM_SKULTULLAS_CLEAR"] = function () return soul_skulltula() and (can_use_din() or (silver_rupees_shadow_scythe_mq(5) and (can_damage() or has_ranged_weapon_adult() or can_use_slingshot() or can_hammer()))) end,
         },
         ["exits"] = {
             ["Shadow Temple First Beamos Fork Room Lens Alcove to Scythe and Shortcut Room"] = function () return event('SHADOW_MQ_SCYTHE_ROOM_SKULTULLAS_CLEAR') end,
@@ -11673,7 +11759,7 @@ function _oot_logic()
             ["MQ Shadow Temple SR Scythe 3"] = function () return true end,
             ["MQ Shadow Temple SR Scythe 4"] = function () return true end,
             ["MQ Shadow Temple SR Scythe 5"] = function () return true end,
-            ["MQ Shadow Temple Map Chest"] = function () return silver_rupees_shadow_scythe() end,
+            ["MQ Shadow Temple Map Chest"] = function () return silver_rupees_shadow_scythe_mq(5) end,
         },
         ["age_change"] = true,
     },
@@ -11751,8 +11837,8 @@ function _oot_logic()
             ["MQ Shadow Temple SR Invisible Blades Ground 8"] = function () return true end,
             ["MQ Shadow Temple SR Invisible Blades Ground 9"] = function () return true end,
             ["MQ Shadow Temple SR Invisible Blades Time Block"] = function () return can_play_time() and is_adult() or hookshot_anywhere() or (is_child() and climb_anywhere()) end,
-            ["MQ Shadow Temple Second Silver Rupee Visible Chest"] = function () return silver_rupees_shadow_blades() end,
-            ["MQ Shadow Temple Second Silver Rupee Invisible Chest"] = function () return silver_rupees_shadow_blades() and has_lens() end,
+            ["MQ Shadow Temple Second Silver Rupee Visible Chest"] = function () return silver_rupees_shadow_blades(10) end,
+            ["MQ Shadow Temple Second Silver Rupee Invisible Chest"] = function () return silver_rupees_shadow_blades(10) and has_lens() end,
             ["MQ Shadow Temple Heart Invisible Blades 1"] = function () return can_play_time() and is_adult() or hookshot_anywhere() or (is_child() and climb_anywhere()) or can_boomerang() end,
             ["MQ Shadow Temple Heart Invisible Blades 2"] = function () return can_play_time() and is_adult() or hookshot_anywhere() or (is_child() and climb_anywhere()) or can_boomerang() end,
         },
@@ -11769,7 +11855,7 @@ function _oot_logic()
             ["Shadow Temple Upper Huge Pit Guillotine Section Before Drop"] = function () return can_longshot() end,
         },
         ["locations"] = {
-            ["MQ Shadow Temple Huge Pit Silver Rupee Chest"] = function () return silver_rupees_shadow_pit() end,
+            ["MQ Shadow Temple Huge Pit Silver Rupee Chest"] = function () return silver_rupees_shadow_pit_mq(5) end,
             ["MQ Shadow Temple SR Pit Back"] = function () return true end,
             ["MQ Shadow Temple SR Pit Midair Low"] = function () return can_longshot() end,
             ["MQ Shadow Temple SR Pit Midair High"] = function () return can_longshot() end,
@@ -11809,7 +11895,7 @@ function _oot_logic()
     ["Shadow Temple Invisible Spike Floors Room"] = {
         ["events"] = {
             ["SHADOW_MQ_INVISIBLE_SPIKE_FLOORS_REDEADS_CLEAR"] = function () return soul_redead_gibdo() and (has_weapon() or can_use_sticks() or can_use_din()) end,
-            ["SHADOW_MQ_INVISIBLE_SPIKE_FLOORS_ICE_PLATFORMS"] = function () return silver_rupees_shadow_spikes_mq() end,
+            ["SHADOW_MQ_INVISIBLE_SPIKE_FLOORS_ICE_PLATFORMS"] = function () return silver_rupees_shadow_spikes_mq(10) end,
         },
         ["exits"] = {
             ["Shadow Temple Lower Huge Pit Ledge Before Invisible Spike Floors"] = function () return small_keys_shadow(3) end,
@@ -12121,7 +12207,7 @@ function _oot_logic()
             ["MQ Spirit Temple Lobby Back-Right Chest"] = function () return can_hit_triggers_distance() or has_bombchu() or can_hookshot() end,
             ["MQ Spirit Temple Compass Chest"] = function () return can_use_slingshot() and has_bow() and small_keys_spirit(2) and has_bombchu() end,
             ["MQ Spirit Temple Sun Block Room Chest"] = function () return small_keys_spirit(2) and has_bombchu() and (can_play_time() or can_play_elegy()) and is_child() end,
-            ["MQ Spirit Temple Lobby Front-Right Chest"] = function () return silver_rupees_spirit_lobby() end,
+            ["MQ Spirit Temple Lobby Front-Right Chest"] = function () return silver_rupees_spirit_lobby(5) end,
             ["Spirit Temple Silver Gauntlets"] = function () return small_keys_spirit(4) and has_explosives() and (can_play_time() or can_play_elegy()) and is_child() and soul_iron_knuckle() and (has_weapon() or can_use_sticks()) and has_lens() end,
             ["MQ Spirit Temple SR Lobby Rock Right"] = function () return has_explosives_or_hammer() end,
             ["MQ Spirit Temple SR Lobby Rock Left"] = function () return has_explosives_or_hammer() end,
@@ -12292,7 +12378,7 @@ function _oot_logic()
     },
     ["Spirit Temple Adult Climb"] = {
         ["exits"] = {
-            ["Spirit Temple Top Floor"] = function () return silver_rupees_spirit_adult() end,
+            ["Spirit Temple Top Floor"] = function () return silver_rupees_spirit_adult(5) end,
         },
         ["locations"] = {
             ["MQ Spirit Temple SR Adult Bottom"] = function () return true end,

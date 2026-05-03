@@ -1191,6 +1191,10 @@ function _mm_logic()
 		return shared_soul_enemy(SOUL_ENEMY_PEAHAT, SHARED_SOUL_ENEMY_PEAHAT)
 	end
 
+    function soul_poe()
+		return shared_soul_enemy(SOUL_ENEMY_POE, SHARED_SOUL_ENEMY_POE)
+	end
+
 	function soul_lizalfos_dinalfos()
 		return shared_soul_enemy(SOUL_ENEMY_LIZALFOS_DINALFOS, SHARED_SOUL_ENEMY_LIZALFOS_DINALFOS)
 	end
@@ -1283,6 +1287,26 @@ function _mm_logic()
 		return shared_soul_misc(SOUL_MISC_BUSINESS_SCRUB, SHARED_SOUL_MISC_BUSINESS_SCRUB)
 	end
 
+    function shared_soul_animals(a, b)
+		return cond(setting('sharedSoulsAnimals'), soul_animals(b), soul_animals(a))
+	end
+
+	function soul_butterfly()
+		return shared_soul_animals(SOUL_ANIMAL_BUTTERFLY, SHARED_SOUL_ANIMAL_BUTTERFLY)
+	end
+	
+	function soul_cow()
+		return shared_soul_animals(SOUL_ANIMAL_COW, SHARED_SOUL_ANIMAL_COW)
+	end
+	
+	function soul_cucco()
+		return shared_soul_animals(SOUL_ANIMAL_CUCCO, SHARED_SOUL_ANIMAL_CUCCO)
+	end
+	
+	function soul_dog()
+		return shared_soul_animals(SOUL_ANIMAL_DOG, SHARED_SOUL_ANIMAL_DOG)
+	end
+	
 	function shared_soul_npc(a, b)
 		return cond(setting('sharedSoulsNpc'), soul_npc(b), soul_npc(a))
 	end
@@ -2374,6 +2398,10 @@ function _mm_logic()
 	function soul_misc(x)
 		return not setting('soulsMiscMm') or has(x)
 	end
+    
+    function soul_animals(x)
+		return not setting('soulsAnimalsMm') or has(x)
+	end
 
 	function short_hook_anywhere()
 		return can_hookshot_short() and setting('hookshotAnywhereMm', 'logical')
@@ -2709,16 +2737,18 @@ function _mm_logic()
             ["Beneath The Well Cow Hall"] = function () return true end,
         },
         ["locations"] = {
-            ["Beneath The Well Cow"] = function () return can_play_epona() end,
+            ["Beneath The Well Cow"] = function () return can_play_epona() and soul_cow() end,
             ["Beneath The Well Grass Cow 1"] = function () return true end,
             ["Beneath The Well Grass Cow 2"] = function () return true end,
             ["Beneath The Well Grass Cow 3"] = function () return true end,
+            ["Beneath The Well Tree Cow"] = function () return true end,
+            ["Beneath The Well Tree Bushes"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Beneath The Well Big Poe Room"] = {
         ["events"] = {
-            ["WELL_BIG_POE"] = function () return can_kill_big_poe() end,
+            ["WELL_BIG_POE"] = function () return can_kill_big_poe() and soul_poe() end,
         },
         ["exits"] = {
             ["Beneath The Well Cow Hall"] = function () return true end,
@@ -3222,19 +3252,19 @@ function _mm_logic()
     },
     ["Moon Butterflies"] = {
         ["locations"] = {
-            ["Moon Butterfly 01"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 02"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 03"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 04"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 05"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 06"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 07"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 08"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 09"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 10"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 11"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 12"] = function () return can_reset_time_on_moon() end,
-            ["Moon Butterfly 13"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 01"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 02"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 03"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 04"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 05"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 06"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 07"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 08"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 09"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 10"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 11"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 12"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 13"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -3857,6 +3887,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Clock Town Tree HP"] = function () return true end,
+            ["Clock Town Trees"] = function () return true end,
             ["Clock Town Bomber Notebook"] = function () return event('BOMBER_CODE') end,
             ["Clock Town Blast Mask"] = function () return event('SAKON_BOMB_BAG') end,
             ["Clock Town Keaton HP"] = function () return soul_npc(SOUL_NPC_KEATON) and has_mask_keaton() end,
@@ -3903,6 +3934,9 @@ function _mm_logic()
             ["Clock Town Bank Reward 2"] = function () return soul_banker() and (can_use_wallet(2) or (can_use_wallet(1) and (trick('MM_BANK_ONE_WALLET') or trick('MM_BANK_NO_WALLET')))) end,
             ["Clock Town Bank Reward 3"] = function () return soul_banker() and (can_use_wallet(3) or (can_use_wallet(2) and trick('MM_BANK_ONE_WALLET')) or (can_use_wallet(1) and trick('MM_BANK_NO_WALLET'))) end,
             ["Clock Town Rosa Sisters HP"] = function () return soul_citizen() and has('MASK_KAMARO') and (is_night1() or is_night2()) end,
+            ["Clock Town Lottery Day 1"] = function () return can_use_wallet(1) and clock_day1 and clock_night1 end,
+            ["Clock Town Lottery Day 2"] = function () return can_use_wallet(1) and clock_day2 and clock_night2 end,
+            ["Clock Town Lottery Day 3"] = function () return can_use_wallet(1) and clock_day3 and clock_night3 end,
         },
         ["age_change"] = false,
     },
@@ -4058,6 +4092,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Trading Post Pot"] = function () return true end,
+            ["Trading Post Bushes"] = function () return true end,
         },
         ["stay"] = {
             ["NIGHT1_PM_09_00"] = function () return false end,
@@ -4077,7 +4112,7 @@ function _mm_logic()
             ["Trading Post Item 5"] = function () return shop_price(9) end,
             ["Trading Post Item 6"] = function () return shop_price(10) end,
             ["Trading Post Item 7"] = function () return shop_price(11) end,
-            ["Trading Post Item 8"] = function () return shop_price(12) end,
+            ["Trading Post Item 8"] = function () return shop_price(12) end,            
         },
         ["age_change"] = false,
     },
@@ -4542,7 +4577,11 @@ function _mm_logic()
             ["Termina Field Grass Pack 18 Grass 10"] = function () return true end,
             ["Termina Field Grass Pack 18 Grass 11"] = function () return true end,
             ["Termina Field Grass Pack 18 Grass 12"] = function () return true end,
+            ["Termina Field Rocks"] = function () return true end,
             ["Termina Field Rupee"] = function () return true end,
+            ["Termina Field Tree"] = function () return true end,
+            ["Termina Field Soft Soils"] = function () return has_bugs() end,
+            ["Termina Field Part Timer"] = function () return soul_rooftop_man() end,
             ["Termina Field Wonder Item Grass 1"] = function () return true end,
             ["Termina Field Wonder Item Grass 2"] = function () return true end,
             ["Termina Field Wonder Item Grass 3"] = function () return true end,
@@ -4554,6 +4593,8 @@ function _mm_logic()
             ["Termina Field Wonder Item North Ramp"] = function () return goron_fast_roll() end,
             ["Termina Field Wonder Item West Ramp"] = function () return true end,
             ["Termina Field Wonder Item South West Ramp"] = function () return true end,
+            ["Termina Field Rocks South West Wall"] = function () return has_explosives() end,
+            ["Termina Field Rocks North Wall"] = function () return has_explosives() end,
             ["Termina Field Wonder Item Shell 1"] = function () return hit_target_range_close() end,
             ["Termina Field Wonder Item Shell 2"] = function () return hit_target_range_close() end,
             ["Termina Field Wonder Item Shell 3"] = function () return hit_target_range_close() end,
@@ -4568,8 +4609,8 @@ function _mm_logic()
     },
     ["Termina Field Butterflies"] = {
         ["locations"] = {
-            ["Termina Field Butterfly 1"] = function () return true end,
-            ["Termina Field Butterfly 2"] = function () return true end,
+            ["Termina Field Butterfly 1"] = function () return soul_butterfly() end,
+            ["Termina Field Butterfly 2"] = function () return soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -4643,6 +4684,7 @@ function _mm_logic()
             ["Termina Field Bio Baba Grotto"] = function () return has_mask_zora() or ((underwater_walking() or can_dive_big() or (trick('MM_BIO_BABA_LUCK') and soul_enemy(SOUL_ENEMY_BIO_BABA))) and (has_weapon_range() or (has_bombs() and soul_enemy(SOUL_ENEMY_BIO_BABA)) or (has_bombchu() and trick('MM_BIO_BABA_CHU')))) end,
             ["Bio Baba Grotto Grass 1"] = function () return true end,
             ["Bio Baba Grotto Grass 2"] = function () return true end,
+            ["Bio Baba Grotto Rock"] = function () return true end,
             ["Termina Field Bio Baba Grotto Hive Middle"] = function () return has_mask_zora() or ((break_hive() or (has_bombs() and soul_enemy(SOUL_ENEMY_BIO_BABA)) or (has_bombchu() and trick('MM_BIO_BABA_CHU'))) and (underwater_walking() or can_dive_big() or hookshot_anywhere() or (short_hook_anywhere() and soul_enemy(SOUL_ENEMY_BIO_BABA)))) end,
             ["Termina Field Bio Baba Grotto Hive Left"] = function () return has_mask_zora() or ((break_hive() or (has_bombs() and soul_enemy(SOUL_ENEMY_BIO_BABA)) or (has_bombchu() and trick('MM_BIO_BABA_CHU'))) and (underwater_walking() or can_dive_big() or short_hook_anywhere())) end,
         },
@@ -4718,8 +4760,8 @@ function _mm_logic()
             ["Termina Field"] = function () return true end,
         },
         ["locations"] = {
-            ["Termina Field Cow Front"] = function () return can_play_epona() end,
-            ["Termina Field Cow Back"] = function () return can_play_epona() end,
+            ["Termina Field Cow Front"] = function () return can_play_epona() and soul_cow() end,
+            ["Termina Field Cow Back"] = function () return can_play_epona() and soul_cow() end,
             ["Termina Field Cow Grotto Grass 01"] = function () return true end,
             ["Termina Field Cow Grotto Grass 02"] = function () return true end,
             ["Termina Field Cow Grotto Grass 03"] = function () return true end,
@@ -4793,9 +4835,9 @@ function _mm_logic()
             ["Termina Field Cow Grotto Grass 71"] = function () return true end,
             ["Termina Field Cow Grotto Grass 72"] = function () return true end,
             ["Termina Field Cow Grotto Hive"] = function () return break_hive() or (has_bombchu() and trick('MM_HIVE_BOMBCHU')) end,
-            ["Termina Field Cow Grotto Butterfly 1"] = function () return has_sticks() end,
-            ["Termina Field Cow Grotto Butterfly 2"] = function () return has_sticks() end,
-            ["Termina Field Cow Grotto Butterfly 3"] = function () return has_sticks() end,
+            ["Termina Field Cow Grotto Butterfly 1"] = function () return has_sticks() and soul_butterfly() end,
+            ["Termina Field Cow Grotto Butterfly 2"] = function () return has_sticks() and soul_butterfly() end,
+            ["Termina Field Cow Grotto Butterfly 3"] = function () return has_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -4850,8 +4892,8 @@ function _mm_logic()
             ["Ocean Gossip Grotto Grass 4"] = function () return true end,
             ["Ocean Gossip Grotto Grass 5"] = function () return true end,
             ["Ocean Gossip Grotto Hive"] = function () return break_hive() or (has_bombchu() and trick('MM_HIVE_BOMBCHU')) end,
-            ["Ocean Gossip Grotto Butterfly 1"] = function () return has_sticks() end,
-            ["Ocean Gossip Grotto Butterfly 2"] = function () return has_sticks() end,
+            ["Ocean Gossip Grotto Butterfly 1"] = function () return has_sticks() and soul_butterfly() end,
+            ["Ocean Gossip Grotto Butterfly 2"] = function () return has_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -4926,6 +4968,7 @@ function _mm_logic()
             ["Road to Southern Swamp Potted Plant 1 Grass"] = function () return true end,
             ["Road to Southern Swamp Potted Plant 2 Pot"] = function () return true end,
             ["Road to Southern Swamp Potted Plant 2 Grass"] = function () return true end,
+            ["Road to Southern Swamp Trees"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5278,6 +5321,7 @@ function _mm_logic()
             ["Deku Palace Red Boulder 1"] = function () return can_break_red_boulders() end,
             ["Deku Palace Red Boulder 2"] = function () return can_break_red_boulders() end,
             ["Deku Palace Red Boulder 3"] = function () return can_break_red_boulders() end,
+            ["Deku Palace Soft Soil"] = function () return has_bugs() end,
         },
         ["age_change"] = false,
     },
@@ -5356,10 +5400,11 @@ function _mm_logic()
     },
     ["Deku Palace Beans Grotto Butterflies"] = {
         ["locations"] = {
-            ["Deku Palace Grotto Butterfly 1"] = function () return true end,
-            ["Deku Palace Grotto Butterfly 2"] = function () return true end,
-            ["Deku Palace Grotto Butterfly 3"] = function () return true end,
-            ["Deku Palace Grotto Butterfly 4"] = function () return true end,
+            ["Deku Palace Grotto Butterfly 1"] = function () return soul_butterfly() end,
+            ["Deku Palace Grotto Butterfly 2"] = function () return soul_butterfly() end,
+            ["Deku Palace Grotto Butterfly 3"] = function () return soul_butterfly() end,
+            ["Deku Palace Grotto Butterfly 4"] = function () return soul_butterfly() end,
+            ["Deku Palace Grotto Soft Soil"] = function () return has_bugs() end,
         },
         ["age_change"] = false,
     },
@@ -5552,6 +5597,7 @@ function _mm_logic()
             ["Path to Mountain Village Small Snowball Lower Spring 2"] = function () return is_spring() end,
             ["Path to Mountain Village Small Snowball Lower Spring 3"] = function () return is_spring() end,
             ["Path to Mountain Village Small Snowball Lower Spring 4"] = function () return is_spring() end,
+            ["Path to Mountain Village Lower Trees"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5576,6 +5622,7 @@ function _mm_logic()
             ["Path to Mountain Village Small Snowball Upper Spring 1"] = function () return is_spring() end,
             ["Path to Mountain Village Small Snowball Upper Spring 2"] = function () return is_spring() end,
             ["Path to Mountain Village Small Snowball Upper Spring 3"] = function () return is_spring() end,
+            ["Path to Mountain Village Upper Trees"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5635,6 +5682,8 @@ function _mm_logic()
             ["Mountain Village Grass Pack 3 Grass 7"] = function () return is_spring() end,
             ["Mountain Village Grass Pack 3 Grass 8"] = function () return is_spring() end,
             ["Mountain Village Grass Pack 3 Grass 9"] = function () return is_spring() end,
+            ["Mountain Village Rocks"] = function () return is_spring() end,
+            ["Mountain Village Cliff Rocks"] = function () return is_spring() and has_explosives end,
             ["Mountain Village Keaton Grass Reward 1"] = function () return is_spring() end,
             ["Mountain Village Keaton Grass Reward 2"] = function () return is_spring() and keaton_grass_easy() end,
             ["Mountain Village Keaton Grass Reward 3"] = function () return is_spring() and keaton_grass_easy() end,
@@ -5672,15 +5721,15 @@ function _mm_logic()
     },
     ["Mountain Village Butterflies"] = {
         ["locations"] = {
-            ["Mountain Village Butterfly Pack 1 Butterfly 1"] = function () return true end,
-            ["Mountain Village Butterfly Pack 1 Butterfly 2"] = function () return true end,
-            ["Mountain Village Butterfly Pack 1 Butterfly 3"] = function () return true end,
-            ["Mountain Village Butterfly Pack 1 Butterfly 4"] = function () return true end,
-            ["Mountain Village Butterfly Pack 2 Butterfly 1"] = function () return true end,
-            ["Mountain Village Butterfly Pack 2 Butterfly 2"] = function () return true end,
-            ["Mountain Village Butterfly Pack 2 Butterfly 3"] = function () return true end,
-            ["Mountain Village Butterfly Pack 2 Butterfly 4"] = function () return true end,
-            ["Mountain Village Butterfly Pack 2 Butterfly 5"] = function () return true end,
+            ["Mountain Village Butterfly Pack 1 Butterfly 1"] = function () return soul_butterfly() end,
+            ["Mountain Village Butterfly Pack 1 Butterfly 2"] = function () return soul_butterfly() end,
+            ["Mountain Village Butterfly Pack 1 Butterfly 3"] = function () return soul_butterfly() end,
+            ["Mountain Village Butterfly Pack 1 Butterfly 4"] = function () return soul_butterfly() end,
+            ["Mountain Village Butterfly Pack 2 Butterfly 1"] = function () return soul_butterfly() end,
+            ["Mountain Village Butterfly Pack 2 Butterfly 2"] = function () return soul_butterfly() end,
+            ["Mountain Village Butterfly Pack 2 Butterfly 3"] = function () return soul_butterfly() end,
+            ["Mountain Village Butterfly Pack 2 Butterfly 4"] = function () return soul_butterfly() end,
+            ["Mountain Village Butterfly Pack 2 Butterfly 5"] = function () return soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -5792,6 +5841,10 @@ function _mm_logic()
             ["Twin Islands Grass 10"] = function () return is_spring() end,
             ["Twin Islands Grass 11"] = function () return is_spring() end,
             ["Twin Islands Grass 12"] = function () return is_spring() end,
+            ["Twin Islands Spring Trees"] = function () return is_spring() end,
+            ["Twin Islands Winter Trees"] = function () return is_spring() end,
+            ["Twin Island Ramp Spring Tree"] = function () return is_spring() and has_mask_goron() or short_hook_anywhere() end,
+            ["Twin Island Ramp Winter Tree"] = function () return has_mask_goron() or short_hook_anywhere() end,
             ["Twin Islands Rupee 1"] = function () return is_spring() and (underwater_walking() or can_dive_small()) end,
             ["Twin Islands Rupee 2"] = function () return is_spring() and (underwater_walking() or can_dive_small()) end,
             ["Twin Islands Rupee 3"] = function () return is_spring() and (underwater_walking() or can_dive_small()) end,
@@ -5812,6 +5865,7 @@ function _mm_logic()
             ["Twin Islands Small Snowball 1"] = function () return is_winter() end,
             ["Twin Islands Small Snowball 2"] = function () return is_winter() end,
             ["Twin Islands Small Snowball 3"] = function () return is_winter() end,
+            ["Twin Island Ramp Rocks"] = function () return is_spring() and has_mask_goron() or short_hook_anywhere() end,
         },
         ["age_change"] = false,
     },
@@ -6054,6 +6108,7 @@ function _mm_logic()
             ["Goron Shrine Pot 09"] = function () return true end,
             ["Goron Shrine Pot 10"] = function () return true end,
             ["Goron Shrine Pot 11"] = function () return true end,
+            ["Goron Shrine Rocks"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6078,6 +6133,9 @@ function _mm_logic()
         ["exits"] = {
             ["Mountain Village"] = function () return true end,
             ["Path to Snowhead Middle"] = function () return goron_fast_roll() or hookshot_anywhere() or (has_hover_boots() and trick('MM_PATH_SNOWHEAD_HOVERS')) end,
+        },
+        ["locations"] = {
+            ["Path to Snowhead Front Tree"] = function () return true end,           
         },
         ["age_change"] = false,
     },
@@ -6112,6 +6170,7 @@ function _mm_logic()
             ["Path to Snowhead Small Snowball Back 3"] = function () return true end,
             ["Path to Snowhead Small Snowball Spring Back 1"] = function () return is_spring() end,
             ["Path to Snowhead Small Snowball Spring Back 2"] = function () return is_spring() end,
+            ["Path to Snowhead Back Trees"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6246,6 +6305,7 @@ function _mm_logic()
             ["Goron Race Pot 28"] = function () return true end,
             ["Goron Race Pot 29"] = function () return true end,
             ["Goron Race Pot 30"] = function () return true end,
+            ["Goron Race Trees"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6314,6 +6374,8 @@ function _mm_logic()
             ["Romani Ranch Aliens"] = function () return event('ALIENS') end,
             ["Romani Ranch Cremia Escort"] = function () return event('ALIENS') and (at(NIGHT2_PM_06_00) or (trick('MM_RANCH_FARORE') and can_use_farore() and clock_night2())) end,
             ["Romani Ranch Crate"] = function () return true end,
+            ["Romani Ranch Trees"] = function () return true end,
+            ["Romani Ranch Bushes"] = function () return true end,
             ["Romani Ranch Grass Pack 1 Grass 01"] = function () return true end,
             ["Romani Ranch Grass Pack 1 Grass 02"] = function () return true end,
             ["Romani Ranch Grass Pack 1 Grass 03"] = function () return true end,
@@ -6377,6 +6439,8 @@ function _mm_logic()
             ["Romani Ranch Wonder Item Fence 4"] = function () return true end,
             ["Romani Ranch Wonder Item Fence 5"] = function () return true end,
             ["Romani Ranch Wonder Item Fence 6"] = function () return true end,
+            ["Romani Ranch Soft Soil Day 1"] = function () return has_bugs() and first_day() end,
+            ["Romani Ranch Soft Soil Day 2-3"] = function () return has_bugs() and second_day() or final_day end,
         },
         ["age_change"] = false,
     },
@@ -6389,7 +6453,7 @@ function _mm_logic()
             ["Romani Ranch"] = function () return true end,
         },
         ["locations"] = {
-            ["Cucco Shack Bunny Mask"] = function () return soul_grog() and has('MASK_BREMEN') end,
+            ["Cucco Shack Bunny Mask"] = function () return soul_grog() and has('MASK_BREMEN') and soul_cucco() end,
             ["Cucco Shack Wonder Item 1"] = function () return true end,
             ["Cucco Shack Wonder Item 2"] = function () return true end,
             ["Cucco Shack Wonder Item 3"] = function () return true end,
@@ -6399,6 +6463,8 @@ function _mm_logic()
             ["Cucco Shack Crate 1"] = function () return true end,
             ["Cucco Shack Crate 2"] = function () return true end,
             ["Cucco Shack Crate 3"] = function () return true end,
+            ["Cucco Shack Tree"] = function () return true end,
+            ["Cucco Shack Bushes"] = function () return true end,
             ["Cucco Shack Potted Plant 1 Pot"] = function () return true end,
             ["Cucco Shack Potted Plant 1 Grass"] = function () return true end,
             ["Cucco Shack Potted Plant 2 Pot"] = function () return true end,
@@ -6415,11 +6481,12 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Doggy Racetrack Chest"] = function () return can_use_beans() or is_tall() or can_hookshot_short() or trick('MM_DOG_RACE_CHEST_NOTHING') end,
-            ["Doggy Racetrack HP"] = function () return soul_dog_lady() and can_use_wallet(1) and has_mask_truth() end,
+            ["Doggy Racetrack HP"] = function () return soul_dog_lady() and can_use_wallet(1) and has_mask_truth() and soul_dog() end,
             ["Doggy Racetrack Pot 1"] = function () return true end,
             ["Doggy Racetrack Pot 2"] = function () return true end,
             ["Doggy Racetrack Pot 3"] = function () return true end,
             ["Doggy Racetrack Pot 4"] = function () return true end,
+            ["Doggy Racetrack Soft Soil"] = function () return has_bugs() end,
         },
         ["age_change"] = false,
     },
@@ -6428,9 +6495,9 @@ function _mm_logic()
             ["Romani Ranch"] = function () return true end,
         },
         ["locations"] = {
-            ["Romani Ranch Barn Cow Left"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() end,
-            ["Romani Ranch Barn Cow Right Front"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() end,
-            ["Romani Ranch Barn Cow Right Back"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() end,
+            ["Romani Ranch Barn Cow Left"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() and soul_cow() end,
+            ["Romani Ranch Barn Cow Right Front"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() and soul_cow() end,
+            ["Romani Ranch Barn Cow Right Back"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() and soul_cow() end,
             ["Romani Ranch Barn Wonder Item 1"] = function () return true end,
             ["Romani Ranch Barn Wonder Item 2"] = function () return true end,
         },
@@ -6477,6 +6544,7 @@ function _mm_logic()
             ["Great Bay Coast Zora Mask"] = function () return can_play_healing() end,
             ["Great Bay Coast HP"] = function () return can_use_beans() and scarecrow_hookshot() or short_hook_anywhere() end,
             ["Great Bay Coast Fisherman HP"] = function () return soul_chest_game_owner() and can_use_wallet(1) and (can_hookshot_short() or can_use_ice_arrows()) and is_ocean_cleared() and (between(DAY1_AM_07_00, NIGHT1_AM_04_00) or between(DAY2_AM_07_00, NIGHT2_AM_04_00) or between(DAY3_AM_07_00, NIGHT3_AM_04_00)) end,
+            ["Great Bay Coast Fisherman Tree"] = function () return can_hookshot_short() or can_use_ice_arrows() end,
             ["Great Bay Coast Pot Ledge 1"] = function () return can_hookshot() or short_hook_anywhere() end,
             ["Great Bay Coast Pot Ledge 2"] = function () return can_hookshot() or short_hook_anywhere() end,
             ["Great Bay Coast Pot Ledge 3"] = function () return can_hookshot() or short_hook_anywhere() end,
@@ -6492,11 +6560,14 @@ function _mm_logic()
             ["Great Bay Coast Pot 10"] = function () return true end,
             ["Great Bay Coast Pot 11"] = function () return true end,
             ["Great Bay Coast Pot 12"] = function () return true end,
+            ["Great Bay Coast Ledge Rocks"] = function () return true end,
+            ["Great Bay Coast Entrance Rock"] = function () return true end,
             ["Great Bay Coast Grass 1"] = function () return true end,
             ["Great Bay Coast Grass 2"] = function () return true end,
             ["Great Bay Coast Grass 3"] = function () return true end,
             ["Great Bay Coast Grass 4"] = function () return true end,
             ["Great Bay Coast Grass 5"] = function () return true end,
+            ["Great Bay Coast Trees"] = function () return true end,            
         },
         ["age_change"] = false,
     },
@@ -6510,10 +6581,10 @@ function _mm_logic()
     },
     ["Great Bay Coast Butterflies"] = {
         ["locations"] = {
-            ["Great Bay Coast Common Butterfly 1"] = function () return true end,
-            ["Great Bay Coast Common Butterfly 2"] = function () return true end,
-            ["Great Bay Coast Cleared Butterfly 1"] = function () return is_ocean_cleared() end,
-            ["Great Bay Coast Cleared Butterfly 2"] = function () return is_ocean_cleared() end,
+            ["Great Bay Coast Common Butterfly 1"] = function () return soul_butterfly() end,
+            ["Great Bay Coast Common Butterfly 2"] = function () return soul_butterfly() end,
+            ["Great Bay Coast Cleared Butterfly 1"] = function () return is_ocean_cleared() and soul_butterfly() end,
+            ["Great Bay Coast Cleared Butterfly 2"] = function () return is_ocean_cleared() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -6599,8 +6670,8 @@ function _mm_logic()
             ["GBC Near Cow Grotto"] = function () return true end,
         },
         ["locations"] = {
-            ["Great Bay Coast Cow Front"] = function () return can_play_epona() end,
-            ["Great Bay Coast Cow Back"] = function () return can_play_epona() end,
+            ["Great Bay Coast Cow Front"] = function () return can_play_epona() and soul_cow() end,
+            ["Great Bay Coast Cow Back"] = function () return can_play_epona() and soul_cow() end,
             ["Great Bay Cow Grotto Grass 01"] = function () return true end,
             ["Great Bay Cow Grotto Grass 02"] = function () return true end,
             ["Great Bay Cow Grotto Grass 03"] = function () return true end,
@@ -6674,9 +6745,9 @@ function _mm_logic()
             ["Great Bay Cow Grotto Grass 71"] = function () return true end,
             ["Great Bay Cow Grotto Grass 72"] = function () return true end,
             ["Great Bay Cow Grotto Hive"] = function () return break_hive() or (has_bombchu() and trick('MM_HIVE_BOMBCHU')) end,
-            ["Great Bay Cow Grotto Butterfly 1"] = function () return has_sticks() end,
-            ["Great Bay Cow Grotto Butterfly 2"] = function () return has_sticks() end,
-            ["Great Bay Cow Grotto Butterfly 3"] = function () return has_sticks() end,
+            ["Great Bay Cow Grotto Butterfly 1"] = function () return has_sticks() and soul_butterfly() end,
+            ["Great Bay Cow Grotto Butterfly 2"] = function () return has_sticks() and soul_butterfly() end,
+            ["Great Bay Cow Grotto Butterfly 3"] = function () return has_sticks() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -6763,8 +6834,11 @@ function _mm_logic()
         ["locations"] = {
             ["Zora Cape Underwater Chest"] = function () return underwater_walking() end,
             ["Zora Cape Waterfall HP"] = function () return has_mask_zora() or (has_iron_boots() and has_tunic_zora() and (has_arrows() or (has_bombchu() and trick('MM_CAPE_LIKE_LIKE_BOMBCHU')) or has_mask_blast())) end,
+            ["Zora Cape Island Rocks"] = function () return can_hookshot() and (has_explosives() or trick_keg_explosives() or short_hook_anywhere()) end,
+            ["Zora Cape Island Trees"] = function () return can_hookshot() and (has_explosives() or trick_keg_explosives() or short_hook_anywhere()) end,
             ["Zora Cape Pot Near Beavers 1"] = function () return true end,
             ["Zora Cape Pot Near Beavers 2"] = function () return true end,
+            ["Zora Cape Trees"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6994,6 +7068,7 @@ function _mm_logic()
             ["Gorman Track Grass Pack 2 Grass 11"] = function () return true end,
             ["Gorman Track Grass Pack 2 Grass 12"] = function () return true end,
             ["Gorman Track Crate"] = function () return true end,
+            ["Gorman Track Trees"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -7057,6 +7132,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Road to Ikana Stone Mask"] = function () return can_use_lens_strict() and has_red_or_blue_potion() end,
+            ["Road to Ikana Rock Circle"] = function () return true end,
             ["Road to Ikana Pot"] = function () return scarecrow_hookshot() or short_hook_anywhere() end,
         },
         ["age_change"] = false,
@@ -7081,6 +7157,8 @@ function _mm_logic()
             ["Ikana Graveyard Grass 3"] = function () return true end,
             ["Ikana Graveyard Grass 4"] = function () return true end,
             ["Ikana Graveyard Grass 5"] = function () return true end,
+            ["Ikana Graveyard Rock Circle"] = function () return true end,
+            ["Ikana Graveyard Wall Rocks"] = function () return has_explosives end,
             ["Ikana Graveyard Grass Pack Grass 1"] = function () return true end,
             ["Ikana Graveyard Grass Pack Grass 2"] = function () return true end,
             ["Ikana Graveyard Grass Pack Grass 3"] = function () return true end,
@@ -7202,7 +7280,7 @@ function _mm_logic()
         ["events"] = {
             ["ARROWS"] = function () return true end,
             ["RUPEES"] = function () return (can_fight() or has_weapon_range() or has_explosives()) and soul_wallmaster() end,
-            ["DAMPE_BIG_POE"] = function () return soul_dampe() and can_kill_big_poe() and is_night3() end,
+            ["DAMPE_BIG_POE"] = function () return soul_dampe() and soul_poe() and can_kill_big_poe() and is_night3() end,
         },
         ["exits"] = {
             ["Ikana Graveyard"] = function () return true end,
@@ -7370,7 +7448,7 @@ function _mm_logic()
             ["Ikana Canyon"] = function () return true end,
         },
         ["locations"] = {
-            ["Ghost Hut HP"] = function () return soul_poe_collector() and (has_arrows() or can_hookshot_short() or can_use_deku_bubble()) and can_use_wallet(1) and is_valley_cursed() end,
+            ["Ghost Hut HP"] = function () return soul_poe_collector() and (has_arrows() or can_hookshot_short() or can_use_deku_bubble()) and can_use_wallet(1) and is_valley_cursed() and soul_poe() end,
         },
         ["age_change"] = false,
     },
@@ -7411,6 +7489,8 @@ function _mm_logic()
             ["Ancient Castle of Ikana Grass 10"] = function () return true end,
             ["Ancient Castle of Ikana Grass 11"] = function () return true end,
             ["Ancient Castle of Ikana Grass 12"] = function () return true end,
+            ["Ancient Castle of Ikana Tree"] = function () return true end,
+            ["Ancient Castle of Ikana Bushes"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -7522,11 +7602,13 @@ function _mm_logic()
             ["Stone Tower Inverted Chest 1"] = function () return true end,
             ["Stone Tower Inverted Chest 2"] = function () return true end,
             ["Stone Tower Inverted Chest 3"] = function () return true end,
+            ["Stone Tower Inverted Rocks"] = function () return true end,
             ["Stone Tower Inverted Pot 1"] = function () return true end,
             ["Stone Tower Inverted Pot 2"] = function () return true end,
             ["Stone Tower Inverted Pot 3"] = function () return true end,
             ["Stone Tower Inverted Pot 4"] = function () return true end,
             ["Stone Tower Inverted Pot 5"] = function () return true end,
+            ["Stone Tower Inverted Soft Soil"] = function () return has_bugs() end,
         },
         ["age_change"] = false,
     },
@@ -7910,6 +7992,7 @@ function _mm_logic()
             ["Secret Shrine Rupee 15"] = function () return true end,
             ["Secret Shrine Rupee 16"] = function () return true end,
             ["Secret Shrine Rupee 17"] = function () return true end,
+            ["Secret Shrine Soft Soil"] = function () return has_bugs() end,
         },
         ["age_change"] = false,
     },
@@ -8846,7 +8929,7 @@ function _mm_logic()
     },
     ["Stone Tower Temple Inverted Death Armos Maze"] = {
         ["events"] = {
-            ["POE"] = function () return true end,
+            ["POE"] = function () return soul_poe() end,
         },
         ["exits"] = {
             ["Stone Tower Temple Inverted Center"] = function () return true end,
@@ -9056,6 +9139,7 @@ function _mm_logic()
             ["Swamp Skulltula Pot Room Pot 2"] = function () return gs() end,
             ["Swamp Skulltula Pot Room Jar"] = function () return gs() end,
             ["Swamp Skulltula Pot Room Wall"] = function () return gs() end,
+            ["Swamp Spider House Entrance Rocks"] = function () return true end,
             ["Swamp Spider House Pot Main Lower 1"] = function () return true end,
             ["Swamp Spider House Pot Main Lower 2"] = function () return true end,
             ["Swamp Spider House Pot Main Lower 3"] = function () return true end,
@@ -9086,6 +9170,7 @@ function _mm_logic()
             ["Swamp Spider House Crate Monument 4"] = function () return true end,
             ["Swamp Spider House Crate Monument 5"] = function () return true end,
             ["Swamp Spider House Crate Monument 6"] = function () return true end,
+            ["Swamp Spider House Soft Soil Monument"] = function () return has_bugs() and can_break_boulders() end,
             ["Swamp Spider House Wonder Item Pillars 01"] = function () return hit_target_range_close() end,
             ["Swamp Spider House Wonder Item Pillars 02"] = function () return hit_target_range_close() end,
             ["Swamp Spider House Wonder Item Pillars 03"] = function () return hit_target_range_close() end,
@@ -9106,6 +9191,7 @@ function _mm_logic()
             ["Swamp Spider House Hive Gold Room 1"] = function () return break_hive() or has_bombchu() end,
             ["Swamp Spider House Hive Gold Room 2"] = function () return break_hive() or has_bombchu() end,
             ["Swamp Spider House Hive Gold Room 3"] = function () return break_hive() or has_bombchu() end,
+            ["Swamp Spider House Soft Soil Gold Room"] = function () return has_bugs() end,
             ["Swamp Spider House Hive Jars Room 1"] = function () return break_hive() or has_bombchu() end,
             ["Swamp Spider House Hive Jars Room 2"] = function () return break_hive() or has_bombchu() end,
             ["Swamp Spider House Hive Jars Room 3"] = function () return break_hive() or has_bombchu() end,
