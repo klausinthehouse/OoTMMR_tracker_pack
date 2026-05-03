@@ -54,6 +54,18 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Clock Tower Wonder",
+                    "chest_unopened_img": "images/system/Wonder.png",
+                    "chest_opened_img": "images/system/Wonder_grey.png",
+                    "access_rules": [
+                      "$mm|Clock Town South Wonder Item 1"
+                    ],
+                   "visibility_rules": [
+                      "setting_wonderitem_on"
+                    ],
+                   "item_count": 3
                   }
                 ],
                 "map_locations": [
@@ -196,8 +208,8 @@
             "name": "Clock Town North",
             "children": [
               {
-                "name": "North Clock Town Tree",
-                "short_name": "NCT Tree",
+                "name": "North Clock Town Trees",
+                "short_name": "NCT Trees",
                 "sections": [
                   {
                     "name": "North Clock Town Tree HP",
@@ -207,6 +219,19 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Trees",
+                    "short_name": "Trees",
+                    "access_rules": [
+                      "$mm|Clock Town Trees"
+                    ],
+                    "visibility_rules": [
+                      "setting_TreeShuffleMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/tree.png",
+                    "chest_opened_img": "images/system/tree_grey.png",                
+                    "item_count": 2
                   }
                 ],
                 "map_locations": [
@@ -518,6 +543,30 @@
                 ]
               },
               {
+                "name": "East Clock Town Crates",
+                "sections": [
+                  {
+                    "name": "ECT Crates",
+                    "chest_unopened_img": "images/system/crate.png",
+                    "chest_opened_img": "images/system/crate_grey.png",
+                    "access_rules": [
+                      "$mm|Clock Town East Small Crate 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_cratemm_overworld"
+                    ],
+                    "item_count": 2
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 200,
+                    "y": 140
+                  }
+                ]
+              },
+              {
                 "name": "Honey and Darling - Open 6 AM - 10 PM",
                 "sections": [
                   {
@@ -537,6 +586,18 @@
                       "$mm|Honey & Darling Reward Any Day"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Wonderitems above entrance",
+                    "chest_unopened_img": "images/system/Wonder.png",
+                    "chest_opened_img": "images/system/Wonder_grey.png",
+                    "access_rules": [
+                      "$mm|Clock Town East Wonder Item Basket 1"
+                    ],
+                   "visibility_rules": [
+                      "setting_wonderitem_on"
+                    ],
+                   "item_count": 9
                   }
                 ],
                 "map_locations": [
@@ -571,6 +632,18 @@
                       "$mm|Stock Pot Inn Room Key"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Clock Entrance Wonder",
+                    "chest_unopened_img": "images/system/Wonder.png",
+                    "chest_opened_img": "images/system/Wonder_grey.png",
+                    "access_rules": [
+                      "$mm|Stock Pot Inn Wonder Item 1"
+                    ],
+                   "visibility_rules": [
+                      "setting_wonderitem_on"
+                    ],
+                   "item_count": 3
                   },
                   {
                     "name": "Midnight Item From Anju - Night 1: 11:30 PM",
@@ -753,8 +826,8 @@
                 ]
               },
               {
-                "name": "Rosa Sisters",
-                "short_name": "Rosa Sis",
+                "name": "Luck and Dance",
+                "short_name": "Fun and Games",
                 "sections": [
                   {
                     "name": "Rosa Sisters Gift - Night 1 or 2",
@@ -763,6 +836,36 @@
                     "access_rules": [
                       "$mm|Clock Town Rosa Sisters HP"
                     ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Lottery Day 1",
+                    "access_rules": [
+                      "$mm|Clock Town Lottery Day 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_lottery_on"
+                    ],                    
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Lottery Day 2",
+                    "access_rules": [
+                      "$mm|Clock Town Lottery Day 2"
+                    ],
+                    "visibility_rules": [
+                      "setting_lottery_on"
+                    ],                    
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Lottery Day 3",
+                    "access_rules": [
+                      "$mm|Clock Town Lottery Day 3"
+                    ],
+                    "visibility_rules": [
+                      "setting_lottery_on"
+                    ],                    
                     "item_count": 1
                   }
                 ],
@@ -915,6 +1018,18 @@
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Trading Post Bushes",                    
+                    "access_rules": [
+                      "$mm|Trading Post Bushes"
+                    ],
+                    "visibility_rules": [
+                      "setting_BushMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/bush.png",
+                    "chest_opened_img": "images/system/bush_grey.png",                
+                    "item_count": 4
                   }
                 ],
                 "map_locations": [
@@ -1016,16 +1131,28 @@
             "name": "Laundry Pool",
             "children": [
               {
-                "name": "Listen To Guru Guru",
+                "name": "Guru Guru",
                 "short_name": "Guru Guru",
                 "sections": [
                   {
-                    "name": "Night 1 or 2",
+                    "name": "Listen Night 1 or 2",
                     "access_rules": [
                       "$mm|Clock Town Guru Guru Mask Bremen"
                     ],
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Guru-Guru-Crate",
+                    "chest_unopened_img": "images/system/crate.png",
+                    "chest_opened_img": "images/system/crate_grey.png",
+                    "access_rules": [
+                      "$mm|Clock Town Laundry Pool Small Crate"
+                    ],
+                    "visibility_rules": [
+                      "setting_cratemm_overworld"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -1115,15 +1242,27 @@
                 ]
               },
               {
-                "name": "Laundry Pool Grass",
+                "name": "Laundry Pool by Water",
                 "sections": [
                   {
-                    "name": "Grass Shuffle",
+                    "name": "Grass",
                     "access_rules": [
                       "$mm|Clock Town Laundry Pool Grass 1"
                     ],
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 3
+                  },
+                  {
+                    "name": "Underwater Rupees",                    
+                    "access_rules": [
+                      "$mm|Clock Town Laundry Pool Rupee 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleFreeRupeesMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/blue.png",
+                    "chest_opened_img": "images/system/blue_check.png",
                     "item_count": 3
                   }
                 ],
@@ -1193,16 +1332,40 @@
         "color": "#ffa449",
         "children": [
           {
-            "name": "Underwater Chest",
-            "short_name": "Water Chest",
+            "name": "TF South-West",
+            "short_name": "Pond",
             "sections": [
               {
-                "name": "Open it",
+                "name": "Water chest",
                 "access_rules": [
                   "$mm|Termina Field Water Chest"
                 ],
                 "item_count": 1
-              }
+              },
+              {
+                "name": "Wonderitem on Ramp",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item South West Ramp"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Rocks on Wall",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Wonder Item South West Ramp"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 5
+              }  
             ],
             "map_locations": [
               {
@@ -1248,6 +1411,30 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 14
+              },
+              {
+                "name": "Wonderitem in Grass",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 3                
+              },
+              {
+                "name": "Wonderitem Graffiti",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Graffiti 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -1259,7 +1446,7 @@
             ]
           },
           {
-            "name": "Learn Kamaro Dance",
+            "name": "Kamaro Dance",
             "short_name": "Kamaro Dance",
             "sections": [
               {
@@ -1270,6 +1457,18 @@
                   "$mm|Termina Field Kamaro Mask"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Rock Circle",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Rock"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 8
               }
             ],
             "map_locations": [
@@ -1313,6 +1512,30 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 1
+              },
+              {
+                "name": "East Pillar Rupee",                    
+                "access_rules": [
+                  "$mm|Termina Field Rupee"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleFreeRupeesMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Soil-Item by Pillar",                    
+                "access_rules": [
+                  "$mm|Termina Field Soft Soils"
+                ],
+                "visibility_rules": [
+                  "setting_soil_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",                
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1324,9 +1547,22 @@
             ]
           },
           {
-            "name": "Butterflies In The Grass",
+            "name": "Peahat Grotto",
             "short_name": "Peahat Grotto",
             "sections": [
+              {
+                "name": "Butterflies in the Grass",                    
+                "short_name": "TF Butterflies",
+                "access_rules": [
+                  "$mm|Termina Field Butterfly 1"
+               ],
+                "visibility_rules": [
+                  "setting_shuffleButterflyMm_on"
+               ],
+               "chest_unopened_img": "images/system/Butterfly.png",
+               "chest_opened_img": "images/system/Butterfly_grey.png",
+               "item_count": 2
+              },
               {
                 "name": "Kill Peahats (Daytime Only)",
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
@@ -1347,6 +1583,18 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 12
+              },
+              {
+                "name": "Wonderitem in Grass",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -1358,18 +1606,42 @@
             ]
           },
           {
-            "name": "Termina Field North Grotto",
-            "short_name": "Dodongo Grotto",
+            "name": "Termina Field North",
+            "short_name": "TF North",
             "sections": [
               {
-                "name": "Kill the Dodongos",
+                "name": "Kill the Dodongos (Grotto)",
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
                   "$mm|Termina Field Dodongo Grotto"
                 ],
                 "item_count": 1
-              }
+              },
+              {
+                "name": "Wonderitem on Ramp",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item North Ramp"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Rocks on Wall",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Rocks North Wall"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 7
+              } 
             ],
             "map_locations": [
               {
@@ -1380,8 +1652,8 @@
             ]
           },
           {
-            "name": "Termina Field Cow Grotto",
-            "short_name": "Termina Field Cows",
+            "name": "Termina Field Log",
+            "short_name": "TF Log",
             "sections": [
               {
                 "name": "Cows",
@@ -1405,6 +1677,56 @@
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              },
+              {
+                "name": "TF Cow Grotto Hive",
+                "short_name": "Hive",
+                "access_rules": [
+                  "$mm|Termina Field Cow Grotto Hive"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleHivesMm_true"
+                ],
+                "chest_unopened_img": "images/system/Hive.png",
+                "chest_opened_img": "images/system/Hive_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "TF Cow Grotto Butterflies",                    
+                "short_name": "Butterflies",
+                "access_rules": [
+                  "$mm|Termina Field Cow Grotto Butterfly 1"
+               ],
+                "visibility_rules": [
+                  "setting_shuffleButterflyMm_on"
+               ],
+               "chest_unopened_img": "images/system/Butterfly.png",
+               "chest_opened_img": "images/system/Butterfly_grey.png",
+               "item_count": 3
+              },
+              {
+                "name": "Wonderitem above",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Hollow Trunk"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Soil-Items by Log",                    
+                "access_rules": [
+                  "$mm|Termina Field Soft Soils"
+                ],
+                "visibility_rules": [
+                  "setting_soil_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",                
                 "item_count": 1
               }
             ],
@@ -1430,6 +1752,19 @@
                 "item_count": 1
               },
               {
+                "name": "The other Hives",
+                "short_name": "Hives",
+                "access_rules": [
+                  "$mm|Termina Field Bio Baba Grotto Hive Middle"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleHivesMm_true"
+                ],
+                "chest_unopened_img": "images/system/Hive.png",
+                "chest_opened_img": "images/system/Hive_grey.png",
+                "item_count": 2
+              },
+              {
                 "name": "Beehive Grotto Grass",
                 "access_rules": [
                   "$mm|Bio Baba Grotto Grass 1"
@@ -1440,7 +1775,31 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 2
-              }
+              },
+              {
+                "name": "Rock in Grotto",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Bio Baba Grotto Rock"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Rock behind Fence",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Great Bay Coast Entrance Rock"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 1
+              }    
             ],
             "map_locations": [
               {
@@ -1473,6 +1832,18 @@
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Scrub Grotto Crate",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Scrub Crate"
+                ],
+                "visibility_rules": [
+                  "setting_cratemm_overworld"
+                ],
                 "item_count": 1
               }
             ],
@@ -1508,6 +1879,32 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 5
+              },
+              {
+                "name": "Ocean Gossip Grotto Hive",
+                "short_name": "Hive",
+                "access_rules": [
+                  "$mm|Ocean Gossip Grotto Hive"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleHivesMm_true"
+                ],
+                "chest_unopened_img": "images/system/Hive.png",
+                "chest_opened_img": "images/system/Hive_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Ocean Gossip Grotto Butterflies",                    
+                "short_name": "Butterflies",
+                "access_rules": [
+                 "$mm|Ocean Gossip Grotto Butterfly 1"
+               ],
+                "visibility_rules": [
+                  "setting_shuffleButterflyMm_on"
+               ],
+               "chest_unopened_img": "images/system/Butterfly.png",
+               "chest_opened_img": "images/system/Butterfly_grey.png",
+               "item_count": 2
               }
             ],
             "map_locations": [
@@ -1703,8 +2100,8 @@
             ]
           },
           {
-            "name": "SW Grass Patch (Inner Ring)",
-            "short_name": "SW Grass",
+            "name": "West Exit Clock Town",
+            "short_name": "West Exit",
             "sections": [
               {
                 "name": "SW Grass Patch",
@@ -1717,6 +2114,54 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 12
+              },
+              {
+                "name": "Wonderitem on Ramp",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item West Ramp"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Wonderitems in Fountain",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Fountains 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Wonderitems on shell",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Shell 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 3
+              },
+              {
+                "name": "Wonderitems on Wall",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Shell Side 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -1754,6 +2199,18 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 12
+              },
+              {
+                "name": "Soil-Items (Wall)",                    
+                "access_rules": [
+                  "$mm|Termina Field Soft Soils"
+                ],
+                "visibility_rules": [
+                  "setting_soil_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",                
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -1863,7 +2320,7 @@
             ]
           },
           {
-            "name": "Grass Patches Near Observatory",
+            "name": "Near Observatory",
             "sections": [
               {
                 "name": "Grass Patch 1 Near of Observatory",
@@ -1912,6 +2369,39 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 12
+              },
+              {
+                "name": "Near Observatory Trees",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Termina Field Tree"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 2
+              },
+              {
+                "name": "Part-Timer in Tree",
+                "short_name": "Knock him down",
+                "access_rules": [
+                  "$mm|Termina Field Part Timer"
+                ],                               
+                "item_count": 1
+              },
+              {
+                "name": "Soil-Items by Observatory",                    
+                "access_rules": [
+                  "$mm|Termina Field Soft Soils"
+                ],
+                "visibility_rules": [
+                  "setting_soil_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",                
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -2125,9 +2615,21 @@
             ]
           },
           {
-            "name": "Gorman Track Grass Patches",
+            "name": "Gorman Track",
             "short_name": "Gorman Track Grass",
             "sections": [
+              {
+                "name": "Gormans Crate",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
+                "access_rules": [
+                  "$mm|Gorman Track Crate"
+                ],
+                "visibility_rules": [
+                  "setting_cratemm_overworld"
+                ],
+                "item_count": 1
+              },
               {
                 "name": "Gorman Track Grass Patch 1",
                 "access_rules": [
@@ -2144,6 +2646,32 @@
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              },
+              {
+                "name": "Gorman Track Trees 1",
+                "short_name": "Gorman-Trees 1",
+                "access_rules": [
+                  "$mm|Gorman Track Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 13
+              },
+              {
+                "name": "Gorman Track Trees 2",
+                "short_name": "Gorman-Trees 2",
+                "access_rules": [
+                  "$mm|Gorman Track Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
                 "item_count": 12
               }
             ],
@@ -2205,8 +2733,20 @@
             ]
           },
           {
-            "name": "Romani Ranch Grass Patches",
+            "name": "Romani Ranch exterior",
             "sections": [
+              {
+                "name": "Wonderitems on fence",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Romani Ranch Wonder Item Fence 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 6
+              },
               {
                 "name": "Grass Patch 1 along South Wall",
                 "visibility_rules": [
@@ -2266,6 +2806,67 @@
                   "$mm|Romani Ranch Grass Pack 5 Grass 01"
                 ],
                 "item_count": 9
+              },
+              {
+                "name": "Romanis Crate",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Crate"
+                ],
+                "visibility_rules": [
+                  "setting_cratemm_overworld"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ranch Trees",
+                "short_name": "Island Trees",
+                "access_rules": [
+                  "$mm|Romani Ranch Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 7
+              },
+              {
+                "name": "Ranch Bushes",                    
+                "access_rules": [
+                  "$mm|Romani Ranch Bushes"
+                ],
+                "visibility_rules": [
+                  "setting_BushMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/bush.png",
+                "chest_opened_img": "images/system/bush_grey.png",                
+                "item_count": 4
+              },
+              {
+                "name": "Ranch Soil-Items (Wall) - Day 1",                    
+                "access_rules": [
+                  "$mm|Romani Ranch Soft Soil Day 1"
+                ],
+                "visibility_rules": [
+                  "setting_soil_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",                
+                "item_count": 1
+              },
+              {
+                "name": "Ranch Soil-Items (Wall) - Day 2-3",                    
+                "access_rules": [
+                  "$mm|Romani Ranch Soft Soil Day 2-3"
+                ],
+                "visibility_rules": [
+                  "setting_soil_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",                
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -2313,6 +2914,55 @@
                   "$mm|Cucco Shack Potted Plant 1 Grass"
                 ],
                 "item_count": 2
+              },
+              {
+                "name": "Wonderitems in fence",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Cucco Shack Wonder Item 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 6
+              },
+              {
+                "name": "Cucco-Crates",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
+                "access_rules": [
+                  "$mm|Cucco Shack Crate 1"
+                ],
+                "visibility_rules": [
+                  "setting_cratemm_overworld"
+                ],
+                "item_count": 3
+              },
+              {
+                "name": "Cucco-Tree",
+                "short_name": "Cucco-Tree",
+                "access_rules": [
+                  "$mm|Cucco Shack Tree"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 1
+              },
+              {
+                "name": "Cucco Bushes",                    
+                "access_rules": [
+                  "$mm|Cucco Shack Bushes"
+                ],
+                "visibility_rules": [
+                  "setting_BushMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/bush.png",
+                "chest_opened_img": "images/system/bush_grey.png",                
+                "item_count": 7
               }
             ],
             "map_locations": [
@@ -2354,6 +3004,18 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 4
+              },
+              {
+                "name": "Doggy Racetrack Soil-Items",                    
+                "access_rules": [
+                  "$mm|Doggy Racetrack Soft Soil"
+                ],
+                "visibility_rules": [
+                  "setting_soil_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",                
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -2365,8 +3027,8 @@
             ]
           },
           {
-            "name": "Romani Ranch Cows",
-            "short_name": "Romani Ranch Cows",
+            "name": "Romani Ranch Barn",
+            "short_name": "Stable",
             "sections": [
               {
                 "name": "Barn Cows",
@@ -2376,6 +3038,18 @@
                   "$mm|Romani Ranch Barn Cow Left"
                 ],
                 "item_count": 3
+              },
+              {
+                "name": "Wonderitems in Hay",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Romani Ranch Barn Wonder Item 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -2392,7 +3066,7 @@
         ]
       },
       {
-        "name": "Swamp",
+        "name": "Road to Southern Swamp",
         "color": "#058e2e",
         "children": [
           {
@@ -2430,6 +3104,19 @@
                   "$mm|Road to Southern Swamp Grass Pack 2 Grass 01"
                 ],
                 "item_count": 12
+              },
+              {
+                "name": "Trees on Road",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 6
               }
             ],
             "map_locations": [
@@ -2598,12 +3285,50 @@
                   "$mm|Southern Swamp HP"
                 ],
                 "item_count": 1
-              }
+              }              
             ],
             "map_locations": [
               {
                 "map": "termina",
                 "x": 565,
+                "y": 438
+              }
+            ]
+          },
+          {
+            "name": "Way to Deku Palace",
+            "short_name": "Swamp-Swim",
+            "sections": [              
+              {
+                "name": "Tunnel Hive",
+                "short_name": "Hive",
+                "access_rules": [
+                  "$mm|Southern Swamp Hive"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleHivesMm_true"
+                ],
+                "chest_unopened_img": "images/system/Hive.png",
+                "chest_opened_img": "images/system/Hive_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Flower Rupees",                    
+                "access_rules": [
+                  "$mm|Southern Swamp Rupee 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleFreeRupeesMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 600,
                 "y": 438
               }
             ]
@@ -2786,6 +3511,18 @@
                 "visibility_rules": [
                   "setting_shopShuffleMm_full"
                 ],
+                "item_count": 1
+              },
+              {
+                "name": "Potion Shop Rupee",                    
+                "access_rules": [
+                  "$mm|Swamp Potion Shop Rupee"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleFreeRupeesMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",
                 "item_count": 1
               },
               {
@@ -3115,6 +3852,31 @@
                           "$mm|Deku Palace Grotto Grass 01"
                         ],
                         "item_count": 12
+                      },
+                      {
+                        "name": "Magic Bean Seller Grotto Butterflies",                    
+                        "short_name": "Butterflies",
+                        "access_rules": [
+                          "$mm|Deku Palace Grotto Butterfly 1"
+                       ],
+                        "visibility_rules": [
+                          "setting_shuffleButterflyMm_on"
+                       ],
+                       "chest_unopened_img": "images/system/Butterfly.png",
+                       "chest_opened_img": "images/system/Butterfly_grey.png",
+                       "item_count": 4
+                      },
+                      {
+                        "name": "Soil-Items",                    
+                        "access_rules": [
+                          "$mm|Deku Palace Grotto Soft Soil"
+                        ],
+                        "visibility_rules": [
+                          "setting_soil_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",                
+                        "item_count": 3
                       }
                     ],
                     "map_locations": [
@@ -3126,7 +3888,7 @@
                     ]
                   },
                   {
-                    "name": "Deku Palace Legde",
+                    "name": "Deku Palace",
                     "sections": [
                       {
                         "name": "Deku Palace Ledge Pots",
@@ -3139,6 +3901,66 @@
                         "chest_unopened_img": "images/pot.png",
                         "chest_opened_img": "images/pot_grey.png",
                         "item_count": 2
+                      },
+                      {
+                        "name": "Rupees on right side",                    
+                        "access_rules": [
+                          "$mm|Deku Palace Rupee Right 01"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffleFreeRupeesMm_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",
+                        "item_count": 13
+                      },
+                      {
+                        "name": "Red Boulders in Deku Palace",                    
+                        "access_rules": [
+                          "$mm|Deku Palace Red Boulder 1"
+                        ],
+                        "visibility_rules": [
+                          "setting_RedBoulderMm_on"
+                        ],
+                        "chest_unopened_img": "images/system/RedBoulder.png",
+                        "chest_opened_img": "images/system/RedBoulder_grey.png",
+                        "item_count": 3
+                      },
+                      {
+                        "name": "Rupees on left side",                    
+                        "access_rules": [
+                          "$mm|Deku Palace Rupee Left 1"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffleFreeRupeesMm_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",
+                        "item_count": 7
+                      },
+                      {
+                        "name": "Rupees on left side far",                    
+                        "access_rules": [
+                          "$mm|Deku Palace Rupee Left Far 1"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffleFreeRupeesMm_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",
+                        "item_count": 3
+                      },
+                      {
+                        "name": "Soil-Items Outside (Right Side)",                    
+                        "access_rules": [
+                          "$mm|Deku Palace Soft Soil"
+                        ],
+                        "visibility_rules": [
+                          "setting_soil_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",                
+                        "item_count": 3
                       }
                     ],
                     "map_locations": [
@@ -3174,6 +3996,30 @@
                         "chest_unopened_img": "images/pot.png",
                         "chest_opened_img": "images/pot_grey.png",
                         "item_count": 2
+                      },
+                      {
+                        "name": "Rupees on Race",                    
+                        "access_rules": [
+                          "$mm|Deku Shrine Rupee Main 01"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffleFreeRupeesMm_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",
+                        "item_count": 20
+                      },
+                      {
+                        "name": "Rupees End of Race",                    
+                        "access_rules": [
+                          "$mm|Deku Shrine Rupee End 01"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffleFreeRupeesMm_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",
+                        "item_count": 10
                       }
                     ],
                     "map_locations": [
@@ -3257,6 +4103,18 @@
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
                     "item_count": 3
+                  },
+                  {
+                    "name": "Rupees on central Stump",                    
+                    "access_rules": [
+                      "$mm|Woodfall Rupee"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleFreeRupeesMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/blue.png",
+                    "chest_opened_img": "images/system/blue_check.png",
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -3387,6 +4245,123 @@
             ]
           },
           {
+            "name": "Path to Mountain Village",
+            "short_name": "Path to MV",
+            "sections": [
+              {
+                "name": "Big Snowballs lower Path",
+                "short_name": "Big lower",
+                "access_rules": [
+                  "$mm|Path to Mountain Village Big Snowball Lower 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 8
+              },
+              {
+                "name": "Big Snowballs upper Path",
+                "short_name": "Big upper",
+                "access_rules": [
+                  "$mm|Path to Mountain Village Big Snowball Middle 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 7
+              },
+              {
+                "name": "Small Winter Snowballs lower Path",
+                "short_name": "Small Winter lower",
+                "access_rules": [
+                  "$mm|Path to Mountain Village Small Snowball Lower Winter 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 3
+              },
+              {
+                "name": "Trees lower path",
+                "short_name": "Lower Trees",
+                "access_rules": [
+                  "$mm|Path to Mountain Village Lower Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 2
+              },
+              {
+                "name": "Small Winter Snowballs upper Path",
+                "short_name": "Small Winter upper",
+                "access_rules": [
+                  "$mm|Path to Mountain Village Small Snowball Upper Winter"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Small Spring Snowballs lower Path",
+                "short_name": "Small Spring lower",
+                "access_rules": [
+                  "$mm|Path to Mountain Village Small Snowball Lower Spring 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 4
+              },
+              {
+                "name": "Small Spring Snowballs upper Path",
+                "short_name": "Small Spring upper",
+                "access_rules": [
+                  "$mm|Path to Mountain Village Small Snowball Upper Spring 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 3
+              },
+              {
+                "name": "Trees upper path",
+                "short_name": "Upper Trees",
+                "access_rules": [
+                  "$mm|Path to Mountain Village Upper Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 2
+              }               
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 527,
+                "y": 214
+              }
+            ]
+          },
+          {
             "name": "Path to Goron Graveyard Grotto",
             "short_name": "Path to Graveyard Grotto",
             "sections": [
@@ -3509,25 +4484,90 @@
             ]
           },
           {
-            "name": "Mountain Village Owl Statue",
-            "short_name": "Owl Statue",
+            "name": "Mountain Village",
+            "short_name": "Mountain Village",
             "sections": [
               {
                 "name": "Mountain Village Owl Statue",
                 "access_rules": [
                   "$mm|Mountain Village Owl Statue"
                 ],
+                "visibility_rules": [
+                  "setting_owlShuffle_anywhere"
+                ],
                 "chest_unopened_img": "images/deactivated_owl_statue.png",
                 "chest_opened_img": "images/activated_owl_statue.png",
                 "item_count": 1
-              }
+              },
+              {
+                "name": "Snowballs by Owl-Statue",
+                "short_name": "Snowowl",
+                "access_rules": [
+                  "$mm|Snowhead Small Snowball 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 4
+              },
+              {
+                "name": "Mountain Village Big Snowballs",
+                "short_name": "Big Snowballs",
+                "access_rules": [
+                  "$mm|Mountain Village Big Snowball 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 4
+              },
+              {
+                "name": "Mountain Village Big Snowball day 1 and 2",
+                "short_name": "Big Snowball Day 1/2",
+                "access_rules": [
+                  "$mm|Mountain Village Big Snowball 3"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Mountain Village Small Snowballs",
+                "short_name": "Small Snowballs",
+                "access_rules": [
+                  "$mm|Mountain Village Small Snowball 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 5
+              },
+              {
+                "name": "Mountain Village Small Snowballs only Winter",
+                "short_name": "Small winter Snowballs",
+                "access_rules": [
+                  "$mm|Mountain Village Small Snowball Winter 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 4
+              }         
             ],
             "map_locations": [
               {
-                "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_owlShuffle_none"
-                ],
+                "map": "termina",                
                 "x": 517,
                 "y": 162
               }
@@ -3586,7 +4626,7 @@
             ]
           },
           {
-            "name": "Mountain Village Grass",
+            "name": "Mountain Village Spring",
             "sections": [
               {
                 "name": "Mountain Village Grass Patch 1",
@@ -3635,7 +4675,81 @@
                   "$mm|Mountain Village Grass 1"
                 ],
                 "item_count": 3
-              }
+              },
+              {
+                "name": "Mountain Village Butterflies",                    
+                "short_name": "Spring Butterflies",
+                "access_rules": [
+                  "$mm|Mountain Village Butterfly Pack 1 Butterfly 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleButterflyMm_on"
+                ],
+                "chest_unopened_img": "images/system/Butterfly.png",
+                "chest_opened_img": "images/system/Butterfly_grey.png",
+                "item_count": 9
+              },
+              {
+                "name": "Spring Rocks",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Mountain Village Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 5
+              },
+              {
+                "name": "Cliff Rocks",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Mountain Village Cliff Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Spring Hive",
+                "short_name": "Hive",
+                "access_rules": [
+                  "$mm|Mountain Village Hive"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleHivesMm_true"
+                ],
+                "chest_unopened_img": "images/system/Hive.png",
+                "chest_opened_img": "images/system/Hive_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Red Boulders in Spring",                    
+                "access_rules": [
+                  "$mm|Mountain Village Spring Red Boulder 1"
+                ],
+                "visibility_rules": [
+                  "setting_RedBoulderMm_on"
+                ],
+                "chest_unopened_img": "images/system/RedBoulder.png",
+                "chest_opened_img": "images/system/RedBoulder_grey.png",
+                "item_count": 3
+              },
+              {
+                "name": "Rupee under Red Boulders",                    
+                "access_rules": [
+                 "$mm|Mountain Village Rupee"
+                ],
+                "visibility_rules": [
+                 "setting_shuffleFreeRupeesMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",
+                "item_count": 1
+              }     
             ],
             "map_locations": [
               {
@@ -3756,17 +4870,108 @@
             ]
           },
           {
-            "name": "Goron Elder",
-            "short_name": "Goron Elder",
+            "name": "Twin Islands Winter",
+            "short_name": "Twin Island",
             "sections": [
               {
-                "name": "Unfreeze him",
+                "name": "Winter Trees",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Twin Islands Winter Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 2
+              },
+              {
+                "name": "Ramp Winter Trees",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Twin Island Ramp Winter Tree"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 2
+              },    
+              {
+                "name": "Goron Elder",
                 "access_rules": [
                   "$mm|Goron Elder"
                 ],
                 "chest_unopened_img": "images/system/unknownsong.png",
                 "chest_opened_img": "images/system/unknownsong_check.png",
                 "item_count": 1
+              },
+              {
+                "name": "Big Snowballs Twin Island",
+                "short_name": "Big Snowballs",
+                "access_rules": [
+                  "$mm|Twin Islands Big Snowball 02"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 10
+              },
+              {
+                "name": "Big Snowballs Twin Island first and third Day",
+                "short_name": "Snowballs 1/3",
+                "access_rules": [
+                  "$mm|Twin Islands Big Snowball 01"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 2
+              },
+              {
+                "name": "Big Snowball Twin Island second and third Day",
+                "short_name": "Snowball 2/3",
+                "access_rules": [
+                  "$mm|Twin Islands Big Snowball 08"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Small Snowballs Twin Island",
+                "short_name": "Small Snowballs",
+                "access_rules": [
+                  "$mm|Twin Islands Small Snowball 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 3
+              },
+              {
+                "name": "Small Snowballs Twin Island Ramp",
+                "short_name": "Small Snowballs ramp",
+                "access_rules": [
+                  "$mm|Twin Islands Small Snowball Ramp 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -3778,22 +4983,75 @@
             ]
           },
           {
-            "name": "Twin Islands Spring Chests",
-            "short_name": "Twin Islands Chests",
-            "access_rules": [
-              "$mm|Twin Islands Underwater Chest 1"
-            ],
+            "name": "Twin Islands Spring",
+            "short_name": "TI Spring",            
             "sections": [
               {
                 "name": "Gold Chest",
+                "access_rules": [
+                  "$mm|Twin Islands Underwater Chest 1"
+                ],
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "item_count": 1
               },
               {
                 "name": "Chest Inside Nook",
+                "access_rules": [
+                  "$mm|Twin Islands Underwater Chest 1"
+                ],
                 "item_count": 1
-              }
+              },
+              {
+                "name": "Rupees underwater",                    
+                "access_rules": [
+                 "$mm|Twin Islands Rupee 1"
+                ],
+                "visibility_rules": [
+                 "setting_shuffleFreeRupeesMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",
+                "item_count": 4
+              },
+              {
+                "name": "Spring Trees",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Twin Islands Spring Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 2
+              },
+              {
+                "name": "Ramp Spring Trees",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Twin Island Ramp Spring Tree"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 2
+              },
+              {
+                "name": "Ramp Spring Rocks",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Twin Island Ramp Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 3
+              }           
             ],
             "map_locations": [
               {
@@ -3840,7 +5098,7 @@
                 "item_count": 1
               },
               {
-                "name": "Goron Racetrack Pots (30x)",
+                "name": "Goron Racetrack Pots",
                 "access_rules": [
                   "$mm|Goron Race Pot 01"
                 ],
@@ -3850,6 +5108,19 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 1
+              },
+              {
+                "name": "Goron Racetrack Trees",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Goron Race Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 10
               }
             ],
             "map_locations": [
@@ -3897,16 +5168,67 @@
             ]
           },
           {
-            "name": "Medigoron Powder Keg",
-            "short_name": "Medigoron",
+            "name": "Goron Village",
+            "short_name": "Gorn Village",
             "sections": [
               {
-                "name": "Talk to him after opening the track",
+                "name": "Talk to Medigoron after opening the track",
                 "access_rules": [
                   "$mm|Goron Powder Keg",
                   "{gossip_stone}"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Medigorons Crate",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
+                "access_rules": [
+                  "$mm|Goron Village Crate"
+                ],
+                "visibility_rules": [
+                  "setting_cratemm_overworld"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Big Snowballs Goron Village",
+                "short_name": "Big Snowballs",
+                "access_rules": [
+                  "$mm|Goron Village Big Snowball 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 9
+              },
+              {
+                "name": "Small Snowballs Goron Village",
+                "short_name": "Small Snowballs",
+                "access_rules": [
+                  "$mm|Goron Village Small Snowball 01"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 12
+              },
+              {
+                "name": "Small Snowballs Goron Village Cliff",
+                "short_name": "Small cliff Snowballs",
+                "access_rules": [
+                  "$mm|Mountain Village Small Snowball Cliff 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -4000,7 +5322,19 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 11
-              }
+              },
+              {
+                "name": "Goron Shrine Rocks",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Goron Shrine Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 16
+              }   
             ],
             "map_locations": [
               {
@@ -4052,6 +5386,97 @@
             "short_name": "Road to Snowhead",
             "sections": [
               {
+                "name": "Front Tree",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Path to Snowhead Front Tree"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 1
+              },
+              {
+                "name": "Big Snowballs Middle",
+                "short_name": "Big Middle Snowballs",
+                "access_rules": [
+                  "$mm|Path to Snowhead Big Snowball Middle 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 2
+              },
+              {
+                "name": "Melted big Middle Snowballs (spring)",
+                "short_name": "Middle spring Snowballs",
+                "access_rules": [
+                  "$mm|Path to Snowhead Small Snowball Spring Middle 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 2
+              },
+              {
+                "name": "Big Snowballs back",
+                "short_name": "Big back Snowballs",
+                "access_rules": [
+                  "$mm|Path to Snowhead Big Snowball Back 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 2
+              },
+              {
+                "name": "Small Snowballs back",
+                "short_name": "Small back Snowballs",
+                "access_rules": [
+                  "$mm|Path to Snowhead Small Snowball Back 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 3
+              },
+              {
+                "name": "Melted big back Snowballs (spring)",
+                "short_name": "Back spring Snowballs",
+                "access_rules": [
+                  "$mm|Path to Snowhead Small Snowball Spring Back 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 2
+              },
+              {
+                "name": "Back Trees",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Path to Snowhead Back Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 3
+              },
+              {
                 "name": "Get in the secret grotto",
                 "access_rules": [
                   "$mm|Path to Snowhead Grotto"
@@ -4092,7 +5517,7 @@
             "name": "Snowhead Area",
             "children": [
               {
-                "name": "Snowhead Great Fairy Fountain",
+                "name": "Snowhead front of Temple",
                 "short_name": "Snowhead Great Fairy",
                 "sections": [
                   {
@@ -4102,7 +5527,33 @@
                       "{gossip_stone}"
                     ],
                     "item_count": 1
-                  }
+                  },
+                  {
+                    "name": "Big Snowballs befor temple",
+                    "short_name": "Big Snowhead Snowballs",
+                    "access_rules": [
+                      "$mm|Snowhead Big Snowball 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_SnowShuffle_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/snow.png",
+                    "chest_opened_img": "images/system/snow_grey.png",
+                    "item_count": 5
+                  },                  
+                  {
+                    "name": "Melted big Snowballs before temple (spring)",
+                    "short_name": "Snowhead spring Snowballs",
+                    "access_rules": [
+                      "$mm|Snowhead Small Snowball Spring 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_SnowShuffle_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/snow.png",
+                    "chest_opened_img": "images/system/snow_grey.png",
+                    "item_count": 5
+                 }
                 ],
                 "map_locations": [
                   {
@@ -4123,15 +5574,28 @@
                     "access_rules": [
                       "$mm|Snowhead Owl Statue"
                     ],
+                    "visibility_rules": [
+                      "setting_owlShuffle_anywhere"
+                    ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Small Snowballs by Owl",
+                    "short_name": "Snowowls",
+                    "access_rules": [
+                      "$mm|Snowhead Small Snowball 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_SnowShuffle_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/snow.png",
+                    "chest_opened_img": "images/system/snow_grey.png",
+                    "item_count": 4
                   }
                 ],
                 "map_locations": [
                   {
-                    "map": "termina",
-                    "force_invisibility_rules": [
-                      "setting_owlShuffle_none"
-                    ],
+                    "map": "termina",                    
                     "x": 489,
                     "y": 100
                   }
@@ -4201,6 +5665,45 @@
                   "$mm|Great Bay Coast Grass 1"
                 ],
                 "item_count": 5
+              },
+              {
+                "name": "Trees on the Beach",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Great Bay Coast Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 3
+              },
+              {
+                "name": "In Grass Butterflies",                    
+                "short_name": "Butterflies",
+                "access_rules": [
+                  "$mm|Great Bay Coast Common Butterfly 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleButterflyMm_on"
+                ],
+                "chest_unopened_img": "images/system/Butterfly.png",
+                "chest_opened_img": "images/system/Butterfly_grey.png",
+                "item_count": 2
+              },
+              {
+                "name": "Butterflies after Clear",                    
+                "short_name": "Clear Butterflies",
+                "access_rules": [
+                  "$mm|Great Bay Coast Cleared Butterfly 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleButterflyMm_on"
+                ],
+                "chest_unopened_img": "images/system/Butterfly.png",
+                "chest_opened_img": "images/system/Butterfly_grey.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -4223,7 +5726,19 @@
                   "$mm|Great Bay Coast Zora Mask"
                 ],
                 "item_count": 1
-              }
+              },
+              {
+                    "name": "Rocks in Sand",
+                    "chest_unopened_img": "images/system/Rock.png",
+                    "chest_opened_img": "images/system/Rock_grey.png",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Ledge Rocks"
+                    ],
+                    "visibility_rules": [
+                      "setting_rockmm_overworld"
+                    ],
+                    "item_count": 5
+                  }  
             ],
             "map_locations": [
               {
@@ -4298,6 +5813,32 @@
                     "item_count": 1
                   },
                   {
+                   "name": "GB Cow Grotto Hive",
+                   "short_name": "Hive",
+                   "access_rules": [
+                      "$mm|Great Bay Cow Grotto Hive"
+                   ],
+                    "visibility_rules": [
+                      "setting_shuffleHivesMm_true"
+                    ],
+                    "chest_unopened_img": "images/system/Hive.png",
+                    "chest_opened_img": "images/system/Hive_grey.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GB Cow Grotto Butterflies",                    
+                    "short_name": "Butterflies",
+                    "access_rules": [
+                      "$mm|Great Bay Cow Grotto Butterfly 1"
+                   ],
+                    "visibility_rules": [
+                      "setting_shuffleButterflyMm_on"
+                   ],
+                   "chest_unopened_img": "images/system/Butterfly.png",
+                   "chest_opened_img": "images/system/Butterfly_grey.png",
+                   "item_count": 3
+                  },    
+                  {
                     "name": "Great Bay on Ledge Pots",
                     "short_name": "On Ledge Pots",
                     "access_rules": [
@@ -4322,6 +5863,18 @@
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
                     "item_count": 4
+                  },
+                  {
+                    "name": "Rocks on Shore",
+                    "chest_unopened_img": "images/system/Rock.png",
+                    "chest_opened_img": "images/system/Rock_grey.png",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Ledge Rocks"
+                    ],
+                    "visibility_rules": [
+                      "setting_rockmm_overworld"
+                    ],
+                    "item_count": 3
                   }                   
                 ],
                 "map_locations": [
@@ -4345,6 +5898,19 @@
                       "{gossip_stone}"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Tree on Island",
+                    "short_name": "Island Tree",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Fisherman Tree"
+                    ],
+                    "visibility_rules": [
+                      "setting_TreeShuffleMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/tree.png",
+                    "chest_opened_img": "images/system/tree_grey.png",                
+                    "item_count": 3
                   }
                 ],
                 "map_locations": [
@@ -4562,7 +6128,7 @@
             "name": "Zora Cape",
             "children": [
               {
-                "name": "Underwater Near Fairy Shrine",
+                "name": "Island Hopping",
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "ZC Water",
@@ -4573,6 +6139,31 @@
                       "$mm|Zora Cape Underwater Chest"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Rocks on Islands",
+                    "chest_unopened_img": "images/system/Rock.png",
+                    "chest_opened_img": "images/system/Rock_grey.png",
+                    "access_rules": [
+                      "$mm|Zora Cape Island Rocks"
+                    ],
+                    "visibility_rules": [
+                      "setting_rockmm_overworld"
+                    ],
+                    "item_count": 5
+                  },
+                  {
+                    "name": "Trees on Islands",
+                    "short_name": "Island Trees",
+                    "access_rules": [
+                      "$mm|Zora Cape Island Trees"
+                    ],
+                    "visibility_rules": [
+                      "setting_TreeShuffleMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/tree.png",
+                    "chest_opened_img": "images/system/tree_grey.png",                
+                    "item_count": 3
                   }
                 ],
                 "map_locations": [
@@ -4832,7 +6423,44 @@
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
                     "item_count": 2
-                  } 
+                  },
+                  {
+                    "name": "Rocks on Sand",
+                    "chest_unopened_img": "images/system/Rock.png",
+                    "chest_opened_img": "images/system/Rock_grey.png",
+                    "access_rules": [
+                      "$mm|Zora Cape Island Rocks"
+                    ],
+                    "visibility_rules": [
+                      "setting_rockmm_overworld"
+                    ],
+                    "item_count": 5
+                  },
+                  {
+                    "name": "Rocks in Water",
+                    "chest_unopened_img": "images/system/Rock.png",
+                    "chest_opened_img": "images/system/Rock_grey.png",
+                    "access_rules": [
+                      "$mm|Zora Cape Island Rocks"
+                    ],
+                    "visibility_rules": [
+                      "setting_rockmm_overworld"
+                    ],
+                    "item_count": 5
+                  },
+                  {
+                    "name": "Trees on Beach",
+                    "short_name": "Trees",
+                    "access_rules": [
+                      "$mm|Zora Cape Trees"
+                    ],
+                    "visibility_rules": [
+                      "setting_TreeShuffleMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/tree.png",
+                    "chest_opened_img": "images/system/tree_grey.png",                
+                    "item_count": 2
+                  }  
                 ],
                 "map_locations": [
                   {
@@ -4900,6 +6528,18 @@
                 "short_name": "Ikana Road Grotto",
                 "sections": [
                   {
+                    "name": "Red Boulders on Grotto",                    
+                    "access_rules": [
+                      "$mm|Road to Ikana Red Boulder"
+                    ],
+                    "visibility_rules": [
+                      "setting_RedBoulderMm_on"
+                    ],
+                    "chest_unopened_img": "images/system/RedBoulder.png",
+                    "chest_opened_img": "images/system/RedBoulder_grey.png",
+                    "item_count": 1
+                  },
+                  {
                     "name": "Get in",
                     "access_rules": [
                       "$mm|Road to Ikana Grotto"
@@ -4941,6 +6581,18 @@
                   "$mm|Road to Ikana Stone Mask"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Rock Circle",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Road to Ikana Rock Circle"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 8
               }
             ],
             "map_locations": [
@@ -5021,6 +6673,18 @@
                   "$mm|Ikana Graveyard Grotto Grass 01"
                 ],
                 "item_count": 14
+              },
+              {
+                "name": "Rock Circle",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Ikana Graveyard Rock Circle"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 8
               }
             ],
             "map_locations": [
@@ -5092,6 +6756,18 @@
             "chest_opened_img": "images/system/chest_open_big.png",
             "short_name": "Graves Night 2",
             "sections": [
+              {
+                "name": "Rupees in Grave 2",                    
+                "access_rules": [
+                 "$mm|Beneath The Graveyard Rupee 1"
+                ],
+                "visibility_rules": [
+                 "setting_shuffleFreeRupeesMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",
+                "item_count": 7
+              },    
               {
                 "name": "Grave Early Pot",
                 "access_rules": [
@@ -5192,7 +6868,7 @@
             ]
           },
           {
-            "name": "Ikana Graveyard Grass",
+            "name": "Ikana Graveyard outside",
             "sections": [
               {
                 "name": "Ikana Graveyard Grass near Graves",
@@ -5205,6 +6881,30 @@
                   "$mm|Ikana Graveyard Grass 1"
                 ],
                 "item_count": 5
+              },
+              {
+                "name": "Rocks on Wall",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Ikana Graveyard Wall Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 5
+              },
+              {
+                "name": "Wonderitems on Lanterns",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Ikana Graveyard Wonder Item 01"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 12
               },
               {
                 "name": "Ikana Graveyard Upper Grass Patch",
@@ -5384,6 +7084,30 @@
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
                     "item_count": 3
+                  },
+                  {
+                    "name": "Entrance Soil-Items",                    
+                    "access_rules": [
+                      "$mm|Secret Shrine Soft Soil"
+                    ],
+                    "visibility_rules": [
+                      "setting_soil_dungeon"
+                    ],
+                    "chest_unopened_img": "images/system/blue.png",
+                    "chest_opened_img": "images/system/blue_check.png",                
+                    "item_count": 3
+                  },
+                  {
+                    "name": "Entrance Rupees",                    
+                    "access_rules": [
+                      "$mm|Secret Shrine Rupee 01"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleFreeRupeesMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/blue.png",
+                    "chest_opened_img": "images/system/blue_check.png",
+                    "item_count": 17
                   },  
                   {
                     "name": "Pool Room Pots",
@@ -5711,7 +7435,43 @@
                             "chest_unopened_img": "images/pot.png",
                             "chest_opened_img": "images/pot_grey.png",
                             "item_count": 5
-                          }
+                          },
+                          {
+                            "name": "Inverted Rocks",
+                            "chest_unopened_img": "images/system/Rock.png",
+                            "chest_opened_img": "images/system/Rock_grey.png",
+                            "access_rules": [
+                              "$mm|Stone Tower Inverted Rocks"
+                            ],
+                            "visibility_rules": [
+                              "setting_rockmm_overworld"
+                            ],
+                            "item_count": 2
+                          },
+                          {
+                            "name": "Inverted Lower Soil-Item",                    
+                            "access_rules": [
+                              "$mm|Stone Tower Inverted Soft Soil"
+                            ],
+                            "visibility_rules": [
+                              "setting_soil_overworld"
+                            ],
+                            "chest_unopened_img": "images/system/blue.png",
+                            "chest_opened_img": "images/system/blue_check.png",                
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Inverted Upper Soil-Item",                    
+                            "access_rules": [
+                              "$mm|Stone Tower Inverted Soft Soil"
+                            ],
+                            "visibility_rules": [
+                              "setting_soil_overworld"
+                            ],
+                            "chest_unopened_img": "images/system/blue.png",
+                            "chest_opened_img": "images/system/blue_check.png",                
+                            "item_count": 1
+                          }                                
                         ],
                         "map_locations": [
                           {

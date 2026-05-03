@@ -18,6 +18,19 @@
         "item_count": 5
       },
       {
+        "name": "Freestanding lower Heart",
+        "short_name": "Lower Hearts",
+        "access_rules": [
+          "$oot|Deku Tree Heart Main Room Lower"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -89,6 +102,19 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding upper Heart",
+        "short_name": "Upper Heart",
+        "access_rules": [
+          "$oot|Deku Tree Heart Main Room Upper"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
         "item_count": 1
       },
       {
@@ -220,6 +246,32 @@
         "item_count": 3
       },
       {
+        "name": "Pre-Boss Room Hearts",
+        "short_name": "Pre-Boss Hearts",
+        "access_rules": [
+          "$oot|Deku Tree Heart Pre-Boss 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Floating Lobby Heart",
+        "short_name": "Lobby Heart",
+        "access_rules": [
+          "$oot|MQ Deku Tree Heart Lobby"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Lower Entrance Grass",
         "short_name": "Lower Lobby",
         "access_rules": [
@@ -295,6 +347,19 @@
         "item_count": 1
       },
       {
+        "name": "Heart in Slingshot Room",
+        "short_name": "Slingshot Heart",
+        "access_rules": [
+          "$oot|MQ Deku Tree Heart Slingshot Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Slingshot Room Back Grass",
         "short_name": "Slingshot Back",
         "access_rules": [
@@ -319,6 +384,19 @@
         "item_count": 1
       },
       {
+        "name": "Crates in Slingshot Room",
+        "short_name": "Slingshot Crate",
+        "access_rules": [
+          "$oot|MQ Deku Tree Slingshot Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Grass Before Compass Room",
         "short_name": "Before Compass",
         "access_rules": [
@@ -330,6 +408,32 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 7
+      },
+      {
+        "name": "Heart before Compass Room",
+        "short_name": "Before Compass Heart",
+        "access_rules": [
+          "$oot|MQ Deku Tree Heart Before Compass"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Crate before Compass Room",
+        "short_name": "before Compass Crate",
+        "access_rules": [
+          "$oot|MQ Deku Tree Main Room 2nd Floor Crate"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 1
       },
       {
         "name": "Compass Chest",
@@ -354,6 +458,19 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Heart in Compass Room",
+        "short_name": "Compass Heart",
+        "access_rules": [
+          "$oot|MQ Deku Tree Heart Compass Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
         "item_count": 1
       },
       {
@@ -468,6 +585,19 @@
         "item_count": 2
       },
       {
+        "name": "Larva Room Wonder on Graves",
+        "short_name": "Larva Room",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Deku Tree Wonder Item 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_DekuTree_true"
+        ],
+        "item_count": 4
+      },
+      {
         "name": "GS Basement Graves Room",
         "short_name": "Ceiling",
         "access_rules": [
@@ -557,6 +687,19 @@
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 3
       },
+      {
+        "name": "Pre-Boss Room Hearts",
+        "short_name": "Pre-Boss Hearts",
+        "access_rules": [
+          "$oot|MQ Deku Tree Heart Before Boss 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },      
       {
         "name": "Gohma's Lair Grass",
         "short_name": "Gohma",
@@ -671,6 +814,19 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 4
+      },
+      {
+        "name": "Heart behind Lavafall",
+        "short_name": "Lava Heart",
+        "access_rules": [
+          "$oot|Dodongo Cavern Heart Miniboss Lava"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
       },
       {
         "name": "Deku Scrub Side Room Near Dodongo",
@@ -788,6 +944,19 @@
         "item_count": 1
       },
       {
+        "name": "Heart behind Block",
+        "short_name": "Block Heart",
+        "access_rules": [
+          "$oot|Dodongo Cavern Heart Bomb Bag Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Bomb Flower Platform Chest",
         "short_name": "Bomb Flower",
         "access_rules": [
@@ -823,6 +992,19 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
+      },
+      {
+        "name": "Hearts on Miniboss Pillar",
+        "short_name": "Pillar Heart",
+        "access_rules": [
+          "$oot|Dodongo Cavern Heart Miniboss Upper 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
       },
       {
         "name": "Pots after 2nd Miniboss",
@@ -949,6 +1131,71 @@
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Downstairs",
+        "short_name": "Downstairs",
+        "access_rules": [
+          "$oot|Spirit Temple SR Boulders 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },
+      {
+        "name": "Silver Rupees Downstairs",
+        "short_name": "Downstairs",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern SR Beamos"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },
+      {
+        "name": "2 Crates in lower Stairroom",
+        "short_name": "Downstair Crates",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern Staircase Room Lower Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Silver Rupees Upstairs",
+        "short_name": "Upstairs",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern SR Vines"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 3
+      },
+      {
+        "name": "4 Crates in upper Stairroom",
+        "short_name": "Upstair Crates",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern Staircase Room Upper Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 4
       },
       {
         "name": "Bomb Bag Chest",
@@ -1090,6 +1337,32 @@
         "item_count": 4
       },
       {
+        "name": "Upper Lizalfos Room Crates",
+        "short_name": "Upstair Crates",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern Room After Upper Lizalfos Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Lizalfos Room Heart",
+        "short_name": "Lizalfos Heart",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern Heart Lizalfos Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Larvae Room Chest",
         "short_name": "Larvae",
         "access_rules": [
@@ -1112,6 +1385,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Larvae Room Crates",
+        "short_name": "Larvae Crates",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern Larve Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 6
       },
       {
         "name": "Before Miniboss Pots",
@@ -1175,6 +1461,19 @@
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Vanilla Bomb Bag Room Heart",
+        "short_name": "Bomb Bag Heart",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern Heart Vanilla Bomb Bag Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
         "item_count": 1
       },
       {
@@ -1255,6 +1554,19 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Poe Room Crates",
+        "short_name": "Poe Crates",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern Poe Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 8
       },
       {
         "name": "Under Grave Chest",
@@ -1351,6 +1663,19 @@
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
+      {
+        "name": "2 small crate",
+        "short_name": "small crates",
+        "access_rules": [
+          "$oot|Jabu-Jabu Small Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
       {
         "name": "2 Octoroks Basement Pots",
         "short_name": "2 Octoroks Basement",
@@ -1503,6 +1828,19 @@
         "item_count": 2
       },
       {
+        "name": "Entrance Wonder (Slingshot)",
+        "short_name": "Entrance Cows",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Wonder Item Entrance Left Cow"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 2
+      },
+      {
         "name": "Entrance Grass",
         "short_name": "Entrance",
         "access_rules": [
@@ -1539,6 +1877,19 @@
         "item_count": 1
       },
       {
+        "name": "Elevator Room Heart",
+        "short_name": "Elevator Hearts",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Heart 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Second Room Lower Chest",
         "short_name": "Second Room Lower",
         "access_rules": [
@@ -1546,6 +1897,19 @@
         ],
         "visibility_rules": [
           "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Elevator Room Wonder (Slingshot)",
+        "short_name": "Elevator Cow",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Wonder Item Entrance Left Cow"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 1
       },
@@ -1623,6 +1987,45 @@
         "item_count": 2
       },
       {
+        "name": "Bottom Rupee",
+        "short_name": "Bottom Rupee",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Rupee Bottom"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesOot_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Middle Rupee",
+        "short_name": "Middle Rupee",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Rupee Middle"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesOot_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Top Rupee",
+        "short_name": "Top Rupee",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Rupee Top"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesOot_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
         "name": "GS Boomerang Chest Room",
         "short_name": "Boomerang",
         "access_rules": [
@@ -1662,6 +2065,19 @@
         "item_count": 2
       },
       {
+        "name": "Basement Wonder (Slingshot)",
+        "short_name": "Basement Cows",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Wonder Item Basement Right Cow 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 6
+      },
+      {
         "name": "Big Octo Grass",
         "short_name": "Big Octo",
         "access_rules": [
@@ -1688,6 +2104,45 @@
         "item_count": 1
       },
       {
+        "name": "Afzer Big Octo Wonder (Slingshot)",
+        "short_name": "After Octo",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Wonder Item After Big Octo"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Platform Wonder (Slingshot)",
+        "short_name": "Platform Cow",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Wonder Item Platforms Cow"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Forked Path Crates",
+        "short_name": "Main Room Crates",
+        "access_rules": [
+          "$oot|MQ Deku Tree Slingshot Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Falling Like Like Room Chest",
         "short_name": "Like Like",
         "access_rules": [
@@ -1710,6 +2165,32 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Like Like Wonder (Slingshot)",
+        "short_name": "Like Like Cows",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Wonder Item Falling Like-Likes Cow Right 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 6
+      },
+      {
+        "name": "Like Like Wonder (Explosive)",
+        "short_name": "Like Like Boom",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Wonder Item Falling Like-Likes Explosion 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 3
       },
       {
         "name": "GS Tailpasaran Room",
@@ -1824,6 +2305,19 @@
         "item_count": 1
       },
       {
+        "name": "Before Boss Wonder (Explosive)",
+        "short_name": "before Boss Cows",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Wonder Item Before Boss Left Cow"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 3
+      },
+      {
         "name": "Pots Boss Room",
         "short_name": "Boss Room",
         "access_rules": [
@@ -1861,6 +2355,83 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "Entrance Icicles",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|Ice Cavern Icicle Before Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 3
+      },
+      {
+        "name": "Entrance RedIce",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|Ice Cavern Red Ice Entrance"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Freezard RedIce",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|Ice Cavern Red Ice Entrance"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Later Entrance Icicles",
+        "short_name": "Later Entrance",
+        "access_rules": [
+          "$oot|Ice Cavern Icicle Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 3
+      },
+      {
+        "name": "Entrance Big Fairy (Storms)",
+        "access_rules": [
+          "$oot|Ice Cavern Entrance Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Frozen Rupee",
+        "short_name": "Frozen Rupees",
+        "access_rules": [
+          "$oot|Ice Cavern Rupee Ice"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesOot_dungeon,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
         "name": "First Corridor Pots",
         "access_rules": [
           "$oot|Ice Cavern Pot First Corridor 1"
@@ -1873,6 +2444,19 @@
         "item_count": 2
       },
       {
+        "name": "First Corridor Icicles",
+        "short_name": "Later Entrance",
+        "access_rules": [
+          "$oot|Ice Cavern Icicle Before Scythe 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 3
+      },
+      {
         "name": "Pots Spinning Scythe Room",
         "short_name": "Spinning Scythe",
         "access_rules": [
@@ -1883,6 +2467,19 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
+        "name": "Icicles Spinning Sythe Room",
+        "short_name": "Spinning Scythe",
+        "access_rules": [
+          "$oot|Ice Cavern Icicle Scythe 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
         "item_count": 3
       },
       {
@@ -1912,6 +2509,71 @@
         "item_count": 1
       },
       {
+        "name": "Silver Rupees Spinning Sythe Room",
+        "short_name": "Spinning Scythe",
+        "access_rules": [
+          "$oot|Ice Cavern SR Scythe Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Silver Rupees Spinning Sythe Room Floating",
+        "short_name": "Spinning Scythe Floating",
+        "access_rules": [
+          "$oot|Ice Cavern SR Scythe Midair"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Hearts",
+        "short_name": "Map Hearts",
+        "access_rules": [
+          "$oot|Ice Cavern Heart 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Map Room Icicles",
+        "short_name": "Map Icicles",
+        "access_rules": [
+          "$oot|Ice Cavern Icicle Before Map 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 3
+      },
+      {
+        "name": "RedIce Map Room",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|Ice Cavern Red Ice Map 1"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -1935,6 +2597,32 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "Icicles Compass Room",
+        "short_name": "Compass Icicles",
+        "access_rules": [
+          "$oot|Ice Cavern Icicle Compass 01"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 13
+      },
+      {
+        "name": "RedIce Compass Room",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|Ice Cavern Red Ice Compass 1"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 2
       },
       {
         "name": "Compass Chest",
@@ -1975,6 +2663,19 @@
         "item_count": 1
       },
       {
+        "name": "Icicles before Push Block Room",
+        "short_name": "Block Icicles",
+        "access_rules": [
+          "$oot|Ice Cavern Icicle Before Block 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 5
+      },
+      {
         "name": "GS Push Block Room",
         "short_name": "Push Block",
         "access_rules": [
@@ -1986,6 +2687,84 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "RedIce Block Room",
+        "short_name": "Block Room",
+        "access_rules": [
+          "$oot|Ice Cavern Red Ice Block"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Block Room",
+        "short_name": "Block Room",
+        "access_rules": [
+          "$oot|Ice Cavern SR Blocks Back Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Silver Rupees Block Room frozen",
+        "short_name": "Block Room Red Ice",
+        "access_rules": [
+          "$oot|Ice Cavern SR Blocks Alcove"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Floating Rupees (Song of Time)",
+        "short_name": "Floating Rupees",
+        "access_rules": [
+          "$oot|Ice Cavern Rupee Midair 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesOot_dungeon,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 3
+      },
+      {
+        "name": "Before Boss Icicles",
+        "short_name": "Pre-Boss Icicles",
+        "access_rules": [
+          "$oot|Ice Cavern Icicle After Block 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 8
+      },
+      {
+        "name": "Before Boss RedIce",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|Ice Cavern Red Ice After Block 1"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 3
       },
       {
         "name": "Before Boss Frozen Pots",
@@ -2025,6 +2804,19 @@
         "item_count": 1
       },
       {
+        "name": "Entrance Icicles",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Icicle Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 2
+      },
+      {
         "name": "Entrance Pot",
         "short_name": "Entrance",
         "access_rules": [
@@ -2051,6 +2843,19 @@
         "item_count": 2
       },
       {
+        "name": "First Room Icicles",
+        "short_name": "First Room",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Icicle Before Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 5
+      },
+      {
         "name": "Main Room Pots",
         "short_name": "Main Room",
         "access_rules": [
@@ -2062,6 +2867,71 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 4
+      },
+      {
+        "name": "Main Room Icicles",
+        "short_name": "Main Room",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Icicle Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 5
+      },
+      {
+        "name": "Main Room RedIce",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Red Ice Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 6
+      },
+      {
+        "name": "Before Map Room Icicle",
+        "short_name": "Pre-Map Room",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Icicle Before Map Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Icicle",
+        "short_name": "Map Room",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Icicle Map Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 9
+      },
+      {
+        "name": "Map Room RedIce",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Red Ice Map Room"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 1
       },
       {
         "name": "Map Chest",
@@ -2099,6 +2969,32 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Compass Room Icicle",
+        "short_name": "Compass Room",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Icicle Compass Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Compass Room RedIce",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Red Ice Compass Room"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 1
       },
       {
         "name": "Freestanding PoH",
@@ -2151,6 +3047,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Block Room RedIce",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Red Ice Block Room 1"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 3
       },
       {
         "name": "Final Corridor Pots",
@@ -2317,6 +3226,19 @@
         "item_count": 1
       },
       {
+        "name": "Well Hearts",
+        "short_name": "Well Hearts",
+        "access_rules": [
+          "$oot|Forest Temple Heart Well 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Well Chest",
         "short_name": "Well",
         "access_rules": [
@@ -2327,6 +3249,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Garden Level Island Hearts",
+        "short_name": "Wall Hearts",
+        "access_rules": [
+          "$oot|Forest Temple Heart Garden 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
       },
       {
         "name": "GS Level Island Courtyard",
@@ -2600,6 +3535,19 @@
         "item_count": 1
       },
       {
+        "name": "Well Hearts",
+        "short_name": "Well Hearts",
+        "access_rules": [
+          "$oot|MQ Forest Temple Heart Well 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "GS Well",
         "short_name": "Well",
         "access_rules": [
@@ -2664,6 +3612,19 @@
         "item_count": 1
       },
       {
+        "name": "Garden Hearts",
+        "short_name": "Garden Hearts",
+        "access_rules": [
+          "$oot|MQ Forest Temple Heart Garden 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -2710,6 +3671,19 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Spinning Lava Room Crates",
+        "short_name": "Spinning",
+        "access_rules": [
+          "$oot|MQ Forest Temple Spinning Red Pool Room Small Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "item_count": 3
       },
       {
@@ -2921,6 +3895,19 @@
         "item_count": 1
       },
       {
+        "name": "Elevator Room Hearts",
+        "short_name": "Elevator Hearts",
+        "access_rules": [
+          "$oot|Fire Temple Heart Elevator 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Boulder Maze Lower Chest",
         "short_name": "Boulder Maze Lower",
         "access_rules": [
@@ -2931,7 +3918,7 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
-      },
+      },      
       {
         "name": "Boulder Maze Side Room Chest",
         "short_name": "Boulder Maze Side",
@@ -2958,6 +3945,19 @@
         "item_count": 1
       },
       {
+        "name": "Ledge Room Hearts",
+        "short_name": "Ledge Hearts",
+        "access_rules": [
+          "$oot|Fire Temple Heart Ledge Above Main 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -2968,6 +3968,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
+      },
+      {
+        "name": "Firewall Room Hearts",
+        "short_name": "Firewall Hearts",
+        "access_rules": [
+          "$oot|Fire Temple Heart Map Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
       },
       {
         "name": "Boulder Maze Upper Chest",
@@ -3092,6 +4105,19 @@
         "item_count": 1
       },
       {
+        "name": "2 small crates",
+        "short_name": "small crates",
+        "access_rules": [
+          "$oot|Fire Temple Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_firetemple_false"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Entrance Pots",
         "short_name": "Entrance",
         "access_rules": [
@@ -3130,6 +4156,32 @@
         "item_count": 2
       },
       {
+        "name": "Pre Boss by Cage Crates",
+        "short_name": "Pre-Boss Cage",
+        "access_rules": [
+          "$oot|MQ Fire Temple Pre-Boss Room Near Cage Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Pre Boss on Ledge Crates",
+        "short_name": "Pre-Boss Cage",
+        "access_rules": [
+          "$oot|MQ Fire Temple Pre-Boss Room Tall Ledge Low Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Map Room Side Chest",
         "short_name": "Like Like",
         "access_rules": [
@@ -3138,6 +4190,30 @@
         "visibility_rules": [
           "setting_mq_FireTemple_true"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Hammer Loop Big Fairy (Sun)",
+        "access_rules": [
+          "$oot|MQ Fire Temple Hammer Loop Stalfos Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Iron Knuckle Big Fairy (Sun)",
+        "access_rules": [
+          "$oot|MQ Fire Temple Hammer Loop Iron Knuckle Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
         "item_count": 1
       },
       {
@@ -3254,6 +4330,32 @@
         "item_count": 2
       },
       {
+        "name": "Boss Key Room Hookshot Wonder",
+        "short_name": "Boss-Key-Hookshot",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item Boss Key Room Hookshot"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Room Bow Wonder",
+        "short_name": "Boss-Key-Bow",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item Boss Key Room Bow"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "GS Big Lava Room Open Door",
         "short_name": "Lava Room",
         "access_rules": [
@@ -3267,6 +4369,32 @@
         "item_count": 1
       },
       {
+        "name": "Elevator Room Hearts",
+        "short_name": "Elevator Hearts",
+        "access_rules": [
+          "$oot|MQ Fire Temple Heart 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Shortcut Room Wonder",
+        "short_name": "Shortcut",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item Shortcut Room 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+        ],
+        "item_count": 3
+      },
+      {
         "name": "Lizalfos Maze Lower Chest",
         "short_name": "Maze Lower",
         "access_rules": [
@@ -3276,6 +4404,32 @@
           "setting_mq_FireTemple_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Lizalfos Maze East Wonder",
+        "short_name": "East-Maze",        
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item East Maze"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lizalfos Maze Lower Crates",
+        "short_name": "Maze-Cell",
+        "access_rules": [
+          "$oot|MQ Fire Temple Maze Room Lower Cage Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 3
       },
       {
         "name": "Lizalfos Maze Side Room Chest",
@@ -3301,6 +4455,32 @@
         "item_count": 1
       },
       {
+        "name": "Lizalfos Maze Upper Crates",
+        "short_name": "Maze-Cell",
+        "access_rules": [
+          "$oot|MQ Fire Temple Maze Room Upper Cage Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 5
+      },
+      {
+        "name": "East-Climb Wonder (Hookshot)",
+        "short_name": "East-Climb",        
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item East Climb First 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+        ],
+        "item_count": 4
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -3311,6 +4491,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
+      },
+      {
+        "name": "Cell Below Maze Crates",
+        "short_name": "Maze-Cell",
+        "access_rules": [
+          "$oot|MQ Fire Temple Cell Below Maze Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 6
       },
       {
         "name": "GS Skull On Fire",
@@ -3326,6 +4519,19 @@
         "item_count": 1
       },
       {
+        "name": "Torch-Room Wonder (Hookshot)",
+        "short_name": "Torch-Room",        
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item Torch Room"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Grids Above Lava Pots",
         "short_name": "Grids Above Lava",
         "access_rules": [
@@ -3336,6 +4542,45 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Lava Room Lower Crates",
+        "short_name": "Lava-Room Lower",
+        "access_rules": [
+          "$oot|MQ Fire Temple 3F Lava Room Lower Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 5
+      },
+      {
+        "name": "Lava Room Near Cage Crates",
+        "short_name": "Lava-Room Cage",
+        "access_rules": [
+          "$oot|MQ Fire Temple 3F Lava Room Near Cage Large Crate"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Lava Room Up High Crates",
+        "short_name": "Lava-Room High",
+        "access_rules": [
+          "$oot|MQ Fire Temple 3F Lava Room High Ledge Large Crate"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "item_count": 2
       },
       {
@@ -3389,7 +4634,7 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
-      },
+      },      
       {
         "name": "GS Fire Wall Maze Center",
         "short_name": "Fire Maze Center",
@@ -3417,6 +4662,19 @@
         "item_count": 2
       },
       {
+        "name": "Fire-Maze Wonder (Hookshot)",
+        "short_name": "Fire-Maze",        
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item Fire Maze"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Freestanding Key",
         "short_name": "Flare Dancer 2",
         "access_rules": [
@@ -3427,6 +4685,32 @@
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "After Flaredancer Wonder (Hookshot)",
+        "short_name": "After Dancer",        
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item After Flare Dancer"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Staircase Wonder (Hookshot)",
+        "short_name": "Staircase",        
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item Staircase"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+        ],
         "item_count": 1
       },
       {
@@ -3653,7 +4937,7 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
-      },
+      },      
       {
         "name": "Pots Before Dark Link",
         "short_name": "Before Dark Link",
@@ -3690,6 +4974,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "River Hearts",
+        "short_name": "River Hearts",
+        "access_rules": [
+          "$oot|Water Temple Heart 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 4
       },
       {
         "name": "River Pots",
@@ -3807,6 +5104,19 @@
         "item_count": 2
       },
       {
+        "name": "Wonder in Lizalfos Room",
+        "short_name": "Lizalfos Wonder",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Lizalfos Room"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -3832,6 +5142,19 @@
         "item_count": 3
       },
       {
+        "name": "Storage Room Crates",
+        "short_name": "Storage Crates",
+        "access_rules": [
+          "$oot|MQ Water Temple Storage Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 11
+      },
+      {
         "name": "Longshot Chest",
         "short_name": "Longshot",
         "access_rules": [
@@ -3839,6 +5162,19 @@
         ],
         "visibility_rules": [
           "setting_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Wonder in Longshot Room",
+        "short_name": "Longshot Wonder",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Longshot Room"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -3866,7 +5202,46 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },    
+      {
+        "name": "Wonder in Lizalfos Hallway",
+        "short_name": "Lizalfos Wonder",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Lizalfos Hallway"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 1
       },
+      {
+        "name": "Crates in Lizalfos Hallway",
+        "short_name": "Lizalfos Hallway",
+        "access_rules": [
+          "$oot|MQ Water Temple Lizalfos Hallway Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 8
+      },
+      {
+        "name": "Crates behind Gate in Lizalfos Hallway",
+        "short_name": "Behind Gate Lizalfos",
+        "access_rules": [
+          "$oot|MQ Water Temple Lizalfos Hallway Behind Gate Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },    
       {
         "name": "Twisted Room Entrance Pot",
         "short_name": "Twisted Room Entrance",
@@ -3920,6 +5295,32 @@
         "item_count": 1
       },
       {
+        "name": "Wonder in Hookshot Staircase",
+        "short_name": "Staircase Wonder",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Hookshot Staircase Right 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 6
+      },
+      {
+        "name": "Central Tower Top Crates",
+        "short_name": "Tower Top",
+        "access_rules": [
+          "$oot|MQ Water Temple Central Tower Top Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Central Pillar Chest",
         "short_name": "Central Pillar",
         "access_rules": [
@@ -3929,6 +5330,44 @@
           "setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Wonder under central Pillar",
+        "short_name": "Pillar Wonder",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Under Pillar Room"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Central Tower Crates under Gate",
+        "short_name": "Tower Gates",
+        "access_rules": [
+          "$oot|MQ Water Temple Central Tower Under Gate Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 14
+      },
+      {
+        "name": "Big Fairy before Dark Link Ledge (Sun)",
+        "access_rules": [
+          "$oot|MQ Water Temple Big Fairy Before Dark Link Ledge"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
         "item_count": 1
       },
       {
@@ -3943,6 +5382,30 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 3
+      },
+      {
+        "name": "Big Fairy Left Dragon Head (Storm)",
+        "access_rules": [
+          "$oot|MQ Water Temple Big Fairy Before Dark Link Near Door 2"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Big Fairy Right Dragon Head (Sun)",
+        "access_rules": [
+          "$oot|MQ Water Temple Big Fairy Before Dark Link Near Door 1"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
       },
       {
         "name": "Before Dark Link Near Door Pots",
@@ -3971,6 +5434,19 @@
         "item_count": 2
       },
       {
+        "name": "Wonder after Dark Link",
+        "short_name": "After Dark Wonder",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item After Dark Link"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "GS River",
         "short_name": "River",
         "access_rules": [
@@ -3997,6 +5473,71 @@
         "item_count": 2
       },
       {
+        "name": "Dragon Room Crates by Door",
+        "short_name": "Dragon Door",
+        "access_rules": [
+          "$oot|MQ Water Temple Dragon Room At Door Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Dragon Room Underwater Crates",
+        "short_name": "Dragon Underwater",
+        "access_rules": [
+          "$oot|MQ Water Temple Dragon Room Underwater Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 4
+      },
+      {
+        "name": "Dragon Room Torch Crates",
+        "short_name": "Dragon Torch",
+        "access_rules": [
+          "$oot|MQ Water Temple Dragon Room Underwater Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 5
+      },
+      {
+        "name": "Wonder on Dragon",
+        "short_name": "Hookshot the Eyes",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Dragon Room Eyes 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Wonder in Dragon Room",
+        "short_name": "Portrait",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Dragon Room Portrait"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
@@ -4008,6 +5549,19 @@
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
+      },
+      {
+        "name": "Boss Key Room Crates",
+        "short_name": "Key Room",
+        "access_rules": [
+          "$oot|MQ Water Temple Boss Key Room By Switch Large Crate"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 5
       },
       {
         "name": "Boss Key Room Pot",
@@ -4049,6 +5603,19 @@
         "item_count": 2
       },
       {
+        "name": "Wonder in Stalfos Room",
+        "short_name": "Stalfos Wonder",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Stalfos Room"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Loop Pots",
         "short_name": "Loop",
         "access_rules": [
@@ -4088,6 +5655,136 @@
         "item_count": 1
       },
       {
+        "name": "Three Torch Crates",
+        "short_name": "Three Torch",
+        "access_rules": [
+          "$oot|MQ Water Temple Three Torch Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 6
+      },
+      {
+        "name": "Wonder in Three Torch Room",
+        "short_name": "Wonder Torch",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Triple Torches"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Three Torch Crates behind Gate",
+        "short_name": "After Torch Gate",
+        "access_rules": [
+          "$oot|MQ Water Temple Three Torch Room Behind Gate Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Side Loop Crates at door",
+        "short_name": "Side Loop Door",
+        "access_rules": [
+          "$oot|MQ Water Temple Side Loop First Room At Door Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Side Loop Crates underwater",
+        "short_name": "Side Loop water",
+        "access_rules": [
+          "$oot|MQ Water Temple Side Loop First Room Water Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 6
+      },
+      {
+        "name": "Water Sprout Wonder",
+        "short_name": "Sprouts",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Water Sprouts 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Crate Dodongo Room",
+        "short_name": "Dodongos",
+        "access_rules": [
+          "$oot|MQ Water Temple Dodongo Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 5
+      },
+      {
+        "name": "Side Loop Crates by Gate",
+        "short_name": "Side Loop Gate",
+        "access_rules": [
+          "$oot|MQ Water Temple Side Loop First Room In Gate Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 4
+      },
+      {
+        "name": "Freestanding Room Wonder",
+        "short_name": "Freestanding",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Freestanding Room"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Side Loop Stalfos Room Crates",
+        "short_name": "Side Loop Stalfos",
+        "access_rules": [
+          "$oot|MQ Water Temple Side Loop Stalfos Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 5
+      },      
+      {
         "name": "Skull Cage Pot",
         "short_name": "Skull Cage",
         "access_rules": [
@@ -4112,6 +5809,58 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 3
+      },
+      {
+        "name": "Wonder above 2F West",
+        "short_name": "Above 2F",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Above 2F West Room"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Before Hight Water Crates Lower",
+        "short_name": "lower before High Water",
+        "access_rules": [
+          "$oot|MQ Water Temple Room Before High Water Lower Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 7
+      },
+      {
+        "name": "Before Hight Water Crates Upper",
+        "short_name": "Upper before High Water",
+        "access_rules": [
+          "$oot|MQ Water Temple Room Before High Water Upper Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 3
+      },  
+      {
+        "name": "Before Boss Wonder",
+        "short_name": "Pre-Boss",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Water Temple Wonder Item Before Boss 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+        ],
+        "item_count": 2
       },
       {
         "name": "Morpha",
@@ -4200,6 +5949,18 @@
         "item_count": 1
       },
       {
+        "name": "Beamos Big Fairy (Storms)",
+        "access_rules": [
+          "$oot|Shadow Temple Beamos Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -4209,6 +5970,32 @@
           "setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Shadow Scythe",
+        "short_name": "Scythe",
+        "access_rules": [
+          "$oot|Shadow Temple SR Scythe 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Silver Rupees Shadow Scythe upper",
+        "short_name": "Scythe upper",
+        "access_rules": [
+          "$oot|Shadow Temple SR Scythe 2"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
         "item_count": 1
       },
       {
@@ -4222,6 +6009,31 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Guillotine Big Fairy (Storms)",
+        "access_rules": [
+          "$oot|Shadow Temple Stalfos Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Scythe Hearts",
+        "short_name": "Scythe Hearts",
+        "access_rules": [
+          "$oot|Shadow Temple Heart Scythe 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
       },
       {
         "name": "Invisible Blades Visible Chests",
@@ -4244,7 +6056,7 @@
           "setting_mq_ShadowTemple_false"
         ],
         "item_count": 1
-      },
+      },      
       {
         "name": "GS Like Like Room",
         "short_name": "Like Like",
@@ -4257,6 +6069,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Pit",
+        "short_name": "Pit",
+        "access_rules": [
+          "$oot|Shadow Temple SR Pit 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 5
       },
       {
         "name": "Falling Spikes Lower Pots",
@@ -4332,6 +6157,58 @@
         "item_count": 1
       },
       {
+        "name": "Silver Rupees Invisible Spikes Center",
+        "short_name": "Spikes Center",
+        "access_rules": [
+          "$oot|Shadow Temple SR Spikes Center"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Invisible Spikes Sides",
+        "short_name": "Spikes Sides",
+        "access_rules": [
+          "$oot|Shadow Temple SR Spikes Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },
+      {
+        "name": "Silver Rupees Invisible Spikes Corner",
+        "short_name": "Spikes Corner",
+        "access_rules": [
+          "$oot|Shadow Temple SR Spikes Back Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Invisible Spikes Midair",
+        "short_name": "Spikes Midair",
+        "access_rules": [
+          "$oot|Shadow Temple SR Spikes Midair"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
         "name": "Freestanding Key",
         "short_name": "Skull Pot",
         "access_rules": [
@@ -4366,6 +6243,18 @@
         "visibility_rules": [
           "setting_mq_ShadowTemple_false"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Wind Hint Big Fairy (Sun)",
+        "access_rules": [
+          "$oot|Shadow Temple Big Fairy After Wind"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
         "item_count": 1
       },
       {
@@ -4416,6 +6305,19 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Scarecrow Hearts",
+        "short_name": "Scarecrow Hearts",
+        "access_rules": [
+          "$oot|Shadow Temple Heart Shortcut 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
         "item_count": 2
       },
       {
@@ -4495,6 +6397,19 @@
         "item_count": 1
       },
       {
+        "name": "Wonder above Triple Pot Door",
+        "short_name": "3-pot above door",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|Shadow Temple Wonder Item"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_ShadowTemple_false"
+        ],
+        "item_count": 6
+      },
+      {
         "name": "Invisible Floormaster Chest",
         "short_name": "Floormaster",
         "access_rules": [
@@ -4531,6 +6446,32 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Before Boss Hearts",
+        "short_name": "Before Boss Hearts",
+        "access_rules": [
+          "$oot|Shadow Temple Heart Pre-Boss 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Entrance Crates",
+        "short_name": "Truth Wheel",
+        "access_rules": [
+          "$oot|MQ Shadow Temple Truth Spinner Room Small Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 4
       },
       {
         "name": "Maze Pots",
@@ -4608,6 +6549,18 @@
         "item_count": 1
       },
       {
+        "name": "Beamos Big Fairy (Storms)",
+        "access_rules": [
+          "$oot|MQ Shadow Temple Beamos Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Early Gibdos Chest",
         "short_name": "Early Gibdos",
         "access_rules": [
@@ -4617,6 +6570,32 @@
           "setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Shadow Scythe",
+        "short_name": "Scythe",
+        "access_rules": [
+          "$oot|MQ Shadow Temple SR Scythe 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Silver Rupees Shadow Scythe upper",
+        "short_name": "Scythe upper",
+        "access_rules": [
+          "$oot|MQ Shadow Temple SR Scythe 2"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
         "item_count": 1
       },
       {
@@ -4644,6 +6623,32 @@
         "item_count": 1
       },
       {
+        "name": "Silver Rupees Invisible Blade",
+        "short_name": "InvisiBlade",
+        "access_rules": [
+          "$oot|MQ Shadow Temple SR Invisible Blades Ground 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 9
+      },
+      {
+        "name": "Silver Rupees Invisible Blade Time Block",
+        "short_name": "Blade Timeblock",
+        "access_rules": [
+          "$oot|MQ Shadow Temple SR Invisible Blades Time Block"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
         "name": "Invisible Blades Chests",
         "short_name": "Like Like",
         "access_rules": [
@@ -4653,6 +6658,45 @@
           "setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 2
+      },
+      {
+        "name": "Invisible Scythe Hearts",
+        "short_name": "Scythe Hearts",
+        "access_rules": [
+          "$oot|MQ Shadow Temple Heart Invisible Blades 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Silver Rupees Pit",
+        "short_name": "Pit",
+        "access_rules": [
+          "$oot|MQ Shadow Temple SR Pit Back"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 3
+      },
+      {
+        "name": "Silver Rupees Pit Midair",
+        "short_name": "Pit Midair",
+        "access_rules": [
+          "$oot|MQ Shadow Temple SR Pit Midair Low"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
         "item_count": 2
       },
       {
@@ -4729,6 +6773,57 @@
         "item_count": 2
       },
       {
+        "name": "Guillotine Big Fairy (Storms)",
+        "access_rules": [
+          "$oot|MQ Shadow Temple Guillotines Room Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Spikes Ground",
+        "short_name": "Spikes Ground",
+        "access_rules": [
+          "$oot|MQ Shadow Temple SR Spikes Center Ground"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },
+      {
+        "name": "Silver Rupees Spikes with Lens",
+        "short_name": "Spikes Lens",
+        "access_rules": [
+          "$oot|MQ Shadow Temple SR Spikes Northwest Corner"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Silver Rupees Spikes with Hookshot",
+        "short_name": "Spikes Hookshot",
+        "access_rules": [
+          "$oot|MQ Shadow Temple SR Spikes Southwest Wall"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },         
+      {
         "name": "Invisible Spikes Chest",
         "short_name": "Invisible Spikes",
         "access_rules": [
@@ -4760,6 +6855,18 @@
           "setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Wind Hint Big Fairy (Sun)",
+        "access_rules": [
+          "$oot|MQ Shadow Temple Big Fairy After Wind"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
         "item_count": 1
       },
       {
@@ -4809,6 +6916,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Scarecrow Hearts",
+        "short_name": "Scarecrow Hearts",
+        "access_rules": [
+          "$oot|MQ Shadow Temple Heart Shortcut 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
       },
       {
         "name": "Before Boat Pots",
@@ -4913,6 +7033,19 @@
         "item_count": 1
       },
       {
+        "name": "Triple Pot Wonder",
+        "short_name": "3-pot above door",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Shadow Temple Wonder Item"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Bomb Flower Chest",
         "short_name": "Dead Hand 2",
         "access_rules": [
@@ -4961,6 +7094,32 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Before Boss lower Heart",
+        "short_name": "Before Boss Heart",
+        "access_rules": [
+          "$oot|MQ Shadow Temple Heart Pre-Boss Lower"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Before Boss Upper Hearts",
+        "short_name": "Before Boss Hearts",
+        "access_rules": [
+          "$oot|MQ Shadow Temple Heart Pre-Boss Upper 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
       },
       {
         "name": "Bongo Bongo",
@@ -5050,6 +7209,19 @@
         "item_count": 4
       },
       {
+        "name": "Silver Rupees Child Side",
+        "short_name": "Child Side",
+        "access_rules": [
+          "$oot|Spirit Temple SR Child 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 5
+      },
+      {
         "name": "Child Early Torches Chest",
         "short_name": "Child Right",
         "access_rules": [
@@ -5073,6 +7245,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "2 small crates",
+        "short_name": "small crates",
+        "access_rules": [
+          "$oot|Spirit Temple Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 2
       },
       {
         "name": "Child Climb Pot",
@@ -5110,6 +7295,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Sun Block Room",
+        "short_name": "Sun",
+        "access_rules": [
+          "$oot|Spirit Temple SR Sun 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 5
       },
       {
         "name": "Sun Block Room Chest",
@@ -5161,6 +7359,45 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 4
+      },
+      {
+        "name": "Silver Rupees Lobby under Rocks",
+        "short_name": "Lobby Rocks",
+        "access_rules": [
+          "$oot|MQ Spirit Temple SR Lobby Rock Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },
+      {
+        "name": "Silver Rupee Lobby in Water",
+        "short_name": "Lobby Water",
+        "access_rules": [
+          "$oot|MQ Spirit Temple SR Lobby In Water"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Silver Rupees Lobby behind Water",
+        "short_name": "Lobby Rocks",
+        "access_rules": [
+          "$oot|MQ Spirit Temple SR Lobby After Water Near Stairs"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
       },
       {
         "name": "Entrance Front Left Chest",
@@ -5258,6 +7495,19 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 4
+      },
+      {
+        "name": "Child Hearts",
+        "short_name": "Child Hearts",
+        "access_rules": [
+          "$oot|MQ Spirit Temple Heart 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
       },
       {
         "name": "Child Hammer Switch Chest",
@@ -5418,7 +7668,20 @@
         "item_count": 1
       },
       {
-        "name": "Early Adult Right Chest",
+        "name": "Silver Rupees Boulder Room",
+        "short_name": "Boulders",
+        "access_rules": [
+          "$oot|Spirit Temple SR Boulders 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 5
+      },
+      {
+        "name": "Chest after Boulders",
         "short_name": "Boulders",
         "access_rules": [
           "$oot|Spirit Temple Adult Silver Rupees"
@@ -5427,6 +7690,18 @@
           "setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Big Fairy after Boulders (Sun)",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Silver Rupees Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
         "item_count": 1
       },
       {
@@ -5515,6 +7790,18 @@
         "item_count": 1
       },
       {
+        "name": "Big Fairy in Sunbeam (Sun)",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Sunlight Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Hallway Invisible Chests",
         "short_name": "Invisible Hallway",
         "access_rules": [
@@ -5523,6 +7810,19 @@
         "visibility_rules": [
           "setting_mq_SpiritTemple_false"
         ],
+        "item_count": 2
+      },
+      {
+        "name": "Climb Wall Hearts",
+        "short_name": "Wall Hearts",
+        "access_rules": [
+          "$oot|Spirit Temple Heart 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
         "item_count": 2
       },
       {
@@ -5649,6 +7949,19 @@
         "item_count": 2
       },
       {
+        "name": "Statue Room Crates",
+        "short_name": "Statue Room",
+        "access_rules": [
+          "$oot|MQ Spirit Temple Giant Statue Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Adult Climb Pots",
         "short_name": "Adult Climb",
         "access_rules": [
@@ -5733,6 +8046,19 @@
         "item_count": 1
       },
       {
+        "name": "Silver Rupees Adult Climb",
+        "short_name": "Adult Climb",
+        "access_rules": [
+          "$oot|MQ Spirit Temple SR Adult Bottom"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 5
+      },
+      {
         "name": "Topmost Climb Pots",
         "short_name": "Topmost Climb",
         "access_rules": [
@@ -5753,6 +8079,17 @@
         ],
         "visibility_rules": [
           "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Chest Switch Big Fairy (Sun)",
+        "short_name": "Chest Switch",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Dinolfos Room Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_SpiritTemple_true"
         ],
         "item_count": 1
       },
@@ -5790,7 +8127,7 @@
           "setting_mq_SpiritTemple_true"
         ],
         "item_count": 1
-      },
+      },      
       {
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
@@ -5890,6 +8227,19 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
+        "name": "Top Near Lowering Platform Pots",
+        "short_name": "Top Crates",
+        "access_rules": [
+          "$oot|MQ Spirit Temple Top Near Lowering Platform Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "item_count": 4
       },
       {
@@ -6089,6 +8439,19 @@
         "item_count": 1
       },
       {
+        "name": "Coffin Hearts",
+        "short_name": "Coffin Hearts",
+        "access_rules": [
+          "$oot|Bottom of the Well Heart 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Front Center Bombable Chest",
         "short_name": "Front Bombable",
         "access_rules": [
@@ -6122,6 +8485,19 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 3
+      },
+      {
+        "name": "Basement Ledge Rupees",
+        "short_name": "Basement Rupees",
+        "access_rules": [
+          "$oot|Bottom of the Well Rupee 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesOot_dungeon,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 5
       },
       {
         "name": "Map Chest",
@@ -6160,6 +8536,42 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 12
+      },
+      {
+        "name": "Basement Big Fairy (Sun)",
+        "access_rules": [
+          "$oot|Bottom of the Well Basement Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "BOTW Silver Rupees",
+        "access_rules": [
+          "$oot|Bottom of the Well SR 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 5
+      },
+      {
+        "name": "Basement Big Fairy (Sun)",
+        "access_rules": [
+          "$oot|MQ Bottom of the Well Basement Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
       },
       {
         "name": "Underwater Left Chest",
@@ -6205,6 +8617,32 @@
         "item_count": 1
       },
       {
+        "name": "Lobby Bombable Floor Hearts",
+        "short_name": "Floor Hearts",
+        "access_rules": [
+          "$oot|MQ Bottom of the Well Heart Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Mainroom Faces Wonder (Slingshot)",
+        "short_name": "Main Faces",        
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Bottom of the Well Wonder Item Main Room Left 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_BottomoftheWell_true"
+        ],
+        "item_count": 8
+      },
+      {
         "name": "Lobby Cage Pots",
         "short_name": "Lobby Cage",
         "access_rules": [
@@ -6216,6 +8654,18 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 3
+      },
+      {
+        "name": "Lobby Cage Big Fairy (Sun)",
+        "access_rules": [
+          "$oot|MQ Bottom of the Well Lobby Cage Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
       },
       {
         "name": "Lobby Alcove Pot",
@@ -6256,6 +8706,19 @@
         "item_count": 1
       },
       {
+        "name": "Coffin Hearts",
+        "short_name": "Coffin Hearts",
+        "access_rules": [
+          "$oot|MQ Bottom of the Well Heart Coffin 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "East Inner Room Freestanding Key",
         "short_name": "East Inner",
         "access_rules": [
@@ -6280,6 +8743,19 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 3
+      },
+      {
+        "name": "Sideroom Face Wonder (Slingshot)",
+        "short_name": "Sideroom Face",        
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Bottom of the Well Wonder Item Side Room 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_BottomoftheWell_true"
+        ],
+        "item_count": 4
       },
       {
         "name": "Compass Chest",
@@ -6307,7 +8783,7 @@
         "item_count": 1
       },
       {
-        "name": "Bead Hand Grass",
+        "name": "Dead Hand Grass",
         "short_name": "Dead Hand",
         "access_rules": [
           "$ootmq|MQ Bottom of the Well Grass Dead-Hand 1"
@@ -6342,6 +8818,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Basement Hearts",
+        "short_name": "Basement Hearts",
+        "access_rules": [
+          "$oot|MQ Bottom of the Well Heart Basement 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
       },
       {
         "name": "GS Coffin Room",
@@ -6383,6 +8872,32 @@
         "item_count": 1
       },
       {
+        "name": "Forest Trial Silver Rupees",
+        "short_name": "Forest",
+        "access_rules": [
+          "$oot|Ganon Castle SR Light Center Top"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Forest Trial Silver Center Left",
+        "short_name": "Forest Left",
+        "access_rules": [
+          "$oot|Ganon Castle SR Forest Center Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
         "name": "Forest Trial End Pots",
         "short_name": "Forest Trial Pots",
         "access_rules": [
@@ -6405,6 +8920,19 @@
           "setting_mq_GanonCastle_false"
         ],
         "item_count": 2
+      },
+      {
+        "name": "Water Trial Icicles",
+        "short_name": "Icicles",
+        "access_rules": [
+          "$oot|Ganon Castle Icicle Water 01"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 14
       },
       {
         "name": "Water Trial Block Room Pot",
@@ -6468,6 +8996,19 @@
         "item_count": 1
       },
       {
+        "name": "Shadow Trial Hearts",
+        "short_name": "Spirit Hearts",
+        "access_rules": [
+          "$oot|Ganon Castle Heart Shadow 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Shadow Trial Pots",
         "short_name": "Shadow Trial",
         "access_rules": [
@@ -6479,6 +9020,58 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Fire Trial Heart",
+        "short_name": "Fire Heart",
+        "access_rules": [
+          "$oot|Ganon Castle Heart Fire"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Fire Trial Silver Rupees",
+        "short_name": "Fire",
+        "access_rules": [
+          "$oot|Ganon Castle SR Fire Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 3
+      },
+      {
+        "name": "Fire Trial Silver Rupee under Block",
+        "short_name": "Fire Black Pillar",
+        "access_rules": [
+          "$oot|Ganon Castle SR Fire Black Pillar"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Fire Trial Silver Rupee right Island",
+        "short_name": "Fire Far Right",
+        "access_rules": [
+          "$oot|Ganon Castle SR Fire Far Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
       },
       {
         "name": "Fire Trial Pots",
@@ -6542,6 +9135,32 @@
         "item_count": 1
       },
       {
+        "name": "Light Trial Silver Rupees",
+        "short_name": "Light",
+        "access_rules": [
+          "$oot|Ganon Castle SR Light Alcove Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Light Trial Silver Rupee on Ceiling",
+        "short_name": "Light top",
+        "access_rules": [
+          "$oot|Ganon Castle SR Light Center Top"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
         "name": "Light Trial Pots",
         "short_name": "Light Trial",
         "access_rules": [
@@ -6553,6 +9172,57 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Spirit Trial Silver Rupees",
+        "short_name": "Spirit",
+        "access_rules": [
+          "$oot|Ganon Castle SR Spirit Front Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Spirit Trial Silver Rupee on Ceiling",
+        "short_name": "Spirit top",
+        "access_rules": [
+          "$oot|Ganon Castle SR Spirit Center Midair"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Trial Heart",
+        "short_name": "Spirit Heart",
+        "access_rules": [
+          "$oot|Ganon Castle Heart Spirit"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Big Fairy (Sun)",
+        "access_rules": [
+          "$oot|Gerudo Fortress Kitchen Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
       },
       {
         "name": "Spirit Trial Crystal Switch Chest",
@@ -6675,6 +9345,97 @@
         "item_count": 1
       },
       {
+        "name": "Water Trial Icicles",
+        "short_name": "Icicles",
+        "access_rules": [
+          "$oot|MQ Ganon Castle Icicle Water 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 8
+      },
+      {
+        "name": "Water Trial RedIce Entrance",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|MQ Ganon Castle Red Ice Water 1"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 7
+      },
+      {
+        "name": "Water Heart",
+        "short_name": "Water Hearts",
+        "access_rules": [
+          "$oot|MQ Ganon Castle Heart Water"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Water Trial Silver Rupees",
+        "short_name": "Water",
+        "access_rules": [
+          "$oot|MQ Ganon Castle SR Water Shallow Hole"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 3
+      },
+      {
+        "name": "Water Trial Silver Rupee Upper",
+        "short_name": "Water Upper",
+        "access_rules": [
+          "$oot|MQ Ganon Castle SR Water Above Ground"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Water Trial Silver Rupee frozen",
+        "short_name": "Water RedIce",
+        "access_rules": [
+          "$oot|MQ Ganon Castle SR Water Alcove"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Water Trial Second Room",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|MQ Ganon Castle Red Ice Block Silver Rupee Room 1"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 6
+      },
+      {
         "name": "Water Trial End Pots",
         "short_name": "Water Trial",
         "access_rules": [
@@ -6688,6 +9449,45 @@
         "item_count": 2
       },
       {
+        "name": "Shadow Trial Silver Rupees front",
+        "short_name": "Shadow Front",
+        "access_rules": [
+          "$oot|MQ Ganon Castle SR Shadow Front-Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },
+      {
+        "name": "Shadow Trial Silver Rupees Middle",
+        "short_name": "Shadow Middle",
+        "access_rules": [
+          "$oot|MQ Ganon Castle SR Shadow Middle"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Shadow Trial Silver Rupees back",
+        "short_name": "Shadow back",
+        "access_rules": [
+          "$oot|MQ Ganon Castle SR Shadow Back-Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },
+      {
         "name": "Shadow Trial Bomb Flower Chest",
         "short_name": "Shadow Trial 1",
         "access_rules": [
@@ -6695,6 +9495,19 @@
         ],
         "visibility_rules": [
           "setting_mq_GanonCastle_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Shadow Trial Wonder",
+        "short_name": "Shadow Trial",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Ganon Castle Wonder Item"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_GanonCastle_true"
         ],
         "item_count": 1
       },
@@ -6724,6 +9537,32 @@
         "item_count": 2
       },
       {
+        "name": "Fire Trial Silver Rupees",
+        "short_name": "Fire",
+        "access_rules": [
+          "$oot|MQ Ganon Castle SR Fire Center-Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Fire Trial Silver Rupee under Pillar",
+        "short_name": "Fire Pillar",
+        "access_rules": [
+          "$oot|MQ Ganon Castle SR Fire Under Pillar"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
         "name": "Fire Trial End Pots",
         "short_name": "Fire Trial",
         "access_rules": [
@@ -6746,6 +9585,19 @@
           "setting_mq_GanonCastle_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Rolling Boulder Hearts",
+        "short_name": "Boulder Hearts",
+        "access_rules": [
+          "$oot|MQ Ganon Castle Heart Light 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
       },
       {
         "name": "Light Trial End Pots",
@@ -6862,7 +9714,7 @@
         "map": "oot",
         "size": 50,
         "x": 1429,
-        "y": 205
+        "y": 75
       }
     ]
   },
@@ -6883,6 +9735,31 @@
         "item_count": 2
       },
       {
+        "name": "GTG Entrance Big Fairy (Storms)",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Entrance Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Beamos Hearts",
+        "short_name": "Beamos Hearts",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Heart 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Beamos Chest",
         "short_name": "Beamos",
         "access_rules": [
@@ -6895,6 +9772,71 @@
         "item_count": 1
       },
       {
+        "name": "Beamos Room Wonder",
+        "short_name": "Beamos",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Wonder Item Beamos Room"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false,setting_wonderitemoot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lava Silver Rupees Front",
+        "short_name": "Lava",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds SR Slope Front Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },
+      {
+        "name": "Lava Silver Rupee back left",
+        "short_name": "Lava back Left",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds SR Lava Back Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lava Silver Rupee back center",
+        "short_name": "Lava back center",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds SR Lava Back Center"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lava Silver Rupee back right",
+        "short_name": "Lava back right",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds SR Lava Back Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
         "name": "Stalfos Chest",
         "short_name": "Stalfos",
         "access_rules": [
@@ -6904,6 +9846,32 @@
           "setting_mq_GerudoTrainingGrounds_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Slopes Silver Rupees",
+        "short_name": "Slopes",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds SR Slope Front Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 4
+      },
+      {
+        "name": "Slopes Silver Rupee Top",
+        "short_name": "Slopes Top",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds SR Slope Front Above"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
         "item_count": 1
       },
       {
@@ -6954,6 +9922,19 @@
         "item_count": 1
       },
       {
+        "name": "Eye Statue Wonder",
+        "short_name": "Eye Statue",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Wonder Item Eye Statue Room"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false,setting_wonderitemoot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Near Scarecrow Chest",
         "short_name": "Near Scarecrow",
         "access_rules": [
@@ -6989,6 +9970,19 @@
         "item_count": 1
       },
       {
+        "name": "Hammer Room Wonder",
+        "short_name": "Hammer",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Wonder Item Torch Slugs Room"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false,setting_wonderitemoot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Freestanding Key",
         "short_name": "Ledge Key",
         "access_rules": [
@@ -7010,6 +10004,32 @@
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_false"
         ],
+        "item_count": 2
+      },
+      {
+        "name": "Water Silver Rupees Upper",
+        "short_name": "Water upper",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds SR Water 1"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },
+      {
+        "name": "Water Silver Rupees Lower",
+        "short_name": "Water lower",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds SR Water 2"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
         "item_count": 2
       },
       {
@@ -7117,6 +10137,58 @@
         "item_count": 1
       },
       {
+        "name": "Slopes Silver Rupees",
+        "short_name": "Slopes",
+        "access_rules": [
+          "$oot|MQ Gerudo Training Grounds SR Slopes Middle"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 3
+      },
+      {
+        "name": "Slopes Silver Rupee Front",
+        "short_name": "Slope Front",
+        "access_rules": [
+          "$oot|MQ Gerudo Training Grounds SR Slopes Front"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Slopes Silver Rupee top right",
+        "short_name": "Slope top",
+        "access_rules": [
+          "$oot|MQ Gerudo Training Grounds SR Slopes Top Right"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Slope Room Icicles",
+        "short_name": "Icicles",
+        "access_rules": [
+          "$oot|MQ Gerudo Training Grounds Icicle Slopes 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
+        "item_count": 5
+      },
+      {
         "name": "Before Heavy Block Chest",
         "short_name": "Stalfos",
         "access_rules": [
@@ -7146,6 +10218,19 @@
         ],
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Eye Statue Wonder",
+        "short_name": "Eye-Statue",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Gerudo Training Grounds Wonder Item Eye Statue"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_GerudoTrainingGrounds_true"
         ],
         "item_count": 1
       },
@@ -7194,6 +10279,45 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Dodongo Room Wonder (Bow)",
+        "short_name": "Dinolfos (Bow)",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Gerudo Training Grounds Wonder Item Dodongo Room Wall"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_dungeon,setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Silver Rupees ",
+        "short_name": "Lava",
+        "access_rules": [
+          "$oot|MQ Gerudo Training Grounds SR Lava Back-Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 6
+      },
+      {
+        "name": "Water Silver Rupees ",
+        "short_name": "Water",
+        "access_rules": [
+          "$oot|MQ Gerudo Training Grounds SR Water Top-Left"
+        ],
+        "visibility_rules": [
+          "setting_SilverRupeeShuffle_true,setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/system/silver.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 3
       },
       {
         "name": "Underwater Silver Rupee Chest",
