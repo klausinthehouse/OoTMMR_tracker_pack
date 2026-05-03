@@ -3,7 +3,7 @@
   "game_name": "OOTMM Randomizer",
   "package_version": "29.0.1",
   "package_uid": "ootmmrando_overworldmap_jupiterfire",
-  "author": "Jupiterfire, wbsch",
+  "author": "Jupiterfire, wbsch, KlausintheHouse",
   "variants": {
     "standard": {
       "display_name": "Map Tracker"
