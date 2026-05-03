@@ -1,5 +1,8 @@
 # EmoTracker Pack (map + items) for OoTMM
 
+Original created by Jupiterfire and wbsh
+Further added Features and Settings by KlausInTheHouse
+
 ## Usage
 
 - Install [EmoTracker](https://emotracker.net/download/).
@@ -28,7 +31,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - Click on a dungeon name to mark it as a mq dungeon (white letters = regular dungeon, red letters = mq dungeon).
 
-## Unsupported Settings
+## Added Settings (KlausInTheHouse)
 
 - Chest Game Small Key Shuffle
 - Silver Rupees Shuffle
@@ -42,19 +45,20 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Freestanding Hearts Shuffle
 - Fishing Pond Fish Shuffle
 - Fairy Spot Shuffle
-- Ganon Trials
-- Open Dungeons
-- Clear State Dungeons
-- Pre-Completed Dungeons
-- Entrance Shuffle
-- JP layouts
+- Added Silver Rupees to the item grid
+- Map Locations for non-supported settings
 
 ## TODOs:
 
-- [ ] Add Silver Rupees to the item grid (jupiterfire)
-- [ ] Add Map Locations for non-supported settings (jupiterfire)
-- [ ] Implement flags for cleared/uncleared dungeon states (wbsch)
-- [ ] Adjust Tree Search for ER Options (wbsch)
+- [ ] Control implemented settings for Errors
+- [ ] Implement flags for cleared/uncleared dungeon states
+- [ ] Adjust Tree Search for ER Options
+- [ ] Ganon Trials
+- [ ] Open Dungeon Setting
+- [ ] Clear State Dungeon Setting
+- [ ] Pre-Completed Dungeon Setting
+- [ ] Entrance Shuffle Setting
+- [ ] JP layout Setting
 
 ## Credits
 
@@ -63,3 +67,5 @@ Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switc
 Thanks to [ThatsGottaBeKane](https://github.com/ThatsGottaBeKane) for help with locations and the item grid.
 
 Thanks to BusinessAlex for providing us with pictures for items that weren't included in the base tracker packs.
+
+Thanks to Jupiterfire and wbsh to let me build on there pack
