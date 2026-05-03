@@ -16,6 +16,11 @@
       },
       {
         "type": "item",
+        "item": "setting_SilverRupeeShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_bossKeyShuffleOot",
         "height": 16
       },
@@ -26,12 +31,42 @@
       },
       {
         "type": "item",
+        "item": "setting_ChestGame",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_Fishing",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_shufflePotsOot",
         "height": 16
       },
       {
         "type": "item",
         "item": "setting_shuffleGrassOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_TreeShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BushOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleHivesOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_RedBoulderOot",
         "height": 16
       },
       {
@@ -57,6 +92,61 @@
       {
         "type": "item",
         "item": "setting_fairyFountainFairyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BigFairyShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_SoilFairyShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleButterflyOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_wonderitemoot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFreeRupeesOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFreeHeartsOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_crateoot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_rock",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleIcicleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_RedIce",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFrogSongs",
         "height": 16
       },
       {
@@ -206,6 +296,11 @@
       },
       {
         "type": "item",
+        "item": "setting_soulsAnimalsOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_agelessSwords",
         "height": 16
       },
@@ -298,6 +393,46 @@
       },
       {
         "type": "item",
+        "item": "setting_wonderitem",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFreeRupeesMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFreeHeartsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_cratemm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleBarrel",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_rockmm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleIcicleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_SnowShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_strayFairyChestShuffle",
         "height": 16
       },
@@ -323,6 +458,31 @@
       },
       {
         "type": "item",
+        "item": "setting_TreeShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BushMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleHivesMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleButterflyMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_RedBoulderMm",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_owlShuffle",
         "height": 16
       },
@@ -338,14 +498,24 @@
       },
       {
         "type": "item",
+        "item": "setting_fairyFountainFairyShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soil",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_shuffleMerchantsMm",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_fairyFountainFairyShuffleMm",
+        "item": "setting_lottery",
         "height": 16
-      },
+      },        
       {
         "type": "item",
         "item": "setting_priceMmShops",
@@ -444,6 +614,11 @@
       {
         "type": "item",
         "item": "setting_soulsMiscMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soulsAnimalsMm",
         "height": 16
       },
       {
@@ -1829,6 +2004,11 @@
       },
       {
         "type": "item",
+        "item": "OOT_SOUL_ENEMY_POE",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "OOT_SOUL_ENEMY_REDEAD_GIBDO",
         "height": 16
       },
@@ -2202,6 +2382,26 @@
         "type": "item",
         "item": "OOT_SOUL_MISC_GS",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ANIMAL_BUTTERFLY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ANIMAL_COW",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ANIMAL_CUCCO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_ANIMAL_DOG",
+        "height": 16
       }
     ]
   },
@@ -2373,6 +2573,11 @@
       {
         "type": "item",
         "item": "MM_SOUL_ENEMY_PEAHAT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_SOUL_ENEMY_POE",
         "height": 16
       },
       {
@@ -2765,6 +2970,26 @@
         "type": "item",
         "item": "MM_SOUL_MISC_GS",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_SOUL_ANIMAL_BUTTERFLY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_SOUL_ANIMAL_COW",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_SOUL_ANIMAL_CUCCO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_SOUL_ANIMAL_DOG",
+        "height": 16
       }
     ]
   },
@@ -2970,7 +3195,7 @@
         }
       },
       {
-        "title": "Misc Souls OOT",
+        "title": "Misc/Animal Souls OOT",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -3026,7 +3251,7 @@
         }
       },
       {
-        "title": "Misc Souls MM",
+        "title": "Misc/Animal Souls MM",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
