@@ -1232,6 +1232,21 @@
     ]
   },
   {
+    "name": "Soul of Poes (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_enemy_poe.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_enemy_poe.png",
+        "codes": "OOT_SOUL_ENEMY_POE"
+      }
+    ]
+  },
+  {
     "name": "Soul of ReDeads/Gibdos (OoT)",
     "type": "progressive",
     "allow_disabled": false,
@@ -2308,6 +2323,66 @@
       {
         "img": "images/oot_soul_misc_business_scrub.png",
         "codes": "OOT_SOUL_MISC_BUSINESS_SCRUB"
+      }
+    ]
+  },  
+  {
+    "name": "Soul of Butterflies (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_animal_butterfly.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_animal_butterfly.png",
+        "codes": "OOT_SOUL_ANIMAL_BUTTERFLY"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Cows (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_animal_cow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_animal_cow.png",
+        "codes": "OOT_SOUL_ANIMAL_COW"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Cucco (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_animal_cucco.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_animal_cucco.png",
+        "codes": "OOT_SOUL_ANIMAL_CUCCO"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Dogs (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_soul_animal_dog.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_soul_animal_dog.png",
+        "codes": "OOT_SOUL_ANIMAL_DOG"
       }
     ]
   },

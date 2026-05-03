@@ -40,6 +40,19 @@
     ]
   },
   {
+    "name": "Dodngos Cavern MQ SR Label",
+    "type": "static",
+    "img": "images/label_dcMQ_SR.png",
+    "codes": "dcmq_label_SR"
+  },
+  {
+    "name": "Dodongos Cavern SR MQ",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_DC",
+    "max_quantity": 5    
+  },
+  {
     "name": "Jabu Jabu Label",
     "type": "progressive",
     "allow_disabled": false,
@@ -164,6 +177,18 @@
     ]
   },
   {
+    "name": "Spirit Temple SR Label",
+    "type": "static",
+    "img": "images/label_spirit_SR.png",
+    "codes": "spirit_label_SR"
+  },
+  {
+    "name": "Spirit Temple SR MQ Label",
+    "type": "static",
+    "img": "images/label_spiritMQ_SR.png",
+    "codes": "spiritMQ_label_SR"
+  },    
+  {
     "name": "Spirit Temple Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
@@ -176,6 +201,41 @@
     "img": "images/boss_key.png",
     "codes": "OOT_BOSS_KEY_SPIRIT"
   },
+  {
+    "name": "Spirit Temple SR Child",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SPIRIT_CHILD",
+    "max_quantity": 5    
+  },
+  {
+    "name": "Spirit Temple SR Sun",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SPIRIT_SUN",
+    "max_quantity": 5
+  },
+  {
+    "name": "Spirit Temple SR Boulders",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SPIRIT_BOULDERS",
+    "max_quantity": 5
+  },
+  {
+    "name": "Spirit Temple MQSR Adult",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SPIRIT_ADULT",
+    "max_quantity": 5
+  },
+  {
+    "name": "Spirit Temple MQSR Lobby",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SPIRIT_LOBBY",
+    "max_quantity": 5
+  },            
   {
     "name": "Shadow Temple Label",
     "type": "progressive",
@@ -194,6 +254,18 @@
     ]
   },
   {
+    "name": "Shadow SR Label",
+    "type": "static",
+    "img": "images/label_shadow_SR.png",
+    "codes": "shadow_label_SR"
+  },
+  {
+    "name": "Shadow MQ SR Label",
+    "type": "static",
+    "img": "images/label_shadowMQ_SR.png",
+    "codes": "shadowMQ_label_SR"
+  },
+  {
     "name": "Shadow Temple Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
@@ -206,6 +278,55 @@
     "img": "images/boss_key.png",
     "codes": "OOT_BOSS_KEY_SHADOW"
   },
+  {
+    "name": "Shadow Temple SR Pit",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SHADOW_PIT",
+    "max_quantity": 5
+  },
+  {
+    "name": "Shadow Temple SR Scythe",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SHADOW_SCYTHE",
+    "max_quantity": 5
+  },
+  {
+    "name": "Shadow Temple SR Spiked",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SHADOW_SPIKES",
+    "max_quantity": 5
+  },
+  {
+    "name": "Shadow Temple SR MQ Invisible Blades",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SHADOW_BLADES",
+    "max_quantity": 10
+  },
+  {
+    "name": "Shadow Temple MQ SR Pit",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SHADOW_PIT_MQ",
+    "max_quantity": 5
+  },
+  {
+    "name": "Shadow Temple MQ SR Scythe",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SHADOW_SCYTHE_MQ",
+    "max_quantity": 5
+  },
+  {
+    "name": "Shadow Temple SR MQ Spikes",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_SHADOW_SPIKES_MQ",
+    "max_quantity": 10
+  },              
   {
     "name": "Bottom of the Well Label",
     "type": "progressive",
@@ -224,11 +345,24 @@
     ]
   },
   {
+    "name": "BOTW SR Label",
+    "type": "static",
+    "img": "images/label_botw.png",
+    "codes": "botw_label_SR"
+  },
+  {
     "name": "Bottom of the Well Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "OOT_SMALL_KEY_BOTW",
     "max_quantity": 3
+  },
+  {
+    "name": "Bottom of the Well SR",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_BOTW",
+    "max_quantity": 5
   },
   {
     "name": "Ice Cavern Label",
@@ -248,6 +382,26 @@
     ]
   },
   {
+    "name": "Ice Cavern SR Label",
+    "type": "static",
+    "img": "images/label_icecavern_SR.png",
+    "codes": "ic_label_SR"
+  },
+  {
+    "name": "Ice Cavern SR Scythe",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_IC_SCYTHE",
+    "max_quantity": 5
+  },
+  {
+    "name": "Ice Cavern SR Block",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_IC_BLOCK",
+    "max_quantity": 5
+  },  
+  {
     "name": "Thieves Hideout Label",
     "type": "static",
     "img": "images/label_th.png",
@@ -259,7 +413,7 @@
     "img": "images/small_key.png",
     "codes": "OOT_SMALL_KEY_GF",
     "max_quantity": 4
-  },
+  },  
   {
     "name": "Gerudo Training Ground Label",
     "type": "progressive",
@@ -278,11 +432,65 @@
     ]
   },
   {
+    "name": "Gerudo Training Ground SR Label",
+    "type": "static",
+    "img": "images/label_gtg_SR.png",
+    "codes": "gtg_label_SR"
+  },
+  {
+    "name": "Gerudo Training Ground MQ SR Label",
+    "type": "static",
+    "img": "images/label_gtgMQ_SR.png",
+    "codes": "gtgMQ_label_SR"
+  },
+  {
     "name": "Gerudo Training Ground Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "OOT_SMALL_KEY_GTG",
     "max_quantity": 9
+  },
+  {
+    "name": "Gerudo Training Ground SR Lava",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GTG_LAVA",
+    "max_quantity": 5
+  },
+  {
+    "name": "Gerudo Training Ground SR Slope",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GTG_SLOPES",
+    "max_quantity": 5
+  },
+  {
+    "name": "Gerudo Training Ground SR Water",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GTG_WATER",
+    "max_quantity": 5
+  },
+  {
+    "name": "Gerudo Training Ground SR MQ Lava",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GTG_LAVA_MQ",
+    "max_quantity": 6
+  },
+  {
+    "name": "Gerudo Training Ground SR MQ Slope",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GTG_SLOPES_MQ",
+    "max_quantity": 5
+  },
+  {
+    "name": "Gerudo Training Ground SR MQ Water",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GTG_WATER_MQ",
+    "max_quantity": 3
   },
   {
     "name": "Ganons Castle Label",
@@ -302,6 +510,18 @@
     ]
   },
   {
+    "name": "Ganons Castle SR Label",
+    "type": "static",
+    "img": "images/label_gc_SR.png",
+    "codes": "gc_label_SR"
+  },
+  {
+    "name": "Ganons Castle SR MQ Label",
+    "type": "static",
+    "img": "images/label_gcMQ_SR.png",
+    "codes": "gcMQ_label_SR"
+  },
+  {
     "name": "Ganons Castle Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
@@ -314,6 +534,55 @@
     "img": "images/boss_key.png",
     "codes": "OOT_BOSS_KEY_GANON"
   },
+  {
+    "name": "Ganons Castle SR Fire",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GANON_FIRE",
+    "max_quantity": 5
+  },
+  {
+    "name": "Ganons Castle SR Forest",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GANON_FOREST",
+    "max_quantity": 5
+  },
+  {
+    "name": "Ganons Castle SR Light",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GANON_LIGHT",
+    "max_quantity": 5
+  },
+  {
+    "name": "Ganons Castle SR Spirit",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GANON_SPIRIT",
+    "max_quantity": 5
+  },
+  {
+    "name": "Ganons Castle SR MQ Fire",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GANON_FIRE_MQ",
+    "max_quantity": 5
+  },
+  {
+    "name": "Ganons Castle SR MQ Shadow",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GANON_SHADOW",
+    "max_quantity": 5
+  },
+  {
+    "name": "Ganons Castle SR MQ Water",
+    "type": "consumable",
+    "img": "images/system/silver.png",
+    "codes": "OOT_RUPEE_SILVER_GANON_WATER",
+    "max_quantity": 5
+  },  
   {
     "name": "Generic Small Keys",
     "type": "toggle",
@@ -352,5 +621,18 @@
     "codes": "OOT_SKELETON_KEY,OOT_SHARED_SKELETON_KEY"
       }
     ]
+  },
+  {
+    "name": "Chest Game Label",
+    "type": "static",
+    "img": "images/label_ChestGame.png",
+    "codes": "ChestGame_label"
+  },
+  {
+    "name": "Chest Game Keys",
+    "type": "consumable",
+    "img": "images/small_key.png",
+    "codes": "OOT_SMALL_KEY_TCG",
+    "max_quantity": 6
   }
 ]

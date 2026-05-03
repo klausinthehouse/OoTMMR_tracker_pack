@@ -1967,6 +1967,21 @@
     ]
   },
   {
+    "name": "Soul of Poes (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_soul_enemy_poe.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_soul_enemy_poe.png",
+        "codes": "MM_SOUL_ENEMY_POE"
+      }
+    ]
+  },
+  {
     "name": "Soul of Real Bombchu",
     "type": "progressive",
     "allow_disabled": false,
@@ -3088,6 +3103,66 @@
       {
         "img": "images/mm_soul_misc_business_scrub.png",
         "codes": "MM_SOUL_MISC_BUSINESS_SCRUB"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Butterflies (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_soul_animal_butterfly.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_soul_animal_butterfly.png",
+        "codes": "MM_SOUL_ANIMAL_BUTTERFLY"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Cows (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_soul_animal_cow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_soul_animal_cow.png",
+        "codes": "MM_SOUL_ANIMAL_COW"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Cucco (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_soul_animal_cucco.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_soul_animal_cucco.png",
+        "codes": "MM_SOUL_ANIMAL_CUCCO"
+      }
+    ]
+  },
+  {
+    "name": "Soul of Dogs (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_soul_animal_dog.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_soul_animal_dog.png",
+        "codes": "MM_SOUL_ANIMAL_DOG"
       }
     ]
   }
