@@ -31,7 +31,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - Click on a dungeon name to mark it as a mq dungeon (white letters = regular dungeon, red letters = mq dungeon).
 
-## Added Settings (KlausInTheHouse)
+## Added Settings
 
 - Chest Game Small Key Shuffle
 - Silver Rupees Shuffle
