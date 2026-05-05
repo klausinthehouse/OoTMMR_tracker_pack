@@ -1232,7 +1232,7 @@
         "codes": "setting_BushMm,setting_BushMm_overworld"
       },
       {
-        "img": "images/setting_Bush_trur.png",
+        "img": "images/setting_Bush_true.png",
         "codes": "setting_BushMm,setting_BushMm_dungeon,setting_BushMm_overworld"
       }
     ]
