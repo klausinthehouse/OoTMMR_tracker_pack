@@ -49,6 +49,32 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "item_count": 1
+              },
+              {
+                "name": "Rock Circle with Rock in Middle",
+                "short_name": "Rock Circle",
+                "access_rules": [
+                  "$oot|Kokiri Forest Rock Circle"
+                ],
+                "visibility_rules": [
+                  "setting_rock_on"
+                ],
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "item_count": 9
+              },
+              {
+                "name": "Rock next to Midos House",
+                "short_name": "Midos Rock",
+                "access_rules": [
+                  "$oot|Kokiri Forest Child Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rock_on"
+                ],
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -258,6 +284,19 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 2
+              },
+              {
+                "name": "Rock behind Know it all House",
+                "short_name": "Behind House",
+                "access_rules": [
+                  "$oot|Kokiri Forest Child Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rock_on"
+                ],
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -454,33 +493,7 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "item_count": 1
-              },
-              {
-                "name": "Rock Circle",
-                "short_name": "Rock Circle",
-                "access_rules": [
-                  "$oot|Kokiri Forest Rock Circle"
-                ],
-                "visibility_rules": [
-                  "setting_rock_on"
-                ],
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "item_count": 8
-              },
-              {
-                "name": "Child Rocks",
-                "short_name": "Child Rocks",
-                "access_rules": [
-                  "$oot|Kokiri Forest Child Rocks"
-                ],
-                "visibility_rules": [
-                  "setting_rock_on"
-                ],
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "item_count": 8
-              }
+              }              
             ],
             "map_locations": [
               {
@@ -538,6 +551,19 @@
                 "chest_unopened_img": "images/heart.png",
                 "chest_opened_img": "images/heart_grey.png",
                 "item_count": 4
+              },
+              {
+                "name": "Rocks behind Sarias House",
+                "short_name": "Sarias Rocks",
+                "access_rules": [
+                  "$oot|Kokiri Forest Child Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rock_on"
+                ],
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -552,7 +578,7 @@
             ]
           },
           {
-            "name": "KF Training Area Grass",
+            "name": "KF Training Area",
             "sections": [
               {
                 "name": "Training Area Grass (Child)",
@@ -605,6 +631,19 @@
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
                 "item_count": 1
+              },
+              {
+                "name": "Rocks in Training Area",
+                "short_name": "Training Rocks",
+                "access_rules": [
+                  "$oot|Kokiri Forest Child Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rock_on"
+                ],
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
