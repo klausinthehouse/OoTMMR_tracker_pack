@@ -1625,14 +1625,14 @@
             ]
           },
           {
-            "name": "HF Diving Grotto",
-            "access_rules": [
-              "$oot|Hyrule Field Diving Grotto HP"
-            ],
+            "name": "HF Diving Grotto",            
             "sections": [
               {
                 "name": "HF Tektite Grotto Freestanding PoH",
                 "short_name": "HP",
+                "access_rules": [
+                  "$oot|Hyrule Field Diving Grotto HP"
+                ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -1702,7 +1702,7 @@
             "sections": [
               {
                 "name": "Near GV Tree child",
-                "short_name": "Tree",
+                "short_name": "Child Tree",
                 "access_rules": [
                   "$oot|Hyrule Field Child Trees"
                 ],
@@ -1715,7 +1715,7 @@
               },
               {
                 "name": "Near GV Tree adult",
-                "short_name": "Tree",
+                "short_name": "Adult Tree",
                 "access_rules": [
                   "$oot|Hyrule Field Adult Tree"
                 ],
@@ -5703,7 +5703,7 @@
                     "item_count": 4
                   },
                   {
-                    "name": "Market Guard House Adult Pots (11x)",
+                    "name": "Market Guard House Adult Pots",
                     "short_name": "Adult",
                     "access_rules": [
                       "$oot|Market Pot House Adult Pot 1"
@@ -5713,7 +5713,7 @@
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
-                    "item_count": 1
+                    "item_count": 11
                   }
                 ],
                 "map_locations": [
@@ -5965,7 +5965,7 @@
                 ],
                 "chest_unopened_img": "images/system/tree.png",
                 "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 7
+                "item_count": 8
               }
             ],
             "map_locations": [
