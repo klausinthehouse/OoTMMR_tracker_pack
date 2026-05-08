@@ -19,7 +19,7 @@
       },
       {
         "name": "Freestanding lower Heart",
-        "short_name": "Lower Hearts",
+        "short_name": "Lower Heart",
         "access_rules": [
           "$oot|Deku Tree Heart Main Room Lower"
         ],

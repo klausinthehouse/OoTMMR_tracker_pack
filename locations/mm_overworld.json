@@ -1332,8 +1332,7 @@
         "color": "#ffa449",
         "children": [
           {
-            "name": "TF South-West",
-            "short_name": "Pond",
+            "name": "TF South-West Pond",            
             "sections": [
               {
                 "name": "Water chest",
@@ -1341,6 +1340,30 @@
                   "$mm|Termina Field Water Chest"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass Patch 1",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 06 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 2",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 07 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
               },
               {
                 "name": "Wonderitem on Ramp",
@@ -2171,56 +2194,7 @@
                 "y": 323
               }
             ]
-          },
-          {
-            "name": "Grass Patches North of Takkuri (Outer Ring)",
-            "short_name": "SW Grass",
-            "sections": [
-              {
-                "name": "Grass Patch 1",
-                "access_rules": [
-                  "$mm|Termina Field Grass Pack 06 Grass 01"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_true"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 12
-              },
-              {
-                "name": "Grass Patch 2",
-                "access_rules": [
-                  "$mm|Termina Field Grass Pack 07 Grass 01"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_true"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 12
-              },
-              {
-                "name": "Soil-Items (Wall)",                    
-                "access_rules": [
-                  "$mm|Termina Field Soft Soils"
-                ],
-                "visibility_rules": [
-                  "setting_soil_overworld"
-                ],
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",                
-                "item_count": 3
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 507,
-                "y": 339
-              }
-            ]
-          },
+          },          
           {
             "name": "Grass Patch Near Takkuri",
             "short_name": "SW Grass",
@@ -2413,7 +2387,7 @@
             ]
           },
           {
-            "name": "SE Grass Patches (Inner Ring)",
+            "name": "SE by Obeservatory (Inner Ring)",
             "short_name": "East Grass Patches",
             "sections": [
               {
@@ -2439,6 +2413,18 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 12
+              },
+              {
+                "name": "Soil-Items (Wall)",                    
+                "access_rules": [
+                  "$mm|Termina Field Soft Soils"
+                ],
+                "visibility_rules": [
+                  "setting_soil_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",                
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -4259,7 +4245,7 @@
                 ],
                 "chest_unopened_img": "images/system/snow.png",
                 "chest_opened_img": "images/system/snow_grey.png",
-                "item_count": 8
+                "item_count": 4
               },
               {
                 "name": "Big Snowballs upper Path",
@@ -5529,7 +5515,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Big Snowballs befor temple",
+                    "name": "Big Snowballs before temple",
                     "short_name": "Big Snowhead Snowballs",
                     "access_rules": [
                       "$mm|Snowhead Big Snowball 1"
@@ -5539,7 +5525,7 @@
                     ],
                     "chest_unopened_img": "images/system/snow.png",
                     "chest_opened_img": "images/system/snow_grey.png",
-                    "item_count": 5
+                    "item_count": 6
                   },                  
                   {
                     "name": "Melted big Snowballs before temple (spring)",

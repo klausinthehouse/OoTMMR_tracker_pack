@@ -1193,13 +1193,13 @@
             ]
           },
           {
-            "name": "SFM Wolfos Grotto",
-            "access_rules": [
-              "$oot|Sacred Meadow Grotto"
-            ],
+            "name": "SFM Wolfos Grotto",            
             "sections": [
               {
                 "name": "SFM Wolfos Grotto Chest",
+                "access_rules": [
+                  "$oot|Sacred Meadow Grotto"
+                ],
                 "short_name": "Chest",
                 "item_count": 1
               },
@@ -1331,14 +1331,14 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "HF Inside Fence Grotto",
-            "access_rules": [
-              "$oot|Hyrule Field Grotto Scrub HP"
-            ],
+            "name": "HF Inside Fence Grotto",            
             "sections": [
               {
                 "name": "HF Deku Scrub Grotto",
                 "short_name": "Deku Scrub",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Scrub HP"
+                ],
                 "chest_unopened_img": "images/deku_scrub.png",
                 "chest_opened_img": "images/deku_scrub_grey.png",
                 "item_count": 1
@@ -3095,6 +3095,7 @@
               },
               {
                 "name": "Wonder on construction site",
+                "short_name": "Construct Wonder",
                 "access_rules": [
                   "$oot|Kakariko Wonder Item"
                 ],
@@ -3642,7 +3643,7 @@
               },
               {
                 "name": "Crates Near Buildings",
-                "short_name": "Crate",
+                "short_name": "Child Crates",
                 "access_rules": [
                   "$oot|Kakariko Crate Child Near Trail"
                 ],
@@ -3655,7 +3656,7 @@
               },
               {
                 "name": "Adult Crates",
-                "short_name": "Crates",
+                "short_name": "Adult Crates",
                 "access_rules": [
                   "$oot|Kakariko Crate Adult Near First House"
                 ],
@@ -3728,7 +3729,7 @@
               },
               {
                 "name": "Single Rock next to Guard",
-                "short_name": "Skulltula Rock",
+                "short_name": "Guard Rock",
                 "access_rules": [
                   "$oot|Kakariko Rocks"
                 ],
@@ -5099,7 +5100,7 @@
             "sections": [
               {
                 "name": "DMC Great Fairy Reward",
-                "short_name": "Reward",
+                "short_name": "GF Reward",
                 "access_rules": [
                   "$oot|Great Fairy Magic Upgrade 2"
                 ],
@@ -5242,7 +5243,7 @@
               },
               {
                 "name": "DMC Volcano Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Volcano HP",
                 "access_rules": [
                   "$oot|Death Mountain Crater Volcano HP"
                 ],
