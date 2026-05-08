@@ -51,6 +51,9 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 ## TODOs:
 
 - [ ] Control implemented settings for Errors
+- [ ] Implement Option for Termina Field Grass
+- [ ] Implement Logic for Bronce Scale
+- [ ] Implement Logic for Feirce Deity Everywhere
 - [ ] Implement flags for cleared/uncleared dungeon states
 - [ ] Adjust Tree Search for ER Options
 - [ ] Ganon Trials
