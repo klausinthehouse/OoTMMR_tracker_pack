@@ -806,19 +806,40 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
-      {
-        "img": "images/setting_shuffleGrassMm_true.png",
-        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_true",
-        "inherit_codes": false
-      },
       {
         "img": "images/setting_shuffleGrassMm_false.png",
         "img_mods": "@disabled",
         "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_false",
         "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleGrassMm_dungeon.png",
+        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_dungeon",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleGrassMm_overworld.png",
+        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_overworld,setting_shuffleGrassMm_TF",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleGrassMm_overworld_woTF.png",
+        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_overworld",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleGrassMm_true.png",
+        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_overworld,setting_shuffleGrassMm_dungeon,setting_shuffleGrassMm_TF",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleGrassMm_true_woTF.png",
+        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_overworld,setting_shuffleGrassMm_dungeon",
+        "inherit_codes": false
       }
+      
     ]
   },
   {
