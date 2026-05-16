@@ -1441,7 +1441,7 @@
           "$mm|Beneath The Well Grass Left Side 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 2
       },
@@ -1478,7 +1478,7 @@
           "$mm|Beneath The Well Grass Cow 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 3
       },
@@ -1517,7 +1517,7 @@
           "$mm|Beneath The Well Grass Before Poe 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 4
       },
@@ -1566,7 +1566,7 @@
           "$mm|Beneath The Well Grass Near End 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 5
       }
@@ -1593,7 +1593,7 @@
           "$mm|Ancient Castle of Ikana Grass 01"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 12
       },
@@ -1941,7 +1941,7 @@
           "$mm|Woodfall Temple Grass Entrance Bottom 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 3
       },
@@ -1967,7 +1967,7 @@
           "$mm|Woodfall Temple Grass Entrance Ledge 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 2
       },
@@ -2030,7 +2030,7 @@
           "$mm|Woodfall Temple Grass Main Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 3
       },
@@ -2088,7 +2088,7 @@
           "$mm|Woodfall Temple Grass Map Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 5
       },
@@ -2165,7 +2165,7 @@
           "$mm|Woodfall Temple Grass Water Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 2
       },
@@ -2188,7 +2188,7 @@
           "$mm|Woodfall Temple Grass Compass Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 3
       },
@@ -2214,7 +2214,7 @@
           "$mm|Woodfall Temple Grass Pits Room 01"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 11
       },
@@ -2317,7 +2317,7 @@
           "$mm|Woodfall Temple Grass Pre-Boss 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 5
       },
@@ -2420,7 +2420,7 @@
           "$mm|Woodfall Temple Boss Grass 01"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 16
       },
@@ -3134,7 +3134,7 @@
           "$mm|Stone Tower Temple Grass Entrance 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 3
       },
@@ -3173,7 +3173,7 @@
           "$mm|Stone Tower Temple Grass Garden 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 6
       },
@@ -4147,7 +4147,7 @@
           "$mm|Snowhead Temple Grass 01"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 10
       },
