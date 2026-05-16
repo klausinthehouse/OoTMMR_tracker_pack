@@ -64,6 +64,8 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Entrance Shuffle Setting
 - [ ] JP layout Setting
 - [ ] Bronze-Scale Settings
+- [ ] Feirce-Deity-Everywhere Setting
+- [ ] Check Time-Logic in MM
 
 ## Credits
 
