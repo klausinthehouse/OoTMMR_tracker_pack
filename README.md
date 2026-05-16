@@ -47,6 +47,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Fairy Spot Shuffle
 - Added Silver Rupees to the item grid
 - Map Locations for non-supported settings
+- Specifig Settings for TF Grass
 
 ## TODOs:
 
@@ -62,6 +63,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Pre-Completed Dungeon Setting
 - [ ] Entrance Shuffle Setting
 - [ ] JP layout Setting
+- [ ] Bronze-Scale Settings
 
 ## Credits
 
