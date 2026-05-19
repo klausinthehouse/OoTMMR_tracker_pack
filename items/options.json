@@ -1176,7 +1176,7 @@
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_shuffleButterfly_true.png",
+        "img": "images/setting_TreeShuffle_true.png",
         "codes": "setting_TreeShuffleOot,setting_TreeShuffleOot_on",
         "inherit_codes": false
       }
