@@ -7219,7 +7219,7 @@
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 1
+                "item_count": 2
               },
               {
                 "name": "Hideout Jail Crate (1 Torch)",
@@ -7362,19 +7362,6 @@
                 "item_count": 1
               },
               {
-                "name": "Jail 3 Pots",
-                "short_name": "3 Torches",
-                "access_rules": [
-                  "$oot|Gerudo Fortress Pot Jail 3 1"
-                ],
-                "visibility_rules": [
-                  "setting_shufflePotsOot_true"
-                ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 2
-              },
-              {
                 "name": "Hideout jail wonder (3 torch)",
                 "short_name": "3 Torch",
                 "access_rules": [
@@ -7411,6 +7398,19 @@
                 ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
+              },              
+              {
+                "name": "Jail 4 Pots",
+                "short_name": "4 Torches",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Pot Jail 3 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
               },
               {
                 "name": "Hideout jail wonder (4 torch)",
@@ -7474,7 +7474,7 @@
               },
               {
                 "name": "Break Room wonder Back",
-                "short_name": "Front Break",
+                "short_name": "Back Break",
                 "access_rules": [
                   "$oot|Gerudo Fortress Wonder Item Break Room Top"
                 ],

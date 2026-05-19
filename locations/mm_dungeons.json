@@ -354,6 +354,18 @@
           "$mm|Swamp Skulltula Pot Room Behind Vines"
         ],
         "item_count": 1
+      },      
+      {
+        "name": "Jar Room on Jars",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$mm|Swamp Spider House Wonder Item Pots 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_on"
+        ],
+        "item_count": 5
       },
       {
         "name": "Jar Room on Wall",
@@ -1152,7 +1164,7 @@
       },
       {
         "name": "Rupees at Sewer Elevator",
-        "short_name": "Elevator Rupees",
+        "short_name": "Rupees in Barrels",
         "access_rules": [
           "$mm|Pirate Fortress Sewers Rupee Water Elevator 1"
         ],
@@ -1215,6 +1227,32 @@
         "item_count": 6
       },
       {
+        "name": "Lower Chest",
+        "access_rules": [
+          "$mm|Pirate Fortress Interior Lower Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Upper Chest",
+        "access_rules": [
+          "$mm|Pirate Fortress Interior Upper Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Shoot the Beehive Room Pots",
+        "access_rules": [
+          "$mm|Pirate Fortress Interior Pot Beehive 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },      
+      {
         "name": "Hookshot Room Barrels",
         "short_name": "Hookshot Barrels",
         "chest_unopened_img": "images/system/Barrel.png",
@@ -1240,32 +1278,6 @@
         "item_count": 3
       },
       {
-        "name": "Lower Chest",
-        "access_rules": [
-          "$mm|Pirate Fortress Interior Lower Chest"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Upper Chest",
-        "access_rules": [
-          "$mm|Pirate Fortress Interior Upper Chest"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Shoot the Beehive Room Pots",
-        "access_rules": [
-          "$mm|Pirate Fortress Interior Pot Beehive 1"
-        ],
-        "visibility_rules": [
-          "setting_shufflePotsMm_true"
-        ],
-        "chest_unopened_img": "images/pot.png",
-        "chest_opened_img": "images/pot_grey.png",
-        "item_count": 2
-      },
-      {
         "name": "Hookshot Chest",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
@@ -1283,7 +1295,7 @@
       },
       {
         "name": "Barrel before Barrel Maze",
-        "short_name": "Barrel-Maze",
+        "short_name": "Balcony-Barrel",
         "chest_unopened_img": "images/system/Barrel.png",
         "chest_opened_img": "images/system/Barrel_grey.png",
         "access_rules": [
@@ -1362,7 +1374,7 @@
       },
       {
         "name": "After Well Guarded Chest Barrel",
-        "short_name": "Aquarium Barrel",
+        "short_name": "After well guarded",
         "chest_unopened_img": "images/system/Barrel.png",
         "chest_opened_img": "images/system/Barrel_grey.png",
         "access_rules": [
@@ -1607,19 +1619,6 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
-        "item_count": 1
-      },
-      {
-        "name": "Outside Entrance Tree",
-        "short_name": "Tree",
-        "access_rules": [
-          "$mm|Ancient Castle of Ikana Tree"
-        ],
-        "visibility_rules": [
-          "setting_TreeShuffleMm_dungeon"
-        ],
-        "chest_unopened_img": "images/system/tree.png",
-        "chest_opened_img": "images/system/tree_grey.png",                
         "item_count": 1
       },
       {
