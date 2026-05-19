@@ -5575,6 +5575,7 @@ function _oot_logic()
             ["Hyrule Castle Butterfly Pack 4 Butterfly 4"] = function () return can_use_sticks() and soul_butterfly() end,
             ["Hyrule Castle Butterfly Pack 4 Butterfly 5"] = function () return can_use_sticks() and soul_butterfly() end,
             ["Hyrule Castle Trees"] = function () return true end,
+            ["Hyrule Castle well guarded Tree"] = function () return has('MASK_STONE') or not soul_npc(SOUL_NPC_HYLIAN_GUARD) end,
         },
         ["age_change"] = false,
     },
