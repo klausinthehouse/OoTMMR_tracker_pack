@@ -2990,19 +2990,6 @@
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
                 "item_count": 1
-              },
-              {
-                "name": "Kak Impa's House Pots",
-                "short_name": "In Front",
-                "access_rules": [
-                  "$oot|Kakariko Pot 07"
-                ],
-                "visibility_rules": [
-                  "setting_shufflePotsOot_true"
-                ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 3
               }
             ],
             "map_locations": [
@@ -3010,19 +2997,6 @@
                 "map": "oot",
                 "x": 1830,
                 "y": 430
-              }
-            ]
-          },
-          {
-            "name": "Kak above the Village",
-            "sections": [
-                           
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1830,
-                "y": 360
               }
             ]
           },
@@ -3035,19 +3009,6 @@
                 "access_rules": [
                   "$oot|Shooting Gallery Adult"
                 ],
-                "item_count": 1
-              },
-              {
-                "name": "Wonder on construction site",
-                "short_name": "Construct Wonder",
-                "access_rules": [
-                  "$oot|Kakariko Wonder Item"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
                 "item_count": 1
               }
             ],
@@ -3093,70 +3054,45 @@
           },
           {
             "name": "Kakariko",
-            "sections": [
+            "sections": [                 
               {
-                "name": "Ravaged Village",
+                "name": "Grass Around Tree",
                 "access_rules": [
-                  "$oot|Kakariko Song Shadow",
-                  "{gossip_stone}"
-                ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
-              },
-              {
-                "name": "Man on Roof",
-                "access_rules": [
-                  "$oot|Kakariko Man on Roof"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Butterflies on Watchtower",                    
-                "short_name": "Kak Butterflies",
-                "access_rules": [
-                  "$oot|Kakariko Butterfly 1"
-               ],
-                "visibility_rules": [
-                  "setting_shuffleButterflyOot_on"
-               ],
-               "chest_unopened_img": "images/system/Butterfly.png",
-               "chest_opened_img": "images/system/Butterfly_grey.png",
-               "item_count": 2
-              },
-              {
-                "name": "Anju Child",
-                "access_rules": [
-                  "$oot|Kakariko Anju Bottle"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Anju Adult",
-                "access_rules": [
-                  "$oot|Kakariko Anju Egg"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Show Happy Cucco",
-                "access_rules": [
-                  "$oot|Kakariko Anju Cojiro"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Pots near Medicine Building",
-                "access_rules": [
-                  "$oot|Kakariko Back Pot 1"
+                  "$oot|Kakariko Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shuffleGrassOot_true"
                 ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 5
+              },            
+              {
+                "name": "Kak GS Tree (N)",
+                "short_name": "Tree",
+                "access_rules": [
+                  "$oot|Kakariko GS Tree"
+                ],
+                "visibility_rules": [
+                  "setting_goldSkulltulaTokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },              
+              {
+                "name": "Crates Near Buildings",
+                "short_name": "Child Crates",
+                "access_rules": [
+                  "$oot|Kakariko Crate Child Near Trail"
+                ],
+                "visibility_rules": [
+                  "setting_crateoot_overworld"
+                ],
+                "chest_unopened_img": "images/crate.png",
+                "chest_opened_img": "images/crate_grey.png",
                 "item_count": 2
-              },
+              },                     
               {
                 "name": "Single Rock next to Skulltula House",
                 "short_name": "Skulltula Rock",
@@ -3171,6 +3107,32 @@
                 "item_count": 1
               },
               {
+                "name": "Kak GS Skulltula House (N)",
+                "short_name": "Skulltula House",
+                "access_rules": [
+                  "$oot|Kakariko GS House of Skulltula"
+                ],
+                "visibility_rules": [
+                  "setting_goldSkulltulaTokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },                                 
+              {
+                "name": "Kak Impa's House Pots",
+                "short_name": "In Front",
+                "access_rules": [
+                  "$oot|Kakariko Pot 07"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
+              },
+              {
                 "name": "Pots near Potion Shop",
                 "access_rules": [
                   "$oot|Kakariko Pot 01"
@@ -3181,6 +3143,19 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 3
+              },
+              {
+                "name": "Kak GS Guards House (N)",
+                "short_name": "Guards House",
+                "access_rules": [
+                  "$oot|Kakariko GS Bazaar"
+                ],
+                "visibility_rules": [
+                  "setting_goldSkulltulaTokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
               },
               {
                 "name": "Pots near Guard's House",
@@ -3195,68 +3170,26 @@
                 "item_count": 3
               },
               {
-                "name": "Kak GS Above Impa's House (N)",
-                "short_name": "Adult GS",
+                "name": "Sell Keaton Mask",
                 "access_rules": [
-                  "$oot|Kakariko GS Roof"
+                  "$oot|Kakariko Sell Keaton Mask"
                 ],
                 "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
+                  "setting_shuffleMaskTrades_true"
                 ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
               },
               {
-                "name": "Kak GS Tree (N)",
-                "short_name": "Tree",
+                "name": "Single Rock next to Guard",
+                "short_name": "Guard Rock",
                 "access_rules": [
-                  "$oot|Kakariko GS Tree"
+                  "$oot|Kakariko Rocks"
                 ],
                 "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
+                  "setting_rock_on"
                 ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Kak GS Skulltula House (N)",
-                "short_name": "Skulltula House",
-                "access_rules": [
-                  "$oot|Kakariko GS House of Skulltula"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Kak GS House Under Construction (N)",
-                "short_name": "Construction",
-                "access_rules": [
-                  "$oot|Kakariko GS Shooting Gallery"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Kak GS Guards House (N)",
-                "short_name": "Guards House",
-                "access_rules": [
-                  "$oot|Kakariko GS Bazaar"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
                 "item_count": 1
               },
               {
@@ -3273,42 +3206,69 @@
                 "item_count": 1
               },
               {
-                "name": "Grass Around Tree",
+                "name": "Butterflies on Watchtower",                    
+                "short_name": "Kak Butterflies",
                 "access_rules": [
-                  "$oot|Kakariko Grass 1"
-                ],
+                  "$oot|Kakariko Butterfly 1"
+               ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 5
+                  "setting_shuffleButterflyOot_on"
+               ],
+               "chest_unopened_img": "images/system/Butterfly.png",
+               "chest_opened_img": "images/system/Butterfly_grey.png",
+               "item_count": 2
               },
               {
-                "name": "Crates Near Buildings",
-                "short_name": "Child Crates",
+                "name": "Man on Roof",
                 "access_rules": [
-                  "$oot|Kakariko Crate Child Near Trail"
+                  "$oot|Kakariko Man on Roof"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Pots near Medicine Building",
+                "access_rules": [
+                  "$oot|Kakariko Back Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_crateoot_overworld"
+                  "setting_shufflePotsOot_true"
                 ],
-                "chest_unopened_img": "images/crate.png",
-                "chest_opened_img": "images/crate_grey.png",
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
                 "item_count": 2
               },
               {
-                "name": "Adult Crates",
-                "short_name": "Adult Crates",
+                "name": "Kak GS House Under Construction (N)",
+                "short_name": "Construction",
                 "access_rules": [
-                  "$oot|Kakariko Crate Adult Near First House"
+                  "$oot|Kakariko GS Shooting Gallery"
                 ],
                 "visibility_rules": [
-                  "setting_crateoot_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
-                "chest_unopened_img": "images/crate.png",
-                "chest_opened_img": "images/crate_grey.png",
-                "item_count": 9
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Wonder on construction site",
+                "short_name": "Construct Wonder",
+                "access_rules": [
+                  "$oot|Kakariko Wonder Item"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitemoot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Anju Child",
+                "access_rules": [
+                  "$oot|Kakariko Anju Bottle"
+                ],
+                "item_count": 1
               },
               {
                 "name": "Windmill Crates",
@@ -3348,30 +3308,70 @@
                 "chest_unopened_img": "images/crate.png",
                 "chest_opened_img": "images/crate_grey.png",
                 "item_count": 1
+              }, 
+              {
+                "name": "Ravaged Village",
+                "access_rules": [
+                  "$oot|Kakariko Song Shadow",
+                  "{gossip_stone}"
+                ],
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
               },
               {
-                "name": "Sell Keaton Mask",
+                "name": "Anju Adult",
                 "access_rules": [
-                  "$oot|Kakariko Sell Keaton Mask"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleMaskTrades_true"
+                  "$oot|Kakariko Anju Egg"
                 ],
                 "item_count": 1
               },
               {
-                "name": "Single Rock next to Guard",
-                "short_name": "Guard Rock",
+                "name": "Show Happy Cucco",
                 "access_rules": [
-                  "$oot|Kakariko Rocks"
+                  "$oot|Kakariko Anju Cojiro"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Kak GS Above Impa's House (N)",
+                "short_name": "Adult GS",
+                "access_rules": [
+                  "$oot|Kakariko GS Roof"
                 ],
                 "visibility_rules": [
-                  "setting_rock_on"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
-              }    
+              },
+              {
+                "name": "Adult Crates in Village",
+                "short_name": "Adult Village",
+                "access_rules": [
+                  "$oot|Kakariko Crate Adult Near First House"
+                ],
+                "visibility_rules": [
+                  "setting_crateoot_overworld"
+                ],
+                "chest_unopened_img": "images/crate.png",
+                "chest_opened_img": "images/crate_grey.png",
+                "item_count": 9
+              },
+              {
+                "name": "Adult Crates behind Fence",
+                "short_name": "Adult Fence",
+                "access_rules": [
+                  "$oot|Kakariko Crate Adult Near First House"
+                ],
+                "visibility_rules": [
+                  "setting_crateoot_overworld"
+                ],
+                "chest_unopened_img": "images/crate.png",
+                "chest_opened_img": "images/crate_grey.png",
+                "item_count": 4
+              }   
             ],
             "map_locations": [
               {
@@ -3811,7 +3811,7 @@
                     "item_count": 6
                   },
                   {
-                    "name": "Dame Race Wonder Front",
+                    "name": "Dampe Race Wonder Front",
                     "access_rules": [
                       "$oot|Graveyard Dampe Tomb Wonder Item 01"
                     ],
@@ -3835,7 +3835,7 @@
                     "item_count": 3
                   },
                   {
-                    "name": "Dame Race Wonder Race",
+                    "name": "Dampe Race Wonder Race",
                     "access_rules": [
                       "$oot|Graveyard Dampe Tomb Wonder Item 06"
                     ],
@@ -7743,7 +7743,7 @@
             ]
           },
           {
-            "name": "Colossus Lone Rock",
+            "name": "Desert Colossus",
             "sections": [
               {
                 "name": "Colossus Freestanding PoH",
@@ -7821,7 +7821,7 @@
               },
               {
                 "name": "Palmtree double (Slingshot/bow)",
-                "short_name": "Front Break",
+                "short_name": "Palmtree",
                 "access_rules": [
                   "$oot|Desert Colossus Wonder Item Oasis 1"
                 ],
@@ -7834,7 +7834,7 @@
               },
               {
                 "name": "Palmtree single (Slingshot)",
-                "short_name": "Front Break",
+                "short_name": "Child Palmtree",
                 "access_rules": [
                   "$oot|Desert Colossus Wonder Item Oasis Child"
                 ],

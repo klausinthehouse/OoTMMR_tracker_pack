@@ -2379,20 +2379,7 @@
         "chest_unopened_img": "images/system/RedIce.png",
         "chest_opened_img": "images/system/RedIce_grey.png",
         "item_count": 1
-      },
-      {
-        "name": "Freezard RedIce",
-        "short_name": "Entrance",
-        "access_rules": [
-          "$oot|Ice Cavern Red Ice Entrance"
-        ],
-        "visibility_rules": [
-          "setting_RedIce_on,setting_mq_IceCavern_false"
-        ],
-        "chest_unopened_img": "images/system/RedIce.png",
-        "chest_opened_img": "images/system/RedIce_grey.png",
-        "item_count": 2
-      },
+      },      
       {
         "name": "Later Entrance Icicles",
         "short_name": "Later Entrance",
@@ -2419,8 +2406,21 @@
         "item_count": 1
       },
       {
+        "name": "Freezard RedIce",
+        "short_name": "Freezard",
+        "access_rules": [
+          "$oot|Ice Cavern Red Ice Entrance"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Frozen Rupee",
-        "short_name": "Frozen Rupees",
+        "short_name": "Frozen",
         "access_rules": [
           "$oot|Ice Cavern Rupee Ice"
         ],
@@ -2445,7 +2445,7 @@
       },
       {
         "name": "First Corridor Icicles",
-        "short_name": "Later Entrance",
+        "short_name": "After Freezards",
         "access_rules": [
           "$oot|Ice Cavern Icicle Before Scythe 1"
         ],
@@ -2454,7 +2454,7 @@
         ],
         "chest_unopened_img": "images/system/Icicle.png",
         "chest_opened_img": "images/system/Icicle_check.png",
-        "item_count": 3
+        "item_count": 4
       },
       {
         "name": "Pots Spinning Scythe Room",
@@ -2549,7 +2549,7 @@
       },
       {
         "name": "Map Room Icicles",
-        "short_name": "Map Icicles",
+        "short_name": "To Map Room",
         "access_rules": [
           "$oot|Ice Cavern Icicle Before Map 1"
         ],
@@ -2562,7 +2562,7 @@
       },
       {
         "name": "RedIce Map Room",
-        "short_name": "Entrance",
+        "short_name": "Map Room",
         "access_rules": [
           "$oot|Ice Cavern Red Ice Map 1"
         ],
@@ -2613,7 +2613,7 @@
       },
       {
         "name": "RedIce Compass Room",
-        "short_name": "Entrance",
+        "short_name": "Compass Room",
         "access_rules": [
           "$oot|Ice Cavern Red Ice Compass 1"
         ],
@@ -2650,7 +2650,7 @@
         "item_count": 1
       },
       {
-        "name": "GS Heart Piece Room",
+        "name": "GS Compass Room",
         "short_name": "Compass",
         "access_rules": [
           "$oot|Ice Cavern GS HP Room"
@@ -2664,7 +2664,7 @@
       },
       {
         "name": "Icicles before Push Block Room",
-        "short_name": "Block Icicles",
+        "short_name": "To Block Room",
         "access_rules": [
           "$oot|Ice Cavern Icicle Before Block 1"
         ],
@@ -2883,7 +2883,7 @@
       },
       {
         "name": "Main Room RedIce",
-        "short_name": "Entrance",
+        "short_name": "Main Room",
         "access_rules": [
           "$oot|MQ Ice Cavern Red Ice Main Room 1"
         ],
@@ -2922,7 +2922,7 @@
       },
       {
         "name": "Map Room RedIce",
-        "short_name": "Entrance",
+        "short_name": "Map Room",
         "access_rules": [
           "$oot|MQ Ice Cavern Red Ice Map Room"
         ],
@@ -2985,7 +2985,7 @@
       },
       {
         "name": "Compass Room RedIce",
-        "short_name": "Entrance",
+        "short_name": "Compass Room",
         "access_rules": [
           "$oot|MQ Ice Cavern Red Ice Compass Room"
         ],
@@ -3050,7 +3050,7 @@
       },
       {
         "name": "Block Room RedIce",
-        "short_name": "Entrance",
+        "short_name": "Block Room",
         "access_rules": [
           "$oot|MQ Ice Cavern Red Ice Block Room 1"
         ],
@@ -8859,7 +8859,33 @@
     "name": "Ganon's Castle",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
-    "sections": [
+    "sections": [      
+      {
+        "name": "Deku Scrubs",
+        "access_rules": [
+          "$oot|Ganon Castle Left-Center Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 4
+      },
+      {
+        "name": "Fairies near Scrubs",
+        "short_name": "Fairies",
+        "access_rules": [
+          "$oot|Ganon Castle Fairy Fountain Fairy 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false,setting_fairyFountainFairyShuffleOot_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 8
+      },
       {
         "name": "Forest Trial Chest",
         "short_name": "Forest Trial",
@@ -9262,24 +9288,24 @@
       {
         "name": "Deku Scrubs",
         "access_rules": [
-          "$oot|Ganon Castle Left-Center Scrub"
+          "$ootmq|MQ Ganon Castle Leftmost Scrub"
         ],
         "visibility_rules": [
-          "setting_scrubShuffleOot_true,setting_mq_GanonCastle_false"
+          "setting_scrubShuffleOot_true,setting_mq_GanonCastle_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
         "clear_as_group": false,
-        "item_count": 4
+        "item_count": 5
       },
       {
         "name": "Fairies near Scrubs",
         "short_name": "Fairies",
         "access_rules": [
-          "$oot|Ganon Castle Fairy Fountain Fairy 1"
+          "$ootmq|MQ Ganon Castle Fairy Fountain Fairy 1"
         ],
         "visibility_rules": [
-          "setting_mq_GanonCastle_false,setting_fairyFountainFairyShuffleOot_true"
+          "setting_mq_GanonCastle_true,setting_fairyFountainFairyShuffleOot_true"
         ],
         "chest_unopened_img": "images/Fairy.png",
         "chest_opened_img": "images/FairyGreyscale.png",
@@ -9660,19 +9686,6 @@
         "item_count": 2
       },
       {
-        "name": "Deku Scrubs",
-        "access_rules": [
-          "$ootmq|MQ Ganon Castle Leftmost Scrub"
-        ],
-        "visibility_rules": [
-          "setting_scrubShuffleOot_true,setting_mq_GanonCastle_true"
-        ],
-        "chest_unopened_img": "images/deku_scrub.png",
-        "chest_opened_img": "images/deku_scrub_grey.png",
-        "clear_as_group": false,
-        "item_count": 5
-      },
-      {
         "name": "Ganon's Tower Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
@@ -9694,19 +9707,6 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 1
-      },
-      {
-        "name": "Fairies near Scrubs",
-        "short_name": "Fairies",
-        "access_rules": [
-          "$ootmq|MQ Ganon Castle Fairy Fountain Fairy 1"
-        ],
-        "visibility_rules": [
-          "setting_mq_GanonCastle_true,setting_fairyFountainFairyShuffleOot_true"
-        ],
-        "chest_unopened_img": "images/Fairy.png",
-        "chest_opened_img": "images/FairyGreyscale.png",
-        "item_count": 8
       }
     ],
     "map_locations": [
