@@ -9899,7 +9899,7 @@
       },
       {
         "name": "Heavy Block Chest Invisible",
-        "short_name": "Like Like",
+        "short_name": "Invisble Like Like",
         "access_rules": [
           "$oot|Gerudo Training Grounds Behind Block Invisible"
         ],
@@ -10030,7 +10030,7 @@
         ],
         "chest_unopened_img": "images/system/silver.png",
         "chest_opened_img": "images/system/blue_check.png",
-        "item_count": 2
+        "item_count": 3
       },
       {
         "name": "Underwater Silver Rupee Chest",

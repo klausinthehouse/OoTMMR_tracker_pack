@@ -7489,7 +7489,7 @@
                 "name": "Above Hideout Crate",
                 "short_name": "above Break Room",
                 "access_rules": [
-                  "$oot|Gerudo Fortress Break Room Bottom"
+                  "$oot|Gerudo Fortress Crate Break Room Top"
                 ],
                 "visibility_rules": [
                   "setting_crateoot_overworld"
