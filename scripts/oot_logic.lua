@@ -4118,6 +4118,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Gerudo Fortress Wonder Item Break Room Top"] = function () return can_use_bow() end,
+            ["Gerudo Fortress Crate Break Room Top"] = function () return is_adult() end,
         },
         ["age_change"] = true,
     },
