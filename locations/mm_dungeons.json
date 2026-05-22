@@ -279,7 +279,7 @@
       },
       {
         "name": "Jar Room Pots",
-        "short_name": "Jars",
+        "short_name": "Bowling",
         "access_rules": [
           "$mm|Swamp Spider House Pot Jar Room 1"
         ],
@@ -288,7 +288,7 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
-        "item_count": 7
+        "item_count": 5
       },
       {
         "name": "Jar Room Beehive GSs",
@@ -369,7 +369,7 @@
       },
       {
         "name": "Jar Room on Wall",
-        "short_name": "Pot Room Far Wall",
+        "short_name": "Jar Room Far Wall",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
@@ -377,6 +377,32 @@
         ],
         "visibility_rules": [
           "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Jar Room far Wall Pots",
+        "short_name": "Far Wall",
+        "access_rules": [
+          "$mm|Swamp Spider House Pot Jar Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Jar Room Rock",
+        "short_name": "Jar Room Far Wall",
+        "chest_unopened_img": "images/system/Rock.png",
+        "chest_opened_img": "images/system/Rock_grey.png",
+        "access_rules": [
+          "$mm|Swamp Spider House Jar Rock"
+        ],
+        "visibility_rules": [
+          "setting_rockmm_dungeon"
         ],
         "item_count": 1
       },

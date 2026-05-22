@@ -3767,51 +3767,7 @@
               },
               {
                 "name": "Deku Palace Area",
-                "children": [
-                  {
-                    "name": "Monkey Teaching Sonata of Awakening",
-                    "short_name": "Sonata of Awakening",
-                    "sections": [
-                      {
-                        "name": "Use Deku Pipes in front of the monkey",
-                        "chest_unopened_img": "images/system/unknownsong.png",
-                        "chest_opened_img": "images/system/unknownsong_check.png",
-                        "access_rules": [
-                          "$mm|Deku Palace Sonata of Awakening"
-                        ],
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "termina",
-                        "x": 488,
-                        "y": 552
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Deku Palace Heart Piece",
-                    "short_name": "Deku Palace PoH",
-                    "sections": [
-                      {
-                        "name": "Get it",
-                        "access_rules": [
-                          "$mm|Deku Palace HP"
-                        ],
-                        "chest_unopened_img": "images/system/heartpiece.png",
-                        "chest_opened_img": "images/system/heartpiece_grey.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "termina",
-                        "x": 514,
-                        "y": 558
-                      }
-                    ]
-                  },
+                "children": [                  
                   {
                     "name": "Magic Bean Seller Grotto",
                     "short_name": "Bean Seller Grotto",
@@ -3878,19 +3834,7 @@
                   },
                   {
                     "name": "Deku Palace",
-                    "sections": [
-                      {
-                        "name": "Deku Palace Ledge Pots",
-                        "access_rules": [
-                          "$mm|Deku Palace Pot 1"
-                        ],
-                        "visibility_rules": [
-                          "setting_shufflePotsMm_true"
-                        ],
-                        "chest_unopened_img": "images/pot.png",
-                        "chest_opened_img": "images/pot_grey.png",
-                        "item_count": 2
-                      },
+                    "sections": [                      
                       {
                         "name": "Rupees on right side",                    
                         "access_rules": [
@@ -3901,7 +3845,19 @@
                         ],
                         "chest_unopened_img": "images/system/blue.png",
                         "chest_opened_img": "images/system/blue_check.png",
-                        "item_count": 13
+                        "item_count": 7
+                      },
+                      {
+                        "name": "Rupees on right side far",                    
+                        "access_rules": [
+                          "$mm|Deku Palace Rupee Right 01"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffleFreeRupeesMm_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",
+                        "item_count": 6
                       },
                       {
                         "name": "Red Boulders in Deku Palace",                    
@@ -3913,7 +3869,7 @@
                         ],
                         "chest_unopened_img": "images/system/RedBoulder.png",
                         "chest_opened_img": "images/system/RedBoulder_grey.png",
-                        "item_count": 3
+                        "item_count": 6
                       },
                       {
                         "name": "Rupees on left side",                    
@@ -3940,6 +3896,15 @@
                         "item_count": 3
                       },
                       {
+                        "name": "Deku Palace HP",
+                        "access_rules": [
+                          "$mm|Deku Palace HP"
+                        ],
+                        "chest_unopened_img": "images/system/heartpiece.png",
+                        "chest_opened_img": "images/system/heartpiece_grey.png",
+                        "item_count": 1
+                      },
+                      {
                         "name": "Soil-Items Outside (Right Side)",                    
                         "access_rules": [
                           "$mm|Deku Palace Soft Soil"
@@ -3950,6 +3915,27 @@
                         "chest_unopened_img": "images/system/blue.png",
                         "chest_opened_img": "images/system/blue_check.png",                
                         "item_count": 3
+                      },
+                      {
+                        "name": "Deku Palace Ledge Pots",
+                        "access_rules": [
+                          "$mm|Deku Palace Pot 1"
+                        ],
+                        "visibility_rules": [
+                          "setting_shufflePotsMm_true"
+                        ],
+                        "chest_unopened_img": "images/pot.png",
+                        "chest_opened_img": "images/pot_grey.png",
+                        "item_count": 2
+                      },
+                      {
+                        "name": "Use Deku Pipes in front of the monkey",
+                        "chest_unopened_img": "images/system/unknownsong.png",
+                        "chest_opened_img": "images/system/unknownsong_check.png",
+                        "access_rules": [
+                          "$mm|Deku Palace Sonata of Awakening"
+                        ],
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [

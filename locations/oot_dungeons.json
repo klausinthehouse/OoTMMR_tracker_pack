@@ -593,7 +593,7 @@
           "$oot|MQ Deku Tree Wonder Item 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_DekuTree_true"
+          "setting_wonderitemoot_dungeon,setting_mq_DekuTree_true"
         ],
         "item_count": 4
       },
@@ -1836,7 +1836,7 @@
           "$oot|MQ Jabu-Jabu Wonder Item Entrance Left Cow"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 2
       },
@@ -1909,7 +1909,7 @@
           "$oot|MQ Jabu-Jabu Wonder Item Entrance Left Cow"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 1
       },
@@ -2073,7 +2073,7 @@
           "$oot|MQ Jabu-Jabu Wonder Item Basement Right Cow 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 6
       },
@@ -2112,7 +2112,7 @@
           "$oot|MQ Jabu-Jabu Wonder Item After Big Octo"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 1
       },
@@ -2125,7 +2125,7 @@
           "$oot|MQ Jabu-Jabu Wonder Item Platforms Cow"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 1
       },
@@ -2175,7 +2175,7 @@
           "$oot|MQ Jabu-Jabu Wonder Item Falling Like-Likes Cow Right 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 6
       },
@@ -2188,7 +2188,7 @@
           "$oot|MQ Jabu-Jabu Wonder Item Falling Like-Likes Explosion 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 3
       },
@@ -2313,7 +2313,7 @@
           "$oot|MQ Jabu-Jabu Wonder Item Before Boss Left Cow"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_Jabu-Jabu_true"
+          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 3
       },
@@ -4338,7 +4338,7 @@
           "$oot|MQ Fire Temple Wonder Item Boss Key Room Hookshot"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 1
       },
@@ -4351,7 +4351,7 @@
           "$oot|MQ Fire Temple Wonder Item Boss Key Room Bow"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 1
       },
@@ -4390,7 +4390,7 @@
           "$oot|MQ Fire Temple Wonder Item Shortcut Room 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 3
       },
@@ -4414,7 +4414,7 @@
           "$oot|MQ Fire Temple Wonder Item East Maze"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 1
       },
@@ -4476,7 +4476,7 @@
           "$oot|MQ Fire Temple Wonder Item East Climb First 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 4
       },
@@ -4527,7 +4527,7 @@
           "$oot|MQ Fire Temple Wonder Item Torch Room"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 1
       },
@@ -4670,7 +4670,7 @@
           "$oot|MQ Fire Temple Wonder Item Fire Maze"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 1
       },
@@ -4696,7 +4696,7 @@
           "$oot|MQ Fire Temple Wonder Item After Flare Dancer"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 1
       },
@@ -4709,7 +4709,7 @@
           "$oot|MQ Fire Temple Wonder Item Staircase"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_FireTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 1
       },
@@ -5112,7 +5112,7 @@
           "$oot|MQ Water Temple Wonder Item Lizalfos Room"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5174,7 +5174,7 @@
           "$oot|MQ Water Temple Wonder Item Longshot Room"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5212,7 +5212,7 @@
           "$oot|MQ Water Temple Wonder Item Lizalfos Hallway"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5303,7 +5303,7 @@
           "$oot|MQ Water Temple Wonder Item Hookshot Staircase Right 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 6
       },
@@ -5341,7 +5341,7 @@
           "$oot|MQ Water Temple Wonder Item Under Pillar Room"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5442,7 +5442,7 @@
           "$oot|MQ Water Temple Wonder Item After Dark Link"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5520,7 +5520,7 @@
           "$oot|MQ Water Temple Wonder Item Dragon Room Eyes 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 2
       },
@@ -5533,7 +5533,7 @@
           "$oot|MQ Water Temple Wonder Item Dragon Room Portrait"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5611,7 +5611,7 @@
           "$oot|MQ Water Temple Wonder Item Stalfos Room"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5676,7 +5676,7 @@
           "$oot|MQ Water Temple Wonder Item Triple Torches"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5728,7 +5728,7 @@
           "$oot|MQ Water Temple Wonder Item Water Sprouts 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 2
       },
@@ -5767,7 +5767,7 @@
           "$oot|MQ Water Temple Wonder Item Freestanding Room"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5819,7 +5819,7 @@
           "$oot|MQ Water Temple Wonder Item Above 2F West Room"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 1
       },
@@ -5858,7 +5858,7 @@
           "$oot|MQ Water Temple Wonder Item Before Boss 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_mq_WaterTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_mq_WaterTemple_true"
         ],
         "item_count": 2
       },
@@ -5897,11 +5897,24 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
-        "item_count": 6
+        "item_count": 2
       },
       {
-        "name": "Early Maze Flying Pot",
-        "short_name": "Early Maze Flying",
+        "name": "Later Maze Pots",
+        "short_name": "Early Maze",
+        "access_rules": [
+          "$oot|Shadow Temple Pot Early Maze 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
+        "name": "Maze Flying Pot",
+        "short_name": "Maze Flying",
         "access_rules": [
           "$oot|Shadow Temple Flying Pot Early Maze"
         ],
@@ -5950,6 +5963,7 @@
       },
       {
         "name": "Beamos Big Fairy (Storms)",
+        "short_name": "Beamos BF Storm",
         "access_rules": [
           "$oot|Shadow Temple Beamos Big Fairy"
         ],
@@ -6011,7 +6025,8 @@
         "item_count": 1
       },
       {
-        "name": "Guillotine Big Fairy (Storms)",
+        "name": "Stalfos Big Fairy (Storms)",
+        "short_name": "Stalfos BF Storm",
         "access_rules": [
           "$oot|Shadow Temple Stalfos Big Fairy"
         ],
@@ -6024,7 +6039,7 @@
       },
       {
         "name": "Invisible Scythe Hearts",
-        "short_name": "Scythe Hearts",
+        "short_name": "Invisible Scythe",
         "access_rules": [
           "$oot|Shadow Temple Heart Scythe 1"
         ],
@@ -6037,7 +6052,7 @@
       },
       {
         "name": "Invisible Blades Visible Chests",
-        "short_name": "Like Like",
+        "short_name": "Invisible Scythe",
         "access_rules": [
           "$oot|Shadow Temple Spinning Blades Visible"
         ],
@@ -6048,7 +6063,7 @@
       },
       {
         "name": "Invisible Blades Invisible Chests",
-        "short_name": "Like Like",
+        "short_name": "Invisible Invisible",
         "access_rules": [
           "$oot|Shadow Temple Spinning Blades Invisible"
         ],
@@ -6059,7 +6074,7 @@
       },      
       {
         "name": "GS Like Like Room",
-        "short_name": "Like Like",
+        "short_name": "Invisible Scythe",
         "access_rules": [
           "$oot|Shadow Temple GS Invisible Scythe"
         ],
@@ -6247,6 +6262,7 @@
       },
       {
         "name": "Wind Hint Big Fairy (Sun)",
+        "short_name": "Windhint BF Sun",
         "access_rules": [
           "$oot|Shadow Temple Big Fairy After Wind"
         ],
@@ -6405,7 +6421,7 @@
           "$oot|Shadow Temple Wonder Item"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_ShadowTemple_false"
+          "setting_wonderitemoot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "item_count": 6
       },
@@ -6550,6 +6566,7 @@
       },
       {
         "name": "Beamos Big Fairy (Storms)",
+        "short_name": "Beamos BF Storm",
         "access_rules": [
           "$oot|MQ Shadow Temple Beamos Big Fairy"
         ],
@@ -6773,7 +6790,8 @@
         "item_count": 2
       },
       {
-        "name": "Guillotine Big Fairy (Storms)",
+        "name": "Stalfos Big Fairy (Storms)",
+        "short_name": "Stalfos BF Storm",
         "access_rules": [
           "$oot|MQ Shadow Temple Guillotines Room Big Fairy"
         ],
@@ -6859,6 +6877,7 @@
       },
       {
         "name": "Wind Hint Big Fairy (Sun)",
+        "short_name": "Windhint BF Sun",
         "access_rules": [
           "$oot|MQ Shadow Temple Big Fairy After Wind"
         ],
@@ -7041,7 +7060,7 @@
           "$oot|MQ Shadow Temple Wonder Item"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_ShadowTemple_true"
+          "setting_wonderitemoot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "item_count": 1
       },
@@ -7694,6 +7713,7 @@
       },
       {
         "name": "Big Fairy after Boulders (Sun)",
+        "short_name": "After Boulders BF Sun",
         "access_rules": [
           "$oot|Spirit Temple Adult Silver Rupees Big Fairy"
         ],
@@ -7791,6 +7811,7 @@
       },
       {
         "name": "Big Fairy in Sunbeam (Sun)",
+        "short_name": "Sunbeam BF Sun",
         "access_rules": [
           "$oot|Spirit Temple Adult Sunlight Big Fairy"
         ],
@@ -8084,7 +8105,7 @@
       },
       {
         "name": "Chest Switch Big Fairy (Sun)",
-        "short_name": "Chest Switch",
+        "short_name": "Chest Switch BF Sun",
         "access_rules": [
           "$ootmq|MQ Spirit Temple Dinolfos Room Big Fairy"
         ],
@@ -8539,6 +8560,7 @@
       },
       {
         "name": "Basement Big Fairy (Sun)",
+        "short_name": "Basement BF Sun",
         "access_rules": [
           "$oot|Bottom of the Well Basement Big Fairy"
         ],
@@ -8563,6 +8585,7 @@
       },
       {
         "name": "Basement Big Fairy (Sun)",
+        "short_name": "Basement BF Sun",
         "access_rules": [
           "$oot|MQ Bottom of the Well Basement Big Fairy"
         ],
@@ -8638,7 +8661,7 @@
           "$oot|MQ Bottom of the Well Wonder Item Main Room Left 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_BottomoftheWell_true"
+          "setting_wonderitemoot_dungeon,setting_mq_BottomoftheWell_true"
         ],
         "item_count": 8
       },
@@ -8657,6 +8680,7 @@
       },
       {
         "name": "Lobby Cage Big Fairy (Sun)",
+        "short_name": "Cage BF Sun",
         "access_rules": [
           "$oot|MQ Bottom of the Well Lobby Cage Big Fairy"
         ],
@@ -8753,7 +8777,7 @@
           "$oot|MQ Bottom of the Well Wonder Item Side Room 1"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_BottomoftheWell_true"
+          "setting_wonderitemoot_dungeon,setting_mq_BottomoftheWell_true"
         ],
         "item_count": 4
       },
@@ -9240,6 +9264,7 @@
       },
       {
         "name": "Spirit Big Fairy (Sun)",
+        "short_name": "Spirit BF Sun",
         "access_rules": [
           "$oot|Gerudo Fortress Kitchen Big Fairy"
         ],
@@ -9533,7 +9558,7 @@
           "$oot|MQ Ganon Castle Wonder Item"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_GanonCastle_true"
+          "setting_wonderitemoot_dungeon,setting_mq_GanonCastle_true"
         ],
         "item_count": 1
       },
@@ -9736,6 +9761,7 @@
       },
       {
         "name": "GTG Entrance Big Fairy (Storms)",
+        "short_name": "Entrance BF Storm",
         "access_rules": [
           "$oot|Gerudo Training Grounds Entrance Big Fairy"
         ],
@@ -10230,7 +10256,7 @@
           "$oot|MQ Gerudo Training Grounds Wonder Item Eye Statue"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_GerudoTrainingGrounds_true"
+          "setting_wonderitemoot_dungeon,setting_mq_GerudoTrainingGrounds_true"
         ],
         "item_count": 1
       },
@@ -10289,7 +10315,7 @@
           "$oot|MQ Gerudo Training Grounds Wonder Item Dodongo Room Wall"
         ],
         "visibility_rules": [
-          "setting_wonderitem_dungeon,setting_mq_GerudoTrainingGrounds_true"
+          "setting_wonderitemoot_dungeon,setting_mq_GerudoTrainingGrounds_true"
         ],
         "item_count": 1
       },

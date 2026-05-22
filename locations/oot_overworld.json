@@ -3835,7 +3835,7 @@
                     "item_count": 3
                   },
                   {
-                    "name": "Dampe Race Wonder Race",
+                    "name": "Dampe Race Wonder Middle",
                     "access_rules": [
                       "$oot|Graveyard Dampe Tomb Wonder Item 06"
                     ],
@@ -3844,10 +3844,10 @@
                     ],
                     "chest_unopened_img": "images/system/Wonder.png",
                     "chest_opened_img": "images/system/Wonder_grey.png",
-                    "item_count": 10
+                    "item_count": 5
                   },
                   {
-                    "name": "Dampe Race Rupees Race",                
+                    "name": "Dampe Race Rupees Middle",                
                     "access_rules": [
                       "$oot|Graveyard Dampe Tomb Rupee 4"
                     ],
@@ -3856,7 +3856,31 @@
                     ],
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
+                    "item_count": 3
+                  },
+                  {
+                    "name": "Dampe Race Wonder End",
+                    "access_rules": [
+                      "$oot|Graveyard Dampe Tomb Wonder Item 06"
+                    ],
+                    "visibility_rules": [
+                      "setting_wonderitemoot_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/Wonder.png",
+                    "chest_opened_img": "images/system/Wonder_grey.png",
                     "item_count": 5
+                  },
+                  {
+                    "name": "Dampe Race Rupees End",                
+                    "access_rules": [
+                      "$oot|Graveyard Dampe Tomb Rupee 4"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleFreeRupeesOot_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/blue.png",
+                    "chest_opened_img": "images/system/blue_check.png",
+                    "item_count": 2
                   }
                 ],
                 "map_locations": [
