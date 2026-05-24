@@ -3973,7 +3973,31 @@
                         "item_count": 2
                       },
                       {
-                        "name": "Rupees on Race",                    
+                        "name": "Race Logjumping Rupees",                    
+                        "access_rules": [
+                          "$mm|Deku Shrine Rupee Main 01"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffleFreeRupeesMm_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",
+                        "item_count": 8
+                      },
+                      {
+                        "name": "Race River Rupees",                    
+                        "access_rules": [
+                          "$mm|Deku Shrine Rupee Main 01"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffleFreeRupeesMm_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/blue.png",
+                        "chest_opened_img": "images/system/blue_check.png",
+                        "item_count": 6
+                      },
+                      {
+                        "name": "Race Crossroad right Path Rupees",                    
                         "access_rules": [
                           "$mm|Deku Shrine Rupee Main 01"
                         ],
@@ -4545,6 +4569,19 @@
                 "item_count": 9
               },
               {
+                "name": "Mountain Village Grass Patch Butterflies",                    
+                "short_name": "By Grass Patches",
+                "access_rules": [
+                  "$mm|Mountain Village Butterfly Pack 1 Butterfly 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleButterflyMm_on"
+                ],
+                "chest_unopened_img": "images/system/Butterfly.png",
+                "chest_opened_img": "images/system/Butterfly_grey.png",
+                "item_count": 4
+              },
+              {
                 "name": "Mountain Village Standalone Grass",
                 "visibility_rules": [
                   "setting_shuffleGrassMm_overworld"
@@ -4557,8 +4594,8 @@
                 "item_count": 3
               },
               {
-                "name": "Mountain Village Butterflies",                    
-                "short_name": "Spring Butterflies",
+                "name": "Mountain Village Standalone Butterflies",                    
+                "short_name": "By Standalone Grass",
                 "access_rules": [
                   "$mm|Mountain Village Butterfly Pack 1 Butterfly 1"
                 ],
@@ -4567,7 +4604,7 @@
                 ],
                 "chest_unopened_img": "images/system/Butterfly.png",
                 "chest_opened_img": "images/system/Butterfly_grey.png",
-                "item_count": 9
+                "item_count": 5
               },
               {
                 "name": "Spring Rocks",
@@ -4977,7 +5014,7 @@
               },
               {
                 "name": "Spring Trees",
-                "short_name": "Trees",
+                "short_name": "Islands",
                 "access_rules": [
                   "$mm|Twin Islands Spring Trees"
                 ],
@@ -4990,7 +5027,7 @@
               },
               {
                 "name": "Ramp Spring Trees",
-                "short_name": "Trees",
+                "short_name": "Ramp",
                 "access_rules": [
                   "$mm|Twin Island Ramp Spring Tree"
                 ],
@@ -4999,7 +5036,7 @@
                 ],
                 "chest_unopened_img": "images/system/tree.png",
                 "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 2
+                "item_count": 1
               },
               {
                 "name": "Ramp Spring Rocks",

@@ -1930,7 +1930,19 @@
     "short_name": "WFT",
     "chest_unopened_img": "images/system/chest_brown_closed.png",
     "chest_opened_img": "images/system/chest_brown_open.png",
-    "sections": [
+    "sections": [      
+      {
+        "name": "Entrance Pot",
+        "access_rules": [
+          "$mm|Woodfall Temple Pot Entrance"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
       {
         "name": "Entrance Platform Chest",
         "short_name": "Entrance Chest",
@@ -1972,7 +1984,7 @@
       },
       {
         "name": "Entrance Hive",
-        "short_name": "Hive",
+        "short_name": "Entrance",
         "access_rules": [
           "$mm|Woodfall Temple Hive Entrance"
         ],
@@ -1995,18 +2007,18 @@
           "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 2
-      },
+      },      
       {
-        "name": "Entrance Pot",
+        "name": "Main Room Lower Pots",
         "access_rules": [
-          "$mm|Woodfall Temple Pot Entrance"
+          "$mm|Woodfall Temple Pot Main Room Lower 1"
         ],
         "visibility_rules": [
           "setting_shufflePotsMm_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
-        "item_count": 1
+        "item_count": 6
       },
       {
         "name": "Pots in Main Room",
@@ -2033,18 +2045,6 @@
           "setting_strayFairyOtherShuffle_ownDungeon"
         ],
         "item_count": 1
-      },
-      {
-        "name": "Main Room Lower Pots",
-        "access_rules": [
-          "$mm|Woodfall Temple Pot Main Room Lower 1"
-        ],
-        "visibility_rules": [
-          "setting_shufflePotsMm_true"
-        ],
-        "chest_unopened_img": "images/pot.png",
-        "chest_opened_img": "images/pot_grey.png",
-        "item_count": 6
       },
       {
         "name": "Main Room Grass",
@@ -2083,16 +2083,17 @@
         "item_count": 1
       },
       {
-        "name": "Platform Room Pots",
+        "name": "Platform Room Grass",
+        "short_name": "Platform Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "access_rules": [
-          "$mm|Woodfall Temple Pot Water Room 1"
+          "$mm|Woodfall Temple Grass Water Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsMm_true"
+          "setting_shuffleGrassMm_dungeon"
         ],
-        "chest_unopened_img": "images/pot.png",
-        "chest_opened_img": "images/pot_grey.png",
-        "item_count": 4
+        "item_count": 2
       },
       {
         "name": "Fight Turtles - Map",
@@ -2145,7 +2146,7 @@
       },
       {
         "name": "Bridge Room Hive",
-        "short_name": "Hive",
+        "short_name": "Bridge Room",
         "access_rules": [
           "$mm|Woodfall Temple Hive Maze"
         ],
@@ -2179,19 +2180,6 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
-        "item_count": 2
-      },
-      {
-        "name": "Water Room Grass",
-        "short_name": "Water Room",
-        "chest_unopened_img": "images/MM_Grass.png",
-        "chest_opened_img": "images/GrassGreyscale.png",
-        "access_rules": [
-          "$mm|Woodfall Temple Grass Water Room 1"
-        ],
-        "visibility_rules": [
-          "setting_shuffleGrassMm_dungeon"
-        ],
         "item_count": 2
       },
       {
@@ -2282,6 +2270,19 @@
         "item_count": 2
       },
       {
+        "name": "Platform Room Upper Pots",
+        "short_name": "Pots befor Bow",
+        "access_rules": [
+          "$mm|Woodfall Temple Pot Water Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Dinolfos Mini Boss - Hero's Bow",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
@@ -2322,7 +2323,7 @@
       },
       {
         "name": "Final Room low Rupees",
-        "short_name": "Pre-Boss Rupees",
+        "short_name": "Final Room Rupees",
         "access_rules": [
           "$mm|Woodfall Temple Rupee Lower 1"
         ],
@@ -2400,7 +2401,7 @@
       },
       {
         "name": "Final Room Rupee upper Left",
-        "short_name": "Up Left Rupee",
+        "short_name": "Left Pillar",
         "access_rules": [
           "$mm|Woodfall Temple Rupee Upper Left"
         ],
@@ -2413,7 +2414,7 @@
       },
       {
         "name": "Final Room Rupee upper Right",
-        "short_name": "Up Right Rupee",
+        "short_name": "Right Pillar",
         "access_rules": [
           "$mm|Woodfall Temple Rupee Upper Right"
         ],
@@ -2425,7 +2426,7 @@
         "item_count": 1
       },
       {
-        "name": "Pots Before Boss",
+        "name": "Pre-Boss Pots",
         "access_rules": [
           "$mm|Woodfall Temple Pot Pre-Boss 1"
         ],
@@ -4055,6 +4056,7 @@
       },
       {
         "name": "Icicle Room Snowball - Small Key",
+        "short_name": "Icicle Key",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Small Key 2",
@@ -4065,7 +4067,7 @@
       },
       {
         "name": "Icicle Room Big Snowball",
-        "short_name": "Icicle Snowball",
+        "short_name": "Icicle Big",
         "access_rules": [
           "$mm|Snowhead Temple Big Snowball Icicle Room"
         ],
@@ -4078,7 +4080,7 @@
       },
       {
         "name": "Icicle Room Small Snowballs",
-        "short_name": "Icicle small Snowballs",
+        "short_name": "Icicle small",
         "access_rules": [
           "$mm|Snowhead Temple Small Snowball Icicles Room 1"
         ],
@@ -4164,8 +4166,8 @@
         "item_count": 1
       },
       {
-        "name": "Main Room Grass",
-        "short_name": "Main Room",
+        "name": "Basement Grass",
+        "short_name": "Basement",
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "access_rules": [
@@ -4293,7 +4295,7 @@
         "name": "Kill Freezards in Bridge Room - Small Key",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
-        "short_name": "Small Key 3",
+        "short_name": "Kill Bridge Freezards",
         "access_rules": [
           "$mm|Snowhead Temple Bridge Room"
         ],
@@ -4312,7 +4314,8 @@
         "item_count": 2
       },
       {
-        "name": "Central Room Level 2 Pots",
+        "name": "Central Room Basket Pots",
+        "short_name": "Central Basket",
         "access_rules": [
           "$mm|Snowhead Temple Pot Central Room Level 2 1"
         ],
@@ -4325,7 +4328,7 @@
       },
       {
         "name": "Map Room Ledge Chest",
-        "short_name": "Ledge in Map Room",
+        "short_name": "Map Room Ledge",
         "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
@@ -4338,7 +4341,7 @@
       },
       {
         "name": "Central Room Small Snowballs",
-        "short_name": "Central small Snowballs",
+        "short_name": "Central small",
         "access_rules": [
           "$mm|Snowhead Temple Small Snowball Central Room 1"
         ],
@@ -4350,10 +4353,10 @@
         "item_count": 3
       },
       {
-        "name": "Central Room Small Snowballs upper",
-        "short_name": "Central upper Snowballs",
+        "name": "Central Room Small Snowballs after Bridge",
+        "short_name": "Central small 2",
         "access_rules": [
-          "$mm|Snowhead Temple Small Snowball Central Room 4"
+          "$mm|Snowhead Temple Small Snowball Central Room 1"
         ],
         "visibility_rules": [
           "setting_SnowShuffle_dungeon"
@@ -4390,7 +4393,7 @@
       },
       {
         "name": "Snow Room Small Snowballs",
-        "short_name": "Central upper Snowballs",
+        "short_name": "Snow Room",
         "access_rules": [
           "$mm|Snowhead Temple Small Snowball Snow Room 1"
         ],
@@ -4435,6 +4438,19 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 5
+      },      
+      {
+        "name": "Central Room Snowballs upper",
+        "short_name": "Big upper",
+        "access_rules": [
+          "$mm|Snowhead Temple Big Snowball Central Room 1"
+        ],
+        "visibility_rules": [
+          "setting_SnowShuffle_dungeon"
+        ],
+        "chest_unopened_img": "images/system/snow.png",
+        "chest_opened_img": "images/system/snow_grey.png",
+        "item_count": 4
       },
       {
         "name": "Central Room near Boss Key Icicles",
