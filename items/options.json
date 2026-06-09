@@ -593,7 +593,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
       {
         "img": "images/setting_strayFairyChestShuffle_vanilla.png",
@@ -1643,6 +1643,7 @@
       {
         "img": "images/setting_kakarikoGate_vanilla.png",
         "codes": "setting_kakarikoGate,setting_kakarikoGate_vanilla",
+        "img_mods": "@disabled",
         "inherit_codes": false
       },
       {
