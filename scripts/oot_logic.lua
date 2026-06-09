@@ -4759,7 +4759,7 @@ function _oot_logic()
             ["Kokiri Forest Wonder Item Crawl 2"] = function () return true end,
             ["Kokiri Forest Wonder Item Platforms 1"] = function () return true end,
             ["Kokiri Forest Wonder Item Platforms 2"] = function () return true end,
-            ["Kokiri Forest Wonder Item Sign"] = function () return can_use_sword() end,
+            ["Kokiri Forest Wonder Item Sign"] = function () return can_use_sword() or can_use_sticks() end,
             ["Kokiri Forest Child Rocks"] = function () return true end,
         },
         ["age_change"] = false,
@@ -5202,6 +5202,7 @@ function _oot_logic()
             ["Market Wonder Item Day 5"] = function () return is_child() and is_day() end,
             ["Market Wonder Item Night 1"] = function () return is_child() and is_night() end,
             ["Market Wonder Item Night 2"] = function () return is_child() and is_night() end,
+            ["Market Tree"] = function () return true end,
             ["Market Crate 1"] = function () return is_child() end,
             ["Market Crate 2"] = function () return is_child() end,
             ["Market Crate 3"] = function () return is_child() end,
@@ -5210,8 +5211,7 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Market Grass"] = {
-        ["locations"] = {
-            ["Market Tree"] = function () return true end,
+        ["locations"] = {            
             ["Market Grass 1"] = function () return true end,
             ["Market Grass 2"] = function () return true end,
             ["Market Grass 3"] = function () return true end,
@@ -7328,7 +7328,7 @@ function _oot_logic()
         ["locations"] = {
             ["Gerudo Valley Chest"] = function () return is_adult() and (can_hammer() or hookshot_anywhere() or climb_anywhere()) or time_travel_at_will() end,
             ["Gerudo Valley Broken Goron Sword"] = function () return adult_trade(POACHER_SAW) and soul_carpenters() end,
-            ["Gerudo Valley Adult Rocks"] = function () return true end,
+            ["Gerudo Valley Adult Rocks"] = function () return is_adult() end,
             ["Gerudo Valley GS Tent"] = function () return is_adult() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_explosives() or has('SWORD_BIGGORON') or has_ranged_weapon() or can_use_din()))) end,
             ["Gerudo Valley GS Pillar"] = function () return is_adult() and can_collect_distance() and gs_night() end,
             ["Gerudo Valley Crate HP"] = function () return climb_anywhere() end,

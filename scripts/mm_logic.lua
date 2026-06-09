@@ -5039,7 +5039,7 @@ function _mm_logic()
             ["Owl Swamp"] = function () return true end,
         },
         ["locations"] = {
-            ["Southern Swamp HP"] = function () return has('DEED_LAND') and has('MASK_DEKU') or (trick('MM_SOUTHERN_SWAMP_SCRUB_HP_GORON') and has_mask_goron()) or short_hook_anywhere() end,
+            ["Southern Swamp HP"] = function () return (has('DEED_LAND') or not soul_business_scrub()) and has('MASK_DEKU') or (trick('MM_SOUTHERN_SWAMP_SCRUB_HP_GORON') and has_mask_goron()) or short_hook_anywhere() end,
             ["Southern Swamp Scrub Deed"] = function () return soul_business_scrub() and has('DEED_LAND') end,
             ["Southern Swamp Scrub Shop"] = function () return soul_business_scrub() and has('MASK_DEKU') and can_use_wallet(1) end,
             ["Southern Swamp Pot 1"] = function () return true end,
@@ -7995,6 +7995,9 @@ function _mm_logic()
             ["Secret Shrine Rupee 16"] = function () return true end,
             ["Secret Shrine Rupee 17"] = function () return true end,
             ["Secret Shrine Soft Soil"] = function () return has_bugs() end,
+            ["Secret Shrine Pot 1"] = function () return true end,
+            ["Secret Shrine Pot 2"] = function () return true end,
+            ["Secret Shrine Pot 3"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -8010,9 +8013,6 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Secret Shrine HP Chest"] = function () return soul_poe_collector() and event('SECRET_SHRINE_DINALFOS') and event('SECRET_SHRINE_WIZZROBE') and event('SECRET_SHRINE_WART') and event('SECRET_SHRINE_GARO') end,
-            ["Secret Shrine Pot 1"] = function () return true end,
-            ["Secret Shrine Pot 2"] = function () return true end,
-            ["Secret Shrine Pot 3"] = function () return true end,
             ["Secret Shrine Pot 4"] = function () return true end,
             ["Secret Shrine Pot 5"] = function () return true end,
             ["Secret Shrine Pot 6"] = function () return true end,
