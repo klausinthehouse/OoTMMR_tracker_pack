@@ -151,8 +151,8 @@
       {
         "name": "Stone Room Crates",
         "short_name": "Monument Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Swamp Spider House Crate Monument 1"
         ],
@@ -500,8 +500,8 @@
       {
         "name": "Gold Room Crates",
         "short_name": "Gold Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Swamp Spider House Crate Gold 1"
         ],
@@ -657,7 +657,7 @@
       },
       {
         "name": "Main Room Pot Upper",
-        "short_name": "Uncovered Pot Main Room",
+        "short_name": "Pot Main Room",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
@@ -680,7 +680,31 @@
           "setting_housesSkulltulaTokens_cross"
         ],
         "item_count": 1
-      },
+      },      
+      {
+        "name": "Main Room Mask",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$mm|Ocean Spider House Wonder Item Masks 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_on"
+        ],
+        "item_count": 3
+      },     
+      {
+        "name": "Stairs Mask",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$mm|Ocean Spider House Wonder Item Masks 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitem_on"
+        ],
+        "item_count": 3
+      },   
       {
         "name": "Main Room Webbed Pot Lower",
         "short_name": "Main Room Webbed Pot Lower",
@@ -704,22 +728,10 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
-        "item_count": 2
-      },
+        "item_count": 3
+      },   
       {
-        "name": "Main Room Boe Pot",
-        "access_rules": [
-          "$mm|Ocean Spider House Pot Main Room Boe"
-        ],
-        "visibility_rules": [
-          "setting_shufflePotsMm_true"
-        ],
-        "chest_unopened_img": "images/pot.png",
-        "chest_opened_img": "images/pot_grey.png",
-        "item_count": 1
-      },
-      {
-        "name": "Main Room Mask Wonder Items",
+        "name": "Basement Mask",
         "chest_unopened_img": "images/system/Wonder.png",
         "chest_opened_img": "images/system/Wonder_grey.png",
         "access_rules": [
@@ -728,7 +740,72 @@
         "visibility_rules": [
           "setting_wonderitem_on"
         ],
-        "item_count": 9
+        "item_count": 3
+      },
+      {
+        "name": "Main Room Basement Vase",
+        "short_name": "Vase in Basement",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Upper Pot"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Behind Skull",
+        "short_name": "Behind Skull in Basement",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Behind Skull 2"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Web Hole",
+        "short_name": "Basement Hole",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Webbed Hole"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Pot",
+        "short_name": "Basement Pot on Crates",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Lower Pot"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Black Space",
+        "short_name": "Basement Black Space",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Ceiling Edge"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
       },
       {
         "name": "Library Corner Bookshelf",
@@ -809,71 +886,6 @@
         "item_count": 2
       },
       {
-        "name": "Main Room Basement Black Space",
-        "short_name": "Basement Black Space",
-        "chest_unopened_img": "images/system/skulltula_token.png",
-        "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "access_rules": [
-          "$mm|Ocean Skulltula 2nd Room Ceiling Edge"
-        ],
-        "visibility_rules": [
-          "setting_housesSkulltulaTokens_cross"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Main Room Basement Vase",
-        "short_name": "Vase in Basement",
-        "chest_unopened_img": "images/system/skulltula_token.png",
-        "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "access_rules": [
-          "$mm|Ocean Skulltula 2nd Room Upper Pot"
-        ],
-        "visibility_rules": [
-          "setting_housesSkulltulaTokens_cross"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Main Room Basement Behind Skull",
-        "short_name": "Behind Skull in Basement",
-        "chest_unopened_img": "images/system/skulltula_token.png",
-        "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "access_rules": [
-          "$mm|Ocean Skulltula 2nd Room Behind Skull 2"
-        ],
-        "visibility_rules": [
-          "setting_housesSkulltulaTokens_cross"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Main Room Basement Web Hole",
-        "short_name": "Basement Hole",
-        "chest_unopened_img": "images/system/skulltula_token.png",
-        "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "access_rules": [
-          "$mm|Ocean Skulltula 2nd Room Webbed Hole"
-        ],
-        "visibility_rules": [
-          "setting_housesSkulltulaTokens_cross"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Main Room Basement Pot",
-        "short_name": "Basement Pot on Crates",
-        "chest_unopened_img": "images/system/skulltula_token.png",
-        "access_rules": [
-          "$mm|Ocean Skulltula 2nd Room Lower Pot"
-        ],
-        "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "visibility_rules": [
-          "setting_housesSkulltulaTokens_cross"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Storage Room Crate-Skulltula",
         "short_name": "Storage Room Crate-GS",
         "chest_unopened_img": "images/system/skulltula_token.png",
@@ -889,8 +901,8 @@
       {
         "name": "Storage Room Crate",
         "short_name": "Storage Room Crate",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Ocean Spider House Crate"
         ],
@@ -1217,8 +1229,8 @@
       {
         "name": "PF Crates",
         "short_name": "Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Pirate Fortress Interior Crate Entrance"
         ],
@@ -2771,8 +2783,8 @@
       {
         "name": "Gekko Room Crates",
         "short_name": "Gekko Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Great Bay Temple Crate Before Boss Key 01"
         ],
@@ -2801,8 +2813,8 @@
       {
         "name": "ChuChu Room Crates",
         "short_name": "Chu Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Great Bay Temple Crate Chu Room 1"
         ],
@@ -3016,8 +3028,8 @@
       {
         "name": "Seesaw Room Crates",
         "short_name": "Seesaw Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Great Bay Temple Crate Green Pipe 1"
         ],
@@ -3128,8 +3140,8 @@
       {
         "name": "Entrance Small Crates",
         "short_name": "Entrance Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Stone Tower Temple Crate Entrance 1"
         ],
@@ -3167,8 +3179,8 @@
       {
         "name": "Maze Room Big Crates",
         "short_name": "Maze Big Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Stone Tower Temple Crate Maze Large 1"
         ],
@@ -3180,8 +3192,8 @@
       {
         "name": "Maze Room Small Crates",
         "short_name": "Maze Small Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Stone Tower Temple Crate Maze Small 1"
         ],
@@ -3334,8 +3346,8 @@
       {
         "name": "Water Room Crates",
         "short_name": "Water Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Stone Tower Temple Crate Water 1"
         ],
@@ -3422,8 +3434,8 @@
       {
         "name": "Mirror Room Crates",
         "short_name": "Mirror Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Stone Tower Temple Crate Mirrors 1"
         ],
@@ -3547,8 +3559,8 @@
       {
         "name": "Inverted Entrance Crates",
         "short_name": "Inverted Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Stone Tower Temple Inverted Crate Entrance Right 1"
         ],
@@ -3740,8 +3752,8 @@
       {
         "name": "Before Gomess Crates",
         "short_name": "Gomess Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Stone Tower Temple Inverted Crate Before Gomess 1"
         ],
@@ -3974,8 +3986,8 @@
       {
         "name": "Bridge Room Crate",
         "short_name": "Bridge Crate",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Snowhead Temple Crate Bridge"
         ],
@@ -4000,8 +4012,8 @@
       {
         "name": "Map Room Crates",
         "short_name": "Map Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Snowhead Temple Crate Map Room 1"
         ],
@@ -4145,8 +4157,8 @@
       {
         "name": "Fake Ceiling Room Crates",
         "short_name": "Fake Ceiling Crates",
-        "chest_unopened_img": "images/system/crate.png",
-        "chest_opened_img": "images/system/crate_grey.png",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
           "$mm|Snowhead Temple Crate Dual Switches 1"
         ],

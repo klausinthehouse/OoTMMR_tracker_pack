@@ -308,6 +308,19 @@
           "setting_mq_DekuTree_true"
         ],
         "item_count": 1
+      },      
+      {
+        "name": "Crate by Map Chest",
+        "short_name": "Map Chest",
+        "access_rules": [
+          "$oot|MQ Deku Tree Main Room 2nd Floor Crate"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 1
       },
       {
         "name": "GS Lobby",
@@ -423,19 +436,6 @@
         "item_count": 1
       },
       {
-        "name": "Crate before Compass Room",
-        "short_name": "before Compass Crate",
-        "access_rules": [
-          "$oot|MQ Deku Tree Main Room 2nd Floor Crate"
-        ],
-        "visibility_rules": [
-          "setting_crateoot_dungeon,setting_mq_DekuTree_true"
-        ],
-        "chest_unopened_img": "images/crate.png",
-        "chest_opened_img": "images/crate_grey.png",
-        "item_count": 1
-      },
-      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -511,8 +511,8 @@
         "item_count": 1
       },
       {
-        "name": "Room Before Spike Grass",
-        "short_name": "Before Spike",
+        "name": "First Basement Room Grass",
+        "short_name": "By Deku-Scrub",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Room Before Spike 1"
         ],
@@ -585,19 +585,6 @@
         "item_count": 2
       },
       {
-        "name": "Larva Room Wonder on Graves",
-        "short_name": "Larva Room",
-        "chest_unopened_img": "images/system/Wonder.png",
-        "chest_opened_img": "images/system/Wonder_grey.png",
-        "access_rules": [
-          "$oot|MQ Deku Tree Wonder Item 1"
-        ],
-        "visibility_rules": [
-          "setting_wonderitemoot_dungeon,setting_mq_DekuTree_true"
-        ],
-        "item_count": 4
-      },
-      {
         "name": "GS Basement Graves Room",
         "short_name": "Ceiling",
         "access_rules": [
@@ -622,6 +609,19 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 5
+      },      
+      {
+        "name": "Gravestone Room Wonder",
+        "short_name": "on Graves",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Deku Tree Wonder Item 1"
+        ],
+        "visibility_rules": [
+          "setting_wonderitemoot_dungeon,setting_mq_DekuTree_true"
+        ],
+        "item_count": 4
       },
       {
         "name": "GS Basement Back Room",
@@ -1119,6 +1119,20 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 4
+      },      
+      {
+        "name": "Deku Scrubs Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Lobby Scrub Front"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 2
       },
       {
         "name": "Map Chest",
@@ -1133,10 +1147,10 @@
         "item_count": 1
       },
       {
-        "name": "Silver Rupees Downstairs",
-        "short_name": "Downstairs",
+        "name": "SR Downstairs Crates",
+        "short_name": "Downstairs Crates",
         "access_rules": [
-          "$oot|Spirit Temple SR Boulders 1"
+          "$oot|MQ Dodongo Cavern SR Crate"
         ],
         "visibility_rules": [
           "setting_SilverRupeeShuffle_true,setting_mq_DodongoCavern_true"
@@ -1146,8 +1160,8 @@
         "item_count": 2
       },
       {
-        "name": "Silver Rupees Downstairs",
-        "short_name": "Downstairs",
+        "name": "SR Downstairs Beamos",
+        "short_name": "Beamos",
         "access_rules": [
           "$oot|MQ Dodongo Cavern SR Beamos"
         ],
@@ -1209,8 +1223,8 @@
         "item_count": 1
       },
       {
-        "name": "GS Scrub Room",
-        "short_name": "Scrub",
+        "name": "GS Poe Room",
+        "short_name": "Poe",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern GS Poe Room Side"
         ],
@@ -1220,7 +1234,72 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },      
+      {
+        "name": "Poe Room Crates",
+        "short_name": "Poe Crates",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern Poe Room Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 8
       },
+      {
+        "name": "Right Corridor Pots",
+        "short_name": "Right Side",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot East Corridor 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },      
+      {
+        "name": "Deku Scrub Side Room Near Lower Lizalfos",
+        "short_name": "Near Lower Lizalfos",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Tunnel Side Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },      
+      {
+        "name": "Lower Lizalfos Pots",
+        "short_name": "Lower Lizalfos",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot Miniboss 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
+        "name": "Lizalfos Room Heart",
+        "short_name": "Lava Heart",
+        "access_rules": [
+          "$oot|MQ Dodongo Cavern Heart Lizalfos Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 1
+      },      
       {
         "name": "Green Corridor Pots",
         "short_name": "Green Corridor",
@@ -1248,34 +1327,8 @@
         "item_count": 2
       },
       {
-        "name": "Deku Scrub Side Room Near Lower Lizalfos",
-        "short_name": "East Side",
-        "access_rules": [
-          "$ootmq|MQ Dodongo Cavern Tunnel Side Scrub"
-        ],
-        "visibility_rules": [
-          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
-        ],
-        "chest_unopened_img": "images/deku_scrub.png",
-        "chest_opened_img": "images/deku_scrub_grey.png",
-        "item_count": 1
-      },
-      {
-        "name": "East Corridor Pots",
-        "short_name": "East Side",
-        "access_rules": [
-          "$ootmq|MQ Dodongo Cavern Pot East Corridor 1"
-        ],
-        "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
-        ],
-        "chest_unopened_img": "images/pot.png",
-        "chest_opened_img": "images/pot_grey.png",
-        "item_count": 4
-      },
-      {
         "name": "Torch Puzzle Room Chest",
-        "short_name": "Platform",
+        "short_name": "Torch Puzzle",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Upper Ledge Chest"
         ],
@@ -1286,7 +1339,7 @@
       },
       {
         "name": "Vanilla Bomb Bag Pots",
-        "short_name": "Bomb Bag",
+        "short_name": "Pillar",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Pot Vanilla Bomb Bag Room 1"
         ],
@@ -1299,7 +1352,7 @@
       },
       {
         "name": "Grass Before Upper Lizalfos",
-        "short_name": "Before Lizalfos",
+        "short_name": "Before Upper Lizalfos",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Grass Room Before Miniboss"
         ],
@@ -1309,36 +1362,10 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
-      },
-      {
-        "name": "GS Lizalfos Room",
-        "short_name": "Lizalfos",
-        "access_rules": [
-          "$ootmq|MQ Dodongo Cavern GS Upper Lizalfos"
-        ],
-        "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
-        ],
-        "chest_unopened_img": "images/skulltula.png",
-        "chest_opened_img": "images/skulltula_token.png",
-        "item_count": 1
-      },
-      {
-        "name": "Miniboss Pots",
-        "short_name": "Miniboss",
-        "access_rules": [
-          "$ootmq|MQ Dodongo Cavern Pot Miniboss 1"
-        ],
-        "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
-        ],
-        "chest_unopened_img": "images/pot.png",
-        "chest_opened_img": "images/pot_grey.png",
-        "item_count": 4
-      },
+      },      
       {
         "name": "Upper Lizalfos Room Crates",
-        "short_name": "Upstair Crates",
+        "short_name": "Upper Lizalfos",
         "access_rules": [
           "$oot|MQ Dodongo Cavern Room After Upper Lizalfos Large Crate 1"
         ],
@@ -1350,16 +1377,16 @@
         "item_count": 2
       },
       {
-        "name": "Lizalfos Room Heart",
-        "short_name": "Lizalfos Heart",
+        "name": "GS Lizalfos Room",
+        "short_name": "Upper Lizalfos",
         "access_rules": [
-          "$oot|MQ Dodongo Cavern Heart Lizalfos Room"
+          "$ootmq|MQ Dodongo Cavern GS Upper Lizalfos"
         ],
         "visibility_rules": [
-          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DodongoCavern_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
         ],
-        "chest_unopened_img": "images/heart.png",
-        "chest_opened_img": "images/heart_grey.png",
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
@@ -1516,20 +1543,6 @@
         "item_count": 4
       },
       {
-        "name": "Deku Scrubs Lobby",
-        "short_name": "Lobby",
-        "access_rules": [
-          "$ootmq|MQ Dodongo Cavern Lobby Scrub Front"
-        ],
-        "visibility_rules": [
-          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
-        ],
-        "chest_unopened_img": "images/deku_scrub.png",
-        "chest_opened_img": "images/deku_scrub_grey.png",
-        "clear_as_group": false,
-        "item_count": 2
-      },
-      {
         "name": "GS Back Area",
         "short_name": "Back Area",
         "access_rules": [
@@ -1554,19 +1567,6 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
-      },
-      {
-        "name": "Poe Room Crates",
-        "short_name": "Poe Crates",
-        "access_rules": [
-          "$oot|MQ Dodongo Cavern Poe Room Large Crate 1"
-        ],
-        "visibility_rules": [
-          "setting_crateoot_dungeon,setting_mq_DodongoCavern_true"
-        ],
-        "chest_unopened_img": "images/crate.png",
-        "chest_opened_img": "images/crate_grey.png",
-        "item_count": 8
       },
       {
         "name": "Under Grave Chest",
@@ -1898,6 +1898,32 @@
         "visibility_rules": [
           "setting_mq_Jabu-Jabu_true"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Rupee Trail Second Room",
+        "short_name": "Second Room",                    
+        "access_rules": [
+         "$oot|MQ Jabu-Jabu Rupee Middle"
+        ],
+        "visibility_rules": [
+         "setting_shuffleFreeRupeesOot_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
+      },      
+      {
+        "name": "Deep Rupee Second Room",
+        "short_name": "Second Room Deep",                    
+        "access_rules": [
+         "$oot|MQ Jabu-Jabu Rupee Bottom"
+        ],
+        "visibility_rules": [
+         "setting_shuffleFreeRupeesOot_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
         "item_count": 1
       },
       {
