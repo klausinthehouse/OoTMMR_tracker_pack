@@ -1117,8 +1117,8 @@
         "item_count": 1
       },
       {
-        "name": "Sewer Jail Barrels",
-        "short_name": "Jail Barrels",
+        "name": "Sewer Jail Downstairs Barrels",
+        "short_name": "Jail Downstairs",
         "chest_unopened_img": "images/system/Barrel.png",
         "chest_opened_img": "images/system/Barrel_grey.png",
         "access_rules": [
@@ -1127,11 +1127,11 @@
         "visibility_rules": [
           "setting_shuffleBarrel_dungeon"
         ],
-        "item_count": 16
+        "item_count": 3
       },
       {
-        "name": "Rupees near Sewer Jail",
-        "short_name": "Near Jail Rupees",
+        "name": "Rupee Sewer Jail Downstairs",
+        "short_name": "Jail Downstairs",
         "access_rules": [
           "$mm|Pirate Fortress Sewers Rupee Near Cage 1"
         ],
@@ -1140,7 +1140,85 @@
         ],
         "chest_unopened_img": "images/system/blue.png",
         "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Sewer Jail Next to Jail Barrels",
+        "short_name": "Next Jail",
+        "chest_unopened_img": "images/system/Barrel.png",
+        "chest_opened_img": "images/system/Barrel_grey.png",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers Barrel Cage Room 01"
+        ],
+        "visibility_rules": [
+          "setting_shuffleBarrel_dungeon"
+        ],
+        "item_count": 3
+      },
+      {
+        "name": "Rupee next Sewer Jail",
+        "short_name": "Next Jail",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers Rupee Near Cage 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesMm_dungeon"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Sewer Jail Upstairs Barrels",
+        "short_name": "Jail Upstairs",
+        "chest_unopened_img": "images/system/Barrel.png",
+        "chest_opened_img": "images/system/Barrel_grey.png",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers Barrel Cage Room 01"
+        ],
+        "visibility_rules": [
+          "setting_shuffleBarrel_dungeon"
+        ],
         "item_count": 4
+      },
+      {
+        "name": "Rupee Sewer Jail Upstairs",
+        "short_name": "Jail Upstairs",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers Rupee Near Cage 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesMm_dungeon"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Sewer Jail by Switch Barrels",
+        "short_name": "By Switch",
+        "chest_unopened_img": "images/system/Barrel.png",
+        "chest_opened_img": "images/system/Barrel_grey.png",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers Barrel Cage Room 01"
+        ],
+        "visibility_rules": [
+          "setting_shuffleBarrel_dungeon"
+        ],
+        "item_count": 6
+      },
+      {
+        "name": "Rupees near Sewer Jail Switch",
+        "short_name": "By Switch",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers Rupee Near Cage 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesMm_dungeon"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 2
       },
       {
         "name": "PF Jail Room PoH",
@@ -1149,19 +1227,6 @@
         ],
         "chest_unopened_img": "images/system/heartpiece.png",
         "chest_opened_img": "images/system/heartpiece_grey.png",
-        "item_count": 1
-      },
-      {
-        "name": "Rupee in Sewer Jail",
-        "short_name": "Jailed Rupee",
-        "access_rules": [
-          "$mm|Pirate Fortress Sewers Rupee Cage"
-        ],
-        "visibility_rules": [
-          "setting_shuffleFreeRupeesMm_dungeon"
-        ],
-        "chest_unopened_img": "images/system/blue.png",
-        "chest_opened_img": "images/system/blue_check.png",
         "item_count": 1
       },
       {
@@ -1332,19 +1397,6 @@
         "hosted_item": "EVENT_MM_ZORA_EGGS_HOOKSHOT_ROOM"
       },
       {
-        "name": "Barrel before Barrel Maze",
-        "short_name": "Balcony-Barrel",
-        "chest_unopened_img": "images/system/Barrel.png",
-        "chest_opened_img": "images/system/Barrel_grey.png",
-        "access_rules": [
-          "$mm|Pirate Fortress Entrance Barrel"
-        ],
-        "visibility_rules": [
-          "setting_shuffleBarrel_dungeon"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Barrel Maze Pots",
         "access_rules": [
           "$mm|Pirate Fortress Interior Pot Barrel Maze 1"
@@ -1388,6 +1440,19 @@
           "$mm_event_raw|ZORA_EGGS_LONE_GUARD"
         ],
         "hosted_item": "EVENT_MM_ZORA_EGGS_LONE_GUARD"
+      },
+      {
+        "name": "Barrel before Well Guarded Room",
+        "short_name": "Ledge",
+        "chest_unopened_img": "images/system/Barrel.png",
+        "chest_opened_img": "images/system/Barrel_grey.png",
+        "access_rules": [
+          "$mm|Pirate Fortress Interior Barrel Outside"
+        ],
+        "visibility_rules": [
+          "setting_shuffleBarrel_dungeon"
+        ],
+        "item_count": 1
       },
       {
         "name": "Well Guarded Chest",
@@ -1436,7 +1501,7 @@
         "chest_unopened_img": "images/system/Barrel.png",
         "chest_opened_img": "images/system/Barrel_grey.png",
         "access_rules": [
-          "$mm|Pirate Fortress Interior Barrel Outside"
+          "$mm|Pirate Fortress Entrance Barrel"
         ],
         "visibility_rules": [
           "setting_shuffleBarrel_overworld"

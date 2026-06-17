@@ -4108,7 +4108,7 @@
                     "item_count": 3
                   },
                   {
-                    "name": "Rupees on central Stump",                    
+                    "name": "Rupee on central Stump",                    
                     "access_rules": [
                       "$mm|Woodfall Rupee"
                     ],
@@ -5884,7 +5884,7 @@
                     "visibility_rules": [
                       "setting_rockmm_overworld"
                     ],
-                    "item_count": 2
+                    "item_count": 3
                   }                   
                 ],
                 "map_locations": [

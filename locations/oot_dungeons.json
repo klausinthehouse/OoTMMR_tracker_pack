@@ -1952,6 +1952,19 @@
         "item_count": 1
       },
       {
+        "name": "Underwater Alcove Pots",
+        "short_name": "Underwater Alcove",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Pot Underwater Alcove 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Main Room Upper Grass",
         "short_name": "Main Upper",
         "access_rules": [
@@ -1997,19 +2010,6 @@
         "visibility_rules": [
           "setting_mq_Jabu-Jabu_true"
         ],
-        "item_count": 2
-      },
-      {
-        "name": "Underwater Alcove Pots",
-        "short_name": "Underwater Alcove",
-        "access_rules": [
-          "$ootmq|MQ Jabu-Jabu Pot Underwater Alcove 1"
-        ],
-        "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
-        ],
-        "chest_unopened_img": "images/pot.png",
-        "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
       },
       {
@@ -2130,7 +2130,7 @@
         "item_count": 1
       },
       {
-        "name": "Afzer Big Octo Wonder (Slingshot)",
+        "name": "After Big Octo Wonder (Slingshot)",
         "short_name": "After Octo",
         "chest_unopened_img": "images/system/Wonder.png",
         "chest_opened_img": "images/system/Wonder_grey.png",
@@ -2157,7 +2157,7 @@
       },
       {
         "name": "Main Room Forked Path Crates",
-        "short_name": "Main Room Crates",
+        "short_name": "Forked Path",
         "access_rules": [
           "$oot|MQ Deku Tree Slingshot Room Large Crate 1"
         ],
@@ -8610,19 +8610,6 @@
         "item_count": 5
       },
       {
-        "name": "Basement Big Fairy (Sun)",
-        "short_name": "Basement BF Sun",
-        "access_rules": [
-          "$oot|MQ Bottom of the Well Basement Big Fairy"
-        ],
-        "visibility_rules": [
-          "setting_BigFairyShuffle_true,setting_mq_BottomoftheWell_true"
-        ],
-        "chest_unopened_img": "images/Fairy.png",
-        "chest_opened_img": "images/FairyGreyscale.png",
-        "item_count": 1
-      },
-      {
         "name": "Underwater Left Chest",
         "short_name": "Underwater Left",
         "access_rules": [
@@ -8867,6 +8854,19 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Basement Big Fairy (Sun)",
+        "short_name": "Basement BF Sun",
+        "access_rules": [
+          "$oot|MQ Bottom of the Well Basement Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_BigFairyShuffle_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
         "item_count": 1
       },
       {

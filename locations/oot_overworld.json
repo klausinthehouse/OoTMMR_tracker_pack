@@ -292,7 +292,7 @@
             "sections": [
               {
                 "name": "KF GS Bean Patch",
-                "short_name": "GS",
+                "short_name": "Bean Patch",
                 "access_rules": [
                   "$oot|Kokiri Forest GS Soil"
                 ],
@@ -305,6 +305,7 @@
               },
               {
                 "name": "Soil Fairies",
+                "short_name": "Soil",
                 "access_rules": [
                   "$oot|Kokiri Forest Soil Fairies"
                 ],
@@ -341,7 +342,7 @@
             "sections": [              
               {
                 "name": "KF House of Twins Pot",
-                "short_name": "GS",
+                "short_name": "Pots",
                 "access_rules": [
                   "$oot|Twins House Pot 1"
                 ],
@@ -454,7 +455,7 @@
               },
               {
                 "name": "KF GS Know It All House (Child, N)",
-                "short_name": "GS",
+                "short_name": "Know-it-all",
                 "access_rules": [
                   "$oot|Kokiri Forest GS Night Child"
                 ],
@@ -538,7 +539,7 @@
               },           
               {
                 "name": "KF GS House of Twins (Adult, N)",
-                "short_name": "GS",
+                "short_name": "Twins",
                 "access_rules": [
                   "$oot|Kokiri Forest GS Night Adult"
                 ],
@@ -826,6 +827,7 @@
               },
               {
                 "name": "Soil Fairies",
+                "short_name": "Soil",
                 "access_rules": [
                   "$oot|Lost Woods Theatre Soil Fairies"
                 ],
@@ -946,7 +948,7 @@
               },
               {
                 "name": "LW GS Bean Patch Near Bridge",
-                "short_name": "GS",
+                "short_name": "Bean Patch",
                 "access_rules": [
                   "$oot|Lost Woods GS Soil Bridge"
                 ],
@@ -959,6 +961,7 @@
               },
               {
                 "name": "Soil Fairies",
+                "short_name": "Soil",
                 "access_rules": [
                   "$oot|Lost Woods Bridge Soil Fairies"
                 ],
@@ -1256,7 +1259,7 @@
               },
               {
                 "name": "SFM GS (Adult, N)",
-                "short_name": "GS",
+                "short_name": "SFM",
                 "access_rules": [
                   "$oot|Sacred Meadow GS Night Adult"
                 ],
@@ -1271,7 +1274,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 2185,
+                "x": 2225,
                 "y": 665
               }
             ]
@@ -2302,13 +2305,14 @@
               {
                 "name": "Shoot the sun",
                 "access_rules": [
-                  "$oot|Lake Hylia Fire Arrow"
+                  "$oot|Lake Hylia Fire Arrow",
+                  "{gossip_stone}"
                 ],
                 "item_count": 1
               },
               {
                 "name": "LH GS Small Island (N)",
-                "short_name": "GS",
+                "short_name": "Island",
                 "access_rules": [
                   "$oot|Lake Hylia GS Island"
                 ],
@@ -2345,7 +2349,7 @@
             "sections": [
               {
                 "name": "LH Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "On Lab HP",
                 "access_rules": [
                   "$oot|Lake Hylia HP"
                 ],
@@ -2368,7 +2372,7 @@
               },
               {
                 "name": "LH GS Bean Patch",
-                "short_name": "GS",
+                "short_name": "Bean Patch",
                 "access_rules": [
                   "$oot|Lake Hylia GS Soil"
                 ],
@@ -2381,6 +2385,7 @@
               },
               {
                 "name": "Soil Fairies",
+                "short_name": "Soil",
                 "access_rules": [
                   "$oot|Lake Hylia Soil Fairies"
                 ],
@@ -2432,7 +2437,7 @@
               },
               {
                 "name": "LH GS Lab Crate",
-                "short_name": "GS",
+                "short_name": "Lab Crate",
                 "access_rules": [
                   "$oot|Laboratory GS Crate"
                 ],
@@ -2508,7 +2513,7 @@
             "sections": [
               {
                 "name": "LH GS Tree (N)",
-                "short_name": "GS",
+                "short_name": "In Tree",
                 "access_rules": [
                   "$oot|Lake Hylia GS Big Tree"
                 ],
@@ -2811,7 +2816,7 @@
             "sections": [
               {
                 "name": "LLR Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Silo HP",
                 "access_rules": [
                   "$oot|Lon Lon Ranch Silo HP"
                 ],
@@ -2995,7 +3000,7 @@
             "sections": [
               {
                 "name": "Kak Impa's House Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Impas HP",
                 "access_rules": [
                   "$oot|Kakariko Impa House HP"
                 ],
@@ -3062,7 +3067,7 @@
             "sections": [
               {
                 "name": "Kak Windmill Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Windmill HP",
                 "access_rules": [
                   "$oot|Windmill HP"
                 ],
@@ -3744,7 +3749,7 @@
                   },
                   {
                     "name": "Graveyard Freestanding PoH",
-                    "short_name": "Box HP",
+                    "short_name": "Crate HP",
                     "access_rules": [
                       "$oot|Graveyard Crate HP"
                     ],
@@ -3780,6 +3785,7 @@
                   },
                   {
                     "name": "Soil Fairies",
+                    "short_name": "Soil",
                     "access_rules": [
                       "$oot|Graveyard Soil Fairies"
                     ],
@@ -3826,7 +3832,7 @@
                   },
                   {
                     "name": "Graveyard Dampe Race Freestanding PoH",
-                    "short_name": "HP",
+                    "short_name": "Race under 1:00",
                     "access_rules": [
                       "$oot|Graveyard Dampe Tomb Reward 2"
                     ],
@@ -4042,7 +4048,7 @@
                 "sections": [
                   {
                     "name": "DMT GS Near Kak",
-                    "short_name": "GS",
+                    "short_name": "Bomb Wall",
                     "access_rules": [
                       "$oot|Death Mountain Trail GS Entrance"
                     ],
@@ -4055,7 +4061,7 @@
                   },
                   {
                     "name": "DMT Freestanding PoH",
-                    "short_name": "HP",
+                    "short_name": "Dodongo HP",
                     "access_rules": [
                       "$oot|Death Mountain Trail HP"
                     ],
@@ -4078,7 +4084,7 @@
                   },
                   {
                     "name": "DMT GS Bean Patch",
-                    "short_name": "GS",
+                    "short_name": "Bean Patch",
                     "access_rules": [
                       "$oot|Death Mountain Trail GS Soil"
                     ],
@@ -4091,6 +4097,7 @@
                   },
                   {
                     "name": "Soil Fairies",
+                    "short_name": "Soil",
                     "access_rules": [
                       "$oot|Death Mountain Trail Soil Fairies"
                     ],
@@ -4102,7 +4109,8 @@
                     "item_count": 3
                   },
                   {
-                    "name": "DMT lower Red Boulders",                    
+                    "name": "DMT lower Red Boulders",
+                    "short_name": "lower path",                    
                     "access_rules": [
                       "$oot|Death Mountain Trail Red Boulder Lower 1"
                     ],
@@ -4115,6 +4123,7 @@
                   },
                   {
                     "name": "Chest behind wall",
+                    "short_name": "Bomb Wall",
                     "access_rules": [
                       "$oot|Death Mountain Trail Chest"
                     ],
@@ -4122,6 +4131,7 @@
                   },
                   {
                     "name": "Big Fairy at Post(Sun)",
+                    "short_name": "At Post (Sun)",
                     "access_rules": [
                       "$oot|Death Mountain Trail Big Fairy"
                     ],
@@ -4147,7 +4157,7 @@
                   },
                   {
                     "name": "DMT GS Above Dodongos Cavern (Adult, N)",
-                    "short_name": "GS",
+                    "short_name": "Near GC",
                     "access_rules": [
                       "$oot|Death Mountain Trail GS Above Dodongo"
                     ],
@@ -4159,7 +4169,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "DMT Above DC Red Boulder",                    
+                    "name": "DMT Above DC Red Boulder",
+                    "short_name": "by GC",                    
                     "access_rules": [
                       "$oot|Death Mountain Trail Red Boulder Near Lower GS"
                     ],
@@ -4171,7 +4182,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Lower Rock Rupee",                    
+                    "name": "Lower Rock Rupee",
+                    "short_name": "Lower Rock",                    
                     "access_rules": [
                       "$oot|Death Mountain Trail Rupee Lower"
                     ],
@@ -4183,7 +4195,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Upper Rock Rupee",                    
+                    "name": "Upper Rock Rupee",
+                    "short_name": "Upper Rock",                    
                     "access_rules": [
                       "$oot|Death Mountain Trail Rupee Upper"
                     ],
@@ -4383,7 +4396,7 @@
             "sections": [
               {
                 "name": "DMT GS Falling Rocks Path (Adult, N)",
-                "short_name": "GS",
+                "short_name": "Falling Rocks",
                 "access_rules": [
                   "$oot|Death Mountain Trail GS Before Climb"
                 ],
@@ -4524,14 +4537,14 @@
                 "item_count": 1
               },
               {
-                "name": "Rolling Goron Child",
+                "name": "Big Rolling Goron",
                 "access_rules": [
                   "$oot|Goron City Bomb Bag"
                 ],
                 "item_count": 1
               },
               {
-                "name": "Rolling Goron Adult",
+                "name": "Rolling Child Goron",
                 "access_rules": [
                   "$oot|Goron City Tunic"
                 ],
@@ -4616,6 +4629,9 @@
                 "access_rules": [
                   "$oot|Goron City Grotto Center Scrub"
                 ],
+                "visibility_rules": [
+                  "setting_scrubShuffleOot_true"
+                ],
                 "chest_unopened_img": "images/deku_scrub.png",
                 "chest_opened_img": "images/deku_scrub_grey.png",
                 "clear_as_group": false,
@@ -4632,15 +4648,12 @@
                 ],
                 "chest_unopened_img": "images/system/Hive.png",
                 "chest_opened_img": "images/system/Hive_grey.png",
-                "item_count": 2
+                "item_count": 1
               }
             ],
             "map_locations": [
               {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_scrubShuffleOot_false"
-                ],
+                "map": "oot",                
                 "x": 1705,
                 "y": 75
               }
@@ -4786,7 +4799,7 @@
             "sections": [
               {
                 "name": "DMC Wall Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Wall Nook HP",
                 "access_rules": [
                   "$oot|Death Mountain Crater Alcove HP"
                 ],
@@ -4834,7 +4847,7 @@
               },
               {
                 "name": "DMC GS Crate",
-                "short_name": "GS",
+                "short_name": "In Crate",
                 "access_rules": [
                   "$oot|Death Mountain Crater GS Crate"
                 ],
@@ -4943,7 +4956,7 @@
               },
               {
                 "name": "DMC GS Bean Patch",
-                "short_name": "GS",
+                "short_name": "Bean Patch",
                 "access_rules": [
                   "$oot|Death Mountain Crater GS Soil"
                 ],
@@ -4956,6 +4969,7 @@
               },
               {
                 "name": "Soil Fairies",
+                "short_name": "Soil",
                 "access_rules": [
                   "$oot|Death Mountain Crater Soil Fairies"
                 ],
@@ -5412,7 +5426,7 @@
                   },
                   {
                     "name": "Market GS Guard House",
-                    "short_name": "GS",
+                    "short_name": "In Crate",
                     "access_rules": [
                       "$oot|Market Pot House GS"
                     ],
@@ -5882,7 +5896,7 @@
             "sections": [
               {
                 "name": "OGC GS",
-                "short_name": "GS",
+                "short_name": "OGC",
                 "access_rules": [
                   "$oot|Ganon Castle Exterior GS"
                 ],
@@ -6061,6 +6075,7 @@
               },
               {
                 "name": "Seller Soil Fairies",
+                "short_name": "Soil",
                 "access_rules": [
                   "$oot|Bean Seller Soil Fairies"
                 ],
@@ -6183,7 +6198,7 @@
             "sections": [
               {
                 "name": "ZR Near Domain Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Near Domain HP",
                 "access_rules": [
                   "$oot|Zora River HP Platform"
                 ],
@@ -6294,7 +6309,7 @@
               },
               {
                 "name": "ZR GS Tree",
-                "short_name": "GS",
+                "short_name": "In Tree",
                 "access_rules": [
                   "$oot|Zora River GS Tree"
                 ],
@@ -6345,7 +6360,7 @@
               },     
               {
                 "name": "ZR Near Open Grotto Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "HP Pillar",
                 "access_rules": [
                   "$oot|Zora River HP Pillar"
                 ],
@@ -6368,7 +6383,7 @@
               },
               {
                 "name": "ZR GS Near Raised Grottos (Adult, N)",
-                "short_name": "GS",
+                "short_name": "Raised Grottos",
                 "access_rules": [
                   "$oot|Zora River GS Near Grotto"
                 ],
@@ -6393,7 +6408,7 @@
             "sections": [
               {
                 "name": "ZR GS Above Bridge (Adult, N)",
-                "short_name": "GS",
+                "short_name": "Above Bridge",
                 "access_rules": [
                   "$oot|Zora River GS Near Bridge"
                 ],
@@ -6791,7 +6806,7 @@
               },
               {
                 "name": "ZF Iceberg Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Iceberg HP",
                 "access_rules": [
                   "$oot|Zora Fountain Iceberg HP"
                 ],
@@ -6801,7 +6816,7 @@
               },
               {
                 "name": "ZF Bottom Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Bottom HP",
                 "access_rules": [
                   "$oot|Zora Fountain Bottom HP"
                 ],
@@ -6864,7 +6879,7 @@
             "sections": [
               {
                 "name": "GV Crate Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Crate HP",
                 "access_rules": [
                   "$oot|Gerudo Valley Crate HP"
                 ],
@@ -6925,6 +6940,7 @@
               },
               {
                 "name": "Soil Fairies",
+                "short_name": "Soil",
                 "access_rules": [
                   "$oot|Gerudo Valley Soil Fairies"
                 ],
@@ -6949,7 +6965,7 @@
               },
               {
                 "name": "GV Waterfall Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Waterfall HP",
                 "access_rules": [
                   "$oot|Gerudo Valley Waterfall HP"
                 ],
@@ -6971,7 +6987,7 @@
             "sections": [
               {
                 "name": "GV GS Small Bridge (N)",
-                "short_name": "GS",
+                "short_name": "Small Bridge",
                 "access_rules": [
                   "$oot|Gerudo Valley GS Wall"
                 ],
@@ -7046,7 +7062,7 @@
               },
               {
                 "name": "GV GS Behind Tent (N)",
-                "short_name": "GS",
+                "short_name": "Behind Tent",
                 "access_rules": [
                   "$oot|Gerudo Valley GS Tent"
                 ],
@@ -7072,7 +7088,7 @@
               },
               {
                 "name": "GV GS Pillar (N)",
-                "short_name": "GS",
+                "short_name": "On Pillar",
                 "access_rules": [
                   "$oot|Gerudo Valley GS Pillar"
                 ],
@@ -7160,7 +7176,7 @@
             "sections": [
               {
                 "name": "GF GS Top Floor (N)",
-                "short_name": "GS",
+                "short_name": "On Wall",
                 "access_rules": [
                   "$oot|Gerudo Fortress GS Wall"
                 ],
@@ -7580,7 +7596,7 @@
             "sections": [
               {
                 "name": "GF GS Archery Range (N)",
-                "short_name": "GS",
+                "short_name": "On Target",
                 "access_rules": [
                   "$oot|Gerudo Fortress GS Target"
                 ],
@@ -7697,7 +7713,7 @@
               },
               {
                 "name": "Wasteland GS",
-                "short_name": "GS",
+                "short_name": "Wasteland",
                 "access_rules": [
                   "$oot|Haunted Wasteland GS"
                 ],
@@ -7812,7 +7828,7 @@
             "sections": [
               {
                 "name": "Colossus Freestanding PoH",
-                "short_name": "HP",
+                "short_name": "Arch HP",
                 "access_rules": [
                   "$oot|Desert Colossus HP"
                 ],
@@ -7848,7 +7864,7 @@
               },
               {
                 "name": "Colossus GS Hill (N)",
-                "short_name": "GS",
+                "short_name": "Hill",
                 "access_rules": [
                   "$oot|Desert Colossus GS Plateau"
                 ],
@@ -7861,7 +7877,7 @@
               },              
               {
                 "name": "Colossus GS Tree (Adult, N)",
-                "short_name": "GS",
+                "short_name": "Tree",
                 "access_rules": [
                   "$oot|Desert Colossus GS Tree"
                 ],
@@ -7912,7 +7928,7 @@
               },
               {
                 "name": "Colossus GS Bean Patch",
-                "short_name": "GS",
+                "short_name": "Bean Patch",
                 "access_rules": [
                   "$oot|Desert Colossus GS Soil"
                 ],
@@ -7925,6 +7941,7 @@
               },
               {
                 "name": "Soil Fairies",
+                "short_name": "Soil",
                 "access_rules": [
                   "$oot|Desert Colossus Soil Fairies"
                 ],
