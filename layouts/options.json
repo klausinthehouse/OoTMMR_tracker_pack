@@ -2993,6 +2993,165 @@
       }
     ]
   },
+  "layout_SR_standard": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [            
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_IC_SCYTHE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_IC_BLOCK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_BOTW",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SHADOW_PIT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SHADOW_SCYTHE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SHADOW_SPIKES",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GTG_LAVA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GTG_SLOPES",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GTG_WATER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SPIRIT_CHILD",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SPIRIT_SUN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SPIRIT_BOULDERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GANON_FIRE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GANON_FOREST",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GANON_LIGHT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GANON_SPIRIT",
+        "height": 16
+      }
+    ]
+  },
+  "layout_SR_MQ": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [            
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_DC",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SHADOW_BLADES",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SHADOW_PIT_MQ",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SHADOW_SCYTHE_MQ",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SHADOW_SPIKES_MQ",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GTG_LAVA_MQ",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GTG_SLOPES_MQ",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GTG_WATER_MQ",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SPIRIT_ADULT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_SPIRIT_LOBBY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GANON_FIRE_MQ",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GANON_SHADOW",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUPEE_SILVER_GANON_WATER",
+        "height": 16
+      }
+    ]
+  },
   "options_popup": {
     "type": "tabbed",
     "tabs": [
@@ -3260,6 +3419,39 @@
           "content": {
             "type": "layout",
             "key": "layout_misc_souls_mm",
+            "h_alignment": "left"
+          }
+        }
+      }
+    ]
+  },
+  "SR_popup": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Standard Dungeons",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_SR_standard",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "Master Quest Dungeons",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_SR_MQ",
             "h_alignment": "left"
           }
         }
