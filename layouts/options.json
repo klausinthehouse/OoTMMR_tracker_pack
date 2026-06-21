@@ -6,17 +6,7 @@
     "content": [
       {
         "type": "item",
-        "item": "setting_goldSkulltulaTokens",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_smallKeyShuffleOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_SilverRupeeShuffle",
+        "item": "setting_BigFairyShuffle",
         "height": 16
       },
       {
@@ -26,7 +16,12 @@
       },
       {
         "type": "item",
-        "item": "setting_shopShuffleOot",
+        "item": "setting_BushOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleButterflyOot",
         "height": 16
       },
       {
@@ -36,52 +31,12 @@
       },
       {
         "type": "item",
-        "item": "setting_Fishing",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shufflePotsOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleGrassOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_TreeShuffleOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_BushOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleHivesOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_RedBoulderOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleMaskTrades",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_scrubShuffleOot",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_cowShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_crateoot",
         "height": 16
       },
       {
@@ -96,27 +51,7 @@
       },
       {
         "type": "item",
-        "item": "setting_BigFairyShuffle",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_SoilFairyShuffle",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleButterflyOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_wonderitemoot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleFreeRupeesOot",
+        "item": "setting_Fishing",
         "height": 16
       },
       {
@@ -126,12 +61,27 @@
       },
       {
         "type": "item",
-        "item": "setting_crateoot",
+        "item": "setting_shuffleFreeRupeesOot",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_rock",
+        "item": "setting_shuffleFrogSongs",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleHivesOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleGrassOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_goldSkulltulaTokens",
         "height": 16
       },
       {
@@ -141,12 +91,62 @@
       },
       {
         "type": "item",
+        "item": "setting_shuffleMaskTrades",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shufflePotsOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_RedBoulderOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_RedIce",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_shuffleFrogSongs",
+        "item": "setting_rock",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_scrubShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shopShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_smallKeyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_SilverRupeeShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_SoilFairyShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_TreeShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_wonderitemoot",
         "height": 16
       },
       {
@@ -368,17 +368,7 @@
     "content": [
       {
         "type": "item",
-        "item": "setting_housesSkulltulaTokens",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_tingleShuffle",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_smallKeyShuffleMm",
+        "item": "setting_shuffleBarrel",
         "height": 16
       },
       {
@@ -388,22 +378,17 @@
       },
       {
         "type": "item",
-        "item": "setting_townFairyShuffle",
+        "item": "setting_BushMm",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_wonderitem",
+        "item": "setting_shuffleButterflyMm",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_shuffleFreeRupeesMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleFreeHeartsMm",
+        "item": "setting_cowShuffleMm",
         "height": 16
       },
       {
@@ -413,12 +398,32 @@
       },
       {
         "type": "item",
-        "item": "setting_shuffleBarrel",
+        "item": "setting_fairyFountainFairyShuffleMm",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_rockmm",
+        "item": "setting_shuffleFreeHeartsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFreeRupeesMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleGrassMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleHivesMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_housesSkulltulaTokens",
         "height": 16
       },
       {
@@ -428,7 +433,57 @@
       },
       {
         "type": "item",
+        "item": "setting_lottery",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleMerchantsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shufflePotsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_owlShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_RedBoulderMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_rockmm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_scrubShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shopShuffleMm",
+        "height": 16
+      },   
+      {
+        "type": "item",
+        "item": "setting_smallKeyShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_SnowShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soil",
         "height": 16
       },
       {
@@ -443,17 +498,7 @@
       },
       {
         "type": "item",
-        "item": "setting_shopShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shufflePotsMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleGrassMm",
+        "item": "setting_tingleShuffle",
         "height": 16
       },
       {
@@ -463,59 +508,14 @@
       },
       {
         "type": "item",
-        "item": "setting_BushMm",
+        "item": "setting_townFairyShuffle",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_shuffleHivesMm",
+        "item": "setting_wonderitem",
         "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleButterflyMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_RedBoulderMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_owlShuffle",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_scrubShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_cowShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_fairyFountainFairyShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soil",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleMerchantsMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_lottery",
-        "height": 16
-      },        
+      },     
       {
         "type": "item",
         "item": "setting_priceMmShops",
