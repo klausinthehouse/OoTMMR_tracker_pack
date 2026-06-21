@@ -1645,7 +1645,8 @@ function _oot_logic()
 	end
 
 	function has_bombchu()
-		return bombchu_source() and bombchu_license()
+		return bombchu_source() 
+        -- and bombchu_license() 
 	end
 
 	function has_sticks()

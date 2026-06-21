@@ -1908,7 +1908,8 @@ function _mm_logic()
 	end
 
 	function has_bombchu()
-		return bombchu_source() and bombchu_license()
+		return bombchu_source() 
+        --and bombchu_license()
 	end
 
 	function can_break_boulders()
@@ -6562,7 +6563,8 @@ function _mm_logic()
             ["Great Bay Coast Pot 12"] = function () return true end,
             ["Great Bay Coast Ledge Rocks"] = function () return true end,
             ["Great Bay Coast Entrance Rock"] = function () return true end,
-            ["Great Bay Coast Underwater Rocks"] = function () return has_bombchu() end,
+            ["Great Bay Coast Underwater Rocks"] = function () return has_mask_blast() and (has_iron_boots or can_dive_big) end,
+            ["Great Bay Coast shallow Rocks"] = function () return has_bombchu() or has_mask_blast() end,
             ["Great Bay Coast Grass 1"] = function () return true end,
             ["Great Bay Coast Grass 2"] = function () return true end,
             ["Great Bay Coast Grass 3"] = function () return true end,
