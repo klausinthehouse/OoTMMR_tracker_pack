@@ -2535,7 +2535,8 @@
           "$mm|Woodfall Temple Boss Container"
         ],
         "item_count": 1
-      }
+      },
+      
     ],
     "map_locations": [
       {
@@ -4132,11 +4133,23 @@
         "item_count": 5
       },
       {
+        "name": "Crate Fairy",
+        "short_name": "In Crate",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple SF Compass Room Crate"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyOtherShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Icicle Room Snowball - Small Key",
         "short_name": "Icicle Key",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
-        "chest_opened_img": "images/system/chest_open_big.png",
-        "short_name": "Small Key 2",
+        "chest_opened_img": "images/system/chest_open_big.png",        
         "access_rules": [
           "$mm|Snowhead Temple Icicle Room"
         ],
@@ -4316,19 +4329,6 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 7
-      },
-      {
-        "name": "Crate Fairy",
-        "short_name": "In Crate",
-        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/mm_stray_fairy.png",
-        "access_rules": [
-          "$mm|Snowhead Temple SF Compass Room Crate"
-        ],
-        "visibility_rules": [
-          "setting_strayFairyOtherShuffle_ownDungeon"
-        ],
-        "item_count": 1
       },
       {
         "name": "Ice Puzzle Chest",
@@ -4515,19 +4515,6 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 5
-      },      
-      {
-        "name": "Central Room Snowballs upper",
-        "short_name": "Big upper",
-        "access_rules": [
-          "$mm|Snowhead Temple Big Snowball Central Room 1"
-        ],
-        "visibility_rules": [
-          "setting_SnowShuffle_dungeon"
-        ],
-        "chest_unopened_img": "images/system/snow.png",
-        "chest_opened_img": "images/system/snow_grey.png",
-        "item_count": 4
       },
       {
         "name": "Central Room near Boss Key Icicles",

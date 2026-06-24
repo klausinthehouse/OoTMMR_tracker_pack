@@ -1234,19 +1234,6 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
-      },      
-      {
-        "name": "Poe Room Crates",
-        "short_name": "Poe Crates",
-        "access_rules": [
-          "$oot|MQ Dodongo Cavern Poe Room Large Crate 1"
-        ],
-        "visibility_rules": [
-          "setting_crateoot_dungeon,setting_mq_DodongoCavern_true"
-        ],
-        "chest_unopened_img": "images/crate.png",
-        "chest_opened_img": "images/crate_grey.png",
-        "item_count": 8
       },
       {
         "name": "Right Corridor Pots",
@@ -1260,10 +1247,23 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 4
-      },      
+      },  
       {
-        "name": "Deku Scrub Side Room Near Lower Lizalfos",
-        "short_name": "Near Lower Lizalfos",
+        "name": "Green Corridor Side Room Grass",
+        "short_name": "Green Corridor Side",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Grass Green Corridor Side Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
+      },          
+      {
+        "name": "Deku Scrub Side Room Green Corridor",
+        "short_name": "Green Corridor Side",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Tunnel Side Scrub"
         ],
@@ -1314,17 +1314,17 @@
         "item_count": 4
       },
       {
-        "name": "Green Corridor Grass",
+        "name": "Green Corridor  Crates",
         "short_name": "Green Corridor",
         "access_rules": [
-          "$ootmq|MQ Dodongo Cavern Grass Green Corridor Side Room 1"
+          "$oot|MQ Dodongo Cavern Poe Room Large Crate 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+          "setting_crateoot_dungeon,setting_mq_DodongoCavern_true"
         ],
-        "chest_unopened_img": "images/MM_Grass.png",
-        "chest_opened_img": "images/GrassGreyscale.png",
-        "item_count": 2
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 8
       },
       {
         "name": "Torch Puzzle Room Chest",
@@ -2105,7 +2105,7 @@
       },
       {
         "name": "Big Octo Grass",
-        "short_name": "Big Octo",
+        "short_name": "Over Big Octo",
         "access_rules": [
           "$ootmq|MQ Jabu-Jabu Grass Big Octo Top 1"
         ],
@@ -2115,6 +2115,19 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 2
+      },
+      {
+        "name": "After Big Octo Wonder (Slingshot)",
+        "short_name": "Over Big Octo",
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Wonder Item After Big Octo"
+        ],
+        "visibility_rules": [
+          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
       },
       {
         "name": "After Big Octo Grass",
@@ -2127,19 +2140,6 @@
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
-        "item_count": 1
-      },
-      {
-        "name": "After Big Octo Wonder (Slingshot)",
-        "short_name": "After Octo",
-        "chest_unopened_img": "images/system/Wonder.png",
-        "chest_opened_img": "images/system/Wonder_grey.png",
-        "access_rules": [
-          "$oot|MQ Jabu-Jabu Wonder Item After Big Octo"
-        ],
-        "visibility_rules": [
-          "setting_wonderitemoot_dungeon,setting_mq_Jabu-Jabu_true"
-        ],
         "item_count": 1
       },
       {
@@ -2921,19 +2921,6 @@
         "item_count": 6
       },
       {
-        "name": "Before Map Room Icicle",
-        "short_name": "Pre-Map Room",
-        "access_rules": [
-          "$oot|MQ Ice Cavern Icicle Before Map Room"
-        ],
-        "visibility_rules": [
-          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_true"
-        ],
-        "chest_unopened_img": "images/system/Icicle.png",
-        "chest_opened_img": "images/system/Icicle_check.png",
-        "item_count": 1
-      },
-      {
         "name": "Map Room Icicle",
         "short_name": "Map Room",
         "access_rules": [
@@ -3046,6 +3033,19 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Before Block Room Icicle",
+        "short_name": "Pre-Block Room",
+        "access_rules": [
+          "$oot|MQ Ice Cavern Icicle Before Map Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleIcicleOot_on,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/system/Icicle.png",
+        "chest_opened_img": "images/system/Icicle_check.png",
         "item_count": 1
       },
       {
@@ -4183,7 +4183,7 @@
       },
       {
         "name": "Pre Boss by Cage Crates",
-        "short_name": "Pre-Boss Cage",
+        "short_name": "Pre-Boss left",
         "access_rules": [
           "$oot|MQ Fire Temple Pre-Boss Room Near Cage Large Crate 1"
         ],
@@ -4196,7 +4196,7 @@
       },
       {
         "name": "Pre Boss on Ledge Crates",
-        "short_name": "Pre-Boss Cage",
+        "short_name": "Pre-Boss right",
         "access_rules": [
           "$oot|MQ Fire Temple Pre-Boss Room Tall Ledge Low Large Crate 1"
         ],
@@ -4409,7 +4409,7 @@
       },
       {
         "name": "Shortcut Room Wonder",
-        "short_name": "Shortcut",
+        "short_name": "Shortcut Front",
         "chest_unopened_img": "images/system/Wonder.png",
         "chest_opened_img": "images/system/Wonder_grey.png",
         "access_rules": [
@@ -4419,17 +4419,6 @@
           "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
         ],
         "item_count": 3
-      },
-      {
-        "name": "Lizalfos Maze Lower Chest",
-        "short_name": "Maze Lower",
-        "access_rules": [
-          "$ootmq|MQ Fire Temple Maze Lower Chest"
-        ],
-        "visibility_rules": [
-          "setting_mq_FireTemple_true"
-        ],
-        "item_count": 1
       },
       {
         "name": "Lizalfos Maze East Wonder",
@@ -4470,6 +4459,30 @@
         "item_count": 1
       },
       {
+        "name": "Cell Below Maze Crates",
+        "short_name": "Shortcut",
+        "access_rules": [
+          "$oot|MQ Fire Temple Cell Below Maze Large Crate 1"
+        ],
+        "visibility_rules": [
+          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "item_count": 6
+      },
+      {
+        "name": "Lizalfos Maze Lower Chest",
+        "short_name": "Shortcut",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Maze Lower Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Lizalfos Maze Upper Chest",
         "short_name": "Maze Upper",
         "access_rules": [
@@ -4482,7 +4495,7 @@
       },
       {
         "name": "Lizalfos Maze Upper Crates",
-        "short_name": "Maze-Cell",
+        "short_name": "Upper Maze-Cell",
         "access_rules": [
           "$oot|MQ Fire Temple Maze Room Upper Cage Large Crate 1"
         ],
@@ -4519,19 +4532,6 @@
         "item_count": 1
       },
       {
-        "name": "Cell Below Maze Crates",
-        "short_name": "Maze-Cell",
-        "access_rules": [
-          "$oot|MQ Fire Temple Cell Below Maze Large Crate 1"
-        ],
-        "visibility_rules": [
-          "setting_crateoot_dungeon,setting_mq_FireTemple_true"
-        ],
-        "chest_unopened_img": "images/crate.png",
-        "chest_opened_img": "images/crate_grey.png",
-        "item_count": 6
-      },
-      {
         "name": "GS Skull On Fire",
         "short_name": "East Tower Top",
         "access_rules": [
@@ -4542,19 +4542,6 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
-        "item_count": 1
-      },
-      {
-        "name": "Torch-Room Wonder (Hookshot)",
-        "short_name": "Torch-Room",        
-        "chest_unopened_img": "images/system/Wonder.png",
-        "chest_opened_img": "images/system/Wonder_grey.png",
-        "access_rules": [
-          "$oot|MQ Fire Temple Wonder Item Torch Room"
-        ],
-        "visibility_rules": [
-          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
-        ],
         "item_count": 1
       },
       {
@@ -4608,6 +4595,19 @@
         "chest_unopened_img": "images/crate.png",
         "chest_opened_img": "images/crate_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Lava-Room Wonder (Hookshot)",
+        "short_name": "Lava-Room (HS)",        
+        "chest_unopened_img": "images/system/Wonder.png",
+        "chest_opened_img": "images/system/Wonder_grey.png",
+        "access_rules": [
+          "$oot|MQ Fire Temple Wonder Item Torch Room"
+        ],
+        "visibility_rules": [
+          "setting_wonderitemoot_dungeon,setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
       },
       {
         "name": "Bridge Above Lava Pots",
@@ -9448,8 +9448,8 @@
         "item_count": 7
       },
       {
-        "name": "Water Heart",
-        "short_name": "Water Hearts",
+        "name": "Frozen Heart",
+        "short_name": "Frozen",
         "access_rules": [
           "$oot|MQ Ganon Castle Heart Water"
         ],
@@ -9474,8 +9474,8 @@
         "item_count": 3
       },
       {
-        "name": "Water Trial Silver Rupee Upper",
-        "short_name": "Water Upper",
+        "name": "Water Trial Floating Silver Rupee",
+        "short_name": "Water Floating",
         "access_rules": [
           "$oot|MQ Ganon Castle SR Water Above Ground"
         ],
@@ -9488,7 +9488,7 @@
       },
       {
         "name": "Water Trial Silver Rupee frozen",
-        "short_name": "Water RedIce",
+        "short_name": "Water Alcove",
         "access_rules": [
           "$oot|MQ Ganon Castle SR Water Alcove"
         ],
@@ -9500,8 +9500,21 @@
         "item_count": 1
       },
       {
+        "name": "Water Trial Alcove Red Ice",
+        "short_name": "Water Alcove",
+        "access_rules": [
+          "$oot|MQ Ganon Castle Red Ice Block Silver Rupee Room 1"
+        ],
+        "visibility_rules": [
+          "setting_RedIce_on,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/system/RedIce.png",
+        "chest_opened_img": "images/system/RedIce_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Water Trial Second Room",
-        "short_name": "Entrance",
+        "short_name": "Second Room",
         "access_rules": [
           "$oot|MQ Ganon Castle Red Ice Block Silver Rupee Room 1"
         ],
@@ -9524,6 +9537,17 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Shadow Trial Bomb Flower Chest",
+        "short_name": "Shadow Trial 1",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Shadow Trial Bomb Flower Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "item_count": 1
       },
       {
         "name": "Shadow Trial Silver Rupees front",
@@ -9563,17 +9587,6 @@
         "chest_unopened_img": "images/system/silver.png",
         "chest_opened_img": "images/system/blue_check.png",
         "item_count": 2
-      },
-      {
-        "name": "Shadow Trial Bomb Flower Chest",
-        "short_name": "Shadow Trial 1",
-        "access_rules": [
-          "$ootmq|MQ Ganon Castle Shadow Trial Bomb Flower Chest"
-        ],
-        "visibility_rules": [
-          "setting_mq_GanonCastle_true"
-        ],
-        "item_count": 1
       },
       {
         "name": "Shadow Trial Wonder",
