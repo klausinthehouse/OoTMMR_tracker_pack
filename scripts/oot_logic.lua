@@ -1714,7 +1714,7 @@ function _oot_logic()
 	end
 
 	function has_big_poe()
-		return has_bottle() and (event('BIG_POE') and soul_poe() or renewable(BOTTLE_BIG_POE) or renewable(BIG_POE))
+		return has_bottle() and soul_poe() and (event('BIG_POE') or renewable(BOTTLE_BIG_POE) or renewable(BIG_POE))
 	end
 
 	function can_use_beans()
@@ -4732,7 +4732,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Kokiri Forest GS Soil"] = function () return gs_soil() and can_damage_skull() end,
-            ["Kokiri Forest Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Kokiri Forest Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Kokiri Forest GS Night Adult"] = function () return is_adult() and (can_collect_distance() or (climb_anywhere() and can_damage_skull())) and gs_night() end,
             ["Kokiri Forest Rock Circle"] = function () return true end,
         },
@@ -5112,7 +5112,7 @@ function _oot_logic()
             ["Hyrule Field"] = function () return true end,
         },
         ["locations"] = {
-            ["Hyrule Field Grotto Tektite HP"] = function () return can_dive_big() end,
+            ["Hyrule Field Grotto Tektite HP"] = function () return can_dive_big() or has_iron_boots() end,
         },
         ["age_change"] = false,
     },
@@ -5755,7 +5755,7 @@ function _oot_logic()
             ["Lost Woods Odd Mushroom"] = function () return soul_grog() and adult_trade(COJIRO) end,
             ["Lost Woods Poacher's Saw"] = function () return adult_trade(ODD_POTION) and soul_npc(SOUL_NPC_KOKIRI) end,
             ["Lost Woods GS Soil Bridge"] = function () return gs_soil() and can_damage_skull() end,
-            ["Lost Woods Bridge Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Lost Woods Bridge Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Lost Woods Grass 1"] = function () return can_cut_grass() end,
             ["Lost Woods Grass 2"] = function () return can_cut_grass() end,
             ["Lost Woods Grass 3"] = function () return can_cut_grass() end,
@@ -5840,7 +5840,7 @@ function _oot_logic()
             ["Lost Woods Scrub Near Theater Left"] = function () return is_child() and business_scrub(1) end,
             ["Lost Woods Scrub Near Theater Right"] = function () return is_child() and business_scrub(2) end,
             ["Lost Woods GS Soil Theater"] = function () return gs_soil() and can_damage_skull() end,
-            ["Lost Woods Theatre Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Lost Woods Theatre Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Lost Woods GS Bean Ride"] = function () return is_adult() and gs_night() and ((can_ride_bean(BEAN_LOST_WOODS_LATE) or climb_anywhere()) and can_damage_skull() or hookshot_anywhere() or (trick('OOT_LOST_WOODS_ADULT_GS') and can_collect_distance() and (can_longshot() or can_use_bow() or has_bombchu() or can_use_din()))) end,
             ["Lost Woods Grass Deep 1"] = function () return can_cut_grass() end,
             ["Lost Woods Grass Deep 2"] = function () return can_cut_grass() end,
@@ -6256,7 +6256,7 @@ function _oot_logic()
             ["Graveyard Crate HP"] = function () return can_ride_bean(BEAN_GRAVEYARD) or can_longshot() or climb_anywhere() or hookshot_anywhere() end,
             ["Graveyard Crate"] = function () return can_ride_bean(BEAN_GRAVEYARD) or can_longshot() or climb_anywhere() or hookshot_anywhere() end,
             ["Graveyard GS Soil"] = function () return gs_soil() and can_damage_skull() end,
-            ["Graveyard Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Graveyard Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Graveyard GS Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_ranged_weapon() or has_explosives() or can_use_din()))) end,
             ["Graveyard Grass 01"] = function () return can_cut_grass() end,
             ["Graveyard Grass 02"] = function () return can_cut_grass() end,
@@ -6402,7 +6402,7 @@ function _oot_logic()
             ["Death Mountain Trail Lower Rocks"] = function () return true end,
             ["Death Mountain Trail GS Entrance"] = function () return gs() and (has_explosives() or (can_hammer() and (can_use_sticks() or can_use_sword_master() or can_use_sword_gilded() or (age_sword_adult() and has('SWORD_BIGGORON')) or has_ranged_weapon() or can_use_din()))) end,
             ["Death Mountain Trail GS Soil"] = function () return gs_soil() and has_bombflowers() and can_damage_skull() end,
-            ["Death Mountain Trail Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Death Mountain Trail Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Death Mountain Trail GS Above Dodongo"] = function () return gs_night() and is_adult() and (can_hammer() or (trick('OOT_DMT_RED_ROCK_GS') and can_use_sword())) end,
             ["Death Mountain Trail Rupee Upper"] = function () return is_child() and event('BOULDER_DEATH_MOUNTAIN') end,
             ["Death Mountain Trail Rupee Lower"] = function () return is_child() and has_explosives_or_hammer() end,
@@ -6658,7 +6658,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Zora River Bean Seller"] = function () return is_child() and can_use_wallet(1) and soul_bean_salesman() end,
-            ["Bean Seller Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Bean Seller Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Zora River HP Pillar"] = function () return is_child() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() or glitch_megaflip() end,
             ["Zora River HP Platform"] = function () return is_child() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() or glitch_megaflip() end,
             ["Zora River Frogs Storms"] = function () return is_child() and can_play_storms() end,
@@ -6890,7 +6890,7 @@ function _oot_logic()
             ["Lake Hylia GS Lab Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (trick('OOT_LAB_WALL_GS') and (can_use_sword() or can_use_sticks())) or (time_travel_at_will() and (scarecrow_hookshot() or hookshot_anywhere() or can_ride_bean(BEAN_LAKE_HYLIA)) and (has_explosives_or_hammer() or can_use_din() or can_use_slingshot()))) end,
             ["Lake Hylia GS Island"] = function () return is_child() and gs_night() and can_damage_skull() and (can_swim() or (has_iron_boots() and can_longshot()) or (time_travel_at_will() and (scarecrow_longshot() or hookshot_anywhere() or climb_anywhere()))) end,
             ["Lake Hylia GS Soil"] = function () return gs_soil() and can_damage_skull() end,
-            ["Lake Hylia Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Lake Hylia Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Lake Hylia GS Big Tree"] = function () return is_adult() and gs_night() and (can_longshot() or (climb_anywhere() and can_damage_skull())) end,
             ["Lake Hylia Island Big Fairy"] = function () return can_play_sun() and (is_child() and (can_swim() or (has_iron_boots() and longshot_anywhere())) or (is_adult() and (lake_water_control() and can_swim() or scarecrow_longshot() or hookshot_anywhere() or climb_anywhere()))) end,
             ["Lake Hylia Pot 1"] = function () return is_child() end,
@@ -7232,7 +7232,7 @@ function _oot_logic()
             ["Death Mountain Crater Sheik Song"] = function () return is_adult() and soul_npc(SOUL_NPC_SHEIK) end,
             ["Death Mountain Crater Adult Rocks"] = function () return is_adult() end,
             ["Death Mountain Crater GS Soil"] = function () return gs_soil() and can_damage_skull() end,
-            ["Death Mountain Crater Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Death Mountain Crater Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
         },
         ["age_change"] = true,
     },
@@ -7306,7 +7306,7 @@ function _oot_logic()
             ["Gerudo Valley Crate HP"] = function () return is_child() and soul_cucco() or can_longshot() or climb_anywhere() end,
             ["Gerudo Valley Waterfall HP"] = function () return is_child() or can_swim() or can_longshot() or (has_iron_boots() and can_hookshot()) end,
             ["Gerudo Valley GS Soil"] = function () return gs_soil() and can_damage_skull() end,
-            ["Gerudo Valley Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Gerudo Valley Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Gerudo Valley GS Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (climb_anywhere() and (can_use_sword_master() or (age_sword_adult() and has('SWORD_BIGGORON')) or has_explosives() or can_use_din() or can_use_sticks() or can_use_slingshot()))) end,
             ["Gerudo Valley Cow"] = function () return is_child() and can_play_epona() and soul_cow() end,
             ["Gerudo Valley Crate Ledge"] = function () return is_child() and soul_cucco() or can_longshot() or climb_anywhere() end,
@@ -7597,7 +7597,7 @@ function _oot_logic()
             ["Desert Colossus Rocks"] = function () return true end,
             ["Desert Colossus HP"] = function () return can_ride_bean(BEAN_DESERT_COLOSSUS) end,
             ["Desert Colossus GS Soil"] = function () return gs_soil() and can_damage_skull() end,
-            ["Desert Colossus Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms end,
+            ["Desert Colossus Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Desert Colossus GS Tree"] = function () return is_adult() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_explosives() or has_ranged_weapon() or can_use_din()))) end,
             ["Desert Colossus GS Plateau"] = function () return is_adult() and gs_night() and (can_collect_distance() and trick('OOT_COLOSSUS_GS_NO_BEAN') or (can_ride_bean(BEAN_DESERT_COLOSSUS) and can_damage_skull())) end,
             ["Desert Colossus Wonder Item Oasis 1"] = function () return can_use_bow() or can_use_slingshot() end,
