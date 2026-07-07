@@ -341,8 +341,7 @@
             "name": "KF House of Twins",
             "sections": [              
               {
-                "name": "KF House of Twins Pot",
-                "short_name": "Pots",
+                "name": "KF House of Twins Pot",                
                 "access_rules": [
                   "$oot|Twins House Pot 1"
                 ],
@@ -808,8 +807,7 @@
                   "setting_scrubShuffleOot_true"
                 ],
                 "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "clear_as_group": false,
+                "chest_opened_img": "images/deku_scrub_grey.png",                
                 "item_count": 2
               },
               {
@@ -5642,19 +5640,35 @@
         "children": [          
           {
             "name": "Hyrule Castle",
-            "access_rules": [
-              "$oot_event_raw|MEET_ZELDA"
-            ],
+            
             "sections": [
+              {
+                "name": "Wonder in Window",
+                "access_rules": [
+                  "$oot|Castle Courtyard Wonder Item"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitemoot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "item_count": 1
+              },
               {
                 "name": "Song from Impa",
                 "short_name": "Song",
+                "access_rules": [
+                 "$oot_event_raw|MEET_ZELDA"
+                ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
                 "item_count": 1
               },
               {
                 "name": "HC Zeldas Letter",
+                "access_rules": [
+                 "$oot_event_raw|MEET_ZELDA"
+                ],
                 "hosted_item": "EVENT_OOT_MEET_ZELDA"
               }
             ],
@@ -7901,7 +7915,7 @@
                 "item_count": 8
               },
               {
-                "name": "Palmtree double (Slingshot/bow)",
+                "name": "Palmtree (Slingshot/bow)",
                 "short_name": "Palmtree",
                 "access_rules": [
                   "$oot|Desert Colossus Wonder Item Oasis 1"
@@ -7911,7 +7925,7 @@
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 2
+                "item_count": 1
               },
               {
                 "name": "Palmtree single (Slingshot)",
@@ -7924,7 +7938,7 @@
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 1
+                "item_count": 2
               },
               {
                 "name": "Colossus GS Bean Patch",

@@ -1520,33 +1520,10 @@
   },
   {
     "name": "Beneath the Well",
-    "short_name": "Well",
+    "short_name": "BTW",
     "chest_unopened_img": "images/system/chest_brown_closed.png",
     "chest_opened_img": "images/system/chest_brown_open.png",
     "sections": [
-      {
-        "name": "Mirror Shield Chest",
-        "chest_unopened_img": "images/system/chest_unopened_big.png",
-        "chest_opened_img": "images/system/chest_open_big.png",
-        "access_rules": [
-          "$mm|Beneath The Well Mirror Shield"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Right Side Well Chest",
-        "access_rules": [
-          "$mm|Beneath The Well Skulltulla Chest"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Left Side Well Chest",
-        "access_rules": [
-          "$mm|Beneath The Well Keese Chest"
-        ],
-        "item_count": 1
-      },
       {
         "name": "Left Side Grass",
         "short_name": "Left Side",
@@ -1571,6 +1548,25 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 5
+      },
+      {
+        "name": "Left Side Well Chest",
+        "access_rules": [
+          "$mm|Beneath The Well Keese Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Fairy Fountain",
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "access_rules": [
+          "$mm|Beneath The Well Fairy Fountain Fairy 1"
+        ],
+        "visibility_rules": [
+          "setting_fairyFountainFairyShuffleMm_true"
+        ],
+        "item_count": 8
       },
       {
         "name": "Cow",
@@ -1649,6 +1645,13 @@
         "item_count": 4
       },
       {
+        "name": "Right Side Well Chest",
+        "access_rules": [
+          "$mm|Beneath The Well Skulltulla Chest"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Middle Pots in a Row",
         "access_rules": [
           "$mm|Beneath The Well Pot Middle 01"
@@ -1659,18 +1662,6 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 10
-      },
-      {
-        "name": "Fairy Fountain",
-        "chest_unopened_img": "images/Fairy.png",
-        "chest_opened_img": "images/FairyGreyscale.png",
-        "access_rules": [
-          "$mm|Beneath The Well Fairy Fountain Fairy 1"
-        ],
-        "visibility_rules": [
-          "setting_fairyFountainFairyShuffleMm_true"
-        ],
-        "item_count": 8
       },
       {
         "name": "Near End Grass",
@@ -1684,6 +1675,15 @@
           "setting_shuffleGrassMm_dungeon"
         ],
         "item_count": 5
+      },
+      {
+        "name": "Mirror Shield Chest",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "access_rules": [
+          "$mm|Beneath The Well Mirror Shield"
+        ],
+        "item_count": 1
       }
     ],
     "map_locations": [
@@ -1713,7 +1713,7 @@
         "item_count": 12
       },
       {
-        "name": "Outside Entrance Pots",
+        "name": "Outside Entrance Pot",
         "access_rules": [
           "$mm|Ancient Castle of Ikana Pot Exterior"
         ],
@@ -1732,19 +1732,6 @@
           "$mm|Ancient Castle of Ikana HP"
         ],
         "item_count": 1
-      },
-      {
-        "name": "Outside Entrance Bushes",
-        "short_name": "Bushes",
-        "access_rules": [
-          "$mm|Ancient Castle of Ikana Bushes"
-        ],
-        "visibility_rules": [
-          "setting_BushMm_dungeon"
-        ],
-        "chest_unopened_img": "images/system/bush.png",
-        "chest_opened_img": "images/system/bush_grey.png",                
-        "item_count": 2
       },
       {
         "name": "Entrance Pots",
@@ -3388,6 +3375,19 @@
         "item_count": 2
       },
       {
+        "name": "Water Room Crates",
+        "short_name": "Water Crates",
+        "chest_unopened_img": "images/crate.png",
+        "chest_opened_img": "images/crate_grey.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Crate Water 1"
+        ],
+        "visibility_rules": [
+          "setting_cratemm_dungeon"
+        ],
+        "item_count": 3
+      },
+      {
         "name": "Behind Sun Block - Compass",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
@@ -3408,19 +3408,6 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
-      },
-      {
-        "name": "Water Room Crates",
-        "short_name": "Water Crates",
-        "chest_unopened_img": "images/crate.png",
-        "chest_opened_img": "images/crate_grey.png",
-        "access_rules": [
-          "$mm|Stone Tower Temple Crate Water 1"
-        ],
-        "visibility_rules": [
-          "setting_cratemm_dungeon"
-        ],
-        "item_count": 3
       },
       {
         "name": "Water Room Underwater Lower Pots",
@@ -3511,12 +3498,25 @@
         "item_count": 2
       },
       {
-        "name": "Lava Room Fire Ring",
-        "short_name": "Lava Room Fire Ring",
+        "name": "Wind Room Rupees",
+        "short_name": "Wind Rupees",
+        "access_rules": [
+          "$mm|Stone Tower Temple Rupee Wind Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesMm_dungeon"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 6
+      },
+      {
+        "name": "Wind Room Ledge",
+        "short_name": "Wind Room Chest",
         "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "$mm|Stone Tower Temple Wind Room Jail Chest"
+          "$mm|Stone Tower Temple Wind Room Ledge Chest"
         ],
         "visibility_rules": [
           "setting_strayFairyChestShuffle_ownDungeon"
@@ -3524,12 +3524,12 @@
         "item_count": 1
       },
       {
-        "name": "Lava Room Ledge",
-        "short_name": "Lava Room Chest",
+        "name": "Wind Room Fire Ring",
+        "short_name": "Wind Room Fire Ring",
         "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "$mm|Stone Tower Temple Wind Room Ledge Chest"
+          "$mm|Stone Tower Temple Wind Room Jail Chest"
         ],
         "visibility_rules": [
           "setting_strayFairyChestShuffle_ownDungeon"
@@ -3547,19 +3547,6 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 4
-      },
-      {
-        "name": "Wind Room Rupees",
-        "short_name": "Wind Rupees",
-        "access_rules": [
-          "$mm|Stone Tower Temple Rupee Wind Room 1"
-        ],
-        "visibility_rules": [
-          "setting_shuffleFreeRupeesMm_dungeon"
-        ],
-        "chest_unopened_img": "images/system/blue.png",
-        "chest_opened_img": "images/system/blue_check.png",
-        "item_count": 6
       },
       {
         "name": "Garo Master Miniboss - Light Arrow",
@@ -3595,19 +3582,6 @@
         "chest_unopened_img": "images/system/blue.png",
         "chest_opened_img": "images/system/blue_check.png",
         "item_count": 8
-      },
-      {
-        "name": "Pre-Boss Crystal Switch",
-        "short_name": "Pre Boss Crystal Switch",
-        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/mm_stray_fairy.png",
-        "access_rules": [
-          "$mm|Stone Tower Temple Before Water Bridge Chest"
-        ],
-        "visibility_rules": [
-          "setting_strayFairyChestShuffle_ownDungeon"
-        ],
-        "item_count": 1
       },
       {
         "name": "Eyegore Chest",
@@ -3817,7 +3791,7 @@
       },
       {
         "name": "Before Gomess Crates",
-        "short_name": "Gomess Crates",
+        "short_name": "Pre-Gomess",
         "chest_unopened_img": "images/crate.png",
         "chest_opened_img": "images/crate_grey.png",
         "access_rules": [
@@ -3842,7 +3816,7 @@
       },
       {
         "name": "Death Armos Switch Chest in Inverted",
-        "short_name": "Inverted Death Armos",
+        "short_name": "Armos Switch",
         "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
@@ -3860,6 +3834,19 @@
         "short_name": "Giant's Mask",
         "access_rules": [
           "$mm|Stone Tower Temple Inverted Giant Mask"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pre-Boss Crystal Switch",
+        "short_name": "Pre Boss Crystal Switch",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Before Water Bridge Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyChestShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3888,21 +3875,8 @@
         "item_count": 4
       },
       {
-        "name": "Pre Boss Rupees Front",
-        "short_name": "Front Rupees",
-        "access_rules": [
-          "$mm|Stone Tower Temple Inverted Rupee Pre-Boss Top 1"
-        ],
-        "visibility_rules": [
-          "setting_shuffleFreeRupeesMm_dungeon"
-        ],
-        "chest_unopened_img": "images/system/blue.png",
-        "chest_opened_img": "images/system/blue_check.png",
-        "item_count": 7
-      },
-      {
         "name": "Pre Boss Rupees Back",
-        "short_name": "Front Rupees",
+        "short_name": "pre-boss",
         "access_rules": [
           "$mm|Stone Tower Temple Inverted Rupee Pre-Boss Back 1"
         ],
@@ -3912,6 +3886,19 @@
         "chest_unopened_img": "images/system/blue.png",
         "chest_opened_img": "images/system/blue_check.png",
         "item_count": 4
+      },
+      {
+        "name": "Pre Boss Rupees Front",
+        "short_name": "Floating pre-boss",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted Rupee Pre-Boss Top 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeRupeesMm_dungeon"
+        ],
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "item_count": 8
       },
       {
         "name": "Twinmold",

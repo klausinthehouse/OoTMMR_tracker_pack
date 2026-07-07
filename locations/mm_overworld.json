@@ -4072,7 +4072,7 @@
                         ],
                         "chest_unopened_img": "images/system/blue.png",
                         "chest_opened_img": "images/system/blue_check.png",
-                        "item_count": 20
+                        "item_count": 6
                       },
                       {
                         "name": "Rupees End of Race",                    
