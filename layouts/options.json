@@ -2706,6 +2706,11 @@
       },
       {
         "type": "item",
+        "item": "MM_SOUL_NPC_GORON_CHILD",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "MM_SOUL_NPC_BANKER",
         "height": 16
       },
@@ -2792,11 +2797,6 @@
       {
         "type": "item",
         "item": "MM_SOUL_NPC_GORMAN",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MM_SOUL_NPC_GORON_CHILD",
         "height": 16
       },
       {
