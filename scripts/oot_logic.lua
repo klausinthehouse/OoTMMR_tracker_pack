@@ -5126,7 +5126,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Hyrule Field Grotto Near Gerudo GS"] = function () return gs() and (can_collect_distance() or climb_anywhere()) and has_fire() end,
-            ["Hyrule Field Cow"] = function () return has_fire() and can_play_epona() end,
+            ["Hyrule Field Cow"] = function () return has_fire() and can_play_epona() and soul_cow() end,
             ["Hyrule Field Cow Grotto Pot 1"] = function () return has_fire() end,
             ["Hyrule Field Cow Grotto Pot 2"] = function () return has_fire() end,
             ["Hyrule Field Grotto Near Gerudo Grass 1"] = function () return has_fire() and can_cut_grass() end,
