@@ -490,7 +490,21 @@
                         "height": 14
                       }
                     ]
-                  }                         
+                  },
+                  {
+                    "type": "item",
+                    "item": "OOT_RUPEE_MAGICAL",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "OOT_PLATINUM_TOKEN",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  }                             
                 ]
               },
               {
