@@ -842,6 +842,36 @@
     ]
   },
   {
+    "name": "Magical Rupee",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/magical.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/magical.png",
+        "codes": "OOT_RUPEE_MAGICAL"
+      }
+    ]
+  },
+  {
+    "name": "Platinum Token",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/platinum.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/platinum.png",
+        "codes": "OOT_PLATINUM_TOKEN"
+      }
+    ]
+  },
+  {
     "name": "Soul of Anubis",
     "type": "progressive",
     "allow_disabled": false,
