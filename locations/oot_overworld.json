@@ -471,6 +471,9 @@
                 "access_rules": [
                   "$oot|Kokiri Forest Grass Child 1"
                 ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 5
@@ -480,6 +483,9 @@
                 "short_name": "Near Saria's Adult",
                 "access_rules": [
                   "$oot|Kokiri Forest Grass Adult 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",

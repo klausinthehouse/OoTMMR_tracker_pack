@@ -543,12 +543,12 @@
                 ]
               },
               {
-                "name": "East Clock Town center",
+                "name": "East Clock Town Crates",
                 "sections": [
                   {
                     "name": "ECT Crates",
-                    "chest_unopened_img": "images/crate.png",
-                    "chest_opened_img": "images/crate_grey.png",
+                    "chest_unopened_img": "images/system/crate.png",
+                    "chest_opened_img": "images/system/crate_grey.png",
                     "access_rules": [
                       "$mm|Clock Town East Small Crate 1"
                     ],
@@ -556,18 +556,6 @@
                       "setting_cratemm_overworld"
                     ],
                     "item_count": 2
-                  },
-                  {
-                    "name": "Wonderitems above H&D",
-                    "chest_unopened_img": "images/system/Wonder.png",
-                    "chest_opened_img": "images/system/Wonder_grey.png",
-                    "access_rules": [
-                      "$mm|Clock Town East Wonder Item Basket 1"
-                    ],
-                   "visibility_rules": [
-                      "setting_wonderitem_on"
-                    ],
-                   "item_count": 9
                   }
                 ],
                 "map_locations": [
@@ -598,6 +586,18 @@
                       "$mm|Honey & Darling Reward Any Day"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Wonderitems above entrance",
+                    "chest_unopened_img": "images/system/Wonder.png",
+                    "chest_opened_img": "images/system/Wonder_grey.png",
+                    "access_rules": [
+                      "$mm|Clock Town East Wonder Item Basket 1"
+                    ],
+                   "visibility_rules": [
+                      "setting_wonderitem_on"
+                    ],
+                   "item_count": 9
                   }
                 ],
                 "map_locations": [
@@ -612,6 +612,20 @@
                 "name": "Stock Pot Inn",
                 "short_name": "Inn",
                 "sections": [
+                  {
+                    "name": "Inn Guest Room Chest",
+                    "access_rules": [
+                      "$mm|Stock Pot Inn Guest Room Chest"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Inn Employee Room Chest - Final Night",
+                    "access_rules": [
+                      "$mm|Stock Pot Inn Staff Room Chest"
+                    ],
+                    "item_count": 1
+                  },
                   {
                     "name": "Room Reservation Mixup - Day 1: from 1:45 PM to 4 PM",
                     "access_rules": [
@@ -673,20 +687,6 @@
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
                       "$mm|Stock Pot Inn ??? HP"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Inn Guest Room Chest",
-                    "access_rules": [
-                      "$mm|Stock Pot Inn Guest Room Chest"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Inn Employee Room Chest - Final Night",
-                    "access_rules": [
-                      "$mm|Stock Pot Inn Staff Room Chest"
                     ],
                     "item_count": 1
                   }
@@ -826,7 +826,8 @@
                 ]
               },
               {
-                "name": "Kamaros Dance",                
+                "name": "Luck and Dance",
+                "short_name": "Fun and Games",
                 "sections": [
                   {
                     "name": "Rosa Sisters Gift - Night 1 or 2",
@@ -872,48 +873,6 @@
                   {
                     "map": "termina",
                     "x": 38,
-                    "y": 111
-                  }
-                ]
-              },
-              {
-                "name": "Lottery",                
-                "sections": [
-                  {
-                    "name": "Lottery Day 1",
-                    "access_rules": [
-                      "$mm|Clock Town Lottery Day 1"
-                    ],
-                    "visibility_rules": [
-                      "setting_lottery_on"
-                    ],                    
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Lottery Day 2",
-                    "access_rules": [
-                      "$mm|Clock Town Lottery Day 2"
-                    ],
-                    "visibility_rules": [
-                      "setting_lottery_on"
-                    ],                    
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Lottery Day 3",
-                    "access_rules": [
-                      "$mm|Clock Town Lottery Day 3"
-                    ],
-                    "visibility_rules": [
-                      "setting_lottery_on"
-                    ],                    
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 55,
                     "y": 111
                   }
                 ]
@@ -1186,8 +1145,8 @@
                   },
                   {
                     "name": "Guru-Guru-Crate",
-                    "chest_unopened_img": "images/crate.png",
-                    "chest_opened_img": "images/crate_grey.png",
+                    "chest_unopened_img": "images/system/crate.png",
+                    "chest_opened_img": "images/system/crate_grey.png",
                     "access_rules": [
                       "$mm|Clock Town Laundry Pool Small Crate"
                     ],
@@ -1247,6 +1206,11 @@
                     "map": "termina",
                     "x": 25,
                     "y": 195
+                  },
+                  {
+                    "map": "termina",
+                    "x": 175,
+                    "y": 130
                   }
                 ]
               },
@@ -1293,7 +1257,7 @@
                     "item_count": 3
                   },
                   {
-                    "name": "Underwater Rupees - Day 2",                    
+                    "name": "Underwater Rupees",                    
                     "access_rules": [
                       "$mm|Clock Town Laundry Pool Rupee 1"
                     ],
@@ -1451,44 +1415,7 @@
                   "$mm|Termina Field Tree Stump Chest"
                 ],
                 "item_count": 1
-              },              
-              {
-                "name": "Soil-Items by Stump",                    
-                "access_rules": [
-                  "$mm|Termina Field Soft Soils"
-                ],
-                "visibility_rules": [
-                  "setting_soil_overworld"
-                ],
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",                
-                "item_count": 1
               },
-              {
-                "name": "Wonderitem in Big Grass",
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "access_rules": [
-                 "$mm|Termina Field Wonder Item Grass 1"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitem_on"
-                ],
-                "item_count": 2                
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 563,
-                "y": 352
-              }
-            ]
-          },
-          {
-            "name": "Termina Field Grotto near Stump",
-            "short_name": "SE Termina Field",
-            "sections": [
               {
                 "name": "Grotto near stump",
                 "access_rules": [
@@ -1506,14 +1433,50 @@
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 14              
+                "item_count": 14
+              },              
+              {
+                "name": "Soil-Items by Stump",                    
+                "access_rules": [
+                  "$mm|Termina Field Soft Soils"
+                ],
+                "visibility_rules": [
+                  "setting_soil_overworld"
+                ],
+                "chest_unopened_img": "images/system/blue.png",
+                "chest_opened_img": "images/system/blue_check.png",                
+                "item_count": 1
+              },
+              {
+                "name": "Wonderitem in Grass",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 3                
+              },
+              {
+                "name": "Wonderitem Graffiti",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Graffiti 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 3
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
-                "x": 545,
-                "y": 335
+                "x": 563,
+                "y": 352
               }
             ]
           },
@@ -1535,7 +1498,7 @@
                 "chest_unopened_img": "images/system/Rock.png",
                 "chest_opened_img": "images/system/Rock_grey.png",
                 "access_rules": [
-                  "$mm|Termina Field Rocks"
+                  "$mm|Termina Field Rock"
                 ],
                 "visibility_rules": [
                   "setting_rockmm_overworld"
@@ -1552,7 +1515,7 @@
             ]
           },
           {
-            "name": "East Pillar Grotto",
+            "name": "East Pillars",
             "sections": [
               {
                 "name": "East Pillar Grotto Chest",
@@ -1572,19 +1535,7 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 14
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 582,
-                "y": 302
-              }
-            ]
-          },
-          {
-            "name": "East Pillars",
-            "sections": [
+              },
               {
                 "name": "East Pillar Pot",
                 "access_rules": [
@@ -1625,7 +1576,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "x": 612,
+                "x": 582,
                 "y": 302
               }
             ]
@@ -1634,6 +1585,19 @@
             "name": "Peahat Grotto",
             "short_name": "Peahat Grotto",
             "sections": [
+              {
+                "name": "Butterflies in the Grass",                    
+                "short_name": "TF Butterflies",
+                "access_rules": [
+                  "$mm|Termina Field Butterfly 1"
+               ],
+                "visibility_rules": [
+                  "setting_shuffleButterflyMm_on"
+               ],
+               "chest_unopened_img": "images/system/Butterfly.png",
+               "chest_opened_img": "images/system/Butterfly_grey.png",
+               "item_count": 2
+              },
               {
                 "name": "Kill Peahats (Daytime Only)",
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
@@ -1654,6 +1618,18 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 12
+              },
+              {
+                "name": "Wonderitem in Grass",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -1665,17 +1641,41 @@
             ]
           },
           {
-            "name": "Dodongo Grotto",
-            "short_name": "Dodongo",
+            "name": "Termina Field North",
+            "short_name": "TF North",
             "sections": [
               {
-                "name": "Kill the Dodongos",
+                "name": "Kill the Dodongos (Grotto)",
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
                   "$mm|Termina Field Dodongo Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Wonderitem on Ramp",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item North Ramp"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Rocks on Wall",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Rocks North Wall"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 7
               } 
             ],
             "map_locations": [
@@ -1739,13 +1739,25 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
+              },
+              {
+                "name": "Wonderitem above",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Hollow Trunk"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
-                "x": 540,
-                "y": 347
+                "x": 525,
+                "y": 340
               }
             ]
           },
@@ -1798,20 +1810,7 @@
                   "setting_rockmm_overworld"
                 ],
                 "item_count": 1
-              }   
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 475,
-                "y": 310
-              }
-            ]
-          },
-          {
-            "name": "Rock Behind Fenceo",
-            "short_name": "behind Fence",
-            "sections": [
+              },
               {
                 "name": "Rock behind Fence",
                 "chest_unopened_img": "images/system/Rock.png",
@@ -1828,7 +1827,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "x": 445,
+                "x": 475,
                 "y": 310
               }
             ]
@@ -1860,8 +1859,8 @@
               },
               {
                 "name": "Scrub Grotto Crate",
-                "chest_unopened_img": "images/crate.png",
-                "chest_opened_img": "images/crate_grey.png",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
                 "access_rules": [
                   "$mm|Termina Field Scrub Crate"
                 ],
@@ -2050,7 +2049,7 @@
             ]
           },
           {
-            "name": "North Termina",
+            "name": "NW Grass Patches (Inner Ring)",
             "short_name": "NW Grass",
             "sections": [
               {
@@ -2076,30 +2075,6 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 12
-              },
-              {
-                "name": "Wonderitem on Ramp",
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "access_rules": [
-                 "$mm|Termina Field Wonder Item North Ramp"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitem_on"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Rocks on Wall",
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "access_rules": [
-                  "$mm|Termina Field Rocks North Wall"
-                ],
-                "visibility_rules": [
-                  "setting_rockmm_overworld"
-                ],
-                "item_count": 7
               }
             ],
             "map_locations": [
@@ -2221,7 +2196,7 @@
             ]
           },          
           {
-            "name": "Near Takkuri",
+            "name": "Grass Patch Near Takkuri",
             "short_name": "SW Grass",
             "sections": [
               {
@@ -2235,31 +2210,6 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 12
-              },
-              {
-                "name": "Butterflies in the Grass",                    
-                "short_name": "TF Butterflies",
-                "access_rules": [
-                  "$mm|Termina Field Butterfly 1"
-               ],
-                "visibility_rules": [
-                  "setting_shuffleButterflyMm_on"
-               ],
-               "chest_unopened_img": "images/system/Butterfly.png",
-               "chest_opened_img": "images/system/Butterfly_grey.png",
-               "item_count": 2
-              },
-              {
-                "name": "Wonderitem in Grass",
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "access_rules": [
-                 "$mm|Termina Field Wonder Item Grass 1"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitem_on"
-                ],
-                "item_count": 2
               }
             ],
             "map_locations": [
@@ -2271,7 +2221,7 @@
             ]
           },
           {
-            "name": "Near Hollow Tree",
+            "name": "Grass Patches Near Hollow Tree",
             "short_name": "SW Grass",
             "sections": [
               {
@@ -2297,49 +2247,13 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 12
-              },
-              {
-                "name": "Wonderitem on Hollow Tree",
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "access_rules": [
-                 "$mm|Termina Field Wonder Item Hollow Trunk"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitem_on"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Wonderitem in Small Grass",
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "access_rules": [
-                 "$mm|Termina Field Wonder Item Grass 1"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitem_on"
-                ],
-                "item_count": 1                
-              },
-              {
-                "name": "Wonderitem Graffiti",
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "access_rules": [
-                 "$mm|Termina Field Wonder Item Graffiti 1"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitem_on"
-                ],
-                "item_count": 3
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
-                "x": 525,
-                "y": 335
+                "x": 538,
+                "y": 348
               }
             ]
           },
@@ -2442,6 +2356,14 @@
                 "chest_unopened_img": "images/system/tree.png",
                 "chest_opened_img": "images/system/tree_grey.png",                
                 "item_count": 2
+              },
+              {
+                "name": "Part-Timer in Tree",
+                "short_name": "Knock him down",
+                "access_rules": [
+                  "$mm|Termina Field Part Timer"
+                ],                               
+                "item_count": 1
               },
               {
                 "name": "Soil-Items by Observatory",                    
@@ -2684,8 +2606,8 @@
             "sections": [
               {
                 "name": "Gormans Crate",
-                "chest_unopened_img": "images/crate.png",
-                "chest_opened_img": "images/crate_grey.png",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
                 "access_rules": [
                   "$mm|Gorman Track Crate"
                 ],
@@ -2876,8 +2798,8 @@
               },
               {
                 "name": "Romanis Crate",
-                "chest_unopened_img": "images/crate.png",
-                "chest_opened_img": "images/crate_grey.png",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
                 "access_rules": [
                   "$mm|Romani Ranch Crate"
                 ],
@@ -2996,8 +2918,8 @@
               },
               {
                 "name": "Cucco-Crates",
-                "chest_unopened_img": "images/crate.png",
-                "chest_opened_img": "images/crate_grey.png",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
                 "access_rules": [
                   "$mm|Cucco Shack Crate 1"
                 ],
@@ -3137,11 +3059,10 @@
         "color": "#058e2e",
         "children": [
           {
-            "name": "Road to Southern Swamp",
+            "name": "Swamp Path Bat Tree",
             "sections": [
               {
                 "name": "Kill the bat and climb",
-                "short_name": "HP on Tree",
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
@@ -3185,48 +3106,12 @@
                 "chest_unopened_img": "images/system/tree.png",
                 "chest_opened_img": "images/system/tree_grey.png",                
                 "item_count": 6
-              },
-              {
-                "name": "Grass near Swamp Archery",
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Road to Southern Swamp Grass 1"
-                ],
-                "item_count": 2
-              },
-              {
-                "name": "Potted Grass near Swamp Archery",
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Road to Southern Swamp Potted Plant 1 Grass"
-                ],
-                "item_count": 2
-              },
-              {
-                "name": "Pots near Swamp Archery",
-                "access_rules": [
-                  "$mm|Road to Southern Swamp Potted Plant 1 Pot"
-                ],
-                "visibility_rules": [
-                  "setting_shufflePotsMm_true"
-                ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 2
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
-                "x": 550,
+                "x": 537,
                 "y": 389
               }
             ]
@@ -3298,20 +3183,56 @@
             "short_name": "Swamp Shooting Gallery",
             "sections": [
               {
-                "name": "2120 Points",
+                "name": "Perfect Score",
                 "access_rules": [
                   "$mm|Swamp Archery Reward 1"
                 ],
                 "item_count": 1
               },
               {
-                "name": "2180 Points",
+                "name": "Perfect Score With Time Left Over",
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
                   "$mm|Swamp Archery Reward 2"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass near Swamp Archery",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Grass 1"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Potted Grass near Swamp Archery",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Potted Plant 1 Grass"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Pots near Swamp Archery",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Potted Plant 1 Pot"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -3366,55 +3287,7 @@
           {
             "name": "Way to Deku Palace",
             "short_name": "Swamp-Swim",
-            "sections": [ 
-              {
-                "name": "Grass Patch 1 near Potion Shop",
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Southern Swamp Grass Near Witch Pack 1 Grass 01"
-                ],
-                "item_count": 9
-              },
-              {
-                "name": "Grass Patch 2 near Potion Shop",
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Southern Swamp Grass Near Witch Pack 2 Grass 01"
-                ],
-                "item_count": 9
-              },
-              {
-                "name": "Grass near Potion Gossip Stone",
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Southern Swamp Grass Near Witch 1"
-                ],
-                "item_count": 2
-              },
-              {
-                "name": "Pots near Potion Shop",
-                "access_rules": [
-                  "$mm|Southern Swamp Pot 1"
-                ],
-                "visibility_rules": [
-                  "setting_shufflePotsMm_true"
-                ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 3
-              },             
+            "sections": [              
               {
                 "name": "Tunnel Hive",
                 "short_name": "Hive",
@@ -3574,8 +3447,8 @@
             ]
           },
           {
-            "name": "Kotake Magic Potion Shop",
-            "short_name": "Potion Shop",
+            "name": "Kotake Red Potion Bottle",
+            "short_name": "Potion Bottle",
             "sections": [
               {
                 "name": "Talk to Kotake after seeing Koume in Woods",
@@ -3583,7 +3456,20 @@
                   "$mm|Swamp Potion Shop Kotake"
                 ],
                 "item_count": 1
-              },
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 645,
+                "y": 423
+              }
+            ]
+          },
+          {
+            "name": "Kotake Magic Potion Shop",
+            "short_name": "Potion Shop",
+            "sections": [
               {
                 "name": "Green Potion (10 Rupees)",
                 "access_rules": [
@@ -3617,7 +3503,7 @@
                 "item_count": 1
               },
               {
-                "name": "Hidden Rupee Right",                    
+                "name": "Potion Shop Rupee",                    
                 "access_rules": [
                   "$mm|Swamp Potion Shop Rupee"
                 ],
@@ -3627,6 +3513,54 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "item_count": 1
+              },
+              {
+                "name": "Grass Patch 1 near Potion Shop",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Near Witch Pack 1 Grass 01"
+                ],
+                "item_count": 9
+              },
+              {
+                "name": "Grass Patch 2 near Potion Shop",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Near Witch Pack 2 Grass 01"
+                ],
+                "item_count": 9
+              },
+              {
+                "name": "Grass near Gossip Stone",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Near Witch 1"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Pots near Potion Shop",
+                "access_rules": [
+                  "$mm|Southern Swamp Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -3935,7 +3869,7 @@
                         ],
                         "chest_unopened_img": "images/system/RedBoulder.png",
                         "chest_opened_img": "images/system/RedBoulder_grey.png",
-                        "item_count": 3
+                        "item_count": 6
                       },
                       {
                         "name": "Rupees on left side",                    
@@ -3947,7 +3881,7 @@
                         ],
                         "chest_unopened_img": "images/system/blue.png",
                         "chest_opened_img": "images/system/blue_check.png",
-                        "item_count": 8
+                        "item_count": 7
                       },
                       {
                         "name": "Rupees on left side far",                    
@@ -4158,18 +4092,6 @@
                     "item_count": 6
                   },
                   {
-                    "name": "Woodfall Owl Statue",
-                    "chest_unopened_img": "images/deactivated_owl_statue.png",
-                    "chest_opened_img": "images/activated_owl_statue.png",
-                    "access_rules": [
-                      "$mm|Woodfall Owl Statue"
-                    ],
-                    "visibility_rules": [
-                      "setting_owlShuffle_anywhere"
-                    ],
-                    "item_count": 1
-                  },
-                  {
                     "name": "Woodfall Pots before Temple",
                     "access_rules": [
                       "$mm|Woodfall Pot 1"
@@ -4182,7 +4104,7 @@
                     "item_count": 3
                   },
                   {
-                    "name": "Rupee on central Stump",                    
+                    "name": "Rupees on central Stump",                    
                     "access_rules": [
                       "$mm|Woodfall Rupee"
                     ],
@@ -4198,6 +4120,31 @@
                   {
                     "map": "termina",
                     "x": 542,
+                    "y": 462
+                  }
+                ]
+              },
+              {
+                "name": "Woodfall Owl Statue",
+                "short_name": "Owl Statue",
+                "sections": [
+                  {
+                    "name": "Woodfall Owl Statue",
+                    "chest_unopened_img": "images/deactivated_owl_statue.png",
+                    "chest_opened_img": "images/activated_owl_statue.png",
+                    "access_rules": [
+                      "$mm|Woodfall Owl Statue"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "force_invisibility_rules": [
+                      "setting_owlShuffle_none"
+                    ],
+                    "x": 530,
                     "y": 462
                   }
                 ]
@@ -4490,7 +4437,7 @@
                 "name": "Snowballs by Owl-Statue",
                 "short_name": "Snowowl",
                 "access_rules": [
-                  "$mm|Mountain Village Small Snowball 1"
+                  "$mm|Snowhead Small Snowball 1"
                 ],
                 "visibility_rules": [
                   "setting_SnowShuffle_overworld"
@@ -4498,7 +4445,20 @@
                 "chest_unopened_img": "images/system/snow.png",
                 "chest_opened_img": "images/system/snow_grey.png",
                 "item_count": 4
-              }    
+              },
+              {
+                "name": "Mountain Village Small Snowballs",
+                "short_name": "Small Snowballs",
+                "access_rules": [
+                  "$mm|Mountain Village Small Snowball 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 5
+              }     
             ],
             "map_locations": [
               {
@@ -4548,8 +4508,8 @@
                 "item_count": 1
               },
               {
-                "name": "Mountain Village Small Snowballs",
-                "short_name": "Small scattered",
+                "name": "Mountain Village Small Snowballs only Winter",
+                "short_name": "Small winter Snowballs",
                 "access_rules": [
                   "$mm|Mountain Village Small Snowball Winter 1"
                 ],
@@ -4558,20 +4518,7 @@
                 ],
                 "chest_unopened_img": "images/system/snow.png",
                 "chest_opened_img": "images/system/snow_grey.png",
-                "item_count": 5
-              },
-              {
-                "name": "Small Snowballs Mountain Village Cliff",
-                "short_name": "Small cliff",
-                "access_rules": [
-                  "$mm|Mountain Village Small Snowball Cliff 1"
-                ],
-                "visibility_rules": [
-                  "setting_SnowShuffle_overworld"
-                ],
-                "chest_unopened_img": "images/system/snow.png",
-                "chest_opened_img": "images/system/snow_grey.png",
-                "item_count": 2
+                "item_count": 4
               }    
             ],
             "map_locations": [
@@ -4587,7 +4534,6 @@
             "sections": [
               {
                 "name": "Mountain Village Grass Patch 1",
-                "short_name": "Patch 1",
                 "visibility_rules": [
                   "setting_shuffleGrassMm_overworld"
                 ],
@@ -4600,7 +4546,6 @@
               },
               {
                 "name": "Mountain Village Grass Patch 2",
-                "short_name": "Patch 3",
                 "visibility_rules": [
                   "setting_shuffleGrassMm_overworld"
                 ],
@@ -4613,7 +4558,6 @@
               },
               {
                 "name": "Mountain Village Grass Patch 3",
-                "short_name": "Patch 3",
                 "visibility_rules": [
                   "setting_shuffleGrassMm_overworld"
                 ],
@@ -4639,7 +4583,6 @@
               },
               {
                 "name": "Mountain Village Standalone Grass",
-                "short_name": "Standalone",
                 "visibility_rules": [
                   "setting_shuffleGrassMm_overworld"
                 ],
@@ -4689,7 +4632,7 @@
               },
               {
                 "name": "Spring Hive",
-                "short_name": "Up on Tree",
+                "short_name": "Hive",
                 "access_rules": [
                   "$mm|Mountain Village Hive"
                 ],
@@ -4701,8 +4644,7 @@
                 "item_count": 1
               },
               {
-                "name": "Red Boulders in Spring",
-                "short_name": "Under Smithy",                    
+                "name": "Red Boulders in Spring",                    
                 "access_rules": [
                   "$mm|Mountain Village Spring Red Boulder 1"
                 ],
@@ -4714,8 +4656,7 @@
                 "item_count": 3
               },
               {
-                "name": "Rupee under Red Boulders",
-                "short_name": "Under Red Boulder",                    
+                "name": "Rupee under Red Boulders",                    
                 "access_rules": [
                  "$mm|Mountain Village Rupee"
                 ],
@@ -4728,7 +4669,6 @@
               },              
               {
                 "name": "Gather the 5 frogs and beat Snowhead Temple",
-                "short_name": "Don Geros Choir",
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
@@ -4917,7 +4857,7 @@
                 ],
                 "chest_unopened_img": "images/system/tree.png",
                 "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 2
+                "item_count": 3
               },
               {
                 "name": "Ramp Trees",
@@ -5132,7 +5072,7 @@
                 "item_count": 1
               },
               {
-                "name": "Goron Racetrack Front Pots",
+                "name": "Goron Racetrack Pots",
                 "access_rules": [
                   "$mm|Goron Race Pot 01"
                 ],
@@ -5141,7 +5081,7 @@
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
-                "item_count": 13
+                "item_count": 1
               },
               {
                 "name": "Goron Racetrack Trees",
@@ -5155,18 +5095,6 @@
                 "chest_unopened_img": "images/system/tree.png",
                 "chest_opened_img": "images/system/tree_grey.png",                
                 "item_count": 10
-              },
-              {
-                "name": "Goron Racetrack Back Pots",
-                "access_rules": [
-                  "$mm|Goron Race Pot 01"
-                ],
-                "visibility_rules": [
-                  "setting_shufflePotsMm_true"
-                ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 17
               }
             ],
             "map_locations": [
@@ -5227,8 +5155,8 @@
               },
               {
                 "name": "Medigorons Crate",
-                "chest_unopened_img": "images/crate.png",
-                "chest_opened_img": "images/crate_grey.png",
+                "chest_unopened_img": "images/system/crate.png",
+                "chest_opened_img": "images/system/crate_grey.png",
                 "access_rules": [
                   "$mm|Goron Village Crate"
                 ],
@@ -5262,6 +5190,19 @@
                 "chest_unopened_img": "images/system/snow.png",
                 "chest_opened_img": "images/system/snow_grey.png",
                 "item_count": 12
+              },
+              {
+                "name": "Small Snowballs Goron Village Cliff",
+                "short_name": "Small cliff Snowballs",
+                "access_rules": [
+                  "$mm|Mountain Village Small Snowball Cliff 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -5686,7 +5627,7 @@
             "short_name": "Great Bay Grotto",
             "sections": [
               {
-                "name": "Behind Fisherman Hut",
+                "name": "Grotto Behind Fisherman Hut",
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "access_rules": [
@@ -5695,7 +5636,7 @@
                 "item_count": 1
               },
               {
-                "name": "Grass",
+                "name": "Grotto Behind Fisherman Hut",
                 "visibility_rules": [
                   "setting_shuffleGrassMm_overworld"
                 ],
@@ -5716,9 +5657,16 @@
             ]
           },
           {
-            "name": "Great Bay by Fisherman's House",
+            "name": "Fisherman's House",
             "short_name": "Fisherman Hut",
-            "sections": [              
+            "sections": [
+              {
+                "name": "Show Photo of Gerudo Pirate",
+                "access_rules": [
+                  "$mm_event_raw|SEAHORSE"
+                ],
+                "hosted_item": "EVENT_MM_SEAHORSE"
+              },
               {
                 "name": "Grass Near Fisherman's House",
                 "visibility_rules": [
@@ -5730,6 +5678,19 @@
                   "$mm|Great Bay Coast Grass 1"
                 ],
                 "item_count": 5
+              },
+              {
+                "name": "Trees on the Beach",
+                "short_name": "Trees",
+                "access_rules": [
+                  "$mm|Great Bay Coast Trees"
+                ],
+                "visibility_rules": [
+                  "setting_TreeShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/tree.png",
+                "chest_opened_img": "images/system/tree_grey.png",                
+                "item_count": 3
               },
               {
                 "name": "In Grass Butterflies",                    
@@ -5780,36 +5741,11 @@
                 "item_count": 1
               },
               {
-                "name": "Trees on the Beach",
-                "short_name": "Trees",
-                "access_rules": [
-                  "$mm|Great Bay Coast Trees"
-                ],
-                "visibility_rules": [
-                  "setting_TreeShuffleMm_overworld"
-                ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 3
-              },
-              {
                 "name": "Rocks in Sand",
                 "chest_unopened_img": "images/system/Rock.png",
                 "chest_opened_img": "images/system/Rock_grey.png",
                 "access_rules": [
                   "$mm|Great Bay Coast Ledge Rocks"
-                ],
-                "visibility_rules": [
-                  "setting_rockmm_overworld"
-                ],
-                "item_count": 5
-              },
-              {
-                "name": "Shallow Rocks",
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "access_rules": [
-                  "$mm|Great Bay Coast shallow Rocks"
                 ],
                 "visibility_rules": [
                   "setting_rockmm_overworld"
@@ -5826,8 +5762,8 @@
                 "visibility_rules": [
                   "setting_rockmm_overworld"
                 ],
-                "item_count": 14
-              }      
+                "item_count": 19
+              }    
             ],
             "map_locations": [
               {
@@ -5876,58 +5812,7 @@
                       "$mm|Great Bay Coast HP"
                     ],
                     "item_count": 1
-                  },    
-                  {
-                    "name": "Great Bay on Ledge Pots",
-                    "short_name": "On Ledge Pots",
-                    "access_rules": [
-                      "$mm|Great Bay Coast Pot Ledge 1"
-                    ],
-                    "visibility_rules": [
-                      "setting_shufflePotsMm_true"
-                    ],
-                    "chest_unopened_img": "images/pot.png",
-                    "chest_opened_img": "images/pot_grey.png",
-                    "item_count": 3
                   },
-                  {
-                    "name": "Great Bay under Ledge Pots",
-                    "short_name": "Under Ledge Pots",
-                    "access_rules": [
-                      "$mm|Great Bay Coast Pot 01"
-                    ],
-                    "visibility_rules": [
-                      "setting_shufflePotsMm_true"
-                    ],
-                    "chest_unopened_img": "images/pot.png",
-                    "chest_opened_img": "images/pot_grey.png",
-                    "item_count": 4
-                  },
-                  {
-                    "name": "Rocks on Shore",
-                    "chest_unopened_img": "images/system/Rock.png",
-                    "chest_opened_img": "images/system/Rock_grey.png",
-                    "access_rules": [
-                      "$mm|Great Bay Coast Ledge Rocks"
-                    ],
-                    "visibility_rules": [
-                      "setting_rockmm_overworld"
-                    ],
-                    "item_count": 3
-                  }                   
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 320,
-                    "y": 300
-                  }
-                ]
-              },
-               {
-                "name": "Great Bay Coast Ledge Cow Grotto",
-                "short_name": "Cow Grotto",
-                "sections": [
                   {
                     "name": "Great Bay Ledge Grotto Cows",
                     "chest_unopened_img": "images/system/cow.png",
@@ -5977,16 +5862,54 @@
                    "chest_unopened_img": "images/system/Butterfly.png",
                    "chest_opened_img": "images/system/Butterfly_grey.png",
                    "item_count": 3
+                  },    
+                  {
+                    "name": "Great Bay on Ledge Pots",
+                    "short_name": "On Ledge Pots",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Pot Ledge 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 3
+                  },
+                  {
+                    "name": "Great Bay under Ledge Pots",
+                    "short_name": "Under Ledge Pots",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Pot 01"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 4
+                  },
+                  {
+                    "name": "Rocks on Shore",
+                    "chest_unopened_img": "images/system/Rock.png",
+                    "chest_opened_img": "images/system/Rock_grey.png",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Ledge Rocks"
+                    ],
+                    "visibility_rules": [
+                      "setting_rockmm_overworld"
+                    ],
+                    "item_count": 2
                   }                   
                 ],
                 "map_locations": [
                   {
                     "map": "termina",
                     "x": 320,
-                    "y": 280
+                    "y": 300
                   }
                 ]
-              },             
+              },
               {
                 "name": "Fisherman Island",
                 "short_name": "Fisherman Game",
@@ -6072,7 +5995,40 @@
                 ]
               },
               {
-                "name": "By Marine Lab",                
+                "name": "Ocean Tingle Maps",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "GB Tingle",
+                "sections": [
+                  {
+                    "name": "Map: Ocean",
+                    "access_rules": [
+                      "$mm|Tingle Map Great Bay"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Map: Canyon",
+                    "access_rules": [
+                      "$mm|Tingle Map Ikana"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 205,
+                    "y": 300,
+                    "force_invisibility_rules": [
+                      "setting_tingleShuffle_vanilla"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Marine Lab",
+                "short_name": "Marine Lab",
                 "sections": [
                   {
                     "name": "Great Bay Coast Owl Statue",
@@ -6087,52 +6043,6 @@
                     ],
                     "item_count": 1
                   },
-                  {
-                    "name": "Map: Ocean",
-                    "access_rules": [
-                      "$mm|Tingle Map Great Bay"
-                    ],
-                    "visibility_rules": [
-                      "setting_tingleShuffle_anywhere"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Map: Canyon",
-                    "access_rules": [
-                      "$mm|Tingle Map Ikana"
-                    ],
-                    "visibility_rules": [
-                      "setting_tingleShuffle_anywhere"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Behind Lab Pots",
-                    "short_name": "Behind Lab",
-                    "access_rules": [
-                      "$mm|Great Bay Coast Pot 05"
-                    ],
-                    "visibility_rules": [
-                      "setting_shufflePotsMm_true"
-                    ],
-                    "chest_unopened_img": "images/pot.png",
-                    "chest_opened_img": "images/pot_grey.png",
-                    "item_count": 4
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 205,
-                    "y": 300
-                  }
-                ]
-              },
-              {
-                "name": "Marine Lab",
-                "short_name": "Marine Lab",
-                "sections": [
                   {
                     "name": "Feed The Fish",
                     "chest_unopened_img": "images/system/heartpiece.png",
@@ -6151,6 +6061,19 @@
                       "{gossip_stone}"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Behind Lab Pots",
+                    "short_name": "Behind Lab",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Pot 05"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 4
                   } 
                 ],
                 "map_locations": [
@@ -6194,7 +6117,7 @@
                 "hosted_item": "EVENT_MM_ZORA_EGGS_PINNACLE_ROCK"
               },
               {
-                "name": "Pinnacle Rock Pots on bottom",
+                "name": "Pinnacle Rock Pots in Empty Holes",
                 "access_rules": [
                   "$mm|Pinnacle Rock Pot 01"
                 ],
@@ -6206,7 +6129,7 @@
                 "item_count": 6
               },
               {
-                "name": "Pinnacle Rock Pots by Sea Snakes",
+                "name": "Pinnacle Rock Pots under Sea Snakes",
                 "access_rules": [
                   "$mm|Pinnacle Rock Pot 04"
                 ],
@@ -6333,7 +6256,7 @@
                 ]
               },
               {
-                "name": "Evans Room",
+                "name": "Zora Hall",
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "ZH",
@@ -6345,27 +6268,21 @@
                     "access_rules": [
                       "$mm|Zora Hall Evan HP"
                     ],
-                    "item_count": 1                  
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 220,
-                    "y": 410
-                  }
-                ]
-              },
-              {
-                "name": "Lulus Room",
-                "chest_unopened_img": "images/system/chest_brown_closed.png",
-                "chest_opened_img": "images/system/chest_brown_open.png",
-                "short_name": "ZH",
-                "sections": [
+                    "item_count": 1
+                  },
                   {
                     "name": "Give Ocean Scrub The Mountain Title Deed - Fourth Room Down",
                     "access_rules": [
                       "$mm|Zora Hall Scrub Deed"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Light the Upper Torches",
+                    "chest_unopened_img": "images/system/blue.png",
+                    "chest_opened_img": "images/system/blue_check.png",
+                    "access_rules": [
+                      "$mm|Zora Hall Scene Lights"
                     ],
                     "item_count": 1
                   },
@@ -6393,12 +6310,12 @@
                   {
                     "map": "termina",
                     "x": 220,
-                    "y": 390
+                    "y": 410
                   }
                 ]
               },
               {
-                "name": "Zora Hall",
+                "name": "Zora Cape Owl Statue",
                 "short_name": "Owl Statue",
                 "sections": [
                   {
@@ -6424,15 +6341,6 @@
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
                     "item_count": 4
-                  },
-                  {
-                    "name": "Light the Upper Torches",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "access_rules": [
-                      "$mm|Zora Hall Scene Lights"
-                    ],
-                    "item_count": 1
                   } 
                 ],
                 "map_locations": [
@@ -6506,7 +6414,7 @@
                 ]
               },
               {
-                "name": "Beavers",
+                "name": "Waterfall Rapids",
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "Rapids",
@@ -6528,22 +6436,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "item_count": 1
-                  } 
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 352,
-                    "y": 420
-                  }
-                ]
-              },
-              {
-                "name": "Waterfall Rapids",
-                "chest_unopened_img": "images/system/chest_brown_closed.png",
-                "chest_opened_img": "images/system/chest_brown_open.png",
-                "short_name": "Rapids",
-                "sections": [
+                  },
                   {
                     "name": "Pots near Beavers",
                     "access_rules": [
@@ -6597,8 +6490,8 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 312,
-                    "y": 400
+                    "x": 352,
+                    "y": 420
                   }
                 ]
               },
@@ -6636,7 +6529,7 @@
             "name": "Road to Ikana",
             "children": [
               {
-                "name": "Road to Ikana Front",
+                "name": "Chest on Ikana Pillar",
                 "short_name": "Pillar Chest",
                 "sections": [
                   {
@@ -6644,18 +6537,6 @@
                     "access_rules": [
                       "$mm|Road to Ikana Chest"
                     ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Red Boulders on Grotto",                    
-                    "access_rules": [
-                      "$mm|Road to Ikana Red Boulder"
-                    ],
-                    "visibility_rules": [
-                      "setting_RedBoulderMm_on"
-                    ],
-                    "chest_unopened_img": "images/system/RedBoulder.png",
-                    "chest_opened_img": "images/system/RedBoulder_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -6671,6 +6552,18 @@
                 "name": "Road to Ikana Grotto",
                 "short_name": "Ikana Road Grotto",
                 "sections": [
+                  {
+                    "name": "Red Boulders on Grotto",                    
+                    "access_rules": [
+                      "$mm|Road to Ikana Red Boulder"
+                    ],
+                    "visibility_rules": [
+                      "setting_RedBoulderMm_on"
+                    ],
+                    "chest_unopened_img": "images/system/RedBoulder.png",
+                    "chest_opened_img": "images/system/RedBoulder_grey.png",
+                    "item_count": 1
+                  },
                   {
                     "name": "Get in",
                     "access_rules": [
@@ -6760,7 +6653,7 @@
             ]
           },
           {
-            "name": "Graveyard Top",
+            "name": "Captain Keeta's Hat Chest",
             "chest_unopened_img": "images/system/chest_unopened_big.png",
             "chest_opened_img": "images/system/chest_open_big.png",
             "short_name": "Captain's Hat Chest",
@@ -6771,54 +6664,6 @@
                   "$mm|Ikana Graveyard Captain Mask"
                 ],
                 "item_count": 1
-              },
-              {
-                "name": "Rock Circle",
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "access_rules": [
-                  "$mm|Ikana Graveyard Rock Circle"
-                ],
-                "visibility_rules": [
-                  "setting_rockmm_overworld"
-                ],
-                "item_count": 8
-              },
-              {
-                "name": "Wonderitems on Lantern",
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "access_rules": [
-                 "$mm|Ikana Graveyard Wonder Item 01"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitem_on"
-                ],
-                "item_count": 3
-              },
-              {
-                "name": "Ikana Graveyard Upper Grass Patch",
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Ikana Graveyard Grass Pack Grass 1"
-                ],
-                "item_count": 9
-              },              
-              {
-                "name": "Rocks on Keetas Wall",
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "access_rules": [
-                  "$mm|Ikana Graveyard Wall Rocks"
-                ],
-                "visibility_rules": [
-                  "setting_rockmm_overworld"
-                ],
-                "item_count": 5
               }
             ],
             "map_locations": [
@@ -6853,6 +6698,18 @@
                   "$mm|Ikana Graveyard Grotto Grass 01"
                 ],
                 "item_count": 14
+              },
+              {
+                "name": "Rock Circle",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Ikana Graveyard Rock Circle"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 8
               }
             ],
             "map_locations": [
@@ -7060,7 +6917,31 @@
                 "visibility_rules": [
                   "setting_wonderitem_on"
                 ],
+                "item_count": 12
+              },
+              {
+                "name": "Ikana Graveyard Upper Grass Patch",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Ikana Graveyard Grass Pack Grass 1"
+                ],
                 "item_count": 9
+              },              
+              {
+                "name": "Rocks on Keetas Wall",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Ikana Graveyard Wall Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 5
               }
             ],
             "map_locations": [
