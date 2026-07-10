@@ -2291,7 +2291,7 @@ function _oot_logic()
 	end
 
 	function silver_rupees(type, rupee, pouch, count)
-		return setting('magicalRupee') and has('RUPEE_MAGICAL') or (setting('SilverRupeeShuffle', 'false') or cond(setting('silverRupeePouches', type), has(pouch), has(rupee, count)))
+		return has('RUPEE_MAGICAL') or (setting('SilverRupeeShuffle', 'false') or cond(setting('silverRupeePouches', type), has(pouch), has(rupee, count)))
 	end
 
 	function silver_rupees_ganon_light(n)
@@ -6195,11 +6195,11 @@ function _oot_logic()
             ["Kakariko"] = function () return true end,
         },
         ["locations"] = {
-            ["Skulltula House 10 Tokens"] = function () return has('GS_TOKEN', 10) end,
-            ["Skulltula House 20 Tokens"] = function () return has('GS_TOKEN', 20) end,
-            ["Skulltula House 30 Tokens"] = function () return has('GS_TOKEN', 30) end,
-            ["Skulltula House 40 Tokens"] = function () return has('GS_TOKEN', 40) end,
-            ["Skulltula House 50 Tokens"] = function () return has('GS_TOKEN', 50) end,
+            ["Skulltula House 10 Tokens"] = function () return has('GS_TOKEN', 10) or has('PLATINUM_TOKEN') end,
+            ["Skulltula House 20 Tokens"] = function () return has('GS_TOKEN', 20) or has('PLATINUM_TOKEN') end,
+            ["Skulltula House 30 Tokens"] = function () return has('GS_TOKEN', 30) or has('PLATINUM_TOKEN') end,
+            ["Skulltula House 40 Tokens"] = function () return has('GS_TOKEN', 40) or has('PLATINUM_TOKEN') end,
+            ["Skulltula House 50 Tokens"] = function () return has('GS_TOKEN', 50) or has('PLATINUM_TOKEN') end,
         },
         ["age_change"] = true,
     },
