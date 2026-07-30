@@ -17,7 +17,7 @@
                   "$oot|Kokiri Forest Grass Child Crawl 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -100,7 +100,7 @@
                   "$oot|Kokiri Forest Storms Grotto Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -247,7 +247,7 @@
                   "$oot|Link's House Pot"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -272,7 +272,7 @@
                   "$oot|Know It All House Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -346,7 +346,7 @@
                   "$oot|Twins House Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -472,7 +472,7 @@
                   "$oot|Kokiri Forest Grass Child 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -485,7 +485,7 @@
                   "$oot|Kokiri Forest Grass Adult 01"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -585,7 +585,7 @@
               {
                 "map": "oot",
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "x": 2214,
                 "y": 958
@@ -602,7 +602,7 @@
                   "$oot|Kokiri Forest Grass Child Near Crawl 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -615,7 +615,7 @@
                   "$oot|Kokiri Forest Grass Adult Near Crawl 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -693,7 +693,7 @@
                   "$oot|Lost Woods Grotto Generic Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -771,7 +771,7 @@
                   "$oot|Lost Woods Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -875,7 +875,7 @@
                   "$oot|Lost Woods Grass Deep 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -900,7 +900,7 @@
                   "$oot|Lost Woods Grass Deep 4"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -1410,7 +1410,7 @@
                   "$oot|Hyrule Field Grotto Southeast Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -1507,7 +1507,7 @@
                   "$oot|Hyrule Field Grotto Open Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -1566,7 +1566,7 @@
                   "$oot|Hyrule Field Grotto Market Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "short_name": "Grass",
                 "chest_unopened_img": "images/MM_Grass.png",
@@ -1715,7 +1715,7 @@
                   "$oot|Hyrule Field Grotto Near Gerudo Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "short_name": "Grass",
                 "chest_unopened_img": "images/MM_Grass.png",
@@ -1729,7 +1729,7 @@
                   "$oot|Hyrule Field Cow Grotto Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -1925,7 +1925,7 @@
               {
                 "map": "oot",
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "x": 1732,
                 "y": 688
@@ -1965,7 +1965,7 @@
                   "$oot|Hyrule Field Grass Pack 2 Bush 01"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -2015,7 +2015,7 @@
                   "$oot|Hyrule Field Grass Pack 3 Bush 01"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -2099,7 +2099,7 @@
               {
                 "map": "oot",
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "x": 1346,
                 "y": 816
@@ -2368,7 +2368,7 @@
                   "$oot|Lake Hylia Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true,setting_restoreBrokenActors_true"
+                  "setting_shufflePotsOot_overworld,setting_restoreBrokenActors_true"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -2534,7 +2534,7 @@
                   "$oot|Lake Hylia Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -2559,7 +2559,7 @@
                   "$oot|Lake Hylia Grass Child 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -2572,7 +2572,7 @@
                   "$oot|Lake Hylia Grass Child 5"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true,setting_restoreBrokenActors_true"
+                  "setting_shuffleGrassOot_overworld,setting_restoreBrokenActors_true"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -2610,7 +2610,7 @@
                   "$oot|Lake Hylia Grass Pack 1 Bush 01"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -2623,7 +2623,7 @@
                   "$oot|Lake Hylia Grass Pack 2 Bush 01"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -2636,7 +2636,7 @@
                   "$oot|Lake Hylia Grass Pack 3 Bush 01"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -2667,7 +2667,7 @@
                   "$oot|Lon Lon Ranch Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -2703,7 +2703,7 @@
                   "$oot|Lon Lon Ranch Pot 5"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -2800,7 +2800,7 @@
                   "$oot|Lon Lon Ranch Talon House Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -2958,7 +2958,7 @@
                   "$oot|Kakariko Grotto Back Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -3107,7 +3107,7 @@
                   "$oot|Kakariko Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -3172,7 +3172,7 @@
                   "$oot|Kakariko Pot 07"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -3184,7 +3184,7 @@
                   "$oot|Kakariko Pot 01"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -3209,7 +3209,7 @@
                   "$oot|Kakariko Pot 04"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -3277,7 +3277,7 @@
                   "$oot|Kakariko Back Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -3336,7 +3336,7 @@
                   "$oot|Kakariko Grass 6"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -3699,7 +3699,7 @@
                       "$oot|Graveyard Grass 01"
                     ],
                     "visibility_rules": [
-                      "setting_shuffleGrassOot_true"
+                      "setting_shuffleGrassOot_overworld"
                     ],
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
@@ -3851,7 +3851,7 @@
                       "$oot|Graveyard Dampe Tomb Pot 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsOot_true"
+                      "setting_shufflePotsOot_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -4238,7 +4238,7 @@
                       "$oot|Death Mountain Trail Grotto Grass 1"
                     ],
                     "visibility_rules": [
-                      "setting_shuffleGrassOot_true"
+                      "setting_shuffleGrassOot_overworld"
                     ],
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
@@ -4310,7 +4310,7 @@
                   "$oot|Death Mountain Trail Cow Grotto Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -4561,7 +4561,7 @@
                   "$oot|Goron City Pot Stairs 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -4580,7 +4580,7 @@
                   "$oot|Goron City Pot Medigoron Room"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -4609,7 +4609,7 @@
                   "$oot|Goron City Pot Darunia Room 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -4757,7 +4757,7 @@
                   "$oot|Death Mountain Crater Grotto Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -4940,7 +4940,7 @@
                   "$oot|Death Mountain Crater Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -5100,7 +5100,7 @@
                       "$oot|Market Back Alley East House Pot 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsOot_true"
+                      "setting_shufflePotsOot_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -5448,7 +5448,7 @@
                       "$oot|Market Pot House Child Pot Ground 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsOot_true"
+                      "setting_shufflePotsOot_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -5461,7 +5461,7 @@
                       "$oot|Market Pot House Child Pot Above 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsOot_true"
+                      "setting_shufflePotsOot_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -5487,7 +5487,7 @@
                       "$oot|Market Pot House Adult Pot 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsOot_true"
+                      "setting_shufflePotsOot_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -5524,7 +5524,7 @@
                       "$oot|Market Grass 1"
                     ],
                     "visibility_rules": [
-                      "setting_shuffleGrassOot_true"
+                      "setting_shuffleGrassOot_overworld"
                     ],
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
@@ -5536,7 +5536,7 @@
                       "$oot|Market Grass 3"
                     ],
                     "visibility_rules": [
-                      "setting_shuffleGrassOot_true"
+                      "setting_shuffleGrassOot_overworld"
                     ],
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
@@ -5548,7 +5548,7 @@
                       "$oot|Market Grass 6"
                     ],
                     "visibility_rules": [
-                      "setting_shuffleGrassOot_true"
+                      "setting_shuffleGrassOot_overworld"
                     ],
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
@@ -5729,7 +5729,7 @@
                   "$oot|Hyrule Castle Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true,setting_restoreBrokenActors_true"
+                  "setting_shufflePotsOot_overworld,setting_restoreBrokenActors_true"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -5820,7 +5820,7 @@
                   "$oot|Hyrule Castle Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -5878,7 +5878,7 @@
                   "$oot|Hyrule Castle Grotto Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6172,7 +6172,7 @@
                   "$oot|Zora River Grotto Grass 1"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -6334,7 +6334,7 @@
                   "$oot|Zora River Grass Pack Bush 01"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -6385,7 +6385,7 @@
                   "$oot|Zora River Grass"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_true"
+                  "setting_shuffleGrassOot_overworld"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -6513,7 +6513,7 @@
                   "$oot|Zora Domain Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6753,7 +6753,7 @@
                   "$oot|Zora Fountain Child Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6831,7 +6831,7 @@
                   "$oot|Zora Fountain Adult Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -7316,7 +7316,7 @@
                   "$oot|Gerudo Fortress Pot Jail 1 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_dungeon"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -7367,7 +7367,7 @@
                   "$oot|Gerudo Fortress Pot Jail 2 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_dungeon"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -7419,7 +7419,7 @@
                   "$oot|Gerudo Fortress Pot Kitchen 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_dungeon"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -7520,7 +7520,7 @@
                   "$oot|Gerudo Fortress Pot Jail 3 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_dungeon"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -7554,7 +7554,7 @@
                   "$oot|Gerudo Fortress Pot Break Room 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_dungeon"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -7764,7 +7764,7 @@
                   "$oot|Haunted Wasteland Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsOot_true"
+                  "setting_shufflePotsOot_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",

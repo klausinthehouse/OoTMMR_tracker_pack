@@ -11,7 +11,7 @@
           "$oot|Deku Tree Grass Lobby 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -49,7 +49,7 @@
           "$oot|Deku Tree Grass Slingshot Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -73,7 +73,7 @@
           "$oot|Deku Tree Grass Compass Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -124,7 +124,7 @@
           "$oot|Deku Tree Grass Basement Main 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -174,7 +174,7 @@
           "$oot|Deku Tree Grass Eye Switch Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -187,7 +187,7 @@
           "$oot|Deku Tree Grass Water Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -200,7 +200,7 @@
           "$oot|Deku Tree Grass Torch Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -213,7 +213,7 @@
           "$oot|Deku Tree Grass Larva Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -239,7 +239,7 @@
           "$oot|Deku Tree Grass Pre-Boss Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -278,7 +278,7 @@
           "$ootmq|MQ Deku Tree Grass Entrance Lower 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -291,7 +291,7 @@
           "$ootmq|MQ Deku Tree Grass Entrance Upper 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -342,7 +342,7 @@
           "$ootmq|MQ Deku Tree Grass Slingshot Room Front 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -379,7 +379,7 @@
           "$ootmq|MQ Deku Tree Grass Slingshot Room Back 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -416,7 +416,7 @@
           "$ootmq|MQ Deku Tree Grass Room Before Compass 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -480,7 +480,7 @@
           "$ootmq|MQ Deku Tree Grass Compass Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -493,7 +493,7 @@
           "$ootmq|MQ Deku Tree Grass Basement Lower 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -517,7 +517,7 @@
           "$ootmq|MQ Deku Tree Grass Room Before Spike 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -541,7 +541,7 @@
           "$ootmq|MQ Deku Tree Grass Spike Room Front 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -565,7 +565,7 @@
           "$ootmq|MQ Deku Tree Grass Spike Room Back 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -578,7 +578,7 @@
           "$ootmq|MQ Deku Tree Grass Larvae Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -604,7 +604,7 @@
           "$ootmq|MQ Deku Tree Grass Gravestone Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -643,7 +643,7 @@
           "$ootmq|MQ Deku Tree Grass Back Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -668,7 +668,7 @@
           "$ootmq|MQ Deku Tree Grass Basement Upper 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -681,7 +681,7 @@
           "$ootmq|MQ Deku Tree Grass Room Before Boss 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DekuTree_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -707,7 +707,7 @@
           "$oot|Deku Tree Boss Grass 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true"
+          "setting_shuffleGrassOot_dungeon"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -744,7 +744,7 @@
           "$oot|Dodongo Cavern Pot Right Corridor Pot 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -783,7 +783,7 @@
           "$oot|Dodongo Cavern Grass East Corridor Side Room"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false,setting_restoreBrokenActors_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_false,setting_restoreBrokenActors_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -809,7 +809,7 @@
           "$oot|Dodongo Cavern Pot Right Corridor Pot 5"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -822,7 +822,7 @@
           "$oot|Dodongo Cavern Pot Miniboss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -848,7 +848,7 @@
           "$oot|Dodongo Cavern Pot Green Room Pot 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -898,7 +898,7 @@
           "$oot|Dodongo Cavern Pot Stairs Pot 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -937,7 +937,7 @@
           "$oot|Dodongo Cavern Grass Lobby"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -974,7 +974,7 @@
           "$oot|Dodongo Cavern Pot Room Before Miniboss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -987,7 +987,7 @@
           "$oot|Dodongo Cavern Grass Pre-Miniboss"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1013,7 +1013,7 @@
           "$oot|Dodongo Cavern Pot Room After Miniboss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1040,7 +1040,7 @@
           "$oot|Dodongo Cavern Grass Bomb Bag Room"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1053,7 +1053,7 @@
           "$oot|Dodongo Cavern Pot Bomb Bag Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1088,7 +1088,7 @@
           "$oot|Dodongo Cavern Grass Pre-Boss"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1114,7 +1114,7 @@
           "$oot|Dodongo Cavern Pot Skull 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1242,7 +1242,7 @@
           "$ootmq|MQ Dodongo Cavern Pot East Corridor 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1255,7 +1255,7 @@
           "$ootmq|MQ Dodongo Cavern Grass Green Corridor Side Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1281,7 +1281,7 @@
           "$ootmq|MQ Dodongo Cavern Pot Miniboss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1307,7 +1307,7 @@
           "$ootmq|MQ Dodongo Cavern Pot Green Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1344,7 +1344,7 @@
           "$ootmq|MQ Dodongo Cavern Pot Vanilla Bomb Bag Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1357,7 +1357,7 @@
           "$ootmq|MQ Dodongo Cavern Grass Room Before Miniboss"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true,setting_restoreBrokenActors_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_true,setting_restoreBrokenActors_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1433,7 +1433,7 @@
           "$ootmq|MQ Dodongo Cavern Pot Before Miniboss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1446,7 +1446,7 @@
           "$ootmq|MQ Dodongo Cavern Pot After Miniboss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1471,7 +1471,7 @@
           "$ootmq|MQ Dodongo Cavern Grass Compass Room 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1484,7 +1484,7 @@
           "$ootmq|MQ Dodongo Cavern Grass Vanilla Bomb Bag Room"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true,setting_restoreBrokenActors_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_true,setting_restoreBrokenActors_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1536,7 +1536,7 @@
           "$ootmq|MQ Dodongo Cavern Pot Stairs 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1562,7 +1562,7 @@
           "$ootmq|MQ Dodongo Cavern Pot Before Boss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1575,7 +1575,7 @@
           "$ootmq|MQ Dodongo Cavern Pot Before Boss Loop 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1588,7 +1588,7 @@
           "$ootmq|MQ Dodongo Cavern Grass Boss Loop"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1601,7 +1601,7 @@
           "$ootmq|MQ Dodongo Cavern Pot Before Boss Loop Side Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1614,7 +1614,7 @@
           "$ootmq|MQ Dodongo Cavern Grass Boss Loop Side Room"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1683,7 +1683,7 @@
           "$oot|Jabu-Jabu Pot Muscle Block Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1709,7 +1709,7 @@
           "$oot|Jabu-Jabu Pot Alcove 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1795,7 +1795,7 @@
           "$oot|Jabu-Jabu Pot Big Octo Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1821,7 +1821,7 @@
           "$ootmq|MQ Jabu-Jabu Pot Entrance 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1847,7 +1847,7 @@
           "$ootmq|MQ Jabu-Jabu Grass Entrance 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1958,7 +1958,7 @@
           "$ootmq|MQ Jabu-Jabu Pot Underwater Alcove 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1971,7 +1971,7 @@
           "$ootmq|MQ Jabu-Jabu Grass Main Room Top 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1984,7 +1984,7 @@
           "$ootmq|MQ Jabu-Jabu Grass Main Room Bottom 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -2071,7 +2071,7 @@
           "$ootmq|MQ Jabu-Jabu Grass Boomerang Room"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -2084,7 +2084,7 @@
           "$ootmq|MQ Jabu-Jabu Pot Boomerang Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2110,7 +2110,7 @@
           "$ootmq|MQ Jabu-Jabu Grass Big Octo Top 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -2136,7 +2136,7 @@
           "$ootmq|MQ Jabu-Jabu Grass Room After Big Octo"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -2186,7 +2186,7 @@
           "$ootmq|MQ Jabu-Jabu Pot Like-Like Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2238,7 +2238,7 @@
           "$ootmq|MQ Jabu-Jabu Grass Torch Room"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -2311,7 +2311,7 @@
           "$ootmq|MQ Jabu-Jabu Grass Before Boss 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -2324,7 +2324,7 @@
           "$ootmq|MQ Jabu-Jabu Pot Before Boss"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2350,7 +2350,7 @@
           "$oot|Jabu-Jabu Boss Pot 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true"
+          "setting_shufflePotsOot_dungeon"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2463,7 +2463,7 @@
           "$oot|Ice Cavern Pot First Corridor 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2489,7 +2489,7 @@
           "$oot|Ice Cavern Pot Scythe Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2515,7 +2515,7 @@
           "$oot|Ice Cavern Flying Pot Scythe Room"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2618,7 +2618,7 @@
           "$oot|Ice Cavern Pot Map Room"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2799,7 +2799,7 @@
           "$oot|Ice Cavern Pot Red Ice 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2849,7 +2849,7 @@
           "$ootmq|MQ Ice Cavern Pot Entrance"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2862,7 +2862,7 @@
           "$ootmq|MQ Ice Cavern Pot First Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2888,7 +2888,7 @@
           "$ootmq|MQ Ice Cavern Pot Main Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -2977,7 +2977,7 @@
           "$ootmq|MQ Ice Cavern Pot Compass Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3094,7 +3094,7 @@
           "$ootmq|MQ Ice Cavern Pot Final Corridor 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_IceCavern_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3171,7 +3171,7 @@
           "$oot|Forest Temple Pot Main Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3209,7 +3209,7 @@
           "$oot|Forest Temple Pot Miniboss Lower 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3368,7 +3368,7 @@
           "$oot|Forest Temple Pot Miniboss Upper 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3393,7 +3393,7 @@
           "$oot|Forest Temple Pot Blue Poe 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3406,7 +3406,7 @@
           "$oot|Forest Temple Pot Rotating Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3430,7 +3430,7 @@
           "$oot|Forest Temple Pot Green Poe Pot 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3492,7 +3492,7 @@
           "$ootmq|MQ Forest Temple Pot Main Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3517,7 +3517,7 @@
           "$ootmq|MQ Forest Temple Pot Bow Room Lower 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3680,7 +3680,7 @@
           "$ootmq|MQ Forest Temple Pot Bow Room Upper 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3693,7 +3693,7 @@
           "$ootmq|MQ Forest Temple Pot Blue Poe 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3742,7 +3742,7 @@
           "$ootmq|MQ Forest Temple Pot Green Poe 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3778,7 +3778,7 @@
           "$ootmq|MQ Forest Temple Pot Antichamber 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ForestTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3827,7 +3827,7 @@
           "$oot|Fire Temple Pot Pre-Boss Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -3877,7 +3877,7 @@
           "$oot|Fire Temple Pot Lava Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4076,7 +4076,7 @@
           "$oot|Fire Temple Pot Ring 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4100,7 +4100,7 @@
           "$oot|Fire Temple Pot Before Miniboss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4150,7 +4150,7 @@
           "$ootmq|MQ Fire Temple Pot Entrance 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4175,7 +4175,7 @@
           "$ootmq|MQ Fire Temple Pot Pre-Boss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4260,7 +4260,7 @@
           "$ootmq|MQ Fire Temple Pot Hammer Loop 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4297,7 +4297,7 @@
           "$ootmq|MQ Fire Temple Pot Lava Room Left"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4310,7 +4310,7 @@
           "$ootmq|MQ Fire Temple Pot Lava Room Alcove"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4323,7 +4323,7 @@
           "$ootmq|MQ Fire Temple Pot Lava Room Right"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4349,7 +4349,7 @@
           "$ootmq|MQ Fire Temple Pot Boss Key Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4551,7 +4551,7 @@
           "$ootmq|MQ Fire Temple Pot Grids Above Lava 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4616,7 +4616,7 @@
           "$ootmq|MQ Fire Temple Pot Bridge Above Lava Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4629,7 +4629,7 @@
           "$ootmq|MQ Fire Temple Pot Fire Maze Room Left 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4655,7 +4655,7 @@
           "$ootmq|MQ Fire Temple Pot Fire Maze Room Right 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4681,7 +4681,7 @@
           "$ootmq|MQ Fire Temple Pot Fire Maze Room Back Right 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4795,7 +4795,7 @@
           "$oot|Water Temple Pot Main Room Near Block 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4832,7 +4832,7 @@
           "$oot|Water Temple Pot Ruto Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4870,7 +4870,7 @@
           "$oot|Water Temple Pot Skull Cage 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4895,7 +4895,7 @@
           "$oot|Water Temple Pot Compass Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4920,7 +4920,7 @@
           "$oot|Water Temple Pot Corridor 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -4971,7 +4971,7 @@
           "$oot|Water Temple Pot Before Dark Link 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5021,7 +5021,7 @@
           "$oot|Water Temple Pot River 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5058,7 +5058,7 @@
           "$oot|Water Temple Pot Blocks Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5097,7 +5097,7 @@
           "$oot|Water Temple Pot Boss Key Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5110,7 +5110,7 @@
           "$oot|Water Temple Pot Main Room Near Boss 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5123,7 +5123,7 @@
           "$ootmq|MQ Water Temple Pot Ruto 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5161,7 +5161,7 @@
           "$ootmq|MQ Water Temple Pot Storage Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5275,7 +5275,7 @@
           "$ootmq|MQ Water Temple Pot Twisted Room Entrance"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5288,7 +5288,7 @@
           "$ootmq|MQ Water Temple Pot Twisted Room Right 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5301,7 +5301,7 @@
           "$ootmq|MQ Water Temple Pot Twisted Room Cage 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5403,7 +5403,7 @@
           "$ootmq|MQ Water Temple Pot Before Dark Link Ledge 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5440,7 +5440,7 @@
           "$ootmq|MQ Water Temple Pot Before Dark Link Near Door 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5453,7 +5453,7 @@
           "$ootmq|MQ Water Temple Pot After Dark Link 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5492,7 +5492,7 @@
           "$ootmq|MQ Water Temple Pot River 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5596,7 +5596,7 @@
           "$ootmq|MQ Water Temple Pot Boss Key Room"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5622,7 +5622,7 @@
           "$ootmq|MQ Water Temple Pot Stalfos Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5648,7 +5648,7 @@
           "$ootmq|MQ Water Temple Pot Loop 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5817,7 +5817,7 @@
           "$ootmq|MQ Water Temple Pot Skull Cage 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5830,7 +5830,7 @@
           "$ootmq|MQ Water Temple Pot Room Before High Water 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5919,7 +5919,7 @@
           "$oot|Shadow Temple Pot Early Maze 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5932,7 +5932,7 @@
           "$oot|Shadow Temple Pot Early Maze 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5945,7 +5945,7 @@
           "$oot|Shadow Temple Flying Pot Early Maze"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -5970,7 +5970,7 @@
           "$oot|Shadow Temple Pot Map Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6131,7 +6131,7 @@
           "$oot|Shadow Temple Pot Falling Spikes Bottom 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6180,7 +6180,7 @@
           "$oot|Shadow Temple Pot Falling Spikes Top 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6330,7 +6330,7 @@
           "$oot|Shadow Temple Pot After Wind 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6343,7 +6343,7 @@
           "$oot|Shadow Temple Flying Pot After Wind 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6382,7 +6382,7 @@
           "$oot|Shadow Temple Pot Boat Before Bridge 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6419,7 +6419,7 @@
           "$oot|Shadow Temple Pot Boss Key Room"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6470,7 +6470,7 @@
           "$oot|Shadow Temple Pot Invisible Floormaster Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6483,7 +6483,7 @@
           "$oot|Shadow Temple Pot Boat After Bridge 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6522,7 +6522,7 @@
           "$ootmq|MQ Shadow Temple Pot Entrance Maze 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6535,7 +6535,7 @@
           "$ootmq|MQ Shadow Temple Flying Pot Entrance Maze 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6548,7 +6548,7 @@
           "$ootmq|MQ Shadow Temple Flying Pot Entrance Maze 3"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6573,7 +6573,7 @@
           "$ootmq|MQ Shadow Temple Pot Compass Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6771,7 +6771,7 @@
           "$ootmq|MQ Shadow Temple Pot Guillotines Room Lower 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6809,7 +6809,7 @@
           "$ootmq|MQ Shadow Temple Pot Guillotines Room Upper 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6982,7 +6982,7 @@
           "$ootmq|MQ Shadow Temple Pot Room Before Boat 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -6995,7 +6995,7 @@
           "$ootmq|MQ Shadow Temple Flying Pot Room Before Boat 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7021,7 +7021,7 @@
           "$ootmq|MQ Shadow Temple Pot After Boat Before Bridge 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7047,7 +7047,7 @@
           "$ootmq|MQ Shadow Temple Pot Boss Key Room"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7108,7 +7108,7 @@
           "$ootmq|MQ Shadow Temple Pot Bomb Flowers Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7134,7 +7134,7 @@
           "$ootmq|MQ Shadow Temple Pot After Boat After Bridge 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7197,7 +7197,7 @@
           "$oot|Spirit Temple Pot Lobby 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7210,7 +7210,7 @@
           "$oot|Spirit Temple Flying Pot Lobby 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7234,7 +7234,7 @@
           "$oot|Spirit Temple Flying Pot Child After Bridge 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7247,7 +7247,7 @@
           "$oot|Spirit Temple Pot Child Anubis Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7311,7 +7311,7 @@
           "$oot|Spirit Temple Pot Child Climb"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7386,7 +7386,7 @@
           "$oot|Spirit Temple Pot Child Hand Stairway 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7399,7 +7399,7 @@
           "$ootmq|MQ Spirit Temple Pot Entrance 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7485,7 +7485,7 @@
           "$ootmq|MQ Spirit Temple Pot Child Entrance"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7522,7 +7522,7 @@
           "$ootmq|MQ Spirit Temple Pot Child Boulders 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7535,7 +7535,7 @@
           "$ootmq|MQ Spirit Temple Pot Child Back 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7608,7 +7608,7 @@
           "$ootmq|MQ Spirit Temple Pot Child Sun Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7668,7 +7668,7 @@
           "$oot|Spirit Temple Pot Statue Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7681,7 +7681,7 @@
           "$oot|Spirit Temple Flying Pot Statue Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7770,7 +7770,7 @@
           "$oot|Spirit Temple Flying Pot Adult Climb 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7817,7 +7817,7 @@
           "$oot|Spirit Temple Pot Adult Upper"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7879,7 +7879,7 @@
           "$ootmq|MQ Spirit Temple Pot Child Climb"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7937,7 +7937,7 @@
           "$ootmq|MQ Spirit Temple Pot Statue Room Lower 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7950,7 +7950,7 @@
           "$ootmq|MQ Spirit Temple Flying Pot Statue Room Lower"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7963,7 +7963,7 @@
           "$ootmq|MQ Spirit Temple Flying Pot Statue Room Stairs"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7976,7 +7976,7 @@
           "$ootmq|MQ Spirit Temple Flying Pot Statue Room Upper"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -7989,7 +7989,7 @@
           "$ootmq|MQ Spirit Temple Pot Statue Room Upper 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8015,7 +8015,7 @@
           "$ootmq|MQ Spirit Temple Pot Adult Climb 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8112,7 +8112,7 @@
           "$ootmq|MQ Spirit Temple Pot Topmost Climb 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8195,7 +8195,7 @@
           "$oot|Spirit Temple Flying Pot Topmost 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8257,7 +8257,7 @@
           "$ootmq|MQ Spirit Temple Pot Top Near Triforce Symbol 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8270,7 +8270,7 @@
           "$ootmq|MQ Spirit Temple Pot Top Near Lowering Platform 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8320,7 +8320,7 @@
           "$oot|Bottom of the Well Pot Main Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_BottomoftheWell_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8380,7 +8380,7 @@
           "$oot|Bottom of the Well Pot Main Room Underwater"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_BottomoftheWell_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8406,7 +8406,7 @@
           "$oot|Bottom of the Well Flying Pot 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_BottomoftheWell_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8442,7 +8442,7 @@
           "$oot|Bottom of the Well Pot Side Room"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_BottomoftheWell_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8527,7 +8527,7 @@
           "$oot|Bottom of the Well Pot Main Room 3"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_BottomoftheWell_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8565,7 +8565,7 @@
           "$oot|Bottom of the Well Grass 01"
         ],
         "visibility_rules": [
-          ",setting_shuffleGrassOot_true,setting_mq_BottomoftheWell_false"
+          ",setting_shuffleGrassOot_dungeon,setting_mq_BottomoftheWell_false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -8578,7 +8578,7 @@
           "$oot|Bottom of the Well Pot Basement 01"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_BottomoftheWell_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8685,7 +8685,7 @@
           "$ootmq|MQ Bottom of the Well Pot Lobby Cage 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_BottomoftheWell_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8711,7 +8711,7 @@
           "$ootmq|MQ Bottom of the Well Pot Lobby Alcove"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_BottomoftheWell_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8775,7 +8775,7 @@
           "$ootmq|MQ Bottom of the Well Pot Side Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_BottomoftheWell_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -8826,7 +8826,7 @@
           "$ootmq|MQ Bottom of the Well Grass Dead-Hand 1"
         ],
         "visibility_rules": [
-          ",setting_shuffleGrassOot_true,setting_mq_BottomoftheWell_true"
+          ",setting_shuffleGrassOot_dungeon,setting_mq_BottomoftheWell_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -8980,7 +8980,7 @@
           "$oot|Ganon Castle Pot Forest End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9017,7 +9017,7 @@
           "$oot|Ganon Castle Pot Water"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9030,7 +9030,7 @@
           "$oot|Ganon Castle Pot Water End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9054,7 +9054,7 @@
           "$oot|Ganon Castle Pot Shadow 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9091,7 +9091,7 @@
           "$oot|Ganon Castle Pot Shadow End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9156,7 +9156,7 @@
           "$oot|Ganon Castle Pot Fire End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9204,7 +9204,7 @@
           "$oot|Ganon Castle Pot Light"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9243,7 +9243,7 @@
           "$oot|Ganon Castle Pot Light End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9330,7 +9330,7 @@
           "$oot|Ganon Castle Pot Spirit End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_false"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9404,7 +9404,7 @@
           "$ootmq|MQ Ganon Pot Forest End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9532,7 +9532,7 @@
           "$ootmq|MQ Ganon Pot Water End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9620,7 +9620,7 @@
           "$ootmq|MQ Ganon Pot Shadow End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9659,7 +9659,7 @@
           "$ootmq|MQ Ganon Pot Fire End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9696,7 +9696,7 @@
           "$ootmq|MQ Ganon Pot Light End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9743,7 +9743,7 @@
           "$ootmq|MQ Ganon Pot Spirit End 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_GanonCastle_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -9766,7 +9766,7 @@
           "$oot|Ganon Tower Pot 01"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true"
+          "setting_shufflePotsOot_dungeon"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -10184,7 +10184,7 @@
           "$ootmq|MQ Gerudo Training Grounds Pot 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_GerudoTrainingGrounds_true"
+          "setting_shufflePotsOot_dungeon,setting_mq_GerudoTrainingGrounds_true"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",

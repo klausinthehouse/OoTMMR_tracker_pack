@@ -766,7 +766,7 @@
                       "$mm|Astral Observatory Passage Pot 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -1013,7 +1013,7 @@
                       "$mm|Trading Post Pot"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -1110,7 +1110,7 @@
                       "$mm|Swordsman School Pot 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -1308,7 +1308,7 @@
                       "$mm|Clock Tower Roof Pot 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -1591,7 +1591,7 @@
                   "$mm|Termina Field Pot"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -1864,7 +1864,7 @@
                   "$mm|Termina Field Scrub Pot"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -2046,7 +2046,7 @@
                   "$mm|Astral Observatory Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -2899,7 +2899,7 @@
                   "$mm|Cucco Shack Potted Plant 1 Pot"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -3001,7 +3001,7 @@
                   "$mm|Doggy Racetrack Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -3241,7 +3241,7 @@
                   "$mm|Road to Southern Swamp Potted Plant 1 Pot"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -3569,7 +3569,7 @@
                   "$mm|Southern Swamp Pot 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -3935,7 +3935,7 @@
                           "$mm|Deku Palace Pot 1"
                         ],
                         "visibility_rules": [
-                          "setting_shufflePotsMm_true"
+                          "setting_shufflePotsMm_overworld"
                         ],
                         "chest_unopened_img": "images/pot.png",
                         "chest_opened_img": "images/pot_grey.png",
@@ -3979,7 +3979,7 @@
                           "$mm|Deku Shrine Pot 1"
                         ],
                         "visibility_rules": [
-                          "setting_shufflePotsMm_true"
+                          "setting_shufflePotsMm_overworld"
                         ],
                         "chest_unopened_img": "images/pot.png",
                         "chest_opened_img": "images/pot_grey.png",
@@ -4110,7 +4110,7 @@
                       "$mm|Woodfall Pot 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -4378,7 +4378,7 @@
                   "$mm|Blacksmith Potted Plant 1 Pot"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -4415,7 +4415,7 @@
                   "$mm|Mountain Village Potted Plant 1 Pot"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -4428,7 +4428,7 @@
                   "$mm|Mountain Village Pot"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -5090,7 +5090,7 @@
                   "$mm|Goron Race Pot 01"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -5304,7 +5304,7 @@
                   "$mm|Goron Shrine Pot 01"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -5795,7 +5795,7 @@
                   "$mm|Zora Cape Pot Game 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -5883,7 +5883,7 @@
                       "$mm|Great Bay Coast Pot Ledge 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -5896,7 +5896,7 @@
                       "$mm|Great Bay Coast Pot 01"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -5968,7 +5968,7 @@
                       "$mm|Great Bay Coast Pot 09"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -5992,7 +5992,7 @@
                       "$mm|Great Bay Coast Pot 11"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -6082,7 +6082,7 @@
                       "$mm|Great Bay Coast Pot 05"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -6135,7 +6135,7 @@
                   "$mm|Pinnacle Rock Pot 01"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6147,7 +6147,7 @@
                   "$mm|Pinnacle Rock Pot 04"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6349,7 +6349,7 @@
                       "$mm|Zora Cape Pot Near Owl Statue 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -6456,7 +6456,7 @@
                       "$mm|Zora Cape Pot Near Beavers 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -6650,7 +6650,7 @@
                   "$mm|Road to Ikana Pot"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6745,7 +6745,7 @@
                   "$mm|Beneath The Graveyard Pot Night 1 Early 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6764,7 +6764,7 @@
                   "$mm|Beneath The Graveyard Pot Night 1 Bats 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6812,7 +6812,7 @@
                   "$mm|Beneath The Graveyard Pot Night 2 Early"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6824,7 +6824,7 @@
                   "$mm|Beneath The Graveyard Pot Night 2 Before Pit 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6836,7 +6836,7 @@
                   "$mm|Beneath The Graveyard Pot Night 2 After Pit 1"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6870,7 +6870,7 @@
                   "$mm|Beneath The Graveyard Pot Dampe 01"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -6890,7 +6890,7 @@
                   "$mm|Beneath The Graveyard Pot Dampe 07"
                 ],
                 "visibility_rules": [
-                  "setting_shufflePotsMm_true"
+                  "setting_shufflePotsMm_overworld"
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
@@ -7020,7 +7020,7 @@
                       "$mm|Sakon Hideout Pot First Room 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -7032,7 +7032,7 @@
                       "$mm|Sakon Hideout Pot Second Room 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -7044,7 +7044,7 @@
                       "$mm|Sakon Hideout Pot Third Room"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_overworld"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -7117,7 +7117,7 @@
                       "$mm|Secret Shrine Pot 1"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_dungeon"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -7153,7 +7153,7 @@
                       "$mm|Secret Shrine Pot 4"
                     ],
                     "visibility_rules": [
-                      "setting_shufflePotsMm_true"
+                      "setting_shufflePotsMm_dungeon"
                     ],
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
@@ -7410,7 +7410,7 @@
                               "$mm|Stone Tower Pot Climb 1"
                             ],
                             "visibility_rules": [
-                              "setting_shufflePotsMm_true"
+                              "setting_shufflePotsMm_overworld"
                             ],
                             "chest_unopened_img": "images/pot.png",
                             "chest_opened_img": "images/pot_grey.png",
@@ -7422,7 +7422,7 @@
                               "$mm|Stone Tower Pot Lower Scarecrow 01"
                             ],
                             "visibility_rules": [
-                              "setting_shufflePotsMm_true"
+                              "setting_shufflePotsMm_overworld"
                             ],
                             "chest_unopened_img": "images/pot.png",
                             "chest_opened_img": "images/pot_grey.png",
@@ -7434,7 +7434,7 @@
                               "$mm|Stone Tower Pot Higher Scarecrow 1"
                             ],
                             "visibility_rules": [
-                              "setting_shufflePotsMm_true"
+                              "setting_shufflePotsMm_overworld"
                             ],
                             "chest_unopened_img": "images/pot.png",
                             "chest_opened_img": "images/pot_grey.png",
@@ -7468,7 +7468,7 @@
                               "$mm|Stone Tower Inverted Pot 1"
                             ],
                             "visibility_rules": [
-                              "setting_shufflePotsMm_true"
+                              "setting_shufflePotsMm_overworld"
                             ],
                             "chest_unopened_img": "images/pot.png",
                             "chest_opened_img": "images/pot_grey.png",
@@ -7541,7 +7541,7 @@
                               "$mm|Stone Tower Pot Owl Statue 1"
                             ],
                             "visibility_rules": [
-                              "setting_shufflePotsMm_true"
+                              "setting_shufflePotsMm_overworld"
                             ],
                             "chest_unopened_img": "images/pot.png",
                             "chest_opened_img": "images/pot_grey.png",
