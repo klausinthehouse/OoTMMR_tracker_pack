@@ -1415,25 +1415,6 @@
                   "$mm|Termina Field Tree Stump Chest"
                 ],
                 "item_count": 1
-              },
-              {
-                "name": "Grotto near stump",
-                "access_rules": [
-                  "$mm|Termina Field Tall Grass Grotto"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Grass in Grotto near stump",
-                "access_rules": [
-                  "$mm|Termina Field Tall Grass Grotto Grass 01"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 14
               },              
               {
                 "name": "Soil-Items by Stump",                    
@@ -1470,6 +1451,18 @@
                   "setting_wonderitem_on"
                 ],
                 "item_count": 3
+              },
+              {
+                "name": "Wonderitem on Log",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item Hollow Trunk"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1481,11 +1474,43 @@
             ]
           },
           {
-            "name": "Kamaro Dance",
-            "short_name": "Kamaro Dance",
+            "name": "TF Grotto in Gras",
+            "short_name": "Grotto in Gras",
+            "sections": [              
+              {
+                "name": "Chest",
+                "access_rules": [
+                  "$mm|Termina Field Tall Grass Grotto"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Grass",
+                "access_rules": [
+                  "$mm|Termina Field Tall Grass Grotto Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 14              
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 576,
+                "y": 352
+              }
+            ]
+          },
+          {
+            "name": "Termina Field North",
+            "short_name": "TF North",
             "sections": [
               {
-                "name": "From Midnight to 6 AM",
+                "name": "Kamaro (Midnight to 6 AM)",
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
@@ -1504,6 +1529,30 @@
                   "setting_rockmm_overworld"
                 ],
                 "item_count": 8
+              },
+              {
+                "name": "Wonderitem on Ramp",
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "access_rules": [
+                 "$mm|Termina Field Wonder Item North Ramp"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitem_on"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Rocks on Wall",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Rocks North Wall"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 7
               }
             ],
             "map_locations": [
@@ -1652,30 +1701,6 @@
                   "$mm|Termina Field Dodongo Grotto"
                 ],
                 "item_count": 1
-              },
-              {
-                "name": "Wonderitem on Ramp",
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "access_rules": [
-                 "$mm|Termina Field Wonder Item North Ramp"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitem_on"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Rocks on Wall",
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "access_rules": [
-                  "$mm|Termina Field Rocks North Wall"
-                ],
-                "visibility_rules": [
-                  "setting_rockmm_overworld"
-                ],
-                "item_count": 7
               } 
             ],
             "map_locations": [
@@ -1739,18 +1764,6 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
-              },
-              {
-                "name": "Wonderitem above",
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "access_rules": [
-                 "$mm|Termina Field Wonder Item Hollow Trunk"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitem_on"
-                ],
-                "item_count": 1
               }
             ],
             "map_locations": [

@@ -1569,17 +1569,6 @@
         "item_count": 2
       },
       {
-        "name": "Under Grave Chest",
-        "short_name": "Under Grave",
-        "access_rules": [
-          "$ootmq|MQ Dodongo Cavern Chest Under Grave"
-        ],
-        "visibility_rules": [
-          "setting_mq_DodongoCavern_true"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Boss Loop Pots",
         "short_name": "Boss Loop",
         "access_rules": [
@@ -1629,6 +1618,17 @@
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Under Grave Chest",
+        "short_name": "Under Grave",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Chest Under Grave"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
         "item_count": 1
       },
       {

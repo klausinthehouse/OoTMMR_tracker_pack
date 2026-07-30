@@ -6117,7 +6117,7 @@
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 27
+                "item_count": 23
               },
               {
                 "name": "Rock on way",
@@ -6263,6 +6263,19 @@
                "chest_unopened_img": "images/system/blue.png",
                "chest_opened_img": "images/system/blue_check.png",
                "item_count": 4
+              },
+              {
+                "name": "Wonderitems near ZD ",
+                "short_name": "Near ZD",
+                "access_rules": [
+                  "$oot|Zora River Wonder Item Back 01"
+                ],
+                "visibility_rules": [
+                  "setting_wonderitemoot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Wonder.png",
+                "chest_opened_img": "images/system/Wonder_grey.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
