@@ -5508,7 +5508,7 @@ function _oot_logic()
             ["Lon Lon Ranch"] = function () return true end,
         },
         ["locations"] = {
-            ["Lon Lon Ranch Talon Bottle"] = function () return is_child() and woke_talon_child() and can_use_wallet(1) and is_day() and soul_talon() end,
+            ["Lon Lon Ranch Talon Bottle"] = function () return is_child() and woke_talon_child() and can_use_wallet(1) and is_day() and soul_talon() and soul_cucco() end,
             ["Lon Lon Ranch Talon Buy Milk"] = function () return is_child() and woke_talon_child() and can_use_wallet(1) and is_day() and soul_talon() and merchant_price(3) end,
             ["Lon Lon Ranch Talon House Pot 1"] = function () return true end,
             ["Lon Lon Ranch Talon House Pot 2"] = function () return true end,
