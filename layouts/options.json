@@ -11,6 +11,11 @@
       },
       {
         "type": "item",
+        "item": "setting_BoulderOoT",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_bossKeyShuffleOot",
         "height": 16
       },
@@ -127,6 +132,11 @@
       {
         "type": "item",
         "item": "setting_smallKeyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_SilverBoulderOot",
         "height": 16
       },
       {
@@ -369,6 +379,11 @@
       {
         "type": "item",
         "item": "setting_shuffleBarrel",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BoulderMm",
         "height": 16
       },
       {
