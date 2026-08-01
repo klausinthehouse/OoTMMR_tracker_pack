@@ -162,6 +162,19 @@
         "item_count": 6
       },
       {
+        "name": "Stone Room Boulder", 
+        "short_name": "Monument ",                   
+        "access_rules": [
+          "$mm|Swamp Skulltula Monument Room Boulder"
+        ],
+        "visibility_rules": [
+          "setting_BoulderMm_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Stone Room Soil-Items",                    
         "access_rules": [
           "$mm|Swamp Spider House Soft Soil Monument"

@@ -446,6 +446,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
+      },   
+      {
+        "name": "Boulders blocking GS", 
+        "short_name": "before gs",                   
+        "access_rules": [
+          "$oot|MQ Deku Tree Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 3
       },
       {
         "name": "GS Compass Room",
@@ -1133,6 +1146,32 @@
         "chest_opened_img": "images/deku_scrub_grey.png",
         "clear_as_group": false,
         "item_count": 2
+      },  
+      {
+        "name": "Lobby Boulders Downstairs", 
+        "short_name": "Lobby lower",                   
+        "access_rules": [
+          "$oot|MQ Dodonge Cavern Lobby Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Lobby Boulders Upstairs", 
+        "short_name": "Lobby Upper",                   
+        "access_rules": [
+          "$oot|MQ Dodonge Cavern Lobby Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 3
       },
       {
         "name": "Map Chest",
@@ -1247,6 +1286,19 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 4
+      },
+      {
+        "name": "Right Corridor Boulders", 
+        "short_name": "Right Corridor",                   
+        "access_rules": [
+          "$oot|MQ Dodonge Cavern Corridor Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 2
       },  
       {
         "name": "Green Corridor Side Room Grass",
@@ -1314,7 +1366,7 @@
         "item_count": 4
       },
       {
-        "name": "Green Corridor  Crates",
+        "name": "Green Corridor Crates",
         "short_name": "Green Corridor",
         "access_rules": [
           "$oot|MQ Dodongo Cavern Poe Room Large Crate 1"
@@ -1362,7 +1414,20 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
-      },      
+      },
+      {
+        "name": "Deep single Boulder", 
+        "short_name": "Deep Single",                   
+        "access_rules": [
+          "$oot|MQ Dodonge Cavern Boulder before Miniboss"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 1
+      },  
       {
         "name": "Upper Lizalfos Room Crates",
         "short_name": "Upper Lizalfos",
@@ -1375,6 +1440,19 @@
         "chest_unopened_img": "images/crate.png",
         "chest_opened_img": "images/crate_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Upper Lizalfos Boulders", 
+        "short_name": "Upper Lizalfos",                   
+        "access_rules": [
+          "$oot|MQ Dodonge Cavern Miniboss Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 12
       },
       {
         "name": "GS Lizalfos Room",
@@ -1852,7 +1930,20 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 2
-      },
+      },      
+      {
+        "name": "Entrance Boulder", 
+        "short_name": "Entrance",                   
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Entrance Boulder"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 1
+      }, 
       {
         "name": "Map Chest",
         "short_name": "Map",
@@ -1963,7 +2054,33 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },     
+      {
+        "name": "Main Room Ground Boulders", 
+        "short_name": "Main Room Ground",                   
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Hole Room Boulder Ground"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 2
       },
+      {
+        "name": "Main Room Wall Boulders", 
+        "short_name": "Main Room Wall",                   
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Hole Room Boulder Wall"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 3
+      }, 
       {
         "name": "Main Room Upper Grass",
         "short_name": "Main Upper",
@@ -2169,6 +2286,19 @@
         "item_count": 2
       },
       {
+        "name": "Main Room Forked Path Boulders", 
+        "short_name": "Forked Path",                   
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Forked Path Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Falling Like Like Room Chest",
         "short_name": "Like Like",
         "access_rules": [
@@ -2243,6 +2373,19 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
+      },      
+      {
+        "name": "Boulders invisible Enemies Room", 
+        "short_name": "Invisible Enemies",                   
+        "access_rules": [
+          "$oot|MQ Jabu-Jabu Side Room Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 2
       },
       {
         "name": "GS Invisible Enemies Room",
@@ -7406,6 +7549,19 @@
         "item_count": 4
       },
       {
+        "name": "Lobby Boulders", 
+        "short_name": "Lobby",                   
+        "access_rules": [
+          "$oot|MQ Spirit Temple Entrance Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Silver Rupees Lobby under Rocks",
         "short_name": "Lobby Rocks",
         "access_rules": [
@@ -7443,6 +7599,19 @@
         "chest_unopened_img": "images/system/silver.png",
         "chest_opened_img": "images/system/blue_check.png",
         "item_count": 2
+      },
+      {
+        "name": "Side Room Boulder", 
+        "short_name": "Child Crawl",                   
+        "access_rules": [
+          "$oot|MQ Spirit Temple Boulder after Water"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 1
       },
       {
         "name": "Entrance Front Left Chest",
@@ -7492,6 +7661,19 @@
         "item_count": 1
       },
       {
+        "name": "Child Crawl Boulder", 
+        "short_name": "Child Crawl",                   
+        "access_rules": [
+          "$oot|MQ Spirit Temple Child Crawl Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Map Room Enemy Chest",
         "short_name": "Child Left",
         "access_rules": [
@@ -7514,6 +7696,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
+      },
+      {
+        "name": "Child Bridge Boulders", 
+        "short_name": "Child Crawl",                   
+        "access_rules": [
+          "$oot|MQ Spirit Temple Child Bridge Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 3
       },
       {
         "name": "Child Boulders Pots",
@@ -8583,6 +8778,19 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 12
+      },      
+      {
+        "name": "Basement Boulders", 
+        "short_name": "Basement",                   
+        "access_rules": [
+          "$oot|Bottom of the Well Basement Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 6
       },
       {
         "name": "Basement Big Fairy (Sun)",
@@ -8651,6 +8859,19 @@
           "setting_mq_BottomoftheWell_false"
         ],
         "item_count": 1
+      },      
+      {
+        "name": "Alcove Boulders", 
+        "short_name": "Child Crawl",                   
+        "access_rules": [
+          "$oot|MQ Bottom of the Well Alcove Boulders"
+        ],
+        "visibility_rules": [
+          "setting_BoulderOot_dungeon"
+        ],
+        "chest_unopened_img": "images/system/Boulder.png",
+        "chest_opened_img": "images/system/Boulder_grey.png",
+        "item_count": 3
       },
       {
         "name": "Lobby Bombable Floor Hearts",

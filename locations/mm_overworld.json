@@ -1823,6 +1823,31 @@
                   "setting_rockmm_overworld"
                 ],
                 "item_count": 1
+              }  
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 475,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "name": "West Termina Fence",
+            "short_name": "Fence",
+            "sections": [              
+              {
+                "name": "Beehive Grotto Boulder",                    
+                "access_rules": [
+                  "$mm|Termina Field Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
               },
               {
                 "name": "Rock behind Fence",
@@ -1840,7 +1865,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "x": 475,
+                "x": 460,
                 "y": 310
               }
             ]
@@ -2198,6 +2223,18 @@
                   "setting_wonderitem_on"
                 ],
                 "item_count": 3
+              }, 
+              {
+                "name": "Gossip Grotto Boulder",                    
+                "access_rules": [
+                  "$mm|Termina Field Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -3883,6 +3920,18 @@
                         "chest_unopened_img": "images/system/RedBoulder.png",
                         "chest_opened_img": "images/system/RedBoulder_grey.png",
                         "item_count": 6
+                      },    
+                      {
+                        "name": "Boulders in Deku Palace",                    
+                        "access_rules": [
+                          "$mm|Deku Palace Boulders"
+                        ],
+                        "visibility_rules": [
+                          "setting_BoulderMm_overworld"
+                        ],
+                        "chest_unopened_img": "images/system/Boulder.png",
+                        "chest_opened_img": "images/system/Boulder_grey.png",
+                        "item_count": 2
                       },
                       {
                         "name": "Rupees on left side",                    
@@ -4813,6 +4862,18 @@
                   "$mm|Twin Islands Frozen Grotto Chest"
                 ],
                 "item_count": 1
+              },                
+              {
+                "name": "Large Boulders in Frozen Grotto",                    
+                "access_rules": [
+                  "$mm|Twin Islands Frozen Grotto Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 5
               }
             ],
             "map_locations": [
@@ -5227,8 +5288,8 @@
             ]
           },
           {
-            "name": "Lens Cave Chests",
-            "short_name": "Lens Grotto",
+            "name": "Lens Cave",
+            "short_name": "Lens Cave",
             "sections": [
               {
                 "name": "Lens chest",
@@ -5252,6 +5313,18 @@
                   "$mm|Lone Peak Shrine Boulder Chest"
                 ],
                 "item_count": 1
+              },    
+              {
+                "name": "Boulders in Lens Cave",                    
+                "access_rules": [
+                  "$mm|Lone Peak Shrine Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 3
               },
               {
                 "name": "Grass Patch 1",
@@ -6170,7 +6243,19 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "ZC Water",
-                "sections": [
+                "sections": [                  
+                  {
+                    "name": "Grotto Boulder",                    
+                    "access_rules": [
+                      "$mm|Zora Cape Boulder"
+                    ],
+                    "visibility_rules": [
+                      "setting_BoulderMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/Boulder.png",
+                    "chest_opened_img": "images/system/Boulder_grey.png",
+                    "item_count": 1
+                  },
                   {
                     "name": "Zora Cape Underwater Chest",
                     "access_rules": [
@@ -6202,6 +6287,18 @@
                     "chest_unopened_img": "images/system/tree.png",
                     "chest_opened_img": "images/system/tree_grey.png",                
                     "item_count": 3
+                  },
+                  {
+                    "name": "Large Boulders",                    
+                    "access_rules": [
+                      "$mm|Zora Cape Large Boulders"
+                    ],
+                    "visibility_rules": [
+                      "setting_BoulderMm_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/Boulder.png",
+                    "chest_opened_img": "images/system/Boulder_grey.png",
+                    "item_count": 2
                   }
                 ],
                 "map_locations": [
@@ -6642,7 +6739,7 @@
             ]
           },
           {
-            "name": "Road to Ikana Pillar",
+            "name": "Road to Ikana Top",
             "sections": [
               {
                 "name": "Pot on Top of Pillar",
@@ -6655,6 +6752,18 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 1
+              },          
+              {
+                "name": "Large Boulders in Upper Area",                    
+                "access_rules": [
+                  "$mm|Road to Ikana Large Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderMm_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 7
               }
             ],
             "map_locations": [

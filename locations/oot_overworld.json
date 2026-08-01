@@ -778,6 +778,18 @@
                 "item_count": 3
               },
               {
+                "name": "by GC Shortcut",                    
+                "access_rules": [
+                  "$oot|Lost Woods Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
+              },
+              {
                 "name": "Big Fairy by ZR Shortcut (Storms)",
                 "short_name": "ZR Shortcut (Storms)",
                 "access_rules": [
@@ -882,6 +894,18 @@
                 "item_count": 3
               },
               {
+                "name": "After Theatre",                    
+                "access_rules": [
+                  "$oot|Lost Woods Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
+              },
+              {
                 "name": "Rupee under Boulder",                
                 "access_rules": [
                   "$oot|Lost Woods Rupee Boulder"
@@ -905,6 +929,18 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 3
+              },
+              {
+                "name": "before Forest Meadow",                    
+                "access_rules": [
+                  "$oot|Lost Woods Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1365,6 +1401,18 @@
                 "item_count": 3
               },
               {
+                "name": "Near Market",                    
+                "access_rules": [
+                  "$oot|Hyrule Field Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
+              },
+              {
                 "name": "HF Ocarina of Time Item",
                 "access_rules": [
                   "$oot|Hyrule Field Ocarina of Time",
@@ -1479,6 +1527,18 @@
                 "chest_unopened_img": "images/system/bush.png",
                 "chest_opened_img": "images/system/bush_grey.png",                
                 "item_count": 11
+              },
+              {
+                "name": "Near Lake",                    
+                "access_rules": [
+                  "$oot|Hyrule Field Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1627,6 +1687,30 @@
                 "map": "oot",
                 "x": 1150,
                 "y": 480
+              }
+            ]
+          },          
+          {
+            "name": "HF Lone Silver Boulder",            
+            "sections": [              
+              {
+                "name": "Silver Boulder",                    
+                "access_rules": [
+                  "$oot|Hyrule Field Silver Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_SilverBoulderOot_on"
+                ],
+                "chest_unopened_img": "images/system/SilverBoulder.png",
+                "chest_opened_img": "images/system/SilverBoulder_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1479,
+                "y": 738
               }
             ]
           },
@@ -1885,6 +1969,18 @@
                 "chest_unopened_img": "images/system/bush.png",
                 "chest_opened_img": "images/system/bush_grey.png",                
                 "item_count": 11
+              },
+              {
+                "name": "North Boulder",                    
+                "access_rules": [
+                  "$oot|Hyrule Field Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -3417,6 +3513,18 @@
                 "chest_unopened_img": "images/crate.png",
                 "chest_opened_img": "images/crate_grey.png",
                 "item_count": 4
+              },
+              {
+                "name": "Kak Silver Boulder",                    
+                "access_rules": [
+                  "$oot|Kakariko Silver Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_SilverBoulderOot_on"
+                ],
+                "chest_unopened_img": "images/system/SilverBoulder.png",
+                "chest_opened_img": "images/system/SilverBoulder_grey.png",
+                "item_count": 1
               }   
             ],
             "map_locations": [
@@ -3490,6 +3598,15 @@
                 "short_name": "50 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 50 Tokens",
+                  "{gossip_stone}"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Kak Gold Skulltula Final Reward",
+                "short_name": "100 Tokens",
+                "access_rules": [
+                  "$oot|Skulltula House 100 Tokens",
                   "{gossip_stone}"
                 ],
                 "item_count": 1
@@ -4186,8 +4303,20 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Lower Rock Rupee",
-                    "short_name": "Lower Rock",                    
+                    "name": "Child Boulder",                    
+                    "access_rules": [
+                      "$oot|Death Mountain Trail Child Boulder"
+                    ],
+                    "visibility_rules": [
+                      "setting_BoulderOot_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/Boulder.png",
+                    "chest_opened_img": "images/system/Boulder_grey.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Lower Boulder Rupee",
+                    "short_name": "Lower Boulder",                    
                     "access_rules": [
                       "$oot|Death Mountain Trail Rupee Lower"
                     ],
@@ -4199,8 +4328,20 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Upper Rock Rupee",
-                    "short_name": "Upper Rock",                    
+                    "name": "Path Boulders",                    
+                    "access_rules": [
+                      "$oot|Death Mountain Trail Boulder"
+                    ],
+                    "visibility_rules": [
+                      "setting_BoulderOot_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/Boulder.png",
+                    "chest_opened_img": "images/system/Boulder_grey.png",
+                    "item_count": 2
+                  },
+                  {
+                    "name": "Upper Boulder Rupee",
+                    "short_name": "Upper Boulder",                    
                     "access_rules": [
                       "$oot|Death Mountain Trail Rupee Upper"
                     ],
@@ -4209,6 +4350,18 @@
                     ],
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Cow Grotto Boulder",                    
+                    "access_rules": [
+                      "$oot|Death Mountain Trail Boulder"
+                    ],
+                    "visibility_rules": [
+                      "setting_BoulderOot_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/Boulder.png",
+                    "chest_opened_img": "images/system/Boulder_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -4474,7 +4627,19 @@
           {
             "name": "Goron City",
             "short_name": "Goron City",
-            "sections": [
+            "sections": [              
+              {
+                "name": "GC before Maze",                    
+                "access_rules": [
+                  "$oot|Goron City Maze Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 3
+              },
               {
                 "name": "Right Maze Chests",
                 "access_rules": [
@@ -4516,6 +4681,18 @@
                 "item_count": 1
               },
               {
+                "name": "GC Maze Boulders",                    
+                "access_rules": [
+                  "$oot|Goron City Maze Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 10
+              },
+              {
                 "name": "GC Maze Red Boulders",                    
                 "access_rules": [
                   "$oot|Goron City Red Boulder 1"
@@ -4526,6 +4703,18 @@
                 "chest_unopened_img": "images/system/RedBoulder.png",
                 "chest_opened_img": "images/system/RedBoulder_grey.png",
                 "item_count": 5
+              },
+              {
+                "name": "GC Maze Silver Boulders",                    
+                "access_rules": [
+                  "$oot|Goron City Silver Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_SilverBoulderOot_on"
+                ],
+                "chest_unopened_img": "images/system/SilverBoulder.png",
+                "chest_opened_img": "images/system/SilverBoulder_grey.png",
+                "item_count": 29
               },
               {
                 "name": "GC GS Center Platform",
@@ -4585,6 +4774,18 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 1
+              },
+              {
+                "name": "GC Shortcut",                    
+                "access_rules": [
+                  "$oot|Goron City Shortcut Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 3
               },
               {
                 "name": "HP Spinning Pot",
@@ -4823,6 +5024,18 @@
                 "chest_unopened_img": "images/system/Rock.png",
                 "chest_opened_img": "images/system/Rock_grey.png",
                 "item_count": 8
+              },
+              {
+                "name": "Top Boulders",                    
+                "access_rules": [
+                  "$oot|Death Mountain Crater Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 3
               },
               {
                 "name": "Rocks by Gossip",
@@ -5736,6 +5949,18 @@
                 "item_count": 2
               },
               {
+                "name": "Great Fairy Boulder",                    
+                "access_rules": [
+                  "$oot|Hyrule Castle Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
+              },
+              {
                 "name": "HC Butterflies 2-2-3-5",                    
                 "short_name": "Butterflies 2-2-3-5",
                 "access_rules": [
@@ -5938,6 +6163,18 @@
                 "chest_unopened_img": "images/system/RedBoulder.png",
                 "chest_opened_img": "images/system/RedBoulder_grey.png",
                 "item_count": 3
+              },
+              {
+                "name": "GC Exterior Silver Boulders",                    
+                "access_rules": [
+                  "$oot|Ganon Castle Exterior Silver Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_SilverBoulderOot_on"
+                ],
+                "chest_unopened_img": "images/system/SilverBoulder.png",
+                "chest_opened_img": "images/system/SilverBoulder_grey.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -6365,6 +6602,18 @@
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
                 "item_count": 4
+              },       
+              {
+                "name": "Blocking Boulders",                    
+                "access_rules": [
+                  "$oot|Zora River Entrance Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -6399,6 +6648,18 @@
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              },      
+              {
+                "name": "Boulder on Fairy Grotto",                    
+                "access_rules": [
+                  "$oot|Zora River Grotto Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
                 "item_count": 1
               },         
               {
@@ -6810,6 +7071,42 @@
                 "chest_unopened_img": "images/system/bush.png",
                 "chest_opened_img": "images/system/bush_grey.png",                
                 "item_count": 6
+              },              
+              {
+                "name": "ZF Boulder",                    
+                "access_rules": [
+                  "$oot|Zora Fountain Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Silver Boulder",                    
+                "access_rules": [
+                  "$oot|Zora Fountain Silver Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_SilverBoulderOot_on"
+                ],
+                "chest_unopened_img": "images/system/SilverBoulder.png",
+                "chest_opened_img": "images/system/SilverBoulder_grey.png",
+                "item_count": 1
+              },        
+              {
+                "name": "ZF Submerged Boulder",                    
+                "access_rules": [
+                  "$oot|Zora Fountain submerged Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
               },
               {
                 "name": "ZF GS Hidden Cave (N)",
@@ -6909,7 +7206,19 @@
           },
           {
             "name": "GV River",
-            "sections": [
+            "sections": [              
+              {
+                "name": "Grotto Silver Boulder",                    
+                "access_rules": [
+                  "$oot|Gerudo Valley Silver Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_SilverBoulderOot_on"
+                ],
+                "chest_unopened_img": "images/system/SilverBoulder.png",
+                "chest_opened_img": "images/system/SilverBoulder_grey.png",
+                "item_count": 1
+              },
               {
                 "name": "GV Crate Freestanding PoH",
                 "short_name": "Crate HP",
@@ -7058,6 +7367,18 @@
                 "item_count": 3
               },
               {
+                "name": "After small Bridge Boulders",                    
+                "access_rules": [
+                  "$oot|Gerudo Valley Boulder Before Bridge"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 2
+              },
+              {
                 "name": "After small Bridge Red Boulders",                    
                 "access_rules": [
                   "$oot|Gerudo Valley Red Boulder Before Bridge 1"
@@ -7143,6 +7464,18 @@
                 "chest_unopened_img": "images/system/RedBoulder.png",
                 "chest_opened_img": "images/system/RedBoulder_grey.png",
                 "item_count": 6
+              },
+              {
+                "name": "Boulder near Pillar",                    
+                "access_rules": [
+                  "$oot|Gerudo Valley Boulder After Bridge"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
               },
               {
                 "name": "Chest behind Rocks",
@@ -7329,7 +7662,7 @@
                   "$oot|Gerudo Fortress Wonder Item Jail 1 1"
                 ],
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_wonderitemoot_dungeon"
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
@@ -7342,7 +7675,7 @@
                   "$oot|Thieves Hideout Crate Jail 1"
                 ],
                 "visibility_rules": [
-                  "setting_crateoot_overworld"
+                  "setting_crateoot_dungeon"
                 ],
                 "chest_unopened_img": "images/crate.png",
                 "chest_opened_img": "images/crate_grey.png",
@@ -7380,7 +7713,7 @@
                   "$oot|Gerudo Fortress Wonder Item Jail 2 1"
                 ],
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_wonderitemoot_dungeon"
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
@@ -7393,7 +7726,7 @@
                   "$oot|Thieves Hideout Crate Jail 2 1"
                 ],
                 "visibility_rules": [
-                  "setting_crateoot_overworld"
+                  "setting_crateoot_dungeon"
                 ],
                 "chest_unopened_img": "images/crate.png",
                 "chest_opened_img": "images/crate_grey.png",
@@ -7406,7 +7739,7 @@
                   "$oot|Thieves Hideout Crate Kitchen Corridor 1"
                 ],
                 "visibility_rules": [
-                  "setting_crateoot_overworld"
+                  "setting_crateoot_dungeon"
                 ],
                 "chest_unopened_img": "images/crate.png",
                 "chest_opened_img": "images/crate_grey.png",
@@ -7432,7 +7765,7 @@
                   "$oot|Gerudo Fortress Wonder Item Kitchen Skull"
                 ],
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_wonderitemoot_dungeon"
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
@@ -7445,7 +7778,7 @@
                   "$oot|Gerudo Fortress Wonder Item Kitchen Soup"
                 ],
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_wonderitemoot_dungeon"
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
@@ -7482,7 +7815,7 @@
                   "$oot|Gerudo Fortress Wonder Item Jail 3 1"
                 ],
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_wonderitemoot_dungeon"
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
@@ -7495,7 +7828,7 @@
                   "$oot|Thieves Hideout Crate Jail 3"
                 ],
                 "visibility_rules": [
-                  "setting_crateoot_overworld"
+                  "setting_crateoot_dungeon"
                 ],
                 "chest_unopened_img": "images/crate.png",
                 "chest_opened_img": "images/crate_grey.png",
@@ -7533,7 +7866,7 @@
                   "$oot|Gerudo Fortress Wonder Item Jail 4 1"
                 ],
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_wonderitemoot_dungeon"
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
@@ -7567,7 +7900,7 @@
                   "$oot|Thieves Hideout Crate Break Room 1"
                 ],
                 "visibility_rules": [
-                  "setting_crateoot_overworld"
+                  "setting_crateoot_dungeon"
                 ],
                 "chest_unopened_img": "images/crate.png",
                 "chest_opened_img": "images/crate_grey.png",
@@ -7580,7 +7913,7 @@
                   "$oot|Gerudo Fortress Wonder Item Break Room Bottom"
                 ],
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_wonderitemoot_dungeon"
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
@@ -7593,7 +7926,7 @@
                   "$oot|Gerudo Fortress Wonder Item Break Room Top"
                 ],
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_wonderitemoot_dungeon"
                 ],
                 "chest_unopened_img": "images/system/Wonder.png",
                 "chest_opened_img": "images/system/Wonder_grey.png",
@@ -7606,7 +7939,7 @@
                   "$oot|Gerudo Fortress Crate Break Room Top"
                 ],
                 "visibility_rules": [
-                  "setting_crateoot_overworld"
+                  "setting_crateoot_dungeon"
                 ],
                 "chest_unopened_img": "images/crate.png",
                 "chest_opened_img": "images/crate_grey.png",
@@ -7894,6 +8227,18 @@
                 "chest_unopened_img": "images/system/Rock.png",
                 "chest_opened_img": "images/system/Rock_grey.png",
                 "item_count": 16
+              },
+              {
+                "name": "Grotto Silver Boulder",                    
+                "access_rules": [
+                  "$oot|Desert Colossus Silver Boulder"
+                ],
+                "visibility_rules": [
+                  "setting_SilverBoulderOot_on"
+                ],
+                "chest_unopened_img": "images/system/SilverBoulder.png",
+                "chest_opened_img": "images/system/SilverBoulder_grey.png",
+                "item_count": 1
               },
               {
                 "name": "Colossus GS Hill (N)",
