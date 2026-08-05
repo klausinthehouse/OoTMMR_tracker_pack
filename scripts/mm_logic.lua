@@ -1291,6 +1291,10 @@ function _mm_logic()
 		return cond(setting('sharedSoulsAnimals'), soul_animals(b), soul_animals(a))
 	end
 
+    function rusty_key(x)
+		return not setting('RustyKeysMm') or has(x)
+	end
+
 	function soul_butterfly()
 		return shared_soul_animals(SOUL_ANIMAL_BUTTERFLY, SHARED_SOUL_ANIMAL_BUTTERFLY)
 	end
@@ -3923,21 +3927,18 @@ function _mm_logic()
             ["Termina Field"] = function () return true end,
             ["Clock Town South Upper West"] = function () return true end,
             ["Clock Town South Lower West"] = function () return true end,
-            ["Bomb Shop"] = function () return true end,
-            ["Trading Post"] = function () return true end,
-            ["Curiosity Shop"] = function () return between(NIGHT1_PM_10_00, DAY2_AM_06_00) or between(NIGHT2_PM_10_00, DAY3_AM_06_00) or after(NIGHT3_PM_10_00) end,
-            ["Post Office"] = function () return between(DAY1_PM_03_00, NIGHT1_AM_12_00) or (event('MAIL_LETTER') and between(NIGHT2_PM_06_00, NIGHT2_AM_12_00)) or is_night3() end,
-            ["Swordsman School"] = function () return first_day() or second_day() or between(DAY3_AM_06_00, NIGHT3_PM_11_00) or after(NIGHT3_AM_12_00) end,
-            ["Lottery"] = function () return is_day() or (event('PLAY_LOTTERY') and (before(NIGHT1_PM_11_00) or between(NIGHT2_PM_06_00, NIGHT2_PM_11_00) or between(NIGHT3_PM_06_00, NIGHT3_PM_11_00))) end,
+            ["Bomb Shop"] = function () return rusty_key(RUSTY_BOMBSHOP) end,
+            ["Trading Post"] = function () return rusty_key(RUSTY_TRADING) end,
+            ["Curiosity Shop"] = function () return rusty_key(RUSTY_CURIOSITY) end,
+            ["Post Office"] = function () return rusty_key(RUSTY_POST) end,
+            ["Swordsman School"] = function () return rusty_key(RUSTY_SWORDMAN) end,
+            ["Lottery"] = function () return rusty_key(RUSTY_LOTTERY) and (is_day() or event('PLAY_LOTTERY')) end,
         },
         ["locations"] = {
             ["Clock Town Bank Reward 1"] = function () return soul_banker() and can_use_wallet(1) end,
             ["Clock Town Bank Reward 2"] = function () return soul_banker() and (can_use_wallet(2) or (can_use_wallet(1) and (trick('MM_BANK_ONE_WALLET') or trick('MM_BANK_NO_WALLET')))) end,
             ["Clock Town Bank Reward 3"] = function () return soul_banker() and (can_use_wallet(3) or (can_use_wallet(2) and trick('MM_BANK_ONE_WALLET')) or (can_use_wallet(1) and trick('MM_BANK_NO_WALLET'))) end,
-            ["Clock Town Rosa Sisters HP"] = function () return soul_citizen() and has('MASK_KAMARO') and (is_night1() or is_night2()) end,
-            ["Clock Town Lottery Day 1"] = function () return can_use_wallet(1) and clock_day1 and clock_night1 end,
-            ["Clock Town Lottery Day 2"] = function () return can_use_wallet(1) and clock_day2 and clock_night2 end,
-            ["Clock Town Lottery Day 3"] = function () return can_use_wallet(1) and clock_day3 and clock_night3 end,
+            ["Clock Town Rosa Sisters HP"] = function () return soul_citizen() and has('MASK_KAMARO') and (is_night1() or is_night2()) end,           
         },
         ["age_change"] = false,
     },
@@ -3953,13 +3954,13 @@ function _mm_logic()
             ["Clock Town North"] = function () return true end,
             ["Clock Town South Upper East"] = function () return true end,
             ["Clock Town South Lower East"] = function () return true end,
-            ["Mayor's Office"] = function () return between(DAY1_AM_10_00, NIGHT1_PM_08_00) or between(DAY2_AM_10_00, NIGHT2_PM_08_00) or after(DAY3_AM_10_00) end,
-            ["Town Archery"] = function () return before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
-            ["Chest Game"] = function () return before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
-            ["Honey & Darling Game"] = function () return before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
-            ["Stock Pot Inn"] = function () return has('ROOM_KEY') or between(DAY1_AM_08_00, NIGHT1_PM_08_00) or between(DAY2_AM_08_00, NIGHT2_PM_08_00) or after(DAY3_AM_08_00) end,
+            ["Mayor's Office"] = function () return rusty_key(RUSTY_MAYOR) end,
+            ["Town Archery"] = function () return rusty_key(RUSTY_TOWNARCHERY) end,
+            ["Chest Game"] = function () return rusty_key(RUSTY_TREASURE) end,
+            ["Honey & Darling Game"] = function () return rusty_key(RUSTY_HONEY) end,
+            ["Stock Pot Inn"] = function () return rusty_key(RUSTY_INN) end,
             ["Clock Town East SPI Roof"] = function () return has('MASK_DEKU') or short_hook_anywhere() or has_hover_boots() or event('SPI_ROOF_FARORE') end,
-            ["Milk Bar"] = function () return between(DAY1_AM_10_00, NIGHT1_PM_09_00) or between(DAY2_AM_10_00, NIGHT2_PM_09_00) or between(DAY3_AM_10_00, NIGHT3_PM_09_00) or (has('MASK_ROMANI') and (between(NIGHT1_PM_10_00, NIGHT1_AM_05_00) or between(NIGHT2_PM_10_00, NIGHT2_AM_05_00) or after(NIGHT3_PM_10_00))) end,
+            ["Milk Bar"] = function () return has('MASK_ROMANI') and rusty_key(RUSTY_MILKBAR) end,
             ["Astral Observatory Passage"] = function () return event('BOMBER_CODE') or event('GUESS_BOMBER') or trick('MM_BOMBER_BACKFLIP') or short_hook_anywhere() end,
             ["Clock Town East Postbox"] = function () return true end,
         },
@@ -4014,7 +4015,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Clock Town East Near Hideout"] = function () return true end,
-            ["Astral Observatory Junction"] = function () return true end,
+            ["Astral Observatory Junction"] = function () return rusty_key(RUSTY_OBSERVATORY) end,
         },
         ["locations"] = {
             ["Astral Observatory Passage Chest"] = function () return has_explosives() or trick_keg_explosives() end,
@@ -4031,7 +4032,7 @@ function _mm_logic()
     ["Astral Observatory Junction"] = {
         ["exits"] = {
             ["Astral Observatory Passage"] = function () return true end,
-            ["Astral Observatory"] = function () return true end,
+            ["Astral Observatory"] = function () return rusty_key(RUSTY_OBSERVATORY) end,
         },
         ["age_change"] = false,
     },
@@ -4042,7 +4043,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Clock Town South"] = function () return true end,
-            ["Kafei Hideout"] = function () return event('MAIL_LETTER') and between(DAY2_PM_02_00, NIGHT2_PM_10_00) or (event('MEET_KAFEI') and between(DAY3_PM_01_00, NIGHT3_PM_10_00)) end,
+            ["Kafei Hideout"] = function () return rusty_key(RUSTY_HIDEOUT) and (event('MAIL_LETTER') or event('MEET_KAFEI')) end,
         },
         ["locations"] = {
             ["Clock Town Guru Guru Mask Bremen"] = function () return soul_guru_guru() and (is_night1() or is_night2()) end,
@@ -4180,6 +4181,11 @@ function _mm_logic()
         ["exits"] = {
             ["Clock Town West"] = function () return true end,
         },
+        ["locations"] = {        
+            ["Clock Town Lottery Day 1"] = function () return can_use_wallet(1) and clock_day1 and clock_night1 end,
+            ["Clock Town Lottery Day 2"] = function () return can_use_wallet(1) and clock_day2 and clock_night2 end,
+            ["Clock Town Lottery Day 3"] = function () return can_use_wallet(1) and clock_day3 and clock_night3 end,
+        },
         ["age_change"] = false,
     },
     ["Mayor's Office"] = {
@@ -4187,8 +4193,8 @@ function _mm_logic()
             ["Clock Town East"] = function () return true end,
         },
         ["locations"] = {
-            ["Mayor's Office Kafei's Mask"] = function () return soul_npc(SOUL_NPC_AROMA) and (between(DAY1_AM_10_00, NIGHT1_PM_08_00) or between(DAY2_AM_10_00, NIGHT2_PM_08_00)) end,
-            ["Mayor's Office HP"] = function () return soul_npc(SOUL_NPC_MAYOR_DOTOUR) and has('MASK_COUPLE') and (between(DAY1_AM_10_00, NIGHT1_PM_08_00) or between(DAY2_AM_10_00, NIGHT2_PM_08_00) or between(DAY3_AM_10_00, NIGHT3_PM_06_00)) end,
+            ["Mayor's Office Kafei's Mask"] = function () return soul_npc(SOUL_NPC_AROMA) and rusty_key(RUSTY_KAFEI) end,
+            ["Mayor's Office HP"] = function () return soul_npc(SOUL_NPC_MAYOR_DOTOUR) and has('MASK_COUPLE') and rusty_key(RUSTY_OFFICE) end,
         },
         ["age_change"] = false,
     },
@@ -4253,12 +4259,12 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Stock Pot Inn Guest Room Chest"] = function () return has('ROOM_KEY') end,
-            ["Stock Pot Inn Staff Room Chest"] = function () return is_night3() end,
+            ["Stock Pot Inn Staff Room Chest"] = function () return is_night3() and rusty_key(RUSTY_STAFF) end,
             ["Stock Pot Inn Room Key"] = function () return soul_anju() and between(DAY1_PM_01_45, DAY1_PM_04_00) end,
             ["Stock Pot Inn Letter to Kafei"] = function () return event('MEET_ANJU') end,
             ["Stock Pot Inn Couple's Mask"] = function () return event('SUN_MASK') and event('DELIVER_PENDANT') and event('MEET_ANJU') and after(NIGHT3_AM_04_00) end,
-            ["Stock Pot Inn Grandma HP 1"] = function () return soul_old_hag() and has('MASK_ALL_NIGHT') and grandma_story_1() end,
-            ["Stock Pot Inn Grandma HP 2"] = function () return soul_old_hag() and has('MASK_ALL_NIGHT') and grandma_story_2() end,
+            ["Stock Pot Inn Grandma HP 1"] = function () return soul_old_hag() and rusty_key(RUSTY_GRANDMA) and has('MASK_ALL_NIGHT') and grandma_story_1() end,
+            ["Stock Pot Inn Grandma HP 2"] = function () return soul_old_hag() and rusty_key(RUSTY_GRANDMA) and has('MASK_ALL_NIGHT') and grandma_story_2() end,
             ["Stock Pot Inn ??? HP"] = function () return soul_npc(SOUL_NPC_TOILET_HAND) and cond(setting('erIndoorsExtra'), has_paper() and midnight(), has_paper() and midnight() and (clock_night3() or has('ROOM_KEY') or has('MASK_DEKU') or has_hover_boots() or event('SPI_ROOF_FARORE') or trick('MM_STOCK_POT_WAIT'))) end,
             ["Stock Pot Inn Wonder Item 1"] = function () return has_mask_zora() and has_magic() end,
             ["Stock Pot Inn Wonder Item 2"] = function () return has_mask_zora() and has_magic() end,
@@ -4269,7 +4275,7 @@ function _mm_logic()
     ["Clock Town East SPI Roof"] = {
         ["exits"] = {
             ["Clock Town East"] = function () return true end,
-            ["Stock Pot Inn"] = function () return true end,
+            ["Stock Pot Inn"] = function () return rusty_key(RUSTY_ROOF) end,
         },
         ["age_change"] = false,
     },
@@ -4579,6 +4585,7 @@ function _mm_logic()
             ["Termina Field Grass Pack 18 Grass 11"] = function () return true end,
             ["Termina Field Grass Pack 18 Grass 12"] = function () return true end,
             ["Termina Field Rocks"] = function () return true end,
+            ["Termina Field Boulders"] = function () return can_break_boulders() end,
             ["Termina Field Rupee"] = function () return true end,
             ["Termina Field Tree"] = function () return true end,
             ["Termina Field Soft Soils"] = function () return has_bugs() end,
@@ -4939,7 +4946,7 @@ function _mm_logic()
         ["exits"] = {
             ["Swamp Front"] = function () return true end,
             ["Termina Field"] = function () return true end,
-            ["Swamp Archery"] = function () return before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
+            ["Swamp Archery"] = function () return rusty_key(RUSTY_SWAMPARCHERY) end,
             ["Road to Southern Swamp Grotto"] = function () return true end,
             ["Tingle Swamp"] = function () return soul_npc(SOUL_NPC_TINGLE) and has_weapon_range() end,
         },
@@ -5033,9 +5040,9 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Road to Southern Swamp"] = function () return true end,
-            ["Tourist Information"] = function () return true end,
+            ["Tourist Information"] = function () return rusty_key(RUSTY_TOURIST) end,
             ["Swamp Back"] = function () return (event('BOAT_RIDE') or has_arrows() or can_hookshot_short() or can_use_din()) and (has('MASK_DEKU') or has_hover_boots() or can_use_nayru() or is_adult()) or is_swamp_cleared() or has_mask_zora() end,
-            ["Swamp Potion Shop"] = function () return true end,
+            ["Swamp Potion Shop"] = function () return rusty_key(RUSTY_POTION) end,
             ["Woods of Mystery"] = function () return true end,
             ["Owl Swamp"] = function () return true end,
         },
@@ -5322,6 +5329,7 @@ function _mm_logic()
             ["Deku Palace Red Boulder 1"] = function () return can_break_red_boulders() end,
             ["Deku Palace Red Boulder 2"] = function () return can_break_red_boulders() end,
             ["Deku Palace Red Boulder 3"] = function () return can_break_red_boulders() end,
+            ["Deku Palace Boulders"] = function () return can_break_boulders() end,
             ["Deku Palace Soft Soil"] = function () return has_bugs() end,
         },
         ["age_change"] = false,
@@ -5641,7 +5649,7 @@ function _mm_logic()
             ["Twin Islands"] = function () return true end,
             ["Mountain Village Cliff"] = function () return is_winter() and (can_use_lens_strict() or trick('MM_DARMANI_WALL')) or event('GORON_GRAVE_FARORE') or (is_spring() and (has_mask_goron() or has_mask_zora() or can_hookshot() or short_hook_anywhere())) end,
             ["Path to Snowhead Front"] = function () return true end,
-            ["Blacksmith"] = function () return true end,
+            ["Blacksmith"] = function () return rusty_key(RUSTY_BLACKSMITH) end,
             ["Near Village Grotto"] = function () return is_spring() and (has_mask_goron() or short_hook_anywhere()) end,
             ["Owl Mountain"] = function () return true end,
             ["Mountain Village Elder"] = function () return true end,
@@ -5917,6 +5925,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Twin Islands Frozen Grotto Chest"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
+            ["Twin Islands Frozen Grotto Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
         },
         ["age_change"] = false,
     },
@@ -6012,6 +6021,7 @@ function _mm_logic()
             ["Lone Peak Shrine Lens Chest"] = function () return true end,
             ["Lone Peak Shrine Boulder Chest"] = function () return has_explosives() or trick_keg_explosives() end,
             ["Lone Peak Shrine Invisible Chest"] = function () return can_use_lens() end,
+            ["Lone Peak Shrine Boulders"] = function () return can_break_boulders() end,
             ["Lone Peak Shrine Grass Pack 1 Grass 01"] = function () return true end,
             ["Lone Peak Shrine Grass Pack 1 Grass 02"] = function () return true end,
             ["Lone Peak Shrine Grass Pack 1 Grass 03"] = function () return true end,
@@ -6365,9 +6375,9 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Near Romani Ranch"] = function () return true end,
-            ["Cucco Shack"] = function () return between(DAY1_AM_06_00, NIGHT1_PM_08_00) or between(DAY2_AM_06_00, NIGHT2_PM_08_00) or between(DAY3_AM_06_00, NIGHT3_PM_08_00) end,
-            ["Doggy Racetrack"] = function () return between(DAY1_AM_06_00, NIGHT1_PM_08_00) or between(DAY2_AM_06_00, NIGHT2_PM_08_00) or between(DAY3_AM_06_00, NIGHT3_PM_08_00) end,
-            ["Stables"] = function () return between(DAY1_AM_06_00, NIGHT1_AM_02_30) or second_day() or between(DAY3_AM_06_00, NIGHT3_PM_08_00) end,
+            ["Cucco Shack"] = function () return rusty_key(RUSTY_CUCCO) end,
+            ["Doggy Racetrack"] = function () return rusty_key(RUSTY_DOGGY) end,
+            ["Stables"] = function () return rusty_key(RUSTY_BARN) end,
             ["Ranch House"] = function () return between(DAY1_AM_06_00, NIGHT1_PM_08_00) or between(DAY2_AM_06_00, NIGHT2_PM_08_00) or between(DAY3_AM_06_00, NIGHT3_PM_08_00) end,
         },
         ["locations"] = {
@@ -6577,7 +6587,7 @@ function _mm_logic()
     ["Great Bay Coast Platform"] = {
         ["exits"] = {
             ["Great Bay Coast"] = function () return true end,
-            ["Laboratory"] = function () return true end,
+            ["Laboratory"] = function () return rusty_key(RUSTY_LAB) end,
             ["Owl Great Bay"] = function () return true end,
         },
         ["age_change"] = false,
@@ -6843,6 +6853,8 @@ function _mm_logic()
             ["Zora Cape Pot Near Beavers 2"] = function () return true end,
             ["Zora Cape Trees"] = function () return true end,
             ["Zora Cape Rocks"] = function () return true end,
+            ["Zora Cape Boulders"] = function () return can_break_boulders() end,
+            ["Zora Cape Large Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
         },
         ["age_change"] = false,
     },
@@ -6946,11 +6958,11 @@ function _mm_logic()
         ["exits"] = {
             ["Zora Hall Entrance"] = function () return true end,
             ["Zora Cape Peninsula"] = function () return true end,
-            ["Zora Shop"] = function () return true end,
-            ["Tijo's Room"] = function () return can_enter_zora_door() end,
-            ["Japas' Room"] = function () return can_enter_zora_door() end,
-            ["Evan's Room"] = function () return can_enter_zora_door() end,
-            ["Lulu's Room"] = function () return can_enter_zora_door() end,
+            ["Zora Shop"] = function () return rusty_key(RUSTY_ZORA) end,
+            ["Tijo's Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_TIJO) end,
+            ["Japas' Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_JAPA) end,
+            ["Evan's Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_EVAN) end,
+            ["Lulu's Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_LULU) end,
         },
         ["locations"] = {
             ["Zora Hall Scene Lights"] = function () return soul_zora() and (can_use_fire_arrows() or (trick('MM_STAGE_LIGHTS_DIN') and has_arrows() and can_use_din() and can_hookshot())) end,
@@ -7256,7 +7268,7 @@ function _mm_logic()
             ["Beneath The Graveyard Night 1/2 Exchange"] = function () return short_hook_anywhere() or has_hover_boots() end,
         },
         ["locations"] = {
-            ["Beneath The Graveyard HP"] = function () return soul_iron_knuckle() and (has_explosives() or trick_keg_explosives()) and (can_use_lens() or short_hook_anywhere()) and (has_weapon() or has_mask_goron() or has_explosives()) end,
+            ["Beneath The Graveyard HP"] = function () return soul_iron_knuckle() and (has_explosives() or trick_keg_explosives()) and (can_use_lens() or short_hook_anywhere()) and (has_weapon() or has_mask_goron() or has_explosives()) and rusty_key(RUSTY_GRAVE) end,
             ["Beneath The Graveyard Pot Night 2 Early"] = function () return true end,
             ["Beneath The Graveyard Pot Night 2 Before Pit 1"] = function () return can_use_lens() end,
             ["Beneath The Graveyard Pot Night 2 Before Pit 2"] = function () return can_use_lens() end,
@@ -7276,7 +7288,7 @@ function _mm_logic()
     },
     ["Beneath The Graveyard Night 3 Fake Exit"] = {
         ["exits"] = {
-            ["Ikana Graveyard"] = function () return true end,
+            ["Ikana Graveyard"] = function () return rusty_key(RUSTY_DAMPE) end,
         },
         ["age_change"] = false,
     },
@@ -7318,6 +7330,9 @@ function _mm_logic()
         ["exits"] = {
             ["Road to Ikana Center"] = function () return true end,
             ["Ikana Valley"] = function () return true end,
+        },
+        ["locations"] = {            
+            ["Road to Ikana Large Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
         },
         ["age_change"] = false,
     },
@@ -7410,7 +7425,7 @@ function _mm_logic()
             ["Ikana Valley"] = function () return true end,
             ["Ikana Fairy Fountain"] = function () return true end,
             ["Ikana Spring Water Cave"] = function () return true end,
-            ["Music Box House"] = function () return event('IKANA_CURSE_LIFTED') and (has_explosives() or has_mask_stone()) end,
+            ["Music Box House"] = function () return event('IKANA_CURSE_LIFTED') and (has_explosives() or has_mask_stone()) and rusty_key(RUSTY_MUSIC) end,
             ["Ghost Hut"] = function () return true end,
             ["Beneath The Well Entrance"] = function () return true end,
             ["Ikana Castle Entrance"] = function () return true end,
@@ -9136,6 +9151,7 @@ function _mm_logic()
             ["Swamp Skulltula Monument Room Crate 1"] = function () return gs() end,
             ["Swamp Skulltula Monument Room Crate 2"] = function () return gs() end,
             ["Swamp Skulltula Monument Room Torch"] = function () return gs() end,
+            ["Swamp Skulltula Monument Room Boulder"] = function () return can_break_boulders() end,
             ["Swamp Skulltula Pot Room Hive 1"] = function () return gs() and (has_weapon_range() or has_bombchu()) end,
             ["Swamp Skulltula Pot Room Hive 2"] = function () return gs() and (has_weapon_range() or has_bombchu()) end,
             ["Swamp Skulltula Pot Room Behind Vines"] = function () return gs() and has_sword() end,
