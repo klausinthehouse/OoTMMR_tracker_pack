@@ -755,8 +755,7 @@
         "inherit_codes": false
       },
       {
-        "img": "images/setting_shufflePotsOot_dungeon.png",
-        "img_mods": "@disabled",
+        "img": "images/setting_shufflePotsOot_dungeon.png",        
         "codes": "setting_shufflePotsOot,setting_shufflePotsOot_dungeon",
         "inherit_codes": false
       },
@@ -766,7 +765,7 @@
         "inherit_codes": false
       },
       {
-        "img": "images/setting_shufflePotsOot_false.png",
+        "img": "images/setting_shufflePotsOot_true.png",
         "img_mods": "@disabled",
         "codes": "setting_shufflePotsOot,setting_shufflePotsOot_dungeon,setting_shufflePotsOot_overworld",
         "inherit_codes": false
@@ -3426,6 +3425,46 @@
         "img": "images/setting_soulsAnimalsMm_false.png",
         "img_mods": "@disabled",
         "codes": "setting_soulsAnimalsMm,setting_soulsAnimalsMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rusty Keys (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_RustyKeysOoT_true.png",
+        "codes": "setting_RustyKeysOot,setting_RustyKeysOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_RustyKeysOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_RustyKeysOot,setting_RustyKeysOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rusty Keys (Mm)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_RustyKeysMm_true.png",
+        "codes": "setting_RustyKeysMm,setting_RustyKeysMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_RustyKeysMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_RustyKeysMm,setting_RustyKeysMm_false",
         "inherit_codes": false
       }
     ]

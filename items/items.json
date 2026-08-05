@@ -2417,6 +2417,951 @@
     ]
   },
   {
+    "name": "Rusted Key Adult Bazaar",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_adultbazaar.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_adultbazaar.png",
+        "codes": "OOT_RUSTY_ADULT_BAZAAR"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Adult Potion Shop",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_adultpotionshop.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_adultpotionshop.png",
+        "codes": "OOT_RUSTY_ADULT_POTION"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Adult Potion Shop Back",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_adultpotionshopback.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_adultpotionshopback.png",
+        "codes": "OOT_RUSTY_ADULT_POTION_BACK"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Adult Shooting Gallery",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_adultshootinggallery.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_adultshootinggallery.png",
+        "codes": "OOT_RUSTY_ADULT_SHOOTING"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Backalley",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_backalleyhouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_backalleyhouse.png",
+        "codes": "OOT_RUSTY_BACKALLEY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Bombchu Bowling",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_bombchubowling.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_bombchubowling.png",
+        "codes": "OOT_RUSTY_BOWLING"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Bombchu Shop",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_bombchushop.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_bombchushop.png",
+        "codes": "OOT_RUSTY_BOMBCHUSHOP"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Carpenter House",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_carpenterhouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_carpenterhouse.png",
+        "codes": "OOT_RUSTY_CARPENTER"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Child Bazaar",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_childbazaar.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_childbazaar.png",
+        "codes": "OOT_RUSTY_CHILD_BAZAAR"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Child Potion",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_childpotionshop.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_childpotionshop.png",
+        "codes": "OOT_RUSTY_CHILD_POTION"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Child Shooting Gallery",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_childshootinggallery.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_childshootinggallery.png",
+        "codes": "OOT_RUSTY_CHILD_SHOOTING"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Doglady House",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_dogladyhouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_dogladyhouse.png",
+        "codes": "OOT_RUSTY_DOGLADY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Fishing Pond",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_fishingpond.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_fishingpond.png",
+        "codes": "OOT_RUSTY_FISHING"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Grannys Potion Shop",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_grannyspotionshop.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_grannyspotionshop.png",
+        "codes": "OOT_RUSTY_GRANNY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Hyrule Castle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_hyrulecastle.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_hyrulecastle.png",
+        "codes": "OOT_RUSTY_CASTLE"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Impas House",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_impashouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_impashouse.png",
+        "codes": "OOT_RUSTY_IMPA"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Graveyard Hut",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_kakarikograveyardhut.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_kakarikograveyardhut.png",
+        "codes": "OOT_RUSTY_GRAVEYARD"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Laboratory",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_laboratory.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_laboratory.png",
+        "codes": "OOT_RUSTY_LAB"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Malons Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_malonsroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_malonsroom.png",
+        "codes": "OOT_RUSTY_MALON"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Mask Shop",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_maskshop.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_maskshop.png",
+        "codes": "OOT_RUSTY_MASK"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Ranch House",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_ranchhouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_ranchhouse.png",
+        "codes": "OOT_RUSTY_RANCH"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Silo",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_silo.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_silo.png",
+        "codes": "OOT_RUSTY_SILO"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Skulltula House",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_skulltulahouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_skulltulahouse.png",
+        "codes": "OOT_RUSTY_SKULLTULA"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Treasure Chest Game",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_treasurechestgame.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_treasurechestgame.png",
+        "codes": "OOT_RUSTY_TREASURE"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Windmill",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_windmill.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_windmill.png",
+        "codes": "OOT_RUSTY_WINDMILL"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Beneath the Graveyard",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_beneaththegraveyard.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_beneaththegraveyard.png",
+        "codes": "MM_RUSTY_GRAVE"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Blacksmith",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_blacksmith.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_blacksmith.png",
+        "codes": "MM_RUSTY_BLACKSMITH"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Bomb Shop",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_bombshop.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_bombshop.png",
+        "codes": "MM_RUSTY_BOMBSHOP"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Cucco Shack",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_cuccoshack.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_cuccoshack.png",
+        "codes": "MM_RUSTY_CUCCO"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Curiosity Shop",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_curiosityshop.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_curiosityshop.png",
+        "codes": "MM_RUSTY_CURIOSITY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Dampes House",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_dampeshouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_dampeshouse.png",
+        "codes": "MM_RUSTY_DAMPE"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Doggy Racetrack",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_doggyracetrack.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_doggyracetrack.png",
+        "codes": "MM_RUSTY_DOGGY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Evans Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_evansroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_evansroom.png",
+        "codes": "MM_RUSTY_EVAN"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Grandmas Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_grandmasroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_grandmasroom.png",
+        "codes": "MM_RUSTY_GRANDMA"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Honey and Darling",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_honeyanddarling.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_honeyanddarling.png",
+        "codes": "MM_RUSTY_HONEY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Japas Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_japasroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_japasroom.png",
+        "codes": "MM_RUSTY_JAPA"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Kafeis Hideout",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_kafeishideout.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_kafeishideout.png",
+        "codes": "MM_RUSTY_HIDEOUT"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Kafeis Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_kafeisroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_kafeisroom.png",
+        "codes": "MM_RUSTY_KAFEI"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Lottery",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_lottery.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_lottery.png",
+        "codes": "MM_RUSTY_LOTTERY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Lulus Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_lulusroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_lulusroom.png",
+        "codes": "MM_RUSTY_LULU"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Mayors Residence",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_mayorsresidence.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_mayorsresidence.png",
+        "codes": "MM_RUSTY_MAYOR"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Mayors Office",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_mayorsresidenceoffice.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_mayorsresidenceoffice.png",
+        "codes": "MM_RUSTY_OFFICE"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key milk Bar",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_milkbar.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_milkbar.png",
+        "codes": "MM_RUSTY_MILKBAR"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Music House",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_musichouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_musichouse.png",
+        "codes": "MM_RUSTY_MUSIC"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Observatory",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_observatory.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_observatory.png",
+        "codes": "MM_RUSTY_OBSERVATORY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Ocean Lab",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_oceaniclaboratory.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_oceaniclaboratory.png",
+        "codes": "MM_RUSTY_LAB"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Post Office",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_postoffice.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_postoffice.png",
+        "codes": "MM_RUSTY_POST"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Potion Shop",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_potionshop.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_potionshop.png",
+        "codes": "MM_RUSTY_POTION"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Romani Ranch Barn",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_romaniranchbarn.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_romaniranchbarn.png",
+        "codes": "MM_RUSTY_BARN"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Romani Ranch House",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_romaniranchhouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_romaniranchhouse.png",
+        "codes": "MM_RUSTY_RANCH"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Romanis Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_romanisroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_romanisroom.png",
+        "codes": "MM_RUSTY_ROMANI"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Stock Pot Inn",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_stockpotinn.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_stockpotinn.png",
+        "codes": "MM_RUSTY_INN"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Dormitory",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_stockpotinndormitory.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_stockpotinndormitory.png",
+        "codes": "MM_RUSTY_DORMITORY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Stock Pot Inn Roof",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_stockpotinnroof.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_stockpotinnroof.png",
+        "codes": "MM_RUSTY_ROOF"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Stock Pot Inn Staff Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_stockpotinnstaffroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_stockpotinnstaffroom.png",
+        "codes": "MM_RUSTY_STAFF"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Swamp Archery",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_swamparchery.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_swamparchery.png",
+        "codes": "MM_RUSTY_SWAMPARCHERY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Swordman School",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_swordmanschool.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_swordmanschool.png",
+        "codes": "MM_RUSTY_SWORDMAN"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Tijos Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_tijosroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_tijosroom.png",
+        "codes": "MM_RUSTY_TIJO"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Tourist Information",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_touristinformation.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_touristinformation.png",
+        "codes": "MM_RUSTY_TOURIST"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Town Archery",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_townarchery.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_townarchery.png",
+        "codes": "MM_RUSTY_TOWNARCHERY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Trading Post",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_tradingpost.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_tradingpost.png",
+        "codes": "MM_RUSTY_TRADING"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Treasure Game",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_treasuregame.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_treasuregame.png",
+        "codes": "MM_RUSTY_TREASURE"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Zora Shop",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_zorashop.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_zorashop.png",
+        "codes": "MM_RUSTY_ZORA"
+      }
+    ]
+  },
+  {
     "name": "Dummy",
     "type": "toggle",
     "img": "images/rupee.png",
