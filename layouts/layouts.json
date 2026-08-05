@@ -24,9 +24,17 @@
                   "content": [
                     {
                       "type": "button_popup",
-                      "style": "settings",
+                      "style": "image",
+                      "image": "images/ocarina_icon.png",
                       "popup_background": "#FF212121",
-                      "layout": "options_popup"
+                      "layout": "optionsoot_popup"
+                    },
+                    {
+                      "type": "button_popup",
+                      "style": "image",
+                      "image": "images/mm_icon.png",
+                      "popup_background": "#FF212121",
+                      "layout": "optionsmm_popup"
                     },
                     {
                       "type": "button_popup",
@@ -34,6 +42,20 @@
                       "image": "images/soul_enemy.png",
                       "popup_background": "#FF212121",
                       "layout": "souls_popup"
+                    },                    
+                    {
+                      "type": "button_popup",
+                      "style": "image",
+                      "image": "images/silver.png",
+                      "popup_background": "#FF212121",
+                      "layout": "SR_popup"
+                    },                    
+                    {
+                      "type": "button_popup",
+                      "style": "image",
+                      "image": "images/rusted_key.png",
+                      "popup_background": "#FF212121",
+                      "layout": "RK_popup"
                     }
                   ]
                 },

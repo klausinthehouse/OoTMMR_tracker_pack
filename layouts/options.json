@@ -158,7 +158,14 @@
         "type": "item",
         "item": "setting_wonderitemoot",
         "height": 16
-      },
+      }
+    ]
+  },
+  "layout_world_oot": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
       {
         "type": "item",
         "item": "setting_priceOotShops",
@@ -226,6 +233,53 @@
       },
       {
         "type": "item",
+        "item": "setting_restoreBrokenActors",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_ocarinaButtonsShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soulsEnemyOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soulsBossOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soulsNpcOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soulsMiscOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soulsAnimalsOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_RustyKeysOot",
+        "height": 16
+      }
+    ]
+  },
+  "layout_QOL_oot": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
         "item": "setting_openZdShortcut",
         "height": 16
       },
@@ -261,11 +315,6 @@
       },
       {
         "type": "item",
-        "item": "setting_restoreBrokenActors",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_blueFireArrows",
         "height": 16
       },
@@ -277,36 +326,6 @@
       {
         "type": "item",
         "item": "setting_bombchuBehaviorOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_ocarinaButtonsShuffleOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsEnemyOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsBossOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsNpcOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsMiscOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsAnimalsOot",
         "height": 16
       },
       {
@@ -530,7 +549,14 @@
         "type": "item",
         "item": "setting_wonderitem",
         "height": 16
-      },     
+      }
+    ]
+  },
+  "layout_world_mm": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [  
       {
         "type": "item",
         "item": "setting_priceMmShops",
@@ -573,41 +599,6 @@
       },
       {
         "type": "item",
-        "item": "setting_crossWarpMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_crossAge",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_hookshotAnywhereMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_progressiveGoronLullaby",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_fairyOcarinaMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shortHookshotMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bombchuBehaviorMm",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_ocarinaButtonsShuffleMm",
         "height": 16
       },
@@ -639,6 +630,53 @@
       {
         "type": "item",
         "item": "setting_clocks",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_RustyKeysMm",
+        "height": 16
+      }
+    ]
+  },
+  "layout_QOL_mm": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_crossWarpMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_crossAge",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_hookshotAnywhereMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_progressiveGoronLullaby",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fairyOcarinaMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shortHookshotMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bombchuBehaviorMm",
         "height": 16
       }
     ]
@@ -3167,11 +3205,340 @@
       }
     ]
   },
-  "options_popup": {
+  "layout_RK_OoT": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [            
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_ADULT_BAZAAR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_ADULT_POTION",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_ADULT_POTION_BACK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_ADULT_SHOOTING",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_BACKALLEY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_BOWLING",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_BOMBCHUSHOP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_CARPENTER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_CHILD_BAZAAR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_CHILD_POTION",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_CHILD_SHOOTING",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_DOGLADY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_FISHING",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_GRANNY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_CASTLE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_IMPA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_GRAVEYARD",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_LAB",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_MALON",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_MASK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_RANCH",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_SILO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_SKULLTULA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_TREASURE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_WINDMILL",
+        "height": 16
+      }
+    ]
+  },
+  "layout_RK_Mm": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [            
+      {
+        "type": "item",
+        "item": "MM_RUSTY_GRAVE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_BLACKSMITH",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_BOMBSHOP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_CUCCO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_CURIOSITY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_DAMPE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_DOGGY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_EVAN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_GRANDMA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_HONEY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_JAPA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_HIDEOUT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_KAFEI",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_LOTTERY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_LULU",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_MAYOR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_OFFICE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_MILKBAR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_MUSIC",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_OBSERVATORY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_LAB",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_POST",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_POTION",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_BARN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_RANCH",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_ROMANI",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_INN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_DORMITORY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_ROOF",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_STAFF",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_SWAMPARCHERY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_SWORDMAN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_TIJO",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_TOURIST",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_TOWNARCHERY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_TRADING",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_TREASURE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_ZORA",
+        "height": 16
+      }
+    ]
+  },
+  "optionsoot_popup": {
     "type": "tabbed",
     "tabs": [
       {
-        "title": "Settings OOT",
+        "title": "Shuffle OOT",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -3185,7 +3552,7 @@
         }
       },
       {
-        "title": "Settings MM",
+        "title": "World OOT",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -3193,13 +3560,13 @@
           "max_height": 500,
           "content": {
             "type": "layout",
-            "key": "layout_main_mm",
+            "key": "layout_world_oot",
             "h_alignment": "left"
           }
         }
       },
       {
-        "title": "Shared Items",
+        "title": "QOL OOT",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -3207,7 +3574,7 @@
           "max_height": 500,
           "content": {
             "type": "layout",
-            "key": "layout_shared_items",
+            "key": "layout_QOL_oot",
             "h_alignment": "left"
           }
         }
@@ -3223,22 +3590,6 @@
             {
               "type": "layout",
               "key": "layout_logic_tricks_oot",
-              "h_alignment": "left"
-            }
-          ]
-        }
-      },
-      {
-        "title": "Tricks MM",
-        "content": {
-          "type": "scroll",
-          "horizontal_scrollbar_visibility": "auto",
-          "vertical_scrollbar_visibility": "auto",
-          "max_height": 500,
-          "content": [
-            {
-              "type": "layout",
-              "key": "layout_logic_tricks_mm",
               "h_alignment": "left"
             }
           ]
@@ -3261,22 +3612,6 @@
         }
       },
       {
-        "title": "Special Moon",
-        "content": {
-          "type": "scroll",
-          "horizontal_scrollbar_visibility": "auto",
-          "vertical_scrollbar_visibility": "auto",
-          "max_height": 500,
-          "content": [
-            {
-              "type": "layout",
-              "key": "layout_special_condition_moon",
-              "h_alignment": "left"
-            }
-          ]
-        }
-      },
-      {
         "title": "Special LACS",
         "content": {
           "type": "scroll",
@@ -3287,6 +3622,85 @@
             {
               "type": "layout",
               "key": "layout_special_condition_lacs",
+              "h_alignment": "left"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "optionsmm_popup": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Shuffle MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_main_mm",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "World MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_world_mm",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "QOL MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_QOL_mm",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "Tricks MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": [
+            {
+              "type": "layout",
+              "key": "layout_logic_tricks_mm",
+              "h_alignment": "left"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Special Moon",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": [
+            {
+              "type": "layout",
+              "key": "layout_special_condition_moon",
               "h_alignment": "left"
             }
           ]
@@ -3467,6 +3881,39 @@
           "content": {
             "type": "layout",
             "key": "layout_SR_MQ",
+            "h_alignment": "left"
+          }
+        }
+      }
+    ]
+  },
+  "RK_popup": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Rusty Keys OoT",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_RK_OoT",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "Rusty Keys MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_RK_Mm",
             "h_alignment": "left"
           }
         }
