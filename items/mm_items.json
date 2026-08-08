@@ -597,12 +597,12 @@
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/items/mm_wallet99.png",
+        "img": "images/items/mm_wallet.png",
         "img_mods": "@disabled",
         "codes": "MM_WALLET0,MM_WALLET"
       },
       {
-        "img": "images/items/mm_wallet99.png",
+        "img": "images/items/mm_wallet.png",
         "img_mods": "overlay|images/system/mm_overlay_99.png",
         "codes": "MM_WALLET1,MM_WALLET"
       },
@@ -1318,8 +1318,12 @@
     "type": "progressive",
     "stages": [
       {
-        "img": "images/scale1.png",
+        "img": "images/scale0.png",
         "codes": "MM_SCALE,MM_SHARED_SCALE"
+      },
+      {
+        "img": "images/scale1.png",
+        "codes": "MM_SILVERSCALE,MM_SHARED_SILVERSCALE"
       },
       {
         "img": "images/scale2.png",

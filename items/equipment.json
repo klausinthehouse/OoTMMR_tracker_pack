@@ -139,8 +139,12 @@
     "type": "progressive",
     "stages": [
       {
-        "img": "images/scale1.png",
+        "img": "images/scale0.png",
         "codes": "OOT_SCALE,OOT_SHARED_SCALE"
+      },
+      {
+        "img": "images/scale1.png",
+        "codes": "OOT_SILVERSCALE,OOT_SHARED_SILVERSCALE"
       },
       {
         "img": "images/scale2.png",
