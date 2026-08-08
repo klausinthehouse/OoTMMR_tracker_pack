@@ -197,11 +197,21 @@ local OOTMM_SKIP_STAGE = {
         ["item"] = "MM_HOOKSHOT",
         ["rule"] = function() return Tracker:ProviderCountForCode("setting_sharedHookshot_false") > 0 end
     },
+    ["bronzescaleOoT_false"] = {
+        ["item"] = "OOT_SCALE",
+        ["rule"] = function() return Tracker:ProviderCountForCode("setting_sharedScales_false") > 0 end
+    },
+    ["bronzescaleMm_false"] = {
+        ["item"] = "MM_SCALE",
+        ["rule"] = function() return Tracker:ProviderCountForCode("setting_sharedScales_false") > 0 end
+    },
 }
 local OOTMM_SKIP_STAGE_PREV = {
     ["MM_OCARINA"] = 0,
     ["MM_SONG_GORON"] = 0,
     ["MM_HOOKSHOT"] = 0,
+    ["OOT_SCALE"] = 0,
+    ["MM_SCALE"] = 0,
 }
 function on_update_skip_stages()
     for setting, v in pairs(OOTMM_SKIP_STAGE) do

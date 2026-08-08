@@ -192,8 +192,10 @@ function _mm_logic()
 
     OOTMM_HAS_OVERRIDES = {
         ["HOOKSHOT:2"] = "LONGSHOT",
-        ["SCALE:2"] = "GOLDSCALE",
-        ["SHARED_SCALE:2"] = "SHARED_GOLDSCALE",
+        ["SCALE:2"] = "SILVERSCALE",
+        ["SHARED_SCALE:2"] = "SHARED_SILVERSCALE",
+        ["SCALE:3"] = "GOLDSCALE",
+        ["SHARED_SCALE:3"] = "SHARED_GOLDSCALE",
         ["STRENGTH:2"] = "STRENGTH2",
         ["STRENGTH:3"] = "STRENGTH3",
         ["SHARED_STRENGTH:2"] = "SHARED_STRENGTH2",
@@ -1636,7 +1638,7 @@ function _mm_logic()
 	end
 
 	function is_tall()
-		return has_mask_zora() or is_adult()
+		return has_mask_zora() or is_adult() or FD_everywhere
 	end
 
 	function is_short()
@@ -1680,15 +1682,15 @@ function _mm_logic()
 	end
 
 	function can_swim()
-		return cond(setting('scalesMm') and setting('bronzeScale'), has_scale_raw(1) or has_mask_zora(), true)
+		return (setting('bronzescaleMm', 'true') and has_scale_raw(1) or has_mask_zora) or setting('bronzescaleMm', 'false')
 	end
 
 	function can_dive_small()
-		return setting('scalesMm') and cond(setting('bronzeScale'), has_scale_raw(2), has_scale_raw(1))
+		return has_scale_raw(2) or has_iron_boots
 	end
 
 	function can_dive_big()
-		return setting('scalesMm') and cond(setting('bronzeScale'), has_scale_raw(3), has_scale_raw(2))
+		return has_scale_raw(3) or has_iron_boots
 	end
 
 	function can_lift_bracelet()
@@ -1880,7 +1882,7 @@ function _mm_logic()
 	end
 
 	function has_sword()
-		return has_b_sword() or has('GREAT_FAIRY_SWORD')
+		return has_b_sword() or has('GREAT_FAIRY_SWORD') or FD_everywhere()
 	end
 
 	function has_weapon()
@@ -2029,7 +2031,7 @@ function _mm_logic()
 	end
 
 	function can_fight()
-		return has_weapon() or has_mask_zora() or has_mask_goron()
+		return has_weapon() or has_mask_zora() or has_mask_goron() or FD_everywhere()
 	end
 
 	function has_goron_song_half()
@@ -2415,6 +2417,11 @@ function _mm_logic()
 	function hookshot_anywhere()
 		return can_hookshot() and setting('hookshotAnywhereMm', 'logical')
 	end
+
+    function FD_everywhere()
+		return has(MASK_FIERCE_DEITY) and setting('FDeverywhere', 'true')
+	end
+
 
 	function gs()
 		return soul_gs()
@@ -3397,7 +3404,7 @@ function _mm_logic()
     ["Moon Trial Link Iron Knuckle Fight"] = {
         ["exits"] = {
             ["Moon Trial Link Rest 2"] = function () return soul_iron_knuckle() and (has_weapon() or has_mask_goron() or has_bombs() or has_bombchu() or (has_mask_blast() and masks(5))) end,
-            ["Moon Trial Link Rest 3"] = function () return soul_iron_knuckle() and (has_weapon() or has_mask_goron() or has_bombs() or has_bombchu() or (has_mask_blast() and masks(5))) and (has_bombchu() and has_arrows() or short_hook_anywhere()) end,
+            ["Moon Trial Link Rest 3"] = function () return soul_iron_knuckle() and (has_weapon() or has_mask_goron() or has_bombs() or has_bombchu() or (has_mask_blast() and masks(5))) and (has_bombchu() and has_arrows() or short_hook_anywhere()) or FD_everywhere end,
         },
         ["locations"] = {
             ["Moon Trial Link Iron Knuckle Chest"] = function () return soul_iron_knuckle() and (has_weapon() or has_mask_goron() or has_bombs() or has_bombchu() or (has_mask_blast() and masks(5))) end,
@@ -3828,7 +3835,7 @@ function _mm_logic()
             ["Laundry Pool"] = function () return true end,
         },
         ["locations"] = {
-            ["Clock Town South Chest Lower"] = function () return can_hookshot() or (is_adult() and can_hookshot_short()) or short_hook_anywhere() or (has('MASK_DEKU') and event('CLOCK_TOWN_SCRUB')) or trick('MM_SCT_NOTHING') or can_goron_bomb_jump() end,
+            ["Clock Town South Chest Lower"] = function () return can_hookshot() or (is_adult() and can_hookshot_short()) or short_hook_anywhere() or (has('MASK_DEKU') and event('CLOCK_TOWN_SCRUB')) or trick('MM_SCT_NOTHING') or can_goron_bomb_jump() or FD_everywhere() end,
             ["Clock Town South Chest Upper"] = function () return (can_hookshot() or short_hook_anywhere() or (has('MASK_DEKU') and event('CLOCK_TOWN_SCRUB')) or (can_goron_bomb_jump() and can_hookshot_short())) and final_day() end,
             ["Clock Town Business Scrub"] = function () return soul_business_scrub() and event('CLOCK_TOWN_SCRUB') end,
             ["Clock Town Post Box"] = function () return has('MASK_POSTMAN') end,
@@ -4606,9 +4613,9 @@ function _mm_logic()
             ["Termina Field Wonder Item Shell 1"] = function () return hit_target_range_close() end,
             ["Termina Field Wonder Item Shell 2"] = function () return hit_target_range_close() end,
             ["Termina Field Wonder Item Shell 3"] = function () return hit_target_range_close() end,
-            ["Termina Field Wonder Item Shell Side 1"] = function () return hit_target_range_melee() end,
-            ["Termina Field Wonder Item Shell Side 2"] = function () return hit_target_range_melee() end,
-            ["Termina Field Wonder Item Shell Side 3"] = function () return hit_target_range_melee() end,
+            ["Termina Field Wonder Item Shell Side 1"] = function () return hit_target_range_melee() or FD_everywhere() end,
+            ["Termina Field Wonder Item Shell Side 2"] = function () return hit_target_range_melee() or FD_everywhere() end,
+            ["Termina Field Wonder Item Shell Side 3"] = function () return hit_target_range_melee() or FD_everywhere() end,
             ["Termina Field Wonder Item Graffiti 1"] = function () return true end,
             ["Termina Field Wonder Item Graffiti 2"] = function () return true end,
             ["Termina Field Wonder Item Graffiti 3"] = function () return true end,
@@ -6553,7 +6560,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Great Bay Coast Zora Mask"] = function () return can_play_healing() end,
-            ["Great Bay Coast HP"] = function () return can_use_beans() and scarecrow_hookshot() or short_hook_anywhere() end,
+            ["Great Bay Coast HP"] = function () return (can_use_beans() or FD_everywhere()) and scarecrow_hookshot() or short_hook_anywhere() end,
             ["Great Bay Coast Fisherman HP"] = function () return soul_chest_game_owner() and can_use_wallet(1) and (can_hookshot_short() or can_use_ice_arrows()) and is_ocean_cleared() and (between(DAY1_AM_07_00, NIGHT1_AM_04_00) or between(DAY2_AM_07_00, NIGHT2_AM_04_00) or between(DAY3_AM_07_00, NIGHT3_AM_04_00)) end,
             ["Great Bay Coast Fisherman Tree"] = function () return can_hookshot_short() or can_use_ice_arrows() end,
             ["Great Bay Coast Pot Ledge 1"] = function () return can_hookshot() or short_hook_anywhere() end,
@@ -6839,7 +6846,7 @@ function _mm_logic()
             ["Zora Cape Near Hall"] = function () return underwater_walking() or (can_dive_small() and trick('MM_ZORA_HALL_HUMAN')) end,
             ["Zora Cape Peninsula"] = function () return underwater_walking() or can_use_nayru() or trick('MM_ZORA_HALL_HUMAN') end,
             ["Waterfall Cliffs"] = function () return can_hookshot() end,
-            ["Great Bay Near Fairy Fountain"] = function () return can_hookshot() and (has_explosives() or trick_keg_explosives() or short_hook_anywhere()) end,
+            ["Great Bay Near Fairy Fountain"] = function () return (can_hookshot() or FD_everywhere()) and (has_explosives() or trick_keg_explosives() or short_hook_anywhere()) end,
             ["Zora Cape Grotto"] = function () return can_break_boulders() end,
             ["Zora Cape Pot Game"] = function () return soul_zora() and is_day() and (has_weapon() or has_mask_zora() or can_hookshot_short() or has_bow()) end,
             ["Zora Cape Water Void"] = function () return true end,
@@ -8917,7 +8924,7 @@ function _mm_logic()
     },
     ["Stone Tower Temple Inverted Wizzrobe"] = {
         ["exits"] = {
-            ["Stone Tower Temple Inverted Wizzrobe Ledge"] = function () return soul_enemy(SOUL_ENEMY_WIZZROBE) and can_hookshot_short() and (can_fight() or has_arrows()) or short_hook_anywhere() end,
+            ["Stone Tower Temple Inverted Wizzrobe Ledge"] = function () return soul_enemy(SOUL_ENEMY_WIZZROBE) and can_hookshot_short() and (can_fight() or has_arrows()) or short_hook_anywhere() or FD_everywhere() end,
             ["Stone Tower Temple Inverted East Ledge"] = function () return (can_use_light_arrows() or short_hook_anywhere()) and small_keys_st(3) or (can_goron_bomb_jump() and has_bombs() and small_keys_st(4)) end,
             ["WARP_SONGS"] = function () return true end,
         },
@@ -9363,7 +9370,7 @@ function _mm_logic()
         ["exits"] = {
             ["Woodfall Temple Main"] = function () return true end,
             ["Woodfall Temple Dark Room"] = function () return true end,
-            ["Woodfall Temple Main Ledge"] = function () return has('MASK_DEKU') or short_hook_anywhere() end,
+            ["Woodfall Temple Main Ledge"] = function () return has('MASK_DEKU') or short_hook_anywhere() or FD_everywhere() end,
             ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
@@ -9394,7 +9401,7 @@ function _mm_logic()
             ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
-            ["Woodfall Temple Center Chest"] = function () return has('MASK_DEKU') or short_hook_anywhere() or has_hover_boots() end,
+            ["Woodfall Temple Center Chest"] = function () return has('MASK_DEKU') or short_hook_anywhere() or has_hover_boots() or FD_everywhere() end,
             ["Woodfall Temple SF Main Bubble"] = function () return true end,
             ["Woodfall Temple Pot Main Room Upper 1"] = function () return true end,
             ["Woodfall Temple Pot Main Room Upper 2"] = function () return true end,

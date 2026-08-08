@@ -192,8 +192,10 @@ function _oot_logic()
 
     OOTMM_HAS_OVERRIDES = {
         ["HOOKSHOT:2"] = "LONGSHOT",
-        ["SCALE:2"] = "GOLDSCALE",
-        ["SHARED_SCALE:2"] = "SHARED_GOLDSCALE",
+        ["SCALE:2"] = "SILVERSCALE",
+        ["SHARED_SCALE:2"] = "SHARED_SILVERSCALE",
+        ["SCALE:3"] = "GOLDSCALE",
+        ["SHARED_SCALE:3"] = "SHARED_GOLDSCALE",
         ["STRENGTH:2"] = "STRENGTH2",
         ["STRENGTH:3"] = "STRENGTH3",
         ["SHARED_STRENGTH:2"] = "SHARED_STRENGTH2",
@@ -2026,7 +2028,7 @@ function _oot_logic()
 	end
 
 	function can_swim()
-		return cond(setting('bronzeScale'), has_scale_raw(1), true)
+		return setting('bronzescaleOoT', 'true') and has_scale_raw(1) or setting('bronzescaleOoT', 'false')
 	end
 
 	function can_swim_or_sink()
@@ -2034,11 +2036,11 @@ function _oot_logic()
 	end
 
 	function can_dive_small()
-		return cond(setting('bronzeScale'), has_scale_raw(2), has_scale_raw(1)) or has_iron_boots()
+		return has_scale_raw(2) or has_iron_boots()
 	end
 
 	function can_dive_big()
-		return cond(setting('bronzeScale'), has_scale_raw(3), has_scale_raw(2)) or has_iron_boots()
+		return has_scale_raw(3) or has_iron_boots()
 	end
 
 	function hidden_grotto_bomb()
@@ -6992,7 +6994,7 @@ function _oot_logic()
             ["Lake Hylia"] = function () return true end,
         },
         ["locations"] = {
-            ["Laboratory Dive"] = function () return soul_scientist() and (has_scale_raw(2) or (trick('OOT_LAB_DIVE_NO_GOLD_SCALE') and has_iron_boots() and can_hookshot() and can_swim())) end,
+            ["Laboratory Dive"] = function () return soul_scientist() and (has_scale_raw(3) or (trick('OOT_LAB_DIVE_NO_GOLD_SCALE') and has_iron_boots() and can_hookshot() and can_swim())) end,
             ["Laboratory Eye Drops"] = function () return soul_scientist() and adult_trade(EYEBALL_FROG) end,
             ["Laboratory GS Crate"] = function () return gs() and has_iron_boots() and can_hookshot() end,
             ["Laboratory Rupee 1"] = function () return can_dive_big() end,
