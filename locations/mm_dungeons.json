@@ -17,7 +17,7 @@
         "chest_opened_img": "images/system/unknownmask_grey.png",
         "access_rules": [
           "$mm|Swamp Spider House Mask of Truth",
-          "{gossip_stone}"
+          "{MM_gossip_stone}"
         ],
         "item_count": 1
       },
@@ -599,7 +599,7 @@
         "name": "Collect 30 Tokens",
         "access_rules": [
           "$mm|Ocean Spider House Wallet",
-          "{gossip_stone}"
+          "{MM_gossip_stone}"
         ],
         "item_count": 1
       },
@@ -1082,7 +1082,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "access_rules": [
           "$mm|Ocean Spider House Chest HP",
-          "{gossip_stone}"
+          "{MM_gossip_stone}"
         ],
         "item_count": 1
       }
@@ -1836,7 +1836,7 @@
         "chest_opened_img": "images/system/unknownsong_check.png",
         "access_rules": [
           "$mm|Ancient Castle of Ikana Song Emptiness",
-          "{gossip_stone}"
+          "{MM_gossip_stone}"
         ],
         "item_count": 1
       }      
@@ -1860,7 +1860,7 @@
         "chest_opened_img": "images/system/unknownmask_grey.png",
         "access_rules": [
           "$mm|Moon Fierce Deity Mask",
-          "{gossip_stone}"
+          "{MM_gossip_stone}"
         ],
         "item_count": 1
       },
@@ -2830,7 +2830,7 @@
         "short_name": "Ice Arrows",
         "access_rules": [
           "$mm|Great Bay Temple Ice Arrow",
-          "{gossip_stone}"
+          "{MM_gossip_stone}"
         ],
         "item_count": 1
       },

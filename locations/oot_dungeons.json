@@ -4206,7 +4206,7 @@
         "short_name": "Scarecrow",
         "access_rules": [
           "$oot|Fire Temple Scarecrow Chest",
-          "{gossip_stone}"
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -4266,7 +4266,7 @@
         "short_name": "Hammer",
         "access_rules": [
           "$oot|Fire Temple Hammer",
-          "{gossip_stone}"
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -9294,7 +9294,7 @@
       },
       {
         "name": "Shadow Trial Hearts",
-        "short_name": "Spirit Hearts",
+        "short_name": "Shadow Hearts",
         "access_rules": [
           "$oot|Ganon Castle Heart Shadow 1"
         ],
@@ -10323,7 +10323,7 @@
         "short_name": "Toilet",
         "access_rules": [
           "$oot|Gerudo Training Water",
-          "{gossip_stone}"
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_false"

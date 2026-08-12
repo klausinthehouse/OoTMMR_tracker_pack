@@ -1416,7 +1416,7 @@
                 "name": "HF Ocarina of Time Item",
                 "access_rules": [
                   "$oot|Hyrule Field Ocarina of Time",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "short_name": "Item",
                 "item_count": 1
@@ -1426,7 +1426,7 @@
                 "short_name": "Song",
                 "access_rules": [
                   "$oot|Hyrule Field Song of Time",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -2329,7 +2329,7 @@
                 "name": "Child Reward",
                 "access_rules": [
                   "$oot|Fishing Pond Child",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -2361,7 +2361,7 @@
                 "name": "Adult Reward",
                 "access_rules": [
                   "$oot|Fishing Pond Adult",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               }
@@ -2406,7 +2406,7 @@
                 "name": "Shoot the sun",
                 "access_rules": [
                   "$oot|Lake Hylia Fire Arrow",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -3455,7 +3455,7 @@
                 "name": "Ravaged Village",
                 "access_rules": [
                   "$oot|Kakariko Song Shadow",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -3562,7 +3562,7 @@
                 "short_name": "10 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 10 Tokens",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -3571,7 +3571,7 @@
                 "short_name": "20 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 20 Tokens",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -3580,7 +3580,7 @@
                 "short_name": "30 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 30 Tokens",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -3589,7 +3589,7 @@
                 "short_name": "40 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 40 Tokens",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -3598,7 +3598,7 @@
                 "short_name": "50 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 50 Tokens",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -3607,7 +3607,7 @@
                 "short_name": "100 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 100 Tokens",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               }
@@ -6193,7 +6193,7 @@
                 "short_name": "Reward",
                 "access_rules": [
                   "$oot|Great Fairy Defense Upgrade",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               }
@@ -6281,7 +6281,7 @@
                 "name": "ZR Frogs Ocarina Game",
                 "access_rules": [
                   "$oot|Zora River Frogs Game",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               }
@@ -6837,7 +6837,7 @@
                 "name": "ZD King Zora Thawed",
                 "access_rules": [
                   "$oot|Zora Domain Tunic",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -6845,7 +6845,7 @@
                 "name": "Give Prescription",
                 "access_rules": [
                   "$oot|Zora Domain Eyeball Frog",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -7610,7 +7610,7 @@
             "name": "GF HBA",
             "access_rules": [
               "$oot|Gerudo Fortress Archery Reward 1",
-              "{gossip_stone}"
+              "{OOT_gossip_stone}"
             ],
             "sections": [
               {
@@ -8073,7 +8073,7 @@
                 "short_name": "Chest",
                 "access_rules": [
                   "$oot|Haunted Wasteland Chest",
-                  "{gossip_stone}"
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
