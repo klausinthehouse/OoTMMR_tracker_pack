@@ -1788,7 +1788,7 @@ function _oot_logic()
 	end
 
 	function has_sword_child(n)
-		return setting('extraChildSwordsOot') and cond(setting('sharedSwords'), has('SHARED_SWORD', n), has('SWORD', n))
+		return setting('extraChildSwordsOot') and cond(setting('sharedSwords'), has('SHARED_SWORD', n), has('SWORD', n)) or has('GREAT_FAIRY_SWORD')
 	end
 
 	function has_sword_kokiri()
@@ -1840,7 +1840,7 @@ function _oot_logic()
 	end
 
 	function can_use_sword()
-		return can_use_sword_kokiri() or can_use_sword_master() or can_use_sword_goron()
+		return can_use_sword_kokiri() or can_use_sword_master() or can_use_sword_goron() or has('GREAT_FAIRY_SWORD')
 	end
 
 	function can_use_sword_or_sticks()

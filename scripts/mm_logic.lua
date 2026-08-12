@@ -2023,7 +2023,7 @@ function _mm_logic()
 	end
 
 	function has_weapon_range()
-		return has_arrows() or can_hookshot_short() or has_mask_zora() or can_use_deku_bubble()
+		return has_arrows() or can_hookshot_short() or has_mask_zora() or can_use_deku_bubble() or has('MM_BOOMERANG') or has('MM_SLINGSHOT')
 	end
 
 	function has_paper()
@@ -2055,11 +2055,11 @@ function _mm_logic()
 	end
 
 	function can_activate_crystal()
-		return can_break_boulders() or has_weapon() or has_arrows() or can_hookshot_short() or has('MASK_DEKU') or has_mask_zora() or has_sticks()
+		return can_break_boulders() or has_weapon() or has_arrows() or can_hookshot_short() or has('MASK_DEKU') or has_mask_zora() or has_sticks() or has('MM_BOOMERANG') or has('MM_SLINGSHOT')
 	end
 
 	function can_evade_gerudo()
-		return has_arrows() or can_hookshot_short() or has_mask_zora() or has_mask_stone()
+		return has_arrows() or can_hookshot_short() or has_mask_zora() or has_mask_stone() or has('MASK_GERUDO') or has('MM_BOOMERANG') or has('MM_SLINGSHOT')
 	end
 
 	function can_goron_bomb_jump()
@@ -2155,7 +2155,7 @@ function _mm_logic()
 	end
 
 	function can_pass_gibdo()
-		return has('MASK_GIBDO') and soul_redead_gibdo()
+		return (has('MASK_GIBDO') or has('MASK_SPOOKY')) and soul_redead_gibdo()
 	end
 
 	function can_get_gossip_fairy()
@@ -2239,7 +2239,7 @@ function _mm_logic()
 	end
 
 	function hit_target_range_far()
-		return can_use_deku_bubble() or has_arrows() or has_mask_zora() or can_hookshot()
+		return can_use_deku_bubble() or has_arrows() or has_mask_zora() or can_hookshot() or has('MM_BOOMERANG') or has('MM_SLINGSHOT')
 	end
 
 	function has_bottle()
@@ -2419,7 +2419,7 @@ function _mm_logic()
 	end
 
     function FD_everywhere()
-		return has(MASK_FIERCE_DEITY) and setting('FDeverywhere', 'true')
+		return has('MASK_FIERCE_DEITY') and setting('FDeverywhere', 'true')
 	end
 
 
@@ -2444,15 +2444,15 @@ function _mm_logic()
 	end
 
 	function can_kill_big_poe()
-		return has_arrows() or has_mask_zora() or can_use_deku_bubble()
+		return has_arrows() or has_mask_zora() or can_use_deku_bubble() or has('MM_BOOMERANG') or has('MM_SLINGSHOT')
 	end
 
 
     logic = {
     ["Ancient Castle of Ikana"] = {
         ["exits"] = {
-            ["Ikana Castle Exterior"] = function () return can_reset_time() end,
-            ["Ancient Castle of Ikana Interior"] = function () return can_reset_time_dungeon() end,
+            ["Ikana Castle Exterior"] = function () return true end,
+            ["Ancient Castle of Ikana Interior"] = function ()  return true end,
         },
         ["age_change"] = false,
     },
@@ -2531,7 +2531,7 @@ function _mm_logic()
     ["Ancient Castle of Ikana Interior South"] = {
         ["exits"] = {
             ["Ancient Castle of Ikana Interior"] = function () return true end,
-            ["Ancient Castle of Ikana Wizzrobe"] = function () return can_reset_time() and ((has_mirror_shield() and event('IKANA_CASTLE_LIGHT') or can_use_light_arrows()) or short_hook_anywhere()) end,
+            ["Ancient Castle of Ikana Wizzrobe"] = function () return ((has_mirror_shield() and event('IKANA_CASTLE_LIGHT') or can_use_light_arrows()) or short_hook_anywhere()) end,
         },
         ["age_change"] = false,
     },
@@ -2612,9 +2612,9 @@ function _mm_logic()
     },
     ["Beneath The Well Entrance"] = {
         ["exits"] = {
-            ["Ikana Canyon"] = function () return can_reset_time() end,
-            ["Beneath The Well North Section"] = function () return (setting('beneathWell', 'open') or (can_pass_gibdo() and has_blue_potion())) and can_reset_time_dungeon() end,
-            ["Beneath The Well East Section"] = function () return (setting('beneathWell', 'open') or (can_pass_gibdo() and has_beans())) and can_reset_time_dungeon() end,
+            ["Ikana Canyon"] = function () return true end,
+            ["Beneath The Well North Section"] = function () return (setting('beneathWell', 'open') or (can_pass_gibdo() and has_blue_potion())) end,
+            ["Beneath The Well East Section"] = function () return (setting('beneathWell', 'open') or (can_pass_gibdo() and has_beans())) end,
         },
         ["age_change"] = false,
     },
@@ -2837,16 +2837,16 @@ function _mm_logic()
     },
     ["Beneath The Well End"] = {
         ["exits"] = {
-            ["Beneath The Well Sun Block"] = function () return (setting('beneathWell', 'open') or can_use_light_arrows()) and can_reset_time_dungeon() end,
-            ["Ikana Castle Exterior"] = function () return can_reset_time() end,
+            ["Beneath The Well Sun Block"] = function () return (setting('beneathWell', 'open') or can_use_light_arrows()) end,
+            ["Ikana Castle Exterior"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Great Bay Temple"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
-            ["Zora Cape Peninsula"] = function () return can_reset_time() and (can_hookshot() or short_hook_anywhere()) end,
-            ["Great Bay Temple Entrance"] = function () return can_reset_time_dungeon() end,
+            ["Zora Cape Peninsula"] = function () return (can_hookshot() or short_hook_anywhere()) end,
+            ["Great Bay Temple Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
     },
@@ -2922,7 +2922,7 @@ function _mm_logic()
             ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
-            ["Great Bay Temple Baba Room"] = function () return has_mask_zora() or ((has_bombchu() and trick('MM_GBT_BABA_ENTRY_BOMBCHU') or has_mask_blast()) and (short_hook_anywhere() or underwater_walking() or (can_dive_big() and has_tunic_zora()))) or hookshot_anywhere() end,
+            ["Great Bay Temple Baba Room"] = function () return has_mask_zora() or has('MM_BOOMERANG') or ((has_bombchu() and trick('MM_GBT_BABA_ENTRY_BOMBCHU') or has_mask_blast()) and (short_hook_anywhere() or underwater_walking() or (can_dive_big() and has_tunic_zora()))) or hookshot_anywhere() end,
             ["Great Bay Temple Red Pipe 2"] = function () return can_use_ice_arrows() or short_hook_anywhere() end,
             ["Great Bay Temple Green Pipe 3"] = function () return short_hook_anywhere() end,
             ["WARP_SONGS"] = function () return true end,
@@ -3198,7 +3198,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Great Bay Temple After Boss"] = function () return event('BOSS_GYORG') end,
-            ["WARP_SONGS"] = function () return can_reset_time() end,
+            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Great Bay Temple Boss Pot 1"] = function () return true end,
@@ -3250,33 +3250,33 @@ function _mm_logic()
             ["MAJORA_PRE_BOSS"] = function () return true end,
         },
         ["exits"] = {
-            ["Moon Trial Deku Entrance"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_reset_time_on_moon() and masks(1) end,
-            ["Moon Trial Goron Entrance"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_reset_time_on_moon() and masks(2) end,
-            ["Moon Trial Zora"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_reset_time_on_moon() and masks(3) end,
-            ["Moon Trial Link Entrance"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_reset_time_on_moon() and masks(4) end,
+            ["Moon Trial Deku Entrance"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_play_time() and masks(1) end,
+            ["Moon Trial Goron Entrance"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_play_time() and masks(2) end,
+            ["Moon Trial Zora"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_play_time() and masks(3) end,
+            ["Moon Trial Link Entrance"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_play_time() and masks(4) end,
             ["Moon Butterflies"] = function () return has_sticks() end,
             ["Moon Boss"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and (setting('majoraChild', 'none') or (setting('majoraChild', 'custom') and special(MAJORA))) end,
         },
         ["locations"] = {
-            ["Moon Fierce Deity Mask"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_reset_time_on_moon() and masks(20) and event('MOON_TRIAL_DEKU') and event('MOON_TRIAL_GORON') and event('MOON_TRIAL_ZORA') and event('MOON_TRIAL_LINK') end,
+            ["Moon Fierce Deity Mask"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_play_time() and masks(20) and event('MOON_TRIAL_DEKU') and event('MOON_TRIAL_GORON') and event('MOON_TRIAL_ZORA') and event('MOON_TRIAL_LINK') end,
         },
         ["age_change"] = false,
     },
     ["Moon Butterflies"] = {
         ["locations"] = {
-            ["Moon Butterfly 01"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 02"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 03"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 04"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 05"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 06"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 07"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 08"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 09"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 10"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 11"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 12"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
-            ["Moon Butterfly 13"] = function () return can_reset_time_on_moon() and soul_butterfly() end,
+            ["Moon Butterfly 01"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 02"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 03"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 04"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 05"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 06"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 07"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 08"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 09"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 10"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 11"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 12"] = function () return can_play_time() and soul_butterfly() end,
+            ["Moon Butterfly 13"] = function () return can_play_time() and soul_butterfly() end,
         },
         ["age_change"] = false,
     },
@@ -3444,11 +3444,11 @@ function _mm_logic()
     },
     ["Ocean Spider House"] = {
         ["exits"] = {
-            ["Great Bay Coast"] = function () return can_reset_time() end,
-            ["Ocean Spider House Front"] = function () return can_reset_time_dungeon() and (has_explosives() or trick_keg_explosives()) end,
+            ["Great Bay Coast"] = function () return true end,
+            ["Ocean Spider House Front"] = function () return (has_explosives() or trick_keg_explosives()) end,
         },
         ["locations"] = {
-            ["Ocean Spider House Wallet"] = function () return soul_citizen() and has('GS_TOKEN_OCEAN', 30) end,
+            ["Ocean Spider House Wallet"] = function () return soul_citizen() and (has('GS_TOKEN_OCEAN', 30) or has('PLATINUM_TOKEN')) end,
         },
         ["age_change"] = false,
     },
@@ -3629,7 +3629,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Milk Road"] = function () return can_reset_time() end,
+            ["Milk Road"] = function () return true end,
         },
         ["locations"] = {
             ["Milk Road Owl Statue"] = function () return has_sticks() or has_sword() end,
@@ -3647,7 +3647,7 @@ function _mm_logic()
             ["WATER"] = function () return true end,
         },
         ["exits"] = {
-            ["Swamp Front"] = function () return can_reset_time() end,
+            ["Swamp Front"] = function () return true end,
         },
         ["locations"] = {
             ["Southern Swamp Owl Statue"] = function () return has_sticks() or has_sword() end,
@@ -3663,7 +3663,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Woodfall Shrine"] = function () return can_reset_time() end,
+            ["Woodfall Shrine"] = function () return true end,
         },
         ["locations"] = {
             ["Woodfall Owl Statue"] = function () return has_sticks() or has_sword() end,
@@ -3682,7 +3682,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Mountain Village"] = function () return can_reset_time() end,
+            ["Mountain Village"] = function () return true end,
         },
         ["locations"] = {
             ["Mountain Village Owl Statue"] = function () return has_sticks() or has_sword() end,
@@ -3697,7 +3697,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Snowhead Entrance"] = function () return can_reset_time() end,
+            ["Snowhead Entrance"] = function () return true end,
         },
         ["locations"] = {
             ["Snowhead Owl Statue"] = function () return has_sticks() or has_sword() end,
@@ -3713,7 +3713,7 @@ function _mm_logic()
             ["PICTURE_TINGLE"] = function () return soul_npc(SOUL_NPC_TINGLE) and has('PICTOGRAPH_BOX') end,
         },
         ["exits"] = {
-            ["Great Bay Coast Platform"] = function () return can_reset_time() end,
+            ["Great Bay Coast Platform"] = function () return true end,
             ["Tingle Great Bay"] = function () return soul_npc(SOUL_NPC_TINGLE) and has_arrows() end,
         },
         ["locations"] = {
@@ -3729,7 +3729,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Zora Cape Peninsula"] = function () return can_reset_time() end,
+            ["Zora Cape Peninsula"] = function () return true end,
         },
         ["locations"] = {
             ["Zora Cape Owl Statue"] = function () return has_sticks() or has_sword() end,
@@ -3748,7 +3748,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Ikana Canyon"] = function () return can_reset_time() end,
+            ["Ikana Canyon"] = function () return true end,
         },
         ["locations"] = {
             ["Ikana Canyon Owl Statue"] = function () return has_sticks() or has_sword() end,
@@ -3767,7 +3767,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Stone Tower Top"] = function () return can_reset_time() end,
+            ["Stone Tower Top"] = function () return true end,
         },
         ["locations"] = {
             ["Stone Tower Owl Statue"] = function () return has_sticks() or has_sword() end,
@@ -3802,8 +3802,8 @@ function _mm_logic()
     ["Clock Town Near Clock Tower"] = {
         ["exits"] = {
             ["GLOBAL"] = function () return true end,
-            ["Clock Tower"] = function () return cond(setting('erIndoorsGameLinks'), can_reset_time(), true) end,
-            ["Clock Town South"] = function () return can_reset_time() end,
+            ["Clock Tower"] = function () return cond(setting('erIndoorsGameLinks'), true) end,
+            ["Clock Town South"] = function () return true end,
             ["Clock Tower Platform"] = function () return true end,
             ["Owl Clock Town"] = function () return true end,
         },
@@ -4070,8 +4070,8 @@ function _mm_logic()
             ["Clock Town North"] = function () return true end,
         },
         ["locations"] = {
-            ["Clock Town Great Fairy"] = function () return has('STRAY_FAIRY_TOWN') end,
-            ["Clock Town Great Fairy Alt"] = function () return has('STRAY_FAIRY_TOWN') and (has('MASK_DEKU') or has_mask_goron() or has_mask_zora()) end,
+            ["Clock Town Great Fairy"] = function () return has('STRAY_FAIRY_TOWN') or has('TRANSCENDENT_FAIRY') end,
+            ["Clock Town Great Fairy Alt"] = function () return (has('STRAY_FAIRY_TOWN') or has('TRANSCENDENT_FAIRY')) and (has('MASK_DEKU') or has_mask_goron() or has_mask_zora()) end,
         },
         ["age_change"] = false,
     },
@@ -4272,7 +4272,7 @@ function _mm_logic()
             ["Stock Pot Inn Couple's Mask"] = function () return event('SUN_MASK') and event('DELIVER_PENDANT') and event('MEET_ANJU') and after(NIGHT3_AM_04_00) end,
             ["Stock Pot Inn Grandma HP 1"] = function () return soul_old_hag() and rusty_key(RUSTY_GRANDMA) and has('MASK_ALL_NIGHT') and grandma_story_1() end,
             ["Stock Pot Inn Grandma HP 2"] = function () return soul_old_hag() and rusty_key(RUSTY_GRANDMA) and has('MASK_ALL_NIGHT') and grandma_story_2() end,
-            ["Stock Pot Inn ??? HP"] = function () return soul_npc(SOUL_NPC_TOILET_HAND) and cond(setting('erIndoorsExtra'), has_paper() and midnight(), has_paper() and midnight() and (clock_night3() or has('ROOM_KEY') or has('MASK_DEKU') or has_hover_boots() or event('SPI_ROOF_FARORE') or trick('MM_STOCK_POT_WAIT'))) end,
+            ["Stock Pot Inn ??? HP"] = function () return soul_npc(SOUL_NPC_TOILET_HAND) and cond(setting('erIndoorsExtra'), has_paper() and (clock_night3() or has('ROOM_KEY') or has('MASK_DEKU') or has_hover_boots() or event('SPI_ROOF_FARORE') or trick('MM_STOCK_POT_WAIT'))) end,
             ["Stock Pot Inn Wonder Item 1"] = function () return has_mask_zora() and has_magic() end,
             ["Stock Pot Inn Wonder Item 2"] = function () return has_mask_zora() and has_magic() end,
             ["Stock Pot Inn Wonder Item 3"] = function () return has_mask_zora() and has_magic() end,
@@ -4373,7 +4373,7 @@ function _mm_logic()
             ["Termina Field Water Chest"] = function () return underwater_walking() end,
             ["Termina Field Tall Grass Chest"] = function () return true end,
             ["Termina Field Tree Stump Chest"] = function () return can_hookshot_short() or can_use_beans() end,
-            ["Termina Field Kamaro Mask"] = function () return soul_citizen() and can_play_healing() and midnight() end,
+            ["Termina Field Kamaro Mask"] = function () return soul_citizen() and can_play_healing() end,
             ["Termina Field Pot"] = function () return can_use_beans() or has_bow() end,
             ["Termina Field Grass Pack 01 Grass 01"] = function () return true end,
             ["Termina Field Grass Pack 01 Grass 02"] = function () return true end,
@@ -4992,8 +4992,8 @@ function _mm_logic()
             ["Road to Southern Swamp"] = function () return true end,
         },
         ["locations"] = {
-            ["Swamp Archery Reward 1"] = function () return soul_bazaar_shopkeeper() and has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00)) end,
-            ["Swamp Archery Reward 2"] = function () return soul_bazaar_shopkeeper() and has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00)) end,
+            ["Swamp Archery Reward 1"] = function () return soul_bazaar_shopkeeper() and has_bow() and can_use_wallet(1) end,
+            ["Swamp Archery Reward 2"] = function () return soul_bazaar_shopkeeper() and has_bow() and can_use_wallet(1) end,
         },
         ["age_change"] = false,
     },
@@ -5293,7 +5293,7 @@ function _mm_logic()
             ["Swamp Back"] = function () return true end,
             ["Deku Palace Cliff"] = function () return has('MASK_DEKU') or short_hook_anywhere() end,
             ["Near Deku Shrine"] = function () return is_swamp_cleared() or (can_use_nayru() and (has_mask_zora() or (is_adult() and (has_arrows() or can_hookshot_short() or can_use_din())))) or (has_hover_boots() and (has_arrows() or can_hookshot_short() or can_use_din())) end,
-            ["Deku Palace Main"] = function () return has('MASK_DEKU') or trick('MM_PALACE_GUARD_SKIP') or short_hook_anywhere() end,
+            ["Deku Palace Main"] = function () return has('MASK_DEKU') or has('MASK_SKULL') or trick('MM_PALACE_GUARD_SKIP') or short_hook_anywhere() end,
             ["Deku Palace Upper"] = function () return (is_swamp_cleared() or has('MASK_DEKU') or can_use_nayru()) and can_use_beans() end,
         },
         ["age_change"] = false,
@@ -5516,7 +5516,7 @@ function _mm_logic()
             ["Woodfall Near Fairy Fountain"] = function () return true end,
         },
         ["locations"] = {
-            ["Woodfall Great Fairy"] = function () return has('STRAY_FAIRY_WF', var(STRAY_FAIRY_COUNT)) end,
+            ["Woodfall Great Fairy"] = function () return has('STRAY_FAIRY_WF', var(STRAY_FAIRY_COUNT)) or has('TRANSCENDENT_FAIRY') end,
         },
         ["age_change"] = false,
     },
@@ -6280,7 +6280,7 @@ function _mm_logic()
             ["Snowhead Near Fairy Fountain"] = function () return true end,
         },
         ["locations"] = {
-            ["Snowhead Great Fairy"] = function () return has('STRAY_FAIRY_SH', var(STRAY_FAIRY_COUNT)) end,
+            ["Snowhead Great Fairy"] = function () return has('STRAY_FAIRY_SH', var(STRAY_FAIRY_COUNT)) or has('TRANSCENDENT_FAIRY') end,
         },
         ["age_change"] = false,
     },
@@ -6920,7 +6920,7 @@ function _mm_logic()
             ["Great Bay Near Fairy Fountain"] = function () return true end,
         },
         ["locations"] = {
-            ["Great Bay Great Fairy"] = function () return has('STRAY_FAIRY_GB', var(STRAY_FAIRY_COUNT)) end,
+            ["Great Bay Great Fairy"] = function () return has('STRAY_FAIRY_GB', var(STRAY_FAIRY_COUNT)) or has('TRANSCENDENT_FAIRY') end,
         },
         ["age_change"] = false,
     },
@@ -7447,7 +7447,7 @@ function _mm_logic()
             ["Ikana Canyon"] = function () return true end,
         },
         ["locations"] = {
-            ["Ikana Great Fairy"] = function () return has('STRAY_FAIRY_ST', var(STRAY_FAIRY_COUNT)) end,
+            ["Ikana Great Fairy"] = function () return has('STRAY_FAIRY_ST', var(STRAY_FAIRY_COUNT)) or has('TRANSCENDENT_FAIRY') end,
         },
         ["age_change"] = false,
     },
@@ -7640,8 +7640,8 @@ function _mm_logic()
     },
     ["Pirate Fortress"] = {
         ["exits"] = {
-            ["Great Bay Coast Fortress"] = function () return can_reset_time() and (underwater_walking() or can_dive_small()) end,
-            ["Pirate Fortress Entrance"] = function () return can_reset_time_dungeon() end,
+            ["Great Bay Coast Fortress"] = function () return (underwater_walking() or can_dive_small()) end,
+            ["Pirate Fortress Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
     },
@@ -7673,7 +7673,7 @@ function _mm_logic()
     ["Pirate Fortress Sewers"] = {
         ["exits"] = {
             ["Pirate Fortress Sewers Entrance"] = function () return true end,
-            ["Pirate Fortress Sewers Cage Room"] = function () return can_reset_time() and (has_mask_zora() or (underwater_walking_strict() and can_lift_silver())) end,
+            ["Pirate Fortress Sewers Cage Room"] = function () return (has_mask_zora() or (underwater_walking_strict() and can_lift_silver())) end,
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
@@ -7756,7 +7756,7 @@ function _mm_logic()
     },
     ["Pirate Fortress Sewers Entrance"] = {
         ["exits"] = {
-            ["Pirate Fortress Entrance"] = function () return can_reset_time() end,
+            ["Pirate Fortress Entrance"] = function () return true end,
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
@@ -7972,8 +7972,8 @@ function _mm_logic()
     },
     ["Secret Shrine"] = {
         ["exits"] = {
-            ["Ikana Valley Near Secret Shrine"] = function () return can_reset_time() end,
-            ["Secret Shrine Entrance"] = function () return can_reset_time_dungeon() end,
+            ["Ikana Valley Near Secret Shrine"] = function () return true end,
+            ["Secret Shrine Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
     },
@@ -8108,8 +8108,8 @@ function _mm_logic()
     ["Snowhead Temple"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
-            ["Snowhead"] = function () return can_reset_time() end,
-            ["Snowhead Temple Entrance"] = function () return can_reset_time_dungeon() end,
+            ["Snowhead"] = function () return true end,
+            ["Snowhead Temple Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
     },
@@ -8559,7 +8559,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Snowhead Temple After Boss"] = function () return event('BOSS_GOHT') end,
-            ["WARP_SONGS"] = function () return can_reset_time() end,
+            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Snowhead Temple Boss Pot Early 1"] = function () return true end,
@@ -8596,8 +8596,8 @@ function _mm_logic()
     ["Stone Tower Temple"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
-            ["Stone Tower Front of Temple"] = function () return can_reset_time() end,
-            ["Stone Tower Temple Entrance"] = function () return can_reset_time_dungeon() end,
+            ["Stone Tower Front of Temple"] = function () return true end,
+            ["Stone Tower Temple Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
     },
@@ -8841,8 +8841,8 @@ function _mm_logic()
     ["Stone Tower Temple Inverted"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
-            ["Stone Tower Top Inverted"] = function () return can_reset_time() end,
-            ["Stone Tower Temple Inverted Entrance"] = function () return can_reset_time_dungeon() end,
+            ["Stone Tower Top Inverted"] = function () return true end,
+            ["Stone Tower Temple Inverted Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
     },
@@ -9100,7 +9100,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Stone Tower After Boss"] = function () return event('BOSS_TWINMOLD') end,
-            ["WARP_SONGS"] = function () return can_reset_time() end,
+            ["WARP_SONGS"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -9116,11 +9116,11 @@ function _mm_logic()
     },
     ["Swamp Spider House"] = {
         ["exits"] = {
-            ["Near Swamp Spider House"] = function () return can_reset_time() end,
-            ["Swamp Spider House Main"] = function () return can_reset_time_dungeon() end,
+            ["Near Swamp Spider House"] = function () return true end,
+            ["Swamp Spider House Main"] = function ()  return true end,
         },
         ["locations"] = {
-            ["Swamp Spider House Mask of Truth"] = function () return soul_citizen() and has('GS_TOKEN_SWAMP', 30) end,
+            ["Swamp Spider House Mask of Truth"] = function () return soul_citizen() and (has('GS_TOKEN_SWAMP', 30) or has('PLATINUM_TOKEN')) end,
         },
         ["age_change"] = false,
     },
@@ -9232,8 +9232,8 @@ function _mm_logic()
     ["Woodfall Temple"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
-            ["Woodfall Front of Temple"] = function () return can_reset_time() end,
-            ["Woodfall Temple Entrance"] = function () return can_reset_time_dungeon() end,
+            ["Woodfall Front of Temple"] = function () return true end,
+            ["Woodfall Temple Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
     },
@@ -9515,7 +9515,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Woodfall Temple After Boss"] = function () return event('BOSS_ODOLWA') end,
-            ["WARP_SONGS"] = function () return can_reset_time() end,
+            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Woodfall Temple Boss Grass 01"] = function () return true end,
