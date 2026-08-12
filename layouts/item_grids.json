@@ -71,24 +71,34 @@
             "OOT_WALLET1"
           ],
           [
-            "OOT_SKELETON_KEY",
             "OOT_GS_TOKEN",
             "OOT_STONE_OF_AGONY",
             "OOT_GERUDO_CARD",
             "OOT_COIN_RED",
             "OOT_COIN_GREEN",
             "OOT_COIN_BLUE",
-            "OOT_COIN_YELLOW"
+            "OOT_COIN_YELLOW",
+            "OOT_gossip_stone"
           ],
           [
             "OOT_SONG_EMPTINESS",
+            "OOT_GREAT_FAIRY_SWORD",
+            "OOT_SPIN_UPGRADE",     
+            "OOT_MASK_BLAST",
+            "OOT_MASK_STONE",
+            "OOT_MASK_KAMARO",
+            "OOT_POWDER_KEG",
+            "OOT_DOUBLE_DEFENSE"
+          ],
+          [
+            "OOT_SKELETON_KEY",
+            "OOT_RUPEE_MAGICAL",
+            "OOT_PLATINUM_TOKEN",
             "OOT_BUTTON_A",
             "OOT_BUTTON_C_DOWN",
             "OOT_BUTTON_C_LEFT",
             "OOT_BUTTON_C_RIGHT",
-            "OOT_BUTTON_C_UP",
-            "OOT_MASK_BLAST",
-            "OOT_MASK_STONE"
+            "OOT_BUTTON_C_UP"
           ]
         ]
       },
@@ -193,14 +203,7 @@
                     "type": "item",
                     "item": "triforce",
                     "margin": "1,1",
-                    "width": 28,
-                    "height": 28
-                  },
-                  {
-                    "type": "item",
-                    "item": "gossip_stone",
-                    "margin": "1,1",
-                    "width": 28,
+                    "width": 56,
                     "height": 28
                   }                  
                 ]
@@ -489,21 +492,7 @@
                         "width": 14,
                         "height": 14
                       }
-                    ]
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_RUPEE_MAGICAL",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 28
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_PLATINUM_TOKEN",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 28
+                    ]                  
                   }                             
                 ]
               },
@@ -1087,9 +1076,9 @@
             "MM_ARROW_FIRE",
             "MM_ARROW_ICE",
             "MM_ARROW_LIGHT",
-            "mm_spinattack",
-            "MM_SHIELD_HERO",
-            "MM_SHIELD_MIRROR"
+            "MM_SWORD",
+            "MM_SPIN_UPGRADE",
+            "MM_SHIELD_HERO"            
           ],
           [
             "MM_BOMB_BAG",
@@ -1127,7 +1116,7 @@
             "MM_SONG_ZORA",
             "MM_SONG_EMPTINESS",
             "MM_SONG_ORDER",
-            "MM_STRAY_FAIRY_TOWN",
+            "MM_SONG_SUN",
             "MM_ROOM_KEY",
             "MM_DEED_LAND"
           ],
@@ -1168,23 +1157,44 @@
             "MM_MASK_CAPTAIN",
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY",
-            "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN"
+            "MM_DOUBLE_DEFENSE",
+            "MM_BOMBERS"       
           ],
-          [
-            "MM_SKELETON_KEY",
-            "MM_SPELL_FIRE",
-            "MM_SPELL_WIND",
-            "MM_SPELL_LOVE",
+          [  
+            "MM_MASK_SKULL",
+            "MM_MASK_SPOOKY",
+            "MM_MASK_GERUDO",          
             "MM_BOOTS_IRON",
             "MM_BOOTS_HOVER",
             "MM_TUNIC_GORON",
-            "MM_TUNIC_ZORA"
+            "MM_TUNIC_ZORA",
+            "MM_SCALE"
           ],
           [
+            "MM_SPELL_FIRE",
+            "MM_SPELL_WIND",
+            "MM_SPELL_LOVE",
             "MM_HAMMER",
             "MM_STRENGTH",
-            "MM_SCALE",
+            "MM_BOOMERANG",
+            "MM_SLINGSHOT",
+            "MM_STONE_OF_AGONY"
+          ],
+          
+          [
+            "MM_STRAY_FAIRY_TOWN",
+            "MM_STRAY_FAIRY_WF",
+            "MM_STRAY_FAIRY_SH",
+            "MM_STRAY_FAIRY_GB",
+            "MM_STRAY_FAIRY_ST",            
+            "MM_GS_TOKEN_SWAMP",
+            "MM_GS_TOKEN_OCEAN",
+            "MM_gossip_stone"
+          ],
+          [
+            "MM_SKELETON_KEY",
+            "MM_TRANSCENDENT_FAIRY",
+            "MM_PLATINUM_TOKEN",
             "MM_BUTTON_A",
             "MM_BUTTON_C_DOWN",
             "MM_BUTTON_C_LEFT",
@@ -1212,7 +1222,7 @@
             "MM_CLOCK6"
           ]
         ]
-      },
+      },      
       {
         "type": "array",
         "orientation": "vertical",
@@ -1231,66 +1241,9 @@
                 "height": 28
               },
               {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_WF",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_snowhead",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_SH",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_great_bay",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_GB",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_stone_tower",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_ST",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              }
-            ]
-          },
-          {
-            "type": "array",
-            "orientation": "horizontal",
-            "scale": 0.8,
-            "margin": "0,0",
-            "content": [
-              {
                 "type": "array",
-                "orientation": "horizontal",
-                "margin": "5,0",
+                "orientation": "vertical",
+                "margin": "3,4",
                 "content": [
                   {
                     "type": "item",
@@ -1316,9 +1269,16 @@
                 ]
               },
               {
+                "type": "item",
+                "item": "mm_snowhead",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
                 "type": "array",
-                "orientation": "horizontal",
-                "margin": "5,0",
+                "orientation": "vertical",
+                "margin": "3,4",
                 "content": [
                   {
                     "type": "item",
@@ -1344,9 +1304,16 @@
                 ]
               },
               {
+                "type": "item",
+                "item": "mm_great_bay",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
                 "type": "array",
-                "orientation": "horizontal",
-                "margin": "5,0",
+                "orientation": "vertical",
+                "margin": "3,4",
                 "content": [
                   {
                     "type": "item",
@@ -1372,9 +1339,16 @@
                 ]
               },
               {
+                "type": "item",
+                "item": "mm_stone_tower",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
                 "type": "array",
-                "orientation": "horizontal",
-                "margin": "5,0",
+                "orientation": "vertical",
+                "margin": "3,4",
                 "content": [
                   {
                     "type": "item",
