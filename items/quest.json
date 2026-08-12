@@ -6,6 +6,12 @@
     "codes": "OOT_STONE_OF_AGONY"
   },
   {
+    "name": "Stone of Agony MM",
+    "type": "toggle",
+    "img": "images/agony.png",
+    "codes": "MM_STONE_OF_AGONY"
+  },
+  {
     "name": "Gold Skulltula Tokens",
     "type": "consumable",
     "img": "images/skulltula_token.png",
@@ -62,11 +68,18 @@
     "max_quantity": 999
   },
   {
-    "name": "Show hintable locations",
+    "name": "Show hintable locations OOT",
     "type": "toggle",
     "initial_active_state": true,
     "img": "images/gossip_stone.png",
-    "codes": "gossip_stone"
+    "codes": "OOT_gossip_stone"
+  },
+  {
+    "name": "Show hintable locations MM",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/gossip_stone.png",
+    "codes": "MM_gossip_stone"
   },
   {
     "name": "Red Coin",

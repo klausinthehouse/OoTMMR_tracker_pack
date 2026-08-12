@@ -827,7 +827,13 @@
     ]
   },
   {
-    "name": "Elegy of Emptiness",
+    "name": "Kamaro Mask OOT",
+    "type": "toggle",
+    "img": "images/items/mm_kamaro.png",
+    "codes": "OOT_MASK_KAMARO"
+  },
+  {
+    "name": "Elegy of Emptiness OOT",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -840,6 +846,24 @@
         "codes": "OOT_SONG_EMPTINESS,OOT_SHARED_SONG_EMPTINESS"
       }
     ]
+  },
+  {
+    "name": "Spin Upgrade OOT",
+    "type": "toggle",
+    "img": "images/spin.png",
+    "codes": "OOT_SPIN_UPGRADE"
+  },
+  {
+    "name": "Great Fairy Sword OOT",
+    "type": "toggle",
+    "img": "images/items/mm_fairysword.png",
+    "codes": "OOT_GREAT_FAIRY_SWORD"
+  },
+  {
+    "name": "Powder Keg",
+    "type": "toggle",
+    "img": "images/items/mm_keg.png",
+    "codes": "OOT_POWDER_KEG"
   },
   {
     "name": "Magical Rupee",
@@ -857,7 +881,7 @@
     ]
   },
   {
-    "name": "Platinum Token",
+    "name": "Platinum Token OoT",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -870,6 +894,12 @@
         "codes": "OOT_PLATINUM_TOKEN"
       }
     ]
+  },
+  {
+    "name": "Double Defense",
+    "type": "toggle",
+    "img": "images/DD.png",
+    "codes": "OOT_DOUBLE_DEFENSE"
   },
   {
     "name": "Soul of Anubis",

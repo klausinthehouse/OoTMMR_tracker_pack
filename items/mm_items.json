@@ -147,6 +147,42 @@
     ]
   },
   {
+    "name": "Bombers Notebook",
+    "type": "toggle",
+    "img": "images/items/Bombers_Notebook.png",
+    "codes": "MM_BOMBERS"
+  },
+  {
+    "name": "Boomerang",
+    "type": "toggle",
+    "img": "images/boomerang.png",
+    "codes": "MM_BOOMERANG"
+  },
+  {
+    "name": "Slingshot",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/slingshot.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/slingshot.png",
+        "img_mods": "overlay|images/overlay_30.png",
+        "codes": "MM_SLINGSHOT"
+      },
+      {
+        "img": "images/slingshot.png",
+        "img_mods": "overlay|images/overlay_40.png"
+      },
+      {
+        "img": "images/slingshot.png",
+        "img_mods": "overlay|images/overlay_50_green.png"
+      }
+    ]
+  },
+  {
     "name": "Hookshot",
     "type": "progressive",
     "stages": [
@@ -308,6 +344,14 @@
     "codes": "MM_SONG_ORDER"
   },
   {
+    "name": "Sun's Song",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_sun.png",
+    "initial_active_state": false,
+    "codes": "MM_SONG_SUN"
+  },
+  {
     "name": "Great Fairy Sword",
     "type": "toggle",
     "img": "images/items/mm_fairysword.png",
@@ -339,11 +383,10 @@
     ]
   },
   {
-    "name": "Sword with Spin Attack",
-    "type": "toggle_badged",
-    "base_item": "MM_SWORD",
-    "img": "images/items/mm_spin.png",
-    "codes": "mm_spinattack,MM_SPIN_UPGRADE"
+    "name": "Spin Upgrade",
+    "type": "toggle",
+    "img": "images/spin.png",
+    "codes": "MM_SPIN_UPGRADE"
   },
   {
     "name": "Shield",
@@ -351,29 +394,28 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/items/mm_shield.png",
+        "img": "images/shield1.png",
         "img_mods": "@disabled"
+      },
+      {
+        "img": "images/shield1.png",
+        "codes": "MM_SHIELD_DEKU"
       },
       {
         "img": "images/items/mm_shield.png",
         "codes": "MM_SHIELD_HERO, MM_SHIELD_HYLIAN, MM_SHARED_SHIELD_HYLIAN"
-      }
-    ]
-  },
-  {
-    "name": "Mirror Shield",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/items/mm_mirror.png",
-        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_mirror.png",
         "codes": "MM_SHIELD_MIRROR,MM_SHARED_SHIELD_MIRROR"
       }
     ]
+  }, 
+  {
+    "name": "Double Defense MM",
+    "type": "toggle",
+    "img": "images/DD.png",
+    "codes": "MM_DOUBLE_DEFENSE"
   },
   {
     "name": "Ocarina",
@@ -1003,6 +1045,24 @@
         "codes": "MM_MASK_STONE,MM_MASK_REGULAR,MM_MASK,MM_SHARED_MASK_STONE"
       }
     ]
+  },  
+  {
+    "name": "Skull Mask",
+    "type": "toggle",
+    "img": "images/skull.png",
+    "codes": "MM_MASK_SKULL"
+  },
+  {
+    "name": "Spooky Mask",
+    "type": "toggle",
+    "img": "images/spooky.png",
+    "codes": "MM_MASK_SPOOKY"
+  },
+  {
+    "name": "Gerudo Mask",
+    "type": "toggle",
+    "img": "images/gerudo.png",
+    "codes": "MM_MASK_GERUDO"
   },
   {
     "name": "Troupe Leader Mask",
@@ -1220,6 +1280,36 @@
       {
         "img": "images/key_skeleton.png",
         "codes": "MM_SKELETON_KEY,MM_SHARED_SKELETON_KEY"
+      }
+    ]
+  },    
+  {
+    "name": "Platinum Token MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/platinum.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/platinum.png",
+        "codes": "MM_PLATINUM_TOKEN"
+      }
+    ]
+  },
+  {
+    "name": "Transcendent Fairy",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_transcendent_fairy.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_transcendent_fairy.png",
+        "codes": "MM_TRANSCENDENT_FAIRY"
       }
     ]
   },
