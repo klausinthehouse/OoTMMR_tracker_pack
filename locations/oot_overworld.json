@@ -5053,7 +5053,8 @@
               {
                 "name": "Child-Deku",
                 "access_rules": [
-                  "$oot|Death Mountain Crater Scrub Child"
+                  "$oot|Death Mountain Crater Scrub Child",
+                  "{OOT_gossip_stone}"
                 ],
                 "visibility_rules": [
                   "setting_scrubShuffleOot_true"

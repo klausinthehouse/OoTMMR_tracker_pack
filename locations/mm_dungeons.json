@@ -1586,7 +1586,8 @@
         "chest_unopened_img": "images/system/cow.png",
         "chest_opened_img": "images/system/milk.png",
         "access_rules": [
-          "$mm|Beneath The Well Cow"
+          "$mm|Beneath The Well Cow",
+          "{MM_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_cowShuffleMm_true"
@@ -3793,16 +3794,6 @@
         "item_count": 2
       },
       {
-        "name": "Inverted Stone Tower Temple Boss Key Chest",
-        "chest_unopened_img": "images/system/chest_golden_closed.png",
-        "chest_opened_img": "images/system/chest_golden_open.png",
-        "short_name": "Boss Key",
-        "access_rules": [
-          "$mm|Stone Tower Temple Inverted Boss Key"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Before Gomess Crates",
         "short_name": "Pre-Gomess",
         "chest_unopened_img": "images/crate.png",
@@ -3826,6 +3817,17 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 4
+      },
+      {
+        "name": "Inverted Stone Tower Temple Boss Key Chest",
+        "chest_unopened_img": "images/system/chest_golden_closed.png",
+        "chest_opened_img": "images/system/chest_golden_open.png",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted Boss Key",
+          "{MM_gossip_stone}"
+        ],
+        "item_count": 1
       },
       {
         "name": "Death Armos Switch Chest in Inverted",
@@ -4500,7 +4502,8 @@
         "chest_opened_img": "images/system/chest_golden_open.png",
         "short_name": "Boss Key",
         "access_rules": [
-          "$mm|Snowhead Temple Boss Key"
+          "$mm|Snowhead Temple Boss Key",
+          "{MM_gossip_stone}"
         ],
         "item_count": 1
       },

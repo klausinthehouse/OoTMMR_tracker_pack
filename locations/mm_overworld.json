@@ -1221,14 +1221,16 @@
                   {
                     "name": "Gift From Kafei - Day 2: 4:30 PM",
                     "access_rules": [
-                      "$mm|Kafei Hideout Pendant of Memories"
+                      "$mm|Kafei Hideout Pendant of Memories",
+                      "{MM_gossip_stone}"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Curiosity Shop Man Gifts - Final Day: 1 PM - 9 PM First Item",
                     "access_rules": [
-                      "$mm|Kafei Hideout Owner Reward 1"
+                      "$mm|Kafei Hideout Owner Reward 1",
+                      "{MM_gossip_stone}"
                     ],
                     "item_count": 2
                   }
@@ -1514,7 +1516,8 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "$mm|Termina Field Kamaro Mask"
+                  "$mm|Termina Field Kamaro Mask",
+                  "{MM_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -4539,7 +4542,8 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "$mm|Mountain Village Don Gero Mask"
+                  "$mm|Mountain Village Don Gero Mask",
+                  "{MM_gossip_stone}"
                 ],
                 "item_count": 1
               },              
@@ -6713,7 +6717,8 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "$mm|Road to Ikana Stone Mask"
+                  "$mm|Road to Ikana Stone Mask",
+                  "{MM_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -7311,7 +7316,8 @@
                   {
                     "name": "Wart",
                     "access_rules": [
-                      "$mm|Secret Shrine Wart Chest"
+                      "$mm|Secret Shrine Wart Chest",
+                      "{MM_gossip_stone}"
                     ],
                     "item_count": 1
                   },
@@ -7351,7 +7357,8 @@
                   {
                     "name": "Defeat all four minibosses",
                     "access_rules": [
-                      "$mm|Secret Shrine HP Chest"
+                      "$mm|Secret Shrine HP Chest",
+                      "{MM_gossip_stone}"
                     ],
                     "chest_unopened_img": "images/system/chest_unopened_big.png",
                     "chest_opened_img": "images/system/chest_open_big.png",

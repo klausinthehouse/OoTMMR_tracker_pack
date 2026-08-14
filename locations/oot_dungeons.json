@@ -223,7 +223,8 @@
         "name": "GS Basement Back Room",
         "short_name": "Back Room",
         "access_rules": [
-          "$oot|Deku Tree GS Basement Back Room"
+          "$oot|Deku Tree GS Basement Back Room",
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_false"
@@ -564,7 +565,8 @@
         "name": "After Spinning Log Chest",
         "short_name": "After Log",
         "access_rules": [
-          "$ootmq|MQ Deku Tree After Water Platform Chest"
+          "$ootmq|MQ Deku Tree After Water Platform Chest",
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_DekuTree_true"
@@ -1809,7 +1811,8 @@
         "name": "Boomerang Chest",
         "short_name": "Boomerang",
         "access_rules": [
-          "$oot|Jabu-Jabu Boomerang Chest"
+          "$oot|Jabu-Jabu Boomerang Chest",
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_Jabu-Jabu_false"
@@ -5174,7 +5177,8 @@
         "name": "River Chest",
         "short_name": "River",
         "access_rules": [
-          "$oot|Water Temple River Chest"
+          "$oot|Water Temple River Chest",
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_WaterTemple_false"
@@ -6396,10 +6400,11 @@
         "name": "Freestanding Key",
         "short_name": "Skull Pot",
         "access_rules": [
-          "$oot|Shadow Temple Skull"
+          "$oot|Shadow Temple Skull",
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
-          "setting_mq_ShadowTemple_false"
+          "setting_mq_ShadowTemple_false"          
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -7025,7 +7030,8 @@
         "name": "Stalfos Room Chest",
         "short_name": "Stalfos",
         "access_rules": [
-          "$ootmq|MQ Shadow Temple Stalfos Room Chest"
+          "$ootmq|MQ Shadow Temple Stalfos Room Chest",
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_ShadowTemple_true"
@@ -8244,7 +8250,8 @@
         "name": "Symphony Room Chest",
         "short_name": "Symphony",
         "access_rules": [
-          "$ootmq|MQ Spirit Temple Symphony Room Chest"
+          "$ootmq|MQ Spirit Temple Symphony Room Chest",
+          "{OOT_gossip_stone}"
         ],
         "visibility_rules": [
           "setting_mq_SpiritTemple_true"
