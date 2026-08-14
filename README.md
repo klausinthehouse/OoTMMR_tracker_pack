@@ -52,7 +52,9 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Silver Boulder Shuffle
 - Rusty Keys Shuffle
 - Bronze Scale Setting and Logic
-- Feirce Deity Everywhere Setting and Logic  
+- Feirce Deity Everywhere Setting and Logic
+- Added Platinum Token, Magical Rupee and Transcendent Fairy
+- Added Cross-Items in Grid and Logic
 
 ## TODOs:
 
@@ -64,6 +66,10 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Pre-Completed Dungeon Setting
 - [ ] Entrance Shuffle Setting
 - [ ] JP layout Setting
+- [ ] Song Event Shuffle Setting
+- [ ] Song Event Shuffle Songs
+- [ ] OOT Ice Arrow Platform Logic
+- [ ] Correct Hint Locations
 
 
 ## Credits
