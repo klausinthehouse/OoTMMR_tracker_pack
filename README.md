@@ -48,13 +48,14 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Added Silver Rupees to the item grid
 - Map Locations for non-supported settings
 - Specifig Settings for TF Grass
+- Boulder Shuffle
+- Silver Boulder Shuffle
+- Rusty Keys Shuffle
+- Bronze Scale Setting and Logic
+- Feirce Deity Everywhere Setting and Logic  
 
 ## TODOs:
 
-- [ ] Control implemented settings for Errors
-- [ ] Implement Option for Termina Field Grass
-- [ ] Implement Logic for Bronce Scale
-- [ ] Implement Logic for Feirce Deity Everywhere
 - [ ] Implement flags for cleared/uncleared dungeon states
 - [ ] Adjust Tree Search for ER Options
 - [ ] Ganon Trials
@@ -63,9 +64,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Pre-Completed Dungeon Setting
 - [ ] Entrance Shuffle Setting
 - [ ] JP layout Setting
-- [ ] Bronze-Scale Settings
-- [ ] Feirce-Deity-Everywhere Setting
-- [ ] Check Time-Logic in MM
+
 
 ## Credits
 
