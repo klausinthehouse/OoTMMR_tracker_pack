@@ -902,6 +902,141 @@
     "codes": "OOT_DOUBLE_DEFENSE"
   },
   {
+    "name": "Kokiri Emerald",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/emerald.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/emerald.png",
+        "codes": "OOT_STONE_EMERALD"
+      }
+    ]
+  },
+  {
+    "name": "Goron Ruby",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/ruby.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/ruby.png",
+        "codes": "OOT_STONE_RUBY"
+      }
+    ]
+  },
+  {
+    "name": "Zora Sapphire",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/sapphire.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/sapphire.png",
+        "codes": "OOT_STONE_SAPPHIRE"
+      }
+    ]
+  },
+  {
+    "name": "Forest Medallion",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/forestmedallion.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "OOT_MEDALLION_FOREST"
+      }
+    ]
+  },
+   {
+    "name": "Fire Medallion",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/firemedallion.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/firemedallion.png",
+        "codes": "OOT_MEDALLION_FIRE"
+      }
+    ]
+  },
+  {
+    "name": "Water Medallion",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/watermedallion.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/watermedallion.png",
+        "codes": "OOT_MEDALLION_WATER"
+      }
+    ]
+  },
+  {
+    "name": "Shadow Medallion",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/shadowmedallion.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/shadowmedallion.png",
+        "codes": "OOT_MEDALLION_SHADOW"
+      }
+    ]
+  },
+  {
+    "name": "Spirit Medallion",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/spiritmedallion.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/spiritmedallion.png",
+        "codes": "OOT_MEDALLION_SPIRIT"
+      }
+    ]
+  },
+  {
+    "name": "Light Medallion",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/lightmedallion.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "OOT_MEDALLION_LIGHT"
+      }
+    ]
+  },
+  {
     "name": "Soul of Anubis",
     "type": "progressive",
     "allow_disabled": false,

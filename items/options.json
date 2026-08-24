@@ -1584,6 +1584,36 @@
     ]
   },
   {
+    "name": "OoT Merchant Prices",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_priceOotMerchants_affordable.png",
+        "codes": "setting_priceOotMerchants,setting_priceOotMerchants_affordable",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotMerchants_vanilla.png",
+        "codes": "setting_priceOotMerchants,setting_priceOotMerchants_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_priceOotMerchants_weighted.png",
+        "codes": "setting_priceOotMerchants,setting_priceOotMerchants_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotMerchants_random.png",
+        "codes": "setting_priceOotMerchants,setting_priceOotMerchants_random",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "MM Shops Prices",
     "type": "progressive",
     "allow_disabled": false,
@@ -1938,6 +1968,31 @@
       {
         "img": "images/setting_bossWarpPads_remains.png",
         "codes": "setting_bossWarpPads,setting_bossWarpPads_remains",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Region State Behaviour MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_region_vanilla.png",
+        "codes": "setting_regionState,setting_regionState_dungeonBeaten",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_region_remains.png",
+        "codes": "setting_regionState,setting_regionState_reward",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_region_free.png",
+        "codes": "setting_regionState,setting_regionState_free",
         "inherit_codes": false
       }
     ]
