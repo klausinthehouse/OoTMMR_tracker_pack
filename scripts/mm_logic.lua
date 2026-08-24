@@ -2860,7 +2860,7 @@ function _mm_logic()
         ["exits"] = {
             ["Great Bay Temple"] = function () return true end,
             ["Great Bay Temple Water Wheel"] = function () return true end,
-            ["Great Bay Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_GYORG') end,
+            ["Great Bay Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('gyorg_remains') end,
             ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
@@ -5032,7 +5032,7 @@ function _mm_logic()
     },
     ["Swamp Front"] = {
         ["events"] = {
-            ["CLEAR_STATE_WOODFALL"] = function () return wisp_enabled(BOSS_ODOLWA, REMAINS_ODOLWA) or event('WISP_CLEAR_STATE_WOODFALL') end,
+            ["CLEAR_STATE_WOODFALL"] = function () return wisp_enabled(BOSS_ODOLWA, odolwa_remains) or event('WISP_CLEAR_STATE_WOODFALL') end,
             ["FROG_3"] = function () return has('MASK_DON_GERO') end,
             ["PICTURE_SWAMP"] = function () return has('PICTOGRAPH_BOX') end,
             ["PICTURE_BIG_OCTO"] = function () return has('PICTOGRAPH_BOX') and soul_octorok() end,
@@ -5644,7 +5644,7 @@ function _mm_logic()
     },
     ["Mountain Village"] = {
         ["events"] = {
-            ["CLEAR_STATE_SNOWHEAD"] = function () return wisp_enabled(BOSS_GOHT, REMAINS_GOHT) or event('WISP_CLEAR_STATE_SNOWHEAD') end,
+            ["CLEAR_STATE_SNOWHEAD"] = function () return wisp_enabled(BOSS_GOHT, goht_remains) or event('WISP_CLEAR_STATE_SNOWHEAD') end,
             ["MAGIC"] = function () return true end,
             ["ARROWS"] = function () return true end,
             ["BOMBS_OR_BOMBCHU"] = function () return true end,
@@ -6536,7 +6536,7 @@ function _mm_logic()
     },
     ["Great Bay Coast"] = {
         ["events"] = {
-            ["CLEAR_STATE_GREAT_BAY"] = function () return wisp_enabled(BOSS_GYORG, REMAINS_GYORG) or event('WISP_CLEAR_STATE_GREAT_BAY') end,
+            ["CLEAR_STATE_GREAT_BAY"] = function () return wisp_enabled(BOSS_GYORG, gyorg_remains) or event('WISP_CLEAR_STATE_GREAT_BAY') end,
             ["MAGIC"] = function () return true end,
             ["BOMBS_OR_BOMBCHU"] = function () return true end,
             ["ARROWS"] = function () return true end,
@@ -7420,7 +7420,7 @@ function _mm_logic()
     },
     ["Ikana Canyon"] = {
         ["events"] = {
-            ["CLEAR_STATE_IKANA"] = function () return wisp_enabled(BOSS_TWINMOLD, REMAINS_TWINMOLD) or event('WISP_CLEAR_STATE_IKANA') end,
+            ["CLEAR_STATE_IKANA"] = function () return wisp_enabled(BOSS_TWINMOLD, twinmold_remains) or event('WISP_CLEAR_STATE_IKANA') end,
             ["MAGIC"] = function () return true end,
             ["BOMBS_OR_BOMBCHU"] = function () return true end,
             ["ARROWS"] = function () return true end,
@@ -8117,7 +8117,7 @@ function _mm_logic()
         ["exits"] = {
             ["Snowhead Temple"] = function () return true end,
             ["Snowhead Temple Main"] = function () return has_mask_goron() or has_mask_zora() or can_lift_silver() end,
-            ["Snowhead Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_GOHT') end,
+            ["Snowhead Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('goht_remains') end,
             ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
@@ -8856,7 +8856,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted East"] = function () return can_use_light_arrows() or short_hook_anywhere() end,
             ["Stone Tower Temple Inverted Entrance Ledge"] = function () return trick('MM_ISTT_ENTRY_JUMP') and (has_bombs() or trick_keg_explosives()) or short_hook_anywhere() or (trick('MM_ISTT_ENTRY_HOVER') and has_hover_boots() and has_mask_bunny()) end,
             ["Stone Tower Temple Inverted Entrance Top"] = function () return short_hook_anywhere() end,
-            ["Stone Tower Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_TWINMOLD') end,
+            ["Stone Tower Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('twinmold_remains') end,
             ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
@@ -9246,7 +9246,7 @@ function _mm_logic()
         ["exits"] = {
             ["Woodfall Temple"] = function () return true end,
             ["Woodfall Temple Main"] = function () return has('MASK_DEKU') or can_hookshot_short() or (has_hover_boots() and has_weapon() and has_explosives() and has_mask_bunny() and (has_arrows() or has_mask_stone()) and trick('MM_WFT_LOBBY_HOVERS')) end,
-            ["Woodfall Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_ODOLWA') end,
+            ["Woodfall Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('odolwa_remains') end,
             ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
