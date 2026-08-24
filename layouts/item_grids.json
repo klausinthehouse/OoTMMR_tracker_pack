@@ -159,42 +159,42 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "forest",
+                    "item": "OOT_MEDALLION_FOREST",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "fire",
+                    "item": "OOT_MEDALLION_FIRE",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "water",
+                    "item": "OOT_MEDALLION_WATER",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "spirit",
+                    "item": "OOT_MEDALLION_SHADOW",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "shadow",
+                    "item": "OOT_MEDALLION_SPIRIT",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "free",
+                    "item": "OOT_MEDALLION_LIGHT",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
@@ -320,39 +320,6 @@
                     "content": [
                       {
                         "type": "item",
-                        "item": "setting_mq_SpiritTemple",
-                        "canvas_depth": 1,
-                        "width": 28,
-                        "height": 10.5
-                      },
-                      {
-                        "type": "item",
-                        "item": "OOT_SMALL_KEY_SPIRIT",
-                        "canvas_depth": 1,
-                        "canvas_left": 0,
-                        "canvas_top": 16,
-                        "width": 14,
-                        "height": 14
-                      },
-                      {
-                        "type": "item",
-                        "item": "OOT_BOSS_KEY_SPIRIT",
-                        "canvas_depth": 1,
-                        "canvas_left": 16,
-                        "canvas_top": 16,
-                        "width": 14,
-                        "height": 14
-                      }                      
-                    ]
-                  },
-                  {
-                    "type": "canvas",
-                    "width": 28,
-                    "height": 28,
-                    "margin": "1,1",
-                    "content": [
-                      {
-                        "type": "item",
                         "item": "setting_mq_ShadowTemple",
                         "canvas_depth": 1,
                         "width": 28,
@@ -379,12 +346,38 @@
                     ]
                   },
                   {
-                    "type": "item",
-                    "item": "free_label",
-                    "margin": "1,1",
+                    "type": "canvas",
                     "width": 28,
-                    "height": 28                                              
-                  }     
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "setting_mq_SpiritTemple",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_SPIRIT",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_BOSS_KEY_SPIRIT",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }                      
+                    ]
+                  }
                 ]
               },
               {
@@ -394,21 +387,21 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "deku",
+                    "item": "OOT_STONE_EMERALD",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "dodongo",
+                    "item": "OOT_STONE_RUBY",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "jabu",
+                    "item": "OOT_STONE_SAPPHIRE",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
@@ -1235,7 +1228,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "mm_woodfall",
+                "item": "mm_odolwa_remains",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
@@ -1270,7 +1263,7 @@
               },
               {
                 "type": "item",
-                "item": "mm_snowhead",
+                "item": "mm_goht_remains",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
@@ -1305,7 +1298,7 @@
               },
               {
                 "type": "item",
-                "item": "mm_great_bay",
+                "item": "mm_gyorg_remains",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
@@ -1340,7 +1333,7 @@
               },
               {
                 "type": "item",
-                "item": "mm_stone_tower",
+                "item": "mm_twinmold_remains",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
