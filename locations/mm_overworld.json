@@ -547,8 +547,8 @@
                 "sections": [
                   {
                     "name": "ECT Crates",
-                    "chest_unopened_img": "images/system/crate.png",
-                    "chest_opened_img": "images/system/crate_grey.png",
+                    "chest_unopened_img": "images/crate.png",
+                    "chest_opened_img": "images/crate_grey.png",
                     "access_rules": [
                       "$mm|Clock Town East Small Crate 1"
                     ],
@@ -1145,8 +1145,8 @@
                   },
                   {
                     "name": "Guru-Guru-Crate",
-                    "chest_unopened_img": "images/system/crate.png",
-                    "chest_opened_img": "images/system/crate_grey.png",
+                    "chest_unopened_img": "images/crate.png",
+                    "chest_opened_img": "images/crate_grey.png",
                     "access_rules": [
                       "$mm|Clock Town Laundry Pool Small Crate"
                     ],
@@ -1900,8 +1900,8 @@
               },
               {
                 "name": "Scrub Grotto Crate",
-                "chest_unopened_img": "images/system/crate.png",
-                "chest_opened_img": "images/system/crate_grey.png",
+                "chest_unopened_img": "images/crate.png",
+                "chest_opened_img": "images/crate_grey.png",
                 "access_rules": [
                   "$mm|Termina Field Scrub Crate"
                 ],
@@ -2659,8 +2659,8 @@
             "sections": [
               {
                 "name": "Gormans Crate",
-                "chest_unopened_img": "images/system/crate.png",
-                "chest_opened_img": "images/system/crate_grey.png",
+                "chest_unopened_img": "images/crate.png",
+                "chest_opened_img": "images/crate_grey.png",
                 "access_rules": [
                   "$mm|Gorman Track Crate"
                 ],
@@ -2851,8 +2851,8 @@
               },
               {
                 "name": "Romanis Crate",
-                "chest_unopened_img": "images/system/crate.png",
-                "chest_opened_img": "images/system/crate_grey.png",
+                "chest_unopened_img": "images/crate.png",
+                "chest_opened_img": "images/crate_grey.png",
                 "access_rules": [
                   "$mm|Romani Ranch Crate"
                 ],
@@ -2971,8 +2971,8 @@
               },
               {
                 "name": "Cucco-Crates",
-                "chest_unopened_img": "images/system/crate.png",
-                "chest_opened_img": "images/system/crate_grey.png",
+                "chest_unopened_img": "images/crate.png",
+                "chest_opened_img": "images/crate_grey.png",
                 "access_rules": [
                   "$mm|Cucco Shack Crate 1"
                 ],
@@ -3500,15 +3500,56 @@
             ]
           },
           {
-            "name": "Kotake Red Potion Bottle",
-            "short_name": "Potion Bottle",
+            "name": "Around Swamp Potion Shop",
+            "short_name": "Outside Potion Shop",
             "sections": [
               {
-                "name": "Talk to Kotake after seeing Koume in Woods",
-                "access_rules": [
-                  "$mm|Swamp Potion Shop Kotake"
+                "name": "Grass Patch 1 near Potion Shop",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
                 ],
-                "item_count": 1
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Near Witch Pack 1 Grass 01"
+                ],
+                "item_count": 9
+              },
+              {
+                "name": "Grass Patch 2 near Potion Shop",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Near Witch Pack 2 Grass 01"
+                ],
+                "item_count": 9
+              },
+              {
+                "name": "Grass near Gossip Stone",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_overworld"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Near Witch 1"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Pots near Potion Shop",
+                "access_rules": [
+                  "$mm|Southern Swamp Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_overworld"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -3568,52 +3609,11 @@
                 "item_count": 1
               },
               {
-                "name": "Grass Patch 1 near Potion Shop",
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
+                "name": "Talk to Kotake after seeing Koume in Woods",
                 "access_rules": [
-                  "$mm|Southern Swamp Grass Near Witch Pack 1 Grass 01"
+                  "$mm|Swamp Potion Shop Kotake"
                 ],
-                "item_count": 9
-              },
-              {
-                "name": "Grass Patch 2 near Potion Shop",
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Southern Swamp Grass Near Witch Pack 2 Grass 01"
-                ],
-                "item_count": 9
-              },
-              {
-                "name": "Grass near Gossip Stone",
-                "visibility_rules": [
-                  "setting_shuffleGrassMm_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Southern Swamp Grass Near Witch 1"
-                ],
-                "item_count": 2
-              },
-              {
-                "name": "Pots near Potion Shop",
-                "access_rules": [
-                  "$mm|Southern Swamp Pot 1"
-                ],
-                "visibility_rules": [
-                  "setting_shufflePotsMm_overworld"
-                ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 3
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -5233,8 +5233,8 @@
               },
               {
                 "name": "Medigorons Crate",
-                "chest_unopened_img": "images/system/crate.png",
-                "chest_opened_img": "images/system/crate_grey.png",
+                "chest_unopened_img": "images/crate.png",
+                "chest_opened_img": "images/crate_grey.png",
                 "access_rules": [
                   "$mm|Goron Village Crate"
                 ],

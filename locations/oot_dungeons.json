@@ -8541,6 +8541,17 @@
         "item_count": 1
       },
       {
+        "name": "Front Center Bombable Chest",
+        "short_name": "Front Bombable",
+        "access_rules": [
+          "$oot|Bottom of the Well Under Debris"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Right Bottom Fake Wall Chest",
         "short_name": "Right Hidden",
         "access_rules": [
@@ -8699,17 +8710,6 @@
         "chest_unopened_img": "images/heart.png",
         "chest_opened_img": "images/heart_grey.png",
         "item_count": 2
-      },
-      {
-        "name": "Front Center Bombable Chest",
-        "short_name": "Front Bombable",
-        "access_rules": [
-          "$oot|Bottom of the Well Under Debris"
-        ],
-        "visibility_rules": [
-          "setting_mq_BottomoftheWell_false"
-        ],
-        "item_count": 1
       },
       {
         "name": "Back Left Bombable Chest",

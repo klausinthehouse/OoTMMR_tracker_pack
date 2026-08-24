@@ -8207,7 +8207,7 @@
                 "name": "Lonely DC Rock",
                 "short_name": "Lonely Rock",
                 "access_rules": [
-                  "$oot|Desert Colossus rocks"
+                  "$oot|Desert Colossus Rocks"
                 ],
                 "visibility_rules": [
                   "setting_rock_on"
