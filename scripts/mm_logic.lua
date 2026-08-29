@@ -2171,15 +2171,15 @@ function _mm_logic()
 	end
 
 	function woodfall_raised()
-		return event('OPEN_WOODFALL_TEMPLE') or setting('openDungeonsMm', 'WF') or ((setting('clearStateDungeonsMm', 'WF') or setting('clearStateDungeonsMm', 'both')) and is_swamp_cleared())
+		return event('OPEN_WOODFALL_TEMPLE') or setting('DungeonWF', 'open')  or ((setting('clearStateDungeonsMm', 'WF') or setting('clearStateDungeonsMm', 'both')) and is_swamp_cleared())
 	end
 
 	function blizzard_stopped()
-		return event('OPEN_SNOWHEAD_TEMPLE') or setting('openDungeonsMm', 'SH') or is_spring()
+		return event('OPEN_SNOWHEAD_TEMPLE') or setting('DungeonSH', 'open')  or is_spring()
 	end
 
 	function turtle_woken()
-		return can_play_zora() and has_mask_zora() or setting('openDungeonsMm', 'GB') or ((setting('clearStateDungeonsMm', 'GB') or setting('clearStateDungeonsMm', 'both')) and is_ocean_cleared())
+		return can_play_zora() and has_mask_zora() or setting('DungeonGB', 'open') or ((setting('clearStateDungeonsMm', 'GB') or setting('clearStateDungeonsMm', 'both')) and is_ocean_cleared())
 	end
 
 	function underwater_walking()
@@ -5032,7 +5032,7 @@ function _mm_logic()
     },
     ["Swamp Front"] = {
         ["events"] = {
-            ["CLEAR_STATE_WOODFALL"] = function () return wisp_enabled(BOSS_ODOLWA, odolwa_remains) or event('WISP_CLEAR_STATE_WOODFALL') end,
+            ["CLEAR_STATE_WOODFALL"] = function () return wisp_enabled(BOSS_ODOLWA, odolwa_remains) or event('WISP_CLEAR_STATE_WOODFALL') or setting('DungeonWF', 'complete') end,
             ["FROG_3"] = function () return has('MASK_DON_GERO') end,
             ["PICTURE_SWAMP"] = function () return has('PICTOGRAPH_BOX') end,
             ["PICTURE_BIG_OCTO"] = function () return has('PICTOGRAPH_BOX') and soul_octorok() end,
@@ -5479,8 +5479,8 @@ function _mm_logic()
     },
     ["Woodfall Front of Temple"] = {
         ["exits"] = {
-            ["Woodfall Temple"] = function () return woodfall_raised() end,
-            ["Woodfall Shrine"] = function () return cond(setting('openDungeonsMm', 'WF') or setting('clearStateDungeonsMm', 'WF') or setting('clearStateDungeonsMm', 'both'), has('MASK_DEKU') or hookshot_anywhere(), true) end,
+            ["Woodfall Temple"] = function () return woodfall_raised() or setting('DungeonWF', 'open') end,
+            ["Woodfall Shrine"] = function () return cond(setting('DungeonWF', 'open')  or setting('clearStateDungeonsMm', 'WF') or setting('clearStateDungeonsMm', 'both'), has('MASK_DEKU') or hookshot_anywhere(), true) end,
             ["Woodfall"] = function () return is_swamp_cleared() or can_use_nayru() end,
         },
         ["age_change"] = false,
@@ -5644,7 +5644,7 @@ function _mm_logic()
     },
     ["Mountain Village"] = {
         ["events"] = {
-            ["CLEAR_STATE_SNOWHEAD"] = function () return wisp_enabled(BOSS_GOHT, goht_remains) or event('WISP_CLEAR_STATE_SNOWHEAD') end,
+            ["CLEAR_STATE_SNOWHEAD"] = function () return wisp_enabled(BOSS_GOHT, goht_remains) or event('WISP_CLEAR_STATE_SNOWHEAD') or setting('DungeonSH', 'complete') end,
             ["MAGIC"] = function () return true end,
             ["ARROWS"] = function () return true end,
             ["BOMBS_OR_BOMBCHU"] = function () return true end,
@@ -6244,7 +6244,7 @@ function _mm_logic()
     },
     ["Snowhead"] = {
         ["exits"] = {
-            ["Snowhead Entrance"] = function () return can_lullaby() and has_mask_goron() or blizzard_stopped() or has_iron_boots() end,
+            ["Snowhead Entrance"] = function () return can_lullaby() and has_mask_goron() or blizzard_stopped() or has_iron_boots() or setting('DungeonSH', 'open') end,
             ["Snowhead Temple"] = function () return true end,
             ["Snowhead Near Fairy Fountain"] = function () return blizzard_stopped() or has_iron_boots() end,
         },
@@ -6536,7 +6536,7 @@ function _mm_logic()
     },
     ["Great Bay Coast"] = {
         ["events"] = {
-            ["CLEAR_STATE_GREAT_BAY"] = function () return wisp_enabled(BOSS_GYORG, gyorg_remains) or event('WISP_CLEAR_STATE_GREAT_BAY') end,
+            ["CLEAR_STATE_GREAT_BAY"] = function () return wisp_enabled(BOSS_GYORG, gyorg_remains) or event('WISP_CLEAR_STATE_GREAT_BAY') or setting('DungeonGB', 'complete') end,
             ["MAGIC"] = function () return true end,
             ["BOMBS_OR_BOMBCHU"] = function () return true end,
             ["ARROWS"] = function () return true end,
@@ -7420,7 +7420,7 @@ function _mm_logic()
     },
     ["Ikana Canyon"] = {
         ["events"] = {
-            ["CLEAR_STATE_IKANA"] = function () return wisp_enabled(BOSS_TWINMOLD, twinmold_remains) or event('WISP_CLEAR_STATE_IKANA') end,
+            ["CLEAR_STATE_IKANA"] = function () return wisp_enabled(BOSS_TWINMOLD, twinmold_remains) or event('WISP_CLEAR_STATE_IKANA') or setting('DungeonST', 'complete') end,
             ["MAGIC"] = function () return true end,
             ["BOMBS_OR_BOMBCHU"] = function () return true end,
             ["ARROWS"] = function () return true end,
@@ -7523,7 +7523,7 @@ function _mm_logic()
     ["Stone Tower"] = {
         ["exits"] = {
             ["Ikana Canyon"] = function () return true end,
-            ["Stone Tower Top"] = function () return (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER'))) and can_hookshot() or (can_use_elegy3() and short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) or hookshot_anywhere() or (setting('openDungeonsMm', 'ST') and (can_hookshot() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')))) end,
+            ["Stone Tower Top"] = function () return (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER'))) and can_hookshot() or (can_use_elegy3() and short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) or hookshot_anywhere() or (setting('DungeonST', 'open') and (can_hookshot() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')))) end,
             ["Stone Tower Lower Scarecrow Ledge"] = function () return (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER'))) and scarecrow_hookshot() or hookshot_anywhere() end,
             ["Stone Tower Upper Scarecrow Ledge"] = function () return (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER'))) and can_hookshot() or (can_use_elegy3() and short_hook_anywhere()) or hookshot_anywhere() end,
         },
@@ -7536,8 +7536,8 @@ function _mm_logic()
     ["Stone Tower Top"] = {
         ["exits"] = {
             ["Stone Tower"] = function () return true end,
-            ["Stone Tower Front of Temple"] = function () return can_use_elegy() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) or hookshot_anywhere() or setting('openDungeonsMm', 'ST') end,
-            ["Stone Tower Top Inverted"] = function () return can_use_elegy() and can_use_light_arrows() or setting('openDungeonsMm', 'ST') end,
+            ["Stone Tower Front of Temple"] = function () return can_use_elegy() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) or hookshot_anywhere() or setting('DungeonST', 'open')  end,
+            ["Stone Tower Top Inverted"] = function () return can_use_elegy() and can_use_light_arrows() or setting('DungeonST', 'open') end,
             ["Stone Tower Lower Scarecrow Ledge"] = function () return has_mask_goron() or scarecrow_hookshot() or hookshot_anywhere() end,
             ["Stone Tower Upper Scarecrow Ledge"] = function () return scarecrow_hookshot() or short_hook_anywhere() or (has_hover_boots() and has_weapon()) end,
             ["Owl Stone Tower"] = function () return true end,
@@ -7547,8 +7547,8 @@ function _mm_logic()
     ["Stone Tower Front of Temple"] = {
         ["exits"] = {
             ["Stone Tower"] = function () return true end,
-            ["Stone Tower Top"] = function () return not setting('jpLayouts', 'StoneTower') and (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER') and short_hook_anywhere())) or can_hookshot() or setting('openDungeonsMm', 'ST') end,
-            ["Stone Tower Top Inverted"] = function () return can_use_elegy() and can_use_light_arrows() and (not setting('jpLayouts', 'StoneTower')) or setting('openDungeonsMm', 'ST') end,
+            ["Stone Tower Top"] = function () return not setting('jpLayouts', 'StoneTower') and (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER') and short_hook_anywhere())) or can_hookshot() or setting('DungeonST', 'open')  end,
+            ["Stone Tower Top Inverted"] = function () return can_use_elegy() and can_use_light_arrows() and (not setting('jpLayouts', 'StoneTower')) or setting('DungeonST', 'open')  end,
             ["Stone Tower Temple"] = function () return true end,
             ["Stone Tower Lower Scarecrow Ledge"] = function () return has_mask_goron() or is_tall() or scarecrow_hookshot() or hookshot_anywhere() or has_hover_boots() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) end,
             ["Stone Tower Upper Scarecrow Ledge"] = function () return scarecrow_hookshot() or short_hook_anywhere() end,
@@ -7609,7 +7609,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Stone Tower Temple Inverted"] = function () return true end,
-            ["Stone Tower Top"] = function () return can_use_light_arrows() or setting('openDungeonsMm', 'ST') end,
+            ["Stone Tower Top"] = function () return can_use_light_arrows() or setting('DungeonST', 'open')  end,
             ["Stone Tower Top Inverted Upper"] = function () return can_use_beans() or hookshot_anywhere() end,
         },
         ["age_change"] = false,

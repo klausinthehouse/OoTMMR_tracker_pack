@@ -2160,7 +2160,7 @@ function _oot_logic()
 	end
 
 	function can_bypass_mido()
-		return setting('dekuTree', 'open') or is_adult() or climb_anywhere() or hookshot_anywhere() or can_move_mido_reqs()
+		return setting('Dungeondekutree', 'open') or is_adult() or climb_anywhere() or hookshot_anywhere() or can_move_mido_reqs()
 	end
 
 	function met_zelda()
@@ -4844,7 +4844,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Kokiri Forest"] = function () return can_bypass_mido() end,
-            ["Deku Tree"] = function () return (setting('dekuTree', 'open') or (is_child() and setting('dekuTree', 'vanilla')) or event('MIDO_MOVED')) and (is_child() or setting('openDungeonsOot', 'dekuTreeAdult')) end,
+            ["Deku Tree"] = function () return (setting('Dungeondekutree', 'open') or (is_child() and setting('Dungeondekutree', 'vanilla')) or event('MIDO_MOVED')) and (is_child() or setting('openDungeonsOot', 'dekuTreeAdult')) end,
         },
         ["age_change"] = true,
     },
@@ -5974,7 +5974,7 @@ function _oot_logic()
             ["Hyrule Field"] = function () return true end,
             ["Kakariko Trail Start"] = function () return setting('kakarikoGate', 'open') or event('KAKARIKO_GATE_OPEN') or (is_adult() and (not setting('kakarikoGate', 'closed'))) or climb_anywhere() or hookshot_anywhere() end,
             ["Graveyard"] = function () return true end,
-            ["Kakariko Well"] = function () return is_adult() or has_iron_boots() or longshot_anywhere() or event('WELL_DRAIN') or setting('openDungeonsOot', 'BotW') end,
+            ["Kakariko Well"] = function () return is_adult() or has_iron_boots() or longshot_anywhere() or event('WELL_DRAIN') or setting('DungeonBOTW', 'open') end,
             ["Skulltula House"] = function () return rusty_key(RUSTY_SKULLTULA) end,
             ["Shooting Gallery Adult"] = function () return is_adult() and is_day() and rusty_key(RUSTY_ADULT_SHOOTING) or (time_travel_at_will() and trick('OOT_ADULT_GALLERY_TT')) end,
             ["Kakariko Balcony"] = function () return is_child() and is_day() or (is_adult() and trick('OOT_PASS_COLLISION')) or climb_anywhere() end,
@@ -6293,7 +6293,7 @@ function _oot_logic()
     ["Graveyard Upper"] = {
         ["exits"] = {
             ["Graveyard"] = function () return true end,
-            ["Shadow Temple"] = function () return setting('openDungeonsOot', 'Shadow') or can_use_din() or (has_fire_arrows() and (trick('OOT_SHADOW_FIRE_ARROW') or (trick('OOT_SHADOW_TEMPLE_STICKS') and can_use_sticks()))) end,
+            ["Shadow Temple"] = function () return setting('Dungeonshadow', 'open') or can_use_din() or (has_fire_arrows() and (trick('OOT_SHADOW_FIRE_ARROW') or (trick('OOT_SHADOW_TEMPLE_STICKS') and can_use_sticks()))) end,
         },
         ["age_change"] = true,
     },
@@ -6403,7 +6403,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Goron City"] = function () return true end,
-            ["Dodongo Cavern"] = function () return has_bombflowers() or is_adult() or (trick('OOT_DC_BOULDER') and hookshot_anywhere()) or time_travel_at_will() or setting('openDungeonsOot', 'DC') end,
+            ["Dodongo Cavern"] = function () return has_bombflowers() or is_adult() or (trick('OOT_DC_BOULDER') and hookshot_anywhere()) or time_travel_at_will() or setting('Dungeondodongo', 'open') end,
             ["Kakariko Trail Start"] = function () return true end,
             ["Death Mountain Summit"] = function () return event('BOULDER_DEATH_MOUNTAIN') or can_ride_bean(BEAN_DEATH_MOUNTAIN) or climb_anywhere() or hookshot_anywhere() end,
             ["Death Mountain Storms Grotto"] = function () return hidden_grotto_storms() end,
@@ -6884,7 +6884,7 @@ function _oot_logic()
     },
     ["Lake Hylia"] = {
         ["events"] = {
-            ["CLEAR_STATE_LAKE"] = function () return is_adult() and (wisp_enabled(BOSS_MORPHA, MEDALLION_WATER) or event('WISP_CLEAR_STATE_LAKE')) end,
+            ["CLEAR_STATE_LAKE"] = function () return is_adult() and (wisp_enabled(BOSS_MORPHA, MEDALLION_WATER) or event('WISP_CLEAR_STATE_LAKE')) or setting('Dungeonwater', 'complete') end,
             ["SCARECROW_CHILD"] = function () return is_child() and can_play_scarecrow() end,
             ["SCARECROW"] = function () return is_adult() and event('SCARECROW_CHILD') end,
             ["BEAN_LAKE_HYLIA"] = function () return can_use_beans() end,
@@ -6900,7 +6900,7 @@ function _oot_logic()
             ["Hyrule Field Drawbridge"] = function () return is_child() end,
             ["Lake Hylia Near Shortcut"] = function () return is_child() and (can_dive_small() or longshot_anywhere() or (trick('OOT_LAKE_SHORTCUT') and hookshot_anywhere())) or time_travel_at_will() or (is_adult() and setting('openZdShortcut')) end,
             ["Laboratory"] = function () return rusty_key(RUSTY_LAB) end,
-            ["Water Temple"] = function () return has_iron_boots() and has_tunic_zora() and (can_hookshot() or setting('openDungeonsOot', 'Water')) or (trick('OOT_WATER_GOLD_SCALE') and is_adult() and (can_longshot() or setting('openDungeonsOot', 'Water')) and has_scale_raw(2)) end,
+            ["Water Temple"] = function () return has_iron_boots() and has_tunic_zora() and (can_hookshot() or setting('Dungeonwater', 'open')) or (trick('OOT_WATER_GOLD_SCALE') and is_adult() and (can_longshot() or setting('Dungeonwater', 'open')) and has_scale_raw(2)) end,
             ["Lake Hylia Near Pond"] = function () return can_swim() and (is_child() or lake_water_control()) or (is_adult() and (scarecrow_hookshot() or hookshot_anywhere() or climb_anywhere())) or can_ride_bean(BEAN_LAKE_HYLIA) end,
             ["Lake Hylia Grotto"] = function () return true end,
         },
@@ -7064,7 +7064,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Zora Domain Back"] = function () return true end,
-            ["Jabu-Jabu"] = function () return is_child() and (setting('openDungeonsOot', 'JJ') or has_fish() or (trick('OOT_ENTER_JABU') and (climb_anywhere() or hookshot_anywhere() or can_use_sword() or can_use_sticks() or time_travel_at_will()))) end,
+            ["Jabu-Jabu"] = function () return is_child() and (setting('Dungeonjabujabu', 'open') or has_fish() or (trick('OOT_ENTER_JABU') and (climb_anywhere() or hookshot_anywhere() or can_use_sword() or can_use_sticks() or time_travel_at_will()))) end,
             ["Zora Fountain Frozen"] = function () return is_adult() or climb_anywhere() or longshot_anywhere() end,
             ["Fairy Fountain Farore"] = function () return has_explosives() end,
             ["Zora Fountain Deep"] = function () return is_adult() and has_tunic_zora() and has_iron_boots() end,
