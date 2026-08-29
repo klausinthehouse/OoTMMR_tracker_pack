@@ -1758,31 +1758,6 @@
     ]
   },
   {
-    "name": "Deku Tree",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 2,
-    "stages": [
-      {
-        "img": "images/setting_dekuTree_closed.png",
-        "codes": "setting_dekuTree,setting_dekuTree_closed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_dekuTree_vanilla.png",
-        "codes": "setting_dekuTree,setting_dekuTree_vanilla",
-        "img_mods": "@disabled",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_dekuTree_open.png",
-        "codes": "setting_dekuTree,setting_dekuTree_open",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Beneath the Well behavior (MM)",
     "type": "progressive",
     "allow_disabled": false,
@@ -1883,6 +1858,221 @@
     ]
   },
   {
+    "name": "Dungeon State Deku Tree",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_dekuTree_vanilla.png",
+        "codes": "setting_DungeondekuTree,setting_DungeondekuTree_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_dekuTree_closed.png",
+        "codes": "setting_DungeondekuTree,setting_DungeondekuTree_closed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_dekuTree_open.png",
+        "codes": "setting_DungeondekuTree,setting_DungeondekuTree_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_dekuTree_completed.png",
+        "codes": "setting_DungeondekuTree,setting_DungeondekuTree_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State dodongo",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_dodongo_vanilla.png",
+        "codes": "setting_Dungeondodongo,setting_Dungeondodongo_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_dodongo_open.png",
+        "codes": "setting_Dungeondodongo,setting_Dungeondodongo_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_dodongo_completed.png",
+        "codes": "setting_Dungeondodongo,setting_Dungeondodongo_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State jabujabu",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_jabujabu_vanilla.png",
+        "codes": "setting_Dungeonjabujabu,setting_Dungeonjabujabu_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_jabujabu_open.png",
+        "codes": "setting_Dungeonjabujabu,setting_Dungeonjabujabu_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_jabujabu_completed.png",
+        "codes": "setting_Dungeonjabujabu,setting_Dungeonjabujabu_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State forest",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_forest_vanilla.png",
+        "codes": "setting_Dungeonforest,setting_Dungeonforest_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_forest_completed.png",
+        "codes": "setting_Dungeonforest,setting_Dungeonforest_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State fire",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_fire_vanilla.png",
+        "codes": "setting_Dungeonfire,setting_Dungeonfire_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_fire_open.png",
+        "codes": "setting_Dungeonfire,setting_Dungeonfire_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_fire_completed.png",
+        "codes": "setting_Dungeonfire,setting_Dungeonfire_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State water",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_water_vanilla.png",
+        "codes": "setting_Dungeonwater,setting_Dungeonwater_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_water_open.png",
+        "codes": "setting_Dungeonwater,setting_Dungeonwater_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_water_completed.png",
+        "codes": "setting_Dungeonwater,setting_Dungeonwater_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State BOTW",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_botw_vanilla.png",
+        "codes": "setting_DungeonBOTW,setting_DungeonBOTW_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_botw_open.png",
+        "codes": "setting_DungeonBOTW,setting_DungeonBOTW_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State shadow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_shadow_vanilla.png",
+        "codes": "setting_Dungeonshadow,setting_Dungeonshadow_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_shadow_open.png",
+        "codes": "setting_Dungeonshadow,setting_Dungeonshadow_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shadow_completed.png",
+        "codes": "setting_Dungeonshadow,setting_Dungeonshadow_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State spirit",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_spirit_vanilla.png",
+        "codes": "setting_Dungeonspirit,setting_Dungeonspirit_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_spirit_completed.png",
+        "codes": "setting_Dungeonspirit,setting_Dungeonspirit_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Light Arrow Cutscene",
     "type": "progressive",
     "allow_disabled": false,
@@ -1968,6 +2158,106 @@
       {
         "img": "images/setting_bossWarpPads_remains.png",
         "codes": "setting_bossWarpPads,setting_bossWarpPads_remains",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State Woodfall",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_woodfall_vanilla.png",
+        "codes": "setting_DungeonWF,setting_DungeonWF_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_woodfall_open.png",
+        "codes": "setting_DungeonWF,setting_DungeonWF_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_woodfall_completed.png",
+        "codes": "setting_DungeonWF,setting_DungeonWF_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State snowhead",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_snowhead_vanilla.png",
+        "codes": "setting_DungeonSH,setting_DungeonSH_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_snowhead_open.png",
+        "codes": "setting_DungeonSH,setting_DungeonSH_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_snowhead_completed.png",
+        "codes": "setting_DungeonSH,setting_DungeonSH_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State greatbay",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_greatbay_vanilla.png",
+        "codes": "setting_DungeonGB,setting_DungeonGB_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_greatbay_open.png",
+        "codes": "setting_DungeonGB,setting_DungeonGB_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_greatbay_completed.png",
+        "codes": "setting_DungeonGB,setting_DungeonGB_complete",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon State stonetower",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_stonetower_vanilla.png",
+        "codes": "setting_DungeonST,setting_DungeonST_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_stonetower_open.png",
+        "codes": "setting_DungeonST,setting_DungeonST_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_stonetower_completed.png",
+        "codes": "setting_DungeonST,setting_DungeonST_complete",
         "inherit_codes": false
       }
     ]
