@@ -165,7 +165,102 @@
     "type": "array",
     "orientation": "vertical",
     "item_margin": "1,2",
-    "content": [
+    "content": [ 
+      {
+        "type": "item",
+        "item": "setting_bronzescaleOoT",
+        "height": 16
+      }, 
+      {
+        "type": "item",
+        "item": "setting_doorOfTime",
+        "height": 16
+      },      
+      {
+        "type": "item",
+        "item": "setting_Dungeondekutree",
+        "height": 16
+      },  
+      {
+        "type": "item",
+        "item": "setting_dekuTreeAdult",
+        "height": 16
+      },    
+      {
+        "type": "item",
+        "item": "setting_Dungeondodongo",
+        "height": 16
+      },      
+      {
+        "type": "item",
+        "item": "setting_Dungeonjabujabu",
+        "height": 16
+      },      
+      {
+        "type": "item",
+        "item": "setting_Dungeonforest",
+        "height": 16
+      },      
+      {
+        "type": "item",
+        "item": "setting_Dungeonfire",
+        "height": 16
+      },        
+      {
+        "type": "item",
+        "item": "setting_fireChild",
+        "height": 16
+      },          
+      {
+        "type": "item",
+        "item": "setting_Dungeonwater",
+        "height": 16
+      },      
+      {
+        "type": "item",
+        "item": "setting_DungeonBOTW",
+        "height": 16
+      }, 
+      {
+        "type": "item",
+        "item": "setting_wellAdult",
+        "height": 16
+      },     
+      {
+        "type": "item",
+        "item": "setting_Dungeonshadow",
+        "height": 16
+      },      
+      {
+        "type": "item",
+        "item": "setting_Dungeonspirit",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_gerudoFortress",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_kakarikoGate",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_lacs",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_ocarinaButtonsShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_priceOotMerchants",
+        "height": 16
+      },
       {
         "type": "item",
         "item": "setting_priceOotShops",
@@ -178,67 +273,12 @@
       },
       {
         "type": "item",
-        "item": "setting_dekuTree",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_doorOfTime",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_kakarikoGate",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_gerudoFortress",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_zoraKing",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_lacs",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_rainbowBridge",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_startingAge",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_swordlessAdult",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_timeTravelSword",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_restoreBrokenActors",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bronzescaleOoT",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_ocarinaButtonsShuffleOot",
         "height": 16
       },
       {
@@ -269,6 +309,26 @@
       {
         "type": "item",
         "item": "setting_soulsAnimalsOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_startingAge",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_swordlessAdult",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_timeTravelSword",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_zoraKing",
         "height": 16
       }
     ]
@@ -561,17 +621,7 @@
     "type": "array",
     "orientation": "vertical",
     "item_margin": "1,2",
-    "content": [  
-      {
-        "type": "item",
-        "item": "setting_priceMmShops",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_priceMmTingle",
-        "height": 16
-      },
+    "content": [ 
       {
         "type": "item",
         "item": "setting_beneathWell",
@@ -580,21 +630,6 @@
       {
         "type": "item",
         "item": "setting_bossWarpPads",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_majoraChild",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_moonCrash",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_strayFairyRewardCount",
         "height": 16
       },
       {
@@ -609,12 +644,57 @@
       },
       {
         "type": "item",
-        "item": "setting_RustyKeysMm",
+        "item": "setting_DungeonWF",
+        "height": 16
+      }, 
+      {
+        "type": "item",
+        "item": "setting_DungeonSH",
+        "height": 16
+      },  
+      {
+        "type": "item",
+        "item": "setting_DungeonGB",
+        "height": 16
+      },  
+      {
+        "type": "item",
+        "item": "setting_DungeonST",
+        "height": 16
+      },  
+      {
+        "type": "item",
+        "item": "setting_majoraChild",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_moonCrash",
         "height": 16
       },
       {
         "type": "item",
         "item": "setting_ocarinaButtonsShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_priceMmShops",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_priceMmTingle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_regionState",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_RustyKeysMm",
         "height": 16
       },
       {
@@ -640,6 +720,11 @@
       {
         "type": "item",
         "item": "setting_soulsAnimalsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_strayFairyRewardCount",
         "height": 16
       }
     ]
