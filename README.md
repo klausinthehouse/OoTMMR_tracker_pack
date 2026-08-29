@@ -55,21 +55,21 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Feirce Deity Everywhere Setting and Logic
 - Added Platinum Token, Magical Rupee and Transcendent Fairy
 - Added Cross-Items in Grid and Logic
+- Open Dungeon Settings
+- Cleared/uncleared dungeon states
+- pre-completed Dungeon Settings
+- Corrected Hint Locations
 
 ## TODOs:
 
-- [ ] Implement flags for cleared/uncleared dungeon states
 - [ ] Adjust Tree Search for ER Options
 - [ ] Ganon Trials
-- [ ] Open Dungeon Setting
-- [ ] Clear State Dungeon Setting
-- [ ] Pre-Completed Dungeon Setting
 - [ ] Entrance Shuffle Setting
 - [ ] JP layout Setting
 - [ ] Song Event Shuffle Setting
 - [ ] Song Event Shuffle Songs
 - [ ] OOT Ice Arrow Platform Logic
-- [ ] Correct Hint Locations
+
 
 
 ## Credits
