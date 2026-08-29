@@ -2,7 +2,7 @@
   {
     "name": "Deku Tree",
     "chest_unopened_img": "images/chest_brown_closed.png",
-    "chest_opened_img": "images/chest_brown_open.png",
+    "chest_opened_img": "images/chest_brown_open.png",    
     "sections": [
       {
         "name": "Lobby Grass",
@@ -742,6 +742,9 @@
       {
         "map": "oot",
         "size": 50,
+        "force_invisibility_rules": [
+         "setting_DungeondekuTree_complete"
+         ],
         "x": 2420,
         "y": 880
       }
@@ -1733,6 +1736,9 @@
       {
         "map": "oot",
         "size": 50,
+        "force_invisibility_rules": [
+         "setting_Dungeondodongo_complete"
+         ],
         "x": 1675,
         "y": 240
       }
@@ -2516,6 +2522,9 @@
       {
         "map": "oot",
         "size": 50,
+        "force_invisibility_rules": [
+         "setting_Dungeonjabujabu_complete"
+         ],
         "x": 2475,
         "y": 330
       }
@@ -3944,6 +3953,9 @@
       {
         "map": "oot",
         "size": 50,
+        "force_invisibility_rules": [
+         "setting_Dungeonforest_complete"
+         ],
         "x": 2145,
         "y": 595
       }
@@ -4924,6 +4936,9 @@
       {
         "map": "oot",
         "size": 50,
+        "force_invisibility_rules": [
+         "setting_Dungeonfire_complete"
+         ],
         "x": 1930,
         "y": 60
       }
@@ -6049,6 +6064,9 @@
       {
         "map": "oot",
         "size": 50,
+        "force_invisibility_rules": [
+         "setting_Dungeonwater_complete"
+         ],
         "x": 1020,
         "y": 1370
       }
@@ -7329,6 +7347,9 @@
       {
         "map": "oot",
         "size": 50,
+        "force_invisibility_rules": [
+         "setting_Dungeonshadow_complete"
+         ],
         "x": 2145,
         "y": 345
       }
@@ -8505,6 +8526,9 @@
       {
         "map": "oot",
         "size": 50,
+        "force_invisibility_rules": [
+         "setting_Dungeonspirit_complete"
+         ],
         "x": 115,
         "y": 300
       }

@@ -2536,13 +2536,16 @@
           "$mm|Woodfall Temple Boss Container"
         ],
         "item_count": 1
-      },
+      }
       
     ],
     "map_locations": [
       {
         "map": "termina",
         "size": 20,
+        "force_invisibility_rules": [
+         "setting_DungeonWF_complete"
+         ],
         "x": 542,
         "y": 478
       }
@@ -3181,6 +3184,9 @@
       {
         "map": "termina",
         "size": 20,
+        "force_invisibility_rules": [
+         "setting_DungeonGB_complete"
+         ],
         "x": 100,
         "y": 350
       }
@@ -3929,6 +3935,9 @@
       {
         "map": "termina",
         "size": 20,
+        "force_invisibility_rules": [
+         "setting_DungeonST_complete"
+         ],
         "x": 956,
         "y": 213
       }
@@ -4621,6 +4630,9 @@
       {
         "map": "termina",
         "size": 20,
+        "force_invisibility_rules": [
+         "setting_DungeonSH_complete"
+         ],
         "x": 488,
         "y": 35
       }
