@@ -1,0 +1,567 @@
+[  
+    {
+      "name": "OOT Deku Tree",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_deku.png",
+      "codes": "entrance_dungeon_deku"
+    },
+    {
+      "name": "OOT Dodongo Cavern",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_dodongo.png",
+      "codes": "entrance_dungeon_dodongo"
+    },
+    {
+      "name": "OOT Jabu-Jabu",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_jabu.png",
+      "codes": "entrance_dungeon_jabu"
+    },
+    {
+      "name": "OOT Forest Temple",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_forest.png",
+      "codes": "entrance_dungeon_forest"
+    },
+    {
+      "name": "OOT Fire Temple",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_fire.png",
+      "codes": "entrance_dungeon_fire"
+    },
+    {
+      "name": "OOT Water Temple",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_water.png",
+      "codes": "entrance_dungeon_water"
+    },
+    {
+      "name": "OOT Spirit Temple",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_spirit.png",
+      "codes": "entrance_dungeon_spirit"
+    },
+    {
+      "name": "OOT Shadow Temple",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_shadow.png",
+      "codes": "entrance_dungeon_shadow"
+    },
+    {
+      "name": "OOT Bottom of the Well",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_botw.png",
+      "codes": "entrance_dungeon_botw"
+    },
+    {
+      "name": "OOT Ice Cavern",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_ice.png",
+      "codes": "entrance_dungeon_ice"
+    },
+    {
+      "name": "OOT Gerudo Training Ground",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_gtg.png",
+      "codes": "entrance_dungeon_gtg"
+    },
+    {
+      "name": "OOT Ganons Castle",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_GC.png",
+      "codes": "entrance_dungeon_GC"
+    },
+    {
+      "name": "OOT Ganons Tower",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_GT.png",
+      "codes": "entrance_dungeon_GT"
+    },
+    {
+      "name": "MM Woodfall temple",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_woodfall.png",
+      "codes": "entrance_dungeon_woodfall"
+    },
+    {
+      "name": "MM Snowhead Temple",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_snowhead.png",
+      "codes": "entrance_dungeon_snowhead"
+    },
+    {
+      "name": "MM Great Bay Temple",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_greatbay.png",
+      "codes": "entrance_dungeon_greatbay"
+    },
+    {
+      "name": "MM Stone Tower Temple",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_stonetower.png",
+      "codes": "entrance_dungeon_stonetower"
+    },
+    {
+      "name": "MM Moon",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_moon.png",
+      "codes": "entrance_dungeon_moon"
+    },
+    {
+      "name": "MM Swamp Skulltula House",
+      "type": "toggle",
+      "img": "images/items/mm_skulltulla_woodfall.png",
+      "codes": "entrance_dungeon_swamp"
+    },
+    {
+      "name": "MM Ocean Skulltula House",
+      "type": "toggle",
+      "img": "images/items/mm_skulltulla_greatbay.png",
+      "codes": "entrance_dungeon_ocean"
+    },
+    {
+      "name": "MM Pirate Fortress",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_pirate.png",
+      "codes": "entrance_dungeon_pirate"
+    },
+    {
+      "name": "MM Secret Shrine",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_secret.png",
+      "codes": "entrance_dungeon_secret"
+    },
+    {
+      "name": "MM Beneath the Well",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_BTW.png",
+      "codes": "entrance_dungeon_BTW"
+    },
+    {
+      "name": "MM Ikana Castle",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_ikana.png",
+      "codes": "entrance_dungeon_ikana"
+    },
+
+    {
+      "name": "MM Clock Town Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_ct.png",
+      "codes": "entrance_grotto_ct"
+    },
+    {
+      "name": "OOT Desert Colossus Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_dc.png",
+      "codes": "entrance_grotto_dc"
+    },
+    {
+      "name": "OOT Death Mountain Cow Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_dm_cow.png",
+      "codes": "entrance_grotto_dm_cow"
+    },
+    {
+      "name": "OOT Death Mountain Storms Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_dm_storms.png",
+      "codes": "entrance_grotto_dm_storm"
+    },
+    {
+      "name": "OOT Death Mountain Crater Generic Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_dmc_gen.png",
+      "codes": "entrance_grotto_dmc_gen"
+    },
+    {
+      "name": "OOT Death Mountain Crater Scrub Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_dmc_scrub.png",
+      "codes": "entrance_grotto_dmc_scrub"
+    },
+    {
+      "name": "MM Deku Palace Bean Seller Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_dp_bean.png",
+      "codes": "entrance_grotto_dp_bean"
+    },
+    {
+      "name": "MM Deku Palace Japan Deku Baba Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_dpjp_baba.png",
+      "codes": "entrance_grotto_dpjp_baba"
+    },
+    {
+      "name": "MM Deku Palace Japan Climb Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_dpjp_climb.png",
+      "codes": "entrance_grotto_dpjp_climb"
+    },
+    {
+      "name": "MM Great Bay Cow Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gb_cow.png",
+      "codes": "entrance_grotto_gb_cow"
+    },
+    {
+      "name": "MM Great Bay Fisher Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gb_fisher.png",
+      "codes": "entrance_grotto_gb_fisher"
+    },
+    {
+      "name": "OOT Goron City Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gc.png",
+      "codes": "entrance_grotto_gc"
+    },
+    {
+      "name": "OOT Gerudo Fortress Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gf.png",
+      "codes": "entrance_grotto_gf"
+    },
+    {
+      "name": "OOT Gerudo Valley Octorok Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gv_octo.png",
+      "codes": "entrance_grotto_gv_octo"
+    },
+    {
+      "name": "OOT Gerudo Valley storms Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gv_storms.png",
+      "codes": "entrance_grotto_gv_storms"
+    },
+    {
+      "name": "OOT Graveyard Dampe Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gy_dampe.png",
+      "codes": "entrance_grotto_gy_dampe"
+    },
+    {
+      "name": "OOT Graveyard Redead Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gy_redead.png",
+      "codes": "entrance_grotto_gy_redead"
+    },
+    {
+      "name": "OOT Graveyard Royal Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gy_royal.png",
+      "codes": "entrance_grotto_gy_royal"
+    },
+    {
+      "name": "OOT Graveyard Shield Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_gy_shield.png",
+      "codes": "entrance_grotto_gy_shield"
+    },
+    {
+      "name": "OOT Castle Grounds Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_hc.png",
+      "codes": "entrance_grotto_hc"
+    },
+    {
+      "name": "OOT Hyrule Field Diving Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_hf_dive.png",
+      "codes": "entrance_grotto_hf_dive"
+    },
+    {
+      "name": "OOT Hyrule Field Fairy Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_hf_fairy.png",
+      "codes": "entrance_grotto_hf_fairy"
+    },
+    {
+      "name": "OOT Hyrule Field near Gerudoe Valley Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_hf_gv.png",
+      "codes": "entrance_grotto_hf_gv"
+    },
+    {
+      "name": "OOT Hyrule Field near Kakariko Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_hf_kak.png",
+      "codes": "entrance_grotto_hf_kak"
+    },
+    {
+      "name": "OOT Hyrule Field near Market Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_hf_market.png",
+      "codes": "entrance_grotto_hf_market"
+    },
+    {
+      "name": "OOT Hyrule Field open Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_hf_open.png",
+      "codes": "entrance_grotto_hf_open"
+    },
+    {
+      "name": "OOT Hyrule Field Scrub Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_hf_scrub.png",
+      "codes": "entrance_grotto_hf_scrub"
+    },
+    {
+      "name": "OOT Hyrule Field South East Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_hf_se.png",
+      "codes": "entrance_grotto_hf_se"
+    },
+    {
+      "name": "MM Ikana Canyon Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_ic.png",
+      "codes": "entrance_grotto_ic"
+    },
+    {
+      "name": "MM Ikana Canyon Path Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_ic_path.png",
+      "codes": "entrance_grotto_ic_path"
+    },
+    {
+      "name": "MM Ikana Graveyard Rock Circle Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_igy_circle.png",
+      "codes": "entrance_grotto_igy_circle"
+    },
+    {
+      "name": "MM Ikana Graveyard Grave 1 Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_igy_grave1.png",
+      "codes": "entrance_grotto_igy_grave1"
+    },
+    {
+      "name": "MM Ikana Graveyard Grave 2 Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_igy_grave2.png",
+      "codes": "entrance_grotto_igy_grave2"
+    },
+    {
+      "name": "MM Ikana Graveyard Grave 3 Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_igy_grave3.png",
+      "codes": "entrance_grotto_igy_grave3"
+    },
+    {
+      "name": "OOT Kakariko open Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_kak_open.png",
+      "codes": "entrance_grotto_kak_open"
+    },
+    {
+      "name": "OOT Kakariko Redead Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_kak_redead.png",
+      "codes": "entrance_grotto_kak_redead"
+    },
+    {
+      "name": "OOT Kokiri Forest Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_kf.png",
+      "codes": "entrance_grotto_kf"
+    },
+    {
+      "name": "OOT Lake Hylia Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_lh.png",
+      "codes": "entrance_grotto_lh"
+    },
+    {
+      "name": "OOT Lost Woods generic Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_lw_gen.png",
+      "codes": "entrance_grotto_lw_gen"
+    },
+    {
+      "name": "OOT Lost Woods Scrub Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_lw_scrub.png",
+      "codes": "entrance_grotto_lw_scrub"
+    },
+    {
+      "name": "OOT Lost Woods Theatre Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_lw_theatre.png",
+      "codes": "entrance_grotto_lw_theatre"
+    },
+    {
+      "name": "MM Mountain Village Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_mv.png",
+      "codes": "entrance_grotto_mv"
+    },
+    {
+      "name": "MM Mountain Village Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_mv.png",
+      "codes": "entrance_grotto_mv"
+    },
+    {
+      "name": "OOT Sacred Forest Meadow Fairy Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_sfm_fairy.png",
+      "codes": "entrance_grotto_sfm_fairy"
+    },
+    {
+      "name": "OOT Sacred Forest Meadow Scrub Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_sfm_scrub.png",
+      "codes": "entrance_grotto_sfm_scrub"
+    },
+    {
+      "name": "MM Path to Snowhead Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_shpath.png",
+      "codes": "entrance_grotto_shpath"
+    },
+    {
+      "name": "MM Southern Swamp Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_ss.png",
+      "codes": "entrance_grotto_ss"
+    },
+    {
+      "name": "MM Path to Southern Swamp Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_ss_path.png",
+      "codes": "entrance_grotto_ss_path"
+    },
+    {
+      "name": "MM Termina Field Cow Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_cow.png",
+      "codes": "entrance_grotto_tf_cow"
+    },
+    {
+      "name": "MM Termina Field Dodongo Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_dodongo.png",
+      "codes": "entrance_grotto_tf_dodongo"
+    },
+    {
+      "name": "MM Termina Field eastern Gossip Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_egos.png",
+      "codes": "entrance_grotto_tf_egos"
+    },
+    {
+      "name": "MM Termina Field Fence Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_fence.png",
+      "codes": "entrance_grotto_tf_fence"
+    },
+    {
+      "name": "MM Termina Field Grass Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_grass.png",
+      "codes": "entrance_grotto_tf_grass"
+    },
+    {
+      "name": "MM Termina Field North Gossip Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_ngos.png",
+      "codes": "entrance_grotto_tf_ngos"
+    },
+    {
+      "name": "MM Termina Field Peahat Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_peahat.png",
+      "codes": "entrance_grotto_tf_peahat"
+    },
+    {
+      "name": "MM Termina Field Pillar Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_pillar.png",
+      "codes": "entrance_grotto_tf_pillar"
+    },
+    {
+      "name": "MM Termina Field Scrub Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_scrub.png",
+      "codes": "entrance_grotto_tf_scrub"
+    },
+    {
+      "name": "MM Termina Field South Gossip Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_sgos.png",
+      "codes": "entrance_grotto_tf_sgos"
+    },
+    {
+      "name": "MM Termina Field West Gossip Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_tf_wgos.png",
+      "codes": "entrance_grotto_tf_wgos"
+    },
+    {
+      "name": "MM Twin Island Ice Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_ti_ice.png",
+      "codes": "entrance_grotto_ti_ice"
+    },
+    {
+      "name": "MM Twin Island Ramp Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_ti_ramp.png",
+      "codes": "entrance_grotto_ti_ramp"
+    },
+    {
+      "name": "OOT Wolfo Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_wolfo.png",
+      "codes": "entrance_grotto_wolfo"
+    },
+    {
+      "name": "MM Wood of Mysters Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_wom.png",
+      "codes": "entrance_grotto_wom"
+    },
+    {
+      "name": "MM Zora Cape Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_zc.png",
+      "codes": "entrance_grotto_zc"
+    },
+    {
+      "name": "OOT Zoras Domain Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_zd.png",
+      "codes": "entrance_grotto_zd"
+    },
+    {
+      "name": "OOT Zora River Fairy Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_zr_fairy.png",
+      "codes": "entrance_grotto_zr_fairy"
+    },
+    {
+      "name": "OOT Zora River generic Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_zr_gen.png",
+      "codes": "entrance_grotto_zr_gen"
+    },
+    {
+      "name": "OOT Zora River storms Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_zr_storms.png",
+      "codes": "entrance_grotto_zr_storms"
+    },
+    
+    {
+      "name": "OOT Zora River generic Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_zr_gen.png",
+      "codes": "entrance_grotto_zr_gen"
+    }
+
+
+
+
+
+]
