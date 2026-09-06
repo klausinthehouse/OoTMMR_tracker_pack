@@ -145,6 +145,12 @@
     },
 
     {
+      "name": "OOT Castle Grounds Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_cg.png",
+      "codes": "entrance_grotto_cg"
+    },
+    {
       "name": "MM Clock Town Grotto",
       "type": "toggle",
       "img": "images/entrance_grotto_ct.png",
@@ -257,12 +263,6 @@
       "type": "toggle",
       "img": "images/entrance_grotto_gy_shield.png",
       "codes": "entrance_grotto_gy_shield"
-    },
-    {
-      "name": "OOT Castle Grounds Grotto",
-      "type": "toggle",
-      "img": "images/entrance_grotto_hc.png",
-      "codes": "entrance_grotto_hc"
     },
     {
       "name": "OOT Hyrule Field Diving Grotto",
@@ -552,14 +552,1085 @@
       "img": "images/entrance_grotto_zr_storms.png",
       "codes": "entrance_grotto_zr_storms"
     },
-    
-    {
-      "name": "OOT Zora River generic Grotto",
-      "type": "toggle",
-      "img": "images/entrance_grotto_zr_gen.png",
-      "codes": "entrance_grotto_zr_gen"
-    }
 
+    {
+      "name": "OOT Castle Grounds Great Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_cg_fairy.png",
+      "codes": "entrance_interior_cg_fairy"
+    },
+    {
+      "name": "OOT Castle Grounds Hyrule Castle",
+      "type": "toggle",
+      "img": "images/entrance_interior_cg_zelda.png",
+      "codes": "entrance_interior_cg_zelda"
+    },
+    {
+      "name": "MM Clock Town Bomb Shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_bomb.png",
+      "codes": "entrance_interior_ct_bomb"
+    },
+    {
+      "name": "MM Clock Town Chest Game",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_chest.png",
+      "codes": "entrance_interior_ct_chest"
+    },
+    {
+      "name": "MM Clock Town Curiosity Shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_curio.png",
+      "codes": "entrance_interior_ct_curio"
+    },
+    {
+      "name": "MM Clock Town Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_fairy.png",
+      "codes": "entrance_interior_ct_fairy"
+    },
+    {
+      "name": "MM Clock Town Honey and Darling",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_hd.png",
+      "codes": "entrance_interior_ct_hd"
+    },
+    {
+      "name": "MM Clock Town Stock Pot Inn",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_inn.png",
+      "codes": "entrance_interior_ct_inn"
+    },
+    {
+      "name": "MM Clock Town Kafeis Hideout",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_kafei.png",
+      "codes": "entrance_interior_ct_kafei"
+    },
+    {
+      "name": "MM Clock Town Lottery",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_lottery.png",
+      "codes": "entrance_interior_ct_lottery"
+    },
+    {
+      "name": "MM Clock Town Mayor",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_mayor.png",
+      "codes": "entrance_interior_ct_mayor"
+    },
+    {
+      "name": "MM Clock Town Milk Bar",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_milk.png",
+      "codes": "entrance_interior_ct_milk"
+    },
+    {
+      "name": "MM Clock Town Post Office",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_post.png",
+      "codes": "entrance_interior_ct_post"
+    },
+    {
+      "name": "MM Clock Town Shooting Gallery",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_shoot.png",
+      "codes": "entrance_interior_ct_shoot"
+    },
+    {
+      "name": "MM Clock Town Trading Post",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_shop.png",
+      "codes": "entrance_interior_ct_shop"
+    },
+    {
+      "name": "MM Clock Town Sword Master",
+      "type": "toggle",
+      "img": "images/entrance_interior_ct_sword.png",
+      "codes": "entrance_interior_ct_sword"
+    },
+    {
+      "name": "OOT Desert Colossus Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_dc_fairy.png",
+      "codes": "entrance_interior_dc_fairy"
+    },
+    {
+      "name": "OOT Death Mountain Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_dm_fairy.png",
+      "codes": "entrance_interior_dm_fairy"
+    },
+    {
+      "name": "OOT Death Mountain Crater Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_dmc_fairy.png",
+      "codes": "entrance_interior_dmc_fairy"
+    },
+    {
+      "name": "MM Deku Palace Monkey Cage",
+      "type": "toggle",
+      "img": "images/entrance_interior_dp_monkey.png",
+      "codes": "entrance_interior_dp_monkey"
+    },
+    {
+      "name": "MM Deku Palace Throne Room",
+      "type": "toggle",
+      "img": "images/entrance_interior_dp_throne.png",
+      "codes": "entrance_interior_dp_throne"
+    },
+    {
+      "name": "MM Deku Palace Butler Race",
+      "type": "toggle",
+      "img": "images/entrance_interior_dp_race.png",
+      "codes": "entrance_interior_dp_race"
+    },
+    {
+      "name": "MM Deku Great Bay Fisher Hut",
+      "type": "toggle",
+      "img": "images/entrance_interior_gb_fisher.png",
+      "codes": "entrance_interior_gb_fisher"
+    },
+    {
+      "name": "MM Deku Great Bay Laboratory",
+      "type": "toggle",
+      "img": "images/entrance_interior_gb_lab.png",
+      "codes": "entrance_interior_gb_lab"
+    },
+    {
+      "name": "OOT Goron City Main Entrance",
+      "type": "toggle",
+      "img": "images/entrance_interior_gc.png",
+      "codes": "entrance_interior_gc"
+    },
+    {
+      "name": "OOT Goron City Back Entrance",
+      "type": "toggle",
+      "img": "images/entrance_interior_gc_back.png",
+      "codes": "entrance_interior_gc_back"
+    },
+    {
+      "name": "OOT Goron City Shortcut",
+      "type": "toggle",
+      "img": "images/entrance_interior_gc_sc.png",
+      "codes": "entrance_interior_gc_sc"
+    },
+    {
+      "name": "OOT Goron City shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_gc_shop.png",
+      "codes": "entrance_interior_gc_shop"
+    },
+    {
+      "name": "MM Goron Shrine shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_gs_shop.png",
+      "codes": "entrance_interior_gs_shop"
+    },
+    {
+      "name": "MM Goron Village flying Island",
+      "type": "toggle",
+      "img": "images/entrance_interior_gv_island.png",
+      "codes": "entrance_interior_gv_island"
+    },
+    {
+      "name": "MM Goron Village Goron Shrine",
+      "type": "toggle",
+      "img": "images/entrance_interior_gv_shrine.png",
+      "codes": "entrance_interior_gv_shrine"
+    },
+    {
+      "name": "OOT Gerudo Valley Tent",
+      "type": "toggle",
+      "img": "images/entrance_interior_gv_tent.png",
+      "codes": "entrance_interior_gv_tent"
+    },
+    {
+      "name": "OOT Dampes Hut",
+      "type": "toggle",
+      "img": "images/entrance_interior_gy_hut.png",
+      "codes": "entrance_interior_gy_hut"
+    },
+    {
+      "name": "OOT Hyrule Market Back Alley",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_alley.png",
+      "codes": "entrance_interior_hm_alley"
+    },
+    {
+      "name": "OOT Hyrule Market Bazaar",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_bazaar.png",
+      "codes": "entrance_interior_hm_bazaar"
+    },
+    {
+      "name": "OOT Hyrule Market Bombchu shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_bomb.png",
+      "codes": "entrance_interior_hm_bomb"
+    },
+    {
+      "name": "OOT Hyrule Market Bombchu Bowling",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_bowl.png",
+      "codes": "entrance_interior_hm_bowl"
+    },
+    {
+      "name": "OOT Hyrule Market Chest Game",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_chest.png",
+      "codes": "entrance_interior_hm_chest"
+    },
+    {
+      "name": "OOT Hyrule Market Dog Lady House",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_doglady.png",
+      "codes": "entrance_interior_hm_doglady"
+    },
+    {
+      "name": "OOT Hyrule Market Guard House",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_guard.png",
+      "codes": "entrance_interior_hm_guard"
+    },
+    {
+      "name": "OOT Hyrule Market Potion Shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_potion.png",
+      "codes": "entrance_interior_hm_potion"
+    },
+    {
+      "name": "OOT Hyrule Market Shooting Gallery",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_shoot.png",
+      "codes": "entrance_interior_hm_shoot"
+    },
+    {
+      "name": "OOT Hyrule Market Temple of Time",
+      "type": "toggle",
+      "img": "images/entrance_interior_hm_tot.png",
+      "codes": "entrance_interior_hm_tot"
+    },
+    {
+      "name": "MM Ikana Canyon Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_ic_fairy.png",
+      "codes": "entrance_interior_ic_fairy"
+    },
+    {
+      "name": "MM Ikana Canyon Hideout",
+      "type": "toggle",
+      "img": "images/entrance_interior_ic_hide.png",
+      "codes": "entrance_interior_ic_hide"
+    },
+    {
+      "name": "MM Ikana Canyon Music-Box House",
+      "type": "toggle",
+      "img": "images/entrance_interior_ic_music.png",
+      "codes": "entrance_interior_ic_music"
+    },
+    {
+      "name": "MM Ikana Canyon Poe Hut",
+      "type": "toggle",
+      "img": "images/entrance_interior_ic_poe.png",
+      "codes": "entrance_interior_ic_poe"
+    },
+    {
+      "name": "MM Ikana Canyon Water Spring",
+      "type": "toggle",
+      "img": "images/entrance_interior_ic_spring.png",
+      "codes": "entrance_interior_ic_spring"
+    },
+    {
+      "name": "OOT Kakariko Bazaar",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_bazaar.png",
+      "codes": "entrance_interior_kak_bazaar"
+    },
+    {
+      "name": "OOT Kakariko Carpenter House",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_house.png",
+      "codes": "entrance_interior_kak_house"
+    },
+    {
+      "name": "OOT Kakariko Impas House",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_impa.png",
+      "codes": "entrance_interior_kak_impa"
+    },
+    {
+      "name": "OOT Kakariko Impas House Back",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_impa_back.png",
+      "codes": "entrance_interior_kak_impa_back"
+    },
+    {
+      "name": "OOT Kakariko Potion Shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_potion.png",
+      "codes": "entrance_interior_kak_potion"
+    },
+    {
+      "name": "OOT Kakariko Potion Shop Back",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_potion_back.png",
+      "codes": "entrance_interior_kak_potion_back"
+    },
+    {
+      "name": "OOT Kakariko Shooting Gallery",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_shoot.png",
+      "codes": "entrance_interior_kak_shoot"
+    },
+    {
+      "name": "OOT Kakariko Skulltula House",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_skull.png",
+      "codes": "entrance_interior_kak_skull"
+    },
+    {
+      "name": "OOT Kakariko Windmill",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_windmill.png",
+      "codes": "entrance_interior_kak_windmill"
+    },
+    {
+      "name": "OOT Kakariko Witch Shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_kak_witch.png",
+      "codes": "entrance_interior_kak_witch"
+    },
+    {
+      "name": "OOT Kokiri Forest home",
+      "type": "toggle",
+      "img": "images/entrance_interior_kf_home.png",
+      "codes": "entrance_interior_kf_home"
+    },
+    {
+      "name": "OOT Kokiri Forest know it all House",
+      "type": "toggle",
+      "img": "images/entrance_interior_kf_kia.png",
+      "codes": "entrance_interior_kf_kia"
+    },
+    {
+      "name": "OOT Kokiri Forest Midos House",
+      "type": "toggle",
+      "img": "images/entrance_interior_kf_mido.png",
+      "codes": "entrance_interior_kf_mido"
+    },
+    {
+      "name": "OOT Kokiri Forest Sarias House",
+      "type": "toggle",
+      "img": "images/entrance_interior_kf_saria.png",
+      "codes": "entrance_interior_kf_saria"
+    },
+    {
+      "name": "OOT Kokiri Forest Shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_kf_shop.png",
+      "codes": "entrance_interior_kf_shop"
+    },
+    {
+      "name": "OOT Kokiri Forest Twins House",
+      "type": "toggle",
+      "img": "images/entrance_interior_kf_twins.png",
+      "codes": "entrance_interior_kf_twins"
+    },
+    {
+      "name": "OOT Lake Hylia Fishing Pond",
+      "type": "toggle",
+      "img": "images/entrance_interior_lh_fish.png",
+      "codes": "entrance_interior_lh_fish"
+    },
+    {
+      "name": "OOT Lake Hylia Laboratory",
+      "type": "toggle",
+      "img": "images/entrance_interior_lh_lab.png",
+      "codes": "entrance_interior_lh_lab"
+    },
+    {
+      "name": "OOT Lon Lon Ranch House",
+      "type": "toggle",
+      "img": "images/entrance_interior_llr_house.png",
+      "codes": "entrance_interior_llr_house"
+    },
+    {
+      "name": "OOT Lon Lon Ranch Silo",
+      "type": "toggle",
+      "img": "images/entrance_interior_llr_silo.png",
+      "codes": "entrance_interior_llr_silo"
+    },
+    {
+      "name": "OOT Lon Lon Ranch Stable",
+      "type": "toggle",
+      "img": "images/entrance_interior_llr_stable.png",
+      "codes": "entrance_interior_llr_stable"
+    },
+    {
+      "name": "MM Mountain Village Graveyard",
+      "type": "toggle",
+      "img": "images/entrance_interior_mv_gy.png",
+      "codes": "entrance_interior_mv_gy"
+    },
+    {
+      "name": "MM Mountain Village Smith",
+      "type": "toggle",
+      "img": "images/entrance_interior_mv_smith.png",
+      "codes": "entrance_interior_mv_smith"
+    },
+    {
+      "name": "OOT Outside Ganons Castle Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_ogc_fairy.png",
+      "codes": "entrance_interior_ogc_fairy"
+    },
+    {
+      "name": "MM Romani Ranch Cucco Shack",
+      "type": "toggle",
+      "img": "images/entrance_interior_rr_cucco.png",
+      "codes": "entrance_interior_rr_cucco"
+    },
+    {
+      "name": "MM Romani Ranch Dog Race",
+      "type": "toggle",
+      "img": "images/entrance_interior_rr_dog.png",
+      "codes": "entrance_interior_rr_dog"
+    },
+    {
+      "name": "MM Romani Ranch House",
+      "type": "toggle",
+      "img": "images/entrance_interior_rr_house.png",
+      "codes": "entrance_interior_rr_house"
+    },
+    {
+      "name": "MM Romani Ranch Stable",
+      "type": "toggle",
+      "img": "images/entrance_interior_rr_stable.png",
+      "codes": "entrance_interior_rr_stable"
+    },
+    {
+      "name": "MM Snow Head Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_sh_fairy.png",
+      "codes": "entrance_interior_sh_fairy"
+    },
+    {
+      "name": "MM Southern Swamp Shooting Gallery",
+      "type": "toggle",
+      "img": "images/entrance_interior_ss_shoot.png",
+      "codes": "entrance_interior_ss_shoot"
+    },
+    {
+      "name": "MM Southern Swamp Potion Shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_ss_shop.png",
+      "codes": "entrance_interior_ss_shop"
+    },
+    {
+      "name": "MM Southern Swamp Tourist Information",
+      "type": "toggle",
+      "img": "images/entrance_interior_ss_touri.png",
+      "codes": "entrance_interior_ss_touri"
+    },
+    {
+      "name": "MM Termina Field Observatory",
+      "type": "toggle",
+      "img": "images/entrance_interior_tf_obs.png",
+      "codes": "entrance_interior_tf_obs"
+    },
+    {
+      "name": "MM Twin Island Goron Race",
+      "type": "toggle",
+      "img": "images/entrance_interior_ti_race.png",
+      "codes": "entrance_interior_ti_race"
+    },
+    {
+      "name": "MM Woodfall Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_wf_fairy.png",
+      "codes": "entrance_interior_wf_fairy"
+    },
+    {
+      "name": "MM Zora Cape Beaver Race",
+      "type": "toggle",
+      "img": "images/entrance_interior_zc_beaver.png",
+      "codes": "entrance_interior_zc_beaver"
+    },
+    {
+      "name": "MM Zora Cape Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_zc_fairy.png",
+      "codes": "entrance_interior_zc_fairy"
+    },
+    {
+      "name": "OOT Zora Domain Shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_zd_shop.png",
+      "codes": "entrance_interior_zd_shop"
+    },
+    {
+      "name": "OOT Zora Fountain Big Fairy",
+      "type": "toggle",
+      "img": "images/entrance_interior_zf_fairy.png",
+      "codes": "entrance_interior_zf_fairy"
+    },
+    {
+      "name": "MM Zora Hall",
+      "type": "toggle",
+      "img": "images/entrance_interior_zh.png",
+      "codes": "entrance_interior_zh"
+    },
+    {
+      "name": "MM Zora Hall Japas Room",
+      "type": "toggle",
+      "img": "images/entrance_interior_zh_japas.png",
+      "codes": "entrance_interior_zh_japas"
+    },
+    {
+      "name": "MM Zora Hall Lulus Room",
+      "type": "toggle",
+      "img": "images/entrance_interior_zh_lulu.png",
+      "codes": "entrance_interior_zh_lulu"
+    },
+    {
+      "name": "MM Zora Hall Mikaus Room",
+      "type": "toggle",
+      "img": "images/entrance_interior_zh_mikau.png",
+      "codes": "entrance_interior_zh_mikau"
+    },
+    {
+      "name": "MM Zora Hall Shop",
+      "type": "toggle",
+      "img": "images/entrance_interior_zh_shop.png",
+      "codes": "entrance_interior_zh_shop"
+    },
+    {
+      "name": "MM Zora Hall Tijos Room",
+      "type": "toggle",
+      "img": "images/entrance_interior_zh_tijo.png",
+      "codes": "entrance_interior_zh_tijo"
+    },
+
+    {
+      "name": "OOT Castle Grounds",
+      "type": "toggle",
+      "img": "images/entrance_overworld_cg.png",
+      "codes": "entrance_overworld_cg"
+    },
+    {
+      "name": "MM Clock Town East",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ct_e.png",
+      "codes": "entrance_overworld_ct_e"
+    },
+    {
+      "name": "MM Clock Town North",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ct_n.png",
+      "codes": "entrance_overworld_ct_n"
+    },
+    {
+      "name": "MM Clock Town Laundry Pool",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ct_pool.png",
+      "codes": "entrance_overworld_ct_pool"
+    },
+    {
+      "name": "MM Clock Town South",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ct_s.png",
+      "codes": "entrance_overworld_ct_s"
+    },
+    {
+      "name": "MM Clock Town West",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ct_w.png",
+      "codes": "entrance_overworld_ct_w"
+    },
+    {
+      "name": "OOT Desert Colossus",
+      "type": "toggle",
+      "img": "images/entrance_overworld_dc.png",
+      "codes": "entrance_overworld_dc"
+    },
+    {
+      "name": "OOT Death Mountain Path",
+      "type": "toggle",
+      "img": "images/entrance_overworld_dm_path.png",
+      "codes": "entrance_overworld_dm_path"
+    },
+    {
+      "name": "OOT Death Mountain Summit",
+      "type": "toggle",
+      "img": "images/entrance_overworld_dm_smt.png",
+      "codes": "entrance_overworld_dm_smt"
+    },
+    {
+      "name": "OOT Death Mountain Crater lower",
+      "type": "toggle",
+      "img": "images/entrance_overworld_dmc_lwr.png",
+      "codes": "entrance_overworld_dmc_lwr"
+    },
+    {
+      "name": "OOT Death Mountain Crater upper",
+      "type": "toggle",
+      "img": "images/entrance_overworld_dmc_upr.png",
+      "codes": "entrance_overworld_dmc_upr"
+    },
+    {
+      "name": "MM Deku Palace",
+      "type": "toggle",
+      "img": "images/entrance_overworld_dp.png",
+      "codes": "entrance_overworld_dp"
+    },
+    {
+      "name": "MM Great Bay",
+      "type": "toggle",
+      "img": "images/entrance_overworld_gb.png",
+      "codes": "entrance_overworld_gb"
+    },
+    {
+      "name": "MM Great Bay Lab Island",
+      "type": "toggle",
+      "img": "images/entrance_overworld_gb_lab.png",
+      "codes": "entrance_overworld_gb_lab"
+    },
+    {
+      "name": "MM Great Bay Ledge",
+      "type": "toggle",
+      "img": "images/entrance_overworld_gb_ledge.png",
+      "codes": "entrance_overworld_gb_ledge"
+    },
+    {
+      "name": "OOT Goron City",
+      "type": "toggle",
+      "img": "images/entrance_overworld_gc.png",
+      "codes": "entrance_overworld_gc"
+    },
+    {
+      "name": "OOT Gerudo Fortress",
+      "type": "toggle",
+      "img": "images/entrance_overworld_gf.png",
+      "codes": "entrance_overworld_gf"
+    },
+    {
+      "name": "MM Goron Village",
+      "type": "toggle",
+      "img": "images/entrance_overworld_gv.png",
+      "codes": "entrance_overworld_gv"
+    },
+    {
+      "name": "OOT Gerudo Valley Backside",
+      "type": "toggle",
+      "img": "images/entrance_overworld_gv_back.png",
+      "codes": "entrance_overworld_gv_back"
+    },
+    {
+      "name": "OOT Gerudo Valley Front",
+      "type": "toggle",
+      "img": "images/entrance_overworld_gv_front.png",
+      "codes": "entrance_overworld_gv_front"
+    },
+    {
+      "name": "OOT Hyrule Field",
+      "type": "toggle",
+      "img": "images/entrance_overworld_hf.png",
+      "codes": "entrance_overworld_hf"
+    },
+    {
+      "name": "MM Ikana Canyon lower",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ic_lwr.png",
+      "codes": "entrance_overworld_ic_lwr"
+    },
+    {
+      "name": "MM Ikana Canyon upper",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ic_upr.png",
+      "codes": "entrance_overworld_ic_upr"
+    },
+    {
+      "name": "MM Ikana Canyon Path Back",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ic_path_back.png",
+      "codes": "entrance_overworld_ic_path_back"
+    },
+    {
+      "name": "MM Ikana Canyon Path Front",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ic_path_front.png",
+      "codes": "entrance_overworld_ic_path_front"
+    },
+    {
+      "name": "MM Ikana Canyon Path Upper",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ic_path_upr.png",
+      "codes": "entrance_overworld_ic_path_upr"
+    },
+    {
+      "name": "MM Ikana Graveyard",
+      "type": "toggle",
+      "img": "images/entrance_overworld_igy.png",
+      "codes": "entrance_overworld_igy"
+    },
+    {
+      "name": "OOT Kakariko",
+      "type": "toggle",
+      "img": "images/entrance_overworld_kak.png",
+      "codes": "entrance_overworld_kak"
+    },
+    {
+      "name": "OOT Kakariko Fence",
+      "type": "toggle",
+      "img": "images/entrance_overworld_kak_fence.png",
+      "codes": "entrance_overworld_kak_fence"
+    },
+    {
+      "name": "OOT Kakariko Graveyard",
+      "type": "toggle",
+      "img": "images/entrance_overworld_kak_gy.png",
+      "codes": "entrance_overworld_kak_gy"
+    },
+    {
+      "name": "OOT Kokiri Forest",
+      "type": "toggle",
+      "img": "images/entrance_overworld_kf.png",
+      "codes": "entrance_overworld_kf"
+    },
+    {
+      "name": "OOT Lake Hylia",
+      "type": "toggle",
+      "img": "images/entrance_overworld_lh.png",
+      "codes": "entrance_overworld_lh"
+    },
+    {
+      "name": "OOT Lake Hylia Fishing Pond",
+      "type": "toggle",
+      "img": "images/entrance_overworld_lh_pond.png",
+      "codes": "entrance_overworld_lh_pond"
+    },
+    {
+      "name": "OOT Lon Lon Ranch",
+      "type": "toggle",
+      "img": "images/entrance_overworld_llr.png",
+      "codes": "entrance_overworld_llr"
+    },
+    {
+      "name": "OOT Lost Woods",
+      "type": "toggle",
+      "img": "images/entrance_overworld_lw.png",
+      "codes": "entrance_overworld_lw"
+    },
+    {
+      "name": "OOT Hyrule Market",
+      "type": "toggle",
+      "img": "images/entrance_overworld_market.png",
+      "codes": "entrance_overworld_market"
+    },
+    {
+      "name": "OOT Hyrule Market Entrance",
+      "type": "toggle",
+      "img": "images/entrance_overworld_market_front.png",
+      "codes": "entrance_overworld_market_front"
+    },
+    {
+      "name": "OOT Hyrule Market Temple of Time Courtyard",
+      "type": "toggle",
+      "img": "images/entrance_overworld_market_tot.png",
+      "codes": "entrance_overworld_market_tot"
+    },
+    {
+      "name": "MM Milk Road",
+      "type": "toggle",
+      "img": "images/entrance_overworld_mr.png",
+      "codes": "entrance_overworld_mr"
+    },
+    {
+      "name": "MM Milk Road Back",
+      "type": "toggle",
+      "img": "images/entrance_overworld_mr_back.png",
+      "codes": "entrance_overworld_mr_back"
+    },
+    {
+      "name": "MM Milk Road Gorman Racetrack",
+      "type": "toggle",
+      "img": "images/entrance_overworld_mr_gorman.png",
+      "codes": "entrance_overworld_mr_gorman"
+    },
+    {
+      "name": "MM Mountain Village",
+      "type": "toggle",
+      "img": "images/entrance_overworld_mv.png",
+      "codes": "entrance_overworld_mv"
+    },
+    {
+      "name": "MM Path to Mountain Village",
+      "type": "toggle",
+      "img": "images/entrance_overworld_mv_path.png",
+      "codes": "entrance_overworld_mv_path"
+    },
+    {
+      "name": "MM Path to Mountain Village back",
+      "type": "toggle",
+      "img": "images/entrance_overworld_mv_path_back.png",
+      "codes": "entrance_overworld_mv_path_back"
+    },
+    {
+      "name": "MM Romani Ranch",
+      "type": "toggle",
+      "img": "images/entrance_overworld_rr.png",
+      "codes": "entrance_overworld_rr"
+    },
+    {
+      "name": "OOT Sacred Forest Meadow",
+      "type": "toggle",
+      "img": "images/entrance_overworld_sfm.png",
+      "codes": "entrance_overworld_sfm"
+    },
+    {
+      "name": "MM Snowhead",
+      "type": "toggle",
+      "img": "images/entrance_overworld_sh.png",
+      "codes": "entrance_overworld_sh"
+    },
+    {
+      "name": "MM Path to Snowhead",
+      "type": "toggle",
+      "img": "images/entrance_overworld_sh_path.png",
+      "codes": "entrance_overworld_sh_path"
+    },
+    {
+      "name": "MM Path to Snowhead back",
+      "type": "toggle",
+      "img": "images/entrance_overworld_sh_path_back.png",
+      "codes": "entrance_overworld_sh_path_back"
+    },
+    {
+      "name": "MM Southern Swamp",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ss.png",
+      "codes": "entrance_overworld_ss"
+    },
+    {
+      "name": "MM Southern Swamp",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ss.png",
+      "codes": "entrance_overworld_ss"
+    },
+    {
+      "name": "MM Southern Swamp back",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ss_back.png",
+      "codes": "entrance_overworld_ss_back"
+    },
+    {
+      "name": "MM Path to Southern Swamp",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ss_path.png",
+      "codes": "entrance_overworld_ss_path"
+    },
+    {
+      "name": "MM Stone Tower",
+      "type": "toggle",
+      "img": "images/entrance_overworld_st.png",
+      "codes": "entrance_overworld_st"
+    },
+    {
+      "name": "MM Termina Field",
+      "type": "toggle",
+      "img": "images/entrance_overworld_tf.png",
+      "codes": "entrance_overworld_tf"
+    },
+    {
+      "name": "MM Termina Field from Mountain Village",
+      "type": "toggle",
+      "img": "images/entrance_overworld_tf_n.png",
+      "codes": "entrance_overworld_tf_n"
+    },
+    {
+      "name": "MM Termina Field in Observatory Fence",
+      "type": "toggle",
+      "img": "images/entrance_overworld_tf_obs.png",
+      "codes": "entrance_overworld_tf_obs"
+    },
+    {
+      "name": "MM Termina Field from great bay",
+      "type": "toggle",
+      "img": "images/entrance_overworld_tf_w.png",
+      "codes": "entrance_overworld_tf_w"
+    },
+    {
+      "name": "MM Twin Island",
+      "type": "toggle",
+      "img": "images/entrance_overworld_ti.png",
+      "codes": "entrance_overworld_ti"
+    },
+    {
+      "name": "OOT Wasteland",
+      "type": "toggle",
+      "img": "images/entrance_overworld_wasteland.png",
+      "codes": "entrance_overworld_wasteland"
+    },
+    {
+      "name": "MM Woodfall",
+      "type": "toggle",
+      "img": "images/entrance_overworld_wf.png",
+      "codes": "entrance_overworld_wf"
+    },
+    {
+      "name": "MM Woods of Mystery",
+      "type": "toggle",
+      "img": "images/entrance_overworld_wom.png",
+      "codes": "entrance_overworld_wom"
+    },
+    {
+      "name": "MM Zora Cape",
+      "type": "toggle",
+      "img": "images/entrance_overworld_zc.png",
+      "codes": "entrance_overworld_zc"
+    },
+    {
+      "name": "OOT Zora Domain",
+      "type": "toggle",
+      "img": "images/entrance_overworld_zd.png",
+      "codes": "entrance_overworld_zd"
+    },
+    {
+      "name": "OOT Zora Domain back",
+      "type": "toggle",
+      "img": "images/entrance_overworld_zd_back.png",
+      "codes": "entrance_overworld_zd_back"
+    },
+    {
+      "name": "OOT Zora Fountain",
+      "type": "toggle",
+      "img": "images/entrance_overworld_zf.png",
+      "codes": "entrance_overworld_zf"
+    },
+    {
+      "name": "MM Zora Hall Balcony",
+      "type": "toggle",
+      "img": "images/entrance_overworld_zh_back.png",
+      "codes": "entrance_overworld_zh_back"
+    },
+    {
+      "name": "OOT Zora River",
+      "type": "toggle",
+      "img": "images/entrance_overworld_zr.png",
+      "codes": "entrance_overworld_zr"
+    },
+    {
+      "name": "OOT Zora River back",
+      "type": "toggle",
+      "img": "images/entrance_overworld_zr_back.png",
+      "codes": "entrance_overworld_zr_back"
+    },
+
+    {
+      "name": "MM Owl Great Bay",
+      "type": "toggle",
+      "img": "images/entrance_owl_bay.png",
+      "codes": "entrance_owl_bay"
+    },
+    {
+      "name": "MM Owl Zora Cape",
+      "type": "toggle",
+      "img": "images/entrance_owl_cape.png",
+      "codes": "entrance_owl_cape"
+    },
+    {
+      "name": "MM Owl Ikana Canyon",
+      "type": "toggle",
+      "img": "images/entrance_owl_ikana.png",
+      "codes": "entrance_owl_ikana"
+    },
+    {
+      "name": "MM Owl Milk Road",
+      "type": "toggle",
+      "img": "images/entrance_owl_milk.png",
+      "codes": "entrance_owl_milk"
+    },
+    {
+      "name": "MM Owl Mountain Village",
+      "type": "toggle",
+      "img": "images/entrance_owl_mtn.png",
+      "codes": "entrance_owl_mtn"
+    },
+    {
+      "name": "MM Owl Snowhead",
+      "type": "toggle",
+      "img": "images/entrance_owl_snow.png",
+      "codes": "entrance_owl_snow"
+    },
+    {
+      "name": "MM Owl Stone Tower",
+      "type": "toggle",
+      "img": "images/entrance_owl_stone.png",
+      "codes": "entrance_owl_stone"
+    },
+    {
+      "name": "MM Owl Southern Swamp",
+      "type": "toggle",
+      "img": "images/entrance_owl_swmp.png",
+      "codes": "entrance_owl_swmp"
+    },
+    {
+      "name": "MM Owl Clock Town",
+      "type": "toggle",
+      "img": "images/entrance_owl_town.png",
+      "codes": "entrance_owl_town"
+    },
+    {
+      "name": "MM Owl Woodfall",
+      "type": "toggle",
+      "img": "images/entrance_owl_wood.png",
+      "codes": "entrance_owl_wood"
+    },
+
+    {
+      "name": "OOT Child Spawn ",
+      "type": "toggle",
+      "img": "images/entrance_spawn_child.png",
+      "codes": "entrance_spawn_child"
+    },
+
+    {
+      "name": "OOT Song Bolero of Fire",
+      "type": "toggle",
+      "img": "images/song_bolero.png",
+      "codes": "entrance_song_bolero"
+    },
+    {
+      "name": "OOT Song Minuet of Forest",
+      "type": "toggle",
+      "img": "images/song_minuet.png",
+      "codes": "entrance_song_minuet"
+    },
+    {
+      "name": "OOT Song Nocturen of Shadow",
+      "type": "toggle",
+      "img": "images/song_nocturne.png",
+      "codes": "entrance_song_nocturne"
+    },
+    {
+      "name": "OOT Song Prelude of Light",
+      "type": "toggle",
+      "img": "images/song_prelude.png",
+      "codes": "entrance_song_prelude"
+    },
+    {
+      "name": "OOT Song Requiem of Spirit",
+      "type": "toggle",
+      "img": "images/song_requiem.png",
+      "codes": "entrance_song_requiem"
+    },
+    {
+      "name": "OOT Song Serenade of Water",
+      "type": "toggle",
+      "img": "images/song_serenade.png",
+      "codes": "entrance_song_serenade"
+    }
 
 
 
