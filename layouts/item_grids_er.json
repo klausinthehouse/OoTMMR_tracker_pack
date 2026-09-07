@@ -1,0 +1,434 @@
+{
+    "tracker_capture_dungeon": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                [
+                    "entrance_dungeon_deku",
+                    "entrance_dungeon_dodongo",
+                    "entrance_dungeon_jabu"
+                ],
+                [
+                    "entrance_dungeon_forest",
+                    "entrance_dungeon_fire",
+                    "entrance_dungeon_water",                
+                    "entrance_dungeon_spirit",
+                    "entrance_dungeon_shadow"        
+                ],
+                [
+                    "entrance_dungeon_GC",
+                    "entrance_dungeon_GT"
+                ],
+                [
+                    "entrance_dungeon_botw",
+                    "entrance_dungeon_ice",
+                    "entrance_dungeon_gtg"
+                ],
+                [
+                    "entrance_dungeon_woodfall",
+                    "entrance_dungeon_snowhead",
+                    "entrance_dungeon_greatbay",
+                    "entrance_dungeon_stonetower",
+                    "entrance_dungeon_moon"
+                ],
+                [
+                    "entrance_dungeon_swamp",
+                    "entrance_dungeon_ocean",
+                    "entrance_dungeon_pirate",                
+                    "entrance_dungeon_secret",
+                    "entrance_dungeon_BTW",
+                    "entrance_dungeon_ikana"        
+                ]
+            ]
+        }
+    },
+    "tracker_capture_grottos": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                [
+                    "entrance_grotto_kf",
+                    "entrance_grotto_lw_gen",
+                    "entrance_grotto_lw_scrub",
+                    "entrance_grotto_lw_theatre",
+                    "entrance_grotto_sfm_fairy",
+                    "entrance_grotto_sfm_scrub",
+                    "entrance_grotto_wolfo"
+                ],
+                [
+                    "entrance_grotto_cg",
+                    "entrance_grotto_hf_dive",
+                    "entrance_grotto_hf_fairy",                
+                    "entrance_grotto_hf_gv",
+                    "entrance_grotto_hf_kak",
+                    "entrance_grotto_hf_market",
+                    "entrance_grotto_hf_open",
+                    "entrance_grotto_hf_scrub",
+                    "entrance_grotto_hf_se",
+                    "entrance_grotto_llr"   
+                ],
+                [
+                    "entrance_grotto_gy_dampe",
+                    "entrance_grotto_gy_redead",
+                    "entrance_grotto_gy_royal",
+                    "entrance_grotto_gy_shield",
+                    "entrance_grotto_kak_open",
+                    "entrance_grotto_kak_redead"
+                ],
+                [
+                    "entrance_grotto_dm_cow",
+                    "entrance_grotto_dm_storm",
+                    "entrance_grotto_dmc_gen",
+                    "entrance_grotto_dmc_scrub",
+                    "entrance_grotto_gc"
+                ],
+                [
+                    "entrance_grotto_lh",
+                    "entrance_grotto_zd",
+                    "entrance_grotto_zr_fairy",
+                    "entrance_grotto_zr_gen",
+                    "entrance_grotto_zr_storm"
+                ],
+                [
+                    "entrance_grotto_dc",
+                    "entrance_grotto_gf",
+                    "entrance_grotto_gv_octo",
+                    "entrance_grotto_gv_storm"
+                ],
+                [
+                    "entrance_grotto_dp_bean",
+                    "entrance_grotto_dpjp_baba",
+                    "entrance_grotto_dpjp_climb",                
+                    "entrance_grotto_ss",
+                    "entrance_grotto_ss_path",
+                    "entrance_grotto_wom"        
+                ],
+                [
+                    "entrance_grotto_ct",
+                    "entrance_grotto_tf_cow",
+                    "entrance_grotto_tf_dodongo",                
+                    "entrance_grotto_tf_egos",
+                    "entrance_grotto_tf_fence",
+                    "entrance_grotto_tf_grass",
+                    "entrance_grotto_tf_ngos",
+                    "entrance_grotto_tf_peahat",
+                    "entrance_grotto_tf_pillar",
+                    "entrance_grotto_tf_scrub",
+                    "entrance_grotto_tf_sgos",
+                    "entrance_grotto_tf_wgos"  
+                ],
+                [
+                    "entrance_grotto_mv",
+                    "entrance_grotto_shpath",
+                    "entrance_grotto_ti_ice",                
+                    "entrance_grotto_ti_ramp"       
+                ],
+                [
+                    "entrance_grotto_gb_cow",
+                    "entrance_grotto_gb_fisher",
+                    "entrance_grotto_zc"
+                ],
+                [
+                    "entrance_grotto_ic",
+                    "entrance_grotto_ic_path",
+                    "entrance_grotto_igy_circle",
+                    "entrance_grotto_igy_grave1",
+                    "entrance_grotto_igy_grave2",
+                    "entrance_grotto_igy_grave3"
+                ]
+            ]
+        }
+    },
+    "tracker_capture_boss": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                [
+                    "entrance_boss_gohma",
+                    "entrance_boss_kingd",
+                    "entrance_boss_barinade"
+                ],
+                [
+                    "entrance_boss_phantom",
+                    "entrance_boss_volvagia",
+                    "entrance_boss_morpha",                
+                    "entrance_boss_bongo",
+                    "entrance_boss_twinrova"        
+                ],
+                [
+                    "entrance_boss_odolwa",
+                    "entrance_boss_goht",
+                    "entrance_boss_gyorg",
+                    "entrance_boss_twinmold"       
+                ]
+            ]
+        }
+    },
+    "tracker_capture_interior": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                [
+                    "entrance_interior_kf_home",
+                    "entrance_interior_kf_kia",
+                    "entrance_interior_kf_mido",
+                    "entrance_interior_kf_saria",
+                    "entrance_interior_kf_shop",
+                    "entrance_interior_kf_twin"                    
+                ],
+                [
+                    "entrance_interior_cg_fairy",
+                    "entrance_interior_cg_zelda",
+                    "entrance_interior_hm_alley",
+                    "entrance_interior_hm_bazaar",
+                    "entrance_interior_hm_bomb",
+                    "entrance_interior_hm_bowl",
+                    "entrance_interior_hm_chest",
+                    "entrance_interior_hm_doglady"
+                ],
+                [
+                    "entrance_interior_hm_guard",
+                    "entrance_interior_hm_potion",
+                    "entrance_interior_hm_shoot",
+                    "entrance_interior_hm_tot",
+                    "entrance_interior_llr_house",
+                    "entrance_interior_llr_silo",
+                    "entrance_interior_llr_stable"                         
+                ],
+                [
+                    "entrance_interior_gy_hut",
+                    "entrance_interior_kak_bazaar",
+                    "entrance_interior_kak_house",
+                    "entrance_interior_kak_impa",
+                    "entrance_interior_kak_impa_back",
+                    "entrance_interior_kak_potion",
+                    "entrance_interior_kak_potion_back",
+                    "entrance_interior_kak_shoot",
+                    "entrance_interior_kak_skull",
+                    "entrance_interior_kak_windmill",
+                    "entrance_interior_kak_witch"
+                ],
+                [
+                    "entrance_interior_dm_fairy",
+                    "entrance_interior_dmc_fairy",
+                    "entrance_interior_gc",
+                    "entrance_interior_gc_back",
+                    "entrance_interior_gc_sc",
+                    "entrance_interior_gc_shop"
+                ],
+                [
+                    "entrance_interior_lh_fish",
+                    "entrance_interior_lh_lab",
+                    "entrance_interior_zd_shop",
+                    "entrance_interior_zf_fairy"
+                ],
+                [
+                    "entrance_interior_dc_fairy",
+                    "entrance_interior_gv_tent",
+                    "entrance_interior_ogc_fairy" 
+                ],
+                [
+                    "entrance_interior_dp_monkey",
+                    "entrance_interior_dp_throne",
+                    "entrance_interior_dp_race",
+                    "entrance_interior_ss_shoot",
+                    "entrance_interior_ss_shop",
+                    "entrance_interior_ss_touri",
+                    "entrance_interior_wf_fairy"
+                ],
+                [
+                    "entrance_interior_ct_bomb",
+                    "entrance_interior_ct_chest",
+                    "entrance_interior_ct_curio",
+                    "entrance_interior_ct_fairy",
+                    "entrance_interior_ct_hd",
+                    "entrance_interior_ct_inn",
+                    "entrance_interior_ct_kafei"
+                ],
+                [
+                    "entrance_interior_ct_lottery",
+                    "entrance_interior_ct_mayor",
+                    "entrance_interior_ct_milk",
+                    "entrance_interior_ct_post",
+                    "entrance_interior_ct_shoot",
+                    "entrance_interior_ct_shop",
+                    "entrance_interior_tf_obs"
+                ],
+                [
+                    "entrance_interior_rr_cucco",
+                    "entrance_interior_rr_dog",
+                    "entrance_interior_rr_house",
+                    "entrance_interior_rr_stable"
+                ],
+                [
+                    "entrance_interior_gs_shop",
+                    "entrance_interior_gv_island",
+                    "entrance_interior_gv_shrine",
+                    "entrance_interior_mv_gy",
+                    "entrance_interior_mv_smith",
+                    "entrance_interior_sh_fairy",
+                    "entrance_interior_ti_race"
+                ],
+                [
+                    "entrance_interior_gb_fisher",
+                    "entrance_interior_gb_lab",
+                    "entrance_interior_zc_beaver",
+                    "entrance_interior_zc_fairy",
+                    "entrance_interior_zh",
+                    "entrance_interior_zh_japas",
+                    "entrance_interior_zh_lulu",
+                    "entrance_interior_zh_mikau",
+                    "entrance_interior_zh_shop",
+                    "entrance_interior_zh_tijo"
+                ],
+                [
+                    "entrance_interior_ic_fairy",
+                    "entrance_interior_ic_hide",
+                    "entrance_interior_ic_music",
+                    "entrance_interior_ic_poe",
+                    "entrance_interior_ic_spring"
+                ]
+            ]
+        }
+    },
+    "tracker_capture_overworld": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                [
+                    "entrance_overworld_kf",
+                    "entrance_overworld_lw",
+                    "entrance_overworld_sfm"                 
+                ],
+                [
+                    "entrance_overworld_cg",
+                    "entrance_overworld_hf",
+                    "entrance_overworld_llr",
+                    "entrance_overworld_market",
+                    "entrance_overworld_market_front",
+                    "entrance_overworld_market_tot"                        
+                ],
+                [
+                    "entrance_overworld_kak",
+                    "entrance_overworld_kak_fence",
+                    "entrance_overworld_kak_gy"
+                ],
+                [
+                    "entrance_overworld_dm_path",
+                    "entrance_overworld_dm_smt",
+                    "entrance_overworld_dmc_lwr",
+                    "entrance_overworld_dmc_upr",
+                    "entrance_overworld_gc"
+                ],
+                [
+                    "entrance_overworld_lh",
+                    "entrance_overworld_lh_pond",
+                    "entrance_overworld_zd",
+                    "entrance_overworld_zd_back",
+                    "entrance_overworld_zr",
+                    "entrance_overworld_zr_back"
+                ],
+                [
+                    "entrance_overworld_dc",
+                    "entrance_overworld_gf",
+                    "entrance_overworld_gv_back",
+                    "entrance_overworld_gv_front",
+                    "entrance_overworld_wasteland" 
+                ],
+                [
+                    "entrance_overworld_dp",
+                    "entrance_overworld_ss",
+                    "entrance_overworld_ss_back",
+                    "entrance_overworld_ss_path",
+                    "entrance_overworld_wf",
+                    "entrance_overworld_wom"
+                ],
+                [
+                    "entrance_overworld_ct_e",
+                    "entrance_overworld_ct_n",
+                    "entrance_overworld_ct_pool",
+                    "entrance_overworld_ct_s",
+                    "entrance_overworld_ct_w",
+                    "entrance_overworld_tf",
+                    "entrance_overworld_tf_n",
+                    "entrance_overworld_tf_obs",
+                    "entrance_overworld_tf_w"
+                ],
+                [
+                    "entrance_overworld_mr",
+                    "entrance_overworld_mr_back",
+                    "entrance_overworld_mr_gorman",
+                    "entrance_overworld_rr"
+                ],
+                [
+                    "entrance_overworld_gv",
+                    "entrance_overworld_mv",
+                    "entrance_overworld_mv_path",
+                    "entrance_overworld_mv_path_back",
+                    "entrance_overworld_sh",
+                    "entrance_overworld_sh_path",
+                    "entrance_overworld_sh_path_back",
+                    "entrance_overworld_ti"
+                ],
+                [
+                    "entrance_overworld_gb_lab",
+                    "entrance_overworld_gb_ledge",
+                    "entrance_overworld_zc",
+                    "entrance_overworld_zh_back"
+                ],
+                [
+                    "entrance_overworld_ic_lwr",
+                    "entrance_overworld_ic_upr",
+                    "entrance_overworld_ic_path_back",
+                    "entrance_overworld_ic_path_front",
+                    "entrance_overworld_ic_path_upr",
+                    "entrance_overworld_igy",
+                    "entrance_overworld_st"
+                ]
+            ]
+        }
+    },
+    "tracker_capture_warp": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                [
+                    "entrance_song_bolero",
+                    "entrance_song_minuet",
+                    "entrance_song_nocturne",
+                    "entrance_song_prelude",
+                    "entrance_song_requiem",
+                    "entrance_song_serenade"
+                ],
+                [
+                    "entrance_owl_bay",
+                    "entrance_owl_cape",
+                    "entrance_owl_ikana",
+                    "entrance_owl_milk",
+                    "entrance_owl_mtn",
+                    "entrance_owl_snow",
+                    "entrance_owl_stone",
+                    "entrance_owl_swmp"   
+                ]
+            ]
+        }
+    }
+}
