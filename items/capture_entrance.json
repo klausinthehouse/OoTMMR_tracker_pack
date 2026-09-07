@@ -1,5 +1,78 @@
 [  
     {
+      "name": "OOT Gohma",
+      "type": "toggle",
+      "img": "images/entrance_boss_gohma.png",
+      "codes": "entrance_boss_gohma"
+    },
+    {
+      "name": "OOT King Dodongo",
+      "type": "toggle",
+      "img": "images/entrance_boss_kingd.png",
+      "codes": "entrance_boss_kingd"
+    },
+    {
+      "name": "OOT Barinade",
+      "type": "toggle",
+      "img": "images/entrance_boss_barinade.png",
+      "codes": "entrance_boss_barinade"
+    },
+    {
+      "name": "OOT Phantom Ganon",
+      "type": "toggle",
+      "img": "images/entrance_boss_phantom.png",
+      "codes": "entrance_boss_phantom"
+    },
+    {
+      "name": "OOT Volvagia",
+      "type": "toggle",
+      "img": "images/entrance_boss_volvagia.png",
+      "codes": "entrance_boss_volvagia"
+    },
+    {
+      "name": "OOT Morpha",
+      "type": "toggle",
+      "img": "images/entrance_boss_morpha.png",
+      "codes": "entrance_boss_morpha"
+    },
+    {
+      "name": "OOT Twinrova",
+      "type": "toggle",
+      "img": "images/entrance_boss_twinrova.png",
+      "codes": "entrance_boss_twinrova"
+    },
+    {
+      "name": "OOT Bongo Bongo",
+      "type": "toggle",
+      "img": "images/entrance_boss_bongo.png",
+      "codes": "entrance_boss_bongo"
+    },
+    {
+      "name": "MM Odolwa",
+      "type": "toggle",
+      "img": "images/entrance_boss_odolwa.png",
+      "codes": "entrance_boss_odolwa"
+    },
+    {
+      "name": "MM Goht",
+      "type": "toggle",
+      "img": "images/entrance_boss_goht.png",
+      "codes": "entrance_boss_goht"
+    },
+    {
+      "name": "MM Gyorg",
+      "type": "toggle",
+      "img": "images/entrance_boss_gyorg.png",
+      "codes": "entrance_boss_gyorg"
+    },
+    {
+      "name": "MM Twinmold",
+      "type": "toggle",
+      "img": "images/entrance_boss_twinmold.png",
+      "codes": "entrance_boss_twinmold"
+    },
+
+    {
       "name": "OOT Deku Tree",
       "type": "toggle",
       "img": "images/entrance_dungeon_deku.png",
@@ -237,8 +310,8 @@
     {
       "name": "OOT Gerudo Valley storms Grotto",
       "type": "toggle",
-      "img": "images/entrance_grotto_gv_storms.png",
-      "codes": "entrance_grotto_gv_storms"
+      "img": "images/entrance_grotto_gv_storm.png",
+      "codes": "entrance_grotto_gv_storm"
     },
     {
       "name": "OOT Graveyard Dampe Grotto",
@@ -371,6 +444,12 @@
       "type": "toggle",
       "img": "images/entrance_grotto_lh.png",
       "codes": "entrance_grotto_lh"
+    },
+    {
+      "name": "OOT Lon Lon Ranch Grotto",
+      "type": "toggle",
+      "img": "images/entrance_grotto_llr.png",
+      "codes": "entrance_grotto_llr"
     },
     {
       "name": "OOT Lost Woods generic Grotto",
@@ -549,8 +628,8 @@
     {
       "name": "OOT Zora River storms Grotto",
       "type": "toggle",
-      "img": "images/entrance_grotto_zr_storms.png",
-      "codes": "entrance_grotto_zr_storms"
+      "img": "images/entrance_grotto_zr_storm.png",
+      "codes": "entrance_grotto_zr_storm"
     },
 
     {
@@ -934,8 +1013,8 @@
     {
       "name": "OOT Kokiri Forest Twins House",
       "type": "toggle",
-      "img": "images/entrance_interior_kf_twins.png",
-      "codes": "entrance_interior_kf_twins"
+      "img": "images/entrance_interior_kf_twin.png",
+      "codes": "entrance_interior_kf_twin"
     },
     {
       "name": "OOT Lake Hylia Fishing Pond",
@@ -1405,12 +1484,6 @@
       "type": "toggle",
       "img": "images/entrance_overworld_sh_path_back.png",
       "codes": "entrance_overworld_sh_path_back"
-    },
-    {
-      "name": "MM Southern Swamp",
-      "type": "toggle",
-      "img": "images/entrance_overworld_ss.png",
-      "codes": "entrance_overworld_ss"
     },
     {
       "name": "MM Southern Swamp",
