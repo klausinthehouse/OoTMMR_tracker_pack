@@ -7,583 +7,553 @@
       {
         "name": "Kokiri Forest",
         "color": "#18a50e",
-        "children": [
+        "children": [          
           {
-            "name": "KF Kokiri Sword Area",
-            "sections": [
-              {
-                "name": "Grass Sword Area",
-                "access_rules": [
-                  "$oot|Kokiri Forest Grass Child Crawl 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 3
-              },
-              {
-                "name": "Wonder Sword Area",
-                "access_rules": [
-                  "$oot|Kokiri Forest Wonder Item Crawl 1"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 2
-              },
-              {
-                "name": "Rupees Sword Area",                
-                "access_rules": [
-                  "$oot|Kokiri Forest Rupee Crawl 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleFreeRupeesOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",
-                "item_count": 2
-              },
-              {
-                "name": "Sword-Chest",
-                "access_rules": [
-                  "$oot|Kokiri Forest Kokiri Sword Chest"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2090,
-                "y": 990
-              }
-            ]
-          },
-          {
-            "name": "KF Midos House",
-            "sections": [
-              {
-                "name": "KF Midos Chests",
-                "access_rules": [
+            "name": "Kokiri Forest <-> Midos House",
+            "short_name": "KF <-> Mido",
+            "access_rules": [
                   "$oot|Mido's House Top Left"
                 ],
-                "item_count": 4
+            "sections": [
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_entrance_Interior_most"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
               }
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2135,
                 "y": 900
               }
             ]
           },
           {
-            "name": "KF Storms Grotto",
-            "sections": [              
-              {
-                "name": "KF Storms Grotto Chest",
-                "short_name": "Chest",
-                "access_rules": [
+            "name": "Kokiri Forest <-> KF Storms Grotto",
+            "short_name": "KF <-> KF Grotto",
+            "access_rules": [
                   "$oot|Kokiri Forest Storms Grotto"
                 ],
-                "item_count": 1
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "KF Storms Grotto Grass",
-                "short_name": "Grass",
-                "access_rules": [
-                  "$oot|Kokiri Forest Storms Grotto Grass 1"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
+                  "setting_entrance_grotto"
                 ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 4
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "KF Storms Grotto Hive",
-                "short_name": "Hive",
-                "access_rules": [
-                  "$oot|Kokiri Forest Storms Grotto Hive 1"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_shuffleHivesOot_true"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/Hive.png",
-                "chest_opened_img": "images/system/Hive_grey.png",
-                "item_count": 2
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "KF Storms Grotto Butterflies",                    
-                "short_name": "Butterflies",
-                "access_rules": [
-                  "$oot|Kokiri Forest Storms Grotto Butterfly 1"
-               ],
+                "name": "Interior",
                 "visibility_rules": [
-                  "setting_shuffleButterflyOot_on"
-               ],
-               "chest_unopened_img": "images/system/Butterfly.png",
-               "chest_opened_img": "images/system/Butterfly_grey.png",
-               "item_count": 3
-              }  
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              }
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2120,
                 "y": 845
               }
             ]
           },
           {
-            "name": "KF Kokiri Shop",
+            "name": "Kokiri Forest <-> Lost Woods",
+            "short_name": "KF <-> LW",
+            "access_rules": [
+                  "$oot|Kokiri Forest Storms Grotto"
+                ],
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_entrance_interior_extra"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_exits",
+                "force_invisibility_rules": [
+                  "setting_entrance_overworld_most"
+                ],
+                "x": 2140,
+                "y": 830
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest <-> Kokiri Shop",
+            "short_name": "KF <-> KF Shop",
             "access_rules": [
               "$oot|Kokiri Shop Item 1"
             ],
             "sections": [
               {
-                "name": "Item 1",
-                "item_count": 1,
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_shopShuffleOot_full"
-                ]
-              },
-              {
-                "name": "Item 2",
-                "item_count": 1,
-                "visibility_rules": [
-                  "setting_shopShuffleOot_full"
-                ]
-              },
-              {
-                "name": "Item 3",
-                "item_count": 1,
-                "visibility_rules": [
-                  "setting_shopShuffleOot_full"
-                ]
-              },
-              {
-                "name": "Item 4",
-                "item_count": 1,
-                "visibility_rules": [
-                  "setting_shopShuffleOot_full"
-                ]
-              },
-              {
-                "name": "Item 5",
-                "item_count": 1,
-                "visibility_rules": [
-                  "setting_shopShuffleOot_full"
-                ]
-              },
-              {
-                "name": "Item 6",
-                "item_count": 1,
-                "visibility_rules": [
-                  "setting_shopShuffleOot_full"
-                ]
-              },
-              {
-                "name": "Item 7",
-                "item_count": 1,
-                "visibility_rules": [
-                  "setting_shopShuffleOot_full"
-                ]
-              },
-              {
-                "name": "Item 8",
-                "item_count": 1,
-                "visibility_rules": [
-                  "setting_shopShuffleOot_full"
-                ]
-              },
-              {
-                "name": "Shop Wonder",
-                "access_rules": [
-                  "$oot|Kokiri Shop Wonder Item"
+                  "setting_mixed_dungeon"
                 ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_mixed_grotto"
                 ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_entrance_Interior_most"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
               }
             ],
             "map_locations": [
               {
-                "map": "oot",                
+                "map": "oot_er_exits",                
                 "x": 2220,
                 "y": 915
               }
             ]
           },
           {
-            "name": "KF Links House",
-            "sections": [
+            "name": "Kokiri Forest <-> Links House",
+            "short_name": "KF <-> KF Shop",
+            "access_rules": [
+              "$oot|Link's House Pot"
+            ],"sections": [
               {
-                "name": "KF Links House Cow",
-                "short_name": "Cow",
-                "access_rules": [
-                  "$oot|Kokiri Forest Cow"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_cowShuffleOot_true"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/cow.png",
-                "chest_opened_img": "images/bottle_milk.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "KF Links House Pot",
-                "short_name": "Pot",
-                "access_rules": [
-                  "$oot|Link's House Pot"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_shufflePotsOot_overworld"
+                  "setting_mixed_grotto"
                 ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_entrance_Interior_most"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
               }
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2175,
                 "y": 1000
               }
             ]
           },
           {
-            "name": "KF Know It All House",
-            "sections": [              
+            "name": "Child Spawn",            
+            "sections": [
               {
-                "name": "KF Know It All House Pot",
-                "short_name": "Pot",
-                "access_rules": [
-                  "$oot|Know It All House Pot 1"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_shufflePotsOot_overworld"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 2
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
               }
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
+                "force_invisibility_rules": [
+                  "setting_entrance_spawn"
+                ],
+                "x": 2155,
+                "y": 1000
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest <-> Know It All House",
+            "short_name": "KF <-> KIA",
+            "access_rules": [
+                  "$oot|Know It All House Pot 1"
+            ],
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_entrance_Interior_most"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_exits",
                 "x": 2055,
                 "y": 960
               }
             ]
           },
           {
-            "name": "KF Bean Patch",
-            "sections": [
-              {
-                "name": "KF GS Bean Patch",
-                "short_name": "Bean Patch",
-                "access_rules": [
-                  "$oot|Kokiri Forest GS Soil"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Soil Fairies",
-                "short_name": "Soil",
-                "access_rules": [
-                  "$oot|Kokiri Forest Soil Fairies"
-                ],
-                "visibility_rules": [
-                  "setting_SoilFairyShuffle_true"
-                ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 3
-              },
-              {
-                "name": "Bean-Flight-Rupees",                
-                "access_rules": [
-                  "$oot|Kokiri Forest Rupee Adult 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleFreeRupeesOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",
-                "item_count": 7
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2255,
-                "y": 915
-              }
-            ]
-          },
-          {
-            "name": "KF House of Twins",
-            "sections": [              
-              {
-                "name": "KF House of Twins Pot",                
-                "access_rules": [
+            "name": "Kokiri Forest <-> House of Twins",
+            "short_name": "KF <-> Twins",
+            "access_rules": [
                   "$oot|Twins House Pot 1"
                 ],
+            "sections": [              
+              {
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_shufflePotsOot_overworld"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 2
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_entrance_Interior_most"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
               }
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2260,
                 "y": 980
               }
             ]
           },          
+          
           {
-            "name": "Kokiri Forest Exterior",
-            "sections": [              
-              {
-                "name": "Behind Midos House Rupee",
-                "short_name": "Midos Stash",
-                "access_rules": [
-                  "$oot|Kokiri Forest Rupee Child 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleFreeRupeesOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",
-                "item_count": 1
-              },
-              {
-                "name": "Rock Circle with Rock in Middle",
-                "short_name": "Rock Circle",
-                "access_rules": [
-                  "$oot|Kokiri Forest Rock Circle"
-                ],
-                "visibility_rules": [
-                  "setting_rock_on"
-                ],
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "item_count": 9
-              },
-              {
-                "name": "Rock next to Midos House",
-                "short_name": "Midos Rock",
-                "access_rules": [
-                  "$oot|Kokiri Forest Child Rocks"
-                ],
-                "visibility_rules": [
-                  "setting_rock_on"
-                ],
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "Jump-Puzzle 1",
-                "access_rules": [
-                  "$oot|Kokiri Forest Wonder Item Platforms 1"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "Jump-Puzzle 2",
-                "access_rules": [
-                  "$oot|Kokiri Forest Wonder Item Platforms 2"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "Wonder in Grass",
-                "access_rules": [
-                  "$oot|Kokiri Forest Wonder Item Invisible Rupee 1"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 4
-              },
-              {
-                "name": "Rock behind Know it all House",
-                "short_name": "Behind House",
-                "access_rules": [
-                  "$oot|Kokiri Forest Child Rocks"
-                ],
-                "visibility_rules": [
-                  "setting_rock_on"
-                ],
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "KF GS Know It All House (Child, N)",
-                "short_name": "Know-it-all",
-                "access_rules": [
-                  "$oot|Kokiri Forest GS Night Child"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Grass Near Saria's (Child)",
-                "short_name": "Near Saria's Child",
-                "access_rules": [
-                  "$oot|Kokiri Forest Grass Child 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 5
-              },
-              {
-                "name": "Grass Near Saria's (Adult)",
-                "short_name": "Near Saria's Adult",
-                "access_rules": [
-                  "$oot|Kokiri Forest Grass Adult 01"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 12
-              },
-              {
-                "name": "Top of Sarias House Hearts",
-                "short_name": "Sarias Roof",
-                "access_rules": [
-                  "$oot|Kokiri Forest Heart 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleFreeHeartsOot_overworld"
-                ],
-                "chest_unopened_img": "images/heart.png",
-                "chest_opened_img": "images/heart_grey.png",
-                "item_count": 3
-              },
-              {
-                "name": "Rocks behind Sarias House",
-                "short_name": "Behind Sarias",
-                "access_rules": [
-                  "$oot|Kokiri Forest Child Rocks"
-                ],
-                "visibility_rules": [
-                  "setting_rock_on"
-                ],
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "item_count": 2
-              },
-              {
-                "name": "On Pillar Rupee",
-                "short_name": "Walk the Plank",
-                "access_rules": [
-                  "$oot|Kokiri Forest Rupee Child 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleFreeRupeesOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",
-                "item_count": 1
-              },   
-              {
-                "name": "Big Fairy on Gossip (Storms)",
-                "access_rules": [
-                  "$oot|Kokiri Forest Storms Grotto Big Fairy"
-                ],
-                "visibility_rules": [
-                  "setting_BigFairyShuffle_true"
-                ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 1
-              },           
-              {
-                "name": "KF GS House of Twins (Adult, N)",
-                "short_name": "Twins",
-                "access_rules": [
-                  "$oot|Kokiri Forest GS Night Adult"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }           
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2175,
-                "y": 940
-              }
-            ]
-          },
-          {
-            "name": "Saria's House",
-            "sections": [                            
-              {
-                "name": "Inside House Hearts",
-                "short_name": "Inside Hearts",
+            "name": "Kokirir Forest <-> Saria's House",
+            "short_name": "KF <-> Saria",
                 "access_rules": [
                   "$oot|Saria's House Heart 1"
                 ],
+            "sections": [                            
+              {
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_shuffleFreeHeartsOot_overworld"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/heart.png",
-                "chest_opened_img": "images/heart_grey.png",
-                "item_count": 4
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_entrance_Interior_most"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
               }              
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "visibility_rules": [
                   "setting_shuffleGrassOot_overworld"
                 ],
@@ -591,84 +561,7 @@
                 "y": 958
               }
             ]
-          },
-          {
-            "name": "KF Training Area",
-            "sections": [
-              {
-                "name": "Training Area Grass (Child)",
-                "short_name": "Training Area Child",
-                "access_rules": [
-                  "$oot|Kokiri Forest Grass Child Near Crawl 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 8
-              },
-              {
-                "name": "Training Area Grass (Adult)",
-                "short_name": "Training Area Adult",
-                "access_rules": [
-                  "$oot|Kokiri Forest Grass Adult Near Crawl 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 8
-              },
-              {
-                "name": "Backflip Wonderitems",
-                "short_name": "Backflipwonder",
-                "access_rules": [
-                  "$oot|Kokiri Forest Wonder Item Midair 1"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 3
-              },
-              {
-                "name": "Sign Wonderitem",
-                "short_name": "Signwonder",
-                "access_rules": [
-                  "$oot|Kokiri Forest Wonder Item Sign"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "Rocks in Training Area",
-                "short_name": "Training Rocks",
-                "access_rules": [
-                  "$oot|Kokiri Forest Child Rocks"
-                ],
-                "visibility_rules": [
-                  "setting_rock_on"
-                ],
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "item_count": 3
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2116,
-                "y": 958
-              }
-            ]
-          }
+          }          
         ]
       },
       {
@@ -676,357 +569,63 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "LW Near Shortcuts Grotto",
-            "sections": [              
-              {
-                "name": "LW Near Shortcuts Grotto Chest",
-                "access_rules": [
+            "name": "Lost Woods <-> Near Shortcuts Grotto",
+            "access_rules": [
                   "$oot|Lost Woods Grotto Generic"
                 ],
-                "short_name": "Chest",
-                "item_count": 1
+            "short_name": "LW <-> SC-Grotto",
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "LW Near Shortcuts Grotto Grass",
-                "short_name": "Shortcut Grotto",
-                "access_rules": [
-                  "$oot|Lost Woods Grotto Generic Grass 1"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
+                  "setting_entrance_grotto"
                 ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 4
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "Grotto Hives",
-                "short_name": "Shortcut Grotto",
-                "access_rules": [
-                  "$oot|Lost Woods Grotto Generic Hive 1"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_shuffleHivesOot_true"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/Hive.png",
-                "chest_opened_img": "images/system/Hive_grey.png",
-                "item_count": 2
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "LW Near Shortcut Butterflies",                    
-                "short_name": "Shortcut Grotto",
-                "access_rules": [
-                  "$oot|Lost Woods Grotto Generic Butterfly 1"
-               ],
+                "name": "Interior",
                 "visibility_rules": [
-                  "setting_shuffleButterflyOot_on"
-               ],
-               "chest_unopened_img": "images/system/Butterfly.png",
-               "chest_opened_img": "images/system/Butterfly_grey.png",
-               "item_count": 3
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
               } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2150,
                 "y": 775
-              }
-            ]
-          },
-          {
-            "name": "Lost Woods Right Path",
-            "short_name": "LW Right",
-            "sections": [              
-              {
-                "name": "Shoot the target",
-                "access_rules": [
-                  "$oot|Lost Woods Target"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Ocarina Game",
-                "access_rules": [
-                  "$oot|Lost Woods Memory Game"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Wonder by Ocarina Game",
-                "access_rules": [
-                  "$oot|Lost Woods Wonder Item 1"
-                ],
-                "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 3
-              },
-              {
-                "name": "LW Near Shortcuts Grass",
-                "short_name": "GC Shortcut Grass",
-                "access_rules": [
-                  "$oot|Lost Woods Grass 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 3
-              },
-              {
-                "name": "by GC Shortcut",                    
-                "access_rules": [
-                  "$oot|Lost Woods Boulders"
-                ],
-                "visibility_rules": [
-                  "setting_BoulderOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Boulder.png",
-                "chest_opened_img": "images/system/Boulder_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "Big Fairy by ZR Shortcut (Storms)",
-                "short_name": "ZR Shortcut (Storms)",
-                "access_rules": [
-                  "$oot|Lost Woods Pool Big Fairy"
-                ],
-                "visibility_rules": [
-                  "setting_BigFairyShuffle_true"
-                ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 1
-              },
-              {
-                "name": "Arrow-Rupees by ZR Shortcut",
-                "short_name": "ZR Shortcut Rupees",                
-                "access_rules": [
-                  "$oot|Lost Woods Rupee Arrow 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleFreeRupeesOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",
-                "item_count": 8
-              },
-              {
-                "name": "Scrubs by Theatre",
-                "short_name": "by Theatre",
-                "access_rules": [
-                  "$oot|Lost Woods Scrub Near Theater Left"
-                ],
-                "visibility_rules": [
-                  "setting_scrubShuffleOot_true"
-                ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",                
-                "item_count": 2
-              },
-              {
-                "name": "LW GS Bean Patch Near Theater",
-                "short_name": "Soil GS",
-                "access_rules": [
-                  "$oot|Lost Woods GS Soil Theater"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Soil Fairies",
-                "short_name": "Soil",
-                "access_rules": [
-                  "$oot|Lost Woods Theatre Soil Fairies"
-                ],
-                "visibility_rules": [
-                  "setting_SoilFairyShuffle_true"
-                ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 3
-              },
-              {
-                "name": "LW GS Above Theater (N)",
-                "short_name": "Adult GS",
-                "access_rules": [
-                  "$oot|Lost Woods GS Bean Ride"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "LW Near Theater Butterflies",                    
-                "short_name": "LW Butterflies",
-                "access_rules": [
-                  "$oot|Lost Woods Butterfly 1"
-               ],
-                "visibility_rules": [
-                  "setting_shuffleButterflyOot_on"
-               ],
-               "chest_unopened_img": "images/system/Butterfly.png",
-               "chest_opened_img": "images/system/Butterfly_grey.png",
-               "item_count": 5
-              },
-              {
-                "name": "LW Before Scrubs Grotto Grass",
-                "short_name": "by boulder",
-                "access_rules": [
-                  "$oot|Lost Woods Grass Deep 1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 3
-              },
-              {
-                "name": "After Theatre",                    
-                "access_rules": [
-                  "$oot|Lost Woods Boulders"
-                ],
-                "visibility_rules": [
-                  "setting_BoulderOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Boulder.png",
-                "chest_opened_img": "images/system/Boulder_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "Rupee under Boulder",                
-                "access_rules": [
-                  "$oot|Lost Woods Rupee Boulder"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleFreeRupeesOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",
-                "item_count": 1
-              },
-              {
-                "name": "LW Near Scrubs Grotto Grass",
-                "short_name": "by Scrubs Grotto",
-                "access_rules": [
-                  "$oot|Lost Woods Grass Deep 4"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 3
-              },
-              {
-                "name": "before Forest Meadow",                    
-                "access_rules": [
-                  "$oot|Lost Woods Boulders"
-                ],
-                "visibility_rules": [
-                  "setting_BoulderOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Boulder.png",
-                "chest_opened_img": "images/system/Boulder_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2190,
-                "y": 810
-              }
-            ]
-          },
-          {
-            "name": "Lost Woods left Path",
-            "short_name": "LW left",
-            "sections": [
-              {
-                "name": "Give Cojiro",
-                "access_rules": [
-                  "$oot|Lost Woods Odd Mushroom"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Give Odd Potion",
-                "access_rules": [
-                  "$oot|Lost Woods Poacher's Saw"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Play Saria's Song",
-                "access_rules": [
-                  "$oot|Lost Woods Skull Kid"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Sell Skull Mask",
-                "access_rules": [
-                  "$oot|Lost Woods Sell Skull Mask"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleMaskTrades_true"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "LW GS Bean Patch Near Bridge",
-                "short_name": "Bean Patch",
-                "access_rules": [
-                  "$oot|Lost Woods GS Soil Bridge"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Soil Fairies",
-                "short_name": "Soil",
-                "access_rules": [
-                  "$oot|Lost Woods Bridge Soil Fairies"
-                ],
-                "visibility_rules": [
-                  "setting_SoilFairyShuffle_true"
-                ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 3
-              },
-              {
-                "name": "Stick upgrade",
-                "access_rules": [
-                  "$oot|Lost Woods Scrub Sticks Upgrade"
-                ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2085,
-                "y": 785
               }
             ]
           }
@@ -1037,22 +636,126 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "LW Bridge From Forest",
+            "name": "Kokiri Forest <-> Lost Woods Bridge",
             "color": "#18a50e",
-            "sections": [
-              {
-                "name": "LW Gift from Saria",
-                "access_rules": [
+            "access_rules": [
                   "$oot|Lost Woods Gift from Saria"
                 ],
-                "item_count": 1
-              }
+            "short_name": "KF <-> LW-Bridge",
+            "sections": [
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_entrance_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2030,
                 "y": 880
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field <-> Lost Woods Bridge",
+            "color": "#18a50e",
+            "access_rules": [
+                  "$oot|Lost Woods Gift from Saria"
+                ],
+            "short_name": "HF <-> LW-Bridge",
+            "sections": [
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_entrance_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_exits",
+                "x": 1732,
+                "y": 688
               }
             ]
           }
@@ -1063,88 +766,122 @@
         "color": "#18a50e",
         "children": [          
           {
-            "name": "LW Scrub Grotto",
+            "name": "Lost Woods <-> LW Scrubs Grotto",
+            "access_rules": [
+                  "$oot|Lost Woods Grotto Generic"
+                ],
+            "short_name": "LW <-> Scrubs-Grotto",
             "sections": [              
               {
-                "name": "LW Deku Scrub Grotto Front",
-                "short_name": "Front",
-                "access_rules": [
-                  "$oot|Lost Woods Grotto Scrub Nuts Upgrade"
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "LW Deku Scrub Grotto Rear",
-                "short_name": "Rear",
-                "access_rules": [
-                  "$oot|Lost Woods Grotto Scrub Back"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_scrubShuffleOot_true"
+                  "setting_entrance_grotto"
                 ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "Scrub Grotto Big Fairy (Sun)",
-                "access_rules": [
-                  "$oot|Lost Woods Grotto Scrub Big Fairy"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_BigFairyShuffle_true"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "Scrub Grotto Hive",
-                "short_name": "Hive",
-                "access_rules": [
-                  "$oot|Lost Woods Grotto Scrub Hive"
-                ],
+                "name": "Interior",
                 "visibility_rules": [
-                  "setting_shuffleHivesOot_true"
+                  "setting_mixed_interior"
                 ],
-                "chest_unopened_img": "images/system/Hive.png",
-                "chest_opened_img": "images/system/Hive_grey.png",
-                "item_count": 1
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2190,
                 "y": 725
               }
             ]
           },
           {
-            "name": "Deku Theater",
-            "sections": [
-              {
-                "name": "Deku Theater Skull Mask",
-                "short_name": "Skull Mask",
-                "access_rules": [
-                  "$oot|Deku Theater Sticks Upgrade"
+            "name": "Lost Woods <-> Deku Theatre",
+            "access_rules": [
+                  "$oot|Lost Woods Wonder Item 3"
                 ],
-                "item_count": 1
+            "short_name": "LW <-> Theatre",
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "Deku Theater Mask of Truth",
-                "short_name": "Mask of Truth",
-                "access_rules": [
-                  "$oot|Deku Theater Nuts Upgrade"
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_entrance_grotto"
                 ],
-                "item_count": 1
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2080,
                 "y": 740
               }
@@ -1157,165 +894,307 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Songs in Forest",
-            "sections": [
-              {
-                "name": "Song from Saria",
-                "short_name": "Song",
-                "access_rules": [
-                  "$oot|Saria's Song"
+            "name": "Sacred Forest Meadow <-> Forest Temple",
+            "access_rules": [
+                  "$oot|Forest Temple"
                 ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
+            "short_name": "SFM <-> Forest Temple",
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_entrance_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "Song from Sheik",
-                "access_rules": [
-                  "$oot|Sacred Meadow Sheik Song"
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
                 ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2155,
                 "y": 635
               }
             ]
           },
           {
-            "name": "SFM Wolfos Grotto",            
-            "sections": [
-              {
-                "name": "SFM Wolfos Grotto Chest",
-                "access_rules": [
-                  "$oot|Sacred Meadow Grotto"
+            "name": "Forest Temple <-> Phantom Ganon",
+            "access_rules": [
+                  "$oot|Forest Temple Boss"
                 ],
-                "short_name": "Chest",
-                "item_count": 1
-              }
+            "short_name": "Forest Temple <-> Phantom",
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
+                "x": 2145,
+                "y": 595
+              }
+            ]
+          },
+          {
+            "name": "Sacred Forest Meadow <-> Wolfos Grotto",
+            "access_rules": [
+                  "$oot|Wolfos Grotto"
+                ],
+            "short_name": "SFM <-> Wolfos",
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_entrance_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_exits",
                 "x": 2185,
                 "y": 685
               }
             ]
           },
           {
-            "name": "SFM Fairy Fountain",
-            "sections": [
+            "name": "Sacred Forest Meadow <-> Fairy Grotto",
+            "access_rules": [
+                  "$oot|Sacred Meadow Fairy Grotto"
+                ],
+            "short_name": "SFM <-> Fairy",
+            "sections": [              
               {
-                "name": "SFM Fairy Fountain",
-                "access_rules": [
-                  "$oot|Sacred Meadow Fairy Fountain Fairy 1"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_fairyFountainFairyShuffleOot_true"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 8
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_entrance_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2148,
                 "y": 680
               }
             ]
           },          
           {
-            "name": "SFM Storms Grotto",
-            "sections": [
-              {
-                "name": "SFM Deku Scrubs Grotto",
-                "short_name": "Deku Scrubs",
-                "access_rules": [
-                  "$oot|Sacred Meadow Storms Grotto Back Scrub"
+            "name": "Sacred Forest Meadow <-> Storms Grotto",
+            "access_rules": [
+                  "$oot|Sacred Meadow Storms Grotto"
                 ],
-                "visibility_rules": [
-                  "setting_scrubShuffleOot_true"
-                ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "clear_as_group": false,
-                "item_count": 2
-              },
-              {
-                "name": "Grotto Hive",
-                "short_name": "Hive",
-                "access_rules": [
-                  "$oot|Sacred Meadow Storms Grotto Hive"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleHivesOot_true"
-                ],
-                "chest_unopened_img": "images/system/Hive.png",
-                "chest_opened_img": "images/system/Hive_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",                
-                "x": 2190,
-                "y": 635
-              }
-            ]
-          },
-          {
-            "name": "SFM Maze",
+            "short_name": "SFM <-> Storms-Grotto",
             "sections": [              
               {
-                "name": "Wonder Entrance",
-                "access_rules": [
-                  "$oot|Sacred Meadow Wonder Item Entrance"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "Wonder in Maze",
-                "access_rules": [
-                  "$oot|Sacred Meadow Wonder Item Maze 1"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_wonderitemoot_overworld"
+                  "setting_entrance_grotto"
                 ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 5
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "SFM GS (Adult, N)",
-                "short_name": "SFM",
-                "access_rules": [
-                  "$oot|Sacred Meadow GS Night Adult"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
-                "x": 2225,
-                "y": 665
+                "map": "oot_er_exits",                
+                "x": 2190,
+                "y": 635
               }
             ]
           }
@@ -1326,914 +1205,859 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "HF Inside Fence Grotto",            
-            "sections": [
-              {
-                "name": "HF Deku Scrub Grotto",
-                "short_name": "Deku Scrub",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Scrub HP"
+            "name": "Hyrule Field <-> HF Scrubs Grotto",
+            "access_rules": [
+                  "$oot|Hyrule Field Scrub Grotto"
                 ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "item_count": 1
+            "short_name": "HF <-> Scrubs-Grotto",
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "Big Fairy (Storms)",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Scrub Big Fairy"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_BigFairyShuffle_true"
+                  "setting_entrance_grotto"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "Hive",
-                "short_name": "Hive",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Scrub Hive"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_shuffleHivesOot_true"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/Hive.png",
-                "chest_opened_img": "images/system/Hive_grey.png",
-                "item_count": 1
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1140,
                 "y": 1000
               }
             ]
           },
           {
-            "name": "HF Bridge to Hyrule",
-            "sections": [
+            "name": "Hyrule Field <-> Hyrule Market Entryway",
+            "access_rules": [
+                  "$oot|Market Entryway"
+                ],
+            "short_name": "HF <-> Market",
+            "sections": [              
               {
-                "name": "Wonder above bridge",
-                "access_rules": [
-                 "$oot|Hyrule Field Wonder Item 1"
-              ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                 "setting_wonderitemoot_overworld"
-              ],
-                "chest_unopened_img": "images/system/Wonder.png",
-                "chest_opened_img": "images/system/Wonder_grey.png",
-                "item_count": 3
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "Near Bridge Trees",
-                "short_name": "By Bridge",
-                "access_rules": [
-                  "$oot|Hyrule Field Trees"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
+                  "setting_mixed_grotto"
                 ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 3
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "Near Market",                    
-                "access_rules": [
-                  "$oot|Hyrule Field Boulders"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_BoulderOot_overworld"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/Boulder.png",
-                "chest_opened_img": "images/system/Boulder_grey.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "HF Ocarina of Time Item",
-                "access_rules": [
-                  "$oot|Hyrule Field Ocarina of Time",
-                  "{OOT_gossip_stone}"
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
                 ],
-                "short_name": "Item",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
               },
               {
-                "name": "Song from Ocarina of Time",
-                "short_name": "Song",
-                "access_rules": [
-                  "$oot|Hyrule Field Song of Time",
-                  "{OOT_gossip_stone}"
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_entrance_overworld"
                 ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
+                "visibility_rules": [
+                  "setting_entrance_market"
+                ],
                 "x": 1440,
                 "y": 465
               }
             ]
           },
           {
-            "name": "HF Southeast Grotto",
-            "sections": [
-              {
-                "name": "HF Southeast Grotto Chest",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Southeast"
+            "name": "Hyrule Field <-> HF Southeast Grotto",
+            "access_rules": [
+                  "$oot|Hyrule Field Southeast Grotto"
                 ],
-                "short_name": "Chest",
-                "item_count": 1
+            "short_name": "HF <-> SE-Grotto",
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "HF SE Grotto Grass",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Southeast Grass 1"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
+                  "setting_entrance_grotto"
                 ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 4
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "Grotto Hives",
-                "short_name": "Hives",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Southeast Hive 1"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_shuffleHivesOot_true"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/Hive.png",
-                "chest_opened_img": "images/system/Hive_grey.png",
-                "item_count": 2
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "HF Southeast Grotto Butterflies",                    
-                "short_name": "Butterflies",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Southeast Butterfly 1"
-               ],
+                "name": "Interior",
                 "visibility_rules": [
-                  "setting_shuffleButterflyOot_on"
-               ],
-               "chest_unopened_img": "images/system/Butterfly.png",
-               "chest_opened_img": "images/system/Butterfly_grey.png",
-               "item_count": 3
-              }  
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1430,
                 "y": 925
               }
             ]
           },
           {
-            "name": "HF Near Lake Hylia",
-            "sections": [
-              {
-                "name": "Near Lake Hylia Tree",
-                "short_name": "Tree",
-                "access_rules": [
-                  "$oot|Hyrule Field Trees"
+            "name": "Hyrule Field <-> Lake Hylia",
+            "access_rules": [
+                  "$oot|Lake Hylia"
                 ],
-                "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
-                ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 1
-              },
-              {
-                "name": "HF Near Lake Hylia Bushes",
-                "short_name": "Bushes",
-                "access_rules": [
-                  "$oot|Hyrule Field Bushes"
-                ],
-                "visibility_rules": [
-                  "setting_BushOot_on"
-                ],
-                "chest_unopened_img": "images/system/bush.png",
-                "chest_opened_img": "images/system/bush_grey.png",                
-                "item_count": 11
-              },
-              {
-                "name": "Near Lake",                    
-                "access_rules": [
-                  "$oot|Hyrule Field Boulders"
-                ],
-                "visibility_rules": [
-                  "setting_BoulderOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Boulder.png",
-                "chest_opened_img": "images/system/Boulder_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1185,
-                "y": 975
-              }
-            ]
-          },
-          
-          {
-            "name": "HF Open Grotto",
+            "short_name": "HF <-> LH",
             "sections": [              
               {
-                "name": "HF Open Grotto Chest",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Open"
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
                 ],
-                "short_name": "Chest",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "HF Open Grotto Grass",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Open Grass 1"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
+                  "setting_mixed_grotto"
                 ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 4
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "Grotto Hives",
-                "short_name": "Hives",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Open Hive 1"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_shuffleHivesOot_true"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/Hive.png",
-                "chest_opened_img": "images/system/Hive_grey.png",
-                "item_count": 2
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "HF Open Grotto Butterflies",                    
-                "short_name": "Butterflies",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Open Butterfly 1"
-               ],
+                "name": "Interior",
                 "visibility_rules": [
-                  "setting_shuffleButterflyOot_on"
-               ],
-               "chest_unopened_img": "images/system/Butterfly.png",
-               "chest_opened_img": "images/system/Butterfly_grey.png",
-               "item_count": 3
-              }  
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_entrance_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
+                "x": 1100,
+                "y": 1040
+              }
+            ]
+          },          
+          {
+            "name": "Hyrule Field <-> HF Open Grotto",
+            "access_rules": [
+                  "$oot|Hyrule Field Open Grotto"
+                ],
+            "short_name": "HF <-> Open-Grotto",
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_entrance_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_exits",
                 "x": 1205,
                 "y": 995
               }
             ]
           },
           {
-            "name": "HF Near Market Grotto",
-            "short_name": "Near Market",
+            "name": "Hyrule Field <-> HF Near Market Grotto",
+            "access_rules": [
+                  "$oot|Hyrule Field Grotto Near Market"
+                ],
+            "short_name": "HF <-> Market-Grotto",
             "sections": [              
               {
-                "name": "HF Near Market Grotto Chest",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Market"
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
                 ],
-                "short_name": "Chest",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "HF Near Market Grotto Grass",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Market Grass 1"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
+                  "setting_entrance_grotto"
                 ],
-                "short_name": "Grass",
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 4
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "Grotto Hives",
-                "short_name": "Hives",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Market Hive 1"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_shuffleHivesOot_true"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/Hive.png",
-                "chest_opened_img": "images/system/Hive_grey.png",
-                "item_count": 2
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "HF Near Market Grotto Butterflies",                    
-                "short_name": "Butterflies",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Market Butterfly 1"
-               ],
+                "name": "Interior",
                 "visibility_rules": [
-                  "setting_shuffleButterflyOot_on"
-               ],
-               "chest_unopened_img": "images/system/Butterfly.png",
-               "chest_opened_img": "images/system/Butterfly_grey.png",
-               "item_count": 3
-              }  
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1370,
                 "y": 440
               }
             ]
           },
           {
-            "name": "HF Diving Grotto",            
-            "sections": [
-              {
-                "name": "HF Tektite Grotto Freestanding PoH",
-                "short_name": "HP",
-                "access_rules": [
-                  "$oot|Hyrule Field Diving Grotto HP"
+            "name": "Hyrule Field <-> HF Diving Grotto",
+            "access_rules": [
+                  "$oot|Hyrule Field Tektite Grotto"
                 ],
-                "chest_unopened_img": "images/HP.png",
-                "chest_opened_img": "images/HP_grey.png",
-                "item_count": 1
-              }
+            "short_name": "HF <-> Diving-Grotto",
+            "sections": [              
+              {
+                "name": "Dungeons",                
+                "visibility_rules": [
+                  "setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_entrance_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1150,
                 "y": 480
               }
             ]
-          },          
-          {
-            "name": "HF Lone Silver Boulder",            
-            "sections": [              
-              {
-                "name": "Silver Boulder",                    
-                "access_rules": [
-                  "$oot|Hyrule Field Silver Boulder"
-                ],
-                "visibility_rules": [
-                  "setting_SilverBoulderOot_on"
-                ],
-                "chest_unopened_img": "images/system/SilverBoulder.png",
-                "chest_opened_img": "images/system/SilverBoulder_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1479,
-                "y": 738
-              }
-            ]
           },
           {
-            "name": "HF Grotto Near Kak",
+            "name": "Hyrule Field <-> HF Near Kak Grotto",
+            "access_rules": [
+                  "$oot|Hyrule Field Grotto Near Kak"
+                ],
+            "short_name": "HF <-> Kak-Grotto",
             "sections": [              
               {
-                "name": "HF GS Near Kak Grotto",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Near Kakariko GS"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_entrance_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1550,
                 "y": 405
               }
             ]
           },
           {
-            "name": "HF Near Kak",
-            "sections": [
+            "name": "Hyrule Field <-> Kakariko Village",
+            "access_rules": [
+                  "$oot|Kakariko"
+                ],
+            "short_name": "HF <-> Kak",
+            "sections": [              
               {
-                "name": "Near Kak Trees",
-                "short_name": "Tree",
-                "access_rules": [
-                  "$oot|Hyrule Field Trees"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 2
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_mixed_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_entrance_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1650,
                 "y": 445
               }
             ]
           },
           {
-            "name": "HF Cow Grotto",
+            "name": "Hyrule Field <-> HF Near Gerudo Valley Grotto",
+            "access_rules": [
+                  "$oot|Hyrule Field Grotto Near GV"
+                ],
+            "short_name": "HF <-> GV-Grotto",
             "sections": [              
               {
-                "name": "HF GS Cow Grotto",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Near Gerudo GS"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "HF Cow Grotto Cow",
-                "short_name": "Cow",
-                "access_rules": [
-                  "$oot|Hyrule Field Cow"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_cowShuffleOot_true"
+                  "setting_entrance_grotto"
                 ],
-                "chest_unopened_img": "images/cow.png",
-                "chest_opened_img": "images/bottle_milk.png",
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "HF Cow Grotto Grass",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Near Gerudo Grass 1"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "short_name": "Grass",
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 2
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "HF Cow Grotto Pots",
-                "short_name": "Pot",
-                "access_rules": [
-                  "$oot|Hyrule Field Cow Grotto Pot 1"
-                ],
+                "name": "Interior",
                 "visibility_rules": [
-                  "setting_shufflePotsOot_overworld"
+                  "setting_mixed_interior"
                 ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 2
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 970,
                 "y": 660
               }
             ]
           },
           {
-            "name": "HF Near Gerudo Valley",
-            "sections": [
+            "name": "Hyrule Field <-> Gerudo Valley",
+            "access_rules": [
+                  "$oot|Gerudo Valley"
+                ],
+            "short_name": "HF <-> GV",
+            "sections": [              
               {
-                "name": "Near GV Tree child",
-                "short_name": "Child Tree",
-                "access_rules": [
-                  "$oot|Hyrule Field Child Trees"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "Near GV Tree adult",
-                "short_name": "Adult Tree",
-                "access_rules": [
-                  "$oot|Hyrule Field Adult Tree"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
+                  "setting_mixed_grotto"
                 ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "HF Near Gerudo Valley Bushes",
-                "short_name": "Bushes",
-                "access_rules": [
-                  "$oot|Hyrule Field Bushes"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_BushOot_on"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/bush.png",
-                "chest_opened_img": "images/system/bush_grey.png",                
-                "item_count": 6
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "HF Near Gerudo Valley Red Boulders",                    
-                "access_rules": [
-                  "$oot|Hyrule Field Red Boulder 1"
-                ],
+                "name": "Interior",
                 "visibility_rules": [
-                  "setting_RedBoulderOot_on"
+                  "setting_mixed_interior"
                 ],
-                "chest_unopened_img": "images/system/RedBoulder.png",
-                "chest_opened_img": "images/system/RedBoulder_grey.png",
-                "item_count": 4
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
               },
               {
-                "name": "Rock Circle",
-                "short_name": "Rock Circle",
-                "access_rules": [
-                  "$oot|Hyrule Field Rocks"
-                ],
+                "name": "overworld",
                 "visibility_rules": [
-                  "setting_rock_on"
+                  "setting_entrance_overworld"
                 ],
-                "chest_unopened_img": "images/system/Rock.png",
-                "chest_opened_img": "images/system/Rock_grey.png",
-                "item_count": 8
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",
-                "x": 1020,
+                "map": "oot_er_exits",
+                "x": 900,
                 "y": 660
               }
             ]
           },
           {
-            "name": "HF Fairy Fountain",
-            "sections": [
+            "name": "Hyrule Field <-> HF Fairy Grotto",
+            "access_rules": [
+                  "$oot|Hyrule Field Fairy Grotto"
+                ],
+            "short_name": "HF <-> Kak-Grotto",
+            "sections": [              
               {
-                "name": "HF Fairys",
-                "access_rules": [
-                  "$oot|Hyrule Field Fairy Fountain Fairy 1"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_fairyFountainFairyShuffleOot_true"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 8
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
+              },
+              {
+                "name": "Grottos",
+                "visibility_rules": [
+                  "setting_entrance_grotto"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
+              },
+              {
+                "name": "Bosses",
+                "visibility_rules": [
+                  "setting_entrance_Boss, setting_mixed_dungeon"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_mixed_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",                
+                "map": "oot_er_exits",                
                 "x": 1186,
                 "y": 396
               }
-            ]
+            ]          
           },
           {
-            "name": "HF North River",
+            "name": "Hyrule Field <-> Zora River",
+            "access_rules": [
+                  "$oot|Zora River Front"
+                ],
+            "short_name": "HF <-> ZR",
             "sections": [              
               {
-                "name": "HF North River Trees",
-                "short_name": "Trees",
-                "access_rules": [
-                  "$oot|Hyrule Field Trees"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 6
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "HF North River Bushes",
-                "short_name": "Bushes",
-                "access_rules": [
-                  "$oot|Hyrule Field Bushes"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_BushOot_on"
+                  "setting_mixed_grotto"
                 ],
-                "chest_unopened_img": "images/system/bush.png",
-                "chest_opened_img": "images/system/bush_grey.png",                
-                "item_count": 6
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "HF North River Child Bushes",
-                "short_name": "Child Bushes",
-                "access_rules": [
-                  "$oot|Hyrule Field Child Bushes"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_BushOot_on"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/bush.png",
-                "chest_opened_img": "images/system/bush_grey.png",                
-                "item_count": 11
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
               },
               {
-                "name": "North Boulder",                    
-                "access_rules": [
-                  "$oot|Hyrule Field Boulders"
-                ],
+                "name": "Interior",
                 "visibility_rules": [
-                  "setting_BoulderOot_overworld"
+                  "setting_mixed_interior"
                 ],
-                "chest_unopened_img": "images/system/Boulder.png",
-                "chest_opened_img": "images/system/Boulder_grey.png",
-                "item_count": 1
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_entrance_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",                
-                "x": 1186,
-                "y": 425
-              }
-            ]
-          },
-          {
-            "name": "HF Near Kokiri Forest",
-            "sections": [
-              {
-                "name": "Grass",
-                "access_rules": [
-                  "$oot|Hyrule Field Grass Pack 1 Bush 01"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 12
-              },
-              {
-                "name": "Trees",
-                "short_name": "Tree",
-                "access_rules": [
-                  "$oot|Hyrule Field Trees"
-                ],
-                "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
-                ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 6
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",                
-                "x": 1732,
-                "y": 688
-              }
-            ]
-          },
-          {
-            "name": "HF Big Fairy",
-            "sections": [
-              {
-                "name": "HF Big Fairy (Storms)",
-                "access_rules": [
-                  "$oot|Hyrule Field River Big Fairy"
-                ],
-                "visibility_rules": [
-                  "setting_BigFairyShuffle_true"
-                ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",                
+                "map": "oot_er_exits",                
                 "x": 1800,
                 "y": 600
               }
             ]
           },
           {
-            "name": "HF Center",
-            "sections": [
+            "name": "Hyrule Field <-> Lon Lon Ranch",
+            "access_rules": [
+                  "$oot|Lon Lon Ranch"
+                ],
+            "short_name": "HF <-> LLR",
+            "sections": [              
               {
-                "name": "Grass",
-                "access_rules": [
-                  "$oot|Hyrule Field Grass Pack 2 Bush 01"
-                ],
+                "name": "Dungeons",                
                 "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
+                  "setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 12
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1               
               },
               {
-                "name": "Near Ranch Tree",
-                "short_name": "Ranch Tree",
-                "access_rules": [
-                  "$oot|Hyrule Field Trees"
-                ],
+                "name": "Grottos",
                 "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
+                  "setting_mixed_grotto"
                 ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 1
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1               
               },
               {
-                "name": "Near River Tree",
-                "short_name": "River Tree",
-                "access_rules": [
-                  "$oot|Hyrule Field Trees"
-                ],
+                "name": "Bosses",
                 "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
+                  "setting_entrance_Boss, setting_mixed_dungeon"
                 ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 1
-              }
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_boss",
+                "item_count": 1               
+              },
+              {
+                "name": "Interior",
+                "visibility_rules": [
+                  "setting_mixed_interior"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "visibility_rules": [
+                  "setting_entrance_overworld"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+              } 
             ],
             "map_locations": [
               {
-                "map": "oot",                
-                "x": 1494,
-                "y": 528
-              }
-            ]
-          },
-          {
-            "name": "HF Southeast",
-            "sections": [
-              {
-                "name": "Grass",
-                "access_rules": [
-                  "$oot|Hyrule Field Grass Pack 3 Bush 01"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 12
-              },
-              {
-                "name": "South-East Trees",
-                "short_name": "Trees",
-                "access_rules": [
-                  "$oot|Hyrule Field Trees"
-                ],
-                "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
-                ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 19
-              },
-              {
-                "name": "South East Child Trees",
-                "short_name": "Child Trees",
-                "access_rules": [
-                  "$oot|Hyrule Field Child Trees"
-                ],
-                "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
-                ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 6
-              },
-              {
-                "name": "South-East Bushes",
-                "short_name": "Bushes",
-                "access_rules": [
-                  "$oot|Hyrule Field Bushes"
-                ],
-                "visibility_rules": [
-                  "setting_BushOot_on"
-                ],
-                "chest_unopened_img": "images/system/bush.png",
-                "chest_opened_img": "images/system/bush_grey.png",                
-                "item_count": 12
-              },
-              {
-                "name": "South-East Child Bushes",
-                "short_name": "Child Bushes",
-                "access_rules": [
-                  "$oot|Hyrule Field Child Bushes"
-                ],
-                "visibility_rules": [
-                  "setting_BushOot_on"
-                ],
-                "chest_unopened_img": "images/system/bush.png",
-                "chest_opened_img": "images/system/bush_grey.png",                
-                "item_count": 12
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",                
-                "x": 1420,
-                "y": 872
-              }
-            ]
-          },
-          {
-            "name": "HF Grass South of Lon Lon Ranch",
-            "sections": [
-              {
-                "name": "Grass",
-                "access_rules": [
-                  "$oot|Hyrule Field Grass Pack 4 Bush 01"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 12
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
-                "x": 1346,
-                "y": 816
-              }
-            ]
-          },
-          {
-            "name": "HF West",
-            "sections": [
-              {
-                "name": "Sell Bunny Hood",
-                "access_rules": [
-                  "$oot|Hyrule Field Sell Bunny Mask"
-                ],
-                "visibility_rules": [
-                  "setting_shuffleMaskTrades_true"
-                ],
-                "item_count": 1
-              },              
-              {
-                "name": "Diving Grotto Tree",
-                "short_name": "Tree",
-                "access_rules": [
-                  "$oot|Hyrule Field Trees"
-                ],
-                "visibility_rules": [
-                  "setting_TreeShuffleOot_on"
-                ],
-                "chest_unopened_img": "images/system/tree.png",
-                "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",                
-                "x": 1155,
-                "y": 555
+                "map": "oot_er_exits",                
+                "x": 1400,
+                "y": 578
               }
             ]
           }
@@ -2280,7 +2104,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1050,
                 "y": 1265
               }
@@ -2368,7 +2192,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1270,
                 "y": 1215
               }
@@ -2393,7 +2217,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1245,
                 "y": 1215
               }
@@ -2438,7 +2262,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1135,
                 "y": 1405
               }
@@ -2512,7 +2336,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 960,
                 "y": 1160
               }
@@ -2563,7 +2387,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 960,
                 "y": 1200
               }
@@ -2602,7 +2426,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",                
+                "map": "oot_er_exits",                
                 "x": 870,
                 "y": 1310
               }
@@ -2639,7 +2463,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1010,
                 "y": 1415
               }
@@ -2690,7 +2514,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1150,
                 "y": 1180
               }
@@ -2741,7 +2565,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1042,
                 "y": 1156
               }
@@ -2873,7 +2697,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1295,
                 "y": 645
               }
@@ -2905,7 +2729,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1345,
                 "y": 590
               }
@@ -2940,7 +2764,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1225,
                 "y": 690
               }
@@ -2965,7 +2789,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1300,
                 "y": 590
               }
@@ -3004,7 +2828,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1375,
                 "y": 690
               }
@@ -3030,7 +2854,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1760,
                 "y": 380
               }
@@ -3089,7 +2913,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1870,
                 "y": 305
               }
@@ -3136,7 +2960,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1830,
                 "y": 430
               }
@@ -3156,7 +2980,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1830,
                 "y": 395
               }
@@ -3188,7 +3012,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1920,
                 "y": 345
               }
@@ -3529,7 +3353,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1795,
                 "y": 380
               }
@@ -3548,7 +3372,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1860,
                 "y": 340
               }
@@ -3614,7 +3438,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1760,
                 "y": 420
               }
@@ -3706,7 +3530,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1795,
                 "y": 340
               }
@@ -3798,7 +3622,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1760,
                 "y": 340
               }
@@ -3933,7 +3757,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 2035,
                     "y": 395
                   }
@@ -4049,7 +3873,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 2035,
                     "y": 325
                   }
@@ -4083,7 +3907,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 2035,
                     "y": 360
                   }
@@ -4104,7 +3928,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 2070,
                     "y": 360
                   }
@@ -4147,7 +3971,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 2105,
                     "y": 360
                   }
@@ -4367,7 +4191,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 1655,
                     "y": 195
                   }
@@ -4426,7 +4250,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 1705,
                     "y": 160
                   }
@@ -4522,7 +4346,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1765,
                 "y": 175
               }
@@ -4542,7 +4366,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1785,
                 "y": 110
               }
@@ -4613,7 +4437,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1805,
                 "y": 150
               }
@@ -4819,7 +4643,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1635,
                 "y": 110
               }
@@ -4858,7 +4682,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",                
+                "map": "oot_er_exits",                
                 "x": 1705,
                 "y": 75
               }
@@ -4926,7 +4750,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "force_invisibility_rules": [
                   "setting_shopShuffleOot_none"
                 ],
@@ -4993,7 +4817,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1815,
                 "y": 70
               }
@@ -5079,7 +4903,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1850,
                 "y": 70
               }
@@ -5099,7 +4923,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1780,
                 "y": 70
               }
@@ -5138,7 +4962,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",                
+                "map": "oot_er_exits",                
                 "x": 1780,
                 "y": 35
               }
@@ -5257,7 +5081,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1885,
                 "y": 35
               }
@@ -5298,7 +5122,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 1355,
                     "y": 355
                   }
@@ -5323,7 +5147,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 1390,
                     "y": 290
                   }
@@ -5343,7 +5167,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 1425,
                     "y": 290
                   }
@@ -5368,7 +5192,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 1415,
                     "y": 325
                   }
@@ -5454,7 +5278,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 1425,
                     "y": 365
                   }
@@ -5501,7 +5325,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "force_invisibility_rules": [
                       "setting_shopShuffleOot_none"
                     ],
@@ -5572,7 +5396,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "force_invisibility_rules": [
                       "setting_shopShuffleOot_none"
                     ],
@@ -5622,7 +5446,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "force_invisibility_rules": [
                       "setting_shopShuffleOot_none"
                     ],
@@ -5710,7 +5534,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 1465,
                     "y": 405
                   }
@@ -5808,7 +5632,7 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot",
+                    "map": "oot_er_exits",
                     "x": 1445,
                     "y": 325
                     
@@ -5849,7 +5673,7 @@
         ],
         "map_locations": [
           {
-            "map": "oot",
+            "map": "oot_er_exits",
             "x": 1535,
             "y": 295
           }
@@ -5894,7 +5718,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1420,
                 "y": 160
               }
@@ -6055,7 +5879,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1420,
                 "y": 205
               }
@@ -6075,7 +5899,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1525,
                 "y": 240
               }
@@ -6126,7 +5950,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1470,
                 "y": 205
               }
@@ -6180,7 +6004,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1500,
                 "y": 205
               }
@@ -6201,7 +6025,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1530,
                 "y": 205
               }
@@ -6289,7 +6113,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2095,
                 "y": 480
               }
@@ -6386,7 +6210,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2000,
                 "y": 505
               }
@@ -6445,7 +6269,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2090,
                 "y": 540
               }
@@ -6518,7 +6342,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2345,
                 "y": 425
               }
@@ -6557,7 +6381,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",                
+                "map": "oot_er_exits",                
                 "x": 1940,
                 "y": 505
               }
@@ -6619,7 +6443,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 1935,
                 "y": 545
               }
@@ -6692,7 +6516,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2060,
                 "y": 540
               }
@@ -6717,7 +6541,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2280,
                 "y": 465
               }
@@ -6730,7 +6554,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2110,
                 "y": 500
               }
@@ -6751,7 +6575,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "visibility_rules": [
                   "setting_fairyFountainFairyShuffleOot_true"
                 ],
@@ -6879,7 +6703,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2550,
                 "y": 450
               }
@@ -6947,7 +6771,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "force_invisibility_rules": [
                   "setting_shopShuffleOot_none"
                 ],
@@ -6971,7 +6795,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "visibility_rules": [
                   "setting_fairyFountainFairyShuffleOot_true"
                 ],
@@ -6999,7 +6823,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2585,
                 "y": 325
               }
@@ -7170,7 +6994,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 2520,
                 "y": 320
               }
@@ -7199,7 +7023,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 655,
                 "y": 635
               }
@@ -7319,7 +7143,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 670,
                 "y": 600
               }
@@ -7394,7 +7218,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 805,
                 "y": 560
               }
@@ -7488,7 +7312,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 600,
                 "y": 580
               }
@@ -7527,7 +7351,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",                
+                "map": "oot_er_exits",                
                 "x": 605,
                 "y": 530
               }
@@ -7601,7 +7425,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 545,
                 "y": 360
               }
@@ -7625,7 +7449,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 620,
                 "y": 440
               }
@@ -7949,7 +7773,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "force_invisibility_rules": [
                   "setting_gerudoFortress_open"
                 ],
@@ -7990,7 +7814,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 660,
                 "y": 305
               }
@@ -8011,7 +7835,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "visibility_rules": [
                   "setting_fairyFountainFairyShuffleOot_true"
                 ],
@@ -8120,7 +7944,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 360,
                 "y": 285
               }
@@ -8145,7 +7969,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 275,
                 "y": 300
               }
@@ -8184,7 +8008,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 195,
                 "y": 305
               }
@@ -8343,7 +8167,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 195,
                 "y": 355
               }
@@ -8356,7 +8180,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot",
+                "map": "oot_er_exits",
                 "x": 206,
                 "y": 436
               }
