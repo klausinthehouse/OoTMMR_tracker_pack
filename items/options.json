@@ -792,13 +792,11 @@
       },
       {
         "img": "images/setting_shufflePotsMm_overworld.png",
-        "img_mods": "@disabled",
         "codes": "setting_shufflePotsMm,setting_shufflePotsMm_overworld",
         "inherit_codes": false
       },
       {
         "img": "images/setting_shufflePotsMm_true.png",
-        "img_mods": "@disabled",
         "codes": "setting_shufflePotsMm,setting_shufflePotsMm_dungeon,setting_shufflePotsMm_overworld",
         "inherit_codes": false
       }
@@ -5517,5 +5515,511 @@
     "disabled_img_mods": "@enabled",
     "max_quantity": 266,
     "initial_quantity": 0
+  },
+  {
+    "name": "Entrance Shuffle Dungeon",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_dungeon_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_dungeon_major.png",
+        "codes": "setting_entrance_dungeon_major",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_dungeon_minor.png",
+        "codes": "setting_entrance_dungeon_minor",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_dungeon_both.png",
+        "codes": "setting_entrance_dungeon_major, setting_entrance_dungeon_minor",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Dungeon Ganons Castle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_gc_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_gc_castle.png",
+        "codes": "setting_entrance_gc_castle",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_gc_tower.png",
+        "codes": "setting_entrance_gc_tower",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_gc_full.png",
+        "codes": "setting_entrance_gc_castle, setting_entrance_gc_tower",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Dungeon Clock Tower Roof",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_moon_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_moon_on.png",
+        "codes": "setting_entrance_moon",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Skulltula Houses",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_sh_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_sh_on.png",
+        "codes": "setting_entrance_sh",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Dungeon Pirate Fortress",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_pf_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_pf_on.png",
+        "codes": "setting_entrance_pf",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Dungeon Beneath the Well",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_btw_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_btw_on.png",
+        "codes": "setting_entrance_btw",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Dungeon Ikanas Castle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_ic_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_ic_on.png",
+        "codes": "setting_entrance_ic",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Dungeon Secret Shrine",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_ss_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_ss_on.png",
+        "codes": "setting_entrance_ss",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle overworld",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_overworld_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_overworld_on.png",
+        "codes": "setting_entrance_overworld",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Market",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_market_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_market_on.png",
+        "codes": "setting_entrance_market",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Regional Shortcuts",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_sc_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_sc_on.png",
+        "codes": "setting_entrance_sc",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle grotto",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_grotto_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_grotto_on.png",
+        "codes": "setting_entrance_grotto",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Interior",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_interior_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_interior_most.png",
+        "codes": "setting_entrance_Interior_most",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_interior_extra.png",
+        "codes": "setting_entrance_Interior_extra",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_interior_all.png",
+        "codes": "setting_entrance_Interior_most, setting_entrance_Interior_extra",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Telescopes",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_tele_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_tele_on.png",
+        "codes": "setting_entrance_tele",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Game Switch",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_gameswitch_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_gameswitch_on.png",
+        "codes": "setting_entrance_gameswitch",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Boss Rooms",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_boss_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_boss_on.png",
+        "codes": "setting_entrance_Boss",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Spawn",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_spawn_off.png",
+        "codes": "setting_entrance_spawn",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_spawn_child.png",
+        "codes": "setting_entrance_child",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_spawn_adult.png",
+        "codes": "setting_entrance_adult",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_spawn_both.png",
+        "codes": "setting_entrance_child, setting_entrance_adult",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Wallmasters",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_wm_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_wm_on.png",
+        "codes": "setting_entrance_wm",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Warp Songs",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_song_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_song_oot.png",
+        "codes": "setting_entrance_song_oot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_song_mm.png",
+        "codes": "setting_entrance_song_mm",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_song_both.png",
+        "codes": "setting_entrance_song_oot, setting_entrance_song_mm",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle One Ways",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_ow_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_ow_on.png",
+        "codes": "setting_entrance_ow",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle mixed Pool Dungeons",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_mixed_dungeon_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_mixed_dungeon_on.png",
+        "codes": "setting_mixed_dungeon",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle mixed Pool grottos",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_mixed_grotto_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_mixed_grotto_on.png",
+        "codes": "setting_mixed_grotto",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle mixed Pool interiors",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_mixed_interior_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_mixed_interior_on.png",
+        "codes": "setting_mixed_interior",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle mixed Pool overworlds",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_mixed_overworld_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_mixed_overworld_on.png",
+        "codes": "setting_mixed_overworld",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

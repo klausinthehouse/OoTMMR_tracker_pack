@@ -687,6 +687,12 @@
       "codes": "entrance_interior_ct_kafei"
     },
     {
+      "name": "MM Clock Town Kafeis Hideout Telescope",
+      "type": "toggle",
+      "img": "images/entrance_interior_kafei_tele.png",
+      "codes": "entrance_interior_kafei_tele"
+    },
+    {
       "name": "MM Clock Town Lottery",
       "type": "toggle",
       "img": "images/entrance_interior_ct_lottery.png",
@@ -1065,6 +1071,12 @@
       "codes": "entrance_interior_ogc_fairy"
     },
     {
+      "name": "MM Pirate Fortress Telescope",
+      "type": "toggle",
+      "img": "images/entrance_interior_pf_tele.png",
+      "codes": "entrance_interior_pf_tele"
+    },
+    {
       "name": "MM Romani Ranch Cucco Shack",
       "type": "toggle",
       "img": "images/entrance_interior_rr_cucco.png",
@@ -1117,6 +1129,12 @@
       "type": "toggle",
       "img": "images/entrance_interior_tf_obs.png",
       "codes": "entrance_interior_tf_obs"
+    },
+    {
+      "name": "MM Termina Field Observatory Telescope",
+      "type": "toggle",
+      "img": "images/entrance_interior_obs_tele.png",
+      "codes": "entrance_interior_obs_tele"
     },
     {
       "name": "MM Twin Island Goron Race",
@@ -1402,6 +1420,12 @@
       "codes": "entrance_overworld_lw"
     },
     {
+      "name": "OOT Lost Woods Bridge",
+      "type": "toggle",
+      "img": "images/entrance_overworld_lw_bridge.png",
+      "codes": "entrance_overworld_lw_bridge"
+    },
+    {
       "name": "OOT Hyrule Market",
       "type": "toggle",
       "img": "images/entrance_overworld_market.png",
@@ -1454,6 +1478,12 @@
       "type": "toggle",
       "img": "images/entrance_overworld_mv_path_back.png",
       "codes": "entrance_overworld_mv_path_back"
+    },
+    {
+      "name": "MM Pirate Fortress Entry",
+      "type": "toggle",
+      "img": "images/entrance_overworld_pf_entry.png",
+      "codes": "entrance_overworld_pf"
     },
     {
       "name": "MM Romani Ranch",
