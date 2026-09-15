@@ -3634,6 +3634,142 @@
       }
     ]
   },
+  "layout_Entrance_Main": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [            
+      {
+        "type": "item",
+        "item": "setting_entrance_dungeon_major",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_overworld",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_grotto",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_Interior_most",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_Boss",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_spawn",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_song_oot",
+        "height": 16
+      }
+    ]
+  },
+  "layout_Entrance_Extra": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_entrance_gc_castle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_moon",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_sh",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_pf",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_btw",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_ic",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_ss",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_market",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_sc",
+        "height": 16
+      }
+    ]
+  },
+  "layout_Entrance_Special": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [            
+      {
+        "type": "item",
+        "item": "setting_entrance_tele",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_wm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_ow",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_mixed_dungeon",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_mixed_grotto",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_mixed_interior",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_mixed_overworld",
+        "height": 16
+      }
+    ]
+  },
   "optionsoot_popup": {
     "type": "tabbed",
     "tabs": [
@@ -4014,6 +4150,53 @@
           "content": {
             "type": "layout",
             "key": "layout_RK_Mm",
+            "h_alignment": "left"
+          }
+        }
+      }
+    ]
+  },
+  "Entrance_popup": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Entrance Settings Main",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_Entrance_Main",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "Entrance Settings Extra",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_Entrance_Extra",
+            "h_alignment": "left"
+          }
+        }
+      },
+      {
+        "title": "Entrance Settings Special",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_Entrance_Special",
             "h_alignment": "left"
           }
         }

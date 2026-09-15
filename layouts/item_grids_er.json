@@ -255,7 +255,8 @@
                     "entrance_interior_ct_fairy",
                     "entrance_interior_ct_hd",
                     "entrance_interior_ct_inn",
-                    "entrance_interior_ct_kafei"
+                    "entrance_interior_ct_kafei",
+                    "entrance_interior_kafei_tele"
                 ],
                 [
                     "entrance_interior_ct_lottery",
@@ -264,7 +265,8 @@
                     "entrance_interior_ct_post",
                     "entrance_interior_ct_shoot",
                     "entrance_interior_ct_shop",
-                    "entrance_interior_tf_obs"
+                    "entrance_interior_tf_obs",
+                    "entrance_interior_obs_tele"
                 ],
                 [
                     "entrance_interior_rr_cucco",
@@ -313,6 +315,7 @@
                 [
                     "entrance_overworld_kf",
                     "entrance_overworld_lw",
+                    "entrance_overworld_lw_bridge",
                     "entrance_overworld_sfm"                 
                 ],
                 [
@@ -388,6 +391,7 @@
                 [
                     "entrance_overworld_gb_lab",
                     "entrance_overworld_gb_ledge",
+                    "entrance_overworld_pf_entry",
                     "entrance_overworld_zc",
                     "entrance_overworld_zh_back"
                 ],
