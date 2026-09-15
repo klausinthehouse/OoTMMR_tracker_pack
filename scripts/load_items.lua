@@ -2,9 +2,8 @@
 Tracker:AddItems("items/capture_spawns.json")
 Tracker:AddItems("items/sequences.json")
 Tracker:AddItems("items/capture_items.json")
-if HAS_ER then
-  Tracker:AddItems("items/capture_entrance.json")
-end
+Tracker:AddItems("items/capture_entrance.json")
+
 Tracker:AddItems("items/tricks.json")
 Tracker:AddItems("items/options.json")
 
@@ -13,6 +12,7 @@ Tracker:AddItems("items/mm_items.json")
 Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
+Tracker:AddItems("items/entrances.json")
 
 --CUSTOM ITEMS
 ScriptHost:LoadScript("scripts/sdk/class.lua")
