@@ -2383,7 +2383,7 @@ function _mm_logic()
 	end
 
 	function er_enabled()
-		return setting('erMajorDungeons') or setting('erMinorDungeons') or setting('erSpiderHouses') or setting('erGanonCastle') or setting('erGanonTower') or setting('erBeneathWell') or setting('erPirateFortress') or setting('erSecretShrine') or setting('erIkanaCastle') or setting('erMoon') or setting('erIndoorsMajor') or setting('erIndoorsExtra') or (not setting('erRegions', 'none')) or (not setting('erOverworld', 'none')) or (not setting('erBoss', 'none')) or (not setting('erWarps', 'none')) or setting('erOneWaysMajor') or setting('erOneWaysIkana') or setting('erOneWaysSongs') or setting('erOneWaysStatues') or setting('erOneWaysOwls') or (not setting('erGrottos', 'none')) or (not setting('erWallmasters', 'none'))
+		return setting('entrance', 'dungeon_major') or setting('entrance', 'dungeon_minor') or setting('entrance', 'gc_castle') or setting('entrance', 'gc_tower') or setting('entrance', 'moon') or setting('entrance', 'sh') or setting('entrance', 'pf') or setting('entrance', 'btw') or setting('entrance', 'ic') or setting('entrance', 'ss') or setting('entrance', 'overworld') or setting('entrance', 'market') or setting('entrance', 'sc') or setting('entrance', 'grotto') or setting('entrance', 'interior_most') or setting('entrance', 'interior_extra') or setting('entrance', 'tele') or setting('entrance', 'gameswitch') or setting('entrance', 'Boss') or setting('entrance', 'child') or setting('entrance', 'adult') or setting('entrance', 'wm') or setting('entrance', 'song_oot') or setting('entrance', 'song_mm') or setting('entrance', 'ow')
 	end
 
 	function dungeon_er()
@@ -2524,6 +2524,7 @@ function _mm_logic()
             ["Ikana Castle Entrance"] = function () return trick('MM_IKANA_PILLAR_ENTRANCE_FLOAT') and (has('MASK_DEKU') or has_hover_boots()) or trick('MM_IKANA_PILLAR_ENTRANCE_JUMP') end,
         },
         ["locations"] = {
+            ["Ancient Castle of Ikana Roof Enter"] = function () return true end,
             ["Ancient Castle of Ikana HP"] = function () return (has_arrows() or can_hookshot_short()) and has('MASK_DEKU') or short_hook_anywhere() end,
         },
         ["age_change"] = false,
@@ -2612,9 +2613,12 @@ function _mm_logic()
     },
     ["Beneath The Well Entrance"] = {
         ["exits"] = {
-            ["Ikana Canyon"] = function () return true end,
+            ["Ikana Canyon"] = function () return not setting('entrance', 'btw') end,
             ["Beneath The Well North Section"] = function () return (setting('beneathWell', 'open') or (can_pass_gibdo() and has_blue_potion())) end,
             ["Beneath The Well East Section"] = function () return (setting('beneathWell', 'open') or (can_pass_gibdo() and has_beans())) end,
+        },
+        ["locations"] = {
+            ["BTW Front Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -2622,17 +2626,26 @@ function _mm_logic()
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["locations"] = {
+            ["BTW Wallmaster Entrance"] = function () return true end,
+        },
         ["age_change"] = false,
     },
     ["Beneath The Well Wallmaster Near Fountain"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["locations"] = {
+            ["BTW Wallmaster Fountain"] = function () return true end,
+        },
         ["age_change"] = false,
     },
     ["Beneath The Well Wallmaster Near Exit"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
+        },
+        ["locations"] = {
+            ["BTW Wallmaster Exit"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -2838,14 +2851,17 @@ function _mm_logic()
     ["Beneath The Well End"] = {
         ["exits"] = {
             ["Beneath The Well Sun Block"] = function () return (setting('beneathWell', 'open') or can_use_light_arrows()) end,
-            ["Ikana Castle Exterior"] = function () return true end,
+            ["Ikana Castle Exterior"] = function () return not setting('entrance', 'btw') and not setting('entrance', 'ic') end,
+        },
+        ["locations"] = {
+            ["BTW End"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Great Bay Temple"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
-            ["Zora Cape Peninsula"] = function () return (can_hookshot() or short_hook_anywhere()) end,
+            ["Zora Cape Peninsula"] = function () return ((can_hookshot() or short_hook_anywhere())) and not setting('entrance', 'dungeon_major') end,
             ["Great Bay Temple Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
@@ -3188,7 +3204,7 @@ function _mm_logic()
     },
     ["Great Bay Temple Boss Access"] = {
         ["exits"] = {
-            ["Great Bay Temple Boss"] = function () return true end,
+            ["Great Bay Temple Boss"] = function () return not setting('entrance', 'Boss') end,
         },
         ["age_change"] = false,
     },
@@ -3242,6 +3258,7 @@ function _mm_logic()
             ["Clock Tower Roof Pot 2"] = function () return can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle') end,
             ["Clock Tower Roof Pot 3"] = function () return can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle') end,
             ["Clock Tower Roof Pot 4"] = function () return can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle') end,
+            ["Clock Tower Roof Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -3444,11 +3461,12 @@ function _mm_logic()
     },
     ["Ocean Spider House"] = {
         ["exits"] = {
-            ["Great Bay Coast"] = function () return true end,
+            ["Great Bay Coast"] = function () return not setting('entrance', 'sh') end,
             ["Ocean Spider House Front"] = function () return (has_explosives() or trick_keg_explosives()) end,
         },
         ["locations"] = {
             ["Ocean Spider House Wallet"] = function () return soul_citizen() and (has('GS_TOKEN_OCEAN', 30) or has('PLATINUM_TOKEN')) end,
+            ["Ocean Spider House Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -3458,7 +3476,7 @@ function _mm_logic()
             ["ARROWS"] = function () return true end,
         },
         ["exits"] = {
-            ["Ocean Spider House"] = function () return true end,
+            ["Ocean Spider House"] = function () return not setting('entrance', 'sh') end,
             ["Ocean Spider House Back"] = function () return can_hookshot_short() or can_goron_bomb_jump() end,
         },
         ["locations"] = {
@@ -3536,6 +3554,7 @@ function _mm_logic()
             ["ACCESS"] = function () return true end,
             ["WARP_SONGS"] = function () return true end,
             ["SOARING"] = function () return can_play_soaring() end,
+            ["ENTRANCE RANDOMIZER"] = function () return er_enabled() end,
         },
         ["age_change"] = false,
     },
@@ -3553,6 +3572,157 @@ function _mm_logic()
             ["OOT SONG_TP_SHADOW"] = function () return can_play_cross_tp_shadow() end,
             ["OOT SONG_TP_SPIRIT"] = function () return can_play_cross_tp_spirit() end,
             ["OOT SONG_TP_LIGHT"] = function () return can_play_cross_tp_light() end,
+        },
+        ["age_change"] = false,
+    },
+    ["ENTRANCE RANDOMIZER"] = {
+        ["exits"] = {
+            ["Owl Clock Great Bay"] = function () return has('entrance_owl_bay') end,
+            ["OWL Zora Cape"] = function () return has('entrance_owl_cape') end,
+            ["Owl Ikana"] = function () return has('entrance_owl_ikana') end,
+            ["Owl Milk Road"] = function () return has('entrance_owl_milk') end,
+            ["Owl Mountain"] = function () return has('entrance_owl_mtn') end,
+            ["Owl Snowhead"] = function () return has('entrance_owl_snow') end,
+            ["Owl Stone Tower"] = function () return has('entrance_owl_stone') end,
+            ["Owl Swamp"] = function () return has('entrance_owl_swmp') end,
+            ["Woodfall Temple"] = function () return has('entrance_dungeon_woodfall') end,
+            ["Snowhead Temple"] = function () return has('entrance_dungeon_snowhead') end,
+            ["Great Bay Temple"] = function () return has('entrance_dungeon_greatbay') end,
+            ["Stone Tower Temple"] = function () return has('entrance_dungeon_stonetower') end,
+            ["Clock Tower Roof"] = function () return has('entrance_dungeon_moon') end,
+            ["Swamp Spider House"] = function () return has('entrance_dungeon_swamp') end,
+            ["Ocean Spider House"] = function () return has('entrance_dungeon_ocean') end,
+            ["Pirate Fortress Entrance"] = function () return has('entrance_dungeon_pirate') end,
+            ["Secret Shrine"] = function () return has('entrance_dungeon_secret') end,
+            ["Beneath The Well Entrance"] = function () return has('entrance_dungeon_BTW') end,
+            ["Beneath The Well End"] = function () return has('entrance_dungeon_BTW') end,
+            ["Ikana Castle Entrance"] = function () return has('entrance_dungeon_ikana') end,
+            ["Deku Palace Beans Grotto"] = function () return has('entrance_grotto_dp_bean') end,
+            ["Deku Palace Near JP Grotto Line Start"] = function () return has('entrance_grotto_dpjp_baba') end,
+            ["Deku Palace Near JP Grotto Climb Left"] = function () return has('entrance_grotto_dpjp_climb') end,
+            ["Southern Swamp Grotto"] = function () return has('entrance_grotto_ss') end,
+            ["Road to Southern Swamp Grotto"] = function () return has('entrance_grotto_ss_path') end,
+            ["Woods of Mystery Grotto"] = function () return has('entrance_grotto_wom') end,
+            ["Deku Playground"] = function () return has('entrance_grotto_ct') end,
+            ["Termina Field Cow Grotto"] = function () return has('entrance_grotto_tf_cow') end,
+            ["Dodongo Grotto"] = function () return has('entrance_grotto_tf_dodongo') end,
+            ["Canyon Gossip Grotto"] = function () return has('entrance_grotto_tf_egos') end,
+            ["Bio Baba Grotto"] = function () return has('entrance_grotto_tf_fence') end,
+            ["Grass Grotto"] = function () return has('entrance_grotto_tf_grass') end,
+            ["Mountain Gossip Grotto"] = function () return has('entrance_grotto_tf_ngos') end,
+            ["Peahat Grotto"] = function () return has('entrance_grotto_tf_peahat') end,
+            ["Pillar Grotto"] = function () return has('entrance_grotto_tf_pillar') end,
+            ["Scrub Grotto"] = function () return has('entrance_grotto_tf_scrub') end,
+            ["Swamp Gossip Grotto"] = function () return has('entrance_grotto_tf_sgos') end,
+            ["Ocean Gossip Grotto"] = function () return has('entrance_grotto_tf_wgos') end,
+            ["Mountain Village Grotto"] = function () return has('entrance_grotto_mv') end,
+            ["Path to Snowhead Grotto"] = function () return has('entrance_grotto_shpath') end,
+            ["Twin Islands Frozen Grotto"] = function () return has('entrance_grotto_ti_ice') end,
+            ["Twin Islands Ramp Grotto"] = function () return has('entrance_grotto_ti_ramp') end,
+            ["Great Bay Cow Grotto"] = function () return has('entrance_grotto_gb_cow') end,
+            ["Great Bay Grotto"] = function () return has('entrance_grotto_gb_fisher') end,
+            ["Zora Cape Grotto"] = function () return has('entrance_grotto_zc') end,
+            ["Road to Ikana Grotto"] = function () return has('entrance_grotto_ic_path') end,
+            ["Ikana Valley Grotto"] = function () return has('entrance_grotto_ic') end,
+            ["Ikana Graveyard Grotto"] = function () return has('entrance_grotto_igy_circle') end,
+            ["Beneath The Graveyard Night 1"] = function () return has('entrance_grotto_igy_grave1') end,
+            ["Beneath The Graveyard Night 2"] = function () return has('entrance_grotto_igy_grave2') end,
+            ["Beneath The Graveyard Night 3"] = function () return has('entrance_grotto_igy_grave3') end,
+            ["Woodfall Temple Boss"] = function () return has('entrance_boss_odolwa') end,
+            ["Snowhead Temple Boss"] = function () return has('entrance_boss_goht') end,
+            ["Great Bay Temple Boss"] = function () return has('entrance_boss_gyorg') end,
+            ["Stone Tower Temple Boss"] = function () return has('entrance_boss_twinmold') end,
+            ["Deku Palace Cage"] = function () return has('entrance_interior_dp_monkey') end,
+            ["Deku Palace Throne"] = function () return has('entrance_interior_dp_throne') end,
+            ["Swamp Archery"] = function () return has('entrance_interior_ss_shoot') end,
+            ["Swamp Potion Shop"] = function () return has('entrance_interior_ss_shop') end,
+            ["Tourist Information"] = function () return has('entrance_interior_ss_touri') end,
+            ["Woodfall Fairy Fountain"] = function () return has('entrance_interior_wf_fairy') end,
+            ["Bomb Shop"] = function () return has('entrance_interior_ct_bomb') end,
+            ["Chest Game"] = function () return has('entrance_interior_ct_chest') end,
+            ["Curiosity Shop"] = function () return has('entrance_interior_ct_curio') end,
+            ["Clock Town Fairy Fountain"] = function () return has('entrance_interior_ct_fairy') end,
+            ["Honey & Darling Game"] = function () return has('entrance_interior_ct_hd') end,
+            ["Stock Pot Inn"] = function () return has('entrance_interior_ct_inn') end,
+            ["Kafei Hideout"] = function () return has('entrance_interior_ct_kafei') end,
+            ["Kafei Telescope"] = function () return has('entrance_interior_kafei_tele') end,
+            ["Lottery"] = function () return has('entrance_interior_ct_lottery') end,
+            ["Mayor's Office"] = function () return has('entrance_interior_ct_mayor') end,
+            ["Milk Bar"] = function () return has('entrance_interior_ct_milk') end,
+            ["Post Office"] = function () return has('entrance_interior_ct_post') end,
+            ["Town Archery"] = function () return has('entrance_interior_ct_shoot') end,
+            ["Trading Post"] = function () return has('entrance_interior_ct_shop') end,
+            ["Astral Observatory Junction"] = function () return has('entrance_interior_tf_obs') end,
+            ["Astral Observatory Telescope"] = function () return has('entrance_interior_obs_tele') end,
+            ["Cucco Shack"] = function () return has('entrance_interior_rr_cucco') end,
+            ["Doggy Racetrack"] = function () return has('entrance_interior_rr_dog') end,
+            ["Ranch House"] = function () return has('entrance_interior_rr_house') end,
+            ["Stables"] = function () return has('entrance_interior_rr_stable') end,
+            ["Goron Shop"] = function () return has('entrance_interior_gs_shop') end,
+            ["Lone Peak Shrine"] = function () return has('entrance_interior_gv_island') end,
+            ["Goron Shrine"] = function () return has('entrance_interior_gv_shrine') end,
+            ["Goron Graveyard"] = function () return has('entrance_interior_mv_gy') end,
+            ["Blacksmith"] = function () return has('entrance_interior_mv_smith') end,
+            ["Snowhead Fairy Fountain"] = function () return has('entrance_interior_kak_sh_fairy') end,
+            ["Goron Race"] = function () return has('entrance_interior_ti_race') end,
+            ["Fisher's Hut"] = function () return has('entrance_interior_gb_fisher') end,
+            ["Laboratory"] = function () return has('entrance_interior_gb_lab') end,
+            ["Waterfall Rapids"] = function () return has('entrance_interior_zc_beaver') end,
+            ["Great Bay Fairy Fountain"] = function () return has('entrance_interior_zc_fairy') end,
+            ["Zora Hall"] = function () return has('entrance_interior_zh') end,
+            ["Japas' Room"] = function () return has('entrance_interior_zh_japas') end,
+            ["Lulu's Room"] = function () return has('entrance_interior_zh_lulu') end,
+            ["Evan's Room"] = function () return has('entrance_interior_lh_mikau') end,
+            ["Zora Shop"] = function () return has('entrance_interior_zh_shop') end,
+            ["Tijo's Room"] = function () return has('entrance_interior_zh_tijo') end,
+            ["Ikana Fairy Fountain"] = function () return has('entrance_interior_ic_fairy') end,
+            ["Sakon Hideout"] = function () return has('entrance_interior_ic_hide') end,
+            ["Music Box House"] = function () return has('entrance_interior_ic_music') end,
+            ["Ghost Hut"] = function () return has('entrance_interior_ic_poe') end,
+            ["Spring Water Cave"] = function () return has('entrance_interior_ic_spring') end,
+            ["Deku Palace Front"] = function () return has('entrance_overworld_dp') end,
+            ["Swamp Front"] = function () return has('entrance_overworld_ss') end,
+            ["Swamp Back"] = function () return has('entrance_overworld_ss_back') end,
+            ["Road to Southern Swamp"] = function () return has('entrance_overworld_ss_path') end,
+            ["Woodfall"] = function () return has('entrance_overworld_wf') end,
+            ["Woods of Mystery"] = function () return has('entrance_overworld_wom') end,
+            ["Clock Town East"] = function () return has('entrance_overworld_ct_e') end,
+            ["Clock Town North"] = function () return has('entrance_overworld_ct_n') end,
+            ["Laundry Pool"] = function () return has('entrance_overworld_ct_pool') end,
+            ["Clock Town South"] = function () return has('entrance_overworld_ct_s') end,
+            ["Clock Town West"] = function () return has('entrance_overworld_ct_w') end,
+            ["Termina Field"] = function () return has('entrance_overworld_tf') end,
+            ["Behind Large Icicles"] = function () return has('entrance_overworld_tf_n') end,
+            ["Astral Observatory Balcony"] = function () return has('entrance_overworld_tf_obs') end,
+            ["Great Bay Fence"] = function () return has('entrance_overworld_tf_w') end,
+            ["Milk Road"] = function () return has('entrance_overworld_mr') end,
+            ["Near Romani Ranch"] = function () return has('entrance_overworld_mr_back') end,
+            ["Gorman Track Front"] = function () return has('entrance_overworld_mr_gorman') end,
+            ["Romani Ranch"] = function () return has('entrance_overworld_rr') end,
+            ["Goron Village"] = function () return has('entrance_overworld_gv') end,
+            ["Mountain Village"] = function () return has('entrance_overworld_mv') end,
+            ["Mountain Village Path Lower"] = function () return has('entrance_overworld_mv_path') end,
+            ["Mountain Village Path Upper"] = function () return has('entrance_overworld_mv_path_back') end,
+            ["Snowhead Entrance"] = function () return has('entrance_overworld_sh') end,
+            ["Path to Snowhead Front"] = function () return has('entrance_overworld_sh_path') end,
+            ["Path to Snowhead Back"] = function () return has('entrance_overworld_sh_path_back') end,
+            ["Twin Islands"] = function () return has('entrance_overworld_ti') end,
+            ["Great Bay Coast Platform"] = function () return has('entrance_overworld_gb_lab') end,
+            ["GBC Near Cow Grotto"] = function () return has('entrance_overworld_gb_ledge') end,
+            ["Pirate Fortress"] = function () return has('entrance_overworld_pf') end,
+            ["Zora Cape"] = function () return has('entrance_overworld_zc') end,
+            ["Zora Cape Peninsula"] = function () return has('entrance_overworld_zh_back') end,
+            ["Ikana Valley"] = function () return has('entrance_overworld_ic_lwr') end,
+            ["Ikana Canyon"] = function () return has('entrance_overworld_ic_upr') end,
+            ["Road to Ikana Center"] = function () return has('entrance_overworld_ic_path_back') end,
+            ["Road to Ikana Front"] = function () return has('entrance_overworld_ic_path_front') end,
+            ["Road to Ikana Top"] = function () return has('entrance_overworld_ic_path_upr') end,
+            ["Ikana Graveyard"] = function () return has('entrance_overworld_igy') end,
+            ["Stone Tower"] = function () return has('entrance_overworld_st') end,
+        },
+        ["locations"] = {            
+            ["SPAWN A"] = function () return is_adult end,
+            ["SPAWN C"] = function () return is_child()end,
         },
         ["age_change"] = false,
     },
@@ -3600,16 +3770,28 @@ function _mm_logic()
     },
     ["SOARING"] = {
         ["exits"] = {
-            ["Owl Clock Town"] = function () return has('OWL_CLOCK_TOWN') end,
-            ["Owl Milk Road"] = function () return has('OWL_MILK_ROAD') end,
-            ["Owl Swamp"] = function () return has('OWL_SOUTHERN_SWAMP') end,
-            ["Owl Woodfall"] = function () return has('OWL_WOODFALL') end,
-            ["Owl Mountain"] = function () return has('OWL_MOUNTAIN_VILLAGE') end,
-            ["Owl Snowhead"] = function () return has('OWL_SNOWHEAD') end,
-            ["Owl Great Bay"] = function () return has('OWL_GREAT_BAY') end,
-            ["Owl Zora Cape"] = function () return has('OWL_ZORA_CAPE') end,
-            ["Owl Ikana"] = function () return has('OWL_IKANA_CANYON') end,
-            ["Owl Stone Tower"] = function () return has('OWL_STONE_TOWER') end,
+            ["Owl Clock Town"] = function () return has('OWL_CLOCK_TOWN') and not setting('entrance', 'song_mm') end,
+            ["Owl Milk Road"] = function () return has('OWL_MILK_ROAD') and not setting('entrance', 'song_mm') end,
+            ["Owl Swamp"] = function () return has('OWL_SOUTHERN_SWAMP') and not setting('entrance', 'song_mm') end,
+            ["Owl Woodfall"] = function () return has('OWL_WOODFALL') and not setting('entrance', 'song_mm') end,
+            ["Owl Mountain"] = function () return has('OWL_MOUNTAIN_VILLAGE') and not setting('entrance', 'song_mm') end,
+            ["Owl Snowhead"] = function () return has('OWL_SNOWHEAD') and not setting('entrance', 'song_mm') end,
+            ["Owl Great Bay"] = function () return has('OWL_GREAT_BAY') and not setting('entrance', 'song_mm') end,
+            ["Owl Zora Cape"] = function () return has('OWL_ZORA_CAPE') and not setting('entrance', 'song_mm') end,
+            ["Owl Ikana"] = function () return has('OWL_IKANA_CANYON') and not setting('entrance', 'song_mm') end,
+            ["Owl Stone Tower"] = function () return has('OWL_STONE_TOWER') and not setting('entrance', 'song_mm') end,
+        },
+        ["locations"] = {
+            ["Owl Clock Town"] = function () return has('OWL_CLOCK_TOWN') and not setting('entrance', 'song_mm') end,
+            ["Owl Milk Road"] = function () return has('OWL_MILK_ROAD') and not setting('entrance', 'song_mm') end,
+            ["Owl Swamp"] = function () return has('OWL_SOUTHERN_SWAMP') and not setting('entrance', 'song_mm') end,
+            ["Owl Woodfall"] = function () return has('OWL_WOODFALL') and not setting('entrance', 'song_mm') end,
+            ["Owl Mountain"] = function () return has('OWL_MOUNTAIN_VILLAGE') and not setting('entrance', 'song_mm') end,
+            ["Owl Snowhead"] = function () return has('OWL_SNOWHEAD') and not setting('entrance', 'song_mm') end,
+            ["Owl Great Bay"] = function () return has('OWL_GREAT_BAY') and not setting('entrance', 'song_mm') end,
+            ["Owl Zora Cape"] = function () return has('OWL_ZORA_CAPE') and not setting('entrance', 'song_mm') end,
+            ["Owl Ikana"] = function () return has('OWL_IKANA_CANYON') and not setting('entrance', 'song_mm') end,
+            ["Owl Stone Tower"] = function () return has('OWL_STONE_TOWER') and not setting('entrance', 'song_mm') end,
         },
         ["age_change"] = false,
     },
@@ -3618,6 +3800,7 @@ function _mm_logic()
             ["Clock Town Near Clock Tower"] = function () return true end,
         },
         ["locations"] = {
+            ["Clock Town Owl"] = function () return true end,
             ["Clock Town Owl Statue"] = function () return has_sticks() or has_sword() end,
         },
         ["age_change"] = false,
@@ -3788,6 +3971,9 @@ function _mm_logic()
         ["exits"] = {
             ["Clock Town From Clock Tower"] = function () return true end,
         },
+        ["locations"] = {
+            ["Clock Tower Enter"] = function () return true end,
+        },
         ["age_change"] = false,
     },
     ["Clock Town From Clock Tower"] = {
@@ -3812,7 +3998,7 @@ function _mm_logic()
     ["Clock Tower Platform"] = {
         ["exits"] = {
             ["Clock Town Near Clock Tower"] = function () return true end,
-            ["Clock Tower Roof"] = function () return after(NIGHT3_AM_12_00) and cond(setting('erMoon'), can_play_time() or (can_reset_time() and (trick('MM_CLOCK_TOWER_WAIT') or can_play_sun())), true) end,
+            ["Clock Tower Roof"] = function () return (after(NIGHT3_AM_12_00) and cond(setting('erMoon'), can_play_time() or (can_reset_time() and (trick('MM_CLOCK_TOWER_WAIT') or can_play_sun())), true)) and not setting('entrance', 'moon') end,
         },
         ["locations"] = {
             ["Clock Town Platform HP"] = function () return true end,
@@ -3826,13 +4012,13 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Clock Town Near Clock Tower"] = function () return true end,
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
             ["Clock Town South Upper West"] = function () return true end,
             ["Clock Town South Lower West"] = function () return true end,
-            ["Clock Town South Upper East"] = function () return true end,
-            ["Clock Town South Lower East"] = function () return true end,
-            ["Clock Town North"] = function () return true end,
-            ["Laundry Pool"] = function () return true end,
+            ["Clock Town South Upper East"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town South Lower East"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town North"] = function () return not setting('entrance', 'overworld') end,
+            ["Laundry Pool"] = function () return not setting('entrance', 'overworld') end,
         },
         ["locations"] = {
             ["Clock Town South Chest Lower"] = function () return can_hookshot() or (is_adult() and can_hookshot_short()) or short_hook_anywhere() or (has('MASK_DEKU') and event('CLOCK_TOWN_SCRUB')) or trick('MM_SCT_NOTHING') or can_goron_bomb_jump() or FD_everywhere() end,
@@ -3842,33 +4028,34 @@ function _mm_logic()
             ["Clock Town South Wonder Item 1"] = function () return hit_target_range_far() end,
             ["Clock Town South Wonder Item 2"] = function () return hit_target_range_far() end,
             ["Clock Town South Wonder Item 3"] = function () return hit_target_range_far() end,
+            ["Clock Town South Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Clock Town South Upper West"] = {
         ["exits"] = {
-            ["Clock Town West"] = function () return true end,
+            ["Clock Town West"] = function () return not setting('entrance', 'overworld') end,
             ["Clock Town South"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Clock Town South Lower West"] = {
         ["exits"] = {
-            ["Clock Town West"] = function () return true end,
+            ["Clock Town West"] = function () return not setting('entrance', 'overworld') end,
             ["Clock Town South"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Clock Town South Upper East"] = {
         ["exits"] = {
-            ["Clock Town East"] = function () return true end,
+            ["Clock Town East"] = function () return not setting('entrance', 'overworld') end,
             ["Clock Town South"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Clock Town South Lower East"] = {
         ["exits"] = {
-            ["Clock Town East"] = function () return true end,
+            ["Clock Town East"] = function () return not setting('entrance', 'overworld') end,
             ["Clock Town South"] = function () return true end,
         },
         ["age_change"] = false,
@@ -3889,11 +4076,11 @@ function _mm_logic()
             ["RUPEES"] = function () return true end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
-            ["Clock Town South"] = function () return true end,
-            ["Clock Town East"] = function () return true end,
-            ["Clock Town Fairy Fountain"] = function () return true end,
-            ["Deku Playground"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town South"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town East"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
+            ["Deku Playground"] = function () return not setting('entrance', 'grotto') end,
             ["Tingle Town"] = function () return soul_npc(SOUL_NPC_TINGLE) and is_day() and (has_weapon_range() or (has_weapon() and (trick('MM_NCT_TINGLE') or has_hover_boots()))) end,
             ["Clock Town North Postbox"] = function () return true end,
         },
@@ -3931,17 +4118,18 @@ function _mm_logic()
             ["BOMBERS_WEST3"] = function () return event('HIDE_SEEK3') end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
-            ["Clock Town South Upper West"] = function () return true end,
-            ["Clock Town South Lower West"] = function () return true end,
-            ["Bomb Shop"] = function () return rusty_key(RUSTY_BOMBSHOP) end,
-            ["Trading Post"] = function () return rusty_key(RUSTY_TRADING) end,
-            ["Curiosity Shop"] = function () return rusty_key(RUSTY_CURIOSITY) end,
-            ["Post Office"] = function () return rusty_key(RUSTY_POST) end,
+            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town South Upper West"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town South Lower West"] = function () return not setting('entrance', 'overworld') end,
+            ["Bomb Shop"] = function () return rusty_key(RUSTY_BOMBSHOP) and not setting('entrance', 'interior_most')end,
+            ["Trading Post"] = function () return rusty_key(RUSTY_TRADING) and not setting('entrance', 'interior_most') end,
+            ["Curiosity Shop"] = function () return rusty_key(RUSTY_CURIOSITY) and not setting('entrance', 'interior_most')end,
+            ["Post Office"] = function () return rusty_key(RUSTY_POST) and not setting('entrance', 'interior_most') end,
             ["Swordsman School"] = function () return rusty_key(RUSTY_SWORDMAN) end,
-            ["Lottery"] = function () return rusty_key(RUSTY_LOTTERY) and (is_day() or event('PLAY_LOTTERY')) end,
+            ["Lottery"] = function () return rusty_key(RUSTY_LOTTERY) and (is_day() or event('PLAY_LOTTERY')) and not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
+            ["Clock Town West Enter"] = function () return true end,
             ["Clock Town Bank Reward 1"] = function () return soul_banker() and can_use_wallet(1) end,
             ["Clock Town Bank Reward 2"] = function () return soul_banker() and (can_use_wallet(2) or (can_use_wallet(1) and (trick('MM_BANK_ONE_WALLET') or trick('MM_BANK_NO_WALLET')))) end,
             ["Clock Town Bank Reward 3"] = function () return soul_banker() and (can_use_wallet(3) or (can_use_wallet(2) and trick('MM_BANK_ONE_WALLET')) or (can_use_wallet(1) and trick('MM_BANK_NO_WALLET'))) end,
@@ -3957,18 +4145,18 @@ function _mm_logic()
             ["MAIL_LETTER"] = function () return has('LETTER_TO_KAFEI') and before(DAY2_AM_11_30) end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
-            ["Clock Town North"] = function () return true end,
-            ["Clock Town South Upper East"] = function () return true end,
-            ["Clock Town South Lower East"] = function () return true end,
-            ["Mayor's Office"] = function () return rusty_key(RUSTY_MAYOR) end,
-            ["Town Archery"] = function () return rusty_key(RUSTY_TOWNARCHERY) end,
-            ["Chest Game"] = function () return rusty_key(RUSTY_TREASURE) end,
-            ["Honey & Darling Game"] = function () return rusty_key(RUSTY_HONEY) end,
-            ["Stock Pot Inn"] = function () return rusty_key(RUSTY_INN) end,
+            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town North"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town South Upper East"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town South Lower East"] = function () return not setting('entrance', 'overworld') end,
+            ["Mayor's Office"] = function () return rusty_key(RUSTY_MAYOR) and not setting('entrance', 'interior_most') end,
+            ["Town Archery"] = function () return rusty_key(RUSTY_TOWNARCHERY) and not setting('entrance', 'interior_most') end,
+            ["Chest Game"] = function () return rusty_key(RUSTY_TREASURE) and not setting('entrance', 'interior_most') end,
+            ["Honey & Darling Game"] = function () return rusty_key(RUSTY_HONEY) and not setting('entrance', 'interior_most') end,
+            ["Stock Pot Inn"] = function () return rusty_key(RUSTY_INN) and not setting('entrance', 'Interior_extra') end,
             ["Clock Town East SPI Roof"] = function () return has('MASK_DEKU') or short_hook_anywhere() or has_hover_boots() or event('SPI_ROOF_FARORE') end,
-            ["Milk Bar"] = function () return has('MASK_ROMANI') and rusty_key(RUSTY_MILKBAR) end,
-            ["Astral Observatory Passage"] = function () return event('BOMBER_CODE') or event('GUESS_BOMBER') or trick('MM_BOMBER_BACKFLIP') or short_hook_anywhere() end,
+            ["Milk Bar"] = function () return has('MASK_ROMANI') and rusty_key(RUSTY_MILKBAR) and not setting('entrance', 'interior_most') end,
+            ["Astral Observatory Passage"] = function () return (event('BOMBER_CODE') or event('GUESS_BOMBER') or trick('MM_BOMBER_BACKFLIP') or short_hook_anywhere()) and not setting('entrance', 'Interior_extra') end,
             ["Clock Town East Postbox"] = function () return true end,
         },
         ["locations"] = {
@@ -4001,6 +4189,9 @@ function _mm_logic()
         ["events"] = {
             ["GUESS_BOMBER"] = function () return soul_bombers() and trick('MM_BOMBER_GUESS') end,
         },
+        ["locations"] = {
+            ["Clock Town East Enter"] = function () return true end,
+        },
         ["exits"] = {
             ["Clock Town East Main"] = function () return true end,
         },
@@ -4021,8 +4212,8 @@ function _mm_logic()
             ["RUPEES"] = function () return true end,
         },
         ["exits"] = {
-            ["Clock Town East Near Hideout"] = function () return true end,
-            ["Astral Observatory Junction"] = function () return rusty_key(RUSTY_OBSERVATORY) end,
+            ["Clock Town East Near Hideout"] = function () return not setting('entrance', 'Interior_extra') end,
+            ["Astral Observatory Junction"] = function () return rusty_key(RUSTY_OBSERVATORY) and not setting('entrance', 'Interior_extra') end,
         },
         ["locations"] = {
             ["Astral Observatory Passage Chest"] = function () return has_explosives() or trick_keg_explosives() end,
@@ -4039,7 +4230,10 @@ function _mm_logic()
     ["Astral Observatory Junction"] = {
         ["exits"] = {
             ["Astral Observatory Passage"] = function () return true end,
-            ["Astral Observatory"] = function () return rusty_key(RUSTY_OBSERVATORY) end,
+            ["Astral Observatory"] = function () return rusty_key(RUSTY_OBSERVATORY) and not setting('entrance', 'Interior_extra') end,
+        },
+        ["locations"] = {            
+            ["Astral Observatory Junction Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4049,8 +4243,8 @@ function _mm_logic()
             ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
-            ["Clock Town South"] = function () return true end,
-            ["Kafei Hideout"] = function () return rusty_key(RUSTY_HIDEOUT) and (event('MAIL_LETTER') or event('MEET_KAFEI')) end,
+            ["Clock Town South"] = function () return not setting('entrance', 'overworld') end,
+            ["Kafei Hideout"] = function () return rusty_key(RUSTY_HIDEOUT) and ((event('MAIL_LETTER') or event('MEET_KAFEI'))) and not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Clock Town Guru Guru Mask Bremen"] = function () return soul_guru_guru() and (is_night1() or is_night2()) end,
@@ -4067,11 +4261,12 @@ function _mm_logic()
     },
     ["Clock Town Fairy Fountain"] = {
         ["exits"] = {
-            ["Clock Town North"] = function () return true end,
+            ["Clock Town North"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Clock Town Great Fairy"] = function () return has('STRAY_FAIRY_TOWN') or has('TRANSCENDENT_FAIRY') end,
             ["Clock Town Great Fairy Alt"] = function () return (has('STRAY_FAIRY_TOWN') or has('TRANSCENDENT_FAIRY')) and (has('MASK_DEKU') or has_mask_goron() or has_mask_zora()) end,
+            ["Clock Town Great Fairy Enter"] = function () return (has('STRAY_FAIRY_TOWN') or has('TRANSCENDENT_FAIRY')) and (has('MASK_DEKU') or has_mask_goron() or has_mask_zora()) end,
         },
         ["age_change"] = false,
     },
@@ -4080,13 +4275,14 @@ function _mm_logic()
             ["BUY_KEG"] = function () return soul_goron() and can_carry_keg() and has('POWDER_KEG') and can_use_wallet(1) end,
         },
         ["exits"] = {
-            ["Clock Town West"] = function () return true end,
+            ["Clock Town West"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Bomb Shop Item 1"] = function () return soul_bombchu_shopkeeper() and shop_price(0) end,
             ["Bomb Shop Item 2"] = function () return soul_bombchu_shopkeeper() and shop_price(1) end,
             ["Bomb Shop Bomb Bag"] = function () return soul_bombchu_shopkeeper() and shop_price(2) end,
             ["Bomb Shop Bomb Bag 2"] = function () return soul_bombchu_shopkeeper() and event('SAKON_BOMB_BAG') and shop_price(3) end,
+            ["Bomb Shop Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4096,7 +4292,7 @@ function _mm_logic()
             ["FISH"] = function () return true end,
         },
         ["exits"] = {
-            ["Clock Town West"] = function () return true end,
+            ["Clock Town West"] = function () return not setting('entrance', 'interior_most') end,
             ["Trading Post Items"] = function () return soul_fishing_pond_owner() and (before(NIGHT1_PM_09_00) or between(DAY2_AM_06_00, NIGHT2_PM_09_00)) or (soul_rooftop_man() and (between(NIGHT1_PM_09_00, DAY2_AM_06_00) or between(NIGHT2_PM_09_00, NIGHT3_PM_09_00))) end,
         },
         ["locations"] = {
@@ -4127,11 +4323,12 @@ function _mm_logic()
     },
     ["Curiosity Shop"] = {
         ["exits"] = {
-            ["Clock Town West"] = function () return true end,
+            ["Clock Town West"] = function () return not setting('entrance', 'interior_most') end,
             ["Curiosity Shop 2"] = function () return true end,
         },
         ["locations"] = {
             ["Curiosity Shop All-Night Mask"] = function () return (event('SAKON_BOMB_BAG') or event('SAKON_BOOM')) and shop_price(4) and is_night3() end,
+            ["Curiosity Shop Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4146,12 +4343,20 @@ function _mm_logic()
             ["MEET_KAFEI"] = function () return soul_npc(SOUL_NPC_KAFEI) and event('MAIL_LETTER') and between(DAY2_PM_02_00, NIGHT2_PM_10_00) end,
         },
         ["exits"] = {
-            ["Laundry Pool"] = function () return true end,
+            ["Laundry Pool"] = function () return not setting('entrance', 'interior_most') end,
+            ["Kafei Telescope"] = function () return not setting('entrance', 'tele') end,
         },
         ["locations"] = {
             ["Kafei Hideout Pendant of Memories"] = function () return soul_npc(SOUL_NPC_KAFEI) and event('MAIL_LETTER') and between(DAY2_PM_02_00, NIGHT2_PM_10_00) end,
             ["Kafei Hideout Owner Reward 1"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) and event('MEET_KAFEI') end,
             ["Kafei Hideout Owner Reward 2"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) and event('MEET_KAFEI') end,
+            ["Kafei Hideout Enter"] = function () return true end,
+        },
+        ["age_change"] = false,
+    },
+    ["Kafei Telescope"] = {        
+        ["exits"] = {
+            ["Kafei Hideout"] = function () return not setting('entrance', 'tele') end,
         },
         ["age_change"] = false,
     },
@@ -4160,16 +4365,17 @@ function _mm_logic()
             ["POSTMAN_FREEDOM"] = function () return soul_citizen() and has('LETTER_TO_MAMA') and is_night3() end,
         },
         ["exits"] = {
-            ["Clock Town West"] = function () return true end,
+            ["Clock Town West"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Post Office HP"] = function () return soul_citizen() and (has_mask_bunny() or trick('MM_POST_OFFICE_GAME')) and (between(DAY1_PM_03_00, NIGHT1_AM_12_00) or (event('MAIL_LETTER') and between(NIGHT2_PM_06_00, NIGHT2_AM_12_00))) end,
+            ["Post Office Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Swordsman School"] = {
         ["exits"] = {
-            ["Clock Town West"] = function () return true end,
+            ["Clock Town West"] = function () return not setting('entrance', 'interior_mostost') end,
         },
         ["locations"] = {
             ["Swordsman School HP"] = function () return soul_carpet_man() and has_b_sword() and can_use_wallet(1) and before(NIGHT3_PM_11_00) end,
@@ -4178,6 +4384,7 @@ function _mm_logic()
             ["Swordsman School Pot 3"] = function () return has_b_sword() and after(NIGHT3_AM_12_00) end,
             ["Swordsman School Pot 4"] = function () return has_b_sword() and after(NIGHT3_AM_12_00) end,
             ["Swordsman School Pot 5"] = function () return has_b_sword() and after(NIGHT3_AM_12_00) end,
+            ["Swordsman School Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4186,53 +4393,58 @@ function _mm_logic()
             ["PLAY_LOTTERY"] = function () return is_day() and can_use_wallet(1) end,
         },
         ["exits"] = {
-            ["Clock Town West"] = function () return true end,
+            ["Clock Town West"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {        
             ["Clock Town Lottery Day 1"] = function () return can_use_wallet(1) and clock_day1 and clock_night1 end,
             ["Clock Town Lottery Day 2"] = function () return can_use_wallet(1) and clock_day2 and clock_night2 end,
             ["Clock Town Lottery Day 3"] = function () return can_use_wallet(1) and clock_day3 and clock_night3 end,
+            ["Lottery Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Mayor's Office"] = {
         ["exits"] = {
-            ["Clock Town East"] = function () return true end,
+            ["Clock Town East"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Mayor's Office Kafei's Mask"] = function () return soul_npc(SOUL_NPC_AROMA) and rusty_key(RUSTY_KAFEI) end,
             ["Mayor's Office HP"] = function () return soul_npc(SOUL_NPC_MAYOR_DOTOUR) and has('MASK_COUPLE') and rusty_key(RUSTY_OFFICE) end,
+            ["Mayor's Office Enter"] = function () return soul_npc(SOUL_NPC_MAYOR_DOTOUR) and has('MASK_COUPLE') and rusty_key(RUSTY_OFFICE) end,
         },
         ["age_change"] = false,
     },
     ["Milk Bar"] = {
         ["exits"] = {
-            ["Clock Town East"] = function () return true end,
+            ["Clock Town East"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Milk Bar Troupe Leader Mask"] = function () return has('MASK_ROMANI') and soul_npc(SOUL_NPC_TOTO) and soul_gorman() and can_play_minigame() and has('MASK_DEKU') and has_mask_zora() and has_mask_goron() and (between(NIGHT1_PM_10_00, NIGHT1_AM_05_00) or between(NIGHT2_PM_10_00, NIGHT2_AM_05_00)) end,
             ["Milk Bar Madame Aroma Bottle"] = function () return soul_npc(SOUL_NPC_AROMA) and has('MASK_KAFEI') and has('LETTER_TO_MAMA') and (between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
             ["Milk Bar Purchase Milk"] = function () return soul_talon() and has('MASK_ROMANI') and can_use_wallet(1) and (between(NIGHT1_PM_10_00, DAY2_AM_06_00) or between(NIGHT2_PM_10_00, DAY3_AM_06_00) or between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
             ["Milk Bar Purchase Chateau"] = function () return soul_talon() and has('MASK_ROMANI') and can_use_wallet(2) and (between(NIGHT1_PM_10_00, DAY2_AM_06_00) or between(NIGHT2_PM_10_00, DAY3_AM_06_00) or between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
+            ["Milk Bar Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Town Archery"] = {
         ["exits"] = {
-            ["Clock Town East"] = function () return true end,
+            ["Clock Town East"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Town Archery Reward 1"] = function () return soul_shooting_gallery_owner() and has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00)) end,
             ["Town Archery Reward 2"] = function () return soul_shooting_gallery_owner() and has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00)) end,
+            ["Town Archery Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Chest Game"] = {
         ["exits"] = {
-            ["Clock Town East"] = function () return true end,
+            ["Clock Town East"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Chest Game HP"] = function () return soul_bombchu_bowling_lady() and has_mask_goron() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or is_day3()) end,
+            ["Chest Game Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4243,11 +4455,12 @@ function _mm_logic()
             ["HD_REWARD_3"] = function () return soul_honey_darling() and (has_bow() or can_use_deku_bubble()) and is_day3() end,
         },
         ["exits"] = {
-            ["Clock Town East"] = function () return true end,
+            ["Clock Town East"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Honey & Darling Reward Any Day"] = function () return can_use_wallet(1) and (event('HD_REWARD_1') or event('HD_REWARD_2') or event('HD_REWARD_3')) end,
             ["Honey & Darling Reward All Days"] = function () return can_use_wallet(1) and has_bow() and event('HD_REWARD_1') and event('HD_REWARD_2') and event('HD_REWARD_3') end,
+            ["Honey & Darling Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4261,8 +4474,8 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Clock Town East"] = function () return true end,
-            ["Stock Pot Inn Roof"] = function () return true end,
+            ["Clock Town East"] = function () return not setting('entrance', 'Interior_extra') end,
+            ["Stock Pot Inn Roof"] = function () return not setting('entrance', 'Interior_extra') end,
         },
         ["locations"] = {
             ["Stock Pot Inn Guest Room Chest"] = function () return has('ROOM_KEY') end,
@@ -4276,13 +4489,14 @@ function _mm_logic()
             ["Stock Pot Inn Wonder Item 1"] = function () return has_mask_zora() and has_magic() end,
             ["Stock Pot Inn Wonder Item 2"] = function () return has_mask_zora() and has_magic() end,
             ["Stock Pot Inn Wonder Item 3"] = function () return has_mask_zora() and has_magic() end,
+            ["Stock Pot Inn Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Clock Town East SPI Roof"] = {
         ["exits"] = {
             ["Clock Town East"] = function () return true end,
-            ["Stock Pot Inn"] = function () return rusty_key(RUSTY_ROOF) end,
+            ["Stock Pot Inn"] = function () return rusty_key(RUSTY_ROOF) and not setting('entrance', 'Interior_extra') end,
         },
         ["age_change"] = false,
     },
@@ -4302,23 +4516,33 @@ function _mm_logic()
             ["DEKU_REWARD_3"] = function () return soul_npc(SOUL_NPC_PLAYGROUND_SCRUBS) and between(DAY3_AM_06_00, NIGHT3_AM_12_00) end,
         },
         ["exits"] = {
-            ["Clock Town North"] = function () return true end,
+            ["Clock Town North"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Deku Playground Reward Any Day"] = function () return has('MASK_DEKU') and can_use_wallet(1) and (event('DEKU_REWARD_1') or event('DEKU_REWARD_2') or event('DEKU_REWARD_3')) end,
             ["Deku Playground Reward All Days"] = function () return has('MASK_DEKU') and can_use_wallet(1) and event('DEKU_REWARD_1') and event('DEKU_REWARD_2') and event('DEKU_REWARD_3') end,
+            ["Deku Playground Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Astral Observatory"] = {
         ["events"] = {
-            ["SCRUB_TELESCOPE"] = function () return soul_astronomer() and soul_business_scrub() end,
-            ["TEAR_TELESCOPE"] = function () return soul_astronomer() end,
-            ["SCARECROW"] = function () return can_play_scarecrow() end,
+           ["SCARECROW"] = function () return can_play_scarecrow() end,
         },
         ["exits"] = {
             ["Astral Observatory Junction"] = function () return true end,
             ["Astral Observatory Balcony"] = function () return true end,
+            ["Astral Observatory Telescope"] = function () return not setting('entrance', 'tele') end,
+        },
+        ["age_change"] = false,
+    },
+    ["Astral Observatory Telescope"] = {
+        ["events"] = {
+            ["SCRUB_TELESCOPE"] = function () return soul_astronomer() and soul_business_scrub() end,
+            ["TEAR_TELESCOPE"] = function () return soul_astronomer() end,
+        },
+        ["exits"] = {
+           ["Astral Observatory"] = function () return not setting('entrance', 'tele') end,
         },
         ["age_change"] = false,
     },
@@ -4346,27 +4570,27 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Clock Town South"] = function () return true end,
-            ["Clock Town North"] = function () return true end,
-            ["Clock Town East"] = function () return true end,
-            ["Clock Town West"] = function () return true end,
-            ["Road to Southern Swamp"] = function () return true end,
+            ["Clock Town South"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town North"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town East"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town West"] = function () return not setting('entrance', 'overworld') end,
+            ["Road to Southern Swamp"] = function () return not setting('entrance', 'overworld') end,
             ["Behind Large Icicles"] = function () return has_arrows() or (has_hot_water_distance() and has('OWL_CLOCK_TOWN')) or has_hot_water_farore() or has_hot_water_er() or short_hook_anywhere() or can_use_din() end,
-            ["Milk Road"] = function () return true end,
+            ["Milk Road"] = function () return not setting('entrance', 'overworld') end,
             ["Great Bay Fence"] = function () return can_play_epona() or (can_goron_bomb_jump() and has_bombs()) or short_hook_anywhere() end,
-            ["Road to Ikana Front"] = function () return true end,
+            ["Road to Ikana Front"] = function () return not setting('entrance', 'overworld') end,
             ["Astral Observatory Balcony"] = function () return has('MASK_DEKU') or short_hook_anywhere() or (can_goron_bomb_jump() and has_bombs()) end,
-            ["Grass Grotto"] = function () return true end,
-            ["Peahat Grotto"] = function () return true end,
-            ["Bio Baba Grotto"] = function () return can_break_boulders() end,
-            ["Dodongo Grotto"] = function () return true end,
-            ["Pillar Grotto"] = function () return true end,
-            ["Scrub Grotto"] = function () return true end,
-            ["Termina Field Cow Grotto"] = function () return stone_of_agony() and (has_explosives() or trick_keg_explosives() or can_hammer()) end,
-            ["Swamp Gossip Grotto"] = function () return true end,
-            ["Mountain Gossip Grotto"] = function () return true end,
-            ["Ocean Gossip Grotto"] = function () return can_break_boulders() end,
-            ["Canyon Gossip Grotto"] = function () return true end,
+            ["Grass Grotto"] = function () return not setting('entrance', 'grotto') end,
+            ["Peahat Grotto"] = function () return not setting('entrance', 'grotto') end,
+            ["Bio Baba Grotto"] = function () return can_break_boulders() and not setting('entrance', 'grotto') end,
+            ["Dodongo Grotto"] = function () return not setting('entrance', 'grotto') end,
+            ["Pillar Grotto"] = function () return not setting('entrance', 'grotto') end,
+            ["Scrub Grotto"] = function () return not setting('entrance', 'grotto') end,
+            ["Termina Field Cow Grotto"] = function () return (stone_of_agony() and (has_explosives() or trick_keg_explosives() or can_hammer())) and not setting('entrance', 'grotto') end,
+            ["Swamp Gossip Grotto"] = function () return not setting('entrance', 'grotto') end,
+            ["Mountain Gossip Grotto"] = function () return not setting('entrance', 'grotto') end,
+            ["Ocean Gossip Grotto"] = function () return can_break_boulders() and not setting('entrance', 'grotto') end,
+            ["Canyon Gossip Grotto"] = function () return not setting('entrance', 'grotto') end,
             ["Termina Field Butterflies"] = function () return has_sticks() end,
         },
         ["locations"] = {
@@ -4642,7 +4866,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Tall Grass Grotto"] = function () return true end,
@@ -4668,7 +4892,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Peahat Grotto"] = function () return soul_peahat() and (can_fight() or has_arrows() or has('MASK_DEKU')) and is_day() end,
@@ -4693,7 +4917,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Bio Baba Grotto"] = function () return has_mask_zora() or ((underwater_walking() or can_dive_big() or (trick('MM_BIO_BABA_LUCK') and soul_enemy(SOUL_ENEMY_BIO_BABA))) and (has_weapon_range() or (has_bombs() and soul_enemy(SOUL_ENEMY_BIO_BABA)) or (has_bombchu() and trick('MM_BIO_BABA_CHU')))) end,
@@ -4707,10 +4931,11 @@ function _mm_logic()
     },
     ["Dodongo Grotto"] = {
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Dodongo Grotto"] = function () return soul_dodongo() and (has_weapon() or has_explosives() or has_mask_goron() or has_arrows()) end,
+            ["Termina Field Dodongo Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4727,7 +4952,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Pillar Grotto"] = function () return true end,
@@ -4754,7 +4979,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Scrub"] = function () return event('SCRUB_TELESCOPE') and can_use_wallet(2) end,
@@ -4772,7 +4997,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Cow Front"] = function () return can_play_epona() and soul_cow() end,
@@ -4864,10 +5089,11 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Gossip Stones HP"] = function () return event('SWAMP_SONG') and event('MOUNTAIN_SONG') and event('OCEAN_SONG') and event('CANYON_SONG') end,
+            ["Termina Field Gossip Swamp Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4878,10 +5104,11 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Gossip Stones HP"] = function () return event('SWAMP_SONG') and event('MOUNTAIN_SONG') and event('OCEAN_SONG') and event('CANYON_SONG') end,
+            ["Termina Field Gossip Mountain Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -4897,7 +5124,7 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Gossip Stones HP"] = function () return event('SWAMP_SONG') and event('MOUNTAIN_SONG') and event('OCEAN_SONG') and event('CANYON_SONG') end,
@@ -4924,7 +5151,7 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Termina Field Gossip Stones HP"] = function () return event('SWAMP_SONG') and event('MOUNTAIN_SONG') and event('OCEAN_SONG') and event('CANYON_SONG') end,
@@ -4951,10 +5178,10 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Swamp Front"] = function () return true end,
-            ["Termina Field"] = function () return true end,
-            ["Swamp Archery"] = function () return rusty_key(RUSTY_SWAMPARCHERY) end,
-            ["Road to Southern Swamp Grotto"] = function () return true end,
+            ["Swamp Front"] = function () return not setting('entrance', 'overworld') end,
+            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Swamp Archery"] = function () return rusty_key(RUSTY_SWAMPARCHERY) and not setting('entrance', 'interior_most') end,
+            ["Road to Southern Swamp Grotto"] = function () return not setting('entrance', 'grotto') end,
             ["Tingle Swamp"] = function () return soul_npc(SOUL_NPC_TINGLE) and has_weapon_range() end,
         },
         ["locations"] = {
@@ -4989,11 +5216,12 @@ function _mm_logic()
     },
     ["Swamp Archery"] = {
         ["exits"] = {
-            ["Road to Southern Swamp"] = function () return true end,
+            ["Road to Southern Swamp"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Swamp Archery Reward 1"] = function () return soul_bazaar_shopkeeper() and has_bow() and can_use_wallet(1) end,
             ["Swamp Archery Reward 2"] = function () return soul_bazaar_shopkeeper() and has_bow() and can_use_wallet(1) end,
+            ["Swamp Archery Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5009,7 +5237,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Road to Southern Swamp"] = function () return true end,
+            ["Road to Southern Swamp"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Road to Southern Swamp Grotto"] = function () return true end,
@@ -5046,11 +5274,11 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Road to Southern Swamp"] = function () return true end,
-            ["Tourist Information"] = function () return rusty_key(RUSTY_TOURIST) end,
+            ["Road to Southern Swamp"] = function () return not setting('entrance', 'overworld') end,
+            ["Tourist Information"] = function () return rusty_key(RUSTY_TOURIST) and not setting('entrance', 'Interior_extra')end,
             ["Swamp Back"] = function () return (event('BOAT_RIDE') or has_arrows() or can_hookshot_short() or can_use_din()) and (has('MASK_DEKU') or has_hover_boots() or can_use_nayru() or is_adult()) or is_swamp_cleared() or has_mask_zora() end,
-            ["Swamp Potion Shop"] = function () return rusty_key(RUSTY_POTION) end,
-            ["Woods of Mystery"] = function () return true end,
+            ["Swamp Potion Shop"] = function () return rusty_key(RUSTY_POTION) and not setting('entrance', 'interior_most')end,
+            ["Woods of Mystery"] = function () return not setting('entrance', 'overworld') end,
             ["Owl Swamp"] = function () return true end,
         },
         ["locations"] = {
@@ -5105,19 +5333,20 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Swamp Front"] = function () return (event('BOAT_RIDE') or has_arrows()) and (has('MASK_DEKU') or has_hover_boots() or can_use_nayru() or is_tall() or has_mask_goron()) or (has_hover_boots() and (can_hookshot_short() or can_use_din())) or (is_adult() and (can_use_din() or (can_use_nayru() and can_hookshot_short()))) or (has_mask_zora() and can_use_nayru()) or is_swamp_cleared() end,
-            ["Deku Palace Front"] = function () return true end,
+            ["Deku Palace Front"] = function () return not setting('entrance', 'overworld') end,
             ["Near Swamp Spider House"] = function () return has('MASK_DEKU') or is_tall() or is_swamp_cleared() or short_hook_anywhere() or can_use_nayru() or has_hover_boots() end,
             ["Swamp Canopy Back"] = function () return is_swamp_cleared() or short_hook_anywhere() end,
             ["Swamp Canopy Front"] = function () return short_hook_anywhere() end,
         },
         ["locations"] = {
             ["Southern Swamp Song of Soaring"] = function () return has_mask_zora() and has_explosives() and trick('MM_SOARING_ZORA') end,
+            ["Southern Swamp Back Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Near Swamp Spider House"] = {
         ["exits"] = {
-            ["Swamp Spider House"] = function () return has_sticks() or has_arrows() end,
+            ["Swamp Spider House"] = function () return (has_sticks() or has_arrows()) and not setting('entrance', 'sh') end,
             ["Swamp Back"] = function () return has('MASK_DEKU') or is_tall() or is_swamp_cleared() or short_hook_anywhere() or can_use_nayru() or has_hover_boots() end,
             ["Near Swamp Grotto"] = function () return has('MASK_DEKU') or is_tall() or is_swamp_cleared() or short_hook_anywhere() or has_hover_boots() end,
             ["Swamp Canopy Front"] = function () return short_hook_anywhere() end,
@@ -5131,7 +5360,7 @@ function _mm_logic()
         ["exits"] = {
             ["Swamp Front"] = function () return (has_arrows() or can_hookshot() or event('BOAT_RIDE')) and (has_mask_goron() or is_tall() or can_use_nayru()) or (is_adult() and can_use_din()) end,
             ["Near Swamp Spider House"] = function () return has('MASK_DEKU') or is_tall() or is_swamp_cleared() or can_hookshot_short() or can_use_nayru() or has_hover_boots() end,
-            ["Southern Swamp Grotto"] = function () return true end,
+            ["Southern Swamp Grotto"] = function () return not setting('entrance', 'grotto') end,
             ["Swamp Canopy Front"] = function () return short_hook_anywhere() end,
         },
         ["age_change"] = false,
@@ -5149,7 +5378,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Near Swamp Grotto"] = function () return true end,
+            ["Near Swamp Grotto"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Southern Swamp Grotto"] = function () return true end,
@@ -5175,13 +5404,14 @@ function _mm_logic()
             ["BOAT_RIDE"] = function () return (soul_npc(SOUL_NPC_TOURIST_CENTER) and event('PICTURE_SWAMP') or (event('KOUME') and (not setting('erIndoorsExtra') or can_use_wallet(1)))) and is_swamp_poisoned() end,
         },
         ["exits"] = {
-            ["Swamp Front"] = function () return true end,
+            ["Swamp Front"] = function () return not setting('entrance', 'Interior_extra') end,
             ["Swamp Back"] = function () return event('BOAT_RIDE') end,
         },
         ["locations"] = {
             ["Tourist Information Pictobox"] = function () return event('KOUME') and is_swamp_poisoned() end,
             ["Tourist Information Boat Archery"] = function () return event('KOUME') and is_swamp_cleared() end,
             ["Tourist Information Tingle Picture"] = function () return soul_npc(SOUL_NPC_TOURIST_CENTER) and (event('PICTURE_TINGLE') or event('PICTURE_DEKU_KING')) and is_swamp_poisoned() end,
+            ["Tourist Information Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5193,7 +5423,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Woods of Mystery Lost"] = function () return true end,
-            ["Near Woods of Mystery Grotto"] = function () return second_day() end,
+            ["Near Woods of Mystery Grotto"] = function () return second_day() and not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Swamp Potion Shop Kotake"] = function () return soul_npc(SOUL_NPC_KOUME_KOTAKE) end,
@@ -5226,7 +5456,7 @@ function _mm_logic()
         ["exits"] = {
             ["Woods of Mystery"] = function () return second_day() end,
             ["Woods of Mystery Lost"] = function () return true end,
-            ["Woods of Mystery Grotto"] = function () return true end,
+            ["Woods of Mystery Grotto"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Woods of Mystery Grass SE"] = function () return true end,
@@ -5235,7 +5465,7 @@ function _mm_logic()
     },
     ["Woods of Mystery Lost"] = {
         ["exits"] = {
-            ["Swamp Front"] = function () return true end,
+            ["Swamp Front"] = function () return not setting('entrance', 'overworld') end,
         },
         ["age_change"] = false,
     },
@@ -5252,7 +5482,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Near Woods of Mystery Grotto"] = function () return true end,
+            ["Near Woods of Mystery Grotto"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Woods of Mystery Grotto"] = function () return true end,
@@ -5275,7 +5505,7 @@ function _mm_logic()
     },
     ["Swamp Potion Shop"] = {
         ["exits"] = {
-            ["Swamp Front"] = function () return true end,
+            ["Swamp Front"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Swamp Potion Shop Item 1"] = function () return soul_npc(SOUL_NPC_KOUME_KOTAKE) and has_mushroom() and shop_price(13) and (first_day() or event('MEET_KOUME')) end,
@@ -5290,21 +5520,24 @@ function _mm_logic()
             ["NUTS"] = function () return soul_deku_baba() and (has('MASK_DEKU') or short_hook_anywhere() or ((is_swamp_cleared() or has_hover_boots()) and (can_fight() or has_arrows() or has_explosives() or can_hookshot_short() or can_hammer()))) end,
         },
         ["exits"] = {
-            ["Swamp Back"] = function () return true end,
+            ["Swamp Back"] = function () return not setting('entrance', 'overworld') end,
             ["Deku Palace Cliff"] = function () return has('MASK_DEKU') or short_hook_anywhere() end,
             ["Near Deku Shrine"] = function () return is_swamp_cleared() or (can_use_nayru() and (has_mask_zora() or (is_adult() and (has_arrows() or can_hookshot_short() or can_use_din())))) or (has_hover_boots() and (has_arrows() or can_hookshot_short() or can_use_din())) end,
             ["Deku Palace Main"] = function () return has('MASK_DEKU') or has('MASK_SKULL') or trick('MM_PALACE_GUARD_SKIP') or short_hook_anywhere() end,
             ["Deku Palace Upper"] = function () return (is_swamp_cleared() or has('MASK_DEKU') or can_use_nayru()) and can_use_beans() end,
         },
+         ["locations"] = {
+            ["Deku Palace Front Enter"] = function () return true end,
+        },
         ["age_change"] = false,
     },
     ["Deku Palace Main"] = {
         ["exits"] = {
-            ["Deku Palace Near JP Grotto Climb Left"] = function () return true end,
-            ["Deku Palace Near JP Grotto Climb Right"] = function () return true end,
+            ["Deku Palace Near JP Grotto Climb Left"] = function () return not setting('entrance', 'grotto') end,
+            ["Deku Palace Near JP Grotto Climb Right"] = function () return not setting('entrance', 'grotto') end,
             ["Deku Palace Corner Ledge Bottom"] = function () return true end,
-            ["Deku Palace Near JP Grotto Line Start"] = function () return is_child() or has('MASK_DEKU') or trick('MM_PALACE_BEAN_SKIP') end,
-            ["Deku Palace Throne"] = function () return true end,
+            ["Deku Palace Near JP Grotto Line Start"] = function () return (is_child() or has('MASK_DEKU') or trick('MM_PALACE_BEAN_SKIP')) and not setting('entrance', 'grotto') end,
+            ["Deku Palace Throne"] = function () return not setting('entrance', 'interior_most') end,
             ["Deku Palace Front"] = function () return true end,
             ["Deku Palace Near US Beans Grotto"] = function () return is_child() or has('MASK_DEKU') or trick('MM_PALACE_BEAN_SKIP') end,
             ["Deku Palace Upper"] = function () return trick('MM_PALACE_BEAN_SKIP') or short_hook_anywhere() end,
@@ -5362,8 +5595,11 @@ function _mm_logic()
             ["RETURN_PRINCESS"] = function () return is_swamp_cleared() and has_deku_princess() and has('MASK_DEKU') and soul_npc(SOUL_NPC_DEKU_KING) end,
         },
         ["exits"] = {
-            ["Deku Palace Main"] = function () return true end,
+            ["Deku Palace Main"] = function () return not setting('entrance', 'interior_most') end,
             ["Deku Palace Cage"] = function () return event('RETURN_PRINCESS') and short_hook_anywhere() end,
+        },
+        ["locations"] = {
+            ["Deku Palace Throne Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5371,17 +5607,18 @@ function _mm_logic()
         ["exits"] = {
             ["Deku Palace Main"] = function () return true end,
             ["Deku Palace Upper"] = function () return has('MASK_DEKU') or short_hook_anywhere() end,
-            ["Deku Palace Cage"] = function () return true end,
+            ["Deku Palace Cage"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["age_change"] = false,
     },
     ["Deku Palace Cage"] = {
         ["exits"] = {
-            ["Deku Palace Near Cage"] = function () return true end,
+            ["Deku Palace Near Cage"] = function () return not setting('entrance', 'interior_most') end,
             ["Deku Palace Throne"] = function () return short_hook_anywhere() and trick('MM_ESCAPE_CAGE') and has('MASK_DEKU') end,
         },
         ["locations"] = {
             ["Deku Palace Sonata of Awakening"] = function () return is_swamp_poisoned() and has('MASK_DEKU') and has_ocarina() end,
+            ["Deku Palace Cage Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5394,7 +5631,7 @@ function _mm_logic()
             ["WATER"] = function () return true end,
         },
         ["exits"] = {
-            ["Deku Palace Near Beans Grotto"] = function () return true end,
+            ["Deku Palace Near Beans Grotto"] = function () return not setting('entrance', 'grotto') end,
             ["Deku Palace Beans Grotto Butterflies"] = function () return has_sticks() end,
         },
         ["locations"] = {
@@ -5445,7 +5682,7 @@ function _mm_logic()
         ["exits"] = {
             ["Swamp Front"] = function () return (has('MASK_DEKU') or has_mask_goron() or is_tall() or has_hover_boots() or can_use_nayru()) and (can_hookshot() or has_arrows() or event('BOAT_RIDE')) end,
             ["Swamp Back"] = function () return has('MASK_DEKU') or is_tall() or is_swamp_cleared() or can_use_nayru() or has_hover_boots() end,
-            ["Woodfall"] = function () return true end,
+            ["Woodfall"] = function () return not setting('entrance', 'overworld') end,
             ["Swamp Canopy Front"] = function () return short_hook_anywhere() end,
         },
         ["locations"] = {
@@ -5458,7 +5695,7 @@ function _mm_logic()
             ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
-            ["Swamp Canopy Back"] = function () return true end,
+            ["Swamp Canopy Back"] = function () return not setting('entrance', 'overworld') end,
             ["Woodfall Shrine"] = function () return has('MASK_DEKU') and (soul_deku_scrub() or is_swamp_cleared()) or hookshot_anywhere() end,
             ["Woodfall Temple Princess Jail"] = function () return is_swamp_cleared() and woodfall_raised() end,
             ["Woodfall Near Fairy Fountain"] = function () return (is_swamp_cleared() or can_use_nayru()) and short_hook_anywhere() end,
@@ -5479,7 +5716,7 @@ function _mm_logic()
     },
     ["Woodfall Front of Temple"] = {
         ["exits"] = {
-            ["Woodfall Temple"] = function () return woodfall_raised() or setting('DungeonWF', 'open') end,
+            ["Woodfall Temple"] = function () return (woodfall_raised() or setting('DungeonWF', 'open')) and not setting('entrance', 'dungeon_major') end,
             ["Woodfall Shrine"] = function () return cond(setting('DungeonWF', 'open')  or setting('clearStateDungeonsMm', 'WF') or setting('clearStateDungeonsMm', 'both'), has('MASK_DEKU') or hookshot_anywhere(), true) end,
             ["Woodfall"] = function () return is_swamp_cleared() or can_use_nayru() end,
         },
@@ -5504,7 +5741,7 @@ function _mm_logic()
         ["exits"] = {
             ["Woodfall"] = function () return has('MASK_DEKU') and (soul_deku_scrub() or is_swamp_cleared()) or is_swamp_cleared() or hookshot_anywhere() or can_use_nayru() end,
             ["Woodfall Shrine"] = function () return has('MASK_DEKU') and (soul_deku_scrub() or is_swamp_cleared()) or hookshot_anywhere() end,
-            ["Woodfall Fairy Fountain"] = function () return true end,
+            ["Woodfall Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Woodfall Near Owl Chest"] = function () return can_hookshot() or (is_adult() and can_hookshot_short() and (is_swamp_cleared() or can_use_nayru())) end,
@@ -5513,10 +5750,11 @@ function _mm_logic()
     },
     ["Woodfall Fairy Fountain"] = {
         ["exits"] = {
-            ["Woodfall Near Fairy Fountain"] = function () return true end,
+            ["Woodfall Near Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Woodfall Great Fairy"] = function () return has('STRAY_FAIRY_WF', var(STRAY_FAIRY_COUNT)) or has('TRANSCENDENT_FAIRY') end,
+            ["Woodfall Great Fairy Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5531,6 +5769,9 @@ function _mm_logic()
         ["exits"] = {
             ["Near Deku Shrine"] = function () return true end,
             ["Deku Shrine Main"] = function () return soul_npc(SOUL_NPC_BUTLER_DEKU) and event('RETURN_PRINCESS') end,
+        },
+        ["locations"] = {
+            ["Deku Shrine Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5583,8 +5824,11 @@ function _mm_logic()
     ["Behind Large Icicles"] = {
         ["exits"] = {
             ["Termina Field"] = function () return has_arrows() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE')) or has_hot_water_farore() or has_hot_water_mtn() or has_hot_water_er() or short_hook_anywhere() or can_use_din() end,
-            ["Mountain Village Path Lower"] = function () return true end,
+            ["Mountain Village Path Lower"] = function () return not setting('entrance', 'overworld') end,
         },
+        ["locations"] = {
+            ["Behind Icicles"] = function () return true end,
+            },
         ["age_change"] = false,
     },
     ["Mountain Village Path Lower"] = {
@@ -5594,7 +5838,7 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Behind Large Icicles"] = function () return true end,
+            ["Behind Large Icicles"] = function () return not setting('entrance', 'overworld') end,
             ["Mountain Village Path Upper"] = function () return can_break_snowballs() or is_spring() or short_hook_anywhere() end,
         },
         ["locations"] = {
@@ -5624,7 +5868,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Mountain Village Path Lower"] = function () return true end,
-            ["Mountain Village"] = function () return true end,
+            ["Mountain Village"] = function () return not setting('entrance', 'overworld') end,
         },
         ["locations"] = {
             ["Path to Mountain Village Big Snowball Middle 1"] = function () return is_winter() and can_break_snowballs() end,
@@ -5652,11 +5896,11 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Mountain Village Path Upper"] = function () return true end,
-            ["Twin Islands"] = function () return true end,
+            ["Mountain Village Path Upper"] = function () return not setting('entrance', 'overworld') end,
+            ["Twin Islands"] = function () return not setting('entrance', 'overworld') end,
             ["Mountain Village Cliff"] = function () return is_winter() and (can_use_lens_strict() or trick('MM_DARMANI_WALL')) or event('GORON_GRAVE_FARORE') or (is_spring() and (has_mask_goron() or has_mask_zora() or can_hookshot() or short_hook_anywhere())) end,
-            ["Path to Snowhead Front"] = function () return true end,
-            ["Blacksmith"] = function () return rusty_key(RUSTY_BLACKSMITH) end,
+            ["Path to Snowhead Front"] = function () return not setting('entrance', 'overworld') end,
+            ["Blacksmith"] = function () return rusty_key(RUSTY_BLACKSMITH) and not setting('entrance', 'interior_most') end,
             ["Near Village Grotto"] = function () return is_spring() and (has_mask_goron() or short_hook_anywhere()) end,
             ["Owl Mountain"] = function () return true end,
             ["Mountain Village Elder"] = function () return true end,
@@ -5769,7 +6013,7 @@ function _mm_logic()
     },
     ["Near Village Grotto"] = {
         ["exits"] = {
-            ["Mountain Village Grotto"] = function () return is_spring() end,
+            ["Mountain Village Grotto"] = function () return is_spring() and not setting('entrance', 'grotto') end,
             ["Mountain Village"] = function () return true end,
             ["Mountain Village Cliff"] = function () return is_spring() and (has_mask_goron() or short_hook_anywhere()) end,
         },
@@ -5788,7 +6032,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Near Village Grotto"] = function () return true end,
+            ["Near Village Grotto"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Mountain Village Tunnel Grotto"] = function () return true end,
@@ -5815,7 +6059,7 @@ function _mm_logic()
             ["GOLD_DUST_USED"] = function () return soul_npc(SOUL_NPC_BLACKSMITHS) and can_use_wallet(2) and has('BOTTLED_GOLD_DUST') and event('BLACKSMITH_ENABLED') end,
         },
         ["exits"] = {
-            ["Mountain Village"] = function () return true end,
+            ["Mountain Village"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Blacksmith Razor Blade"] = function () return soul_npc(SOUL_NPC_BLACKSMITHS) and can_use_wallet(2) and event('BLACKSMITH_ENABLED') end,
@@ -5824,6 +6068,7 @@ function _mm_logic()
             ["Blacksmith Potted Plant 1 Grass"] = function () return is_night() end,
             ["Blacksmith Potted Plant 2 Pot"] = function () return is_night() end,
             ["Blacksmith Potted Plant 2 Grass"] = function () return is_night() end,
+            ["Blacksmith Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5834,11 +6079,11 @@ function _mm_logic()
             ["RUPEES"] = function () return can_use_light_arrows() and (soul_tektite() or soul_wolfos() or (can_break_snowballs() and soul_enemy(SOUL_ENEMY_SNAPPER))) or is_spring() end,
         },
         ["exits"] = {
-            ["Mountain Village"] = function () return true end,
-            ["Goron Village"] = function () return true end,
+            ["Mountain Village"] = function () return not setting('entrance', 'overworld') end,
+            ["Goron Village"] = function () return not setting('entrance', 'overworld') end,
             ["Near Goron Race"] = function () return has_mask_goron() or scarecrow_hookshot() or short_hook_anywhere() end,
             ["Near Ramp Grotto"] = function () return has_mask_goron() or short_hook_anywhere() end,
-            ["Twin Islands Frozen Grotto"] = function () return is_spring() or (is_winter() and (can_use_fire_short_range() or has_hot_water_mtn() or has_hot_water_er() or has_hot_water_farore() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE')))) end,
+            ["Twin Islands Frozen Grotto"] = function () return (is_spring() or (is_winter() and (can_use_fire_short_range() or has_hot_water_mtn() or has_hot_water_er() or has_hot_water_farore() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE'))))) and not setting('entrance', 'grotto') end,
             ["Tingle Mountain"] = function () return soul_npc(SOUL_NPC_TINGLE) and has_weapon_range() end,
         },
         ["locations"] = {
@@ -5898,7 +6143,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Near Ramp Grotto"] = function () return true end,
+            ["Near Ramp Grotto"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Twin Islands Ramp Grotto Chest"] = function () return true end,
@@ -5928,11 +6173,12 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Twin Islands"] = function () return true end,
+            ["Twin Islands"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Twin Islands Frozen Grotto Chest"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
             ["Twin Islands Frozen Grotto Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
+            ["Twin Islands Frozen Grotto Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -5942,7 +6188,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Twin Islands"] = function () return true end,
-            ["Goron Race"] = function () return event('TRIAL_BOULDER') or (short_hook_anywhere() and trick('MM_HARD_HOOKSHOT')) end,
+            ["Goron Race"] = function () return (event('TRIAL_BOULDER') or (short_hook_anywhere() and trick('MM_HARD_HOOKSHOT'))) and not setting('entrance', 'interior_most') end,
             ["Near Ramp Grotto"] = function () return true end,
         },
         ["age_change"] = false,
@@ -5953,7 +6199,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Twin Islands"] = function () return true end,
-            ["Twin Islands Ramp Grotto"] = function () return stone_of_agony() and (has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none')) or can_hammer()) end,
+            ["Twin Islands Ramp Grotto"] = function () return (stone_of_agony() and (has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none')) or can_hammer())) and not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Twin Islands Small Snowball Ramp 1"] = function () return is_winter() end,
@@ -5974,9 +6220,9 @@ function _mm_logic()
             ["RUPEES"] = function () return can_break_snowballs() or (can_use_light_arrows() and soul_tektite()) end,
         },
         ["exits"] = {
-            ["Twin Islands"] = function () return true end,
+            ["Twin Islands"] = function () return not setting('entrance', 'overworld') end,
             ["Front of Lone Peak Shrine"] = function () return is_winter() end,
-            ["Goron Shrine"] = function () return soul_goron() and first_day() or has_mask_goron() or can_hammer() end,
+            ["Goron Shrine"] = function () return (soul_goron() and first_day() or has_mask_goron() or can_hammer()) and not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Goron Village HP"] = function () return has('DEED_SWAMP') and has('MASK_DEKU') or short_hook_anywhere() end,
@@ -6011,7 +6257,7 @@ function _mm_logic()
     ["Front of Lone Peak Shrine"] = {
         ["exits"] = {
             ["Goron Village"] = function () return is_winter() and can_use_lens() end,
-            ["Lone Peak Shrine"] = function () return true end,
+            ["Lone Peak Shrine"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["age_change"] = false,
     },
@@ -6022,7 +6268,7 @@ function _mm_logic()
             ["BUGS"] = function () return true end,
         },
         ["exits"] = {
-            ["Front of Lone Peak Shrine"] = function () return true end,
+            ["Front of Lone Peak Shrine"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Lone Peak Shrine Lens Chest"] = function () return true end,
@@ -6063,7 +6309,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Mountain Village"] = function () return true end,
-            ["Goron Graveyard"] = function () return true end,
+            ["Goron Graveyard"] = function () return not setting('entrance', 'interior_most') end,
             ["Near Village Grotto"] = function () return is_spring() end,
         },
         ["locations"] = {
@@ -6084,11 +6330,12 @@ function _mm_logic()
     },
     ["Goron Graveyard"] = {
         ["exits"] = {
-            ["Near Goron Graveyard"] = function () return true end,
+            ["Near Goron Graveyard"] = function () return not setting('entrance', 'interior_most') end,
             ["Goron Graveyard Water"] = function () return has_mask_goron() or can_lift_gold() end,
         },
         ["locations"] = {
             ["Goron Graveyard Mask"] = function () return can_use_lens_strict() and can_play_healing() end,
+            ["Goron Graveyard Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6110,8 +6357,8 @@ function _mm_logic()
             ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
-            ["Goron Village"] = function () return true end,
-            ["Goron Shop"] = function () return true end,
+            ["Goron Village"] = function () return not setting('entrance', 'interior_most') end,
+            ["Goron Shop"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Goron Baby"] = function () return is_winter() and soul_goron_child() and has_mask_goron() and can_lullaby_half() end,
@@ -6132,24 +6379,25 @@ function _mm_logic()
     },
     ["Goron Shrine From Shop"] = {
         ["exits"] = {
-            ["Goron Shrine"] = function () return true end,
+            ["Goron Shrine"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["age_change"] = false,
     },
     ["Goron Shop"] = {
         ["exits"] = {
-            ["Goron Shrine From Shop"] = function () return true end,
+            ["Goron Shrine From Shop"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Goron Shop Item 1"] = function () return soul_goron_shopkeeper() and shop_price(16) end,
             ["Goron Shop Item 2"] = function () return soul_goron_shopkeeper() and shop_price(17) end,
             ["Goron Shop Item 3"] = function () return soul_goron_shopkeeper() and shop_price(18) end,
+            ["Goron Shop Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Path to Snowhead Front"] = {
         ["exits"] = {
-            ["Mountain Village"] = function () return true end,
+            ["Mountain Village"] = function () return not setting('entrance', 'overworld') end,
             ["Path to Snowhead Middle"] = function () return goron_fast_roll() or hookshot_anywhere() or (has_hover_boots() and trick('MM_PATH_SNOWHEAD_HOVERS')) end,
         },
         ["locations"] = {
@@ -6177,8 +6425,8 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Path to Snowhead Middle"] = function () return goron_fast_roll() or hookshot_anywhere() or (has_hover_boots() and trick('MM_PATH_SNOWHEAD_HOVERS')) end,
-            ["Snowhead Entrance"] = function () return true end,
-            ["Path to Snowhead Grotto"] = function () return stone_of_agony() and (has_explosives() or trick_keg_explosives() or can_hammer()) end,
+            ["Snowhead Entrance"] = function () return not setting('entrance', 'overworld') end,
+            ["Path to Snowhead Grotto"] = function () return (stone_of_agony() and (has_explosives() or trick_keg_explosives() or can_hammer())) and not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Path to Snowhead Big Snowball Back 1"] = function () return is_winter() and can_break_snowballs() end,
@@ -6205,7 +6453,7 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Path to Snowhead Back"] = function () return true end,
+            ["Path to Snowhead Back"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Path to Snowhead Grotto"] = function () return true end,
@@ -6235,7 +6483,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Path to Snowhead Back"] = function () return true end,
+            ["Path to Snowhead Back"] = function () return not setting('entrance', 'overworld') end,
             ["Snowhead"] = function () return (blizzard_stopped() or (has_iron_boots() and trick('MM_LULLABY_SKIP_IRONS'))) and has_mask_goron() end,
             ["Snowhead Near Fairy Fountain"] = function () return (blizzard_stopped() or (has_iron_boots() and trick('MM_LULLABY_SKIP_IRONS'))) and has_mask_goron() end,
             ["Owl Snowhead"] = function () return true end,
@@ -6245,7 +6493,7 @@ function _mm_logic()
     ["Snowhead"] = {
         ["exits"] = {
             ["Snowhead Entrance"] = function () return can_lullaby() and has_mask_goron() or blizzard_stopped() or has_iron_boots() or setting('DungeonSH', 'open') end,
-            ["Snowhead Temple"] = function () return true end,
+            ["Snowhead Temple"] = function () return not setting('entrance', 'dungeon_major') end,
             ["Snowhead Near Fairy Fountain"] = function () return blizzard_stopped() or has_iron_boots() end,
         },
         ["age_change"] = false,
@@ -6258,9 +6506,10 @@ function _mm_logic()
         ["exits"] = {
             ["Snowhead Entrance"] = function () return blizzard_stopped() or has_iron_boots() end,
             ["Snowhead"] = function () return blizzard_stopped() or has_iron_boots() end,
-            ["Snowhead Fairy Fountain"] = function () return true end,
+            ["Snowhead Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
+            ["Snowhead Back"] = function () return (blizzard_stopped() or has_iron_boots()) end,
             ["Snowhead Big Snowball 1"] = function () return (blizzard_stopped() or has_iron_boots()) and is_winter() and can_break_snowballs() end,
             ["Snowhead Big Snowball 2"] = function () return (blizzard_stopped() or has_iron_boots()) and is_winter() and can_break_snowballs() end,
             ["Snowhead Big Snowball 3"] = function () return (blizzard_stopped() or has_iron_boots()) and is_winter() and can_break_snowballs() end,
@@ -6277,10 +6526,11 @@ function _mm_logic()
     },
     ["Snowhead Fairy Fountain"] = {
         ["exits"] = {
-            ["Snowhead Near Fairy Fountain"] = function () return true end,
+            ["Snowhead Near Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Snowhead Great Fairy"] = function () return has('STRAY_FAIRY_SH', var(STRAY_FAIRY_COUNT)) or has('TRANSCENDENT_FAIRY') end,
+            ["Snowhead Great Fairy Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6289,7 +6539,7 @@ function _mm_logic()
             ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
-            ["Near Goron Race"] = function () return true end,
+            ["Near Goron Race"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Goron Race Reward"] = function () return is_spring() and soul_goron_child() and goron_fast_roll() end,
@@ -6336,8 +6586,8 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
-            ["Gorman Track Front"] = function () return true end,
+            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Gorman Track Front"] = function () return not setting('entrance', 'overworld') end,
             ["Owl Milk Road"] = function () return true end,
             ["Near Romani Ranch"] = function () return after(DAY3_AM_06_00) or can_use_keg() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) end,
             ["Behind Gorman Fence"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) or final_day() or short_hook_anywhere() end,
@@ -6369,7 +6619,7 @@ function _mm_logic()
     ["Near Romani Ranch"] = {
         ["exits"] = {
             ["Milk Road"] = function () return after(DAY3_AM_06_00) or can_use_keg() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) end,
-            ["Romani Ranch"] = function () return true end,
+            ["Romani Ranch"] = function () return not setting('entrance', 'overworld') end,
         },
         ["age_change"] = false,
     },
@@ -6381,11 +6631,11 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Near Romani Ranch"] = function () return true end,
-            ["Cucco Shack"] = function () return rusty_key(RUSTY_CUCCO) end,
-            ["Doggy Racetrack"] = function () return rusty_key(RUSTY_DOGGY) end,
-            ["Stables"] = function () return rusty_key(RUSTY_BARN) end,
-            ["Ranch House"] = function () return between(DAY1_AM_06_00, NIGHT1_PM_08_00) or between(DAY2_AM_06_00, NIGHT2_PM_08_00) or between(DAY3_AM_06_00, NIGHT3_PM_08_00) end,
+            ["Near Romani Ranch"] = function () return not setting('entrance', 'overworld') end,
+            ["Cucco Shack"] = function () return rusty_key(RUSTY_CUCCO) and not setting('entrance', 'interior_most') end,
+            ["Doggy Racetrack"] = function () return rusty_key(RUSTY_DOGGY) and not setting('entrance', 'interior_most') end,
+            ["Stables"] = function () return rusty_key(RUSTY_BARN) and not setting('entrance', 'interior_most') end,
+            ["Ranch House"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Romani Ranch Epona Song"] = function () return soul_malon() and (before(NIGHT1_PM_06_00) or (trick('MM_RANCH_FARORE') and can_use_farore() and clock_day1())) end,
@@ -6468,7 +6718,7 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Romani Ranch"] = function () return true end,
+            ["Romani Ranch"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Cucco Shack Bunny Mask"] = function () return soul_grog() and has('MASK_BREMEN') and soul_cucco() end,
@@ -6495,7 +6745,7 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Romani Ranch"] = function () return true end,
+            ["Romani Ranch"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Doggy Racetrack Chest"] = function () return can_use_beans() or is_tall() or can_hookshot_short() or trick('MM_DOG_RACE_CHEST_NOTHING') end,
@@ -6510,7 +6760,7 @@ function _mm_logic()
     },
     ["Stables"] = {
         ["exits"] = {
-            ["Romani Ranch"] = function () return true end,
+            ["Romani Ranch"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Romani Ranch Barn Cow Left"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() and soul_cow() end,
@@ -6523,7 +6773,10 @@ function _mm_logic()
     },
     ["Ranch House"] = {
         ["exits"] = {
-            ["Romani Ranch"] = function () return true end,
+            ["Romani Ranch"] = function () return not setting('entrance', 'interior_most') end,
+        },
+        ["locations"] = {
+            ["Romani Ranch House Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6531,6 +6784,9 @@ function _mm_logic()
         ["exits"] = {
             ["Termina Field"] = function () return can_play_epona() or (can_goron_bomb_jump() and has_bombs()) or short_hook_anywhere() end,
             ["Great Bay Coast"] = function () return true end,
+        },
+        ["locations"] = {
+            ["Great Bay Coast Entrance Rock"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6547,13 +6803,13 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Great Bay Coast Platform"] = function () return not setting('jpLayouts', 'GreatBayCoast') or has_mask_zora() end,
-            ["Fisher's Hut"] = function () return true end,
+            ["Fisher's Hut"] = function () return not setting('entrance', 'interior_most') end,
             ["Great Bay Fence"] = function () return true end,
             ["Great Bay Coast Fortress"] = function () return underwater_walking() end,
             ["Great Bay Coast Near Pinnacle"] = function () return true end,
-            ["Zora Cape"] = function () return true end,
-            ["Ocean Spider House"] = function () return true end,
-            ["Great Bay Grotto"] = function () return true end,
+            ["Zora Cape"] = function () return not setting('entrance', 'overworld') end,
+            ["Ocean Spider House"] = function () return not setting('entrance', 'sh') end,
+            ["Great Bay Grotto"] = function () return not setting('entrance', 'grotto') end,
             ["GBC Near Cow Grotto"] = function () return can_hookshot() end,
             ["Great Bay Coast Water Void"] = function () return true end,
             ["Great Bay Coast Butterflies"] = function () return has_sticks() end,
@@ -6578,8 +6834,7 @@ function _mm_logic()
             ["Great Bay Coast Pot 10"] = function () return true end,
             ["Great Bay Coast Pot 11"] = function () return true end,
             ["Great Bay Coast Pot 12"] = function () return true end,
-            ["Great Bay Coast Ledge Rocks"] = function () return true end,
-            ["Great Bay Coast Entrance Rock"] = function () return true end,
+            ["Great Bay Coast Ledge Rocks"] = function () return true end,            
             ["Great Bay Coast Underwater Rocks"] = function () return has_mask_blast() and (has_iron_boots or can_dive_big) end,
             ["Great Bay Coast shallow Rocks"] = function () return has_bombchu() or has_mask_blast() end,
             ["Great Bay Coast Grass 1"] = function () return true end,
@@ -6594,7 +6849,7 @@ function _mm_logic()
     ["Great Bay Coast Platform"] = {
         ["exits"] = {
             ["Great Bay Coast"] = function () return true end,
-            ["Laboratory"] = function () return rusty_key(RUSTY_LAB) end,
+            ["Laboratory"] = function () return rusty_key(RUSTY_LAB) and not setting('entrance', 'interior_most') end,
             ["Owl Great Bay"] = function () return true end,
         },
         ["age_change"] = false,
@@ -6633,7 +6888,7 @@ function _mm_logic()
     ["Great Bay Coast Fortress"] = {
         ["exits"] = {
             ["Great Bay Coast"] = function () return underwater_walking() end,
-            ["Pirate Fortress"] = function () return true end,
+            ["Pirate Fortress"] = function () return not setting('entrance', 'pf') end,
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
@@ -6651,7 +6906,7 @@ function _mm_logic()
             ["FISH"] = function () return true end,
         },
         ["exits"] = {
-            ["Great Bay Coast"] = function () return true end,
+            ["Great Bay Coast"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Great Bay Coast Fisherman Grotto"] = function () return true end,
@@ -6675,7 +6930,7 @@ function _mm_logic()
     ["GBC Near Cow Grotto"] = {
         ["exits"] = {
             ["Great Bay Coast"] = function () return true end,
-            ["Great Bay Cow Grotto"] = function () return true end,
+            ["Great Bay Cow Grotto"] = function () return not setting('entrance', 'grotto') end,
         },
         ["age_change"] = false,
     },
@@ -6687,7 +6942,7 @@ function _mm_logic()
             ["RUPEES"] = function () return true end,
         },
         ["exits"] = {
-            ["GBC Near Cow Grotto"] = function () return true end,
+            ["GBC Near Cow Grotto"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Great Bay Coast Cow Front"] = function () return can_play_epona() and soul_cow() end,
@@ -6776,8 +7031,11 @@ function _mm_logic()
             ["SEAHORSE"] = function () return soul_chest_game_owner() and event('PHOTO_GERUDO') and has_bottle() and is_ocean_cursed() end,
         },
         ["exits"] = {
-            ["Great Bay Coast"] = function () return true end,
+            ["Great Bay Coast"] = function () return not setting('entrance', 'interior_most') end,
         },
+        ["locations"] = {
+            ["Fishers Hut Enter"] = function () return has_mask_zora() or can_hookshot_short() end,
+           },
         ["age_change"] = false,
     },
     ["Pinnacle Rock Entrance"] = {
@@ -6787,6 +7045,9 @@ function _mm_logic()
             ["Pinnacle Rock Water Void"] = function () return true end,
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
+        },
+        ["locations"] = {           
+            ["Pinnacle Rock Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -6826,9 +7087,10 @@ function _mm_logic()
     },
     ["Laboratory"] = {
         ["exits"] = {
-            ["Great Bay Coast Platform"] = function () return true end,
+            ["Great Bay Coast Platform"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
+            ["Laboratory Enter"] = function () return true end,
             ["Laboratory Zora Song"] = function () return soul_scientist() and has_all_zora_eggs() and has_mask_zora() and has_ocarina() end,
             ["Laboratory Fish HP"] = function () return has_fish() end,
         },
@@ -6842,12 +7104,12 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Great Bay Coast"] = function () return true end,
+            ["Great Bay Coast"] = function () return not setting('entrance', 'overworld') end,
             ["Zora Cape Near Hall"] = function () return underwater_walking() or (can_dive_small() and trick('MM_ZORA_HALL_HUMAN')) end,
             ["Zora Cape Peninsula"] = function () return underwater_walking() or can_use_nayru() or trick('MM_ZORA_HALL_HUMAN') end,
             ["Waterfall Cliffs"] = function () return can_hookshot() end,
             ["Great Bay Near Fairy Fountain"] = function () return (can_hookshot() or FD_everywhere()) and (has_explosives() or trick_keg_explosives() or short_hook_anywhere()) end,
-            ["Zora Cape Grotto"] = function () return can_break_boulders() end,
+            ["Zora Cape Grotto"] = function () return can_break_boulders() and not setting('entrance', 'grotto') end,
             ["Zora Cape Pot Game"] = function () return soul_zora() and is_day() and (has_weapon() or has_mask_zora() or can_hookshot_short() or has_bow()) end,
             ["Zora Cape Water Void"] = function () return true end,
         },
@@ -6887,7 +7149,7 @@ function _mm_logic()
             ["BUGS"] = function () return true end,
         },
         ["exits"] = {
-            ["Zora Cape"] = function () return true end,
+            ["Zora Cape"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Zora Cape Grotto"] = function () return true end,
@@ -6911,23 +7173,24 @@ function _mm_logic()
     ["Great Bay Near Fairy Fountain"] = {
         ["exits"] = {
             ["Zora Cape"] = function () return has_explosives() or trick_keg_explosives() or (not setting('erIndoorsMajor')) end,
-            ["Great Bay Fairy Fountain"] = function () return true end,
+            ["Great Bay Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["age_change"] = false,
     },
     ["Great Bay Fairy Fountain"] = {
         ["exits"] = {
-            ["Great Bay Near Fairy Fountain"] = function () return true end,
+            ["Great Bay Near Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Great Bay Great Fairy"] = function () return has('STRAY_FAIRY_GB', var(STRAY_FAIRY_COUNT)) or has('TRANSCENDENT_FAIRY') end,
+            ["Great Bay Great Fairy Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Waterfall Cliffs"] = {
         ["exits"] = {
             ["Zora Cape"] = function () return true end,
-            ["Waterfall Rapids"] = function () return true end,
+            ["Waterfall Rapids"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Zora Cape Ledge Chest 1"] = function () return can_hookshot() end,
@@ -6937,9 +7200,10 @@ function _mm_logic()
     },
     ["Waterfall Rapids"] = {
         ["exits"] = {
-            ["Waterfall Cliffs"] = function () return true end,
+            ["Waterfall Cliffs"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
+            ["Waterfall Rapids Enter"] = function () return true end,
             ["Waterfall Rapids Beaver Race 1"] = function () return has_mask_zora() end,
             ["Waterfall Rapids Beaver Race 2"] = function () return has_mask_zora() end,
         },
@@ -6948,7 +7212,7 @@ function _mm_logic()
     ["Zora Cape Near Hall"] = {
         ["exits"] = {
             ["Zora Cape"] = function () return underwater_walking() or (can_dive_small() and trick('MM_ZORA_HALL_HUMAN')) end,
-            ["Zora Hall Entrance"] = function () return underwater_walking() or can_dive_small() end,
+            ["Zora Hall Entrance"] = function () return (underwater_walking() or can_dive_small()) and not setting('entrance', 'interior_most') end,
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
@@ -6956,20 +7220,23 @@ function _mm_logic()
     },
     ["Zora Hall Entrance"] = {
         ["exits"] = {
-            ["Zora Cape Near Hall"] = function () return underwater_walking() or can_dive_small() end,
+            ["Zora Cape Near Hall"] = function () return (underwater_walking() or can_dive_small()) and not setting('entrance', 'interior_most') end,
             ["Zora Hall"] = function () return true end,
+        },
+        ["locations"] = {
+            ["Zora Hall Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Zora Hall"] = {
         ["exits"] = {
             ["Zora Hall Entrance"] = function () return true end,
-            ["Zora Cape Peninsula"] = function () return true end,
-            ["Zora Shop"] = function () return rusty_key(RUSTY_ZORA) end,
-            ["Tijo's Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_TIJO) end,
-            ["Japas' Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_JAPA) end,
-            ["Evan's Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_EVAN) end,
-            ["Lulu's Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_LULU) end,
+            ["Zora Cape Peninsula"] = function () return not setting('entrance', 'interior_most') end,
+            ["Zora Shop"] = function () return rusty_key(RUSTY_ZORA) and not setting('entrance', 'interior_most') end,
+            ["Tijo's Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_TIJO) and not setting('entrance', 'interior_most') end,
+            ["Japas' Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_JAPA) and not setting('entrance', 'interior_most') end,
+            ["Evan's Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_EVAN) and not setting('entrance', 'interior_most') end,
+            ["Lulu's Room"] = function () return can_enter_zora_door() and rusty_key(RUSTY_LULU) and not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Zora Hall Scene Lights"] = function () return soul_zora() and (can_use_fire_arrows() or (trick('MM_STAGE_LIGHTS_DIN') and has_arrows() and can_use_din() and can_hookshot())) end,
@@ -6978,9 +7245,10 @@ function _mm_logic()
     },
     ["Zora Shop"] = {
         ["exits"] = {
-            ["Zora Hall"] = function () return true end,
+            ["Zora Hall"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
+            ["Zora Shop Enter"] = function () return true end,
             ["Zora Shop Item 1"] = function () return soul_zora_shopkeeper() and shop_price(19) end,
             ["Zora Shop Item 2"] = function () return soul_zora_shopkeeper() and shop_price(20) end,
             ["Zora Shop Item 3"] = function () return soul_zora_shopkeeper() and shop_price(21) end,
@@ -6989,30 +7257,38 @@ function _mm_logic()
     },
     ["Tijo's Room"] = {
         ["exits"] = {
-            ["Zora Hall"] = function () return true end,
+            ["Zora Hall"] = function () return not setting('entrance', 'interior_most') end,
+        },
+        ["locations"] = {
+            ["Tijo Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Japas' Room"] = {
         ["exits"] = {
-            ["Zora Hall"] = function () return true end,
+            ["Zora Hall"] = function () return not setting('entrance', 'interior_most') end,
+        },
+        ["locations"] = {
+            ["Japas Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Evan's Room"] = {
         ["exits"] = {
-            ["Zora Hall"] = function () return true end,
+            ["Zora Hall"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
+            ["Evan Enter"] = function () return true end,
             ["Zora Hall Evan HP"] = function () return soul_npc(SOUL_NPC_ZORA_MUSICIANS) and can_play_evan() and (is_ocean_cursed() or (trick('MM_EVAN_FARORE') and can_use_farore())) end,
         },
         ["age_change"] = false,
     },
     ["Lulu's Room"] = {
         ["exits"] = {
-            ["Zora Hall"] = function () return true end,
+            ["Zora Hall"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
+            ["Lulu Enter"] = function () return true end,
             ["Zora Hall Scrub HP"] = function () return trick('MM_ZORA_HALL_SCRUB_HP_NO_DEKU') and (has_mask_goron() or is_tall()) or (has_mask_goron() and has('MASK_DEKU') and has('DEED_MOUNTAIN')) or short_hook_anywhere() end,
             ["Zora Hall Scrub Shop"] = function () return soul_business_scrub() and has_mask_zora() and can_use_wallet(1) end,
             ["Zora Hall Scrub Deed"] = function () return soul_business_scrub() and has('DEED_MOUNTAIN') and has_mask_goron() end,
@@ -7022,8 +7298,8 @@ function _mm_logic()
     ["Zora Cape Peninsula"] = {
         ["exits"] = {
             ["Zora Cape"] = function () return underwater_walking() or can_use_nayru() or trick('MM_ZORA_HALL_HUMAN') end,
-            ["Zora Hall"] = function () return true end,
-            ["Great Bay Temple"] = function () return turtle_woken() and can_hookshot() end,
+            ["Zora Hall"] = function () return not setting('entrance', 'interior_most') end,
+            ["Great Bay Temple"] = function () return turtle_woken() and can_hookshot() and not setting('entrance', 'dungeon_major') end,
             ["Owl Zora Cape"] = function () return true end,
             ["Zora Cape Water Void"] = function () return true end,
         },
@@ -7032,6 +7308,9 @@ function _mm_logic()
     ["Zora Cape Water Void"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
+        },
+        ["locations"] = {
+            ["Gorman Track Back Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -7044,12 +7323,13 @@ function _mm_logic()
     },
     ["Gorman Track Front"] = {
         ["exits"] = {
-            ["Milk Road"] = function () return true end,
+            ["Milk Road"] = function () return not setting('entrance', 'overworld') end,
             ["Gorman Track"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) or short_hook_anywhere() end,
         },
         ["locations"] = {
             ["Gorman Track Garo Mask"] = function () return soul_gorman() and can_play_epona() and can_use_wallet(1) and is_day() end,
             ["Gorman Track Milk Purchase"] = function () return soul_gorman() and can_use_wallet(1) and is_day() end,
+            ["Gorman Track Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -7100,11 +7380,12 @@ function _mm_logic()
             ["RUPEES"] = function () return can_use_light_arrows() and is_night() and soul_bubble() end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return true end,
-            ["Road to Ikana Grotto"] = function () return can_break_red_boulders() end,
+            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Road to Ikana Grotto"] = function () return can_break_red_boulders() and not setting('entrance', 'grotto') end,
             ["Road to Ikana Center"] = function () return can_play_epona() or short_hook_anywhere() or (can_goron_bomb_jump() and has_bombs()) end,
         },
         ["locations"] = {
+            ["Road to Ikana Enter"] = function () return true end,
             ["Road to Ikana Chest"] = function () return can_hookshot() or (can_hookshot_short() and trick('MM_HARD_HOOKSHOT')) end,
             ["Road to Ikana Red Boulder"] = function () return can_break_red_boulders() end,
         },
@@ -7122,7 +7403,7 @@ function _mm_logic()
             ["NUTS"] = function () return soul_deku_baba() and (can_lift_bracelet() or can_kill_baba_nuts()) end,
         },
         ["exits"] = {
-            ["Road to Ikana Front"] = function () return true end,
+            ["Road to Ikana Front"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Road to Ikana Grotto"] = function () return true end,
@@ -7151,7 +7432,7 @@ function _mm_logic()
         ["exits"] = {
             ["Road to Ikana Front"] = function () return can_play_epona() or short_hook_anywhere() or (can_goron_bomb_jump() and has_bombs()) end,
             ["Road to Ikana Top"] = function () return soul_poe_collector() and (has('MASK_GARO') or has('MASK_GIBDO')) and (can_hookshot() or (can_hookshot_short() and (trick('MM_HARD_HOOKSHOT') or is_adult()))) or short_hook_anywhere() end,
-            ["Ikana Graveyard"] = function () return true end,
+            ["Ikana Graveyard"] = function () return not setting('entrance', 'overworld') end,
         },
         ["locations"] = {
             ["Road to Ikana Stone Mask"] = function () return can_use_lens_strict() and has_red_or_blue_potion() end,
@@ -7167,11 +7448,11 @@ function _mm_logic()
             ["RUPEES"] = function () return true end,
         },
         ["exits"] = {
-            ["Road to Ikana Center"] = function () return true end,
-            ["Ikana Graveyard Grotto"] = function () return stone_of_agony() and (has_explosives() or trick_keg_explosives() or can_hammer()) end,
-            ["Beneath The Graveyard Night 1"] = function () return soul_stalchild() and has('MASK_CAPTAIN') and is_night1() end,
-            ["Beneath The Graveyard Night 2"] = function () return soul_stalchild() and has('MASK_CAPTAIN') and is_night2() end,
-            ["Beneath The Graveyard Night 3"] = function () return soul_stalchild() and has('MASK_CAPTAIN') and is_night3() end,
+            ["Road to Ikana Center"] = function () return not setting('entrance', 'overworld') end,
+            ["Ikana Graveyard Grotto"] = function () return stone_of_agony() and (has_explosives() or trick_keg_explosives() or can_hammer()) and not setting('entrance', 'grotto') end,
+            ["Beneath The Graveyard Night 1"] = function () return soul_stalchild() and has('MASK_CAPTAIN') and is_night1() and not setting('entrance', 'grotto') end,
+            ["Beneath The Graveyard Night 2"] = function () return soul_stalchild() and has('MASK_CAPTAIN') and is_night2() and not setting('entrance', 'grotto') end,
+            ["Beneath The Graveyard Night 3"] = function () return soul_stalchild() and has('MASK_CAPTAIN') and is_night3() and not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Ikana Graveyard Captain Mask"] = function () return soul_enemy(SOUL_ENEMY_CAPTAIN_KEETA) and can_play_awakening() and has_arrows() and can_fight() end,
@@ -7218,7 +7499,7 @@ function _mm_logic()
             ["BUGS"] = function () return true end,
         },
         ["exits"] = {
-            ["Ikana Graveyard"] = function () return true end,
+            ["Ikana Graveyard"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Ikana Graveyard Grotto"] = function () return true end,
@@ -7244,7 +7525,7 @@ function _mm_logic()
             ["ARROWS"] = function () return true end,
         },
         ["exits"] = {
-            ["Ikana Graveyard"] = function () return true end,
+            ["Ikana Graveyard"] = function () return not setting('entrance', 'grotto') end,
             ["Beneath The Graveyard Night 1/2 Exchange"] = function () return short_hook_anywhere() or has_hover_boots() end,
         },
         ["locations"] = {
@@ -7271,7 +7552,7 @@ function _mm_logic()
             ["ARROWS"] = function () return true end,
         },
         ["exits"] = {
-            ["Ikana Graveyard"] = function () return true end,
+            ["Ikana Graveyard"] = function () return not setting('entrance', 'grotto') end,
             ["Beneath The Graveyard Night 1/2 Exchange"] = function () return short_hook_anywhere() or has_hover_boots() end,
         },
         ["locations"] = {
@@ -7336,10 +7617,11 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Road to Ikana Center"] = function () return true end,
-            ["Ikana Valley"] = function () return true end,
+            ["Ikana Valley"] = function () return not setting('entrance', 'overworld') end,
         },
         ["locations"] = {            
             ["Road to Ikana Large Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
+            ["Road to Ikana Up"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -7348,13 +7630,14 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Road to Ikana Top"] = function () return true end,
+            ["Road to Ikana Top"] = function () return not setting('entrance', 'overworld') end,
             ["Ikana Canyon"] = function () return (can_use_ice_arrows() and soul_octorok() or trick('MM_ICELESS_IKANA')) and can_hookshot() or short_hook_anywhere() end,
-            ["Sakon Hideout"] = function () return event('MEET_KAFEI') and at(NIGHT3_PM_06_00) end,
+            ["Sakon Hideout"] = function () return event('MEET_KAFEI') and at(NIGHT3_PM_06_00) and not setting('entrance', 'interior_most') end,
             ["Ikana Valley Near Secret Shrine"] = function () return can_swim() end,
-            ["Swamp Front"] = function () return underwater_walking() or can_swim() end,
+            ["Swamp Front"] = function () return (underwater_walking() or can_swim()) and not setting('entrance', 'sc') end,
         },
         ["locations"] = {
+            ["Ikana Valley Enter"] = function () return true end,
             ["Ikana Valley Scrub Rupee"] = function () return soul_business_scrub() and has('DEED_OCEAN') and has_mask_zora() end,
             ["Ikana Valley Scrub HP"] = function () return has('DEED_OCEAN') and has_mask_zora() and has('MASK_DEKU') or hookshot_anywhere() end,
             ["Ikana Valley Scrub Shop"] = function () return soul_business_scrub() and can_use_wallet(2) end,
@@ -7363,8 +7646,8 @@ function _mm_logic()
     },
     ["Ikana Valley Near Secret Shrine"] = {
         ["exits"] = {
-            ["Secret Shrine"] = function () return true end,
-            ["Ikana Valley Grotto"] = function () return true end,
+            ["Secret Shrine"] = function () return not setting('entrance', 'ss') end,
+            ["Ikana Valley Grotto"] = function () return not setting('entrance', 'grotto') end,
             ["Ikana Valley"] = function () return can_swim() end,
         },
         ["age_change"] = false,
@@ -7381,7 +7664,7 @@ function _mm_logic()
             ["BUGS"] = function () return true end,
         },
         ["exits"] = {
-            ["Ikana Valley Near Secret Shrine"] = function () return true end,
+            ["Ikana Valley Near Secret Shrine"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Ikana Valley Grotto"] = function () return true end,
@@ -7407,7 +7690,7 @@ function _mm_logic()
             ["SUN_MASK"] = function () return (can_fight() or has_explosives() or has_arrows()) and soul_deku_baba() and soul_wolfos() end,
         },
         ["exits"] = {
-            ["Ikana Valley"] = function () return true end,
+            ["Ikana Valley"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Sakon Hideout Pot First Room 1"] = function () return true end,
@@ -7430,13 +7713,13 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Ikana Valley"] = function () return true end,
-            ["Ikana Fairy Fountain"] = function () return true end,
-            ["Ikana Spring Water Cave"] = function () return true end,
-            ["Music Box House"] = function () return event('IKANA_CURSE_LIFTED') and (has_explosives() or has_mask_stone()) and rusty_key(RUSTY_MUSIC) end,
-            ["Ghost Hut"] = function () return true end,
-            ["Beneath The Well Entrance"] = function () return true end,
-            ["Ikana Castle Entrance"] = function () return true end,
-            ["Stone Tower"] = function () return true end,
+            ["Ikana Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
+            ["Ikana Spring Water Cave"] = function () return not setting('entrance', 'interior_extra') end,
+            ["Music Box House"] = function () return event('IKANA_CURSE_LIFTED') and (has_explosives() or has_mask_stone()) and rusty_key(RUSTY_MUSIC) and not setting('entrance', 'interior_extra') end,
+            ["Ghost Hut"] = function () return not setting('entrance', 'interior_most') end,
+            ["Beneath The Well Entrance"] = function () return not setting('entrance', 'btw') end,
+            ["Ikana Castle Entrance"] = function () return not setting('entrance', 'ic') end,
+            ["Stone Tower"] = function () return not setting('entrance', 'overworld') end,
             ["Tingle Ikana"] = function () return soul_npc(SOUL_NPC_TINGLE) and has_weapon_range() end,
             ["Owl Ikana"] = function () return true end,
         },
@@ -7444,9 +7727,10 @@ function _mm_logic()
     },
     ["Ikana Fairy Fountain"] = {
         ["exits"] = {
-            ["Ikana Canyon"] = function () return true end,
+            ["Ikana Canyon"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
+            ["Ikana Great Fairy Enter"] = function () return true end,
             ["Ikana Great Fairy"] = function () return has('STRAY_FAIRY_ST', var(STRAY_FAIRY_COUNT)) or has('TRANSCENDENT_FAIRY') end,
         },
         ["age_change"] = false,
@@ -7456,24 +7740,29 @@ function _mm_logic()
             ["IKANA_CURSE_LIFTED"] = function () return soul_composer_bros() and is_valley_cursed() and can_play_storms() end,
         },
         ["exits"] = {
-            ["Ikana Canyon"] = function () return true end,
+            ["Ikana Canyon"] = function () return not setting('entrance', 'interior_extra') end,
+        },
+        ["locations"] = {
+            ["Spring Water Cave Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Music Box House"] = {
         ["exits"] = {
-            ["Ikana Canyon"] = function () return true end,
+            ["Ikana Canyon"] = function () return not setting('entrance', 'interior_extra') end,
         },
         ["locations"] = {
             ["Music Box House Gibdo Mask"] = function () return is_valley_cursed() and can_play_healing() end,
+            ["Music Box House Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Ghost Hut"] = {
         ["exits"] = {
-            ["Ikana Canyon"] = function () return true end,
+            ["Ikana Canyon"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
+            ["Ghost Hut Enter"] = function () return true end,
             ["Ghost Hut HP"] = function () return soul_poe_collector() and (has_arrows() or can_hookshot_short() or can_use_deku_bubble()) and can_use_wallet(1) and is_valley_cursed() and soul_poe() end,
         },
         ["age_change"] = false,
@@ -7483,8 +7772,11 @@ function _mm_logic()
             ["IKANA_CASTLE_LIGHT_ENTRANCE"] = function () return can_activate_crystal() end,
         },
         ["exits"] = {
-            ["Ikana Castle Exterior"] = function () return has_mirror_shield() and event('IKANA_CASTLE_LIGHT_ENTRANCE') or can_use_light_arrows() or short_hook_anywhere() end,
+            ["Ikana Castle Exterior"] = function () return (has_mirror_shield() and event('IKANA_CASTLE_LIGHT_ENTRANCE') or can_use_light_arrows() or short_hook_anywhere()) and not setting('entrance', 'ic')  end,
             ["Ikana Canyon"] = function () return true end,
+        },
+        ["locations"] = {
+            ["Ikana Castle Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -7496,8 +7788,8 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Beneath The Well End"] = function () return true end,
-            ["Ikana Castle Entrance"] = function () return can_use_light_arrows() or short_hook_anywhere() end,
+            ["Beneath The Well End"] = function () return not setting('entrance', 'btw') end,
+            ["Ikana Castle Entrance"] = function () return (can_use_light_arrows() or short_hook_anywhere()) and not setting('entrance', 'ic') end,
             ["Ancient Castle of Ikana"] = function () return true end,
             ["Ancient Castle of Ikana Roof Exterior"] = function () return short_hook_anywhere() end,
         },
@@ -7522,12 +7814,13 @@ function _mm_logic()
     },
     ["Stone Tower"] = {
         ["exits"] = {
-            ["Ikana Canyon"] = function () return true end,
+            ["Ikana Canyon"] = function () return not setting('entrance', 'overworld') end,
             ["Stone Tower Top"] = function () return (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER'))) and can_hookshot() or (can_use_elegy3() and short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) or hookshot_anywhere() or (setting('DungeonST', 'open') and (can_hookshot() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')))) end,
             ["Stone Tower Lower Scarecrow Ledge"] = function () return (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER'))) and scarecrow_hookshot() or hookshot_anywhere() end,
             ["Stone Tower Upper Scarecrow Ledge"] = function () return (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER'))) and can_hookshot() or (can_use_elegy3() and short_hook_anywhere()) or hookshot_anywhere() end,
         },
         ["locations"] = {
+            ["Stone Tower Enter"] = function () return can_hookshot_short() end,
             ["Stone Tower Pot Climb 1"] = function () return can_hookshot_short() end,
             ["Stone Tower Pot Climb 2"] = function () return can_hookshot_short() end,
         },
@@ -7549,7 +7842,7 @@ function _mm_logic()
             ["Stone Tower"] = function () return true end,
             ["Stone Tower Top"] = function () return not setting('jpLayouts', 'StoneTower') and (can_use_elegy3() or (can_use_elegy2() and trick('MM_ONE_MASK_STONE_TOWER') and short_hook_anywhere())) or can_hookshot() or setting('DungeonST', 'open')  end,
             ["Stone Tower Top Inverted"] = function () return can_use_elegy() and can_use_light_arrows() and (not setting('jpLayouts', 'StoneTower')) or setting('DungeonST', 'open')  end,
-            ["Stone Tower Temple"] = function () return true end,
+            ["Stone Tower Temple"] = function () return not setting('entrance', 'dungeon_major') end,
             ["Stone Tower Lower Scarecrow Ledge"] = function () return has_mask_goron() or is_tall() or scarecrow_hookshot() or hookshot_anywhere() or has_hover_boots() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) end,
             ["Stone Tower Upper Scarecrow Ledge"] = function () return scarecrow_hookshot() or short_hook_anywhere() end,
         },
@@ -7612,6 +7905,9 @@ function _mm_logic()
             ["Stone Tower Top"] = function () return can_use_light_arrows() or setting('DungeonST', 'open')  end,
             ["Stone Tower Top Inverted Upper"] = function () return can_use_beans() or hookshot_anywhere() end,
         },
+        ["locations"] = {
+            ["Stone Tower Inverted Start"] = function () return underwater_walking_strict() end,
+        },
         ["age_change"] = false,
     },
     ["Stone Tower Top Inverted Upper"] = {
@@ -7640,8 +7936,8 @@ function _mm_logic()
     },
     ["Pirate Fortress"] = {
         ["exits"] = {
-            ["Great Bay Coast Fortress"] = function () return (underwater_walking() or can_dive_small()) end,
-            ["Pirate Fortress Entrance"] = function ()  return true end,
+            ["Great Bay Coast Fortress"] = function () return (underwater_walking() or can_dive_small()) and not setting('entrance', 'pf') end,
+            ["Pirate Fortress Entrance"] = function ()  return not setting('entrance', 'pf') end,
         },
         ["age_change"] = false,
     },
@@ -7650,7 +7946,7 @@ function _mm_logic()
             ["PHOTO_GERUDO"] = function () return has('PICTOGRAPH_BOX') and soul_thief_guard() end,
         },
         ["exits"] = {
-            ["Pirate Fortress"] = function () return true end,
+            ["Pirate Fortress"] = function () return not setting('entrance', 'pf') end,
             ["Pirate Fortress Sewers"] = function () return underwater_walking() and (has_mask_goron() or can_hammer()) end,
             ["Pirate Fortress Entrance Balcony"] = function () return can_hookshot() or (can_hookshot_short() and trick('MM_PFI_BOAT_HOOK')) end,
             ["Pirate Fortress Entrance Lookout"] = function () return can_hookshot_short() and trick('MM_PFI_BOAT_HOOK') end,
@@ -7972,7 +8268,7 @@ function _mm_logic()
     },
     ["Secret Shrine"] = {
         ["exits"] = {
-            ["Ikana Valley Near Secret Shrine"] = function () return true end,
+            ["Ikana Valley Near Secret Shrine"] = function () return not setting('entrance', 'ss') end,
             ["Secret Shrine Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
@@ -8108,7 +8404,7 @@ function _mm_logic()
     ["Snowhead Temple"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
-            ["Snowhead"] = function () return true end,
+            ["Snowhead"] = function () return not setting('entrance', 'dungeon_major') end,
             ["Snowhead Temple Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
@@ -8121,6 +8417,7 @@ function _mm_logic()
             ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
+            ["Snowhead Temple Enter"] = function () return true end,
             ["Snowhead Temple Icicle Entrance 1"] = function () return break_icicle() end,
             ["Snowhead Temple Icicle Entrance 2"] = function () return break_icicle() end,
             ["Snowhead Temple Icicle Entrance 3"] = function () return break_icicle() end,
@@ -8547,7 +8844,7 @@ function _mm_logic()
     },
     ["Snowhead Temple Boss Access"] = {
         ["exits"] = {
-            ["Snowhead Temple Boss"] = function () return true end,
+            ["Snowhead Temple Boss"] = function () return not setting('entrance', 'Boss') end,
         },
         ["age_change"] = false,
     },
@@ -8596,7 +8893,7 @@ function _mm_logic()
     ["Stone Tower Temple"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
-            ["Stone Tower Front of Temple"] = function () return true end,
+            ["Stone Tower Front of Temple"] = function () return not setting('entrance', 'dungeon_major') end,
             ["Stone Tower Temple Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
@@ -9090,7 +9387,7 @@ function _mm_logic()
     },
     ["Stone Tower Temple Boss Access"] = {
         ["exits"] = {
-            ["Stone Tower Temple Boss"] = function () return true end,
+            ["Stone Tower Temple Boss"] = function () return not setting('entrance', 'Boss') end,
         },
         ["age_change"] = false,
     },
@@ -9101,6 +9398,9 @@ function _mm_logic()
         ["exits"] = {
             ["Stone Tower After Boss"] = function () return event('BOSS_TWINMOLD') end,
             ["WARP_SONGS"] = function () return true end,
+        },
+        ["locations"] = {
+            ["Stone Tower Temple Inverted Boss Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -9116,7 +9416,7 @@ function _mm_logic()
     },
     ["Swamp Spider House"] = {
         ["exits"] = {
-            ["Near Swamp Spider House"] = function () return true end,
+            ["Near Swamp Spider House"] = function () return not setting('entrance', 'sh') end,
             ["Swamp Spider House Main"] = function ()  return true end,
         },
         ["locations"] = {
@@ -9132,7 +9432,7 @@ function _mm_logic()
             ["WATER"] = function () return true end,
         },
         ["exits"] = {
-            ["Swamp Spider House"] = function () return true end,
+            ["Swamp Spider House"] = function () return not setting('entrance', 'sh') end,
         },
         ["locations"] = {
             ["Swamp Skulltula Main Room Near Ceiling"] = function () return gs() and (can_hookshot_short() or has_mask_zora() or (has('MASK_DEKU') and (has_arrows() or has_magic() or (has_bombs() or has_bombchu() or trick_keg_explosives())))) end,
@@ -9232,7 +9532,7 @@ function _mm_logic()
     ["Woodfall Temple"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
-            ["Woodfall Front of Temple"] = function () return true end,
+            ["Woodfall Front of Temple"] = function () return not setting('entrance', 'dungeon_major') end,
             ["Woodfall Temple Entrance"] = function ()  return true end,
         },
         ["age_change"] = false,
@@ -9505,7 +9805,7 @@ function _mm_logic()
     },
     ["Woodfall Temple Boss Access"] = {
         ["exits"] = {
-            ["Woodfall Temple Boss"] = function () return true end,
+            ["Woodfall Temple Boss"] = function () return not setting('entrance', 'Boss') end,
         },
         ["age_change"] = false,
     },
@@ -9557,7 +9857,7 @@ function _mm_logic()
     ["Deku Palace Near Beans Grotto"] = {
         ["exits"] = {
             ["Deku Palace Near US Beans Grotto"] = function () return true end,
-            ["Deku Palace Beans Grotto"] = function () return true end,
+            ["Deku Palace Beans Grotto"] = function () return not setting('entrance', 'grotto') end,
         },
         ["age_change"] = false,
     },
@@ -9569,9 +9869,15 @@ function _mm_logic()
         ["age_change"] = false,
     },
     ["Deku Palace Near JP Grotto Climb Right"] = {
+        ["locations"] = {
+            ["JP Climb Grotto Enter"] = function () return true end,
+        },
         ["age_change"] = false,
     },
-    ["Deku Palace Near JP Grotto Line Start"] = {
+    ["Deku Palace Near JP Grotto Line Start"] = {        
+         ["locations"] = {
+            ["JP Line Grotto Enter"] = function () return true end,
+        },
         ["age_change"] = false,
     },
     ["Deku Palace Corner Ledge Top"] = {
