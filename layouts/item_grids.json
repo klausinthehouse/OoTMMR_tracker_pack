@@ -1636,5 +1636,74 @@
         ]
       }
     ]
+  },
+  "entrances_oot": {    
+        "type": "itemgrid",
+        "h_alignment": "stretch",
+        "v_alignment": "stretch",
+        "item_margin": "1,1",
+        "item_size": 28,
+        "rows": [
+          [
+            "MM_OCARINA",
+            "MM_BOW",
+            "MM_ARROW_FIRE",
+            "MM_ARROW_ICE",
+            "MM_ARROW_LIGHT",
+            "mm_spinattack",
+            "MM_SHIELD_HERO",
+            "MM_SHIELD_MIRROR"
+          ],
+          [
+            "MM_BOMB_BAG",
+            "MM_BOMBCHU",
+            "MM_MAGIC_BEAN",
+            "MM_BOTTLED_GOLD_DUST",
+            "MM_POWDER_KEG",
+            "MM_PICTOGRAPH_BOX",
+            "MM_LENS",
+            "MM_HOOKSHOT"
+          ],
+          [
+            "MM_MOON_TEAR",
+            "MM_DEED_LAND",
+            "MM_DEED_SWAMP",
+            "MM_DEED_MOUNTAIN",
+            "MM_DEED_OCEAN",
+            "MM_ROOM_KEY",
+            "MM_LETTER_TO_KAFEI",
+            "MM_LETTER_TO_MAMA"
+          ],
+          [
+            "MM_SONG_TIME",
+            "MM_SONG_HEALING",
+            "MM_SONG_EPONA",
+            "MM_SONG_SOARING",
+            "MM_SONG_STORMS",
+            "MM_WALLET",
+            "MM_MAGIC_UPGRADE",
+            "MM_PENDANT_OF_MEMORIES"
+          ],
+          [
+            "MM_SONG_AWAKENING",
+            "MM_SONG_GORON",
+            "MM_SONG_ZORA",
+            "MM_SONG_EMPTINESS",
+            "MM_SONG_ORDER",
+            "MM_STRAY_FAIRY_TOWN",
+            "MM_GS_TOKEN_SWAMP",
+            "MM_GS_TOKEN_OCEAN"
+          ],
+          [
+            "MM_MASK_DEKU",
+            "MM_MASK_GORON",
+            "MM_MASK_ZORA",
+            "MM_MASK_GIBDO",
+            "MM_MASK_GARO",
+            "MM_MASK_CAPTAIN",
+            "MM_MASK_GIANT",
+            "MM_MASK_FIERCE_DEITY"
+          ]
+        ]    
   }
 }

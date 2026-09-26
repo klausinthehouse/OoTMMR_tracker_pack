@@ -3417,6 +3417,11 @@
       },
       {
         "type": "item",
+        "item": "OOT_RUSTY_STABLES",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "OOT_RUSTY_SILO",
         "height": 16
       },
@@ -3724,6 +3729,11 @@
       {
         "type": "item",
         "item": "setting_entrance_sc",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_gameswitch",
         "height": 16
       }
     ]
