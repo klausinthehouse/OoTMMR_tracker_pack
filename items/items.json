@@ -2912,6 +2912,21 @@
     ]
   },
   {
+    "name": "Rusted Key Stables",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_ranchstable.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_ranchstable.png",
+        "codes": "OOT_RUSTY_STABLES"
+      }
+    ]
+  },
+  {
     "name": "Rusted Key Skulltula House",
     "type": "progressive",
     "allow_disabled": false,

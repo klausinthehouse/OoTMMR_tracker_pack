@@ -766,7 +766,6 @@
       },
       {
         "img": "images/setting_shufflePotsOot_true.png",
-        "img_mods": "@disabled",
         "codes": "setting_shufflePotsOot,setting_shufflePotsOot_dungeon,setting_shufflePotsOot_overworld",
         "inherit_codes": false
       }
