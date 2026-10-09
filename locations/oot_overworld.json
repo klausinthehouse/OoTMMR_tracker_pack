@@ -3826,7 +3826,7 @@
                     "name": "Single Rock by Grass",
                     "short_name": "Graveyard Rock",
                     "access_rules": [
-                      "$oot|Kakariko Rocks"
+                      "$oot|Graveyard Rock"
                     ],
                     "visibility_rules": [
                       "setting_rock_on"
@@ -7879,6 +7879,9 @@
                 "access_rules": [
                   "$oot|Gerudo Member Card"
                 ],
+                "force_invisibility_rules": [
+                  "setting_gerudoFortress_open"
+                ],
                 "item_count": 1
               },
               {
@@ -7950,9 +7953,6 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_gerudoFortress_open"
-                ],
                 "x": 505,
                 "y": 390
               }
@@ -8017,14 +8017,6 @@
                 ],
                 "x": 470,
                 "y": 390
-              },
-              {
-                "map": "oot_er_locations",
-                "visibility_rules": [
-                  "setting_FairyFountainShuffleOOT_true"
-                ],
-                "x": 562,
-                "y": 436
               }
             ]
           }

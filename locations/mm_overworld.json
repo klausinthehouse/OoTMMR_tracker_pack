@@ -4585,7 +4585,20 @@
                 "chest_unopened_img": "images/system/snow.png",
                 "chest_opened_img": "images/system/snow_grey.png",
                 "item_count": 4
-              }    
+              },
+              {
+                "name": "Mountain Village Cliff Snowballs",
+                "short_name": "Small Cliff Snowballs",
+                "access_rules": [
+                  "$mm|Mountain Village Small Snowball Cliff 1"
+                ],
+                "visibility_rules": [
+                  "setting_SnowShuffle_overworld"
+                ],
+                "chest_unopened_img": "images/system/snow.png",
+                "chest_opened_img": "images/system/snow_grey.png",
+                "item_count": 2
+              }     
             ],
             "map_locations": [
               {
