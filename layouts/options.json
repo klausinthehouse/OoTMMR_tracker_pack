@@ -669,6 +669,26 @@
       },  
       {
         "type": "item",
+        "item": "setting_jpLayouts_DP",
+        "height": 16
+      },  
+      {
+        "type": "item",
+        "item": "setting_jpLayouts_GB",
+        "height": 16
+      },  
+      {
+        "type": "item",
+        "item": "setting_jpLayouts_StoneTower",
+        "height": 16
+      },  
+      {
+        "type": "item",
+        "item": "setting_jpLayouts_ST",
+        "height": 16
+      },  
+      {
+        "type": "item",
         "item": "setting_majoraChild",
         "height": 16
       },
