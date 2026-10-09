@@ -3894,7 +3894,7 @@
                           "$mm|Deku Palace Rupee Right 01"
                         ],
                         "visibility_rules": [
-                          "setting_shuffleFreeRupeesMm_overworld"
+                          "setting_shuffleFreeRupeesMm_overworld,setting_jpLayouts_DPF"
                         ],
                         "chest_unopened_img": "images/system/blue.png",
                         "chest_opened_img": "images/system/blue_check.png",
@@ -4007,6 +4007,43 @@
                       {
                         "map": "termina",
                         "x": 500,
+                        "y": 537
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Deku Palace JP Line Grotto",
+                    "sections": [                      
+                      {
+                      "name": "JP Line Grotto Grass",
+                      "visibility_rules": [
+                        "setting_shuffleGrassMm_overworld, setting_jpLayouts_DP"
+                      ],
+                      "chest_unopened_img": "images/MM_Grass.png",
+                      "chest_opened_img": "images/GrassGreyscale.png",
+                      "access_rules": [
+                        "$mm|JP Line Grotto Grass"
+                      ],
+                      "item_count": 3
+                      },
+                      {
+                       "name": "Mountain Village Grass Patch Butterflies",                    
+                       "short_name": "By Grass Patches",
+                        "access_rules": [
+                         "$mm|JP Line Grotto Butterfly"
+                       ],
+                       "visibility_rules": [
+                          "setting_shuffleButterflyMm_on, setting_jpLayouts_DP"
+                       ],
+                        "chest_unopened_img": "images/system/Butterfly.png",
+                        "chest_opened_img": "images/system/Butterfly_grey.png",
+                        "item_count": 5
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 515,
                         "y": 537
                       }
                     ]
