@@ -2481,7 +2481,7 @@ function _oot_logic()
 	end
 
      function has_Shovel()
-		return not setting('ShovelOot') or has(OOTShovel)
+		return not setting('ShovelOot') or has(SHOVEL)
 	end
     
 	function climb_anywhere()
