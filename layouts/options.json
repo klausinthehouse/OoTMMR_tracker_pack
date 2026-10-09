@@ -288,6 +288,11 @@
       },
       {
         "type": "item",
+        "item": "setting_ShovelOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_soulsEnemyOot",
         "height": 16
       },
@@ -695,6 +700,11 @@
       {
         "type": "item",
         "item": "setting_RustyKeysMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_ShovelMm",
         "height": 16
       },
       {
@@ -3408,6 +3418,11 @@
       {
         "type": "item",
         "item": "OOT_RUSTY_MASK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_POT",
         "height": 16
       },
       {

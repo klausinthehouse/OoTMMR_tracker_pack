@@ -88,7 +88,7 @@
             "OOT_MASK_STONE",
             "OOT_MASK_KAMARO",
             "OOT_POWDER_KEG",
-            "OOT_DOUBLE_DEFENSE"
+            "OOT_SHOVEL"
           ],
           [
             "OOT_SKELETON_KEY",
@@ -1150,7 +1150,7 @@
             "MM_MASK_CAPTAIN",
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY",
-            "MM_DOUBLE_DEFENSE",
+            "MM_STONE_OF_AGONY",
             "MM_BOMBERS"       
           ],
           [  
@@ -1171,7 +1171,7 @@
             "MM_STRENGTH",
             "MM_BOOMERANG",
             "MM_SLINGSHOT",
-            "MM_STONE_OF_AGONY"
+            "MM_SHOVEL"
           ],
           
           [

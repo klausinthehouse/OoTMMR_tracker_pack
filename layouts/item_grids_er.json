@@ -285,7 +285,7 @@
                 ],
                 [
                     "MM_entrance_interior_gb_fisher",
-                    "MM_entrance_interior_gb_lab",
+                    "MM_entrance_interior_gb_lab",                    
                     "MM_entrance_interior_zc_beaver",
                     "MM_entrance_interior_zc_fairy",
                     "MM_entrance_interior_zh",
@@ -293,7 +293,8 @@
                     "MM_entrance_interior_zh_lulu",
                     "MM_entrance_interior_zh_mikau",
                     "MM_entrance_interior_zh_shop",
-                    "MM_entrance_interior_zh_tijo"
+                    "MM_entrance_interior_zh_tijo",
+                    "MM_entrance_interior_pf_tele"
                 ],
                 [
                     "MM_entrance_interior_ic_fairy",
@@ -403,7 +404,8 @@
                     "MM_entrance_overworld_ic_path_front",
                     "MM_entrance_overworld_ic_path_upr",
                     "MM_entrance_overworld_igy",
-                    "MM_entrance_overworld_st"
+                    "MM_entrance_overworld_st",
+                    "MM_entrance_overworld_st_inv"
                 ]
             ]
         }
