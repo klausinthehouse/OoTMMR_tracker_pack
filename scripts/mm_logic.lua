@@ -5592,10 +5592,10 @@ function _mm_logic()
     },
     ["Deku Palace Main"] = {
         ["exits"] = {
-            ["Deku Palace Near JP Grotto Climb Left"] = function () return has_Shovel() and not setting('entrance', 'grotto') end,
-            ["Deku Palace Near JP Grotto Climb Right"] = function () return has_Shovel() and not setting('entrance', 'grotto') end,
+            ["Deku Palace Near JP Grotto Climb Left"] = function () return has_Shovel() and not setting('entrance', 'grotto') and setting('jpLayouts', 'DP') end,
+            ["Deku Palace Near JP Grotto Climb Right"] = function () return has_Shovel() and not setting('entrance', 'grotto') and setting('jpLayouts', 'DP') end,
             ["Deku Palace Corner Ledge Bottom"] = function () return true end,
-            ["Deku Palace Near JP Grotto Line Start"] = function () return (is_child() or has('MASK_DEKU') or trick('MM_PALACE_BEAN_SKIP')) and has_Shovel() and not setting('entrance', 'grotto') end,
+            ["Deku Palace Near JP Grotto Line Start"] = function () return (is_child() or has('MASK_DEKU') or trick('MM_PALACE_BEAN_SKIP')) and has_Shovel() and not setting('entrance', 'grotto') and setting('jpLayouts', 'DP') end,
             ["Deku Palace Throne"] = function () return not setting('entrance', 'interior_most') end,
             ["Deku Palace Front"] = function () return true end,
             ["Deku Palace Near US Beans Grotto"] = function () return is_child() or has('MASK_DEKU') or trick('MM_PALACE_BEAN_SKIP') end,
@@ -6887,7 +6887,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Great Bay Coast Platform"] = function () return not setting('jpLayouts', 'GreatBayCoast') or has_mask_zora() end,
+            ["Great Bay Coast Platform"] = function () return not setting('jpLayouts', 'GB') or has_mask_zora() end,
             ["Fisher's Hut"] = function () return not setting('entrance', 'interior_most') end,
             ["Great Bay Fence"] = function () return true end,
             ["Great Bay Coast Fortress"] = function () return underwater_walking() end,
@@ -10020,6 +10020,8 @@ function _mm_logic()
     ["Deku Palace Near JP Grotto Line Start"] = {        
          ["locations"] = {
             ["JP Line Grotto Enter"] = function () return true end,
+            ["JP Line Grotto Grass"] = function () return true end,
+            ["JP Line Grotto Butterfly"] = function () return has_sticks end,
         },
         ["age_change"] = false,
     },
