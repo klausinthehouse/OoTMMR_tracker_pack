@@ -1299,6 +1299,21 @@
     ]
   },
   {
+    "name": "Shovel Mm",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/shovel.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/shovel.png",
+        "codes": "MM_SHOVEL"
+      }
+    ]
+  },
+  {
     "name": "Transcendent Fairy",
     "type": "progressive",
     "allow_disabled": false,

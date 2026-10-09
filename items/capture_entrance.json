@@ -1546,6 +1546,12 @@
       "codes": "MM_entrance_overworld_st"
     },
     {
+      "name": "MM Stone Tower Inverted",
+      "type": "toggle",
+      "img": "images/entrance_overworld_st_inv.png",
+      "codes": "MM_entrance_overworld_st_inv"
+    },
+    {
       "name": "MM Termina Field",
       "type": "toggle",
       "img": "images/entrance_overworld_tf.png",

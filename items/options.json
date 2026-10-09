@@ -3832,6 +3832,26 @@
     ]
   },
   {
+    "name": "Shovel (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_Shovel_true.png",
+        "codes": "setting_ShovelOot,setting_ShovelOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_Shovel_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_ShovelOot,setting_ShovelOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Rusty Keys (Mm)",
     "type": "progressive",
     "allow_disabled": false,
@@ -3847,6 +3867,26 @@
         "img": "images/setting_RustyKeysMm_false.png",
         "img_mods": "@disabled",
         "codes": "setting_RustyKeysMm,setting_RustyKeysMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shovel (Mm)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_Shovel_true.png",
+        "codes": "setting_ShovelMm,setting_ShovelMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_Shovel_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_ShovelMm,setting_ShovelMm_false",
         "inherit_codes": false
       }
     ]

@@ -896,6 +896,21 @@
     ]
   },
   {
+    "name": "Shovel OoT",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/shovel.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/shovel.png",
+        "codes": "OOT_SHOVEL"
+      }
+    ]
+  },
+  {
     "name": "Double Defense",
     "type": "toggle",
     "img": "images/DD.png",
@@ -2758,6 +2773,21 @@
       {
         "img": "images/oot_rusty_dogladyhouse.png",
         "codes": "OOT_RUSTY_DOGLADY"
+      }
+    ]
+  },
+  {
+    "name": "Rusted Key Pot House",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/oot_rusty_pothouse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/oot_rusty_pothouse.png",
+        "codes": "OOT_RUSTY_POT"
       }
     ]
   },
