@@ -131,6 +131,39 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Kokiri Forest Storms Grotto Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Kokiri Forest Storms Grotto Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Kokiri Forest Storms Grotto Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               }  
             ],
             "map_locations": [
@@ -531,15 +564,36 @@
                 "item_count": 1
               },   
               {
-                "name": "Big Fairy on Gossip (Storms)",
+                "name": "Gossip-Hint",
                 "access_rules": [
-                  "$oot|Kokiri Forest Storms Grotto Big Fairy"
+                  "$oot|Kokiri Forest Gossip Hint"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy by Grotto ",
+                "access_rules": [
+                  "$oot|Kokiri Forest Gossip Fairy"
                 ],
                 "visibility_rules": [
-                  "setting_BigFairyShuffle_true"
+                  "setting_GossipFairyShuffleOot_overworld"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
                 "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy by Grotto ",
+                "access_rules": [
+                  "$oot|Kokiri Forest Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               },           
               {
@@ -584,11 +638,53 @@
             "map_locations": [
               {
                 "map": "oot",
-                "visibility_rules": [
-                  "setting_shuffleGrassOot_overworld"
-                ],
                 "x": 2214,
                 "y": 958
+              }
+            ]
+          },
+          {
+            "name": "Near Deku Tree",
+            "sections": [                
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Near Deku Tree Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Near Deku Tree Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Near Deku Tree Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }              
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2340,
+                "y": 875
               }
             ]
           },
@@ -724,7 +820,40 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
-              } 
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Lost Woods Grotto Generic Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Lost Woods Grotto Generic Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Lost Woods Grotto Generic Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }   
             ],
             "map_locations": [
               {
@@ -798,8 +927,8 @@
                 "visibility_rules": [
                   "setting_BigFairyShuffle_true"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               },
               {
@@ -1020,6 +1149,39 @@
                 "chest_unopened_img": "images/deku_scrub.png",
                 "chest_opened_img": "images/deku_scrub_grey.png",
                 "item_count": 1
+              },   
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Lost Woods Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy by Scrub ",
+                "access_rules": [
+                  "$oot|Lost Woods Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy by Scrub ",
+                "access_rules": [
+                  "$oot|Lost Woods Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1096,8 +1258,8 @@
                 "visibility_rules": [
                   "setting_BigFairyShuffle_true"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               },
               {
@@ -1157,7 +1319,7 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Songs in Forest",
+            "name": "In Front of Forest Temple",
             "sections": [
               {
                 "name": "Song from Saria",
@@ -1176,6 +1338,39 @@
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Sacred Meadow Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Sacred Meadow Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Sacred Meadow Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1309,6 +1504,39 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
+              },   
+              {
+                "name": "Gossip-Hint on Maze",
+                "access_rules": [
+                  "$oot|Sacred Meadow Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 2
+              },   
+              {
+                "name": "Gossip-Fairy on Maze",
+                "access_rules": [
+                  "$oot|Sacred Meadow Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 2
+              },   
+              {
+                "name": "Gossip-Big Fairy on Maze",
+                "access_rules": [
+                  "$oot|Sacred Meadow Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -1346,8 +1574,8 @@
                 "visibility_rules": [
                   "setting_BigFairyShuffle_true"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               },
               {
@@ -1489,7 +1717,40 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
-              }  
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Southeast Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Southeast Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Southeast Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }
             ],
             "map_locations": [
               {
@@ -1527,18 +1788,6 @@
                 "chest_unopened_img": "images/system/bush.png",
                 "chest_opened_img": "images/system/bush_grey.png",                
                 "item_count": 11
-              },
-              {
-                "name": "Near Lake",                    
-                "access_rules": [
-                  "$oot|Hyrule Field Boulders"
-                ],
-                "visibility_rules": [
-                  "setting_BoulderOot_overworld"
-                ],
-                "chest_unopened_img": "images/system/Boulder.png",
-                "chest_opened_img": "images/system/Boulder_grey.png",
-                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1598,7 +1847,40 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
-              }  
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Open Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Open Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Open Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              } 
             ],
             "map_locations": [
               {
@@ -1658,6 +1940,39 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Market Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Market Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Market Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               }  
             ],
             "map_locations": [
@@ -1818,6 +2133,39 @@
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
                 "item_count": 2
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Hyrule Field Cow Grotto Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Field Cow Grotto Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Field Cow Grotto Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -2039,8 +2387,8 @@
                 "visibility_rules": [
                   "setting_BigFairyShuffle_true"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -2168,6 +2516,18 @@
                 "chest_unopened_img": "images/system/bush.png",
                 "chest_opened_img": "images/system/bush_grey.png",                
                 "item_count": 12
+              },
+              {
+                "name": "South-East Boulder",                    
+                "access_rules": [
+                  "$oot|Hyrule Field Boulders"
+                ],
+                "visibility_rules": [
+                  "setting_BoulderOot_overworld"
+                ],
+                "chest_unopened_img": "images/system/Boulder.png",
+                "chest_opened_img": "images/system/Boulder_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -2431,8 +2791,8 @@
                 "visibility_rules": [
                   "setting_BigFairyShuffle_true"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -2507,6 +2867,39 @@
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Lake Hylia Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Lake Hylia Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Lake Hylia Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -3085,7 +3478,40 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
-              }        
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Kakariko Grotto Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Kakariko Grotto Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Kakariko Grotto Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }   
             ],
             "map_locations": [
               {
@@ -4140,10 +4566,43 @@
                     "visibility_rules": [
                       "setting_BigFairyShuffle_true"
                     ],
-                    "chest_unopened_img": "images/Fairy.png",
-                    "chest_opened_img": "images/FairyGreyscale.png",
+                    "chest_unopened_img": "images/BigFairy.png",
+                    "chest_opened_img": "images/BigFairyGreyscale.png",
                     "item_count": 1
-                  }
+                  },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Hyrule Castle Grotto Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Castle Grotto Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Castle Grotto Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }
                 ],
                 "map_locations": [
                   {
@@ -4152,7 +4611,53 @@
                     "y": 360
                   }
                 ]
-              }              
+              },
+              {
+                "name": "Graveyard Upper",
+                "short_name": "GY Upper",
+                "sections": [                  
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Graveyard Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Graveyard Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Graveyard Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }
+                ],
+                "map_locations": [
+                  {
+                    "map": "oot",
+                    "x": 2125,
+                    "y": 320
+                  }
+                ]
+              }               
             ]
           }
         ]
@@ -4259,8 +4764,8 @@
                     "visibility_rules": [
                       "setting_BigFairyShuffle_true"
                     ],
-                    "chest_unopened_img": "images/Fairy.png",
-                    "chest_opened_img": "images/FairyGreyscale.png",
+                    "chest_unopened_img": "images/BigFairy.png",
+                    "chest_opened_img": "images/BigFairyGreyscale.png",
                     "item_count": 1
                   },
                   {
@@ -4422,7 +4927,40 @@
                    "chest_unopened_img": "images/system/Butterfly.png",
                    "chest_opened_img": "images/system/Butterfly_grey.png",
                    "item_count": 3
-                  }   
+                  },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Death Mountain Trail Grotto Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Death Mountain Trail Grotto Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Death Mountain Trail Grotto Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }   
                 ],
                 "map_locations": [
                   {
@@ -4515,8 +5053,8 @@
                 "visibility_rules": [
                   "setting_BigFairyShuffle_true"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -4575,6 +5113,39 @@
                 "chest_unopened_img": "images/system/RedBoulder.png",
                 "chest_opened_img": "images/system/RedBoulder_grey.png",
                 "item_count": 3
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Death Mountain Trail Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Death Mountain Trail Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Death Mountain Trail Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               },
               {
                 "name": "Biggoron Broken Sword",
@@ -4646,6 +5217,39 @@
                   "$oot|Goron City Maze Center 1"
                 ],
                 "item_count": 2
+              },
+              {
+                "name": "Gossip-Hint Maze",
+                "access_rules": [
+                  "$oot|Goron City Maze Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy Maze",
+                "access_rules": [
+                  "$oot|Goron City Maze Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy Maze",
+                "access_rules": [
+                  "$oot|Goron City Maze Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               },
               {
                 "name": "Left Maze Chest",
@@ -4773,6 +5377,39 @@
                 ],
                 "chest_unopened_img": "images/pot.png",
                 "chest_opened_img": "images/pot_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Gossip-Hint Medigoron",
+                "access_rules": [
+                  "$oot|Goron City Medigoron Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy Medigoron",
+                "access_rules": [
+                  "$oot|Goron City Medigoron Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy Medigoron",
+                "access_rules": [
+                  "$oot|Goron City Medigoron Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               },
               {
@@ -4989,6 +5626,39 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Death Mountain Crater Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Death Mountain Crater Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Death Mountain Crater Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -5049,6 +5719,39 @@
                 "chest_unopened_img": "images/system/Rock.png",
                 "chest_opened_img": "images/system/Rock_grey.png",
                 "item_count": 2
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Death Mountain Crater Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Death Mountain Crater Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Death Mountain Crater Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               },
               {
                 "name": "Child-Deku",
@@ -5820,6 +6523,51 @@
         ]
       },
       {
+        "name": "Temple of Time Courtyard",
+        "sections": [           
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|ToT Courtyard Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 4
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|ToT Courtyard Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 4
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|ToT Courtyard Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 4
+              }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1505,
+            "y": 295
+          }
+        ]
+      },
+      {
         "name": "Temple of Time",
         "sections": [
           {
@@ -6051,6 +6799,39 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 2
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Hyrule Castle Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 2
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Castle Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 2
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Castle Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -6122,6 +6903,39 @@
                 "chest_unopened_img": "images/system/Rock.png",
                 "chest_opened_img": "images/system/Rock_grey.png",
                 "item_count": 8
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Hyrule Castle Grotto Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Castle Grotto Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Hyrule Castle Grotto Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -6441,7 +7255,40 @@
                "chest_unopened_img": "images/system/Butterfly.png",
                "chest_opened_img": "images/system/Butterfly_grey.png",
                "item_count": 3
-              }
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Zora River Grotto Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Zora River Grotto Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Zora River Grotto Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }  
             ],
             "map_locations": [
               {
@@ -6501,6 +7348,39 @@
                "chest_unopened_img": "images/system/blue.png",
                "chest_opened_img": "images/system/blue_check.png",
                "item_count": 4
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Zora River Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Zora River Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Zora River Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               },
               {
                 "name": "Wonderitems near ZD ",
@@ -6688,6 +7568,39 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Zora River Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Zora River Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Zora River Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -6800,6 +7713,39 @@
                 "chest_unopened_img": "images/system/Rock.png",
                 "chest_opened_img": "images/system/Rock_grey.png",
                 "item_count": 8
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Zora Domain Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Zora Domain Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Zora Domain Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               },
               {
                 "name": "Dive down",
@@ -7072,6 +8018,39 @@
                 "chest_unopened_img": "images/system/bush.png",
                 "chest_opened_img": "images/system/bush_grey.png",                
                 "item_count": 6
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Zora Fountain Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 2
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Zora Fountain Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 2
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Zora Fountain Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 2
               },              
               {
                 "name": "ZF Boulder",                    
@@ -7293,6 +8272,39 @@
                 "chest_unopened_img": "images/Fairy.png",
                 "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 3
+              },
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Gerudo Valley Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Gerudo Valley Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Gerudo Valley Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
               },
               {
                 "name": "Wonder Beanflight",
@@ -7793,8 +8805,8 @@
                 "visibility_rules": [
                   "setting_BigFairyShuffle_true"
                 ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
                 "item_count": 1
               },
               {

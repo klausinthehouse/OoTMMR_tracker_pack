@@ -755,6 +755,39 @@
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
+          {
+            "name": "Gossip-Hint",
+            "access_rules": [
+              "$oot|Dodongo Cavern Gossip Stone"
+            ],
+            "chest_unopened_img": "images/gossip_stone.png",
+            "chest_opened_img": "images/gossip_stone_check.png",
+            "item_count": 1
+          },   
+          {
+            "name": "Gossip-Fairy",
+            "access_rules": [
+              "$oot|Dodongo Cavern Gossip Fairy"
+            ],
+            "visibility_rules": [
+              "setting_GossipFairyShuffleOot_dungeon"
+            ],
+            "chest_unopened_img": "images/Fairy.png",
+            "chest_opened_img": "images/FairyGreyscale.png",
+            "item_count": 1
+          },   
+          {
+            "name": "Gossip-Big Fairy",
+            "access_rules": [
+              "$oot|Dodongo Cavern Gossip Big Fairy"
+            ],
+            "visibility_rules": [
+           "setting_GossipBigFairyShuffleOot_dungeon"
+            ],
+         "chest_unopened_img": "images/BigFairy.png",
+         "chest_opened_img": "images/BigFairyGreyscale.png",
+         "item_count": 1
+      },
       {
         "name": "East Pots near Baby Dodongos",
         "short_name": "Near Baby Dodongos",
@@ -1156,7 +1189,7 @@
         "name": "Lobby Boulders Downstairs", 
         "short_name": "Lobby lower",                   
         "access_rules": [
-          "$oot|MQ Dodonge Cavern Lobby Boulders"
+          "$oot|MQ dodongo Cavern Lobby Boulders"
         ],
         "visibility_rules": [
           "setting_BoulderOot_dungeon"
@@ -1169,7 +1202,7 @@
         "name": "Lobby Boulders Upstairs", 
         "short_name": "Lobby Upper",                   
         "access_rules": [
-          "$oot|MQ Dodonge Cavern Lobby Boulders"
+          "$oot|MQ dodongo Cavern Lobby Boulders"
         ],
         "visibility_rules": [
           "setting_BoulderOot_dungeon"
@@ -1296,7 +1329,7 @@
         "name": "Right Corridor Boulders", 
         "short_name": "Right Corridor",                   
         "access_rules": [
-          "$oot|MQ Dodonge Cavern Corridor Boulders"
+          "$oot|MQ dodongo Cavern Corridor Boulders"
         ],
         "visibility_rules": [
           "setting_BoulderOot_dungeon"
@@ -1424,7 +1457,7 @@
         "name": "Deep single Boulder", 
         "short_name": "Deep Single",                   
         "access_rules": [
-          "$oot|MQ Dodonge Cavern Boulder before Miniboss"
+          "$oot|MQ dodongo Cavern Boulder before Miniboss"
         ],
         "visibility_rules": [
           "setting_BoulderOot_dungeon"
@@ -1450,7 +1483,7 @@
         "name": "Upper Lizalfos Boulders", 
         "short_name": "Upper Lizalfos",                   
         "access_rules": [
-          "$oot|MQ Dodonge Cavern Miniboss Boulders"
+          "$oot|MQ dodongo Cavern Miniboss Boulders"
         ],
         "visibility_rules": [
           "setting_BoulderOot_dungeon"
@@ -7350,7 +7383,7 @@
         "force_invisibility_rules": [
          "setting_Dungeonshadow_complete"
          ],
-        "x": 2145,
+        "x": 2165,
         "y": 345
       }
     ]

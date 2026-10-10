@@ -1,8 +1,8 @@
 [
   {
     "name": "OOT",
-    "chest_unopened_img": "images/chest_brown_closed.png",
-    "chest_opened_img": "images/chest_brown_open.png",
+    "chest_unopened_img": "images/unknown.png",
+    "chest_opened_img": "images/check.png",
     "children": [
       {
         "name": "Kokiri Forest",
@@ -289,7 +289,7 @@
               {
                 "name": "Interior",
                 "visibility_rules": [
-                  "setting_entrance_interior_extra"
+                  "setting_mixed_interior"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
@@ -298,7 +298,7 @@
               {
                 "name": "overworld",
                 "visibility_rules": [
-                  "setting_mixed_overworld"
+                  "setting_engtrance_overworld"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_overworld",
@@ -353,7 +353,7 @@
               {
                 "name": "Interior",
                 "visibility_rules": [
-                  "setting_entrance_interior_extra"
+                  "setting_mixed_interior"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
@@ -362,7 +362,7 @@
               {
                 "name": "overworld",
                 "visibility_rules": [
-                  "setting_mixed_overworld"
+                  "setting_entrance_overworld"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_overworld",
@@ -7239,8 +7239,10 @@
                 "map": "oot_er_exits",
                 "x": 1630,
                 "y": 440
-              },
-              {
+              }
+            ]
+          },
+          {
                 "name": "Kakariko -> Death Mountain Trail",
                 "access_rules": [
                   "$oot|Kakariko to DMT"
@@ -7296,12 +7298,12 @@
                     "map_locations": [
                       {
                         "map": "oot_er_exits",
-                        "x": 1640,
-                        "y": 370
+                        "x": 1650,
+                        "y": 360
                   }
-                ]
-              },
-              {
+            ]
+          },
+          {
                 "name": "Death Mountain Trail -> Kakariko",
                 "access_rules": [
                   "$oot|Death Mountain Trail HP"
@@ -7357,16 +7359,11 @@
                     "map_locations": [
                       {
                         "map": "oot_er_exits",
-                        "x": 1640,
-                        "y": 320
+                        "x": 1650,
+                        "y": 340
                   }
                 ]
-              }
-            ]
-          },          
-          {
-            "name": "Kak Graveyard",
-            "children": [
+              },
               {
                 "name": "Kakariko -> Kakariko Graveyard",
                 "access_rules": [
@@ -8345,13 +8342,13 @@
                 "y": 580
               }
             ]
-          }                           
-            ]
           }
         ]
       },
       {
         "name": "Death Mountain",
+        "chest_unopened_img": "images/unknown.png",
+        "chest_opened_img": "images/check.png",
         "color": "#a01009",
         "children": [
           {
@@ -8660,8 +8657,6 @@
                     "x": 1890,
                     "y": 295
                   }
-                ]
-              }               
             ]
           }
         ]
@@ -9041,7 +9036,7 @@
             "access_rules": [
                   "$oot|Death Mountain Trail Rock Upper"
                 ],
-            "short_name": "DMS Owl <-> Kak",
+            "short_name": "DMS Owl -> Kak",
             "sections": [              
               {
                 "name": "Dungeons",                
@@ -9082,7 +9077,7 @@
               {
                 "name": "overworld",
                 "visibility_rules": [
-                  "setting_mixed_overworld"
+                  "setting_entrance_overworld"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_overworld",
@@ -9405,9 +9400,6 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
                 "x": 2135,
                 "y": 165
               }
@@ -9469,9 +9461,6 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
                 "x": 2105,
                 "y": 165
               }
@@ -9661,7 +9650,7 @@
               {
                 "map": "oot_er_exits",
                 "x": 2420,
-                "y": 310
+                "y": 270
               }
             ]
           },
@@ -9722,7 +9711,7 @@
               {
                 "map": "oot_er_exits",
                 "x": 2420,
-                "y": 340
+                "y": 300
               }
             ]
           },
@@ -11749,8 +11738,7 @@
                     
                   }
                 ]
-              }
-              ,
+              },
               {
                 "name": "Temple of Time Courtyard -> Hyrule Market",
                 "access_rules": [
@@ -11808,11 +11796,8 @@
                   {
                     "map": "oot_er_exits",
                     "x": 1465,
-                    "y": 355
-                    
+                    "y": 355                    
                   }
-                ]
-              }
             ]
           }
         ]
@@ -16618,46 +16603,31 @@
                 ],                                      
             "sections": [
               {
-                "name": "Dungeons",                
-                "visibility_rules": [
-                  "setting_entrance_dungeon_major"
-                ],
+                "name": "Dungeons",
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeon",
                 "item_count": 1               
               },
               {
                 "name": "Grottos",
-                "visibility_rules": [
-                  "setting_entrance_grotto"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1               
               },
               {
                 "name": "Bosses",
-                "visibility_rules": [
-                  "setting_entrance_Boss"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_boss",
                 "item_count": 1               
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_entrance_interior_most"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
               },
               {
                 "name": "overworld",
-                "visibility_rules": [
-                  "setting_entrance_overworld"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_overworld",
                 "item_count": 1               
@@ -16687,50 +16657,41 @@
                 ],                                       
             "sections": [
               {
-                "name": "Dungeons",                
-                "visibility_rules": [
-                  "setting_entrance_dungeon_major"
-                ],
+                "name": "Dungeons",
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeon",
                 "item_count": 1               
               },
               {
                 "name": "Grottos",
-                "visibility_rules": [
-                  "setting_entrance_grotto"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1               
               },
               {
                 "name": "Bosses",
-                "visibility_rules": [
-                  "setting_entrance_Boss"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_boss",
                 "item_count": 1               
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_entrance_interior_most"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
               },
               {
                 "name": "overworld",
-                "visibility_rules": [
-                  "setting_entrance_overworld"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_overworld",
                 "item_count": 1               
-              }
+              },
+                  {
+                   "name": "Warpsongs",                    
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_warp",
+                    "item_count": 1               
+                 }   
         ],
         "map_locations": [
           {
@@ -16743,10 +16704,15 @@
           }
         ]
       }
-            ]
-          }
-        ]
+    ]
+  }
+]
       }
     ]
   }
 ]
+      }
+    ]
+  }
+]
+

@@ -1,8 +1,8 @@
 [
   {
     "name": "MM",
-    "chest_unopened_img": "images/chest_brown_closed.png",
-    "chest_opened_img": "images/chest_brown_open.png",
+    "chest_unopened_img": "images/unknown.png",
+    "chest_opened_img": "images/check.png",
     "children": [      
       {
         "name": "Clock Town",

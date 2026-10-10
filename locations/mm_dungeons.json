@@ -586,7 +586,40 @@
           "setting_housesSkulltulaTokens_cross"
         ],
         "item_count": 2
-      }
+      },
+      {
+        "name": "Gossip-Hint",
+        "access_rules": [
+          "$mm|Swamp Skulltula Tree Gossip Stone"
+        ],
+        "chest_unopened_img": "images/gossip_stone.png",
+        "chest_opened_img": "images/gossip_stone_check.png",
+        "item_count": 1
+      },   
+      {
+        "name": "Gossip-Fairy",
+        "access_rules": [
+          "$mm|Swamp Skulltula Tree Gossip Fairy"
+        ],
+        "visibility_rules": [
+         "setting_GossipFairyShuffleMm_dungeon"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+       },   
+       {
+         "name": "Gossip-Big Fairy",
+         "access_rules": [
+           "$mm|Swamp Skulltula Tree Gossip Big Fairy"
+         ],
+         "visibility_rules": [
+          "setting_GossipBigFairyShuffleMm_dungeon"
+         ],
+        "chest_unopened_img": "images/BigFairy.png",
+        "chest_opened_img": "images/BigFairyGreyscale.png",
+         "item_count": 1
+      } 
     ]
   },
   {
@@ -1888,6 +1921,42 @@
         "item_count": 1
       },
       {
+        "name": "Trial Deku Gossip-Hint",
+        "short_name": "Trial Deku",
+        "access_rules": [
+          "$mm|Moon Trial Deku Gossip Stone"
+        ],
+        "chest_unopened_img": "images/gossip_stone.png",
+        "chest_opened_img": "images/gossip_stone_check.png",
+        "item_count": 5
+      },   
+      {
+        "name": "Trial Deku Gossip-Fairy",        
+        "short_name": "Deku Gossip F",
+        "access_rules": [
+          "$mm|Moon Trial Deku Gossip Fairy"
+        ],
+        "visibility_rules": [
+         "setting_GossipFairyShuffleMm_dungeon"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 5
+       },   
+       {
+         "name": "Trial Deku Gossip-Big Fairy",        
+        "short_name": "Deku Gossip BF",
+         "access_rules": [
+           "$mm|Moon Trial Deku Gossip Big Fairy"
+         ],
+         "visibility_rules": [
+          "setting_GossipBigFairyShuffleMm_dungeon"
+         ],
+        "chest_unopened_img": "images/BigFairy.png",
+        "chest_opened_img": "images/BigFairyGreyscale.png",
+         "item_count": 5
+      },
+      {
         "name": "Trial Goron Early Pots",
         "access_rules": [
           "$mm|Moon Trial Goron Pot Early 1"
@@ -1934,6 +2003,42 @@
         "item_count": 4
       },
       {
+        "name": "Trial Goron Gossip-Hint",        
+        "short_name": "Trial Goron",
+        "access_rules": [
+          "$mm|Moon Trial Goron Gossip Stone"
+        ],
+        "chest_unopened_img": "images/gossip_stone.png",
+        "chest_opened_img": "images/gossip_stone_check.png",
+        "item_count": 5
+      },   
+      {
+        "name": "Trial Goron Gossip-Fairy",        
+        "short_name": "Goron Gossip F",
+        "access_rules": [
+          "$mm|Moon Trial Goron Gossip Fairy"
+        ],
+        "visibility_rules": [
+         "setting_GossipFairyShuffleMm_dungeon"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 5
+       },   
+       {
+         "name": "Trial Goron Gossip-Big Fairy",        
+        "short_name": "Goron Gossip BF",
+         "access_rules": [
+           "$mm|Moon Trial Goron Gossip Big Fairy"
+         ],
+         "visibility_rules": [
+          "setting_GossipBigFairyShuffleMm_dungeon"
+         ],
+        "chest_unopened_img": "images/BigFairy.png",
+        "chest_opened_img": "images/BigFairyGreyscale.png",
+         "item_count": 5
+      },
+      {
         "name": "Trial Zora HP",
         "chest_unopened_img": "images/system/heartpiece.png",
         "chest_opened_img": "images/system/heartpiece_grey.png",
@@ -1941,6 +2046,42 @@
           "$mm|Moon Trial Zora HP"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Trial Zora Gossip-Hint",        
+        "short_name": "Trial Zora",
+        "access_rules": [
+          "$mm|Moon Trial Zora Gossip Stone"
+        ],
+        "chest_unopened_img": "images/gossip_stone.png",
+        "chest_opened_img": "images/gossip_stone_check.png",
+        "item_count": 5
+      },   
+      {
+        "name": "Trial Zora Gossip-Fairy",        
+        "short_name": "Zora Gossip F",
+        "access_rules": [
+          "$mm|Moon Trial Zora Gossip Fairy"
+        ],
+        "visibility_rules": [
+         "setting_GossipFairyShuffleMm_dungeon"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 5
+       },   
+       {
+         "name": "Trial Zora Gossip-Big Fairy",        
+        "short_name": "Zora Gossip BF",
+         "access_rules": [
+           "$mm|Moon Trial Zora Gossip Big Fairy"
+         ],
+         "visibility_rules": [
+          "setting_GossipBigFairyShuffleMm_dungeon"
+         ],
+        "chest_unopened_img": "images/BigFairy.png",
+        "chest_opened_img": "images/BigFairyGreyscale.png",
+         "item_count": 5
       },
       {
         "name": "Trial Link Entrance Pots",
@@ -1955,6 +2096,42 @@
         "item_count": 8
       },
       {
+        "name": "Trial Link First Gossip-Hint",        
+        "short_name": "Link 1",
+        "access_rules": [
+          "$mm|Moon Trial Link 1 Gossip Stone"
+        ],
+        "chest_unopened_img": "images/gossip_stone.png",
+        "chest_opened_img": "images/gossip_stone_check.png",
+        "item_count": 1
+      },   
+      {
+        "name": "Trial Link First Gossip-Fairy",        
+        "short_name": "Link 1 Gossip F",
+        "access_rules": [
+          "$mm|Moon Trial Link 1 Gossip Fairy"
+        ],
+        "visibility_rules": [
+         "setting_GossipFairyShuffleMm_dungeon"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+       },   
+       {
+         "name": "Trial Link First Gossip-Big Fairy",        
+        "short_name": "Link 1 Gossip BF",
+         "access_rules": [
+           "$mm|Moon Trial Link 1 Gossip Big Fairy"
+         ],
+         "visibility_rules": [
+          "setting_GossipBigFairyShuffleMm_dungeon"
+         ],
+        "chest_unopened_img": "images/BigFairy.png",
+        "chest_opened_img": "images/BigFairyGreyscale.png",
+         "item_count": 1
+      },
+      {
         "name": "Trial Link Chest 1",
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
@@ -1964,6 +2141,42 @@
         "item_count": 1
       },
       {
+        "name": "Trial Link Second Gossip-Hint",        
+        "short_name": "Link 2",
+        "access_rules": [
+          "$mm|Moon Trial Link 1 Gossip Stone"
+        ],
+        "chest_unopened_img": "images/gossip_stone.png",
+        "chest_opened_img": "images/gossip_stone_check.png",
+        "item_count": 1
+      },   
+      {
+        "name": "Trial Link Second Gossip-Fairy",        
+        "short_name": "Link 2 Gossip F",
+        "access_rules": [
+          "$mm|Moon Trial Link 1 Gossip Fairy"
+        ],
+        "visibility_rules": [
+         "setting_GossipFairyShuffleMm_dungeon"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 1
+       },   
+       {
+         "name": "Trial Link Second Gossip-Big Fairy",        
+        "short_name": "Link 2 Gossip BF",
+         "access_rules": [
+           "$mm|Moon Trial Link 1 Gossip Big Fairy"
+         ],
+         "visibility_rules": [
+          "setting_GossipBigFairyShuffleMm_dungeon"
+         ],
+        "chest_unopened_img": "images/BigFairy.png",
+        "chest_opened_img": "images/BigFairyGreyscale.png",
+         "item_count": 1
+      },
+      {
         "name": "Trial Link Chest 2",
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
@@ -1971,6 +2184,42 @@
           "$mm|Moon Trial Link Iron Knuckle Chest"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Trial Link Gossip-Hints End",        
+        "short_name": "Link 3",
+        "access_rules": [
+          "$mm|Moon Trial Link 3 Gossip Stone"
+        ],
+        "chest_unopened_img": "images/gossip_stone.png",
+        "chest_opened_img": "images/gossip_stone_check.png",
+        "item_count": 3
+      },   
+      {
+        "name": "Trial Link Second Gossip-Fairies End",        
+        "short_name": "Link 3 Gossip F",
+        "access_rules": [
+          "$mm|Moon Trial Link 3 Gossip Fairy"
+        ],
+        "visibility_rules": [
+         "setting_GossipFairyShuffleMm_dungeon"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 3
+       },   
+       {
+         "name": "Trial Link Second Gossip-Big Fairies End",        
+        "short_name": "Link 3 Gossip BF",
+         "access_rules": [
+           "$mm|Moon Trial Link 3 Gossip Big Fairy"
+         ],
+         "visibility_rules": [
+          "setting_GossipBigFairyShuffleMm_dungeon"
+         ],
+        "chest_unopened_img": "images/BigFairy.png",
+        "chest_opened_img": "images/BigFairyGreyscale.png",
+         "item_count": 3
       },
       {
         "name": "Trial Link HP",
