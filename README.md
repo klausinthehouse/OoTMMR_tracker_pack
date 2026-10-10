@@ -59,13 +59,13 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Cleared/uncleared dungeon states
 - pre-completed Dungeon Settings
 - Corrected Hint Locations
+- JP Layout Settings
+- Full Entrance Trackin
+- Gossip Fairy Shuffle
 
 ## TODOs:
 
-- [ ] Adjust Tree Search for ER Options
 - [ ] Ganon Trials
-- [ ] Entrance Shuffle Setting
-- [ ] JP layout Setting
 - [ ] Song Event Shuffle Setting
 - [ ] Song Event Shuffle Songs
 - [ ] OOT Ice Arrow Platform Logic
