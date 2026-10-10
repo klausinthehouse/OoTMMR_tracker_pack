@@ -837,7 +837,7 @@
       "codes": "OOT_entrance_interior_gy_hut"
     },
     {
-      "name": "OOT Hyrule Market Back Alley",
+      "name": "OOT Hyrule Market Back Alley House",
       "type": "toggle",
       "img": "images/entrance_interior_hm_alley.png",
       "codes": "OOT_entrance_interior_hm_alley"
@@ -1430,6 +1430,12 @@
       "type": "toggle",
       "img": "images/entrance_overworld_market.png",
       "codes": "OOT_entrance_overworld_market"
+    },
+    {
+      "name": "OOT Hyrule Market Back Alley",
+      "type": "toggle",
+      "img": "images/entrance_overworld_market_alley.png",
+      "codes": "OOT_entrance_overworld_market_alley"
     },
     {
       "name": "OOT Hyrule Market Entrance",
