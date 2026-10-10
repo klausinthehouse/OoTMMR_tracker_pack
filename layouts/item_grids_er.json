@@ -274,10 +274,10 @@
                     "MM_entrance_interior_rr_house",
                     "MM_entrance_interior_rr_stable"
                 ],
-                [
-                    "MM_entrance_interior_gs_shop",
+                [                                      
                     "MM_entrance_interior_gv_island",
                     "MM_entrance_interior_gv_shrine",
+                    "MM_entrance_interior_gs_shop",
                     "MM_entrance_interior_mv_gy",
                     "MM_entrance_interior_mv_smith",
                     "MM_entrance_interior_sh_fairy",
@@ -325,6 +325,7 @@
                     "OOT_entrance_overworld_hf",
                     "OOT_entrance_overworld_llr",
                     "OOT_entrance_overworld_market",
+                    "OOT_entrance_overworld_market_alley",
                     "OOT_entrance_overworld_market_front",
                     "OOT_entrance_overworld_market_tot"                        
                 ],
@@ -391,6 +392,7 @@
                     "MM_entrance_overworld_ti"
                 ],
                 [
+                    "MM_entrance_overworld_gb",
                     "MM_entrance_overworld_gb_lab",
                     "MM_entrance_overworld_gb_ledge",
                     "MM_entrance_overworld_pf",

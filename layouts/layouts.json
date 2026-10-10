@@ -107,7 +107,7 @@
               "dock": "top",
               "tabs": [
                 {
-                  "title": "OOT",
+                  "title": "OOT Locations",
                   "icon": "images/ocarina.png",
                   "content": {
                     "type": "map",
@@ -117,7 +117,7 @@
                   }
                 },
                 {
-                  "title": "Locations MM",
+                  "title": "MM Locations",
                   "icon": "images/items/mm_fiercedeity.png",
                   "content": {
                     "type": "map",
@@ -127,7 +127,7 @@
                   }
                 },
                 {
-                  "title": "Exits OOT",
+                  "title": "OOT Entrances",
                   "icon": "images/ocarina.png",
                   "content": {
                     "type": "map",
@@ -137,7 +137,7 @@
                   }
                 },
                 {
-                  "title": "Exits MM",
+                  "title": "MM Entrances",
                   "icon": "images/items/mm_fiercedeity.png",
                   "content": {
                     "type": "map",
