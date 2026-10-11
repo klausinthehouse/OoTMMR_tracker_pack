@@ -1638,7 +1638,7 @@ function _mm_logic()
 	end
 
 	function is_adult()
-		return setting('crossAge') and age('adult')
+		return setting('crossAge') and age('adult') or has('MASK_ADULT')
 	end
 
 	function is_tall()
