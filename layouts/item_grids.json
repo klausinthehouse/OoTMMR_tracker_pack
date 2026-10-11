@@ -81,7 +81,7 @@
             "OOT_gossip_stone"
           ],
           [
-            "OOT_SONG_EMPTINESS",
+            "OOT_DOUBLE_DEFENSE",
             "OOT_GREAT_FAIRY_SWORD",
             "OOT_SPIN_UPGRADE",     
             "OOT_MASK_BLAST",
@@ -89,6 +89,16 @@
             "OOT_MASK_KAMARO",
             "OOT_POWDER_KEG",
             "OOT_SHOVEL"
+          ],
+          [
+            "OOT_SONG_AWAKENING",
+            "OOT_SONG_GORON",
+            "OOT_SONG_ZORA",
+            "OOT_SONG_EMPTINESS",
+            "OOT_SONG_ORDER",
+            "OOT_SONG_HEALING",
+            "OOT_SONG_SOARING",
+            "MM_DEED_LAND"
           ],
           [
             "OOT_SKELETON_KEY",
@@ -1109,7 +1119,7 @@
             "MM_SONG_ZORA",
             "MM_SONG_EMPTINESS",
             "MM_SONG_ORDER",
-            "MM_SONG_SUN",
+            "MM_DOUBLE_DEFENSE",
             "MM_ROOM_KEY",
             "MM_DEED_LAND"
           ],
@@ -1150,7 +1160,7 @@
             "MM_MASK_CAPTAIN",
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY",
-            "MM_STONE_OF_AGONY",
+            "MM_MASK_ADULT",
             "MM_BOMBERS"       
           ],
           [  
@@ -1171,9 +1181,36 @@
             "MM_STRENGTH",
             "MM_BOOMERANG",
             "MM_SLINGSHOT",
-            "MM_SHOVEL"
-          ],
-          
+            "MM_STONE_OF_AGONY"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,1",
+        "scale": 0.7,
+        "rows": [
+          [
+            "MM_SONG_ZELDA",
+            "MM_SONG_SARIA",
+            "MM_SONG_SUN",
+            "MM_SONG_TP_FOREST",
+            "MM_SONG_TP_FIRE",
+            "MM_SONG_TP_WATER",
+            "MM_SONG_TP_SPIRIT",
+            "MM_SONG_TP_SHADOW",
+            "MM_SONG_TP_LIGHT",
+            "MM_SHOVEL"            
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,1",
+        "scale": 0.875,
+        "rows": [          
           [
             "MM_STRAY_FAIRY_TOWN",
             "MM_STRAY_FAIRY_WF",

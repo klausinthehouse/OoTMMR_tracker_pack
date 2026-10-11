@@ -76,6 +76,16 @@
       },
       {
         "type": "item",
+        "item": "setting_GossipFairyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_GossipBigFairyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_shuffleHivesOot",
         "height": 16
       },
@@ -518,6 +528,16 @@
       {
         "type": "item",
         "item": "setting_shuffleGrassMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_GossipFairyShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_GossipBigFairyShuffleMm",
         "height": 16
       },
       {
