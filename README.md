@@ -62,12 +62,12 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - JP Layout Settings
 - Full Entrance Trackin
 - Gossip Fairy Shuffle
+- Song Event Shuffle Songs
+- Song Event Shuffle Setting
 
 ## TODOs:
 
-- [ ] Ganon Trials
-- [ ] Song Event Shuffle Setting
-- [ ] Song Event Shuffle Songs
+- [ ] Ganon Trials  
 - [ ] OOT Ice Arrow Platform Logic
 
 
