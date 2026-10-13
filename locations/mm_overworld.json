@@ -1315,6 +1315,16 @@
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
                     "item_count": 4
+                  },
+                  {
+                    "name": "Songevent Moon Access",
+                    "access_rules": [
+                      "$mm|Clock Tower Roof Pot 1"
+                  ],
+                    "hosted_item": "MM_SONG_MOON_TIME",               
+                    "visibility_rules": [
+                      "setting_SongeventMm_true"
+                  ]                
                   }
                 ],
                 "map_locations": [
@@ -1578,6 +1588,16 @@
             "short_name": "TF North",
             "sections": [
               {
+               "name": "Songevent Heal Kamaro",
+               "access_rules": [
+                 "$mm|Termina Field Rocks"
+              ],
+               "hosted_item": "MM_SONG_KAMARO_TIME",               
+               "visibility_rules": [
+                 "setting_SongeventMm_true"
+              ]                
+              },
+              {
                 "name": "Kamaro (Midnight to 6 AM)",
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
@@ -1592,7 +1612,7 @@
                 "chest_unopened_img": "images/system/Rock.png",
                 "chest_opened_img": "images/system/Rock_grey.png",
                 "access_rules": [
-                  "$mm|Termina Field Rock"
+                  "$mm|Termina Field Rocks"
                 ],
                 "visibility_rules": [
                   "setting_rockmm_overworld"
@@ -4757,7 +4777,17 @@
               {
                 "name": "Woodfall Owl Statue",
                 "short_name": "Owl Statue",
-                "sections": [
+                "sections": [                  
+                  {
+                    "name": "Songevent Woodfall Access",
+                    "access_rules": [
+                      "$mm|Woodfall Pot 1"
+                  ],
+                    "hosted_item": "MM_SONG_WOODFALL_TIME",               
+                    "visibility_rules": [
+                      "setting_SongeventMm_true"
+                  ]                
+                  },
                   {
                     "name": "Woodfall Owl Statue",
                     "chest_unopened_img": "images/deactivated_owl_statue.png",
@@ -4765,15 +4795,15 @@
                     "access_rules": [
                       "$mm|Woodfall Owl Statue"
                     ],
+                    "visibility_rules": [
+                      "setting_owlShuffle_anywhere"
+                  ],       
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "termina",
-                    "force_invisibility_rules": [
-                      "setting_owlShuffle_none"
-                    ],
                     "x": 530,
                     "y": 462
                   }
@@ -5453,6 +5483,16 @@
             "short_name": "Darmani",
             "sections": [
               {
+               "name": "Songevent Heal Darmani",
+               "access_rules": [
+                 "$mm|Goron Graveyard Enter"
+              ],
+               "hosted_item": "MM_SONG_DARMANI_TIME",               
+               "visibility_rules": [
+                 "setting_SongeventMm_true"
+              ]                
+              },
+              {
                 "name": "Heal Darmani",
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
@@ -6011,6 +6051,16 @@
             "name": "Goron Shrine",
             "sections": [
               {
+               "name": "Songevent Goron Baby",
+               "access_rules": [
+                 "$mm|Goron Shrine Pot 01"
+              ],
+               "hosted_item": "MM_SONG_LULLABY_TIME",               
+               "visibility_rules": [
+                 "setting_SongeventMm_true"
+              ]                
+              },
+              {
                 "name": "Baby Goron",
                 "chest_unopened_img": "images/system/unknownsong.png",
                 "chest_opened_img": "images/system/unknownsong_check.png",
@@ -6315,6 +6365,16 @@
                 "short_name": "Owl Statue",
                 "sections": [
                   {
+                    "name": "Songevent get Biggoron to sleep",
+                    "access_rules": [
+                      "$mm|Snowhead Small Snowball 1"
+                  ],
+                    "hosted_item": "MM_SONG_SNOWHEAD_TIME",               
+                    "visibility_rules": [
+                      "setting_SongeventMm_true"
+                  ]                
+                  },
+                  {
                     "name": "Snowhead Owl Statue",
                     "chest_unopened_img": "images/deactivated_owl_statue.png",
                     "chest_opened_img": "images/activated_owl_statue.png",
@@ -6465,6 +6525,16 @@
             "name": "Great Bay Coast",
             "short_name": "Coast",
             "sections": [
+              {
+               "name": "Songevent Heal Mikau",
+               "access_rules": [
+                 "$mm|Great Bay Coast Ledge Rocks"
+              ],
+               "hosted_item": "MM_SONG_MIKAU_TIME",               
+               "visibility_rules": [
+                 "setting_SongeventMm_true"
+              ]                
+              },
               {
                 "name": "Heal Mikau",
                 "chest_unopened_img": "images/system/unknownmask.png",
@@ -7110,6 +7180,16 @@
                 "short_name": "Owl Statue",
                 "sections": [
                   {
+                    "name": "Songevent Wake Turtle",
+                    "access_rules": [
+                      "$mm|Zora Cape Pot Near Owl Statue 1"
+                  ],
+                    "hosted_item": "MM_SONG_GREATBAY_TIME",               
+                    "visibility_rules": [
+                      "setting_SongeventMm_true"
+                  ]                
+                  },
+                  {
                     "name": "Zora Cape Owl Statue",
                     "chest_unopened_img": "images/deactivated_owl_statue.png",
                     "chest_opened_img": "images/activated_owl_statue.png",
@@ -7528,6 +7608,16 @@
             "chest_opened_img": "images/system/chest_open_big.png",
             "short_name": "Captain's Hat Chest",
             "sections": [
+              {
+               "name": "Songevent Captain Keeta",
+               "access_rules": [
+                 "$mm|Ikana Graveyard Grass 1"
+              ],
+               "hosted_item": "MM_SONG_KEETA_TIME",               
+               "visibility_rules": [
+                 "setting_SongeventMm_true"
+              ]                
+              },
               {
                 "name": "Defeat Captain Keeta",
                 "access_rules": [
@@ -8305,6 +8395,16 @@
                     "short_name": "Music Box House",
                     "sections": [
                       {
+                        "name": "Songevent heal Pamelas Father",
+                        "access_rules": [
+                          "$mm|Music Box House Songevent"
+                       ],
+                        "hosted_item": "MM_SONG_GIBDO_TIME",               
+                        "visibility_rules": [
+                         "setting_SongeventMm_true"
+                      ]                
+                      },
+                      {
                         "name": "Heal Pamela's father",
                         "chest_unopened_img": "images/system/unknownmask.png",
                         "chest_opened_img": "images/system/unknownmask_grey.png",
@@ -8318,6 +8418,28 @@
                       {
                         "map": "termina",
                         "x": 846,
+                        "y": 256
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ikana Spring Grotto",
+                    "sections": [                      
+                      {
+                        "name": "Songevent clean Spring",
+                        "access_rules": [
+                          "$mm|Spring Water Cave Enter"
+                       ],
+                        "hosted_item": "MM_SONG_SPRING_TIME",               
+                        "visibility_rules": [
+                         "setting_SongeventMm_true"
+                      ]                
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 865,
                         "y": 256
                       }
                     ]

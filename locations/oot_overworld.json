@@ -3592,6 +3592,16 @@
             "name": "Kak Windmill",
             "sections": [
               {
+                "name": "Songevent Drain Well",
+                "access_rules": [
+                  "$oot|Windmill play Song"
+                ],
+                "hosted_item": "OOT_SONG_WINDMILL_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
+              {
                 "name": "Kak Windmill Freestanding PoH",
                 "short_name": "Windmill HP",
                 "access_rules": [
@@ -4541,6 +4551,16 @@
                 "short_name": "Royal Tomb",
                 "sections": [
                   {
+                "name": "Songevent Royal Tomb",
+                "access_rules": [
+                  "$oot|Graveyard Rock"
+                ],
+                "hosted_item": "OOT_SONG_TOMB_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
+                  {
                     "name": "Song from Royal Family's Tomb",
                     "short_name": "Song",
                     "access_rules": [
@@ -5070,6 +5090,16 @@
             "name": "DMT Great Fairy Fountain",
             "sections": [
               {
+                "name": "Songevent Great Fairy Magic 1",
+                "access_rules": [
+                  "$oot|Great Fairy Magic Enter"
+                ],
+                "hosted_item": "OOT_SONG_MAGIC1_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
+              {
                 "name": "DMT Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
@@ -5435,6 +5465,16 @@
                 "item_count": 1
               },
               {
+                "name": "Songevent Darunias Chamber",
+                "access_rules": [
+                  "$oot|Goron City Pot Stairs 1"
+                ],
+                "hosted_item": "OOT_SONG_GC_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
+              {
                 "name": "Play Saria's Song",
                 "access_rules": [
                   "$oot|Darunia"
@@ -5791,6 +5831,16 @@
           {
             "name": "DMC Great Fairy",
             "sections": [
+              {
+                "name": "Songevent Great Fairy Magic 2",
+                "access_rules": [
+                  "$oot|Great Fairy Magic Upgrade 2 Enter"
+                ],
+                "hosted_item": "OOT_SONG_MAGIC2_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
               {
                 "name": "DMC Great Fairy Reward",
                 "short_name": "GF Reward",
@@ -6571,6 +6621,16 @@
         "name": "Temple of Time",
         "sections": [
           {
+                "name": "Songevent Temple of Time",
+                "access_rules": [
+                  "$oot|Temple of Time Enter"
+                ],
+                "hosted_item": "OOT_SONG_TOT_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
+          {
             "name": "Sheik at Temple",
             "access_rules": [
               "$oot|Temple of Time Sheik Song"
@@ -6846,6 +6906,16 @@
             "name": "HC Great Fairy Fountain",
             "sections": [
               {
+                "name": "Songevent Great Fairy Din",
+                "access_rules": [
+                  "$oot|Great Fairy Din Enter"
+                ],
+                "hosted_item": "OOT_SONG_DIN_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
+              {
                 "name": "HC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
@@ -7003,6 +7073,16 @@
           {
             "name": "OGC Great Fairy Fountain",
             "sections": [
+              {
+                "name": "Songevent Great Fairy Defense Upgrade",
+                "access_rules": [
+                  "$oot|Great Fairy Defense Enter"
+                ],
+                "hosted_item": "OOT_SONG_DEFENSE_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
               {
                 "name": "OGC Great Fairy Reward",
                 "short_name": "Reward",
@@ -7301,6 +7381,16 @@
           {
             "name": "ZR Near Domain",
             "sections": [
+              {
+                "name": "Songevent Enter Zora Domain",
+                "access_rules": [
+                  "$oot|Zora River Gossip Stone"
+                ],
+                "hosted_item": "OOT_SONG_DOMAIN_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
               {
                 "name": "ZR Near Domain Freestanding PoH",
                 "short_name": "Near Domain HP",
@@ -7934,6 +8024,16 @@
           {
             "name": "ZF Great Fairy Fountain",
             "sections": [
+              {
+                "name": "Songevent Great Fairy Farore",
+                "access_rules": [
+                  "$oot|Great Fairy Farore Enter"
+                ],
+                "hosted_item": "OOT_SONG_FARORE_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
               {
                 "name": "ZF Great Fairy Reward",
                 "short_name": "Reward",
@@ -9138,6 +9238,16 @@
           {
             "name": "Colossus Great Fairy Fountain",
             "sections": [
+              {
+                "name": "Songevent Great Fairy Nayru",
+                "access_rules": [
+                  "$oot|Great Fairy Nayru Enter"
+                ],
+                "hosted_item": "OOT_SONG_NAYRU_ZELDA",               
+                "visibility_rules": [
+                  "setting_SongeventOot_true"
+                ]                
+              },
               {
                 "name": "Colossus Great Fairy Reward",
                 "short_name": "Reward",

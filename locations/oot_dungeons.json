@@ -4983,6 +4983,16 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "Songevent Change Water Lebel",
+        "access_rules": [
+          "$oot|Water Temple Pot Main Room Near Block 1"
+        ],
+        "hosted_item": "OOT_SONG_WATER_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true"
+        ]                
+      },
+      {
         "name": "Main Room F2 West Ledge",
         "short_name": "Main West",
         "access_rules": [
@@ -6575,6 +6585,16 @@
         "item_count": 1
       },
       {
+        "name": "Songevent Boat Ride",
+        "access_rules": [
+          "$oot|Water Temple Pot Main Room Near Block 1"
+        ],
+        "hosted_item": "OOT_SONG_SHADOW_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_ShadowTemple_false"
+        ]                
+      },
+      {
         "name": "After Boat Pots",
         "short_name": "After Boat",
         "access_rules": [
@@ -7200,6 +7220,16 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Songevent Boat Ride",
+        "access_rules": [
+          "$oot|Water Temple Pot Main Room Near Block 1"
+        ],
+        "hosted_item": "OOT_SONG_SHADOW_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_ShadowTemple_true"
+        ]                
       },
       {
         "name": "GS After Ship",
@@ -7956,6 +7986,16 @@
         "item_count": 1
       },
       {
+        "name": "Songevent Adult Chest",
+        "access_rules": [
+          "$oot|Spirit Temple Song Event"
+        ],
+        "hosted_item": "OOT_SONG_ADULT_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_SpiritTemple_false"
+        ]                
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -8041,6 +8081,16 @@
           "setting_mq_SpiritTemple_false"
         ],
         "item_count": 2
+      },
+      {
+        "name": "Songevent Spirit Statue",
+        "access_rules": [
+          "$oot|Spirit Temple Pot Statue Room 1"
+        ],
+        "hosted_item": "OOT_SONG_STATUE_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_SpiritTemple_false"
+        ]                
       },
       {
         "name": "Statue Room Hand Chest",
@@ -8164,6 +8214,16 @@
         "item_count": 1
       },
       {
+        "name": "Songevent Statue Chest",
+        "access_rules": [
+          "$oot|MQ Spirit Temple Pot Statue Room Lower 1"
+        ],
+        "hosted_item": "OOT_SONG_STATUE_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_SpiritTemple_true"
+        ]                
+      },
+      {
         "name": "Statue Room Lullaby Chest",
         "short_name": "Statue Boxes",
         "access_rules": [
@@ -8275,6 +8335,16 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Songevent Adult Chest",
+        "access_rules": [
+          "$oot|Spirit Temple Song Event"
+        ],
+        "hosted_item": "OOT_SONG_ADULT_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_SpiritTemple_true"
+        ]                
       },
       {
         "name": "Leever Room Chest",
@@ -8430,6 +8500,16 @@
           "setting_mq_SpiritTemple_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Songevent Boss Key Chest",
+        "access_rules": [
+          "$oot|Spirit Temple Pot Adult Upper"
+        ],
+        "hosted_item": "OOT_SONG_BOSSKEY_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_SpiritTemple_false"
+        ]                
       },      
       {
         "name": "Boss Key Chest",
@@ -8493,6 +8573,16 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Songevent Top Chest",
+        "access_rules": [
+          "$oot|MQ Spirit Temple SR Adult Bottom"
+        ],
+        "hosted_item": "OOT_SONG_BOSSKEY_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_SpiritTemple_true"
+        ]                
       },
       {
         "name": "Mirror Puzzle Invisible Chest",
@@ -8655,6 +8745,16 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "Songevent Drain Water",
+        "access_rules": [
+          "$oot|Bottom of the Well Pot Main Room 1"
+        ],
+        "hosted_item": "OOT_SONG_BOTW_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_BottomoftheWell_false"
+        ]                
       },
       {
         "name": "GS West Inner Room",
@@ -8962,6 +9062,16 @@
           "setting_wonderitemoot_dungeon,setting_mq_BottomoftheWell_true"
         ],
         "item_count": 8
+      },
+      {
+        "name": "Songevent Open Cage",
+        "access_rules": [
+          "$oot|Bottom of the Well Pot Main Room 1"
+        ],
+        "hosted_item": "OOT_SONG_BOTW_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_BottomoftheWell_true"
+        ]                
       },
       {
         "name": "Lobby Cage Pots",
@@ -9471,6 +9581,16 @@
         "item_count": 1
       },
       {
+        "name": "Songevent Lullaby Chest",
+        "access_rules": [
+          "$oot|Ganon Castle Light Chest Around 1"
+        ],
+        "hosted_item": "OOT_SONG_GANON_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_GanonCastle_false"
+        ]                
+      },
+      {
         "name": "Light Trial Lullaby Chest",
         "short_name": "Light Trial Lullaby",
         "access_rules": [
@@ -9949,6 +10069,16 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Songevent Lullaby Chest",
+        "access_rules": [
+          "$oot|Ganon Castle Light Chest Around 1"
+        ],
+        "hosted_item": "OOT_SONG_GANON_ZELDA",               
+        "visibility_rules": [
+          "setting_SongeventOot_true,setting_mq_GanonCastle_true"
+        ]                
       },
       {
         "name": "Light Trial Lullaby Chest",
