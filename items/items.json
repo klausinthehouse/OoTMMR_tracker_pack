@@ -848,6 +848,57 @@
     ]
   },
   {
+    "name": "Oath to Order",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_oath.png",
+    "codes": "OOT_SONG_ORDER"
+  },
+  {
+    "name": "Song of Healing",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_healing.png",
+    "initial_active_state": false,
+    "codes": "OOT_SONG_HEALING"
+  },
+  {
+    "name": "Song of Soaring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_soaring.png",
+    "codes": "OOT_SONG_SOARING"
+  },
+  {
+    "name": "Sonata of Awakening",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_sonata.png",
+    "codes": "OOT_SONG_AWAKENING"
+  },
+  {
+    "name": "Goron Lullaby",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_GORON_HALF"
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_GORON"
+      }
+    ]
+  },
+  {
+    "name": "New Wave Bossa Nova",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_bossanova.png",
+    "codes": "OOT_SONG_ZORA"
+  },
+  {
     "name": "Spin Upgrade OOT",
     "type": "toggle",
     "img": "images/spin.png",
@@ -927,7 +978,7 @@
       },
       {
         "img": "images/emerald.png",
-        "codes": "OOT_STONE_EMERALD"
+        "codes": "OOT_STONE_EMERALD,OOT_SPIRITUAL_STONE"
       }
     ]
   },
@@ -942,7 +993,7 @@
       },
       {
         "img": "images/ruby.png",
-        "codes": "OOT_STONE_RUBY"
+        "codes": "OOT_STONE_RUBY,OOT_SPIRITUAL_STONE"
       }
     ]
   },
@@ -957,7 +1008,7 @@
       },
       {
         "img": "images/sapphire.png",
-        "codes": "OOT_STONE_SAPPHIRE"
+        "codes": "OOT_STONE_SAPPHIRE,OOT_SPIRITUAL_STONE"
       }
     ]
   },
@@ -972,7 +1023,7 @@
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "OOT_MEDALLION_FOREST"
+        "codes": "OOT_MEDALLION_FOREST,OOT_MEDALLION"
       }
     ]
   },
@@ -987,7 +1038,7 @@
       },
       {
         "img": "images/firemedallion.png",
-        "codes": "OOT_MEDALLION_FIRE"
+        "codes": "OOT_MEDALLION_FIRE,OOT_MEDALLION"
       }
     ]
   },
@@ -1002,7 +1053,7 @@
       },
       {
         "img": "images/watermedallion.png",
-        "codes": "OOT_MEDALLION_WATER"
+        "codes": "OOT_MEDALLION_WATER,OOT_MEDALLION"
       }
     ]
   },
@@ -1017,7 +1068,7 @@
       },
       {
         "img": "images/shadowmedallion.png",
-        "codes": "OOT_MEDALLION_SHADOW"
+        "codes": "OOT_MEDALLION_SHADOW,OOT_MEDALLION"
       }
     ]
   },
@@ -1032,7 +1083,7 @@
       },
       {
         "img": "images/spiritmedallion.png",
-        "codes": "OOT_MEDALLION_SPIRIT"
+        "codes": "OOT_MEDALLION_SPIRIT,OOT_MEDALLION"
       }
     ]
   },
@@ -1047,7 +1098,7 @@
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "OOT_MEDALLION_LIGHT"
+        "codes": "OOT_MEDALLION_LIGHT,OOT_MEDALLION"
       }
     ]
   },

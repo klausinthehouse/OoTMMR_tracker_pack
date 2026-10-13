@@ -30,6 +30,3196 @@
     ]
   },
   {
+    "name": "Songevent Temple of Time",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_TOT_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_TOT_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_TOT_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_TOT_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_TOT_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_TOT_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_TOT_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_TOT_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_TOT_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_TOT_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_TOT_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_TOT_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_TOT_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_TOT_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_TOT_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_TOT_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_TOT_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_TOT_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_TOT_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_TOT_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Windmill",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_WINDMILL_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_WINDMILL_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_WINDMILL_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_WINDMILL_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_WINDMILL_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_WINDMILL_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_WINDMILL_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_WINDMILL_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_WINDMILL_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_WINDMILL_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_WINDMILL_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_WINDMILL_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_WINDMILL_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_WINDMILL_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_WINDMILL_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_WINDMILL_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_WINDMILL_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_WINDMILL_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_WINDMILL_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_WINDMILL_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Royal Tomb",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_TOMB_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_TOMB_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_TOMB_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_TOMB_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_TOMB_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_TOMB_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_TOMB_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_TOMB_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_TOMB_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_TOMB_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_TOMB_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_TOMB_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_TOMB_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_TOMB_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_TOMB_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_TOMB_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_TOMB_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_TOMB_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_TOMB_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_TOMB_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Domain",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_DOMAIN_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_DOMAIN_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_DOMAIN_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_DOMAIN_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_DOMAIN_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_DOMAIN_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_DOMAIN_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_DOMAIN_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_DOMAIN_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_DOMAIN_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_DOMAIN_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_DOMAIN_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_DOMAIN_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_DOMAIN_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_DOMAIN_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_DOMAIN_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_DOMAIN_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_DOMAIN_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_DOMAIN_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_DOMAIN_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Darunia Chamber",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_GC_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_GC_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_GC_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_GC_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_GC_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_GC_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_GC_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_GC_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_GC_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_GC_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_GC_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_GC_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_GC_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_GC_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_GC_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_GC_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_GC_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_GC_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_GC_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_GC_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Great Fairy Farore",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_FARORE_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_FARORE_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_FARORE_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_FARORE_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_FARORE_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_FARORE_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_FARORE_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_FARORE_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_FARORE_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_FARORE_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_FARORE_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_FARORE_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_FARORE_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_FARORE_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_FARORE_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_FARORE_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_FARORE_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_FARORE_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_FARORE_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_FARORE_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Great Fairy Din",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_DIN_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_DIN_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_DIN_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_DIN_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_DIN_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_DIN_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_DIN_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_DIN_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_DIN_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_DIN_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_DIN_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_DIN_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_DIN_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_DIN_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_DIN_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_DIN_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_DIN_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_DIN_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_DIN_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_DIN_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Great Fairy Nayru",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_NAYRU_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_NAYRU_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_NAYRU_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_NAYRU_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_NAYRU_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_NAYRU_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_NAYRU_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_NAYRU_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_NAYRU_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_NAYRU_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_NAYRU_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_NAYRU_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_NAYRU_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_NAYRU_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_NAYRU_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_NAYRU_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_NAYRU_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_NAYRU_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_NAYRU_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_NAYRU_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Great Fairy Magic 1",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_MAGIC1_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_MAGIC1_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_MAGIC1_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_MAGIC1_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_MAGIC1_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_MAGIC1_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_MAGIC1_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_MAGIC1_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_MAGIC1_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_MAGIC1_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_MAGIC1_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_MAGIC1_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_MAGIC1_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_MAGIC1_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_MAGIC1_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_MAGIC1_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_MAGIC1_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_MAGIC1_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_MAGIC1_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_MAGIC1_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Great Fairy Magic 2",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_MAGIC2_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_MAGIC2_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_MAGIC2_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_MAGIC2_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_MAGIC2_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_MAGIC2_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_MAGIC2_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_MAGIC2_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_MAGIC2_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_MAGIC2_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_MAGIC2_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_MAGIC2_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_MAGIC2_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_MAGIC2_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_MAGIC2_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_MAGIC2_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_MAGIC2_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_MAGIC2_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_MAGIC2_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_MAGIC2_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Great Fairy Double Defense",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_DEFENSE_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_DEFENSE_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_DEFENSE_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_DEFENSE_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_DEFENSE_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_DEFENSE_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_DEFENSE_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_DEFENSE_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_DEFENSE_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_DEFENSE_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_DEFENSE_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_DEFENSE_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_DEFENSE_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_DEFENSE_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_DEFENSE_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_DEFENSE_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_DEFENSE_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_DEFENSE_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_DEFENSE_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_DEFENSE_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Water Temple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_WATER_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_WATER_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_WATER_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_WATER_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_WATER_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_WATER_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_WATER_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_WATER_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_WATER_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_WATER_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_WATER_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_WATER_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_WATER_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_WATER_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_WATER_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_WATER_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_WATER_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_WATER_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_WATER_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_WATER_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Shadow Temple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_SHADOW_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_SHADOW_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_SHADOW_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_SHADOW_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_SHADOW_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_SHADOW_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_SHADOW_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_SHADOW_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_SHADOW_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_SHADOW_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_SHADOW_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_SHADOW_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_SHADOW_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_SHADOW_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_SHADOW_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_SHADOW_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_SHADOW_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_SHADOW_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_SHADOW_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_SHADOW_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Spirit Statue",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_STATUE_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_STATUE_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_STATUE_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_STATUE_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_STATUE_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_STATUE_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_STATUE_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_STATUE_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_STATUE_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_STATUE_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_STATUE_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_STATUE_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_STATUE_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_STATUE_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_STATUE_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_STATUE_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_STATUE_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_STATUE_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_STATUE_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_STATUE_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Spirit Adult",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_ADULT_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_ADULT_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_ADULT_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_ADULT_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_ADULT_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_ADULT_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_ADULT_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_ADULT_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_ADULT_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_ADULT_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_ADULT_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_ADULT_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_ADULT_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_ADULT_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_ADULT_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_ADULT_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_ADULT_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_ADULT_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_ADULT_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_ADULT_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Spirit Bosskey",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_BOSSKEY_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_BOSSKEY_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_BOSSKEY_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_BOSSKEY_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_BOSSKEY_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_BOSSKEY_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_BOSSKEY_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_BOSSKEY_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_BOSSKEY_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_BOSSKEY_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_BOSSKEY_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_BOSSKEY_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_BOSSKEY_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_BOSSKEY_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_BOSSKEY_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_BOSSKEY_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_BOSSKEY_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_BOSSKEY_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_BOSSKEY_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_BOSSKEY_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Bottom of the Well",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_BOTW_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_BOTW_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_BOTW_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_BOTW_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_BOTW_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_BOTW_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_BOTW_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_BOTW_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_BOTW_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_BOTW_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_BOTW_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_BOTW_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_BOTW_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_BOTW_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_BOTW_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_BOTW_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_BOTW_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_BOTW_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_BOTW_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_BOTW_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Ganons Castle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "OOT_SONG_GANON_ZELDA"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_GANON_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "OOT_SONG_GANON_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "OOT_SONG_GANON_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_GANON_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_GANON_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "OOT_SONG_GANON_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "OOT_SONG_GANON_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "OOT_SONG_GANON_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "OOT_SONG_GANON_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "OOT_SONG_GANON_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "OOT_SONG_GANON_PRELUDE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "OOT_SONG_GANON_HEALING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "OOT_SONG_GANON_SOARING",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "OOT_SONG_GANON_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "OOT_SONG_GANON_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "OOT_SONG_GANON_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "OOT_SONG_GANON_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "OOT_SONG_GANON_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "OOT_SONG_GANON_OATH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Songevent Woodfall Temple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_WOODFALL_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_WOODFALL_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_WOODFALL_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_WOODFALL_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_WOODFALL_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_WOODFALL_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_WOODFALL_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_WOODFALL_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_WOODFALL_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_WOODFALL_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_WOODFALL_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_WOODFALL_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_WOODFALL_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_WOODFALL_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_WOODFALL_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_WOODFALL_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_WOODFALL_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_WOODFALL_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_WOODFALL_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_WOODFALL_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent Snowhead Temple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_SNOWHEAD_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_SNOWHEAD_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_SNOWHEAD_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_SNOWHEAD_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_SNOWHEAD_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_SNOWHEAD_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_SNOWHEAD_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_SNOWHEAD_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_SNOWHEAD_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_SNOWHEAD_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_SNOWHEAD_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_SNOWHEAD_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_SNOWHEAD_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_SNOWHEAD_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_SNOWHEAD_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_SNOWHEAD_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_SNOWHEAD_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_SNOWHEAD_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_SNOWHEAD_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_SNOWHEAD_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent Great Bay Temple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_GREATBAY_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_GREATBAY_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_GREATBAY_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_GREATBAY_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_GREATBAY_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_GREATBAY_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_GREATBAY_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_GREATBAY_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_GREATBAY_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_GREATBAY_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_GREATBAY_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_GREATBAY_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_GREATBAY_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_GREATBAY_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_GREATBAY_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_GREATBAY_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_GREATBAY_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_GREATBAY_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_GREATBAY_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_GREATBAY_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent Darmani",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_DARMANI_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_DARMANI_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_DARMANI_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_DARMANI_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_DARMANI_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_DARMANI_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_DARMANI_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_DARMANI_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_DARMANI_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_DARMANI_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_DARMANI_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_DARMANI_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_DARMANI_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_DARMANI_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_DARMANI_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_DARMANI_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_DARMANI_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_DARMANI_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_DARMANI_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_DARMANI_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent Pamelas Father",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_GIBDO_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_GIBDO_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_GIBDO_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_GIBDO_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_GIBDO_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_GIBDO_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_GIBDO_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_GIBDO_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_GIBDO_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_GIBDO_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_GIBDO_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_GIBDO_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_GIBDO_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_GIBDO_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_GIBDO_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_GIBDO_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_GIBDO_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_GIBDO_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_GIBDO_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_GIBDO_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent Kamaro",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_KAMARO_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_KAMARO_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_KAMARO_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_KAMARO_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_KAMARO_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_KAMARO_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_KAMARO_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_KAMARO_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_KAMARO_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_KAMARO_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_KAMARO_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_KAMARO_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_KAMARO_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_KAMARO_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_KAMARO_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_KAMARO_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_KAMARO_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_KAMARO_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_KAMARO_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_KAMARO_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent heal Mikau",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_MIKAU_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_MIKAU_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_MIKAU_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_MIKAU_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_MIKAU_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_MIKAU_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_MIKAU_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_MIKAU_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_MIKAU_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_MIKAU_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_MIKAU_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_MIKAU_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_MIKAU_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_MIKAU_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_MIKAU_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_MIKAU_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_MIKAU_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_MIKAU_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_MIKAU_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_MIKAU_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent wake Keeta",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_KEETA_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_KEETA_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_KEETA_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_KEETA_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_KEETA_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_KEETA_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_KEETA_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_KEETA_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_KEETA_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_KEETA_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_KEETA_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_KEETA_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_KEETA_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_KEETA_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_KEETA_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_KEETA_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_KEETA_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_KEETA_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_KEETA_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_KEETA_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent Goron Child",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_LULLABY_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_LULLABY_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_LULLABY_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_LULLABY_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_LULLABY_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_LULLABY_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_LULLABY_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_LULLABY_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_LULLABY_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_LULLABY_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_LULLABY_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_LULLABY_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_LULLABY_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_LULLABY_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_LULLABY_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_LULLABY_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_LULLABY_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_LULLABY_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_LULLABY_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_LULLABY_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent Cleaning the Composer Spring",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_SPRING_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_SPRING_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_SPRING_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_SPRING_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_SPRING_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_SPRING_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_SPRING_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_SPRING_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_SPRING_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_SPRING_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_SPRING_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_SPRING_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_SPRING_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_SPRING_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_SPRING_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_SPRING_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_SPRING_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_SPRING_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_SPRING_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_SPRING_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
+    "name": "Songevent To the Moon",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/unknownsong.png"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "MM_SONG_MOON_TIME",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_healing.png",
+        "codes": "MM_SONG_MOON_HEALING",
+        "inherit_codes": false
+      },   
+      {
+        "img": "images/song_epona.png",
+        "codes": "MM_SONG_MOON_EPONA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_soaring.png",
+        "codes": "MM_SONG_MOON_SOARING",
+        "inherit_codes": false
+      },      
+      {
+        "img": "images/song_storms.png",
+        "codes": "MM_SONG_MOON_STORMS",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_sonata.png",
+        "codes": "MM_SONG_MOON_SONATA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_half_lullaby.png",
+        "codes": "MM_SONG_MOON_HALFLULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "codes": "MM_SONG_MOON_LULLABY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bossanova.png",
+        "codes": "MM_SONG_MOON_BOSSANOVA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_elegy.png",
+        "codes": "MM_SONG_MOON_ELEGY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_oath.png",
+        "codes": "MM_SONG_MOON_OATH",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_zelda.png",
+        "codes": "MM_SONG_MOON_ZELDA"
+      },
+      {
+        "img": "images/song_saria.png",
+        "codes": "MM_SONG_MOON_SARIA",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_sun.png",
+        "codes": "MM_SONG_MOON_SUN",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_minuet.png",
+        "codes": "MM_SONG_MOON_MINUET",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_bolero.png",
+        "codes": "MM_SONG_MOON_BOLERO",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_serenade.png",
+        "codes": "MM_SONG_MOON_SERENADE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_requiem.png",
+        "codes": "MM_SONG_MOON_REQUIEM",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_nocturne.png",
+        "codes": "MM_SONG_MOON_NOCTURNE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/song_prelude.png",
+        "codes": "MM_SONG_MOON_PRELUDE",
+        "inherit_codes": false
+      }      
+    ]
+  },
+  {
     "name": "Bomber's Code",
     "type": "progressive",
     "allow_disabled": false,

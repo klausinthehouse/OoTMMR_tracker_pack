@@ -352,6 +352,70 @@
     "codes": "MM_SONG_SUN"
   },
   {
+    "name": "Saria's Song",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_saria.png",
+    "initial_active_state": false,
+    "codes": "MM_SONG_SARIA"
+  },
+  {
+    "name": "Zelda's Lullaby",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_zelda.png",
+    "initial_active_state": false,
+    "codes": "MM_SONG_ZELDA"
+  },
+  {
+    "name": "Minuet of Forest",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_minuet.png",
+    "initial_active_state": false,
+    "codes": "MM_SONG_TP_FOREST"
+  },
+  {
+    "name": "Bolero of Fire",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_bolero.png",
+    "initial_active_state": false,
+    "codes": "MM_SONG_TP_FIRE"
+  },
+  {
+    "name": "Serenade of Water",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_serenade.png",
+    "initial_active_state": false,
+    "codes": "MM_SONG_TP_WATER"
+  },
+  {
+    "name": "Requiem of Spirit",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_requiem.png",
+    "initial_active_state": false,
+    "codes": "MM_SONG_TP_SPIRIT"
+  },
+  {
+    "name": "Nocturne of Shadow",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_nocturne.png",
+    "initial_active_state": false,
+    "codes": "MM_SONG_TP_SHADOW"
+  },
+  {
+    "name": "Prelude of Light",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_prelude.png",
+    "initial_active_state": false,
+    "codes": "MM_SONG_TP_LIGHT"
+  },
+  {
     "name": "Great Fairy Sword",
     "type": "toggle",
     "img": "images/items/mm_fairysword.png",
@@ -888,6 +952,12 @@
     "codes": "MM_MASK_FIERCE_DEITY,MM_MASK_TRANSFORM,MM_MASK"
   },
   {
+    "name": "Adult Link Mask",
+    "type": "toggle",
+    "img": "images/Adult_Mask.png",
+    "codes": "MM_MASK_ADULT,MM_MASK_TRANSFORM,MM_MASK"
+  },
+  {
     "name": "Giant Mask",
     "type": "toggle",
     "img": "images/items/mm_giant.png",
@@ -1074,25 +1144,25 @@
     "name": "Odolwa Remains",
     "type": "toggle",
     "img": "images/items/mm_odolwa.png",
-    "codes": "mm_odolwa,mm_odolwaremains,mm_odolwa_remains"
+    "codes": "mm_odolwa,mm_odolwaremains,mm_odolwa_remains,MM_BOSS_REMAIN"
   },
   {
     "name": "Goht Remains",
     "type": "toggle",
     "img": "images/items/mm_goht.png",
-    "codes": "mm_goht,mm_gohtremains,mm_goht_remains"
+    "codes": "mm_goht,mm_gohtremains,mm_goht_remains,MM_BOSS_REMAIN"
   },
   {
     "name": "Gyorg Remains",
     "type": "toggle",
     "img": "images/items/mm_gyorg.png",
-    "codes": "mm_gyorg,mm_gyorgremains,mm_gyorg_remains"
+    "codes": "mm_gyorg,mm_gyorgremains,mm_gyorg_remains,MM_BOSS_REMAIN"
   },
   {
     "name": "Twinmold Remains",
     "type": "toggle",
     "img": "images/items/mm_twinmold.png",
-    "codes": "mm_twinmold,mm_twinmoldremains,mm_twin,mm_twinmold_remains,mm_twinremains"
+    "codes": "mm_twinmold,mm_twinmoldremains,mm_twin,mm_twinmold_remains,mm_twinremains,MM_BOSS_REMAIN"
   },
   {
     "name": "Woodfall Label",
