@@ -303,6 +303,11 @@
       },
       {
         "type": "item",
+        "item": "setting_SongeventOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_soulsEnemyOot",
         "height": 16
       },
@@ -745,6 +750,11 @@
       {
         "type": "item",
         "item": "setting_ShovelMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_SongeventMm",
         "height": 16
       },
       {
