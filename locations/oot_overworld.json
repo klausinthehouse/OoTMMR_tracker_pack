@@ -2805,70 +2805,8 @@
             ]
           },
           {
-            "name": "LH Lab outside",
-            "sections": [
-              {
-                "name": "LH Freestanding PoH",
-                "short_name": "On Lab HP",
-                "access_rules": [
-                  "$oot|Lake Hylia HP"
-                ],
-                "chest_unopened_img": "images/HP.png",
-                "chest_opened_img": "images/HP_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "LH Pots outside Lab",
-                "short_name": "Pots",
-                "access_rules": [
-                  "$oot|Lake Hylia Pot 1"
-                ],
-                "visibility_rules": [
-                  "setting_shufflePotsOot_overworld,setting_restoreBrokenActors_true"
-                ],
-                "chest_unopened_img": "images/pot.png",
-                "chest_opened_img": "images/pot_grey.png",
-                "item_count": 2
-              },
-              {
-                "name": "LH GS Bean Patch",
-                "short_name": "Bean Patch",
-                "access_rules": [
-                  "$oot|Lake Hylia GS Soil"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Soil Fairies",
-                "short_name": "Soil",
-                "access_rules": [
-                  "$oot|Lake Hylia Soil Fairies"
-                ],
-                "visibility_rules": [
-                  "setting_SoilFairyShuffle_true"
-                ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 3
-              },
-              {
-                "name": "LH GS Lab Wall (N)",
-                "short_name": "behind Lab",
-                "access_rules": [
-                  "$oot|Lake Hylia GS Lab Wall"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
+            "name": "Lonely Gossip Stone West",
+            "sections": [              
               {
                 "name": "Gossip-Hint",
                 "access_rules": [
@@ -2906,8 +2844,53 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 960,
-                "y": 1160
+                "x": 760,
+                "y": 1415
+              }
+            ]
+          },
+          {
+            "name": "Lonely Gossip Stone East",
+            "sections": [              
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$oot|Lake Hylia Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$oot|Lake Hylia Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$oot|Lake Hylia Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleOot_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1270,
+                "y": 1445
               }
             ]
           },

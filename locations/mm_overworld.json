@@ -5619,7 +5619,7 @@
                 ],
                 "chest_unopened_img": "images/system/tree.png",
                 "chest_opened_img": "images/system/tree_grey.png",                
-                "item_count": 3
+                "item_count": 2
               },
               {
                 "name": "Ramp Trees",
