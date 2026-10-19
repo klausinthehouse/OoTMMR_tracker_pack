@@ -223,9 +223,6 @@
                 [
                     "OOT_entrance_interior_dm_fairy",
                     "OOT_entrance_interior_dmc_fairy",
-                    "OOT_entrance_interior_gc",
-                    "OOT_entrance_interior_gc_back",
-                    "OOT_entrance_interior_gc_sc",
                     "OOT_entrance_interior_gc_shop"
                 ],
                 [
@@ -338,7 +335,10 @@
                     "OOT_entrance_overworld_dm_path",
                     "OOT_entrance_overworld_dm_smt",
                     "OOT_entrance_overworld_dmc_lwr",
-                    "OOT_entrance_overworld_dmc_upr"
+                    "OOT_entrance_overworld_dmc_upr",
+                    "OOT_entrance_overworld_gc",
+                    "OOT_entrance_overworld_gc_back",
+                    "OOT_entrance_overworld_gc_sc"
                 ],
                 [
                     "OOT_entrance_overworld_lh",
@@ -436,6 +436,80 @@
                     "MM_entrance_owl_snow",
                     "MM_entrance_owl_stone",
                     "MM_entrance_owl_swmp"   
+                ]
+            ]
+        }
+    },    
+    "tracker_capture_Songevents_OOT": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                [
+                    "OOT_songevents_song_zelda",
+                    "OOT_songevents_song_epona",
+                    "OOT_songevents_song_saria",
+                    "OOT_songevents_song_sun",
+                    "OOT_songevents_song_time",
+                    "OOT_songevents_song_storms"
+                ],
+                [
+                    "OOT_songevents_song_minuet",
+                    "OOT_songevents_song_bolero",
+                    "OOT_songevents_song_serenade",
+                    "OOT_songevents_song_requiem",
+                    "OOT_songevents_song_nocturne",
+                    "OOT_songevents_song_prelude"
+                ],
+                [
+                    "OOT_songevents_song_healing",
+                    "OOT_songevents_song_soaring",
+                    "OOT_songevents_song_oath"
+                ],
+                [                    
+                    "OOT_songevents_song_sonata",
+                    "OOT_songevents_song_lullaby",
+                    "OOT_songevents_song_bossanova",
+                    "OOT_songevents_song_elegy"
+                ]
+            ]
+        }
+    },    
+    "tracker_capture_Songevents_MM": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                [
+                    "MM_songevents_song_zelda",
+                    "MM_songevents_song_epona",
+                    "MM_songevents_song_saria",
+                    "MM_songevents_song_sun",
+                    "MM_songevents_song_time",
+                    "MM_songevents_song_storms"
+                ],
+                [
+                    "MM_songevents_song_minuet",
+                    "MM_songevents_song_bolero",
+                    "MM_songevents_song_serenade",
+                    "MM_songevents_song_requiem",
+                    "MM_songevents_song_nocturne",
+                    "MM_songevents_song_prelude"
+                ],
+                [
+                    "MM_songevents_song_healing",
+                    "MM_songevents_song_soaring",
+                    "MM_songevents_song_oath"
+                ],
+                [                    
+                    "MM_songevents_song_sonata",
+                    "MM_songevents_song_lullaby",
+                    "MM_songevents_song_bossanova",
+                    "MM_songevents_song_elegy"
                 ]
             ]
         }

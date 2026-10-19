@@ -739,6 +739,11 @@
       },
       {
         "type": "item",
+        "item": "setting_priceMMMerchants",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_regionState",
         "height": 16
       },
