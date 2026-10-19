@@ -785,20 +785,20 @@
     {
       "name": "OOT Goron City Main Entrance",
       "type": "toggle",
-      "img": "images/entrance_interior_gc.png",
-      "codes": "OOT_entrance_interior_gc"
+      "img": "images/entrance_overworld_GC.png",
+      "codes": "OOT_entrance_overworld_GC"
     },
     {
       "name": "OOT Goron City Back Entrance",
       "type": "toggle",
-      "img": "images/entrance_interior_gc_back.png",
-      "codes": "OOT_entrance_interior_gc_back"
+      "img": "images/entrance_overworld_gc_back.png",
+      "codes": "OOT_entrance_overworld_gc_back"
     },
     {
       "name": "OOT Goron City Shortcut",
       "type": "toggle",
-      "img": "images/entrance_interior_gc_sc.png",
-      "codes": "OOT_entrance_interior_gc_sc"
+      "img": "images/entrance_overworld_gc_sc.png",
+      "codes": "OOT_entrance_overworld_gc_sc"
     },
     {
       "name": "OOT Goron City shop",
@@ -1751,6 +1751,236 @@
       "type": "toggle",
       "img": "images/song_serenade.png",
       "codes": "OOT_entrance_song_serenade"
+    },
+
+    {
+      "name": "OOT Songevent Zeldas Lullaby",
+      "type": "toggle",
+      "img": "images/song_zelda.png",
+      "codes": "OOT_songevents_song_zelda"
+    },
+    {
+      "name": "OOT Songevent Eponas Song",
+      "type": "toggle",
+      "img": "images/song_epona.png",
+      "codes": "OOT_songevents_song_epona"
+    },
+    {
+      "name": "OOT Songevent Sarias Song",
+      "type": "toggle",
+      "img": "images/song_saria.png",
+      "codes": "OOT_songevents_song_saria"
+    },
+    {
+      "name": "OOT Songevent Suns Song",
+      "type": "toggle",
+      "img": "images/song_sun.png",
+      "codes": "OOT_songevents_song_sun"
+    },
+    {
+      "name": "OOT Songevent Song of Time",
+      "type": "toggle",
+      "img": "images/song_time.png",
+      "codes": "OOT_songevents_song_time"
+    },
+    {
+      "name": "OOT Songevent Song of Storms",
+      "type": "toggle",
+      "img": "images/song_storms.png",
+      "codes": "OOT_songevents_song_storms"
+    },
+    {
+      "name": "OOT Songevent Bolero of Fire",
+      "type": "toggle",
+      "img": "images/song_bolero.png",
+      "codes": "OOT_songevents_song_bolero"
+    },
+    {
+      "name": "OOT Songevent Minuet of Forest",
+      "type": "toggle",
+      "img": "images/song_minuet.png",
+      "codes": "OOT_songevents_song_minuet"
+    },
+    {
+      "name": "OOT Songevent Nocturen of Shadow",
+      "type": "toggle",
+      "img": "images/song_nocturne.png",
+      "codes": "OOT_songevents_song_nocturne"
+    },
+    {
+      "name": "OOT Songevent Prelude of Light",
+      "type": "toggle",
+      "img": "images/song_prelude.png",
+      "codes": "OOT_songevents_song_prelude"
+    },
+    {
+      "name": "OOT Songevent Requiem of Spirit",
+      "type": "toggle",
+      "img": "images/song_requiem.png",
+      "codes": "OOT_songevents_song_requiem"
+    },
+    {
+      "name": "OOT Songevent Serenade of Water",
+      "type": "toggle",
+      "img": "images/song_serenade.png",
+      "codes": "OOT_songevents_song_serenade"
+    },
+    {
+      "name": "OOT Songevent Oath to Order",
+      "type": "toggle",
+      "img": "images/items/mm_oath.png",
+      "codes": "OOT_songevents_song_oath"
+    },
+    {
+      "name": "OOT Songevent Song of Healing",
+      "type": "toggle",
+      "img": "images/items/mm_healing.png",
+      "codes": "OOT_songevents_song_healing"
+    },
+    {
+      "name": "OOT Songevent Song of Soaring",
+      "type": "toggle",
+      "img": "images/items/mm_soaring.png",
+      "codes": "OOT_songevents_song_soaring"
+    },
+    {
+      "name": "OOT Songevent Sonata of Awakening",
+      "type": "toggle",
+      "img": "images/items/mm_sonata.png",
+      "codes": "OOT_songevents_song_sonata"
+    },
+    {
+      "name": "OOT Songevent Goron Lullaby",
+      "type": "toggle",
+      "img": "images/items/mm_lullaby.png",
+      "codes": "OOT_songevents_song_lullaby"
+    },
+    {
+      "name": "OOT Songevent New Wave Bossa Nova",
+      "type": "toggle",
+      "img": "images/items/mm_bossanova.png",
+      "codes": "OOT_songevents_song_bossanova"
+    },
+    {
+      "name": "OOT Songevent Elegy of Emptiness",
+      "type": "toggle",
+      "img": "images/items/mm_elegy.png",
+      "codes": "OOT_songevents_song_elegy"
+    },
+
+    {
+      "name": "MM Songevent Zeldas Lullaby",
+      "type": "toggle",
+      "img": "images/song_zelda.png",
+      "codes": "MM_songevents_song_zelda"
+    },
+    {
+      "name": "MM Songevent Eponas Song",
+      "type": "toggle",
+      "img": "images/song_epona.png",
+      "codes": "MM_songevents_song_epona"
+    },
+    {
+      "name": "MM Songevent Sarias Song",
+      "type": "toggle",
+      "img": "images/song_saria.png",
+      "codes": "MM_songevents_song_saria"
+    },
+    {
+      "name": "MM Songevent Suns Song",
+      "type": "toggle",
+      "img": "images/song_sun.png",
+      "codes": "MM_songevents_song_sun"
+    },
+    {
+      "name": "MM Songevent Song of Time",
+      "type": "toggle",
+      "img": "images/song_time.png",
+      "codes": "MM_songevents_song_time"
+    },
+    {
+      "name": "MM Songevent Song of Storms",
+      "type": "toggle",
+      "img": "images/song_storms.png",
+      "codes": "MM_songevents_song_storms"
+    },
+    {
+      "name": "MM Songevent Bolero of Fire",
+      "type": "toggle",
+      "img": "images/song_bolero.png",
+      "codes": "MM_songevents_song_bolero"
+    },
+    {
+      "name": "MM Songevent Minuet of Forest",
+      "type": "toggle",
+      "img": "images/song_minuet.png",
+      "codes": "MM_songevents_song_minuet"
+    },
+    {
+      "name": "MM Songevent Nocturen of Shadow",
+      "type": "toggle",
+      "img": "images/song_nocturne.png",
+      "codes": "MM_songevents_song_nocturne"
+    },
+    {
+      "name": "MM Songevent Prelude of Light",
+      "type": "toggle",
+      "img": "images/song_prelude.png",
+      "codes": "MM_songevents_song_prelude"
+    },
+    {
+      "name": "MM Songevent Requiem of Spirit",
+      "type": "toggle",
+      "img": "images/song_requiem.png",
+      "codes": "MM_songevents_song_requiem"
+    },
+    {
+      "name": "MM Songevent Serenade of Water",
+      "type": "toggle",
+      "img": "images/song_serenade.png",
+      "codes": "MM_songevents_song_serenade"
+    },
+    {
+      "name": "MM Songevent Oath to Order",
+      "type": "toggle",
+      "img": "images/items/mm_oath.png",
+      "codes": "MM_songevents_song_oath"
+    },
+    {
+      "name": "MM Songevent Song of Healing",
+      "type": "toggle",
+      "img": "images/items/mm_healing.png",
+      "codes": "MM_songevents_song_healing"
+    },
+    {
+      "name": "MM Songevent Song of Soaring",
+      "type": "toggle",
+      "img": "images/items/mm_soaring.png",
+      "codes": "MM_songevents_song_soaring"
+    },
+    {
+      "name": "MM Songevent Sonata of Awakening",
+      "type": "toggle",
+      "img": "images/items/mm_sonata.png",
+      "codes": "MM_songevents_song_sonata"
+    },
+    {
+      "name": "MM Songevent Goron Lullaby",
+      "type": "toggle",
+      "img": "images/items/mm_lullaby.png",
+      "codes": "MM_songevents_song_lullaby"
+    },
+    {
+      "name": "MM Songevent New Wave Bossa Nova",
+      "type": "toggle",
+      "img": "images/items/mm_bossanova.png",
+      "codes": "MM_songevents_song_bossanova"
+    },
+    {
+      "name": "MM Songevent Elegy of Emptiness",
+      "type": "toggle",
+      "img": "images/items/mm_elegy.png",
+      "codes": "MM_songevents_song_elegy"
     }
 
 
