@@ -1606,8 +1606,36 @@ function _oot_logic()
 		return can_play(SONG_TP_SPIRIT) and ocarina_button_a() and ocarina_button_right() and ocarina_button_down()
 	end
 
+    function can_play_healing()
+		return can_play(SONG_HEALING) and ocarina_button_left() and ocarina_button_right() and ocarina_button_down()
+	end
+
+    function can_play_soaring()
+		return can_play(SONG_SOARING) and ocarina_button_left() and ocarina_button_up() and ocarina_button_down()
+	end
+
+    function can_play_sonata()
+		return can_play(SONG_AWAKENING) and ocarina_button_a() and ocarina_button_right() and ocarina_button_up() and ocarina_button_left()
+	end
+
+    function can_play_lullaby_half()
+		return can_play(SONG_GORON_HALF) and ocarina_button_a() and ocarina_button_right() and ocarina_button_left()
+	end
+
+    function can_play_lullaby()
+		return can_play(SONG_GORON) and ocarina_button_a() and ocarina_button_right() and ocarina_button_left()
+	end
+
+    function can_play_bossanova()
+		return can_play(SONG_ZORA) and ocarina_button_up() and ocarina_button_right() and ocarina_button_down() and ocarina_button_left()
+	end
+
 	function can_play_elegy()
 		return has_ocarina() and has_elegy_raw() and ocarina_button_down() and ocarina_button_left() and ocarina_button_right() and ocarina_button_up()
+	end
+
+    function can_play_oath()
+		return can_play(SONG_ORDER) and ocarina_button_a() and ocarina_button_right() and ocarina_button_down() and ocarina_button_up()
 	end
 
 	function can_play_minigame()
@@ -2761,14 +2789,14 @@ function _oot_logic()
             ["Bottom of the Well Back West"] = function () return has_explosives() and has_lens() end,
             ["Bottom of the Well East"] = function () return has_lens() end,
             ["Bottom of the Well Front West"] = function () return has_lens() end,
-            ["Bottom of the Well Underwater"] = function () return can_play_zelda() or has_iron_boots() end,
+            ["Bottom of the Well Underwater"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOTW_ZELDA')) or (can_play_epona() and has('SONG_BOTW_EPONA')) or (can_play_saria() and has('SONG_BOTW_SARIA')) or (can_play_sun() and has('SONG_BOTW_SUN')) or (can_play_time() and has('SONG_BOTW_TIME')) or (can_play_storms() and has('SONG_BOTW_STORMS')) or (can_play_tp_forest() and has('SONG_BOTW_MINUET')) or (can_play_tp_fire() and has('SONG_BOTW_BOLERO')) or (can_play_tp_water() and has('SONG_BOTW_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOTW_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOTW_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOTW_PRELUDE')) or (can_play_healing() and has('SONG_BOTW_HEALING')) or (can_play_soaring() and has('SONG_BOTW_SOARING')) or (can_play_sonata() and has('SONG_BOTW_SONATA')) or (can_play_lullaby_half() and has('SONG_BOTW_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOTW_LULLABY')) or (can_play_bossanova() and has('SONG_BOTW_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOTW_ELEGY')) or (can_play_oath() and has('SONG_BOTW_OATH'))) or has_iron_boots() end,
             ["Bottom of the Well East Cage"] = function () return (small_keys_botw(3) or climb_anywhere()) and has_lens() end,
             ["Bottom of the Well Blood Chest"] = function () return has_lens() end,
-            ["Bottom of the Well Underwater 2"] = function () return can_play_zelda() or has_iron_boots() end,
+            ["Bottom of the Well Underwater 2"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOTW_ZELDA')) or (can_play_epona() and has('SONG_BOTW_EPONA')) or (can_play_saria() and has('SONG_BOTW_SARIA')) or (can_play_sun() and has('SONG_BOTW_SUN')) or (can_play_time() and has('SONG_BOTW_TIME')) or (can_play_storms() and has('SONG_BOTW_STORMS')) or (can_play_tp_forest() and has('SONG_BOTW_MINUET')) or (can_play_tp_fire() and has('SONG_BOTW_BOLERO')) or (can_play_tp_water() and has('SONG_BOTW_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOTW_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOTW_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOTW_PRELUDE')) or (can_play_healing() and has('SONG_BOTW_HEALING')) or (can_play_soaring() and has('SONG_BOTW_SOARING')) or (can_play_sonata() and has('SONG_BOTW_SONATA')) or (can_play_lullaby_half() and has('SONG_BOTW_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOTW_LULLABY')) or (can_play_bossanova() and has('SONG_BOTW_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOTW_ELEGY')) or (can_play_oath() and has('SONG_BOTW_OATH'))) or has_iron_boots() end,
             ["Bottom of the Well Map"] = function () return has_explosives_or_hammer() or (has_bombflowers() and (small_keys_botw(3) or can_use_din())) or climb_anywhere() or hookshot_anywhere() end,
             ["Bottom of the Well Pits"] = function () return (small_keys_botw(3) or climb_anywhere()) and has_lens() end,
-            ["Bottom of the Well Lens"] = function () return soul_enemy(SOUL_ENEMY_DEAD_HAND) and can_play_zelda() and (can_use_sword() or (can_use_sticks() and trick('OOT_DEAD_HAND_STICKS'))) end,
-            ["Bottom of the Well Lens Side Chest"] = function () return can_play_zelda() and has_lens() end,
+            ["Bottom of the Well Lens"] = function () return soul_enemy(SOUL_ENEMY_DEAD_HAND) and (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOTW_ZELDA')) or (can_play_epona() and has('SONG_BOTW_EPONA')) or (can_play_saria() and has('SONG_BOTW_SARIA')) or (can_play_sun() and has('SONG_BOTW_SUN')) or (can_play_time() and has('SONG_BOTW_TIME')) or (can_play_storms() and has('SONG_BOTW_STORMS')) or (can_play_tp_forest() and has('SONG_BOTW_MINUET')) or (can_play_tp_fire() and has('SONG_BOTW_BOLERO')) or (can_play_tp_water() and has('SONG_BOTW_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOTW_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOTW_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOTW_PRELUDE')) or (can_play_healing() and has('SONG_BOTW_HEALING')) or (can_play_soaring() and has('SONG_BOTW_SOARING')) or (can_play_sonata() and has('SONG_BOTW_SONATA')) or (can_play_lullaby_half() and has('SONG_BOTW_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOTW_LULLABY')) or (can_play_bossanova() and has('SONG_BOTW_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOTW_ELEGY')) or (can_play_oath() and has('SONG_BOTW_OATH'))) and (can_use_sword() or (can_use_sticks() and trick('OOT_DEAD_HAND_STICKS'))) end,
+            ["Bottom of the Well Lens Side Chest"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOTW_ZELDA')) or (can_play_epona() and has('SONG_BOTW_EPONA')) or (can_play_saria() and has('SONG_BOTW_SARIA')) or (can_play_sun() and has('SONG_BOTW_SUN')) or (can_play_time() and has('SONG_BOTW_TIME')) or (can_play_storms() and has('SONG_BOTW_STORMS')) or (can_play_tp_forest() and has('SONG_BOTW_MINUET')) or (can_play_tp_fire() and has('SONG_BOTW_BOLERO')) or (can_play_tp_water() and has('SONG_BOTW_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOTW_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOTW_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOTW_PRELUDE')) or (can_play_healing() and has('SONG_BOTW_HEALING')) or (can_play_soaring() and has('SONG_BOTW_SOARING')) or (can_play_sonata() and has('SONG_BOTW_SONATA')) or (can_play_lullaby_half() and has('SONG_BOTW_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOTW_LULLABY')) or (can_play_bossanova() and has('SONG_BOTW_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOTW_ELEGY')) or (can_play_oath() and has('SONG_BOTW_OATH'))) and has_lens() end,
             ["Bottom of the Well GS East Cage"] = function () return gs() and (small_keys_botw(3) or climb_anywhere()) and has_lens() and (can_collect_distance() or (climb_anywhere() and (can_use_sword_master() or has_ranged_weapon() or has_explosives() or can_use_sticks() or can_use_din() or (age_sword_adult() and has('SWORD_BIGGORON'))))) end,
             ["Bottom of the Well GS Inner West"] = function () return gs() and small_keys_botw(3) and has_lens() and (can_collect_distance() or (climb_anywhere() and (can_use_sword_master() or has_ranged_weapon() or has_explosives() or can_use_sticks() or can_use_din() or (age_sword_adult() and has('SWORD_BIGGORON'))))) end,
             ["Bottom of the Well GS Inner East"] = function () return gs() and (small_keys_botw(3) or climb_anywhere()) and has_lens() and (can_collect_distance() or (climb_anywhere() and (can_use_sword_master() or has_ranged_weapon() or has_explosives() or can_use_sticks() or can_use_din() or (age_sword_adult() and has('SWORD_BIGGORON'))))) end,
@@ -3661,7 +3689,7 @@ function _oot_logic()
             ["Ganon Castle Light Chest Around 5"] = function () return true end,
             ["Ganon Castle Light Chest Around 6"] = function () return true end,
             ["Ganon Castle Light Chest Center"] = function () return soul_keese() and soul_skulltula() and has_lens() and (can_use_sword() or has_explosives_or_hammer() or can_use_slingshot() or can_use_sticks()) end,
-            ["Ganon Castle Light Chest Lullaby"] = function () return small_keys_ganon(1) and can_play_zelda() end,
+            ["Ganon Castle Light Chest Lullaby"] = function () return small_keys_ganon(1) and (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_GANON_ZELDA')) or (can_play_epona() and has('SONG_GANON_EPONA')) or (can_play_saria() and has('SONG_GANON_SARIA')) or (can_play_sun() and has('SONG_GANON_SUN')) or (can_play_time() and has('SONG_GANON_TIME')) or (can_play_storms() and has('SONG_GANON_STORMS')) or (can_play_tp_forest() and has('SONG_GANON_MINUET')) or (can_play_tp_fire() and has('SONG_GANON_BOLERO')) or (can_play_tp_water() and has('SONG_GANON_SERENADE')) or (can_play_tp_spirit() and has('SONG_GANON_REQUIEM')) or (can_play_tp_shadow() and has('SONG_GANON_NOCTURNE')) or (can_play_tp_light() and has('SONG_GANON_PRELUDE')) or (can_play_healing() and has('SONG_GANON_HEALING')) or (can_play_soaring() and has('SONG_GANON_SOARING')) or (can_play_sonata() and has('SONG_GANON_SONATA')) or (can_play_lullaby_half() and has('SONG_GANON_HALFLULLABY')) or (can_play_lullaby() and has('SONG_GANON_LULLABY')) or (can_play_bossanova() and has('SONG_GANON_BOSSANOVA')) or (can_play_elegy() and has('SONG_GANON_ELEGY')) or (can_play_oath() and has('SONG_GANON_OATH'))) end,
         },
         ["age_change"] = true,
     },
@@ -4926,8 +4954,8 @@ function _oot_logic()
             ["Saria's House"] = function () return not setting('entrance', 'interior_most') end,
             ["House of Twins"] = function () return not setting('entrance', 'interior_most') end,
             ["Know It All House"] = function () return not setting('entrance', 'interior_most') end,
-            ["Lost Woods"] = function () return not setting('entrance', 'overworld') end,
-            ["Lost Woods Bridge from Forest"] = function () return not setting('entrance', 'overworld') end,
+            ["Lost Woods"] = function () return not setting('entrance', 'unused_on') end,
+            ["Lost Woods Bridge from Forest"] = function () return not setting('entrance', 'unused_on') end,
             ["Kokiri Shop"] = function () return not setting('entrance', 'interior_most') end,
             ["Kokiri Forest Storms Grotto"] = function () return hidden_grotto_storms() and not setting('entrance', 'grotto') and has_Shovel() end,
             ["Kokiri Forest Near Deku Tree"] = function () return can_bypass_mido() end,
@@ -5423,9 +5451,9 @@ function _oot_logic()
         ["exits"] = {
             ["Market Entryway"] = function () return not setting('entrance', 'market') end,
             ["Market Grass"] = function () return is_child() and can_cut_grass_no_c_button() end,
-            ["Back Alley"] = function () return is_child() end,
-            ["Market Castle Entry"] = function () return true end,
-            ["Temple of Time Entryway"] = function () return not setting('entrance', 'overworld') end,
+            ["Back Alley"] = function () return is_child() and not setting('entrance', 'unused_on') end,
+            ["Market Castle Entry"] = function () return not setting('entrance', 'unused_on') end,
+            ["Temple of Time Entryway"] = function () return not setting('entrance', 'unused_on') end,
             ["Bombchu Bowling"] = function () return is_child() and rusty_key(RUSTY_BOWLING) and not setting('entrance', 'interior_most') end,
             ["Treasure Chest Game"] = function () return is_night() and is_child() and rusty_key(RUSTY_TREASURE) and not setting('entrance', 'interior_most') end,
             ["Shooting Gallery Child"] = function () return is_day() and is_child() and rusty_key(RUSTY_CHILD_SHOOTING) and not setting('entrance', 'interior_most') end,
@@ -5470,8 +5498,8 @@ function _oot_logic()
     },
     ["Market Castle Entry"] = {
         ["exits"] = {
-            ["Market"] = function () return not setting('entrance', 'market') end,
-            ["Hyrule Castle"] = function () return is_child() and not setting('entrance', 'overworld') end,
+            ["Market"] = function () return true end,
+            ["Hyrule Castle"] = function () return is_child() and not setting('entrance', 'unused_on') end,
             ["Ganon Castle Exterior"] = function () return is_adult() end,
         },
          ["locations"] = {            
@@ -5638,8 +5666,8 @@ function _oot_logic()
     },
     ["Back Alley"] = {
         ["exits"] = {
-            ["Market"] = function () return not setting('entrance', 'overworld') end,
-            ["Dog Lady House"] = function () return rusty_key(RUSTY_DOGLADY) and not setting('entrance', 'interior_most') end,
+            ["Market"] = function () return not setting('entrance', 'unused_on') end,
+            ["Dog Lady House"] = function () return rusty_key(RUSTY_DOGLADY) and not setting('entrance', 'unused_on') end,
             ["Market Bombchu Shop"] = function () return is_night() and rusty_key(RUSTY_BOMBCHUSHOP) and not setting('entrance', 'interior_most') end,
             ["Market Back Alley East Home"] = function () return is_night() and rusty_key(RUSTY_BACKALLEY) and not setting('entrance', 'interior_most') end,
         },
@@ -5652,7 +5680,7 @@ function _oot_logic()
     },
     ["Dog Lady House"] = {
         ["exits"] = {
-            ["Back Alley"] = function () return true end,
+            ["Back Alley"] = function () return rusty_key(RUSTY_DOGLADY) and not setting('entrance', 'unused_on') end,
         },
         ["locations"] = {
             ["Market Dog Lady HP"] = function () return event('RICHARD') and is_night() and soul_dog_lady() and soul_dog() end,
@@ -5707,7 +5735,7 @@ function _oot_logic()
     },
     ["Temple of Time Entryway"] = {
         ["exits"] = {
-            ["Market"] = function () return not setting('entrance', 'overworld') end,
+            ["Market"] = function () return not setting('entrance', 'unused_on') end,
             ["Temple of Time"] = function () return not setting('entrance', 'interior_extra') end,
         },
         ["locations"] = {            
@@ -5821,7 +5849,7 @@ function _oot_logic()
             ["BUGS"] = function () return has_bottle() end,
         },
         ["exits"] = {
-            ["Market Castle Entry"] = function () return true end,
+            ["Market Castle Entry"] = function () return not setting('entrance', 'unused_on') end,
             ["Near Fairy Fountain Din"] = function () return has_explosives_or_hammer() end,
             ["Hyrule Castle Courtyard"] = function () return (woke_talon_child() or (has_hover_boots() and (soul_talon() or setting('skipZelda'))) or climb_anywhere() or hookshot_anywhere()) and not setting('entrance', 'interior_extra') end,
             ["Hyrule Castle Near Grotto"] = function () return true end,
@@ -5884,7 +5912,7 @@ function _oot_logic()
             ["MEET_ZELDA"] = function () return soul_npc(SOUL_NPC_ZELDA) end,
         },
         ["exits"] = {
-            ["Hyrule Castle"] = function () return not setting('entrance', 'interior_most') end,
+            ["Hyrule Castle"] = function () return not setting('entrance', 'unused_on') end,
         },
         ["locations"] = {
             ["Zelda's Letter"] = function () return met_zelda() end,
@@ -5910,7 +5938,7 @@ function _oot_logic()
             ["Near Fairy Fountain Din"] = function () return true end,
         },
         ["locations"] = {
-            ["Great Fairy Din's Fire"] = function () return can_play_zelda() end,
+            ["Great Fairy Din's Fire"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_DIN_ZELDA')) or (can_play_epona() and has('SONG_DIN_EPONA')) or (can_play_saria() and has('SONG_DIN_SARIA')) or (can_play_sun() and has('SONG_DIN_SUN')) or (can_play_time() and has('SONG_DIN_TIME')) or (can_play_storms() and has('SONG_DIN_STORMS')) or (can_play_tp_forest() and has('SONG_DIN_MINUET')) or (can_play_tp_fire() and has('SONG_DIN_BOLERO')) or (can_play_tp_water() and has('SONG_DIN_SERENADE')) or (can_play_tp_spirit() and has('SONG_DIN_REQUIEM')) or (can_play_tp_shadow() and has('SONG_DIN_NOCTURNE')) or (can_play_tp_light() and has('SONG_DIN_PRELUDE')) or (can_play_healing() and has('SONG_DIN_HEALING')) or (can_play_soaring() and has('SONG_DIN_SOARING')) or (can_play_sonata() and has('SONG_DIN_SONATA')) or (can_play_lullaby_half() and has('SONG_DIN_HALFLULLABY')) or (can_play_lullaby() and has('SONG_DIN_LULLABY')) or (can_play_bossanova() and has('SONG_DIN_BOSSANOVA')) or (can_play_elegy() and has('SONG_DIN_ELEGY')) or (can_play_oath() and has('SONG_DIN_OATH'))) end,
             ["Great Fairy Din Enter"] = function () return true end,
         },
         ["age_change"] = true,
@@ -5994,7 +6022,7 @@ function _oot_logic()
             ["Near Fairy Fountain Defense"] = function () return true end,
         },
         ["locations"] = {
-            ["Great Fairy Defense Upgrade"] = function () return can_play_zelda() end,
+            ["Great Fairy Defense Upgrade"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_DEFENSE_ZELDA')) or (can_play_epona() and has('SONG_DEFENSE_EPONA')) or (can_play_saria() and has('SONG_DEFENSE_SARIA')) or (can_play_sun() and has('SONG_DEFENSE_SUN')) or (can_play_time() and has('SONG_DEFENSE_TIME')) or (can_play_storms() and has('SONG_DEFENSE_STORMS')) or (can_play_tp_forest() and has('SONG_DEFENSE_MINUET')) or (can_play_tp_fire() and has('SONG_DEFENSE_BOLERO')) or (can_play_tp_water() and has('SONG_DEFENSE_SERENADE')) or (can_play_tp_spirit() and has('SONG_DEFENSE_REQUIEM')) or (can_play_tp_shadow() and has('SONG_DEFENSE_NOCTURNE')) or (can_play_tp_light() and has('SONG_DEFENSE_PRELUDE')) or (can_play_healing() and has('SONG_DEFENSE_HEALING')) or (can_play_soaring() and has('SONG_DEFENSE_SOARING')) or (can_play_sonata() and has('SONG_DEFENSE_SONATA')) or (can_play_lullaby_half() and has('SONG_DEFENSE_HALFLULLABY')) or (can_play_lullaby() and has('SONG_DEFENSE_LULLABY')) or (can_play_bossanova() and has('SONG_DEFENSE_BOSSANOVA')) or (can_play_elegy() and has('SONG_DEFENSE_ELEGY')) or (can_play_oath() and has('SONG_DEFENSE_OATH'))) end,
             ["Great Fairy Defense Enter"] = function () return true end,
         },
         ["age_change"] = true,
@@ -6025,7 +6053,7 @@ function _oot_logic()
     },
     ["Lost Woods Lost Forest"] = {
         ["exits"] = {
-            ["Kokiri Forest"] = function () return not setting('entrance', 'overworld') end,
+            ["Kokiri Forest"] = function () return not setting('entrance', 'unused_on') end,
         },
         ["age_change"] = true,
     },
@@ -6113,7 +6141,7 @@ function _oot_logic()
     },
     ["Lost Woods Bridge"] = {
         ["exits"] = {
-            ["Kokiri Forest"] = function () return not setting('entrance', 'overworld') end,
+            ["Kokiri Forest"] = function () return not setting('entrance', 'unused_on') end,
             ["Hyrule Field"] = function () return not setting('entrance', 'overworld') end,
             ["Lost Woods"] = function () return can_longshot() or hookshot_anywhere() end,
         },
@@ -6285,7 +6313,7 @@ function _oot_logic()
         ["exits"] = {
             ["Hyrule Field"] = function () return not setting('entrance', 'overworld') end,
             ["Kakariko Trail Start"] = function () return setting('kakarikoGate', 'open') or event('KAKARIKO_GATE_OPEN') or (is_adult() and (not setting('kakarikoGate', 'closed'))) or climb_anywhere() or hookshot_anywhere() end,
-            ["Graveyard"] = function () return true end,
+            ["Graveyard"] = function () return not setting('entrance', 'unused_on') end,
             ["Kakariko Well"] = function () return is_adult() or has_iron_boots() or longshot_anywhere() or event('WELL_DRAIN') or setting('DungeonBOTW', 'open') end,
             ["Skulltula House"] = function () return rusty_key(RUSTY_SKULLTULA) and not setting('entrance', 'interior_most') end,
             ["Shooting Gallery Adult"] = function () return (is_adult() and is_day() and rusty_key(RUSTY_ADULT_SHOOTING) or (time_travel_at_will() and trick('OOT_ADULT_GALLERY_TT'))) and not setting('entrance', 'interior_most') end,
@@ -6512,7 +6540,7 @@ function _oot_logic()
     },
     ["Windmill"] = {
         ["events"] = {
-            ["WELL_DRAIN"] = function () return is_child() and can_play_storms() end,
+            ["WELL_DRAIN"] = function () return is_child() and can_play_storms() and setting('SongeventOot', 'false') or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_WINDMILL_ZELDA')) or (can_play_epona() and has('SONG_WINDMILL_EPONA')) or (can_play_saria() and has('SONG_WINDMILL_SARIA')) or (can_play_sun() and has('SONG_WINDMILL_SUN')) or (can_play_time() and has('SONG_WINDMILL_TIME')) or (can_play_storms() and has('SONG_WINDMILL_STORMS')) or (can_play_tp_forest() and has('SONG_WINDMILL_MINUET')) or (can_play_tp_fire() and has('SONG_WINDMILL_BOLERO')) or (can_play_tp_water() and has('SONG_WINDMILL_SERENADE')) or (can_play_tp_spirit() and has('SONG_WINDMILL_REQUIEM')) or (can_play_tp_shadow() and has('SONG_WINDMILL_NOCTURNE')) or (can_play_tp_light() and has('SONG_WINDMILL_PRELUDE')) or (can_play_healing() and has('SONG_WINDMILL_HEALING')) or (can_play_soaring() and has('SONG_WINDMILL_SOARING')) or (can_play_sonata() and has('SONG_WINDMILL_SONATA')) or (can_play_lullaby_half() and has('SONG_WINDMILL_HALFLULLABY')) or (can_play_lullaby() and has('SONG_WINDMILL_LULLABY')) or (can_play_bossanova() and has('SONG_WINDMILL_BOSSANOVA')) or (can_play_elegy() and has('SONG_WINDMILL_ELEGY')) or (can_play_oath() and has('SONG_WINDMILL_OATH'))) end,
         },
         ["exits"] = {
             ["Kakariko"] = function () return not setting('entrance', 'interior_extra') end,
@@ -6522,6 +6550,7 @@ function _oot_logic()
             ["Windmill HP"] = function () return can_boomerang() or event('WINDMILL_TOP') or (is_adult() and trick('OOT_WINDMILL_HP_NOTHING')) or climb_anywhere() or hookshot_anywhere() end,
             ["Windmill Song of Storms"] = function () return is_adult() and has_ocarina() and soul_guru_guru() end,
             ["Windmill Enter"] = function () return rusty_key(RUSTY_WINDMILL) end,
+            ["Windmill play Song"] = function () return true end,
         },
         ["age_change"] = true,
     },
@@ -6602,8 +6631,8 @@ function _oot_logic()
             ["MAGIC"] = function () return can_cut_grass() end,
         },
         ["exits"] = {
-            ["Kakariko"] = function () return not setting('entrance', 'overworld') end,
-            ["Graveyard Royal Tomb"] = function () return can_play_zelda() and not setting('entrance', 'grotto') end,
+            ["Kakariko"] = function () return not setting('entrance', 'unused_on') end,
+            ["Graveyard Royal Tomb"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_TOMB_ZELDA')) or (can_play_epona() and has('SONG_TOMB_EPONA')) or (can_play_saria() and has('SONG_TOMB_SARIA')) or (can_play_sun() and has('SONG_TOMB_SUN')) or (can_play_time() and has('SONG_TOMB_TIME')) or (can_play_storms() and has('SONG_TOMB_STORMS')) or (can_play_tp_forest() and has('SONG_TOMB_MINUET')) or (can_play_tp_fire() and has('SONG_TOMB_BOLERO')) or (can_play_tp_water() and has('SONG_TOMB_SERENADE')) or (can_play_tp_spirit() and has('SONG_TOMB_REQUIEM')) or (can_play_tp_shadow() and has('SONG_TOMB_NOCTURNE')) or (can_play_tp_light() and has('SONG_TOMB_PRELUDE')) or (can_play_healing() and has('SONG_TOMB_HEALING')) or (can_play_soaring() and has('SONG_TOMB_SOARING')) or (can_play_sonata() and has('SONG_TOMB_SONATA')) or (can_play_lullaby_half() and has('SONG_TOMB_HALFLULLABY')) or (can_play_lullaby() and has('SONG_TOMB_LULLABY')) or (can_play_bossanova() and has('SONG_TOMB_BOSSANOVA')) or (can_play_elegy() and has('SONG_TOMB_ELEGY')) or (can_play_oath() and has('SONG_TOMB_OATH'))) and not setting('entrance', 'grotto') end,
             ["Graveyard Shield Grave"] = function () return (is_adult() or is_night()) and not setting('entrance', 'grotto') end,
             ["Graveyard ReDead Grave"] = function () return (is_adult() or is_night()) and not setting('entrance', 'grotto') end,
             ["Dampe Grave"] = function () return is_adult() and has_Shovel() and not setting('entrance', 'grotto') end,
@@ -6634,7 +6663,7 @@ function _oot_logic()
             ["Graveyard Butterfly 2"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
             ["Graveyard Butterfly 3"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
             ["Dampe House Entry"] = function () return (is_adult() or is_dusk()) and rusty_key(RUSTY_GRAVEYARD) end,
-            ["Graveyard Royal Tomb Entry"] = function () return can_play_zelda() and has_Shovel() end,
+            ["Graveyard Royal Tomb Entry"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_TOMB_ZELDA')) or (can_play_epona() and has('SONG_TOMB_EPONA')) or (can_play_saria() and has('SONG_TOMB_SARIA')) or (can_play_sun() and has('SONG_TOMB_SUN')) or (can_play_time() and has('SONG_TOMB_TIME')) or (can_play_storms() and has('SONG_TOMB_STORMS')) or (can_play_tp_forest() and has('SONG_TOMB_MINUET')) or (can_play_tp_fire() and has('SONG_TOMB_BOLERO')) or (can_play_tp_water() and has('SONG_TOMB_SERENADE')) or (can_play_tp_spirit() and has('SONG_TOMB_REQUIEM')) or (can_play_tp_shadow() and has('SONG_TOMB_NOCTURNE')) or (can_play_tp_light() and has('SONG_TOMB_PRELUDE')) or (can_play_healing() and has('SONG_TOMB_HEALING')) or (can_play_soaring() and has('SONG_TOMB_SOARING')) or (can_play_sonata() and has('SONG_TOMB_SONATA')) or (can_play_lullaby_half() and has('SONG_TOMB_HALFLULLABY')) or (can_play_lullaby() and has('SONG_TOMB_LULLABY')) or (can_play_bossanova() and has('SONG_TOMB_BOSSANOVA')) or (can_play_elegy() and has('SONG_TOMB_ELEGY')) or (can_play_oath() and has('SONG_TOMB_OATH'))) and has_Shovel() end,
             ["Graveyard Shield Grave Entry"] = function () return (is_adult() or is_night()) and has_Shovel() end,
             ["Graveyard ReDead Grave Entry"] = function () return (is_adult() or is_night()) and has_Shovel() end,
             ["Dampe Grave Entry"] = function () return is_adult() and has_Shovel() end,
@@ -6765,7 +6794,7 @@ function _oot_logic()
             ["RUPEES"] = function () return true end,
         },
         ["exits"] = {
-            ["Goron City"] = function () return not setting('entrance', 'interior_most') end,
+            ["Goron City"] = function () return not setting('entrance', 'unused_on') end,
             ["Dodongo Cavern"] = function () return (has_bombflowers() or is_adult() or (trick('OOT_DC_BOULDER') and hookshot_anywhere()) or time_travel_at_will() or setting('Dungeondodongo', 'open')) and not setting('entrance', 'dungeon_major') end,
             ["Kakariko Trail Start"] = function () return not setting('entrance', 'overworld') end,
             ["Death Mountain Summit"] = function () return event('BOULDER_DEATH_MOUNTAIN') or can_ride_bean(BEAN_DEATH_MOUNTAIN) or climb_anywhere() or hookshot_anywhere() end,
@@ -6809,7 +6838,7 @@ function _oot_logic()
         ["exits"] = {
             ["Death Mountain"] = function () return true end,
             ["Kakariko Rooftop"] = function () return is_child() end,
-            ["Death Mountain Crater Top"] = function () return not setting('entrance', 'overworld') end,
+            ["Death Mountain Crater Top"] = function () return not setting('entrance', 'unused_on') end,
             ["Fairy Fountain Magic"] = function () return has_explosives_or_hammer() and not setting('entrance', 'interior_most') end,
             ["Death Mountain Trail Red Boulders Upper"] = function () return is_adult() and can_hammer() end,
         },
@@ -6891,7 +6920,7 @@ function _oot_logic()
             ["Death Mountain Summit"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
-            ["Great Fairy Magic Upgrade"] = function () return can_play_zelda() end,
+            ["Great Fairy Magic Upgrade"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_MAGIC1_ZELDA')) or (can_play_epona() and has('SONG_MAGIC1_EPONA')) or (can_play_saria() and has('SONG_MAGIC1_SARIA')) or (can_play_sun() and has('SONG_MAGIC1_SUN')) or (can_play_time() and has('SONG_MAGIC1_TIME')) or (can_play_storms() and has('SONG_MAGIC1_STORMS')) or (can_play_tp_forest() and has('SONG_MAGIC1_MINUET')) or (can_play_tp_fire() and has('SONG_MAGIC1_BOLERO')) or (can_play_tp_water() and has('SONG_MAGIC1_SERENADE')) or (can_play_tp_spirit() and has('SONG_MAGIC1_REQUIEM')) or (can_play_tp_shadow() and has('SONG_MAGIC1_NOCTURNE')) or (can_play_tp_light() and has('SONG_MAGIC1_PRELUDE')) or (can_play_healing() and has('SONG_MAGIC1_HEALING')) or (can_play_soaring() and has('SONG_MAGIC1_SOARING')) or (can_play_sonata() and has('SONG_MAGIC1_SONATA')) or (can_play_lullaby_half() and has('SONG_MAGIC1_HALFLULLABY')) or (can_play_lullaby() and has('SONG_MAGIC1_LULLABY')) or (can_play_bossanova() and has('SONG_MAGIC1_BOSSANOVA')) or (can_play_elegy() and has('SONG_MAGIC1_ELEGY')) or (can_play_oath() and has('SONG_MAGIC1_OATH'))) end,
             ["Great Fairy Magic Enter"] = function () return true end,
         },
         ["age_change"] = true,
@@ -6902,7 +6931,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Lost Woods"] = function () return not setting('entrance', 'sc') end,
-            ["Goron City"] = function () return event('GORON_CITY_SHORTCUT') or climb_anywhere() or hookshot_anywhere() end,
+            ["Goron City"] = function () return (event('GORON_CITY_SHORTCUT') or climb_anywhere() or hookshot_anywhere()) and not setting('entrance', 'sc') end,
         },
         ["age_change"] = true,
     },
@@ -6915,8 +6944,8 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Goron City Shortcut"] = function () return (event('GORON_CITY_SHORTCUT') or climb_anywhere() or hookshot_anywhere()) and not setting('entrance', 'sc') end,
-            ["Death Mountain"] = function () return not setting('entrance', 'interior_most') end,
-            ["Darunia Chamber"] = function () return is_adult() and (has_explosives() or can_use_bow() or has_goron_bracelet()) and soul_goron_child() or (is_child() and can_play_zelda()) end,
+            ["Death Mountain"] = function () return not setting('entrance', 'unused_on') end,
+            ["Darunia Chamber"] = function () return is_adult() and (has_explosives() or can_use_bow() or has_goron_bracelet()) and soul_goron_child() or (is_child() and can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_GC_ZELDA')) or (can_play_epona() and has('SONG_GC_EPONA')) or (can_play_saria() and has('SONG_GC_SARIA')) or (can_play_sun() and has('SONG_GC_SUN')) or (can_play_time() and has('SONG_GC_TIME')) or (can_play_storms() and has('SONG_GC_STORMS')) or (can_play_tp_forest() and has('SONG_GC_MINUET')) or (can_play_tp_fire() and has('SONG_GC_BOLERO')) or (can_play_tp_water() and has('SONG_GC_SERENADE')) or (can_play_tp_spirit() and has('SONG_GC_REQUIEM')) or (can_play_tp_shadow() and has('SONG_GC_NOCTURNE')) or (can_play_tp_light() and has('SONG_GC_PRELUDE')) or (can_play_healing() and has('SONG_GC_HEALING')) or (can_play_soaring() and has('SONG_GC_SOARING')) or (can_play_sonata() and has('SONG_GC_SONATA')) or (can_play_lullaby_half() and has('SONG_GC_HALFLULLABY')) or (can_play_lullaby() and has('SONG_GC_LULLABY')) or (can_play_bossanova() and has('SONG_GC_BOSSANOVA')) or (can_play_elegy() and has('SONG_GC_ELEGY')) or (can_play_oath() and has('SONG_GC_OATH'))) end,
             ["Goron Shop"] = function () return (has_bombflowers() and (is_child() or time_travel_at_will() or (is_adult() and soul_goron_child())) or (can_use_bow() and soul_goron_child() and (is_adult() or time_travel_at_will())) or ((can_use_din() or event('DARUNIA_TORCH')) and (is_child() or time_travel_at_will())) or (has_blue_fire_arrows_mudwall() and (is_child() or time_travel_at_will()))) and not setting('entrance', 'interior_most') end,
             ["Goron City Grotto"] = function () return (is_adult() and can_play_time() or (can_hookshot() and (has_tunic_goron_strict() or can_use_nayru())) or climb_anywhere()) and not setting('entrance', 'grotto') and has_Shovel() end,
             ["Goron City Red Boulders"] = function () return can_hammer() end,
@@ -6969,7 +6998,7 @@ function _oot_logic()
             ["RUPEES"] = function () return is_adult() end,
         },
         ["exits"] = {
-            ["Death Mountain Crater Bottom"] = function () return (is_adult() or time_travel_at_will()) and not setting('entrance', 'overworld') end,
+            ["Death Mountain Crater Bottom"] = function () return (is_adult() or time_travel_at_will()) and not setting('entrance', 'unused_on') end,
             ["Goron City"] = function () return true end,
         },
         ["locations"] = {
@@ -7000,7 +7029,7 @@ function _oot_logic()
     },
     ["Goron City Grotto"] = {
         ["exits"] = {
-            ["Goron City"] = function () return not setting('entrance', 'interior_most') end,
+            ["Goron City"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Goron City Grotto Left Scrub"] = function () return business_scrub(11) end,
@@ -7056,7 +7085,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Zora River Front"] = function () return true end,
-            ["Zora River Behind Falls"] = function () return can_play_zelda() or (trick('OOT_ZR_FALLS_HOOK') and hookshot_anywhere()) or (trick('OOT_DOMAIN_CUCCO') and is_child()) or (trick('OOT_DOMAIN_HOVER') and has_hover_boots()) end,
+            ["Zora River Behind Falls"] = function () return (setting('SongeventOot', 'false') and can_play_zelda()) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_DOMAIN_ZELDA')) or (can_play_epona() and has('SONG_DOMAIN_EPONA')) or (can_play_saria() and has('SONG_DOMAIN_SARIA')) or (can_play_sun() and has('SONG_DOMAIN_SUN')) or (can_play_time() and has('SONG_DOMAIN_TIME')) or (can_play_storms() and has('SONG_DOMAIN_STORMS')) or (can_play_tp_forest() and has('SONG_DOMAIN_MINUET')) or (can_play_tp_fire() and has('SONG_DOMAIN_BOLERO')) or (can_play_tp_water() and has('SONG_DOMAIN_SERENADE')) or (can_play_tp_spirit() and has('SONG_DOMAIN_REQUIEM')) or (can_play_tp_shadow() and has('SONG_DOMAIN_NOCTURNE')) or (can_play_tp_light() and has('SONG_DOMAIN_PRELUDE')) or (can_play_healing() and has('SONG_DOMAIN_HEALING')) or (can_play_soaring() and has('SONG_DOMAIN_SOARING')) or (can_play_sonata() and has('SONG_DOMAIN_SONATA')) or (can_play_lullaby_half() and has('SONG_DOMAIN_HALFLULLABY')) or (can_play_lullaby() and has('SONG_DOMAIN_LULLABY')) or (can_play_bossanova() and has('SONG_DOMAIN_BOSSANOVA')) or (can_play_elegy() and has('SONG_DOMAIN_ELEGY')) or (can_play_oath() and has('SONG_DOMAIN_OATH'))) or ((trick('OOT_ZR_FALLS_HOOK') and hookshot_anywhere())) or ((trick('OOT_DOMAIN_CUCCO') and is_child())) or ((trick('OOT_DOMAIN_HOVER') and has_hover_boots())) end,
             ["Lost Woods"] = function () return (can_dive_small() or hookshot_anywhere()) and not setting('entrance', 'sc') end,
             ["Zora River Storms Grotto"] = function () return hidden_grotto_storms() and not setting('entrance', 'grotto') and has_Shovel() end,
             ["Zora River Open Grotto"] = function () return is_adult() or is_child()and soul_cucco() and not setting('entrance', 'grotto') and has_Shovel() end,
@@ -7132,7 +7161,7 @@ function _oot_logic()
     ["Zora River Behind Falls"] = {
         ["exits"] = {
             ["Zora River"] = function () return true end,
-            ["Zora Domain"] = function () return not setting('entrance', 'overworld') end,
+            ["Zora Domain"] = function () return not setting('entrance', 'unused_on') end,
         },
         ["locations"] = {
            ["Zora Domain Entrance"] = function () return true end,
@@ -7198,8 +7227,8 @@ function _oot_logic()
             ["FISH"] = function () return is_child() and has_bottle() end,
         },
         ["exits"] = {
-            ["Zora River Behind Falls"] = function () return true end,
-            ["Zora Domain Shortcut"] = function () return is_child() and (can_dive_small() or longshot_anywhere() or (trick('OOT_LAKE_SHORTCUT') and hookshot_anywhere())) end,
+            ["Zora River Behind Falls"] = function () return not setting('entrance', 'unused_on') end,
+            ["Zora Domain Shortcut"] = function () return (is_child() and (can_dive_small() or longshot_anywhere() or (trick('OOT_LAKE_SHORTCUT') and hookshot_anywhere()))) and not setting('entrance', 'sc') end,
             ["Zora Domain Back"] = function () return king_zora_moved() or (is_adult() and trick('OOT_KZ_SKIP')) or climb_anywhere() or hookshot_anywhere() end,
             ["Zora Shop"] = function () return (is_child() or has_blue_fire()) and not setting('entrance', 'interior_most') end,
             ["Zora Domain Grotto"] = function () return hidden_grotto_storms() and not setting('entrance', 'grotto') and has_Shovel() end,
@@ -7228,6 +7257,7 @@ function _oot_logic()
             ["Zora Domain Gossip Stone"] = function () return true end,
             ["Zora Domain Gossip Fairy"] = function () return can_play_sun() or can_play_zelda() or can_play_epona() or can_play_time() end,
             ["Zora Domain Gossip Big Fairy"] = function () return can_play_storms() end,
+            ["Zora Domain Shortcut Entry"] = function () return is_child() and (can_dive_small() or longshot_anywhere() or (trick('OOT_LAKE_SHORTCUT') and hookshot_anywhere())) end,
         },
         ["age_change"] = true,
     },
@@ -7241,13 +7271,13 @@ function _oot_logic()
     ["Zora Domain Shortcut"] = {
         ["exits"] = {
             ["Zora Domain Underwater"] = function () return is_adult() or can_swim() end,
-            ["Lake Hylia Near Shortcut"] = function () return can_swim() end,
+            ["Lake Hylia Near Shortcut"] = function () return can_swim() and not setting('entrance', 'sc') end,
         },
         ["age_change"] = true,
     },
     ["Zora Domain Back"] = {
         ["exits"] = {
-            ["Zora Fountain"] = function () return not setting('entrance', 'overworld') end,
+            ["Zora Fountain"] = function () return not setting('entrance', 'unused_on') end,
             ["Zora Domain"] = function () return king_zora_moved() or climb_anywhere() or hookshot_anywhere() end,
         },
         ["locations"] = {
@@ -7483,7 +7513,7 @@ function _oot_logic()
             ["SEEDS"] = function () return is_child() end,
         },
         ["exits"] = {
-            ["Zora Domain Back"] = function () return not setting('entrance', 'overworld') end,
+            ["Zora Domain Back"] = function () return not setting('entrance', 'unused_on') end,
             ["Jabu-Jabu"] = function () return (is_child() and (setting('Dungeonjabujabu', 'open') or has_fish() or (trick('OOT_ENTER_JABU') and (climb_anywhere() or hookshot_anywhere() or can_use_sword() or can_use_sticks() or time_travel_at_will())))) and not setting('entrance', 'dungeon_major') end,
             ["Zora Fountain Frozen"] = function () return is_adult() or climb_anywhere() or longshot_anywhere() end,
             ["Fairy Fountain Farore"] = function () return has_explosives() and not setting('entrance', 'interior_most') end,
@@ -7564,14 +7594,14 @@ function _oot_logic()
             ["Zora Fountain"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
-            ["Great Fairy Farore's Wind"] = function () return can_play_zelda() end,
+            ["Great Fairy Farore's Wind"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_FARORE_ZELDA')) or (can_play_epona() and has('SONG_FARORE_EPONA')) or (can_play_saria() and has('SONG_FARORE_SARIA')) or (can_play_sun() and has('SONG_FARORE_SUN')) or (can_play_time() and has('SONG_FARORE_TIME')) or (can_play_storms() and has('SONG_FARORE_STORMS')) or (can_play_tp_forest() and has('SONG_FARORE_MINUET')) or (can_play_tp_fire() and has('SONG_FARORE_BOLERO')) or (can_play_tp_water() and has('SONG_FARORE_SERENADE')) or (can_play_tp_spirit() and has('SONG_FARORE_REQUIEM')) or (can_play_tp_shadow() and has('SONG_FARORE_NOCTURNE')) or (can_play_tp_light() and has('SONG_FARORE_PRELUDE')) or (can_play_healing() and has('SONG_FARORE_HEALING')) or (can_play_soaring() and has('SONG_FARORE_SOARING')) or (can_play_sonata() and has('SONG_FARORE_SONATA')) or (can_play_lullaby_half() and has('SONG_FARORE_HALFLULLABY')) or (can_play_lullaby() and has('SONG_FARORE_LULLABY')) or (can_play_bossanova() and has('SONG_FARORE_BOSSANOVA')) or (can_play_elegy() and has('SONG_FARORE_ELEGY')) or (can_play_oath() and has('SONG_FARORE_OATH'))) end,
             ["Great Fairy Farore Enter"] = function () return true end,
         },
         ["age_change"] = true,
     },
     ["Temple of Time"] = {
         ["events"] = {
-            ["DOOR_OF_TIME_OPEN"] = function () return setting('doorOfTime', 'open') or can_play_time() end,
+            ["DOOR_OF_TIME_OPEN"] = function () return setting('doorOfTime', 'open') or (setting('SongeventOot', 'false') and can_play_time()) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_TOT_ZELDA')) or (can_play_epona() and has('SONG_TOT_EPONA')) or (can_play_saria() and has('SONG_TOT_SARIA')) or (can_play_sun() and has('SONG_TOT_SUN')) or (can_play_time() and has('SONG_TOT_TIME')) or (can_play_storms() and has('SONG_TOT_STORMS')) or (can_play_tp_forest() and has('SONG_TOT_MINUET')) or (can_play_tp_fire() and has('SONG_TOT_BOLERO')) or (can_play_tp_water() and has('SONG_TOT_SERENADE')) or (can_play_tp_spirit() and has('SONG_TOT_REQUIEM')) or (can_play_tp_shadow() and has('SONG_TOT_NOCTURNE')) or (can_play_tp_light() and has('SONG_TOT_PRELUDE')) or (can_play_healing() and has('SONG_TOT_HEALING')) or (can_play_soaring() and has('SONG_TOT_SOARING')) or (can_play_sonata() and has('SONG_TOT_SONATA')) or (can_play_lullaby_half() and has('SONG_TOT_HALFLULLABY')) or (can_play_lullaby() and has('SONG_TOT_LULLABY')) or (can_play_bossanova() and has('SONG_TOT_BOSSANOVA')) or (can_play_elegy() and has('SONG_TOT_ELEGY')) or (can_play_oath() and has('SONG_TOT_OATH'))) end,
             ["TIME_TRAVEL"] = function () return event('DOOR_OF_TIME_OPEN') and (has_sword_master() or not setting('timeTravelSword')) end,
             ["TIME_TRAVEL_AT_WILL"] = function () return not setting('ageChange', 'none') and event('TIME_TRAVEL') and can_play_time() and (not setting('ageChange', 'oot') or has_ocarina_of_time()) end,
         },
@@ -7601,7 +7631,7 @@ function _oot_logic()
             ["MAGIC"] = function () return has_tunic_goron_strict() or has_explosives_or_hammer() end,
         },
         ["exits"] = {
-            ["Death Mountain Summit"] = function () return not setting('entrance', 'overworld') end,
+            ["Death Mountain Summit"] = function () return not setting('entrance', 'unused_on') end,
             ["Death Mountain Crater Bottom"] = function () return is_adult() and event('RED_BOULDER_BROKEN') or (has_hover_boots() and (can_use_sword() or can_hammer() or can_use_sticks())) or climb_anywhere() or hookshot_anywhere() end,
             ["Death Mountain Crater Warp"] = function () return has_tunic_goron_strict() and (is_adult() and scarecrow_longshot() or longshot_anywhere() or glitch_megaflip()) end,
             ["Death Mountain Crater Generic Grotto"] = function () return has_explosives_or_hammer() and not setting('entrance', 'grotto') and has_Shovel() end,
@@ -7749,7 +7779,7 @@ function _oot_logic()
             ["Death Mountain Crater Bottom"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
-            ["Great Fairy Magic Upgrade 2"] = function () return can_play_zelda() end,
+            ["Great Fairy Magic Upgrade 2"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_MAGIC2_ZELDA')) or (can_play_epona() and has('SONG_MAGIC2_EPONA')) or (can_play_saria() and has('SONG_MAGIC2_SARIA')) or (can_play_sun() and has('SONG_MAGIC2_SUN')) or (can_play_time() and has('SONG_MAGIC2_TIME')) or (can_play_storms() and has('SONG_MAGIC2_STORMS')) or (can_play_tp_forest() and has('SONG_MAGIC2_MINUET')) or (can_play_tp_fire() and has('SONG_MAGIC2_BOLERO')) or (can_play_tp_water() and has('SONG_MAGIC2_SERENADE')) or (can_play_tp_spirit() and has('SONG_MAGIC2_REQUIEM')) or (can_play_tp_shadow() and has('SONG_MAGIC2_NOCTURNE')) or (can_play_tp_light() and has('SONG_MAGIC2_PRELUDE')) or (can_play_healing() and has('SONG_MAGIC2_HEALING')) or (can_play_soaring() and has('SONG_MAGIC2_SOARING')) or (can_play_sonata() and has('SONG_MAGIC2_SONATA')) or (can_play_lullaby_half() and has('SONG_MAGIC2_HALFLULLABY')) or (can_play_lullaby() and has('SONG_MAGIC2_LULLABY')) or (can_play_bossanova() and has('SONG_MAGIC2_BOSSANOVA')) or (can_play_elegy() and has('SONG_MAGIC2_ELEGY')) or (can_play_oath() and has('SONG_MAGIC2_OATH'))) end,
             ["Great Fairy Magic Upgrade 2 Enter"] = function () return true end,
         
         },
@@ -8009,7 +8039,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Gerudo Fortress Exterior"] = function () return event('OPEN_FORTRESS_GATE') or (is_adult() and soul_thief_guard()) or climb_anywhere() or hookshot_anywhere() end,
-            ["Haunted Wasteland Start"] = function () return not setting('entrance', 'overworld') end,
+            ["Haunted Wasteland Start"] = function () return not setting('entrance', 'unused_on') end,
         },
         ["locations"] = {
             ["Haunted Wasteland Front Entry"] = function () return true end,
@@ -8034,7 +8064,7 @@ function _oot_logic()
     },
     ["Haunted Wasteland Start"] = {
         ["exits"] = {
-            ["Fortress Near Wasteland"] = function () return true end,
+            ["Fortress Near Wasteland"] = function () return not setting('entrance', 'unused_on') end,
             ["Haunted Wasteland Structure"] = function () return can_longshot() or has_hover_boots() or trick('OOT_SAND_RIVER_NOTHING') end,
         },
         ["locations"] = {
@@ -8064,7 +8094,7 @@ function _oot_logic()
     ["Haunted Wasteland End"] = {
         ["exits"] = {
             ["Haunted Wasteland Structure"] = function () return trick('OOT_BLIND_WASTELAND') end,
-            ["Desert Colossus"] = function () return not setting('entrance', 'overworld') end,
+            ["Desert Colossus"] = function () return not setting('entrance', 'unused_on') end,
         },
         ["locations"] = {
             ["Haunted Wasteland Crate Deep"] = function () return true end,
@@ -8077,7 +8107,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Spirit Temple"] = function () return not setting('entrance', 'dungeon_major') end,
-            ["Haunted Wasteland End"] = function () return true end,
+            ["Haunted Wasteland End"] = function () return not setting('entrance', 'unused_on') end,
             ["Fairy Fountain Nayru"] = function () return has_explosives() and not setting('entrance', 'interior_most') end,
             ["Desert Colossus Grotto"] = function () return can_lift_silver() and not setting('entrance', 'grotto') and has_Shovel() end,
             ["Spirit Temple Adult Hand"] = function () return climb_anywhere() end,
@@ -8132,7 +8162,7 @@ function _oot_logic()
             ["Desert Colossus"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
-            ["Great Fairy Nayru's Love"] = function () return can_play_zelda() end,
+            ["Great Fairy Nayru's Love"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_NAYRU_ZELDA')) or (can_play_epona() and has('SONG_NAYRU_EPONA')) or (can_play_saria() and has('SONG_NAYRU_SARIA')) or (can_play_sun() and has('SONG_NAYRU_SUN')) or (can_play_time() and has('SONG_NAYRU_TIME')) or (can_play_storms() and has('SONG_NAYRU_STORMS')) or (can_play_tp_forest() and has('SONG_NAYRU_MINUET')) or (can_play_tp_fire() and has('SONG_NAYRU_BOLERO')) or (can_play_tp_water() and has('SONG_NAYRU_SERENADE')) or (can_play_tp_spirit() and has('SONG_NAYRU_REQUIEM')) or (can_play_tp_shadow() and has('SONG_NAYRU_NOCTURNE')) or (can_play_tp_light() and has('SONG_NAYRU_PRELUDE')) or (can_play_healing() and has('SONG_NAYRU_HEALING')) or (can_play_soaring() and has('SONG_NAYRU_SOARING')) or (can_play_sonata() and has('SONG_NAYRU_SONATA')) or (can_play_lullaby_half() and has('SONG_NAYRU_HALFLULLABY')) or (can_play_lullaby() and has('SONG_NAYRU_LULLABY')) or (can_play_bossanova() and has('SONG_NAYRU_BOSSANOVA')) or (can_play_elegy() and has('SONG_NAYRU_ELEGY')) or (can_play_oath() and has('SONG_NAYRU_OATH'))) end,
             ["Great Fairy Nayru Enter"] = function () return true end,
         },
         ["age_change"] = true,
@@ -8314,7 +8344,7 @@ function _oot_logic()
             ["SHADOW_SHORTCUT"] = function () return has_goron_bracelet() end,
         },
         ["exits"] = {
-            ["Shadow Temple After Boat"] = function () return can_play_zelda() and (can_hookshot() or climb_anywhere() or (is_adult() and event('SHADOW_SHORTCUT'))) end,
+            ["Shadow Temple After Boat"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_SHADOW_ZELDA')) or (can_play_epona() and has('SONG_SHADOW_EPONA')) or (can_play_saria() and has('SONG_SHADOW_SARIA')) or (can_play_sun() and has('SONG_SHADOW_SUN')) or (can_play_time() and has('SONG_SHADOW_TIME')) or (can_play_storms() and has('SONG_SHADOW_STORMS')) or (can_play_tp_forest() and has('SONG_SHADOW_MINUET')) or (can_play_tp_fire() and has('SONG_SHADOW_BOLERO')) or (can_play_tp_water() and has('SONG_SHADOW_SERENADE')) or (can_play_tp_spirit() and has('SONG_SHADOW_REQUIEM')) or (can_play_tp_shadow() and has('SONG_SHADOW_NOCTURNE')) or (can_play_tp_light() and has('SONG_SHADOW_PRELUDE')) or (can_play_healing() and has('SONG_SHADOW_HEALING')) or (can_play_soaring() and has('SONG_SHADOW_SOARING')) or (can_play_sonata() and has('SONG_SHADOW_SONATA')) or (can_play_lullaby_half() and has('SONG_SHADOW_HALFLULLABY')) or (can_play_lullaby() and has('SONG_SHADOW_LULLABY')) or (can_play_bossanova() and has('SONG_SHADOW_BOSSANOVA')) or (can_play_elegy() and has('SONG_SHADOW_ELEGY')) or (can_play_oath() and has('SONG_SHADOW_OATH'))) and (can_hookshot() or climb_anywhere() or (is_adult() and event('SHADOW_SHORTCUT'))) end,
             ["Shadow Temple Wind Gibdo"] = function () return small_keys_shadow(4) end,
             ["Shadow Temple Scythe Silver Rupees"] = function () return event('SHADOW_SHORTCUT') or (climb_anywhere() and trick('OOT_SHADOW_BOAT_EARLY')) end,
         },
@@ -8518,7 +8548,8 @@ function _oot_logic()
             ["Spirit Temple Adult Boulders"] = function () return has_ranged_weapon() or can_boomerang() or has_bombchu() end,
         },
         ["locations"] = {
-            ["Spirit Temple Adult Lullaby"] = function () return can_play_zelda() and (can_hookshot() or climb_anywhere()) end,
+            ["Spirit Temple Song Event"] = function () return true end,
+            ["Spirit Temple Adult Lullaby"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_ADULT_ZELDA')) or (can_play_epona() and has('SONG_ADULT_EPONA')) or (can_play_saria() and has('SONG_ADULT_SARIA')) or (can_play_sun() and has('SONG_ADULT_SUN')) or (can_play_time() and has('SONG_ADULT_TIME')) or (can_play_storms() and has('SONG_ADULT_STORMS')) or (can_play_tp_forest() and has('SONG_ADULT_MINUET')) or (can_play_tp_fire() and has('SONG_ADULT_BOLERO')) or (can_play_tp_water() and has('SONG_ADULT_SERENADE')) or (can_play_tp_spirit() and has('SONG_ADULT_REQUIEM')) or (can_play_tp_shadow() and has('SONG_ADULT_NOCTURNE')) or (can_play_tp_light() and has('SONG_ADULT_PRELUDE')) or (can_play_healing() and has('SONG_ADULT_HEALING')) or (can_play_soaring() and has('SONG_ADULT_SOARING')) or (can_play_sonata() and has('SONG_ADULT_SONATA')) or (can_play_lullaby_half() and has('SONG_ADULT_HALFLULLABY')) or (can_play_lullaby() and has('SONG_ADULT_LULLABY')) or (can_play_bossanova() and has('SONG_ADULT_BOSSANOVA')) or (can_play_elegy() and has('SONG_ADULT_ELEGY')) or (can_play_oath() and has('SONG_ADULT_OATH'))) and (can_hookshot() or climb_anywhere()) end,
         },
         ["age_change"] = true,
     },
@@ -8578,7 +8609,7 @@ function _oot_logic()
             ["Spirit Temple Adult Upper"] = function () return small_keys_spirit(4) end,
         },
         ["locations"] = {
-            ["Spirit Temple Statue Hands"] = function () return cond(not setting('climbMostSurfacesOot', 'off'), has_explosives() and (has_mirror_shield() or small_keys_spirit(2)) or small_keys_spirit(3) or (has_explosives() and small_keys_spirit(2)), (setting('agelessBoots') and trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots_raw() or (setting('agelessHookshot') and has_hookshot(1))) and has_explosives() or event('SPIRIT_ADULT_DOOR') or (event('SPIRIT_CHILD_DOOR') and (trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots() or can_hookshot())) or (time_travel_at_will() and has_explosives() and (has_hookshot(1) or (has_hover_boots_raw() and trick('OOT_SPIRIT_CHILD_HOVER'))))) and can_play_zelda() end,
+            ["Spirit Temple Statue Hands"] = function () return cond(not setting('climbMostSurfacesOot', 'off'), has_explosives() and (has_mirror_shield() or small_keys_spirit(2)) or small_keys_spirit(3) or (has_explosives() and small_keys_spirit(2)), (setting('agelessBoots') and trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots_raw() or (setting('agelessHookshot') and has_hookshot(1))) and has_explosives() or event('SPIRIT_ADULT_DOOR') or (event('SPIRIT_CHILD_DOOR') and (trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots() or can_hookshot())) or (time_travel_at_will() and has_explosives() and (has_hookshot(1) or (has_hover_boots_raw() and trick('OOT_SPIRIT_CHILD_HOVER'))))) and (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_STATUE_ZELDA')) or (can_play_epona() and has('SONG_STATUE_EPONA')) or (can_play_saria() and has('SONG_STATUE_SARIA')) or (can_play_sun() and has('SONG_STATUE_SUN')) or (can_play_time() and has('SONG_STATUE_TIME')) or (can_play_storms() and has('SONG_STATUE_STORMS')) or (can_play_tp_forest() and has('SONG_STATUE_MINUET')) or (can_play_tp_fire() and has('SONG_STATUE_BOLERO')) or (can_play_tp_water() and has('SONG_STATUE_SERENADE')) or (can_play_tp_spirit() and has('SONG_STATUE_REQUIEM')) or (can_play_tp_shadow() and has('SONG_STATUE_NOCTURNE')) or (can_play_tp_light() and has('SONG_STATUE_PRELUDE')) or (can_play_healing() and has('SONG_STATUE_HEALING')) or (can_play_soaring() and has('SONG_STATUE_SOARING')) or (can_play_sonata() and has('SONG_STATUE_SONATA')) or (can_play_lullaby_half() and has('SONG_STATUE_HALFLULLABY')) or (can_play_lullaby() and has('SONG_STATUE_LULLABY')) or (can_play_bossanova() and has('SONG_STATUE_BOSSANOVA')) or (can_play_elegy() and has('SONG_STATUE_ELEGY')) or (can_play_oath() and has('SONG_STATUE_OATH'))) end,
             ["Spirit Temple Statue Upper Right"] = function () return cond(not setting('climbMostSurfacesOot', 'off'), has_explosives() and (has_mirror_shield() or small_keys_spirit(2)) or small_keys_spirit(3) or (has_explosives() and small_keys_spirit(2)), (setting('agelessBoots') and trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots_raw() or (setting('agelessHookshot') and has_hookshot(1))) and has_explosives() or (event('SPIRIT_ADULT_DOOR') and (has_hover_boots() or has_hookshot(1))) or (event('SPIRIT_CHILD_DOOR') and (trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots() or can_hookshot())) or (time_travel_at_will() and has_explosives() and (has_hookshot(1) or (has_hover_boots_raw() and trick('OOT_SPIRIT_CHILD_HOVER'))))) and can_play_zelda() end,
             ["Spirit Temple Pot Adult Upper"] = function () return small_keys_spirit(4) end,
         },
@@ -8625,7 +8656,7 @@ function _oot_logic()
             ["SPIRIT_LIGHT_STATUE"] = function () return has_mirror_shield() and has_explosives() end,
         },
         ["locations"] = {
-            ["Spirit Temple Adult Boss Key Chest"] = function () return can_play_zelda() and (can_hookshot() and can_hit_triggers_distance() or climb_anywhere() or hookshot_anywhere()) end,
+            ["Spirit Temple Adult Boss Key Chest"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) and (can_hookshot() and can_hit_triggers_distance() or climb_anywhere() or hookshot_anywhere()) end,
             ["Spirit Temple Adult Topmost Sun on Wall"] = function () return can_reflect_light() end,
             ["Spirit Temple Flying Pot Topmost 1"] = function () return soul_flying_pot() end,
             ["Spirit Temple Flying Pot Topmost 2"] = function () return soul_flying_pot() end,
@@ -8750,7 +8781,7 @@ function _oot_logic()
     },
     ["Water Temple Ruto Room"] = {
         ["events"] = {
-            ["WATER_LEVEL_LOW"] = function () return can_play_zelda() end,
+            ["WATER_LEVEL_LOW"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_WATER_ZELDA')) or (can_play_epona() and has('SONG_WATER_EPONA')) or (can_play_saria() and has('SONG_WATER_SARIA')) or (can_play_sun() and has('SONG_WATER_SUN')) or (can_play_time() and has('SONG_WATER_TIME')) or (can_play_storms() and has('SONG_WATER_STORMS')) or (can_play_tp_forest() and has('SONG_WATER_MINUET')) or (can_play_tp_fire() and has('SONG_WATER_BOLERO')) or (can_play_tp_water() and has('SONG_WATER_SERENADE')) or (can_play_tp_spirit() and has('SONG_WATER_REQUIEM')) or (can_play_tp_shadow() and has('SONG_WATER_NOCTURNE')) or (can_play_tp_light() and has('SONG_WATER_PRELUDE')) or (can_play_healing() and has('SONG_WATER_HEALING')) or (can_play_soaring() and has('SONG_WATER_SOARING')) or (can_play_sonata() and has('SONG_WATER_SONATA')) or (can_play_lullaby_half() and has('SONG_WATER_HALFLULLABY')) or (can_play_lullaby() and has('SONG_WATER_LULLABY')) or (can_play_bossanova() and has('SONG_WATER_BOSSANOVA')) or (can_play_elegy() and has('SONG_WATER_ELEGY')) or (can_play_oath() and has('SONG_WATER_OATH'))) end,
         },
         ["exits"] = {
             ["Water Temple Map Room"] = function () return event('WATER_LEVEL_RESET') or climb_anywhere() or longshot_anywhere() end,
@@ -8784,7 +8815,7 @@ function _oot_logic()
     },
     ["Water Temple Center Middle"] = {
         ["events"] = {
-            ["WATER_LEVEL_MIDDLE"] = function () return can_play_zelda() end,
+            ["WATER_LEVEL_MIDDLE"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_WATER_ZELDA')) or (can_play_epona() and has('SONG_WATER_EPONA')) or (can_play_saria() and has('SONG_WATER_SARIA')) or (can_play_sun() and has('SONG_WATER_SUN')) or (can_play_time() and has('SONG_WATER_TIME')) or (can_play_storms() and has('SONG_WATER_STORMS')) or (can_play_tp_forest() and has('SONG_WATER_MINUET')) or (can_play_tp_fire() and has('SONG_WATER_BOLERO')) or (can_play_tp_water() and has('SONG_WATER_SERENADE')) or (can_play_tp_spirit() and has('SONG_WATER_REQUIEM')) or (can_play_tp_shadow() and has('SONG_WATER_NOCTURNE')) or (can_play_tp_light() and has('SONG_WATER_PRELUDE')) or (can_play_healing() and has('SONG_WATER_HEALING')) or (can_play_soaring() and has('SONG_WATER_SOARING')) or (can_play_sonata() and has('SONG_WATER_SONATA')) or (can_play_lullaby_half() and has('SONG_WATER_HALFLULLABY')) or (can_play_lullaby() and has('SONG_WATER_LULLABY')) or (can_play_bossanova() and has('SONG_WATER_BOSSANOVA')) or (can_play_elegy() and has('SONG_WATER_ELEGY')) or (can_play_oath() and has('SONG_WATER_OATH'))) end,
         },
         ["exits"] = {
             ["Water Temple Center Bottom"] = function () return true end,
@@ -9002,7 +9033,7 @@ function _oot_logic()
     },
     ["Bottom of the Well Main"] = {
         ["events"] = {
-            ["BOTW_MQ_CENTER_GATES_LOWERED"] = function () return can_play_zelda() end,
+            ["BOTW_MQ_CENTER_GATES_LOWERED"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOTW_ZELDA')) or (can_play_epona() and has('SONG_BOTW_EPONA')) or (can_play_saria() and has('SONG_BOTW_SARIA')) or (can_play_sun() and has('SONG_BOTW_SUN')) or (can_play_time() and has('SONG_BOTW_TIME')) or (can_play_storms() and has('SONG_BOTW_STORMS')) or (can_play_tp_forest() and has('SONG_BOTW_MINUET')) or (can_play_tp_fire() and has('SONG_BOTW_BOLERO')) or (can_play_tp_water() and has('SONG_BOTW_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOTW_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOTW_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOTW_PRELUDE')) or (can_play_healing() and has('SONG_BOTW_HEALING')) or (can_play_soaring() and has('SONG_BOTW_SOARING')) or (can_play_sonata() and has('SONG_BOTW_SONATA')) or (can_play_lullaby_half() and has('SONG_BOTW_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOTW_LULLABY')) or (can_play_bossanova() and has('SONG_BOTW_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOTW_ELEGY')) or (can_play_oath() and has('SONG_BOTW_OATH'))) end,
             ["BOTW_MQ_DRAIN_WATER"] = function () return has_ranged_weapon() or has_explosives_or_hammer() or can_use_sticks() or can_use_sword() end,
             ["BOTW_MQ_EYE_GATE"] = function () return has_explosives_or_hammer() and can_hit_triggers_distance() end,
         },
@@ -10876,7 +10907,7 @@ function _oot_logic()
             ["Ganon Castle Light Trial Round Boulder Room Before Flame Walls"] = function () return small_keys_ganon(2) end,
         },
         ["locations"] = {
-            ["MQ Ganon Castle Light Trial Chest"] = function () return can_play_zelda() end,
+            ["MQ Ganon Castle Light Trial Chest"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_GANON_ZELDA')) or (can_play_epona() and has('SONG_GANON_EPONA')) or (can_play_saria() and has('SONG_GANON_SARIA')) or (can_play_sun() and has('SONG_GANON_SUN')) or (can_play_time() and has('SONG_GANON_TIME')) or (can_play_storms() and has('SONG_GANON_STORMS')) or (can_play_tp_forest() and has('SONG_GANON_MINUET')) or (can_play_tp_fire() and has('SONG_GANON_BOLERO')) or (can_play_tp_water() and has('SONG_GANON_SERENADE')) or (can_play_tp_spirit() and has('SONG_GANON_REQUIEM')) or (can_play_tp_shadow() and has('SONG_GANON_NOCTURNE')) or (can_play_tp_light() and has('SONG_GANON_PRELUDE')) or (can_play_healing() and has('SONG_GANON_HEALING')) or (can_play_soaring() and has('SONG_GANON_SOARING')) or (can_play_sonata() and has('SONG_GANON_SONATA')) or (can_play_lullaby_half() and has('SONG_GANON_HALFLULLABY')) or (can_play_lullaby() and has('SONG_GANON_LULLABY')) or (can_play_bossanova() and has('SONG_GANON_BOSSANOVA')) or (can_play_elegy() and has('SONG_GANON_ELEGY')) or (can_play_oath() and has('SONG_GANON_OATH'))) end,
         },
         ["age_change"] = true,
     },
@@ -12607,7 +12638,7 @@ function _oot_logic()
     },
     ["Shadow Temple On The Boat"] = {
         ["events"] = {
-            ["SHADOW_MQ_ACTIVATE_BOAT_RIDE"] = function () return can_play_zelda() end,
+            ["SHADOW_MQ_ACTIVATE_BOAT_RIDE"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_SHADOW_ZELDA')) or (can_play_epona() and has('SONG_SHADOW_EPONA')) or (can_play_saria() and has('SONG_SHADOW_SARIA')) or (can_play_sun() and has('SONG_SHADOW_SUN')) or (can_play_time() and has('SONG_SHADOW_TIME')) or (can_play_storms() and has('SONG_SHADOW_STORMS')) or (can_play_tp_forest() and has('SONG_SHADOW_MINUET')) or (can_play_tp_fire() and has('SONG_SHADOW_BOLERO')) or (can_play_tp_water() and has('SONG_SHADOW_SERENADE')) or (can_play_tp_spirit() and has('SONG_SHADOW_REQUIEM')) or (can_play_tp_shadow() and has('SONG_SHADOW_NOCTURNE')) or (can_play_tp_light() and has('SONG_SHADOW_PRELUDE')) or (can_play_healing() and has('SONG_SHADOW_HEALING')) or (can_play_soaring() and has('SONG_SHADOW_SOARING')) or (can_play_sonata() and has('SONG_SHADOW_SONATA')) or (can_play_lullaby_half() and has('SONG_SHADOW_HALFLULLABY')) or (can_play_lullaby() and has('SONG_SHADOW_LULLABY')) or (can_play_bossanova() and has('SONG_SHADOW_BOSSANOVA')) or (can_play_elegy() and has('SONG_SHADOW_ELEGY')) or (can_play_oath() and has('SONG_SHADOW_OATH'))) end,
         },
         ["exits"] = {
             ["Shadow Temple Area Before Boat Ride"] = function () return true end,
@@ -12868,7 +12899,7 @@ function _oot_logic()
         ["locations"] = {
             ["MQ Spirit Temple Silver Block Room Target Chest"] = function () return event('SPIRIT_STATUE_FIRE') and can_use_slingshot() end,
             ["MQ Spirit Temple Compass Chest"] = function () return can_use_slingshot() or can_use_bow() end,
-            ["MQ Spirit Temple Chest in Box"] = function () return can_play_zelda() and (is_adult() or (has_hover_boots() and trick('OOT_SPIRIT_CHILD_HOVER'))) end,
+            ["MQ Spirit Temple Chest in Box"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_STATUE_ZELDA')) or (can_play_epona() and has('SONG_STATUE_EPONA')) or (can_play_saria() and has('SONG_STATUE_SARIA')) or (can_play_sun() and has('SONG_STATUE_SUN')) or (can_play_time() and has('SONG_STATUE_TIME')) or (can_play_storms() and has('SONG_STATUE_STORMS')) or (can_play_tp_forest() and has('SONG_STATUE_MINUET')) or (can_play_tp_fire() and has('SONG_STATUE_BOLERO')) or (can_play_tp_water() and has('SONG_STATUE_SERENADE')) or (can_play_tp_spirit() and has('SONG_STATUE_REQUIEM')) or (can_play_tp_shadow() and has('SONG_STATUE_NOCTURNE')) or (can_play_tp_light() and has('SONG_STATUE_PRELUDE')) or (can_play_healing() and has('SONG_STATUE_HEALING')) or (can_play_soaring() and has('SONG_STATUE_SOARING')) or (can_play_sonata() and has('SONG_STATUE_SONATA')) or (can_play_lullaby_half() and has('SONG_STATUE_HALFLULLABY')) or (can_play_lullaby() and has('SONG_STATUE_LULLABY')) or (can_play_bossanova() and has('SONG_STATUE_BOSSANOVA')) or (can_play_elegy() and has('SONG_STATUE_ELEGY')) or (can_play_oath() and has('SONG_STATUE_OATH'))) and (is_adult() or (has_hover_boots() and trick('OOT_SPIRIT_CHILD_HOVER'))) end,
             ["MQ Spirit Temple Statue Room Ledge Chest"] = function () return (is_adult() or (has_hover_boots() and trick('OOT_SPIRIT_CHILD_HOVER'))) and has_lens() end,
             ["MQ Spirit Temple Pot Statue Room Lower 1"] = function () return true end,
             ["MQ Spirit Temple Pot Statue Room Lower 2"] = function () return true end,
@@ -12973,22 +13004,22 @@ function _oot_logic()
     },
     ["Spirit Temple Top Floor"] = {
         ["events"] = {
-            ["SPIRIT_TEMPLE_LIGHT"] = function () return can_play_zelda() and can_hammer() and has_mirror_shield() end,
+            ["SPIRIT_TEMPLE_LIGHT"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) and can_hammer() and has_mirror_shield() end,
         },
         ["locations"] = {
-            ["MQ Spirit Temple Topmost Chest"] = function () return can_play_zelda() and can_hammer() and has_lens() end,
+            ["MQ Spirit Temple Topmost Chest"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) and can_hammer() and has_lens() end,
             ["MQ Spirit Temple GS Top Floor Left Wall"] = function () return gs() and small_keys_spirit(7) and soul_iron_knuckle() end,
             ["MQ Spirit Temple GS Top Floor Back Wall"] = function () return gs() and small_keys_spirit(7) and soul_iron_knuckle() end,
             ["MQ Spirit Temple Pot Top Near Triforce Symbol 1"] = function () return true end,
             ["MQ Spirit Temple Pot Top Near Triforce Symbol 2"] = function () return true end,
-            ["MQ Spirit Temple Pot Top Near Lowering Platform 1"] = function () return can_play_zelda() end,
-            ["MQ Spirit Temple Pot Top Near Lowering Platform 2"] = function () return can_play_zelda() end,
-            ["MQ Spirit Temple Pot Top Near Lowering Platform 3"] = function () return can_play_zelda() end,
-            ["MQ Spirit Temple Pot Top Near Lowering Platform 4"] = function () return can_play_zelda() end,
-            ["MQ Spirit Temple Top Near Lowering Platform Large Crate 1"] = function () return can_play_zelda() end,
-            ["MQ Spirit Temple Top Near Lowering Platform Large Crate 2"] = function () return can_play_zelda() end,
-            ["MQ Spirit Temple Top Near Lowering Platform Large Crate 3"] = function () return can_play_zelda() end,
-            ["MQ Spirit Temple Top Near Lowering Platform Large Crate 4"] = function () return can_play_zelda() end,
+            ["MQ Spirit Temple Pot Top Near Lowering Platform 1"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) end,
+            ["MQ Spirit Temple Pot Top Near Lowering Platform 2"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) end,
+            ["MQ Spirit Temple Pot Top Near Lowering Platform 3"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) end,
+            ["MQ Spirit Temple Pot Top Near Lowering Platform 4"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) end,
+            ["MQ Spirit Temple Top Near Lowering Platform Large Crate 1"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) end,
+            ["MQ Spirit Temple Top Near Lowering Platform Large Crate 2"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) end,
+            ["MQ Spirit Temple Top Near Lowering Platform Large Crate 3"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) end,
+            ["MQ Spirit Temple Top Near Lowering Platform Large Crate 4"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_BOSSKEY_ZELDA')) or (can_play_epona() and has('SONG_BOSSKEY_EPONA')) or (can_play_saria() and has('SONG_BOSSKEY_SARIA')) or (can_play_sun() and has('SONG_BOSSKEY_SUN')) or (can_play_time() and has('SONG_BOSSKEY_TIME')) or (can_play_storms() and has('SONG_BOSSKEY_STORMS')) or (can_play_tp_forest() and has('SONG_BOSSKEY_MINUET')) or (can_play_tp_fire() and has('SONG_BOSSKEY_BOLERO')) or (can_play_tp_water() and has('SONG_BOSSKEY_SERENADE')) or (can_play_tp_spirit() and has('SONG_BOSSKEY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_BOSSKEY_NOCTURNE')) or (can_play_tp_light() and has('SONG_BOSSKEY_PRELUDE')) or (can_play_healing() and has('SONG_BOSSKEY_HEALING')) or (can_play_soaring() and has('SONG_BOSSKEY_SOARING')) or (can_play_sonata() and has('SONG_BOSSKEY_SONATA')) or (can_play_lullaby_half() and has('SONG_BOSSKEY_HALFLULLABY')) or (can_play_lullaby() and has('SONG_BOSSKEY_LULLABY')) or (can_play_bossanova() and has('SONG_BOSSKEY_BOSSANOVA')) or (can_play_elegy() and has('SONG_BOSSKEY_ELEGY')) or (can_play_oath() and has('SONG_BOSSKEY_OATH'))) end,
         },
         ["age_change"] = true,
     },
@@ -13089,7 +13120,7 @@ function _oot_logic()
     },
     ["Water Temple Ruto Column Top"] = {
         ["events"] = {
-            ["WATER_LEVEL_LOW"] = function () return can_play_zelda() end,
+            ["WATER_LEVEL_LOW"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_WATER_ZELDA')) or (can_play_epona() and has('SONG_WATER_EPONA')) or (can_play_saria() and has('SONG_WATER_SARIA')) or (can_play_sun() and has('SONG_WATER_SUN')) or (can_play_time() and has('SONG_WATER_TIME')) or (can_play_storms() and has('SONG_WATER_STORMS')) or (can_play_tp_forest() and has('SONG_WATER_MINUET')) or (can_play_tp_fire() and has('SONG_WATER_BOLERO')) or (can_play_tp_water() and has('SONG_WATER_SERENADE')) or (can_play_tp_spirit() and has('SONG_WATER_REQUIEM')) or (can_play_tp_shadow() and has('SONG_WATER_NOCTURNE')) or (can_play_tp_light() and has('SONG_WATER_PRELUDE')) or (can_play_healing() and has('SONG_WATER_HEALING')) or (can_play_soaring() and has('SONG_WATER_SOARING')) or (can_play_sonata() and has('SONG_WATER_SONATA')) or (can_play_lullaby_half() and has('SONG_WATER_HALFLULLABY')) or (can_play_lullaby() and has('SONG_WATER_LULLABY')) or (can_play_bossanova() and has('SONG_WATER_BOSSANOVA')) or (can_play_elegy() and has('SONG_WATER_ELEGY')) or (can_play_oath() and has('SONG_WATER_OATH'))) end,
         },
         ["exits"] = {
             ["Water Temple Ruto Column Bottom"] = function () return has_iron_boots() and has_tunic_zora() or event('WATER_LEVEL_LOW') end,
@@ -13440,7 +13471,7 @@ function _oot_logic()
     },
     ["Water Temple Central Tower Middle Door"] = {
         ["events"] = {
-            ["WATER_LEVEL_MID"] = function () return event('WATER_LEVEL_LOW') and can_play_zelda() end,
+            ["WATER_LEVEL_MID"] = function () return event('WATER_LEVEL_LOW') and (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_WATER_ZELDA')) or (can_play_epona() and has('SONG_WATER_EPONA')) or (can_play_saria() and has('SONG_WATER_SARIA')) or (can_play_sun() and has('SONG_WATER_SUN')) or (can_play_time() and has('SONG_WATER_TIME')) or (can_play_storms() and has('SONG_WATER_STORMS')) or (can_play_tp_forest() and has('SONG_WATER_MINUET')) or (can_play_tp_fire() and has('SONG_WATER_BOLERO')) or (can_play_tp_water() and has('SONG_WATER_SERENADE')) or (can_play_tp_spirit() and has('SONG_WATER_REQUIEM')) or (can_play_tp_shadow() and has('SONG_WATER_NOCTURNE')) or (can_play_tp_light() and has('SONG_WATER_PRELUDE')) or (can_play_healing() and has('SONG_WATER_HEALING')) or (can_play_soaring() and has('SONG_WATER_SOARING')) or (can_play_sonata() and has('SONG_WATER_SONATA')) or (can_play_lullaby_half() and has('SONG_WATER_HALFLULLABY')) or (can_play_lullaby() and has('SONG_WATER_LULLABY')) or (can_play_bossanova() and has('SONG_WATER_BOSSANOVA')) or (can_play_elegy() and has('SONG_WATER_ELEGY')) or (can_play_oath() and has('SONG_WATER_OATH'))) end,
             ["MOVE_WATER_TIME_BLOCK"] = function () return can_play_time() and (can_longshot() or hookshot_anywhere() or climb_anywhere()) end,
             ["WATER_CENTRAL_GATE"] = function () return event('MOVE_WATER_TIME_BLOCK') and can_use_din() and (event('WATER_LEVEL_HIGH') or ((event('WATER_LEVEL_LOW') or event('WATER_LEVEL_MID')) and hookshot_anywhere())) end,
         },
@@ -13505,7 +13536,7 @@ function _oot_logic()
     },
     ["Water Temple High Water Level Ledge"] = {
         ["events"] = {
-            ["WATER_LEVEL_HIGH"] = function () return can_play_zelda() end,
+            ["WATER_LEVEL_HIGH"] = function () return (can_play_zelda() and setting('SongeventOot', 'false')) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_WATER_ZELDA')) or (can_play_epona() and has('SONG_WATER_EPONA')) or (can_play_saria() and has('SONG_WATER_SARIA')) or (can_play_sun() and has('SONG_WATER_SUN')) or (can_play_time() and has('SONG_WATER_TIME')) or (can_play_storms() and has('SONG_WATER_STORMS')) or (can_play_tp_forest() and has('SONG_WATER_MINUET')) or (can_play_tp_fire() and has('SONG_WATER_BOLERO')) or (can_play_tp_water() and has('SONG_WATER_SERENADE')) or (can_play_tp_spirit() and has('SONG_WATER_REQUIEM')) or (can_play_tp_shadow() and has('SONG_WATER_NOCTURNE')) or (can_play_tp_light() and has('SONG_WATER_PRELUDE')) or (can_play_healing() and has('SONG_WATER_HEALING')) or (can_play_soaring() and has('SONG_WATER_SOARING')) or (can_play_sonata() and has('SONG_WATER_SONATA')) or (can_play_lullaby_half() and has('SONG_WATER_HALFLULLABY')) or (can_play_lullaby() and has('SONG_WATER_LULLABY')) or (can_play_bossanova() and has('SONG_WATER_BOSSANOVA')) or (can_play_elegy() and has('SONG_WATER_ELEGY')) or (can_play_oath() and has('SONG_WATER_OATH'))) end,
         },
         ["exits"] = {
             ["Water Temple Main Room Top Floor"] = function () return true end,
