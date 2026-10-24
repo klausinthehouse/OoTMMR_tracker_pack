@@ -32,6 +32,7 @@
                     "MM_entrance_dungeon_snowhead",
                     "MM_entrance_dungeon_greatbay",
                     "MM_entrance_dungeon_stonetower",
+                    "MM_entrance_dungeon_stonetowerinv",
                     "MM_entrance_dungeon_moon"
                 ],
                 [
@@ -40,6 +41,7 @@
                     "MM_entrance_dungeon_pirate",                
                     "MM_entrance_dungeon_secret",
                     "MM_entrance_dungeon_BTW",
+                    "MM_entrance_dungeon_BTW_back",
                     "MM_entrance_dungeon_ikana"        
                 ]
             ]
@@ -285,7 +287,6 @@
                     "MM_entrance_interior_gb_lab",                    
                     "MM_entrance_interior_zc_beaver",
                     "MM_entrance_interior_zc_fairy",
-                    "MM_entrance_interior_zh",
                     "MM_entrance_interior_zh_japas",
                     "MM_entrance_interior_zh_lulu",
                     "MM_entrance_interior_zh_mikau",
@@ -397,6 +398,7 @@
                     "MM_entrance_overworld_gb_ledge",
                     "MM_entrance_overworld_pf",
                     "MM_entrance_overworld_zc",
+                    "MM_entrance_overworld_zh",
                     "MM_entrance_overworld_zh_back"
                 ],
                 [
