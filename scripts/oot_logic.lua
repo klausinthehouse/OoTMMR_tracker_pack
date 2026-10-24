@@ -4817,7 +4817,8 @@ function _oot_logic()
             ["Lost Woods Bridge"] = function () return has('entrance_overworld_lw_bridge') end,
             ["Sacred Meadow Entryway"] = function () return has('entrance_overworld_sfm') end,
             ["Sacred Meadow"] = function () return has('entrance_overworld_sfm_back') end,
-            ["Hyrule Castle"] = function () return has('entrance_overworld_cg') end,
+            ["Hyrule Castle"] = function () return has('entrance_overworld_cg') and is_child() end,
+            ["Ganon Castle Exterior"] = function () return has('entrance_overworld_cg') and is_adult() end,
             ["Hyrule Field"] = function () return has('entrance_overworld_hf') end,
             ["Lon Lon Ranch"] = function () return has('entrance_overworld_llr') end,
             ["Market"] = function () return has('entrance_overworld_market') end,
@@ -5500,7 +5501,7 @@ function _oot_logic()
         ["exits"] = {
             ["Market"] = function () return true end,
             ["Hyrule Castle"] = function () return is_child() and not setting('entrance', 'unused_on') end,
-            ["Ganon Castle Exterior"] = function () return is_adult() end,
+            ["Ganon Castle Exterior"] = function () return is_adult() and not setting('entrance', 'unused_on') end,
         },
          ["locations"] = {            
             ["Castlegrounds Enter"] = function () return true end,           
@@ -6096,7 +6097,7 @@ function _oot_logic()
             ["Lost Woods Wonder Item 1"] = function () return is_child() end,
             ["Lost Woods Wonder Item 2"] = function () return is_child() end,
             ["Lost Woods Wonder Item 3"] = function () return true end,
-            ["Lost Woods to Zora River"] = function () return can_dive_small() or hookshot_anywhere() end,
+            ["Lost Woods to Zora River"] = function () return can_dive_small() or hookshot_anywhere() or (has_iron_boots() and is_adult) end,
             ["Lost Woods Boulders"] = function () return has_explosives_or_hammer() end,
             ["Lost Woods Gossip Stone"] = function () return true end,
             ["Lost Woods Gossip Fairy"] = function () return can_play_sun() or can_play_zelda() or can_play_epona() or can_play_time() end,
@@ -6973,6 +6974,7 @@ function _oot_logic()
             ["Goron City Pot Stairs 4"] = function () return true end,
             ["Goron City Pot Stairs 5"] = function () return true end,
             ["Goron City Grotto Entry"] = function () return (is_adult() and can_play_time() or (can_hookshot() and (has_tunic_goron_strict() or can_use_nayru())) or climb_anywhere()) and has_Shovel() end,
+            ["Goron City Shortcut Entry"] = function () return (event('GORON_CITY_SHORTCUT') or climb_anywhere() or hookshot_anywhere()) end,
             ["Goron Shop Entry"] = function () return (has_bombflowers() and (is_child() or time_travel_at_will() or (is_adult() and soul_goron_child())) or (can_use_bow() and soul_goron_child() and (is_adult() or time_travel_at_will())) or ((can_use_din() or event('DARUNIA_TORCH')) and (is_child() or time_travel_at_will())) or (has_blue_fire_arrows_mudwall() and (is_child() or time_travel_at_will()))) end,
             ["Goron City Pot Medigoron Room"] = function () return has_bombflowers() or can_hammer() or has_blue_fire_arrows_mudwall() end,
             ["Goron City Medigoron Gossip Stone"] = function () return has_bombflowers() or can_hammer() or has_blue_fire_arrows_mudwall() end,
@@ -7408,7 +7410,6 @@ function _oot_logic()
             ["Lake Hylia Gossip Fairy"] = function () return can_play_sun() or can_play_zelda() or can_play_epona() or can_play_time() end,
             ["Lake Hylia Gossip Big Fairy"] = function () return can_play_storms() end,
             ["Lake Hylia Rock"] = function () return (can_swim() and is_child()) or is_adult() and ((can_hookshot() and scarecrow_hookshot()) or hookshot_anywhere() or can_use_beans() or climb_anywhere()) end,
-            ["Lake Hylia SC"] = function () return (is_child() and can_dive_small()) or (is_adult() and setting('openZdShortcut', 'true')) end,
             ["Water Temple Front"] = function () return (has_iron_boots() and has_tunic_zora() and (can_hookshot() or setting('Dungeonwater', 'open')) or (trick('OOT_WATER_GOLD_SCALE') and is_adult() and (can_longshot() or setting('Dungeonwater', 'open')) and has_scale_raw(2))) and not setting('entrance', 'dungeon_major') end,
         },
         ["age_change"] = true,
@@ -7417,6 +7418,9 @@ function _oot_logic()
         ["exits"] = {
             ["Lake Hylia"] = function () return is_adult() or can_swim() end,
             ["Zora Domain Shortcut"] = function () return is_adult() or can_swim() end,
+        },
+        ["locations"] = {
+            ["Lake Hylia SC"] = function () return is_adult() or can_swim() end,
         },
         ["age_change"] = false,
     },

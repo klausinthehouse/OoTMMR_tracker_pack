@@ -639,6 +639,7 @@ function _mm_logic()
         MM_SHOPS = "priceMmShops",
         MM_SHOPS_EX = "priceMmShops",
         MM_TINGLE = "priceMmTingle",
+        MM_MERCHANTS = "priceMMMerchants",
     }
     function price(range, id, value)
         local price = PRICE_HELPER.default_prices[id + PRICE_HELPER.range_index[range]]
@@ -1801,6 +1802,38 @@ function _mm_logic()
 		return can_play(SONG_SOARING) and ocarina_button_down() and ocarina_button_up() and ocarina_button_left()
 	end
 
+    function can_play_zelda()
+		return can_play(SONG_ZELDA) and ocarina_button_up() and ocarina_button_right() and ocarina_button_left()
+	end
+
+	function can_play_saria()
+		return can_play(SONG_SARIA) and ocarina_button_down() and ocarina_button_right() and ocarina_button_left()
+	end
+
+    function can_play_tp_light()
+		return can_play(SONG_TP_LIGHT) and ocarina_button_up() and ocarina_button_right() and ocarina_button_left()
+	end
+
+	function can_play_tp_forest()
+		return can_play(SONG_TP_FOREST) and ocarina_button_a() and ocarina_button_up() and ocarina_button_right() and ocarina_button_left()
+	end
+
+	function can_play_tp_fire()
+		return can_play(SONG_TP_FIRE) and ocarina_button_a() and ocarina_button_right() and ocarina_button_down()
+	end
+
+	function can_play_tp_water()
+		return can_play(SONG_TP_WATER) and ocarina_button_a() and ocarina_button_right() and ocarina_button_down() and ocarina_button_left()
+	end
+
+	function can_play_tp_shadow()
+		return can_play(SONG_TP_SHADOW) and ocarina_button_a() and ocarina_button_right() and ocarina_button_down() and ocarina_button_left()
+	end
+
+	function can_play_tp_spirit()
+		return can_play(SONG_TP_SPIRIT) and ocarina_button_a() and ocarina_button_right() and ocarina_button_down()
+	end
+
 	function can_play_awakening()
 		return can_play(SONG_AWAKENING) and ocarina_button_up() and ocarina_button_right() and ocarina_button_left() and ocarina_button_a()
 	end
@@ -2183,7 +2216,7 @@ function _mm_logic()
 	end
 
 	function turtle_woken()
-		return can_play_zora() and has_mask_zora() or setting('DungeonGB', 'open') or ((setting('clearStateDungeonsMm', 'GB') or setting('clearStateDungeonsMm', 'both')) and is_ocean_cleared())
+		return ((can_play_zora() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_GREATBAY_ZELDA')) or (can_play_epona() and has('SONG_GREATBAY_EPONA')) or (can_play_saria() and has('SONG_GREATBAY_SARIA')) or (can_play_sun() and has('SONG_GREATBAY_SUN')) or (can_play_time() and has('SONG_GREATBAY_TIME')) or (can_play_storms() and has('SONG_GREATBAY_STORMS')) or (can_play_tp_forest() and has('SONG_GREATBAY_MINUET')) or (can_play_tp_fire() and has('SONG_GREATBAY_BOLERO')) or (can_play_tp_water() and has('SONG_GREATBAY_SERENADE')) or (can_play_tp_spirit() and has('SONG_GREATBAY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_GREATBAY_NOCTURNE')) or (can_play_tp_light() and has('SONG_GREATBAY_PRELUDE')) or (can_play_healing() and has('SONG_GREATBAY_HEALING')) or (can_play_soaring() and has('SONG_GREATBAY_SOARING')) or (can_play_awakening() and has('SONG_GREATBAY_SONATA')) or (can_play_goron_half() and has('SONG_GREATBAY_HALFLULLABY')) or (can_play_goron() and has('SONG_GREATBAY_LULLABY')) or (can_play_zora() and has('SONG_GREATBAY_BOSSANOVA')) or (can_play_emptiness() and has('SONG_GREATBAY_ELEGY')) or (can_play_order() and has('SONG_GREATBAY_OATH'))))) and has_mask_zora() or setting('DungeonGB', 'open') or ((setting('clearStateDungeonsMm', 'GB') or setting('clearStateDungeonsMm', 'both')) and is_ocean_cleared())
 	end
 
 	function underwater_walking()
@@ -2338,12 +2371,16 @@ function _mm_logic()
 		return wallet_price(MM_TINGLE, id)
 	end
 
+    function merchant_price(id)
+		return wallet_price(MM_MERCHANTS, id)
+	end
+
 	function has_skeleton_key()
 		return setting('skeletonKeyMm') and cond(setting('sharedSkeletonKey'), has('SHARED_SKELETON_KEY'), has('SKELETON_KEY'))
 	end
 
 	function boss_key(x)
-		return setting('bossKeyShuffleMm', 'removed') or has(x)
+		return setting('WOODFALLShuffleMm', 'removed') or has(x)
 	end
 
 	function small_keys(type, x, y, count)
@@ -3254,7 +3291,7 @@ function _mm_logic()
     ["Clock Tower Roof"] = {
         ["events"] = {
             ["MAGIC"] = function () return true end,
-            ["MM_MOON_OPEN"] = function () return (can_play_order() or setting('openMoon')) and special(MOON) end,
+            ["MM_MOON_OPEN"] = function () return (((can_play_order() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_MOON_ZELDA')) or (can_play_epona() and has('SONG_MOON_EPONA')) or (can_play_saria() and has('SONG_MOON_SARIA')) or (can_play_sun() and has('SONG_MOON_SUN')) or (can_play_time() and has('SONG_MOON_TIME')) or (can_play_storms() and has('SONG_MOON_STORMS')) or (can_play_tp_forest() and has('SONG_MOON_MINUET')) or (can_play_tp_fire() and has('SONG_MOON_BOLERO')) or (can_play_tp_water() and has('SONG_MOON_SERENADE')) or (can_play_tp_spirit() and has('SONG_MOON_REQUIEM')) or (can_play_tp_shadow() and has('SONG_MOON_NOCTURNE')) or (can_play_tp_light() and has('SONG_MOON_PRELUDE')) or (can_play_healing() and has('SONG_MOON_HEALING')) or (can_play_soaring() and has('SONG_MOON_SOARING')) or (can_play_awakening() and has('SONG_MOON_SONATA')) or (can_play_goron_half() and has('SONG_MOON_HALFLULLABY')) or (can_play_goron() and has('SONG_MOON_LULLABY')) or (can_play_zora() and has('SONG_MOON_BOSSANOVA')) or (can_play_emptiness() and has('SONG_MOON_ELEGY')) or (can_play_order() and has('SONG_MOON_OATH'))))) or setting('openMoon')) and special(MOON) end,
         },
         ["exits"] = {
             ["Moon"] = function () return event('MM_MOON_OPEN') end,
@@ -3619,13 +3656,14 @@ function _mm_logic()
             ["Snowhead Temple"] = function () return has('entrance_dungeon_snowhead') end,
             ["Great Bay Temple"] = function () return has('entrance_dungeon_greatbay') end,
             ["Stone Tower Temple"] = function () return has('entrance_dungeon_stonetower') end,
+            ["Stone Tower Temple Inverted"] = function () return has('entrance_dungeon_stonetowerinv') end,
             ["Clock Tower Roof"] = function () return has('entrance_dungeon_moon') end,
             ["Swamp Spider House"] = function () return has('entrance_dungeon_swamp') end,
             ["Ocean Spider House"] = function () return has('entrance_dungeon_ocean') end,
             ["Pirate Fortress Entrance"] = function () return has('entrance_dungeon_pirate') end,
             ["Secret Shrine"] = function () return has('entrance_dungeon_secret') end,
             ["Beneath The Well Entrance"] = function () return has('entrance_dungeon_BTW') end,
-            ["Beneath The Well End"] = function () return has('entrance_dungeon_BTW') end,
+            ["Beneath The Well End"] = function () return has('entrance_dungeon_BTW_back') end,
             ["Ikana Castle Entrance"] = function () return has('entrance_dungeon_ikana') end,
             ["Deku Palace Beans Grotto"] = function () return has('entrance_grotto_dp_bean') end,
             ["Deku Palace Near JP Grotto Line Start"] = function () return has('entrance_grotto_dpjp_baba') end,
@@ -3700,7 +3738,7 @@ function _mm_logic()
             ["Laboratory"] = function () return has('entrance_interior_gb_lab') end,
             ["Waterfall Rapids"] = function () return has('entrance_interior_zc_beaver') end,
             ["Great Bay Fairy Fountain"] = function () return has('entrance_interior_zc_fairy') end,
-            ["Zora Hall"] = function () return has('entrance_interior_zh') end,
+            ["Zora Hall"] = function () return has('entrance_overworld_zh') end,
             ["Japas' Room"] = function () return has('entrance_interior_zh_japas') end,
             ["Lulu's Room"] = function () return has('entrance_interior_zh_lulu') end,
             ["Evan's Room"] = function () return has('entrance_interior_lh_mikau') end,
@@ -3815,16 +3853,16 @@ function _mm_logic()
             ["Owl Stone Tower"] = function () return has('OWL_STONE_TOWER') and not setting('entrance', 'song_mm') end,
         },
         ["locations"] = {
-            ["Owl Clock Town"] = function () return has('OWL_CLOCK_TOWN') and not setting('entrance', 'song_mm') end,
-            ["Owl Milk Road"] = function () return has('OWL_MILK_ROAD') and not setting('entrance', 'song_mm') end,
-            ["Owl Swamp"] = function () return has('OWL_SOUTHERN_SWAMP') and not setting('entrance', 'song_mm') end,
-            ["Owl Woodfall"] = function () return has('OWL_WOODFALL') and not setting('entrance', 'song_mm') end,
-            ["Owl Mountain"] = function () return has('OWL_MOUNTAIN_VILLAGE') and not setting('entrance', 'song_mm') end,
-            ["Owl Snowhead"] = function () return has('OWL_SNOWHEAD') and not setting('entrance', 'song_mm') end,
-            ["Owl Great Bay"] = function () return has('OWL_GREAT_BAY') and not setting('entrance', 'song_mm') end,
-            ["Owl Zora Cape"] = function () return has('OWL_ZORA_CAPE') and not setting('entrance', 'song_mm') end,
-            ["Owl Ikana"] = function () return has('OWL_IKANA_CANYON') and not setting('entrance', 'song_mm') end,
-            ["Owl Stone Tower"] = function () return has('OWL_STONE_TOWER') and not setting('entrance', 'song_mm') end,
+            ["Owl Clock Town"] = function () return has('OWL_CLOCK_TOWN') end,
+            ["Owl Milk Road"] = function () return has('OWL_MILK_ROAD') end,
+            ["Owl Swamp"] = function () return has('OWL_SOUTHERN_SWAMP') end,
+            ["Owl Woodfall"] = function () return has('OWL_WOODFALL') end,
+            ["Owl Mountain"] = function () return has('OWL_MOUNTAIN_VILLAGE') end,
+            ["Owl Snowhead"] = function () return has('OWL_SNOWHEAD') end,
+            ["Owl Great Bay"] = function () return has('OWL_GREAT_BAY') end,
+            ["Owl Zora Cape"] = function () return has('OWL_ZORA_CAPE') end,
+            ["Owl Ikana"] = function () return has('OWL_IKANA_CANYON') end,
+            ["Owl Stone Tower"] = function () return has('OWL_STONE_TOWER') end,
         },
         ["age_change"] = false,
     },
@@ -4046,13 +4084,13 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Clock Town Near Clock Tower"] = function () return true end,
-            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Termina Field"] = function () return not setting('entrance', 'unused_on') end,
             ["Clock Town South Upper West"] = function () return true end,
             ["Clock Town South Lower West"] = function () return true end,
-            ["Clock Town South Upper East"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town South Lower East"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town North"] = function () return not setting('entrance', 'overworld') end,
-            ["Laundry Pool"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town South Upper East"] = function () return true end,
+            ["Clock Town South Lower East"] = function () return true end,
+            ["Clock Town North"] = function () return not setting('entrance', 'unused_on') end,
+            ["Laundry Pool"] = function () return not setting('entrance', 'unused_on') end,
         },
         ["locations"] = {
             ["Clock Town South Chest Lower"] = function () return can_hookshot() or (is_adult() and can_hookshot_short()) or short_hook_anywhere() or (has('MASK_DEKU') and event('CLOCK_TOWN_SCRUB')) or trick('MM_SCT_NOTHING') or can_goron_bomb_jump() or FD_everywhere() end,
@@ -4068,28 +4106,28 @@ function _mm_logic()
     },
     ["Clock Town South Upper West"] = {
         ["exits"] = {
-            ["Clock Town West"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town West"] = function () return not setting('entrance', 'unused_on') end,
             ["Clock Town South"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Clock Town South Lower West"] = {
         ["exits"] = {
-            ["Clock Town West"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town West"] = function () return not setting('entrance', 'unused_on') end,
             ["Clock Town South"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Clock Town South Upper East"] = {
         ["exits"] = {
-            ["Clock Town East"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town East"] = function () return not setting('entrance', 'unused_on') end,
             ["Clock Town South"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Clock Town South Lower East"] = {
         ["exits"] = {
-            ["Clock Town East"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town East"] = function () return not setting('entrance', 'unused_on') end,
             ["Clock Town South"] = function () return true end,
         },
         ["age_change"] = false,
@@ -4110,9 +4148,9 @@ function _mm_logic()
             ["RUPEES"] = function () return true end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town South"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town East"] = function () return not setting('entrance', 'overworld') end,
+            ["Termina Field"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town South"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town East"] = function () return not setting('entrance', 'unused_on') end,
             ["Clock Town Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
             ["Deku Playground"] = function () return has_Shovel() and not setting('entrance', 'grotto') end,
             ["Tingle Town"] = function () return soul_npc(SOUL_NPC_TINGLE) and is_day() and (has_weapon_range() or (has_weapon() and (trick('MM_NCT_TINGLE') or has_hover_boots()))) end,
@@ -4153,9 +4191,9 @@ function _mm_logic()
             ["BOMBERS_WEST3"] = function () return event('HIDE_SEEK3') end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town South Upper West"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town South Lower West"] = function () return not setting('entrance', 'overworld') end,
+            ["Termina Field"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town South Upper West"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town South Lower West"] = function () return not setting('entrance', 'unused_on') end,
             ["Bomb Shop"] = function () return rusty_key(RUSTY_BOMBSHOP) and not setting('entrance', 'interior_most') end,
             ["Trading Post"] = function () return rusty_key(RUSTY_TRADING) and not setting('entrance', 'interior_most') end,
             ["Curiosity Shop"] = function () return rusty_key(RUSTY_CURIOSITY) and not setting('entrance', 'interior_most') end,
@@ -4186,10 +4224,10 @@ function _mm_logic()
             ["MAIL_LETTER"] = function () return has('LETTER_TO_KAFEI') and before(DAY2_AM_11_30) end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town North"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town South Upper East"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town South Lower East"] = function () return not setting('entrance', 'overworld') end,
+            ["Termina Field"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town North"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town South Upper East"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town South Lower East"] = function () return not setting('entrance', 'unused_on') end,
             ["Mayor's Office"] = function () return rusty_key(RUSTY_MAYOR) and not setting('entrance', 'interior_most') end,
             ["Town Archery"] = function () return rusty_key(RUSTY_TOWNARCHERY) and not setting('entrance', 'interior_most') end,
             ["Chest Game"] = function () return rusty_key(RUSTY_TREASURE) and not setting('entrance', 'interior_most') end,
@@ -4291,7 +4329,7 @@ function _mm_logic()
             ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
-            ["Clock Town South"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town South"] = function () return not setting('entrance', 'unused_on') end,
             ["Kafei Hideout"] = function () return rusty_key(RUSTY_HIDEOUT) and ((event('MAIL_LETTER') or event('MEET_KAFEI'))) and not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
@@ -4475,8 +4513,8 @@ function _mm_logic()
         ["locations"] = {
             ["Milk Bar Troupe Leader Mask"] = function () return has('MASK_ROMANI') and soul_npc(SOUL_NPC_TOTO) and soul_gorman() and can_play_minigame() and has('MASK_DEKU') and has_mask_zora() and has_mask_goron() and (between(NIGHT1_PM_10_00, NIGHT1_AM_05_00) or between(NIGHT2_PM_10_00, NIGHT2_AM_05_00)) end,
             ["Milk Bar Madame Aroma Bottle"] = function () return soul_npc(SOUL_NPC_AROMA) and has('MASK_KAFEI') and has('LETTER_TO_MAMA') and (between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
-            ["Milk Bar Purchase Milk"] = function () return soul_talon() and has('MASK_ROMANI') and can_use_wallet(1) and (between(NIGHT1_PM_10_00, DAY2_AM_06_00) or between(NIGHT2_PM_10_00, DAY3_AM_06_00) or between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
-            ["Milk Bar Purchase Chateau"] = function () return soul_talon() and has('MASK_ROMANI') and can_use_wallet(2) and (between(NIGHT1_PM_10_00, DAY2_AM_06_00) or between(NIGHT2_PM_10_00, DAY3_AM_06_00) or between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
+            ["Milk Bar Purchase Milk"] = function () return soul_talon() and has('MASK_ROMANI') and merchant_price(1) and (between(NIGHT1_PM_10_00, DAY2_AM_06_00) or between(NIGHT2_PM_10_00, DAY3_AM_06_00) or between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
+            ["Milk Bar Purchase Chateau"] = function () return soul_talon() and has('MASK_ROMANI') and merchant_price(2) and (between(NIGHT1_PM_10_00, DAY2_AM_06_00) or between(NIGHT2_PM_10_00, DAY3_AM_06_00) or between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
             ["Milk Bar Enter"] = function () return rusty_key(RUSTY_MILKBAR) end,
         },
         ["age_change"] = false,
@@ -4634,15 +4672,15 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Clock Town South"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town North"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town East"] = function () return not setting('entrance', 'overworld') end,
-            ["Clock Town West"] = function () return not setting('entrance', 'overworld') end,
-            ["Road to Southern Swamp"] = function () return not setting('entrance', 'overworld') end,
+            ["Clock Town South"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town North"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town East"] = function () return not setting('entrance', 'unused_on') end,
+            ["Clock Town West"] = function () return not setting('entrance', 'unused_on') end,
+            ["Road to Southern Swamp"] = function () return not setting('entrance', 'unused_on') end,
             ["Behind Large Icicles"] = function () return has_arrows() or (has_hot_water_distance() and has('OWL_CLOCK_TOWN')) or has_hot_water_farore() or has_hot_water_er() or short_hook_anywhere() or can_use_din() end,
-            ["Milk Road"] = function () return not setting('entrance', 'overworld') end,
+            ["Milk Road"] = function () return not setting('entrance', 'unused_on') end,
             ["Great Bay Fence"] = function () return can_play_epona() or (can_goron_bomb_jump() and has_bombs()) or short_hook_anywhere() end,
-            ["Road to Ikana Front"] = function () return not setting('entrance', 'overworld') end,
+            ["Road to Ikana Front"] = function () return not setting('entrance', 'unused_on') end,
             ["Astral Observatory Balcony"] = function () return has('MASK_DEKU') or short_hook_anywhere() or (can_goron_bomb_jump() and has_bombs()) end,
             ["Grass Grotto"] = function () return has_Shovel() and not setting('entrance', 'grotto') end,
             ["Peahat Grotto"] = function () return has_Shovel() and not setting('entrance', 'grotto') end,
@@ -4661,7 +4699,7 @@ function _mm_logic()
             ["Termina Field Water Chest"] = function () return underwater_walking() end,
             ["Termina Field Tall Grass Chest"] = function () return true end,
             ["Termina Field Tree Stump Chest"] = function () return can_hookshot_short() or can_use_beans() end,
-            ["Termina Field Kamaro Mask"] = function () return soul_citizen() and can_play_healing() end,
+            ["Termina Field Kamaro Mask"] = function () return soul_citizen() and ((can_play_healing() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_KAMARO_ZELDA')) or (can_play_epona() and has('SONG_KAMARO_EPONA')) or (can_play_saria() and has('SONG_KAMARO_SARIA')) or (can_play_sun() and has('SONG_KAMARO_SUN')) or (can_play_time() and has('SONG_KAMARO_TIME')) or (can_play_storms() and has('SONG_KAMARO_STORMS')) or (can_play_tp_forest() and has('SONG_KAMARO_MINUET')) or (can_play_tp_fire() and has('SONG_KAMARO_BOLERO')) or (can_play_tp_water() and has('SONG_KAMARO_SERENADE')) or (can_play_tp_spirit() and has('SONG_KAMARO_REQUIEM')) or (can_play_tp_shadow() and has('SONG_KAMARO_NOCTURNE')) or (can_play_tp_light() and has('SONG_KAMARO_PRELUDE')) or (can_play_healing() and has('SONG_KAMARO_HEALING')) or (can_play_soaring() and has('SONG_KAMARO_SOARING')) or (can_play_awakening() and has('SONG_KAMARO_SONATA')) or (can_play_goron_half() and has('SONG_KAMARO_HALFLULLABY')) or (can_play_goron() and has('SONG_KAMARO_LULLABY')) or (can_play_zora() and has('SONG_KAMARO_BOSSANOVA')) or (can_play_emptiness() and has('SONG_KAMARO_ELEGY')) or (can_play_order() and has('SONG_KAMARO_OATH'))))) end,
             ["Termina Field Pot"] = function () return can_use_beans() or has_bow() end,
             ["Termina Field Grass Pack 01 Grass 01"] = function () return true end,
             ["Termina Field Grass Pack 01 Grass 02"] = function () return true end,
@@ -5269,7 +5307,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Swamp Front"] = function () return not setting('entrance', 'overworld') end,
-            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Termina Field"] = function () return not setting('entrance', 'unused_on') end,
             ["Swamp Archery"] = function () return rusty_key(RUSTY_SWAMPARCHERY) and not setting('entrance', 'interior_most') end,
             ["Road to Southern Swamp Grotto"] = function () return has_Shovel() and not setting('entrance', 'grotto') end,
             ["Tingle Swamp"] = function () return soul_npc(SOUL_NPC_TINGLE) and has_weapon_range() end,
@@ -5839,7 +5877,7 @@ function _mm_logic()
     },
     ["Woodfall Shrine"] = {
         ["events"] = {
-            ["OPEN_WOODFALL_TEMPLE"] = function () return has('MASK_DEKU') and can_play_awakening() end,
+            ["OPEN_WOODFALL_TEMPLE"] = function () return has('MASK_DEKU') and (can_play_awakening() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_WOODFALL_ZELDA')) or (can_play_epona() and has('SONG_WOODFALL_EPONA')) or (can_play_saria() and has('SONG_WOODFALL_SARIA')) or (can_play_sun() and has('SONG_WOODFALL_SUN')) or (can_play_time() and has('SONG_WOODFALL_TIME')) or (can_play_storms() and has('SONG_WOODFALL_STORMS')) or (can_play_tp_forest() and has('SONG_WOODFALL_MINUET')) or (can_play_tp_fire() and has('SONG_WOODFALL_BOLERO')) or (can_play_tp_water() and has('SONG_WOODFALL_SERENADE')) or (can_play_tp_spirit() and has('SONG_WOODFALL_REQUIEM')) or (can_play_tp_shadow() and has('SONG_WOODFALL_NOCTURNE')) or (can_play_tp_light() and has('SONG_WOODFALL_PRELUDE')) or (can_play_healing() and has('SONG_WOODFALL_HEALING')) or (can_play_soaring() and has('SONG_WOODFALL_SOARING')) or (can_play_awakening() and has('SONG_WOODFALL_SONATA')) or (can_play_goron_half() and has('SONG_WOODFALL_HALFLULLABY')) or (can_play_goron() and has('SONG_WOODFALL_LULLABY')) or (can_play_zora() and has('SONG_WOODFALL_BOSSANOVA')) or (can_play_emptiness() and has('SONG_WOODFALL_ELEGY')) or (can_play_order() and has('SONG_WOODFALL_OATH')))) end,
         },
         ["exits"] = {
             ["Woodfall"] = function () return has('MASK_DEKU') and soul_deku_scrub() or is_swamp_cleared() or hookshot_anywhere() or can_use_nayru() end,
@@ -5939,7 +5977,7 @@ function _mm_logic()
     ["Behind Large Icicles"] = {
         ["exits"] = {
             ["Termina Field"] = function () return has_arrows() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE')) or has_hot_water_farore() or has_hot_water_mtn() or has_hot_water_er() or short_hook_anywhere() or can_use_din() end,
-            ["Mountain Village Path Lower"] = function () return not setting('entrance', 'overworld') end,
+            ["Mountain Village Path Lower"] = function () return not setting('entrance', 'unused_on') end,
         },
         ["locations"] = {
             ["Behind Icicles"] = function () return true end,
@@ -5953,7 +5991,7 @@ function _mm_logic()
             ["FAIRY"] = function () return can_get_gossip_fairy() end,
         },
         ["exits"] = {
-            ["Behind Large Icicles"] = function () return not setting('entrance', 'overworld') end,
+            ["Behind Large Icicles"] = function () return not setting('entrance', 'unused_on') end,
             ["Mountain Village Path Upper"] = function () return can_break_snowballs() or is_spring() or short_hook_anywhere() end,
         },
         ["locations"] = {
@@ -6464,7 +6502,7 @@ function _mm_logic()
             ["Goron Graveyard Water"] = function () return has_mask_goron() or can_lift_gold() end,
         },
         ["locations"] = {
-            ["Goron Graveyard Mask"] = function () return can_use_lens_strict() and can_play_healing() end,
+            ["Goron Graveyard Mask"] = function () return can_use_lens_strict() and ((can_play_healing() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_DARMANI_ZELDA')) or (can_play_epona() and has('SONG_DARMANI_EPONA')) or (can_play_saria() and has('SONG_DARMANI_SARIA')) or (can_play_sun() and has('SONG_DARMANI_SUN')) or (can_play_time() and has('SONG_DARMANI_TIME')) or (can_play_storms() and has('SONG_DARMANI_STORMS')) or (can_play_tp_forest() and has('SONG_DARMANI_MINUET')) or (can_play_tp_fire() and has('SONG_DARMANI_BOLERO')) or (can_play_tp_water() and has('SONG_DARMANI_SERENADE')) or (can_play_tp_spirit() and has('SONG_DARMANI_REQUIEM')) or (can_play_tp_shadow() and has('SONG_DARMANI_NOCTURNE')) or (can_play_tp_light() and has('SONG_DARMANI_PRELUDE')) or (can_play_healing() and has('SONG_DARMANI_HEALING')) or (can_play_soaring() and has('SONG_DARMANI_SOARING')) or (can_play_awakening() and has('SONG_DARMANI_SONATA')) or (can_play_goron_half() and has('SONG_DARMANI_HALFLULLABY')) or (can_play_goron() and has('SONG_DARMANI_LULLABY')) or (can_play_zora() and has('SONG_DARMANI_BOSSANOVA')) or (can_play_emptiness() and has('SONG_DARMANI_ELEGY')) or (can_play_order() and has('SONG_DARMANI_OATH'))))) end,
             ["Goron Graveyard Enter"] = function () return true end,
         },
         ["age_change"] = false,
@@ -6491,7 +6529,7 @@ function _mm_logic()
             ["Goron Shop"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
-            ["Goron Baby"] = function () return is_winter() and soul_goron_child() and has_mask_goron() and can_lullaby_half() end,
+            ["Goron Baby"] = function () return is_winter() and soul_goron_child() and has_mask_goron() and ((can_lullaby_half() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_LULLABY_ZELDA')) or (can_play_epona() and has('SONG_LULLABY_EPONA')) or (can_play_saria() and has('SONG_LULLABY_SARIA')) or (can_play_sun() and has('SONG_LULLABY_SUN')) or (can_play_time() and has('SONG_LULLABY_TIME')) or (can_play_storms() and has('SONG_LULLABY_STORMS')) or (can_play_tp_forest() and has('SONG_LULLABY_MINUET')) or (can_play_tp_fire() and has('SONG_LULLABY_BOLERO')) or (can_play_tp_water() and has('SONG_LULLABY_SERENADE')) or (can_play_tp_spirit() and has('SONG_LULLABY_REQUIEM')) or (can_play_tp_shadow() and has('SONG_LULLABY_NOCTURNE')) or (can_play_tp_light() and has('SONG_LULLABY_PRELUDE')) or (can_play_healing() and has('SONG_LULLABY_HEALING')) or (can_play_soaring() and has('SONG_LULLABY_SOARING')) or (can_play_awakening() and has('SONG_LULLABY_SONATA')) or (can_play_goron_half() and has('SONG_LULLABY_HALFLULLABY')) or (can_play_goron() and has('SONG_LULLABY_LULLABY')) or (can_play_zora() and has('SONG_LULLABY_BOSSANOVA')) or (can_play_emptiness() and has('SONG_LULLABY_ELEGY')) or (can_play_order() and has('SONG_LULLABY_OATH'))))) end,
             ["Goron Shrine Pot 01"] = function () return true end,
             ["Goron Shrine Pot 02"] = function () return true end,
             ["Goron Shrine Pot 03"] = function () return true end,
@@ -6607,7 +6645,7 @@ function _mm_logic()
     },
     ["Snowhead Entrance"] = {
         ["events"] = {
-            ["OPEN_SNOWHEAD_TEMPLE"] = function () return soul_biggoron() and can_lullaby() and has_mask_goron() end,
+            ["OPEN_SNOWHEAD_TEMPLE"] = function () return soul_biggoron() and has_mask_goron() and ((setting('SongeventMm', 'false') and can_lullaby()) or (setting('SongeventMm', 'true') and (can_play_zelda() and has('SONG_SNOWHEAD_ZELDA')) or (can_play_epona() and has('SONG_SNOWHEAD_EPONA')) or (can_play_saria() and has('SONG_SNOWHEAD_SARIA')) or (can_play_sun() and has('SONG_SNOWHEAD_SUN')) or (can_play_time() and has('SONG_SNOWHEAD_TIME')) or (can_play_storms() and has('SONG_SNOWHEAD_STORMS')) or (can_play_tp_forest() and has('SONG_SNOWHEAD_MINUET')) or (can_play_tp_fire() and has('SONG_SNOWHEAD_BOLERO')) or (can_play_tp_water() and has('SONG_SNOWHEAD_SERENADE')) or (can_play_tp_spirit() and has('SONG_SNOWHEAD_REQUIEM')) or (can_play_tp_shadow() and has('SONG_SNOWHEAD_NOCTURNE')) or (can_play_tp_light() and has('SONG_SNOWHEAD_PRELUDE')) or (can_play_healing() and has('SONG_SNOWHEAD_HEALING')) or (can_play_soaring() and has('SONG_SNOWHEAD_SOARING')) or (can_play_awakening() and has('SONG_SNOWHEAD_SONATA')) or (can_play_goron_half() and has('SONG_SNOWHEAD_HALFLULLABY')) or (can_play_goron() and has('SONG_SNOWHEAD_LULLABY')) or (can_play_zora() and has('SONG_SNOWHEAD_BOSSANOVA')) or (can_play_emptiness() and has('SONG_SNOWHEAD_ELEGY')) or (can_play_order() and has('SONG_SNOWHEAD_OATH')))) end,
             ["MAGIC"] = function () return true end,
             ["BOMBS_OR_BOMBCHU"] = function () return true end,
             ["ARROWS"] = function () return true end,
@@ -6717,7 +6755,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Termina Field"] = function () return not setting('entrance', 'unused_on') end,
             ["Gorman Track Front"] = function () return not setting('entrance', 'overworld') end,
             ["Owl Milk Road"] = function () return true end,
             ["Near Romani Ranch"] = function () return after(DAY3_AM_06_00) or can_use_keg() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) end,
@@ -6936,7 +6974,7 @@ function _mm_logic()
     ["Great Bay Fence"] = {
         ["exits"] = {
             ["Termina Field"] = function () return can_play_epona() or (can_goron_bomb_jump() and has_bombs()) or short_hook_anywhere() end,
-            ["Great Bay Coast"] = function () return true end,
+            ["Great Bay Coast"] = function () return not setting('entrance', 'unused_on') end,
         },
         ["locations"] = {
             ["Great Bay Coast Entrance Rock"] = function () return true end,
@@ -6957,7 +6995,7 @@ function _mm_logic()
         ["exits"] = {
             ["Great Bay Coast Platform"] = function () return not setting('jpLayouts', 'GB') or has_mask_zora() end,
             ["Fisher's Hut"] = function () return not setting('entrance', 'interior_most') end,
-            ["Great Bay Fence"] = function () return true end,
+            ["Great Bay Fence"] = function () return not setting('entrance', 'unused_on') end,
             ["Great Bay Coast Fortress"] = function () return underwater_walking() end,
             ["Great Bay Coast Near Pinnacle"] = function () return true end,
             ["Zora Cape"] = function () return not setting('entrance', 'overworld') end,
@@ -6968,7 +7006,7 @@ function _mm_logic()
             ["Great Bay Coast Butterflies"] = function () return has_sticks() end,
         },
         ["locations"] = {
-            ["Great Bay Coast Zora Mask"] = function () return can_play_healing() end,
+            ["Great Bay Coast Zora Mask"] = function () return ((can_play_healing() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_MIKAU_ZELDA')) or (can_play_epona() and has('SONG_MIKAU_EPONA')) or (can_play_saria() and has('SONG_MIKAU_SARIA')) or (can_play_sun() and has('SONG_MIKAU_SUN')) or (can_play_time() and has('SONG_MIKAU_TIME')) or (can_play_storms() and has('SONG_MIKAU_STORMS')) or (can_play_tp_forest() and has('SONG_MIKAU_MINUET')) or (can_play_tp_fire() and has('SONG_MIKAU_BOLERO')) or (can_play_tp_water() and has('SONG_MIKAU_SERENADE')) or (can_play_tp_spirit() and has('SONG_MIKAU_REQUIEM')) or (can_play_tp_shadow() and has('SONG_MIKAU_NOCTURNE')) or (can_play_tp_light() and has('SONG_MIKAU_PRELUDE')) or (can_play_healing() and has('SONG_MIKAU_HEALING')) or (can_play_soaring() and has('SONG_MIKAU_SOARING')) or (can_play_awakening() and has('SONG_MIKAU_SONATA')) or (can_play_goron_half() and has('SONG_MIKAU_HALFLULLABY')) or (can_play_goron() and has('SONG_MIKAU_LULLABY')) or (can_play_zora() and has('SONG_MIKAU_BOSSANOVA')) or (can_play_emptiness() and has('SONG_MIKAU_ELEGY')) or (can_play_order() and has('SONG_MIKAU_OATH'))))) end,
             ["Great Bay Coast HP"] = function () return (can_use_beans() or FD_everywhere()) and scarecrow_hookshot() or short_hook_anywhere() end,
             ["Great Bay Coast Fisherman HP"] = function () return soul_chest_game_owner() and can_use_wallet(1) and (can_hookshot_short() or can_use_ice_arrows()) and is_ocean_cleared() and (between(DAY1_AM_07_00, NIGHT1_AM_04_00) or between(DAY2_AM_07_00, NIGHT2_AM_04_00) or between(DAY3_AM_07_00, NIGHT3_AM_04_00)) end,
             ["Great Bay Coast Fisherman Tree"] = function () return can_hookshot_short() or can_use_ice_arrows() end,
@@ -7510,7 +7548,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Gorman Track Garo Mask"] = function () return soul_gorman() and can_play_epona() and can_use_wallet(1) and is_day() end,
-            ["Gorman Track Milk Purchase"] = function () return soul_gorman() and can_use_wallet(1) and is_day() end,
+            ["Gorman Track Milk Purchase"] = function () return soul_gorman() and merchant_price(0) and is_day() end,
             ["Gorman Track Enter"] = function () return true end,
         },
         ["age_change"] = false,
@@ -7562,7 +7600,7 @@ function _mm_logic()
             ["RUPEES"] = function () return can_use_light_arrows() and is_night() and soul_bubble() end,
         },
         ["exits"] = {
-            ["Termina Field"] = function () return not setting('entrance', 'overworld') end,
+            ["Termina Field"] = function () return not setting('entrance', 'unused_on') end,
             ["Road to Ikana Grotto"] = function () return can_break_red_boulders() and has_Shovel() and not setting('entrance', 'grotto') end,
             ["Road to Ikana Center"] = function () return can_play_epona() or short_hook_anywhere() or (can_goron_bomb_jump() and has_bombs()) end,
         },
@@ -7641,7 +7679,7 @@ function _mm_logic()
             ["Beneath The Graveyard Night 3"] = function () return soul_stalchild() and has('MASK_CAPTAIN') and is_night3() and has_Shovel() and not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
-            ["Ikana Graveyard Captain Mask"] = function () return soul_enemy(SOUL_ENEMY_CAPTAIN_KEETA) and can_play_awakening() and has_arrows() and can_fight() end,
+            ["Ikana Graveyard Captain Mask"] = function () return soul_enemy(SOUL_ENEMY_CAPTAIN_KEETA) and ((can_play_awakening() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_KEETA_ZELDA')) or (can_play_epona() and has('SONG_KEETA_EPONA')) or (can_play_saria() and has('SONG_KEETA_SARIA')) or (can_play_sun() and has('SONG_KEETA_SUN')) or (can_play_time() and has('SONG_KEETA_TIME')) or (can_play_storms() and has('SONG_KEETA_STORMS')) or (can_play_tp_forest() and has('SONG_KEETA_MINUET')) or (can_play_tp_fire() and has('SONG_KEETA_BOLERO')) or (can_play_tp_water() and has('SONG_KEETA_SERENADE')) or (can_play_tp_spirit() and has('SONG_KEETA_REQUIEM')) or (can_play_tp_shadow() and has('SONG_KEETA_NOCTURNE')) or (can_play_tp_light() and has('SONG_KEETA_PRELUDE')) or (can_play_healing() and has('SONG_KEETA_HEALING')) or (can_play_soaring() and has('SONG_KEETA_SOARING')) or (can_play_awakening() and has('SONG_KEETA_SONATA')) or (can_play_goron_half() and has('SONG_KEETA_HALFLULLABY')) or (can_play_goron() and has('SONG_KEETA_LULLABY')) or (can_play_zora() and has('SONG_KEETA_BOSSANOVA')) or (can_play_emptiness() and has('SONG_KEETA_ELEGY')) or (can_play_order() and has('SONG_KEETA_OATH'))))) and has_arrows() and can_fight() end,
             ["Ikana Graveyard Grass 1"] = function () return true end,
             ["Ikana Graveyard Grass 2"] = function () return true end,
             ["Ikana Graveyard Grass 3"] = function () return true end,
@@ -7823,7 +7861,7 @@ function _mm_logic()
         ["exits"] = {
             ["Road to Ikana Top"] = function () return not setting('entrance', 'overworld') end,
             ["Ikana Canyon"] = function () return (can_use_ice_arrows() and soul_octorok() or trick('MM_ICELESS_IKANA')) and can_hookshot() or short_hook_anywhere() end,
-            ["Sakon Hideout"] = function () return event('MEET_KAFEI') and at(NIGHT3_PM_06_00) and not setting('entrance', 'interior_most') end,
+            ["Sakon Hideout"] = function () return event('MEET_KAFEI') and at(NIGHT3_PM_06_00) and not setting('entrance', 'unused_on') end,
             ["Ikana Valley Near Secret Shrine"] = function () return can_swim() end,
             ["Swamp Front"] = function () return (underwater_walking() or can_swim()) and not setting('entrance', 'sc') end,
         },
@@ -7943,7 +7981,7 @@ function _mm_logic()
     },
     ["Ikana Spring Water Cave"] = {
         ["events"] = {
-            ["IKANA_CURSE_LIFTED"] = function () return soul_composer_bros() and is_valley_cursed() and can_play_storms() end,
+            ["IKANA_CURSE_LIFTED"] = function () return soul_composer_bros() and is_valley_cursed() and ((can_play_storms() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_SPRING_ZELDA')) or (can_play_epona() and has('SONG_SPRING_EPONA')) or (can_play_saria() and has('SONG_SPRING_SARIA')) or (can_play_sun() and has('SONG_SPRING_SUN')) or (can_play_time() and has('SONG_SPRING_TIME')) or (can_play_storms() and has('SONG_SPRING_STORMS')) or (can_play_tp_forest() and has('SONG_SPRING_MINUET')) or (can_play_tp_fire() and has('SONG_SPRING_BOLERO')) or (can_play_tp_water() and has('SONG_SPRING_SERENADE')) or (can_play_tp_spirit() and has('SONG_SPRING_REQUIEM')) or (can_play_tp_shadow() and has('SONG_SPRING_NOCTURNE')) or (can_play_tp_light() and has('SONG_SPRING_PRELUDE')) or (can_play_healing() and has('SONG_SPRING_HEALING')) or (can_play_soaring() and has('SONG_SPRING_SOARING')) or (can_play_awakening() and has('SONG_SPRING_SONATA')) or (can_play_goron_half() and has('SONG_SPRING_HALFLULLABY')) or (can_play_goron() and has('SONG_SPRING_LULLABY')) or (can_play_zora() and has('SONG_SPRING_BOSSANOVA')) or (can_play_emptiness() and has('SONG_SPRING_ELEGY')) or (can_play_order() and has('SONG_SPRING_OATH'))))) end,
         },
         ["exits"] = {
             ["Ikana Canyon"] = function () return not setting('entrance', 'Interior_extra') end,
@@ -7958,8 +7996,9 @@ function _mm_logic()
             ["Ikana Canyon"] = function () return not setting('entrance', 'Interior_extra') end,
         },
         ["locations"] = {
-            ["Music Box House Gibdo Mask"] = function () return is_valley_cursed() and can_play_healing() end,
+            ["Music Box House Gibdo Mask"] = function () return is_valley_cursed() and ((can_play_healing() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_GIBDO_ZELDA')) or (can_play_epona() and has('SONG_GIBDO_EPONA')) or (can_play_saria() and has('SONG_GIBDO_SARIA')) or (can_play_sun() and has('SONG_GIBDO_SUN')) or (can_play_time() and has('SONG_GIBDO_TIME')) or (can_play_storms() and has('SONG_GIBDO_STORMS')) or (can_play_tp_forest() and has('SONG_GIBDO_MINUET')) or (can_play_tp_fire() and has('SONG_GIBDO_BOLERO')) or (can_play_tp_water() and has('SONG_GIBDO_SERENADE')) or (can_play_tp_spirit() and has('SONG_GIBDO_REQUIEM')) or (can_play_tp_shadow() and has('SONG_GIBDO_NOCTURNE')) or (can_play_tp_light() and has('SONG_GIBDO_PRELUDE')) or (can_play_healing() and has('SONG_GIBDO_HEALING')) or (can_play_soaring() and has('SONG_GIBDO_SOARING')) or (can_play_awakening() and has('SONG_GIBDO_SONATA')) or (can_play_goron_half() and has('SONG_GIBDO_HALFLULLABY')) or (can_play_goron() and has('SONG_GIBDO_LULLABY')) or (can_play_zora() and has('SONG_GIBDO_BOSSANOVA')) or (can_play_emptiness() and has('SONG_GIBDO_ELEGY')) or (can_play_order() and has('SONG_GIBDO_OATH'))))) end,
             ["Music Box House Enter"] = function () return rusty_key(RUSTY_MUSIC) end,
+            ["Music Box House Songevent"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -8110,7 +8149,7 @@ function _mm_logic()
             ["BUGS"] = function () return true end,
         },
         ["exits"] = {
-            ["Stone Tower Temple Inverted"] = function () return true end,
+            ["Stone Tower Temple Inverted"] = function () return not setting('entrance', 'dungeon_major') end,
             ["Stone Tower Top"] = function () return can_use_light_arrows() or setting('DungeonST', 'open')  end,
             ["Stone Tower Top Inverted Upper"] = function () return can_use_beans() or hookshot_anywhere() end,
         },
