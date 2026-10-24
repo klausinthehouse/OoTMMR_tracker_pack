@@ -6116,7 +6116,7 @@
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
-                "x": 1755,
+                "x": 1735,
                 "y": 645
               }
             ]
@@ -12956,6 +12956,128 @@
             ]
           },
           {
+            "name": "Goron City Shortcut -> Lost Woods Shortcut",
+                "access_rules": [
+                  "$oot|Goron City Shortcut Entry"
+                ],
+                "short_name": "GC Shortcut -> LW Shortcut",
+                "sections": [              
+                 {
+                    "name": "Dungeons",                
+                   "visibility_rules": [
+                      "setting_mixed_dungeon"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_dungeon",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Grottos",
+                    "visibility_rules": [
+                      "setting_mixed_grotto"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_grottos",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "Bosses",
+                   "visibility_rules": [
+                     "setting_entrance_Boss, setting_mixed_dungeon"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_boss",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Interior",
+                    "visibility_rules": [
+                  "setting_mixed_interior"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "overworld",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                 }       
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_exits",
+                "visibility_rules": [
+                      "setting_entrance_sc"
+                   ],
+                "x": 2205,
+                "y": 305
+              }
+            ]
+          },
+          {
+            "name": "Lost Woods Shortcut -> Goron City Shortcut",
+                "access_rules": [
+                  "$oot|Lost Woods Wonder Item 3"
+                ],
+                "short_name": "LW Shortcut -> GC Shortcut",
+                "sections": [              
+                 {
+                    "name": "Dungeons",                
+                   "visibility_rules": [
+                      "setting_mixed_dungeon"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_dungeon",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Grottos",
+                    "visibility_rules": [
+                      "setting_mixed_grotto"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_grottos",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "Bosses",
+                   "visibility_rules": [
+                     "setting_entrance_Boss, setting_mixed_dungeon"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_boss",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Interior",
+                    "visibility_rules": [
+                  "setting_mixed_interior"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "overworld",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                 }       
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_exits",
+                "visibility_rules": [
+                      "setting_entrance_sc"
+                   ],
+                "x": 1965,
+                "y": 995
+              }
+            ]
+          },
+          {
             "name": "Zora River -> Lost Woods Shortcut",
                 "access_rules": [
                   "$oot|Zora River SC Entry"
@@ -13622,7 +13744,10 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",                
+                "map": "oot_er_exits",    
+                "visibility_rules": [
+                      "setting_entrance_sc"
+                   ],            
                 "x": 2225,
                 "y": 925
               }
