@@ -175,6 +175,12 @@
       "codes": "MM_entrance_dungeon_stonetower"
     },
     {
+      "name": "MM Stone Tower Temple Inverted",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_stonetowerinverted.png",
+      "codes": "MM_entrance_dungeon_stonetowerinv"
+    },
+    {
       "name": "MM Moon",
       "type": "toggle",
       "img": "images/entrance_dungeon_moon.png",
@@ -209,6 +215,18 @@
       "type": "toggle",
       "img": "images/entrance_dungeon_BTW.png",
       "codes": "MM_entrance_dungeon_BTW"
+    },
+    {
+      "name": "MM Beneath the Well",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_BTW_back.png",
+      "codes": "MM_entrance_dungeon_BTW_back"
+    },
+    {
+      "name": "MM Ikana Castle Exterior",
+      "type": "toggle",
+      "img": "images/entrance_dungeon_ikana.png",
+      "codes": "MM_entrance_dungeon_ikana"
     },
     {
       "name": "MM Ikana Castle",
@@ -1173,12 +1191,6 @@
       "codes": "OOT_entrance_interior_zf_fairy"
     },
     {
-      "name": "MM Zora Hall",
-      "type": "toggle",
-      "img": "images/entrance_interior_zh.png",
-      "codes": "MM_entrance_interior_zh"
-    },
-    {
       "name": "MM Zora Hall Japas Room",
       "type": "toggle",
       "img": "images/entrance_interior_zh_japas.png",
@@ -1628,6 +1640,12 @@
       "type": "toggle",
       "img": "images/entrance_overworld_zf.png",
       "codes": "OOT_entrance_overworld_zf"
+    },
+    {
+      "name": "MM Zora Hall",
+      "type": "toggle",
+      "img": "images/entrance_overworld_zh.png",
+      "codes": "MM_entrance_overworld_zh"
     },
     {
       "name": "MM Zora Hall Balcony",
