@@ -4794,7 +4794,6 @@ function _oot_logic()
             ["Impa House Front"] = function () return has('entrance_interior_kak_impa') end,
             ["Impa House Back"] = function () return has('entrance_interior_kak_impa_back') end,
             ["Kakariko Potion Shop"] = function () return has('entrance_interior_kak_potion') end,
-            ["Kakariko Potion Shop Back"] = function () return has('entrance_interior_kak_potion_back') end,
             ["Shooting Gallery Adult"] = function () return has('entrance_interior_kak_shoot') end,
             ["Skulltula House"] = function () return has('entrance_interior_kak_skull') end,
             ["Windmill"] = function () return has('entrance_interior_kak_windmill') end,
@@ -4874,37 +4873,37 @@ function _oot_logic()
     },
     ["SONG_TP_FOREST"] = {
         ["exits"] = {
-            ["Sacred Meadow"] = function () return not setting('entrance', 'song_oot') end,
+            ["Sacred Meadow"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["SONG_TP_FIRE"] = {
         ["exits"] = {
-            ["Death Mountain Crater Warp"] = function () return not setting('entrance', 'song_oot') end,
+            ["Death Mountain Crater Warp"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["SONG_TP_WATER"] = {
         ["exits"] = {
-            ["Lake Hylia"] = function () return not setting('entrance', 'song_oot') end,
+            ["Lake Hylia"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["SONG_TP_SHADOW"] = {
         ["exits"] = {
-            ["Graveyard Upper"] = function () return not setting('entrance', 'song_oot') end,
+            ["Graveyard Upper"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["SONG_TP_SPIRIT"] = {
         ["exits"] = {
-            ["Desert Colossus"] = function () return not setting('entrance', 'song_oot') end,
+            ["Desert Colossus"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["SONG_TP_LIGHT"] = {
         ["exits"] = {
-            ["Temple of Time"] = function () return not setting('entrance', 'song_oot') end,
+            ["Temple of Time"] = function () return true end,
         },
         ["age_change"] = false,
     },

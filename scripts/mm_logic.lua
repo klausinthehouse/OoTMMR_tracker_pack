@@ -3734,6 +3734,8 @@ function _mm_logic()
             ["Snowhead Fairy Fountain"] = function () return has('entrance_interior_kak_sh_fairy') end,
             ["Goron Race"] = function () return has('entrance_interior_ti_race') end,
             ["Fisher's Hut"] = function () return has('entrance_interior_gb_fisher') end,
+            ["Pirate Fortress Sewers"] = function () return has('entrance_interior_pf_sewer') end,
+            ["Pirate Fortress Sewers End"] = function () return has('entrance_interior_pf_lookout') end,
             ["Pirate Fortress Telescope"] = function () return has('entrance_interior_pf_tele') end,
             ["Laboratory"] = function () return has('entrance_interior_gb_lab') end,
             ["Waterfall Rapids"] = function () return has('entrance_interior_zc_beaver') end,
@@ -3779,7 +3781,6 @@ function _mm_logic()
             ["Great Bay Coast"] = function () return has('entrance_overworld_gb') end,
             ["Great Bay Coast Platform"] = function () return has('entrance_overworld_gb_lab') end,
             ["GBC Near Cow Grotto"] = function () return has('entrance_overworld_gb_ledge') end,
-            ["Pirate Fortress"] = function () return has('entrance_overworld_pf') end,
             ["Zora Cape"] = function () return has('entrance_overworld_zc') end,
             ["Zora Cape Peninsula"] = function () return has('entrance_overworld_zh_back') end,
             ["Ikana Valley"] = function () return has('entrance_overworld_ic_lwr') end,
@@ -4467,7 +4468,7 @@ function _mm_logic()
     },
     ["Swordsman School"] = {
         ["exits"] = {
-            ["Clock Town West"] = function () return not setting('entrance', 'interior_mostost') end,
+            ["Clock Town West"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
             ["Swordsman School HP"] = function () return soul_carpet_man() and has_b_sword() and can_use_wallet(1) and before(NIGHT3_PM_11_00) end,
@@ -4700,7 +4701,7 @@ function _mm_logic()
             ["Termina Field Tall Grass Chest"] = function () return true end,
             ["Termina Field Tree Stump Chest"] = function () return can_hookshot_short() or can_use_beans() end,
             ["Termina Field Kamaro Mask"] = function () return soul_citizen() and ((can_play_healing() and setting('SongeventMm', 'false')) or (setting('SongeventMm', 'true') and ((can_play_zelda() and has('SONG_KAMARO_ZELDA')) or (can_play_epona() and has('SONG_KAMARO_EPONA')) or (can_play_saria() and has('SONG_KAMARO_SARIA')) or (can_play_sun() and has('SONG_KAMARO_SUN')) or (can_play_time() and has('SONG_KAMARO_TIME')) or (can_play_storms() and has('SONG_KAMARO_STORMS')) or (can_play_tp_forest() and has('SONG_KAMARO_MINUET')) or (can_play_tp_fire() and has('SONG_KAMARO_BOLERO')) or (can_play_tp_water() and has('SONG_KAMARO_SERENADE')) or (can_play_tp_spirit() and has('SONG_KAMARO_REQUIEM')) or (can_play_tp_shadow() and has('SONG_KAMARO_NOCTURNE')) or (can_play_tp_light() and has('SONG_KAMARO_PRELUDE')) or (can_play_healing() and has('SONG_KAMARO_HEALING')) or (can_play_soaring() and has('SONG_KAMARO_SOARING')) or (can_play_awakening() and has('SONG_KAMARO_SONATA')) or (can_play_goron_half() and has('SONG_KAMARO_HALFLULLABY')) or (can_play_goron() and has('SONG_KAMARO_LULLABY')) or (can_play_zora() and has('SONG_KAMARO_BOSSANOVA')) or (can_play_emptiness() and has('SONG_KAMARO_ELEGY')) or (can_play_order() and has('SONG_KAMARO_OATH'))))) end,
-            ["Termina Field Pot"] = function () return can_use_beans() or has_bow() end,
+            ["Termina Field Pot"] = function () return can_use_beans() or has_weapon_range() end,
             ["Termina Field Grass Pack 01 Grass 01"] = function () return true end,
             ["Termina Field Grass Pack 01 Grass 02"] = function () return true end,
             ["Termina Field Grass Pack 01 Grass 03"] = function () return true end,
@@ -5672,6 +5673,7 @@ function _mm_logic()
             ["Deku Palace Upper"] = function () return (is_swamp_cleared() or has('MASK_DEKU') or can_use_nayru()) and can_use_beans() end,
         },
          ["locations"] = {
+            ["Deku Palace Front Boulders"] = function () return has_explosives() or has_mask_blast() end,
             ["Deku Palace Front Enter"] = function () return true end,
             ["Deku Shrine Entry"] = function () return is_swamp_cleared() or (can_use_nayru() and (has_mask_zora() or (is_adult() and (has_arrows() or can_hookshot_short() or can_use_din())))) or (has_hover_boots() and (has_arrows() or can_hookshot_short() or can_use_din())) end,
             
@@ -5898,6 +5900,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Woodfall Near Owl Chest"] = function () return can_hookshot() or (is_adult() and can_hookshot_short() and (is_swamp_cleared() or can_use_nayru())) end,
+            ["Woodfall Fairy Fountain Entry"] = function () return true end,
         },
         ["age_change"] = false,
     },
@@ -8195,9 +8198,9 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Pirate Fortress"] = function () return not setting('entrance', 'pf') end,
-            ["Pirate Fortress Sewers"] = function () return underwater_walking() and (has_mask_goron() or can_hammer()) and not setting('entrance', 'pf') end,
+            ["Pirate Fortress Sewers"] = function () return underwater_walking() and (has_mask_goron() or can_hammer()) and (not setting('entrance', 'pf') and not setting('entrance', 'Interior_extra')) end,
             ["Pirate Fortress Entrance Balcony"] = function () return can_hookshot() or (can_hookshot_short() and trick('MM_PFI_BOAT_HOOK')) end,
-            ["Pirate Fortress Entrance Lookout"] = function () return can_hookshot_short() and trick('MM_PFI_BOAT_HOOK') and not setting('entrance', 'pf') end,
+            ["Pirate Fortress Entrance Lookout"] = function () return can_hookshot_short() and trick('MM_PFI_BOAT_HOOK') end,
         },
         ["locations"] = {
             ["Pirate Fortress Entrance Chest 1"] = function () return underwater_walking() end,
@@ -8212,7 +8215,7 @@ function _mm_logic()
     ["Pirate Fortress Entrance Balcony"] = {
         ["exits"] = {
             ["Pirate Fortress Entrance"] = function () return true end,
-            ["Pirate Fortress Sewers End"] = function () return true end,
+            ["Pirate Fortress Sewers End"] = function () return not setting('entrance', 'pf') and not setting('entrance', 'Interior_extra') end,
             ["Pirate Fortress Interior"] = function () return true end,
         },
         ["age_change"] = false,
@@ -8284,7 +8287,7 @@ function _mm_logic()
             ["NUTS"] = function () return true end,
         },
         ["exits"] = {
-            ["Pirate Fortress Entrance Balcony"] = function () return has_weapon_range() or (has_hover_boots() and can_activate_crystal()) end,
+            ["Pirate Fortress Entrance Balcony"] = function () return has_weapon_range() or (has_hover_boots() and can_activate_crystal()) and (not setting('entrance', 'pf') and not setting('entrance', 'Interior_extra')) end,
             ["Pirate Fortress Sewers After Gate"] = function () return true end,
         },
         ["locations"] = {
