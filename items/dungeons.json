@@ -324,7 +324,7 @@
   {
     "name": "Bottom of the Well SR",
     "type": "consumable",
-    "img": "images/label_botw.png",
+    "img": "images/label_BOTW_SR.png",
     "codes": "OOT_RUPEE_SILVER_BOTW",
     "max_quantity": 5
   },

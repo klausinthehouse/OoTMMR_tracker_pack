@@ -1089,6 +1089,18 @@
       "codes": "OOT_entrance_interior_ogc_fairy"
     },
     {
+      "name": "MM Pirate Fortress Sewers",
+      "type": "toggle",
+      "img": "images/entrance_interior_pf_sewer.png",
+      "codes": "MM_entrance_interior_pf_sewer"
+    },
+    {
+      "name": "MM Pirate Fortress Lookout",
+      "type": "toggle",
+      "img": "images/entrance_interior_pf_lookout.png",
+      "codes": "MM_entrance_interior_pf_lookout"
+    },
+    {
       "name": "MM Pirate Fortress Telescope",
       "type": "toggle",
       "img": "images/entrance_interior_pf_tele.png",
