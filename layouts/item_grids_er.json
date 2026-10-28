@@ -55,91 +55,89 @@
             "item_margin": "1,2",
             "rows": [
                 [
-                    "OOT_entrance_grotto_kf",
-                    "OOT_entrance_grotto_lw_gen",
-                    "OOT_entrance_grotto_lw_scrub",
-                    "OOT_entrance_grotto_lw_theater",
-                    "OOT_entrance_grotto_sfm_fairy",
-                    "OOT_entrance_grotto_sfm_scrub",
-                    "OOT_entrance_grotto_wolfo"
-                ],
-                [
-                    "OOT_entrance_grotto_cg",
-                    "OOT_entrance_grotto_hf_dive",
-                    "OOT_entrance_grotto_hf_fairy",                
-                    "OOT_entrance_grotto_hf_gv",
-                    "OOT_entrance_grotto_hf_kak",
-                    "OOT_entrance_grotto_hf_market",
-                    "OOT_entrance_grotto_hf_open",
-                    "OOT_entrance_grotto_hf_scrub",
-                    "OOT_entrance_grotto_hf_se",
-                    "OOT_entrance_grotto_llr"   
-                ],
-                [
-                    "OOT_entrance_grotto_gy_dampe",
-                    "OOT_entrance_grotto_gy_redead",
-                    "OOT_entrance_grotto_gy_royal",
-                    "OOT_entrance_grotto_gy_shield",
-                    "OOT_entrance_grotto_kak_open",
-                    "OOT_entrance_grotto_kak_redead"
-                ],
-                [
-                    "OOT_entrance_grotto_dm_cow",
                     "OOT_entrance_grotto_dm_storm",
                     "OOT_entrance_grotto_dmc_gen",
-                    "OOT_entrance_grotto_dmc_scrub",
-                    "OOT_entrance_grotto_gc"
-                ],
-                [
-                    "OOT_entrance_grotto_lh",
-                    "OOT_entrance_grotto_zd",
-                    "OOT_entrance_grotto_zr_fairy",
-                    "OOT_entrance_grotto_zr_gen",
-                    "OOT_entrance_grotto_zr_storm"
+                    "OOT_entrance_grotto_hf_market",
+                    "OOT_entrance_grotto_hf_open",
+                    "OOT_entrance_grotto_hf_se",
+                    "OOT_entrance_grotto_kak_open",
+                    "OOT_entrance_grotto_kf",
+                    "OOT_entrance_grotto_lw_gen",
+                    "OOT_entrance_grotto_zr_gen"
                 ],
                 [
                     "OOT_entrance_grotto_dc",
+                    "OOT_entrance_grotto_dmc_scrub",
+                    "OOT_entrance_grotto_gc",
+                    "OOT_entrance_grotto_gv_storm", 
+                    "OOT_entrance_grotto_hf_scrub",
+                    "OOT_entrance_grotto_lh",
+                    "OOT_entrance_grotto_llr",
+                    "OOT_entrance_grotto_lw_scrub",
+                    "OOT_entrance_grotto_sfm_scrub",
+                    "OOT_entrance_grotto_zr_storm"
+                ],
+                [                    
                     "OOT_entrance_grotto_gf",
-                    "OOT_entrance_grotto_gv_octo",
-                    "OOT_entrance_grotto_gv_storm"
+                    "OOT_entrance_grotto_hf_fairy",
+                    "OOT_entrance_grotto_sfm_fairy",
+                    "OOT_entrance_grotto_zd",
+                    "OOT_entrance_grotto_zr_fairy"
                 ],
                 [
-                    "MM_entrance_grotto_dp_bean",
-                    "MM_entrance_grotto_dpjp_baba",
-                    "MM_entrance_grotto_dpjp_climb",                
-                    "MM_entrance_grotto_ss",
-                    "MM_entrance_grotto_ss_path",
-                    "MM_entrance_grotto_wom"        
+                    "OOT_entrance_grotto_dm_cow",               
+                    "OOT_entrance_grotto_hf_gv",
+                    "OOT_entrance_grotto_kak_redead", 
+                    "OOT_entrance_grotto_gy_redead",
+                    "OOT_entrance_grotto_gy_shield",
+                    "OOT_entrance_grotto_gy_royal",
+                    "OOT_entrance_grotto_gy_dampe"             
                 ],
                 [
-                    "MM_entrance_grotto_ct",
-                    "MM_entrance_grotto_tf_cow",
-                    "MM_entrance_grotto_tf_dodongo",                
-                    "MM_entrance_grotto_tf_egos",
-                    "MM_entrance_grotto_tf_fence",
-                    "MM_entrance_grotto_tf_grass",
-                    "MM_entrance_grotto_tf_ngos",
-                    "MM_entrance_grotto_tf_peahat",
-                    "MM_entrance_grotto_tf_pillar",
-                    "MM_entrance_grotto_tf_scrub",
-                    "MM_entrance_grotto_tf_sgos",
-                    "MM_entrance_grotto_tf_wgos"  
+                    "OOT_entrance_grotto_cg",
+                    "OOT_entrance_grotto_hf_kak",  
+                    "OOT_entrance_grotto_lw_theater",
+                    "OOT_entrance_grotto_wolfo",
+                    "OOT_entrance_grotto_hf_dive",
+                    "OOT_entrance_grotto_gv_octo"                     
                 ],
-                [
-                    "MM_entrance_grotto_mv",
-                    "MM_entrance_grotto_shpath",
-                    "MM_entrance_grotto_ti_ice",                
-                    "MM_entrance_grotto_ti_ramp"       
-                ],
-                [
-                    "MM_entrance_grotto_gb_cow",
+                [              
                     "MM_entrance_grotto_gb_fisher",
+                    "MM_entrance_grotto_tf_grass",
+                    "MM_entrance_grotto_ic",
+                    "MM_entrance_grotto_ic_path",      
+                    "MM_entrance_grotto_igy_circle",
+                    "MM_entrance_grotto_mv",
+                    "MM_entrance_grotto_tf_pillar",
+                    "MM_entrance_grotto_ss_path",
+                    "MM_entrance_grotto_ss",
+                    "MM_entrance_grotto_shpath",                
+                    "MM_entrance_grotto_ti_ramp",
+                    "MM_entrance_grotto_wom",  
                     "MM_entrance_grotto_zc"
                 ],
                 [
-                    "MM_entrance_grotto_ic",
-                    "MM_entrance_grotto_ic_path",
-                    "MM_entrance_grotto_igy_circle",
+                    "MM_entrance_grotto_tf_dodongo",
+                    "MM_entrance_grotto_tf_fence",
+                    "MM_entrance_grotto_tf_peahat",
+                    "MM_entrance_grotto_tf_scrub",
+                    "MM_entrance_grotto_ti_ice"
+                ],
+                [                
+                    "MM_entrance_grotto_tf_egos", 
+                    "MM_entrance_grotto_tf_ngos",
+                    "MM_entrance_grotto_tf_wgos",  
+                    "MM_entrance_grotto_tf_sgos"   
+                ],
+                [
+                    "MM_entrance_grotto_ct",
+                    "MM_entrance_grotto_dp_bean",  
+                    "MM_entrance_grotto_dpjp_baba",
+                    "MM_entrance_grotto_dpjp_climb"
+                ],
+                [
+                    "MM_entrance_grotto_tf_cow",
+                    "MM_entrance_grotto_gb_cow",
                     "MM_entrance_grotto_igy_grave1",
                     "MM_entrance_grotto_igy_grave2",
                     "MM_entrance_grotto_igy_grave3"
@@ -191,36 +189,38 @@
                     "OOT_entrance_interior_kf_twin"                    
                 ],
                 [
-                    "OOT_entrance_interior_cg_fairy",
-                    "OOT_entrance_interior_cg_zelda",
-                    "OOT_entrance_interior_hm_alley",
-                    "OOT_entrance_interior_hm_bazaar",
-                    "OOT_entrance_interior_hm_bomb",
-                    "OOT_entrance_interior_hm_bowl",
-                    "OOT_entrance_interior_hm_chest",
-                    "OOT_entrance_interior_hm_doglady"
-                ],
-                [
                     "OOT_entrance_interior_hm_guard",
+                    "OOT_entrance_interior_hm_bazaar",
                     "OOT_entrance_interior_hm_potion",
                     "OOT_entrance_interior_hm_shoot",
+                    "OOT_entrance_interior_hm_bowl",
+                    "OOT_entrance_interior_hm_chest"
+                    
+                ],
+                [                    
+                    "OOT_entrance_interior_hm_alley",
+                    "OOT_entrance_interior_hm_bomb",
+                    "OOT_entrance_interior_hm_doglady",
                     "OOT_entrance_interior_hm_tot",
-                    "OOT_entrance_interior_llr_house",
-                    "OOT_entrance_interior_llr_silo",
-                    "OOT_entrance_interior_llr_stable"                         
+                    "OOT_entrance_interior_cg_fairy",
+                    "OOT_entrance_interior_ogc_fairy"                      
                 ],
                 [
-                    "OOT_entrance_interior_gy_hut",
+                    "OOT_entrance_interior_llr_house",
+                    "OOT_entrance_interior_llr_silo",
+                    "OOT_entrance_interior_llr_stable"
+                ],
+                [                    
                     "OOT_entrance_interior_kak_bazaar",
                     "OOT_entrance_interior_kak_house",
                     "OOT_entrance_interior_kak_impa",
                     "OOT_entrance_interior_kak_impa_back",
                     "OOT_entrance_interior_kak_potion",
-                    "OOT_entrance_interior_kak_potion_back",
                     "OOT_entrance_interior_kak_shoot",
                     "OOT_entrance_interior_kak_skull",
                     "OOT_entrance_interior_kak_windmill",
-                    "OOT_entrance_interior_kak_witch"
+                    "OOT_entrance_interior_kak_witch",
+                    "OOT_entrance_interior_gy_hut"
                 ],
                 [
                     "OOT_entrance_interior_dm_fairy",
@@ -235,35 +235,38 @@
                 ],
                 [
                     "OOT_entrance_interior_dc_fairy",
-                    "OOT_entrance_interior_gv_tent",
-                    "OOT_entrance_interior_ogc_fairy" 
+                    "OOT_entrance_interior_gv_tent"
+                ],
+                [
+                    "MM_entrance_interior_ss_shoot",
+                    "MM_entrance_interior_ss_shop",
+                    "MM_entrance_interior_ss_touri"
                 ],
                 [
                     "MM_entrance_interior_dp_monkey",
                     "MM_entrance_interior_dp_throne",
                     "MM_entrance_interior_dp_race",
-                    "MM_entrance_interior_ss_shoot",
-                    "MM_entrance_interior_ss_shop",
-                    "MM_entrance_interior_ss_touri",
                     "MM_entrance_interior_wf_fairy"
                 ],
-                [
+                [                    
                     "MM_entrance_interior_ct_bomb",
-                    "MM_entrance_interior_ct_chest",
+                    "MM_entrance_interior_ct_shop",
                     "MM_entrance_interior_ct_curio",
+                    "MM_entrance_interior_ct_post",
+                    "MM_entrance_interior_ct_sword",                    
+                    "MM_entrance_interior_ct_lottery",
                     "MM_entrance_interior_ct_fairy",
-                    "MM_entrance_interior_ct_hd",
-                    "MM_entrance_interior_ct_inn",
                     "MM_entrance_interior_ct_kafei",
                     "MM_entrance_interior_kafei_tele"
+                    
                 ],
                 [
-                    "MM_entrance_interior_ct_lottery",
                     "MM_entrance_interior_ct_mayor",
                     "MM_entrance_interior_ct_milk",
-                    "MM_entrance_interior_ct_post",
+                    "MM_entrance_interior_ct_chest",                                 
+                    "MM_entrance_interior_ct_hd",
+                    "MM_entrance_interior_ct_inn",
                     "MM_entrance_interior_ct_shoot",
-                    "MM_entrance_interior_ct_shop",
                     "MM_entrance_interior_tf_obs",
                     "MM_entrance_interior_obs_tele"
                 ],
@@ -274,29 +277,33 @@
                     "MM_entrance_interior_rr_stable"
                 ],
                 [                                      
+                    "MM_entrance_interior_mv_smith",
+                    "MM_entrance_interior_mv_gy",
+                    "MM_entrance_interior_ti_race",
                     "MM_entrance_interior_gv_island",
                     "MM_entrance_interior_gv_shrine",
-                    "MM_entrance_interior_gs_shop",
-                    "MM_entrance_interior_mv_gy",
-                    "MM_entrance_interior_mv_smith",
-                    "MM_entrance_interior_sh_fairy",
-                    "MM_entrance_interior_ti_race"
+                    "MM_entrance_interior_gs_shop",                                     
+                    "MM_entrance_interior_sh_fairy"                    
                 ],
                 [
                     "MM_entrance_interior_gb_fisher",
                     "MM_entrance_interior_gb_lab",                    
                     "MM_entrance_interior_zc_beaver",
-                    "MM_entrance_interior_zc_fairy",
-                    "MM_entrance_interior_zh_japas",
-                    "MM_entrance_interior_zh_lulu",
-                    "MM_entrance_interior_zh_mikau",
-                    "MM_entrance_interior_zh_shop",
-                    "MM_entrance_interior_zh_tijo",
+                    "MM_entrance_interior_zc_fairy",                    
+                    "MM_entrance_interior_pf_sewer",
+                    "MM_entrance_interior_pf_lookout",
                     "MM_entrance_interior_pf_tele"
                 ],
                 [
+                    "MM_entrance_interior_zh_shop",
+                    "MM_entrance_interior_zh_tijo",
+                    "MM_entrance_interior_zh_japas",
+                    "MM_entrance_interior_zh_mikau", 
+                    "MM_entrance_interior_zh_lulu"                   
+                    
+                ],
+                [
                     "MM_entrance_interior_ic_fairy",
-                    "MM_entrance_interior_ic_hide",
                     "MM_entrance_interior_ic_music",
                     "MM_entrance_interior_ic_poe",
                     "MM_entrance_interior_ic_spring"
@@ -396,7 +403,6 @@
                     "MM_entrance_overworld_gb",
                     "MM_entrance_overworld_gb_lab",
                     "MM_entrance_overworld_gb_ledge",
-                    "MM_entrance_overworld_pf",
                     "MM_entrance_overworld_zc",
                     "MM_entrance_overworld_zh",
                     "MM_entrance_overworld_zh_back"

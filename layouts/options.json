@@ -2381,12 +2381,12 @@
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_NPC_BOMBCHU_BOWLING_LADY",
+        "item": "OOT_SOUL_NPC_BOMBCHU_SHOPKEEPER",
         "height": 16
       },
       {
         "type": "item",
-        "item": "OOT_SOUL_NPC_BOMBCHU_SHOPKEEPER",
+        "item": "OOT_SOUL_NPC_BOMBCHU_BOWLING_LADY",
         "height": 16
       },
       {
@@ -2402,6 +2402,11 @@
       {
         "type": "item",
         "item": "OOT_SOUL_NPC_CHEST_GAME_OWNER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_SOUL_NPC_GORON_CHILD",
         "height": 16
       },
       {
@@ -2442,11 +2447,6 @@
       {
         "type": "item",
         "item": "OOT_SOUL_NPC_GORON",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_SOUL_NPC_GORON_CHILD",
         "height": 16
       },
       {
@@ -2949,6 +2949,11 @@
       },
       {
         "type": "item",
+        "item": "MM_SOUL_NPC_TOURIST_CENTER",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "MM_SOUL_NPC_BOMBCHU_SHOPKEEPER",
         "height": 16
       },
@@ -3005,11 +3010,6 @@
       {
         "type": "item",
         "item": "MM_SOUL_NPC_CHEST_GAME_OWNER",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MM_SOUL_NPC_POE_COLLECTOR",
         "height": 16
       },
       {
@@ -3109,6 +3109,11 @@
       },
       {
         "type": "item",
+        "item": "MM_SOUL_NPC_POE_COLLECTOR",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "MM_SOUL_NPC_MALON",
         "height": 16
       },
@@ -3140,11 +3145,6 @@
       {
         "type": "item",
         "item": "MM_SOUL_NPC_TOTO",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MM_SOUL_NPC_TOURIST_CENTER",
         "height": 16
       },
       {
@@ -3374,27 +3374,7 @@
     "type": "array",
     "orientation": "vertical",
     "item_margin": "1,2",
-    "content": [            
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_ADULT_BAZAAR",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_ADULT_POTION",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_ADULT_POTION_BACK",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_ADULT_SHOOTING",
-        "height": 16
-      },
+    "content": [                  
       {
         "type": "item",
         "item": "OOT_RUSTY_BACKALLEY",
@@ -3413,21 +3393,6 @@
       {
         "type": "item",
         "item": "OOT_RUSTY_CARPENTER",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_CHILD_BAZAAR",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_CHILD_POTION",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_CHILD_SHOOTING",
         "height": 16
       },
       {
@@ -3462,12 +3427,47 @@
       },
       {
         "type": "item",
+        "item": "OOT_RUSTY_ADULT_BAZAAR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_ADULT_POTION",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_ADULT_POTION_BACK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_ADULT_SHOOTING",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "OOT_RUSTY_LAB",
         "height": 16
       },
       {
         "type": "item",
         "item": "OOT_RUSTY_MALON",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_CHILD_BAZAAR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_CHILD_POTION",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_CHILD_SHOOTING",
         "height": 16
       },
       {
@@ -3534,6 +3534,16 @@
       },
       {
         "type": "item",
+        "item": "MM_RUSTY_TREASURE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_TOWNARCHERY",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "MM_RUSTY_CUCCO",
         "height": 16
       },
@@ -3584,6 +3594,11 @@
       },
       {
         "type": "item",
+        "item": "MM_RUSTY_POTION",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "MM_RUSTY_LOTTERY",
         "height": 16
       },
@@ -3625,11 +3640,6 @@
       {
         "type": "item",
         "item": "MM_RUSTY_POST",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MM_RUSTY_POTION",
         "height": 16
       },
       {
@@ -3689,17 +3699,7 @@
       },
       {
         "type": "item",
-        "item": "MM_RUSTY_TOWNARCHERY",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "MM_RUSTY_TRADING",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MM_RUSTY_TREASURE",
         "height": 16
       },
       {
