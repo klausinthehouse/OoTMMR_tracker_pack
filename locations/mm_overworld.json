@@ -4437,6 +4437,18 @@
                     "name": "Deku Palace",
                     "sections": [                      
                       {
+                        "name": "Entrance Sign Boulders",                    
+                        "access_rules": [
+                          "$mm|Deku Palace Front Boulders"
+                        ],
+                        "visibility_rules": [
+                          "setting_BoulderMm_overworld"
+                        ],
+                       "chest_unopened_img": "images/system/Boulder.png",
+                       "chest_opened_img": "images/system/Boulder_grey.png",
+                       "item_count": 2
+                      },
+                      {
                         "name": "Rupees on right side",                    
                         "access_rules": [
                           "$mm|Deku Palace Rupee Right 01"
@@ -4470,19 +4482,7 @@
                         ],
                         "chest_unopened_img": "images/system/RedBoulder.png",
                         "chest_opened_img": "images/system/RedBoulder_grey.png",
-                        "item_count": 6
-                      },    
-                      {
-                        "name": "Boulders in Deku Palace",                    
-                        "access_rules": [
-                          "$mm|Deku Palace Boulders"
-                        ],
-                        "visibility_rules": [
-                          "setting_BoulderMm_overworld"
-                        ],
-                        "chest_unopened_img": "images/system/Boulder.png",
-                        "chest_opened_img": "images/system/Boulder_grey.png",
-                        "item_count": 2
+                        "item_count": 3
                       },
                       {
                         "name": "Rupees on left side",                    
@@ -4494,7 +4494,7 @@
                         ],
                         "chest_unopened_img": "images/system/blue.png",
                         "chest_opened_img": "images/system/blue_check.png",
-                        "item_count": 7
+                        "item_count": 8
                       },
                       {
                         "name": "Rupees on left side far",                    

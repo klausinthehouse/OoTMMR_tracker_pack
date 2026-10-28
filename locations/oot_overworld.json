@@ -4859,18 +4859,6 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "item_count": 1
-                  },
-                  {
-                    "name": "Cow Grotto Boulder",                    
-                    "access_rules": [
-                      "$oot|Death Mountain Trail Boulder"
-                    ],
-                    "visibility_rules": [
-                      "setting_BoulderOot_overworld"
-                    ],
-                    "chest_unopened_img": "images/system/Boulder.png",
-                    "chest_opened_img": "images/system/Boulder_grey.png",
-                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -5102,7 +5090,19 @@
           {
             "name": "DMT Upper Path",
             "sections": [
-              {
+                  {
+                    "name": "Cow Grotto Boulder",                    
+                    "access_rules": [
+                      "$oot|Death Mountain Trail Boulder"
+                    ],
+                    "visibility_rules": [
+                      "setting_BoulderOot_overworld"
+                    ],
+                    "chest_unopened_img": "images/system/Boulder.png",
+                    "chest_opened_img": "images/system/Boulder_grey.png",
+                    "item_count": 1
+                  },
+                  {
                 "name": "DMT GS Falling Rocks Path (Adult, N)",
                 "short_name": "Falling Rocks",
                 "access_rules": [

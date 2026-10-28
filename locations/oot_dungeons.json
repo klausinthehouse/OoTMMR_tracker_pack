@@ -455,7 +455,7 @@
           "$oot|MQ Deku Tree Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -1192,7 +1192,7 @@
           "$oot|MQ dodongo Cavern Lobby Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -1205,7 +1205,7 @@
           "$oot|MQ dodongo Cavern Lobby Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -1332,7 +1332,7 @@
           "$oot|MQ dodongo Cavern Corridor Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -1460,7 +1460,7 @@
           "$oot|MQ dodongo Cavern Boulder before Miniboss"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -1486,7 +1486,7 @@
           "$oot|MQ dodongo Cavern Miniboss Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -1980,7 +1980,7 @@
           "$oot|MQ Jabu-Jabu Entrance Boulder"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -2104,7 +2104,7 @@
           "$oot|MQ Jabu-Jabu Hole Room Boulder Ground"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -2117,7 +2117,7 @@
           "$oot|MQ Jabu-Jabu Hole Room Boulder Wall"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -2334,7 +2334,7 @@
           "$oot|MQ Jabu-Jabu Forked Path Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -2423,7 +2423,7 @@
           "$oot|MQ Jabu-Jabu Side Room Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -7645,7 +7645,7 @@
           "$oot|MQ Spirit Temple Entrance Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -7697,7 +7697,7 @@
           "$oot|MQ Spirit Temple Boulder after Water"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -7757,7 +7757,7 @@
           "$oot|MQ Spirit Temple Child Crawl Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -7794,7 +7794,7 @@
           "$oot|MQ Spirit Temple Child Bridge Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -8950,7 +8950,7 @@
           "$oot|Bottom of the Well Basement Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_BottomoftheWell_false"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",
@@ -9031,7 +9031,7 @@
           "$oot|MQ Bottom of the Well Alcove Boulders"
         ],
         "visibility_rules": [
-          "setting_BoulderOot_dungeon"
+          "setting_BoulderOot_dungeon,setting_mq_BottomoftheWell_true"
         ],
         "chest_unopened_img": "images/system/Boulder.png",
         "chest_opened_img": "images/system/Boulder_grey.png",

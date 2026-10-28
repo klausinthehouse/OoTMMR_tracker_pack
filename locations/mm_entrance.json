@@ -1289,6 +1289,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -1411,6 +1412,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -1538,6 +1540,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -1608,7 +1611,7 @@
                 ]
               },
               {
-                "name": "East Clock Town -> Town Archery",
+                "name": "Town Archery -> East Clock Town",
                 "access_rules": [
                   "$mm|Town Archery Enter"
                 ],
@@ -1660,6 +1663,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -1782,6 +1786,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -1904,6 +1909,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -2148,6 +2154,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                   
@@ -2270,6 +2277,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                   
@@ -2392,6 +2400,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -2514,6 +2523,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                   
@@ -2641,6 +2651,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -2763,6 +2774,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -2885,6 +2897,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -3007,6 +3020,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -3129,6 +3143,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -3251,6 +3266,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -3500,6 +3516,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -3622,6 +3639,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_tele"
                    ],      
@@ -3818,6 +3836,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -3940,6 +3959,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -4062,6 +4082,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -4184,6 +4205,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -4254,11 +4276,11 @@
             ]
           },
           {
-            "name": "Termina Field -> Cow Grotto",
+            "name": "Cow Grotto -> Termina Field",
                 "access_rules": [
                   "$mm|Termina Field Cow Grotto Grass 01"
                 ],
-                "short_name": "TF -> Cow Grotto",
+                "short_name": "Cow Grotto -> TF",
                 "sections": [              
                  {
                     "name": "Dungeons",                
@@ -4306,6 +4328,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -4428,6 +4451,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -4672,6 +4696,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -4794,6 +4819,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -4916,6 +4942,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -5038,6 +5065,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -5160,6 +5188,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -5281,7 +5310,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                   
+                "map": "termina_er",
+                    "size": 10,                   
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                   
@@ -5404,6 +5434,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_tele"
                    ],      
@@ -6269,7 +6300,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                   
+                "map": "termina_er",
+                    "size": 10,                   
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -6391,7 +6423,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                   
+                "map": "termina_er",
+                    "size": 10,                   
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -6513,7 +6546,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",           
+                "map": "termina_er",
+                    "size": 10,           
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -6635,7 +6669,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                  
+                "map": "termina_er",
+                    "size": 10,                  
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                    
@@ -6764,6 +6799,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -6886,6 +6922,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_overworld"
                    ],
@@ -7007,7 +7044,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                   
+                "map": "termina_er",
+                    "size": 10,                   
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -7129,7 +7167,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                   
+                "map": "termina_er",
+                    "size": 10,                   
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                    
@@ -7251,7 +7290,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                   
+                "map": "termina_er",
+                    "size": 10,                   
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                 
@@ -7499,6 +7539,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -7624,6 +7665,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -7745,7 +7787,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina_er",                                    
+                    "map": "termina_er",
+                    "size": 10,                                    
                    "visibility_rules": [
                       "setting_entrance_sh"
                     ],
@@ -7993,6 +8036,7 @@
                     "map_locations": [
                       {
                         "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -8116,6 +8160,7 @@
                     "map_locations": [
                       {
                         "map": "termina_er",
+                    "size": 10,
                         "visibility_rules": [
                       "setting_jpLayouts_DP, setting_entrance_grotto"
                    ],
@@ -8238,6 +8283,7 @@
                     "map_locations": [
                       {
                         "map": "termina_er",
+                    "size": 10,
                         "visibility_rules": [
                       "setting_jpLayouts_DP, setting_entrance_grotto"
                    ],
@@ -8360,6 +8406,7 @@
                     "map_locations": [
                       {
                         "map": "termina_er",
+                    "size": 10,
                         "visibility_rules": [
                       "setting_jpLayouts_DP, setting_entrance_grotto"
                    ],
@@ -8482,6 +8529,7 @@
                     "map_locations": [
                       {
                         "map": "termina_er",
+                    "size": 10,
                         "visibility_rules": [
                       "setting_jpLayouts_DP, setting_entrance_grotto"
                    ],
@@ -8603,7 +8651,8 @@
                     ],
                     "map_locations": [
                       {
-                        "map": "termina_er",                   
+                        "map": "termina_er",
+                    "size": 10,                   
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                    
@@ -8725,7 +8774,8 @@
                     ],
                     "map_locations": [
                       {
-                        "map": "termina_er",                  
+                        "map": "termina_er",
+                    "size": 10,                  
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                    
@@ -8847,7 +8897,8 @@
                     ],
                     "map_locations": [
                       {
-                        "map": "termina_er",                
+                        "map": "termina_er",
+                    "size": 10,                
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -9093,7 +9144,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina_er",                
+                    "map": "termina_er",
+                    "size": 10,                
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -9164,9 +9216,9 @@
                 ]
               },
               {
-                 "name": "Woofall -> Woodfall Great Fairy",
+                 "name": "Woodfall -> Woodfall Great Fairy",
                 "access_rules": [
-                  "$mm|Woodfall Owl Statue"
+                  "$mm|Woodfall Fairy Fountain Entry"
                 ],
                 "short_name": "WF -> Fairy",
                 "sections": [              
@@ -9225,7 +9277,7 @@
                 ]
               },
               {
-                 "name": "Woofall Great Fairy -> Woodfall",
+                 "name": "Woodfall Great Fairy -> Woodfall",
                 "access_rules": [
                   "$mm|Woodfall Great Fairy Enter"
                 ],
@@ -9276,7 +9328,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina_er",                   
+                    "map": "termina_er",
+                    "size": 10,                   
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                    
@@ -9529,6 +9582,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -9650,7 +9704,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",              
+                "map": "termina_er",
+                    "size": 10,              
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -9772,7 +9827,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                
+                "map": "termina_er",
+                    "size": 10,                
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -10017,6 +10073,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -10139,6 +10196,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -10382,7 +10440,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                  
+                "map": "termina_er",
+                    "size": 10,                  
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -10504,7 +10563,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",             
+                "map": "termina_er",
+                    "size": 10,             
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -10748,7 +10808,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                
+                "map": "termina_er",
+                    "size": 10,                
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -10993,6 +11054,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -11114,7 +11176,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina_er",         
+                    "map": "termina_er",
+                    "size": 10,         
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -11236,7 +11299,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina_er",         
+                    "map": "termina_er",
+                    "size": 10,         
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -11552,6 +11616,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -11673,7 +11738,8 @@
             ],
             "map_locations": [
               {
-                "map": "termina_er",                  
+                "map": "termina_er",
+                    "size": 10,                  
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                     
@@ -11795,7 +11861,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina_er",                                    
+                    "map": "termina_er",
+                    "size": 10,                                    
                    "visibility_rules": [
                       "setting_entrance_sh"
                     ],
@@ -12043,6 +12110,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -12055,11 +12123,11 @@
                 "name": "GB Fortress",
             "children": [
               {
-                "name": "Great Bay Coast -> Pirate Fortress Entrance",
+                "name": "Great Bay Coast -> Pirate Fortress",
                 "access_rules": [
                   "$mm|Great Bay Coast Fortress Entry"
                 ],
-                "short_name": "GBC -> PF Start",
+                "short_name": "GBC -> PF",
                 "sections": [              
                  {
                     "name": "Dungeons",
@@ -12116,11 +12184,11 @@
                 ]
               },
               {
-                "name": "Pirate Fortress Entrance -> Great Bay Coast",
+                "name": "Pirate Fortress -> Great Bay Coast",
                 "access_rules": [
                   "$mm|Pirate Fortress Entrance Enter"
                 ],
-                "short_name": "PF Start -> GBC",
+                "short_name": "PF -> GBC",
                 "sections": [              
                  {
                     "name": "Dungeons",
@@ -12167,7 +12235,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina_er",                
+                    "map": "termina_er",
+                    "size": 10,                
                    "visibility_rules": [
                       "setting_entrance_pf"
                     ],
@@ -12230,7 +12299,7 @@
                   {
                     "map": "termina_er",                
                    "visibility_rules": [
-                      "setting_entrance_pf"
+                      "setting_entrance_unused_on"
                     ],
                     "x": 350,
                     "y": 100
@@ -12291,7 +12360,7 @@
                   {
                     "map": "termina_er",                
                    "visibility_rules": [
-                      "setting_entrance_pf"
+                      "setting_entrance_unused_on"
                     ],
                     "x": 350,
                     "y": 85
@@ -12299,11 +12368,11 @@
                 ]
               },
               {
-                "name": "Pirate Fortress Entrance -> Pirate Fortress Sewers",
+                "name": "Pirate Fortress -> Pirate Fortress Sewers Start",
                 "access_rules": [
                   "$mm|Pirate Fortress Sewers Entry"
                 ],
-                "short_name": "PF Start -> PF Sewers",
+                "short_name": "PF -> Sewers Start",
                 "sections": [              
                  {
                     "name": "Dungeons",                  
@@ -12360,11 +12429,11 @@
                 ]
               },
               {
-                "name": "Pirate Fortress Sewers -> Pirate Fortress Entrance",
+                "name": "Pirate Fortress Sewers Start -> Pirate Fortress",
                 "access_rules": [
                   "$mm|Pirate Fortress Sewers Enter"
                 ],
-                "short_name": "PF Sewers -> PF Start",
+                "short_name": "Sewers Start -> PF",
                 "sections": [              
                  {
                     "name": "Dungeons",
@@ -12411,11 +12480,135 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina_er",                 
+                    "map": "termina_er",
+                    "size": 10,                 
                    "visibility_rules": [
                       "setting_entrance_pf, setting_entrance_interior_extra"
                     ],
                     "x": 400,
+                    "y": 85
+                  }
+                ]
+              },
+              {
+                "name": "Pirate Fortress -> Pirate Fortress Sewers End",
+                "access_rules": [
+                  "$mm|Pirate Fortress Sewers Entry"
+                ],
+                "short_name": "PF -> Sewers End",
+                "sections": [              
+                 {
+                    "name": "Dungeons",                  
+                    "visibility_rules": [
+                      "setting_mixed_dungeon"
+                   ],                     
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_dungeon",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Grottos",
+                    "visibility_rules": [
+                      "setting_mixed_grotto"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_grottos",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "Bosses",
+                   "visibility_rules": [
+                     "setting_entrance_Boss, setting_mixed_dungeon"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_boss",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Interior", 
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "overworld",
+                    "visibility_rules": [
+                      "setting_mixed_overworld"
+                   ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                 }        
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina_er",                
+                   "visibility_rules": [
+                      "setting_entrance_pf, setting_entrance_interior_extra"
+                    ],
+                    "x": 350,
+                    "y": 100
+                  }
+                ]
+              },
+              {
+                "name": "Pirate Fortress Sewers End -> Pirate Fortress",
+                "access_rules": [
+                  "$mm|Pirate Fortress Sewers Enter"
+                ],
+                "short_name": "Sewers End -> PF",
+                "sections": [              
+                 {
+                    "name": "Dungeons",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_dungeon",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Grottos",
+                    "visibility_rules": [
+                      "setting_mixed_grotto"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_grottos",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "Bosses",
+                   "visibility_rules": [
+                     "setting_entrance_Boss, setting_mixed_dungeon"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_boss",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Interior",                   
+                    "visibility_rules": [
+                      "setting_mixed_interior"
+                   ],                     
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "overworld",
+                    "visibility_rules": [
+                      "setting_mixed_overworld"
+                   ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                 }        
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina_er",
+                    "size": 10,                 
+                   "visibility_rules": [
+                      "setting_entrance_pf, setting_entrance_interior_extra"
+                    ],
+                    "x": 350,
                     "y": 85
                   }
                 ]
@@ -12534,6 +12727,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_tele"
                    ],      
@@ -12656,6 +12850,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -12905,6 +13100,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -13270,7 +13466,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina_er",               
+                    "map": "termina_er",
+                    "size": 10,               
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -13454,6 +13651,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -13576,6 +13774,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -13698,6 +13897,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -13820,6 +14020,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -13942,6 +14143,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -14064,6 +14266,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -14186,6 +14389,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -14441,6 +14645,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -14809,6 +15014,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -14931,6 +15137,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -15053,6 +15260,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -15175,6 +15383,7 @@
             "map_locations": [
               {
                 "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -15355,6 +15564,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_unused_on"
                    ],                   
@@ -15526,6 +15736,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -15648,6 +15859,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_ss"
                     ],
@@ -15770,6 +15982,7 @@
                     "map_locations": [
                       {
                         "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                   
@@ -15892,6 +16105,7 @@
                     "map_locations": [
                       {
                         "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                   
@@ -16014,6 +16228,7 @@
                     "map_locations": [
                       {
                         "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -16136,6 +16351,7 @@
                     "map_locations": [
                       {
                         "map": "termina_er",
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -17011,7 +17227,8 @@
                         ],
                         "map_locations": [
                           {
-                            "map": "termina_er",            
+                            "map": "termina_er",
+                    "size": 10,            
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -17136,7 +17353,8 @@
                         ],
                         "map_locations": [
                           {
-                            "map": "termina_er",             
+                            "map": "termina_er",
+                    "size": 10,             
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],

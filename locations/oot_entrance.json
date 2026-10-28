@@ -122,6 +122,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_Interior_most"
                 ],
@@ -244,6 +245,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -487,7 +489,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits", 
+                "map": "oot_er_exits",
+                "size": 25, 
                 "visibility_rules": [
                   "setting_entrance_Interior_most"
                 ],               
@@ -610,6 +613,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_Interior_extra"
                 ],
@@ -732,6 +736,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_Interior_most"
                 ],
@@ -854,6 +859,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_Interior_most"
                 ],
@@ -976,6 +982,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_Interior_most"
                 ],
@@ -1036,7 +1043,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",                
+                "map": "oot_er_exits",  
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -1097,7 +1104,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",                
+                "map": "oot_er_exits",
+                "size": 25,                
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -1226,6 +1234,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -1417,6 +1426,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_unused_on"
                 ],
@@ -1479,6 +1489,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_overworld"
                 ],
@@ -1669,6 +1680,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -1730,6 +1742,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -1857,7 +1870,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",               
+                "map": "oot_er_exits",
+                "size": 25,               
                 "visibility_rules": [
                   "setting_entrance_dungeon_major"
                 ],
@@ -1918,7 +1932,7 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",               
+                "map": "oot_er_exits",
                 "visibility_rules": [
                   "setting_entrance_dungeon_major"
                 ],
@@ -2230,6 +2244,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -2353,6 +2368,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -2474,7 +2490,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits", 
+                "map": "oot_er_exits",
+                "size": 25, 
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],               
@@ -2605,6 +2622,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -2727,6 +2745,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_market"
                 ],
@@ -2849,6 +2868,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -3093,6 +3113,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -3215,6 +3236,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -3337,6 +3359,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -3459,6 +3482,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -3703,6 +3727,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -3946,7 +3971,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",        
+                "map": "oot_er_exits",
+                "size": 25,        
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],        
@@ -4190,7 +4216,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",       
+                "map": "oot_er_exits",
+                "size": 25,       
                 "visibility_rules": [
                   "setting_entrance_overworld"
                 ],         
@@ -4380,6 +4407,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -4502,6 +4530,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -4623,7 +4652,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",  
+                "map": "oot_er_exits",
+                "size": 25,  
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],              
@@ -4794,7 +4824,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",                
+                "map": "oot_er_exits",
+                "size": 25,                
                 "visibility_rules": [
                   "setting_entrance_dungeon_major"
                 ],
@@ -4984,6 +5015,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -5106,6 +5138,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -5228,6 +5261,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -5350,6 +5384,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -5478,6 +5513,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -5599,7 +5635,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",                
+                "map": "oot_er_exits",
+                "size": 25,                
                 "visibility_rules": [
                   "setting_entrance_dungeon_minor"
                 ],
@@ -5869,6 +5906,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -5991,6 +6029,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -6113,6 +6152,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -6235,6 +6275,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -6356,6 +6397,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -6478,6 +6520,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_extra"
                 ],
@@ -6600,6 +6643,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -6722,6 +6766,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -6843,6 +6888,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_extra"
                 ],
@@ -6965,6 +7011,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_extra"
                 ],
@@ -7026,6 +7073,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_most"
                 ],
@@ -7453,6 +7501,7 @@
                     "map_locations": [
                       {
                         "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -7575,6 +7624,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -7697,6 +7747,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -7819,6 +7870,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -7941,6 +7993,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -8062,7 +8115,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot_er_exits",      
+                    "map": "oot_er_exits",
+                "size": 25,      
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -8305,7 +8359,8 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "oot_er_exits",                
+                    "map": "oot_er_exits",
+                "size": 25,                
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -8489,6 +8544,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -8617,6 +8673,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -8739,6 +8796,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -9159,6 +9217,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],                
@@ -9281,6 +9340,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -9408,6 +9468,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -9530,6 +9591,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -9651,7 +9713,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",    
+                "map": "oot_er_exits",
+                "size": 25,    
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],            
@@ -9773,7 +9836,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",         
+                "map": "oot_er_exits",
+                "size": 25,         
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -10088,6 +10152,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_unused_on"
                     ],
@@ -10210,6 +10275,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -10271,6 +10337,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_unused_on"
                     ],
@@ -10332,6 +10399,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_unused_on"
                     ],
@@ -10393,6 +10461,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_unused_on"
                     ],
@@ -10454,6 +10523,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_unused_on"
                     ],
@@ -10576,6 +10646,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -10759,6 +10830,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -11003,6 +11075,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -11125,6 +11198,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -11247,6 +11321,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -11369,6 +11444,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -11491,6 +11567,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -11552,6 +11629,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_unused_on"
                     ],
@@ -11614,6 +11692,7 @@
                 "map_locations": [
                   {
                     "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_unused_on"
                     ],
@@ -11738,6 +11817,7 @@
         "map_locations": [
           {
             "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_interior_extra"
                 ],
@@ -11863,6 +11943,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_unused_on"
                 ],
@@ -12107,6 +12188,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
               "setting_entrance_interior_most"
                 ],
@@ -12229,6 +12311,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
                   "setting_entrance_grotto"
                 ],
@@ -12356,6 +12439,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                 "visibility_rules": [
               "setting_entrance_interior_most"
                 ],
@@ -12477,7 +12561,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",                
+                "map": "oot_er_exits",
+                "size": 25,                
                 "visibility_rules": [
                   "setting_entrance_gc_castle"
                 ],
@@ -12599,7 +12684,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",           
+                "map": "oot_er_exits",
+                "size": 25,           
                 "visibility_rules": [
                   "setting_entrance_gc_tower"
                 ],
@@ -12825,6 +12911,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -13312,7 +13399,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",      
+                "map": "oot_er_exits",
+                "size": 25,      
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],          
@@ -13435,6 +13523,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -13683,7 +13772,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",         
+                "map": "oot_er_exits",
+                "size": 25,         
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],       
@@ -13867,6 +13957,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -13994,6 +14085,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -14176,7 +14268,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",       
+                "map": "oot_er_exits",
+                "size": 25,       
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
@@ -14298,7 +14391,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",              
+                "map": "oot_er_exits",
+                "size": 25,              
                    "visibility_rules": [
                       "setting_entrance_dungeon_minor"
                     ],
@@ -14426,6 +14520,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -14602,6 +14697,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -14723,7 +14819,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits", 
+                "map": "oot_er_exits",
+                "size": 25, 
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],               
@@ -14972,7 +15069,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",             
+                "map": "oot_er_exits",
+                "size": 25,             
                 "visibility_rules": [
                   "setting_entrance_dungeon_minor"
                 ],
@@ -15266,6 +15364,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -15520,6 +15619,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                   "setting_entrance_interior_most"
                     ],
@@ -15642,6 +15742,7 @@
             "map_locations": [
               {
                 "map": "oot_er_exits",
+                "size": 25,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -15763,7 +15864,8 @@
             ],
             "map_locations": [
               {
-                "map": "oot_er_exits",          
+                "map": "oot_er_exits",
+                "size": 25,          
                    "visibility_rules": [
                       "setting_entrance_dungeon_major"
                     ],
