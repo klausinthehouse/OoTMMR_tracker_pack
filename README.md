@@ -64,11 +64,15 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Gossip Fairy Shuffle
 - Song Event Shuffle Songs
 - Song Event Shuffle Setting
+- Ganon Trials as Checks
+- OOT Ice Arrow Platform Logic
+- Bow/Slingshot break Hives Logic
 
 ## TODOs:
 
-- [ ] Ganon Trials  
-- [ ] OOT Ice Arrow Platform Logic
+- [ ] Rearanging OOT-Keys
+- [ ] Bugtesting
+- [ ] Clean Up Code
 
 
 
