@@ -30,6 +30,96 @@
     ]
   },
   {
+    "name": "Forest Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/TrialForest.png"
+      },
+      {
+        "img": "images/TrialForest.png",
+        "img_mods": "@disabled",
+        "codes": "EVENT_OOT_GANON_TRIAL_FOREST"
+      }
+    ]
+  },
+  {
+    "name": "Fire Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/TrialFire.png"
+      },
+      {
+        "img": "images/TrialFire.png",
+        "img_mods": "@disabled",
+        "codes": "EVENT_OOT_GANON_TRIAL_FIRE"
+      }
+    ]
+  },
+  {
+    "name": "Water Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/TrialWater.png"
+      },
+      {
+        "img": "images/TrialWater.png",
+        "img_mods": "@disabled",
+        "codes": "EVENT_OOT_GANON_TRIAL_WATER"
+      }
+    ]
+  },
+  {
+    "name": "Shadow Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/TrialShadow.png"
+      },
+      {
+        "img": "images/TrialShadow.png",
+        "img_mods": "@disabled",
+        "codes": "EVENT_OOT_GANON_TRIAL_SHADOW"
+      }
+    ]
+  },
+  {
+    "name": "Spirit Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/TrialSpirit.png"
+      },
+      {
+        "img": "images/TrialSpirit.png",
+        "img_mods": "@disabled",
+        "codes": "EVENT_OOT_GANON_TRIAL_SPIRIT"
+      }
+    ]
+  },
+  {
+    "name": "Light Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/TrialLight.png"
+      },
+      {
+        "img": "images/TrialLight.png",
+        "img_mods": "@disabled",
+        "codes": "EVENT_OOT_GANON_TRIAL_LIGHT"
+      }
+    ]
+  },
+  {
     "name": "Songevent Temple of Time",
     "type": "progressive",
     "allow_disabled": false,

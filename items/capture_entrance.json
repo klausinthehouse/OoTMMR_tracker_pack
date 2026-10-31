@@ -804,7 +804,7 @@
       "name": "OOT Goron City Main Entrance",
       "type": "toggle",
       "img": "images/entrance_overworld_GC.png",
-      "codes": "OOT_entrance_overworld_GC"
+      "codes": "OOT_entrance_overworld_gc"
     },
     {
       "name": "OOT Goron City Back Entrance",

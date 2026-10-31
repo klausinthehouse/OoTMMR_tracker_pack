@@ -1791,6 +1791,36 @@
     ]
   },
   {
+    "name": "MM Merchant Prices",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_priceOotMerchants_affordable.png",
+        "codes": "setting_priceMMMerchants,setting_priceMMMerchants_affordable",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotMerchants_vanilla.png",
+        "codes": "setting_priceMMMerchants,setting_priceMMMerchants_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_priceOotMerchants_weighted.png",
+        "codes": "setting_priceMMMerchants,setting_priceMMMerchants_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotMerchants_random.png",
+        "codes": "setting_priceMMMerchants,setting_priceMMMerchants_random",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Moon Crash Behavior",
     "type": "progressive",
     "allow_disabled": false,
@@ -2769,6 +2799,46 @@
         "img": "images/setting_restoreBrokenActors_false.png",
         "img_mods": "@disabled",
         "codes": "setting_restoreBrokenActors,setting_restoreBrokenActors_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Break Hives with Slingshot or Bow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_EasyHives_true.png",
+        "codes": "setting_EasyHives,setting_EasyHives_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_EasyHives_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_EasyHives,setting_EasyHives_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ice Arrow Platforms (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_IceArrowPlatforms_true.png",
+        "codes": "setting_IceArrowPlatforms,setting_IceArrowPlatforms_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_IceArrowPlatforms_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_IceArrowPlatforms,setting_IceArrowPlatforms_false",
         "inherit_codes": false
       }
     ]
@@ -6294,6 +6364,26 @@
       {
         "img": "images/setting_mixed_overworld_on.png",
         "codes": "setting_mixed_overworld",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle unused",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_unused_off.png",
+        "codes": "setting_entrance_unused_off",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_unused_on.png",
+        "codes": "setting_entrance_unused_on",
         "inherit_codes": false
       }
     ]
