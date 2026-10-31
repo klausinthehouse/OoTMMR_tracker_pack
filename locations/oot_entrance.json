@@ -994,7 +994,7 @@
           {
             "name": "Kokiri Forest -> Deku Tree",
                 "access_rules": [
-                  "$oot|Near Deku Tree Gossip Stone"
+                  "$oot|Deku Tree Entry"
                 ],
                 "short_name": "KF -> DT",
                 "sections": [              
@@ -1055,7 +1055,8 @@
           {
             "name": "Deku Tree -> Kokiri Forest",
                 "access_rules": [
-                  "$oot|Deku Tree Heart Main Room Lower"
+                  "$oot|Deku Tree Heart Main Room Lower",
+                  "$oot|MQ Deku Tree Heart Lobby"
                 ],
                 "short_name": "DT -> KF",
                 "sections": [              
@@ -1883,7 +1884,7 @@
           {
             "name": "Forest Temple -> Sacred Forest Meadow",
             "access_rules": [
-                  "$oot|Forest Temple Tree Small Key"
+                  "$oot|Forest Temple Enter"
                 ],
             "short_name": "Forest Temple -> SFM",
             "sections": [              
@@ -4714,7 +4715,7 @@
           {
             "name": "Lake Hylia -> Water Temple",
             "access_rules": [
-                  "$oot|Water Temple Front"
+                  "$oot|Water Temple Enter"
                 ],
             "short_name": "LH -> Water Temple",
             "sections": [              
@@ -12512,7 +12513,8 @@
           {
             "name": "Ganons Castle -> Outside Ganons Castle",
             "access_rules": [
-                  "$oot|MQ Ganon Castle Fairy Fountain Fairy 1"
+                  "$oot|MQ Ganon Castle Fairy Fountain Fairy 1",
+                  "$oot|Ganon Castle Fairy Fountain Fairy 1"
                 ],
             "short_name": "GC -> OGC",
             "sections": [              
@@ -12628,7 +12630,7 @@
                   "setting_entrance_gc_tower"
                 ],
                 "x": 820,
-                "y": 150
+                "y": 120
               }
             ]
           },
@@ -12690,7 +12692,7 @@
                   "setting_entrance_gc_tower"
                 ],
                 "x": 820,
-                "y": 120
+                "y": 90
               }
             ]
           },
@@ -14219,7 +14221,8 @@
           {
             "name": "Jabu-Jabu -> Zora Fountain",
                 "access_rules": [
-                  "$oot|MQ Jabu-Jabu Pot Entrance 1"
+                  "$oot|MQ Jabu-Jabu Pot Entrance 1",
+                  "$oot|Jabu-Jabu Enter"
                 ],
                 "short_name": "ZF -> Jabu",
                 "sections": [              
@@ -14342,7 +14345,8 @@
           {
             "name": "Ice Cavern -> Zora Fountain",
                 "access_rules": [
-                  "$oot|Ice Cavern Enter"
+                  "$oot|Ice Cavern Enter",
+                  "$oot|MQ Ice Cavern Pot Entrance"
                 ],
                 "short_name": "IC -> ZF",
                 "sections": [              
@@ -15020,7 +15024,8 @@
           {
             "name": "Gerudo Training Grounds -> Gerudo Fortress",
             "access_rules": [
-                  "$oot|MQ Gerudo Training Grounds Pot 1"
+                  "$oot|MQ Gerudo Training Grounds Pot 1",
+                  "$oot|Gerudo Training Grounds Heart 1"
                 ],
             "short_name": "GTG -> GF",
             "sections": [              
@@ -15815,7 +15820,8 @@
           {
             "name": "Spirit Temple -> Desert Colossus",
                 "access_rules": [
-                  "$oot|Spirit Temple Pot Lobby 1"
+                  "$oot|Spirit Temple Pot Lobby 1",
+                  "$oot|MQ Spirit Temple Entrance Initial Chest"
                 ],
                 "short_name": "DC -> Spirit",
                 "sections": [              

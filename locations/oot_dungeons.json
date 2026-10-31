@@ -9382,6 +9382,16 @@
         "item_count": 2
       },
       {
+        "name": "Forest Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_FOREST"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_FOREST"
+      },
+      {
         "name": "Water Trial Chests",
         "short_name": "Water Trial",
         "access_rules": [
@@ -9430,6 +9440,16 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Water Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_WATER"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_WATER"
       },
       {
         "name": "Shadow Trial Front Chest",
@@ -9491,6 +9511,16 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Shadow Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_SHADOW"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_SHADOW"
       },
       {
         "name": "Fire Trial Heart",
@@ -9556,6 +9586,16 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Fire Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_FIRE"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_FIRE"
       },
       {
         "name": "Light Trial Chests",
@@ -9655,6 +9695,16 @@
         "item_count": 2
       },
       {
+        "name": "Light Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_LIGHT"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_LIGHT"
+      },
+      {
         "name": "Spirit Trial Silver Rupees",
         "short_name": "Spirit",
         "access_rules": [
@@ -9742,6 +9792,16 @@
         "item_count": 2
       },
       {
+        "name": "Spirit Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_SPIRIT"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_SPIRIT"
+      },
+      {
         "name": "Deku Scrubs",
         "access_rules": [
           "$ootmq|MQ Ganon Castle Leftmost Scrub"
@@ -9816,6 +9876,16 @@
         "item_count": 2
       },
       {
+        "name": "Forest Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_FOREST"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_FOREST"
+      },
+      {
         "name": "Water Trial Chest",
         "short_name": "Water Trial",
         "access_rules": [
@@ -9853,7 +9923,7 @@
         "item_count": 7
       },
       {
-        "name": "Frozen Heart",
+        "name": "Water Trial Frozen Heart",
         "short_name": "Frozen",
         "access_rules": [
           "$oot|MQ Ganon Castle Heart Water"
@@ -9944,6 +10014,16 @@
         "item_count": 2
       },
       {
+        "name": "Water Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_WATER"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_WATER"
+      },
+      {
         "name": "Shadow Trial Bomb Flower Chest",
         "short_name": "Shadow Trial 1",
         "access_rules": [
@@ -10032,6 +10112,16 @@
         "item_count": 2
       },
       {
+        "name": "Shadow Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_SHADOW"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_SHADOW"
+      },
+      {
         "name": "Fire Trial Silver Rupees",
         "short_name": "Fire",
         "access_rules": [
@@ -10071,6 +10161,16 @@
         "item_count": 2
       },
       {
+        "name": "Fire Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_FIRE"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_FIRE"
+      },
+      {
         "name": "Songevent Lullaby Chest",
         "access_rules": [
           "$oot|Ganon Castle Light Chest Around 1"
@@ -10092,7 +10192,7 @@
         "item_count": 1
       },
       {
-        "name": "Rolling Boulder Hearts",
+        "name": "Light Trial Rolling Boulder Hearts",
         "short_name": "Boulder Hearts",
         "access_rules": [
           "$oot|MQ Ganon Castle Heart Light 1"
@@ -10116,6 +10216,16 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Light Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_LIGHT"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_LIGHT"
       },
       {
         "name": "Spirit Trial First Chest",
@@ -10163,6 +10273,16 @@
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
+      },
+      {
+        "name": "Spirit Trial Core",
+        "access_rules": [
+          "$oot_event_raw|GANON_TRIAL_SPIRIT"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "hosted_item": "EVENT_OOT_GANON_TRIAL_SPIRIT"
       },
       {
         "name": "Ganon's Tower Boss Key Chest",
