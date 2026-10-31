@@ -397,7 +397,13 @@ function _oot_logic()
             ["ARROWS"] = { ["type"] = "return", ["value"] = true },
             ["BOMBCHU"] = { ["type"] = "has" },
             ["BOMBS"] = { ["type"] = "return", ["value"] = true },
-            ["MALON"] = { ["type"] = "has" },
+            ["MALON"] = { ["type"] = "has" },            
+            ["GANON_TRIAL_FOREST"] = { ["type"] = "has" },
+            ["GANON_TRIAL_FIRE"] = { ["type"] = "has" },
+            ["GANON_TRIAL_WATER"] = { ["type"] = "has" },
+            ["GANON_TRIAL_SHADOW"] = { ["type"] = "has" },
+            ["GANON_TRIAL_SPIRIT"] = { ["type"] = "has" },
+            ["GANON_TRIAL_LIGHT"] = { ["type"] = "has" },
             ["MEET_ZELDA"] = { ["type"] = "has" },
             ["MM_ARROWS"] = { ["type"] = "return", ["value"] = true },
             ["MM_BOMBS"] = { ["type"] = "return", ["value"] = true },
@@ -1987,6 +1993,10 @@ function _oot_logic()
 		return trick('OOT_BFA_MUDWALLS') and has_blue_fire_arrows()
 	end
 
+    function has_ice_arrow_platforms()
+		return setting('IceArrowPlatforms', 'true') and has_ice_arrow() and has_magic() and can_use_bow()
+	end
+
 	function has_sunlight_arrows()
 		return setting('sunlightArrows') and can_use_light_arrows()
 	end
@@ -2533,35 +2543,11 @@ function _oot_logic()
 	end
 
 	function break_hive_high()
-		return can_collect_distance() or (has_bombchu() and trick('OOT_HIVE_BOMBCHU'))
-	end
-
-	function ganon_trial_light()
-		return not setting('ganonTrials', 'Light') or event('GANON_TRIAL_LIGHT')
-	end
-
-	function ganon_trial_forest()
-		return not setting('ganonTrials', 'Forest') or event('GANON_TRIAL_FOREST')
-	end
-
-	function ganon_trial_fire()
-		return not setting('ganonTrials', 'Fire') or event('GANON_TRIAL_FIRE')
-	end
-
-	function ganon_trial_water()
-		return not setting('ganonTrials', 'Water') or event('GANON_TRIAL_WATER')
-	end
-
-	function ganon_trial_shadow()
-		return not setting('ganonTrials', 'Shadow') or event('GANON_TRIAL_SHADOW')
-	end
-
-	function ganon_trial_spirit()
-		return not setting('ganonTrials', 'Spirit') or event('GANON_TRIAL_SPIRIT')
+		return can_collect_distance() or (has_bombchu() and trick('OOT_HIVE_BOMBCHU')) or (setting('EasyHives', 'true') and (can_use_slingshot() or can_use_bow()))
 	end
 
 	function ganon_barrier()
-		return ganon_trial_light() and ganon_trial_forest() and ganon_trial_fire() and ganon_trial_water() and ganon_trial_shadow() and ganon_trial_spirit()
+		return event('GANON_TRIAL_LIGHT') and event('GANON_TRIAL_FOREST') and event('GANON_TRIAL_FIRE') and event('GANON_TRIAL_WATER') and event('GANON_TRIAL_SHADOW') and event('GANON_TRIAL_SPIRIT')
 	end
 
 	function rainbow_bridge_vanilla()
@@ -2910,7 +2896,7 @@ function _oot_logic()
         ["exits"] = {
             ["Deku Tree Lobby"] = function () return true end,
             ["Deku Tree Basement Back Room"] = function () return can_hit_triggers_distance() and event('DEKU_BURN_WEB') and (can_swim() or longshot_anywhere() or (has_iron_boots() and hookshot_anywhere())) end,
-            ["Deku Tree Basement Ledge"] = function () return trick('OOT_DEKU_SKIP') or is_adult() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() end,
+            ["Deku Tree Basement Ledge"] = function () return trick('OOT_DEKU_SKIP') or is_adult() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() or has_ice_arrow_platforms() end,
         },
         ["locations"] = {
             ["Deku Tree Basement Chest"] = function () return true end,
@@ -2984,6 +2970,10 @@ function _oot_logic()
         ["locations"] = {
             ["Dodongo Cavern Map Chest"] = function () return true end,
             ["Dodongo Cavern Lobby Scrub"] = function () return business_scrub(31) end,
+            ["Dodongo Cavern Enter"] = function () return true end,
+            ["Dodongo Cavern Gossip Stone"] = function () return true end,
+            ["Dodongo Cavern Gossip Fairy"] = function () return can_play_sun() or can_play_zelda() or can_play_epona() or can_play_time() end,
+            ["Dodongo Cavern Gossip Big Fairy"] = function () return can_play_storms() end,            
         },
         ["age_change"] = true,
     },
@@ -3188,6 +3178,10 @@ function _oot_logic()
             ["Fire Temple Boss Key Loop Start"] = function () return cond(setting('smallKeyShuffleOot', 'anywhere'), small_keys_fire(7), true) and can_hammer() end,
             ["Fire Temple Pre-Boss"] = function () return true end,
         },
+        ["locations"] = {
+            ["Fire Temple Enter"] = function () return true end,
+        
+        },
         ["age_change"] = true,
     },
     ["Fire Temple Pre-Boss"] = {
@@ -3361,6 +3355,7 @@ function _oot_logic()
         ["locations"] = {
             ["Forest Temple Tree Small Key"] = function () return true end,
             ["Forest Temple GS Entrance"] = function () return gs() and (has_ranged_weapon() or has_explosives() or can_use_din()) end,
+            ["Forest Temple Enter"] = function () return true end,
         },
         ["age_change"] = true,
     },
@@ -3674,6 +3669,7 @@ function _oot_logic()
             ["Ganon Castle Fairy Fountain Fairy 6"] = function () return true end,
             ["Ganon Castle Fairy Fountain Fairy 7"] = function () return true end,
             ["Ganon Castle Fairy Fountain Fairy 8"] = function () return true end,
+            ["Ganon Tower Entry"] = function () return ganon_barrier() end,
         },
         ["age_change"] = true,
     },
@@ -3885,7 +3881,7 @@ function _oot_logic()
     },
     ["Ganon Castle Stairs"] = {
         ["exits"] = {
-            ["Ganon Castle"] = function () return not setting('entrance', 'gc_castle') end,
+            ["Ganon Castle"] = function () return true end,
             ["Ganon Castle Tower"] = function () return ganon_barrier() and not setting('entrance', 'gc_tower') end,
         },
         ["age_change"] = true,
@@ -4521,6 +4517,9 @@ function _oot_logic()
             ["Zora Fountain"] = function () return not setting('entrance', 'dungeon_major') end,
             ["Jabu-Jabu Elevator"] = function () return has_ranged_weapon() or has_explosives() end,
         },
+        ["locations"] = {
+            ["Jabu-Jabu Enter"] = function () return true end,
+        },
         ["age_change"] = true,
     },
     ["Jabu-Jabu Elevator"] = {
@@ -4624,11 +4623,11 @@ function _oot_logic()
             ["Jabu-Jabu Basement"] = function () return true end,
         },
         ["locations"] = {
-            ["Jabu-Jabu Pot Muscle Block Room 1"] = function () return can_boomerang() or climb_anywhere() end,
-            ["Jabu-Jabu Pot Muscle Block Room 2"] = function () return can_boomerang() or climb_anywhere() end,
-            ["Jabu-Jabu Pot Muscle Block Room 3"] = function () return can_boomerang() or climb_anywhere() end,
-            ["Jabu-Jabu Pot Muscle Block Room 4"] = function () return can_boomerang() or climb_anywhere() end,
-            ["Jabu-Jabu Pot Muscle Block Room 5"] = function () return can_boomerang() or climb_anywhere() end,
+            ["Jabu-Jabu Pot Muscle Block Room 1"] = function () return can_boomerang() or climb_anywhere() or has_ice_arrow_platforms() end,
+            ["Jabu-Jabu Pot Muscle Block Room 2"] = function () return can_boomerang() or climb_anywhere() or has_ice_arrow_platforms() end,
+            ["Jabu-Jabu Pot Muscle Block Room 3"] = function () return can_boomerang() or climb_anywhere() or has_ice_arrow_platforms() end,
+            ["Jabu-Jabu Pot Muscle Block Room 4"] = function () return can_boomerang() or climb_anywhere() or has_ice_arrow_platforms() end,
+            ["Jabu-Jabu Pot Muscle Block Room 5"] = function () return can_boomerang() or climb_anywhere() or has_ice_arrow_platforms() end,
         },
         ["age_change"] = true,
     },
@@ -4638,10 +4637,10 @@ function _oot_logic()
             ["Jabu-Jabu Elevator"] = function () return true end,
         },
         ["locations"] = {
-            ["Jabu-Jabu GS Water Switch"] = function () return gs() end,
-            ["Jabu-Jabu Pot Alcove 1"] = function () return true end,
-            ["Jabu-Jabu Pot Alcove 2"] = function () return true end,
-            ["Jabu-Jabu Pot Alcove 3"] = function () return true end,
+            ["Jabu-Jabu GS Water Switch"] = function () return gs() and (can_swim() or has_ice_arrow_platforms()) end,
+            ["Jabu-Jabu Pot Alcove 1"] = function () return can_swim() or has_ice_arrow_platforms() end,
+            ["Jabu-Jabu Pot Alcove 2"] = function () return can_swim() or has_ice_arrow_platforms() end,
+            ["Jabu-Jabu Pot Alcove 3"] = function () return can_swim() or has_ice_arrow_platforms() end,
         },
         ["age_change"] = true,
     },
@@ -5076,7 +5075,7 @@ function _oot_logic()
         ["locations"] = {
             ["Near Deku Tree Gossip Fairy"] = function () return can_play_sun() or can_play_zelda() or can_play_epona() or can_play_time() end,
             ["Near Deku Tree Gossip Big Fairy"] = function () return can_play_storms() end,
-            ["Near Deku Tree Gossip Stone"] = function () return true end,
+            ["Deku Tree Entry"] = function () return (setting('Dungeondekutree', 'open') or (is_child() and setting('Dungeondekutree', 'vanilla')) or event('MIDO_MOVED')) and (is_child() or setting('openDungeonsOot', 'dekuTreeAdult')) end,
         },
         ["age_change"] = true,
     },
@@ -5863,18 +5862,18 @@ function _oot_logic()
             ["Hyrule Castle Pot 1"] = function () return true end,
             ["Hyrule Castle Pot 2"] = function () return true end,
             ["Hyrule Castle Boulder"] = function () return has_explosives_or_hammer() end,
-            ["Hyrule Castle Wonder Item Torch 1"] = function () return can_use_slingshot() and can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Torch 2"] = function () return can_use_slingshot() and can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 01"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 02"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 03"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 04"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 05"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 06"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 07"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 08"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 09"] = function () return can_swim_or_sink() end,
-            ["Hyrule Castle Wonder Item Moat 10"] = function () return can_swim_or_sink() end,
+            ["Hyrule Castle Wonder Item Torch 1"] = function () return can_use_slingshot() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Hyrule Castle Wonder Item Torch 2"] = function () return can_use_slingshot() and (can_swim_or_sink() or has_ice_arrow_platforms())end,
+            ["Hyrule Castle Wonder Item Moat 01"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Hyrule Castle Wonder Item Moat 02"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Hyrule Castle Wonder Item Moat 03"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Hyrule Castle Wonder Item Moat 04"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Hyrule Castle Wonder Item Moat 05"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Hyrule Castle Wonder Item Moat 06"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Hyrule Castle Wonder Item Moat 07"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Hyrule Castle Wonder Item Moat 08"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Hyrule Castle Wonder Item Moat 09"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Hyrule Castle Wonder Item Moat 10"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
             ["Hyrule Castle Butterfly Pack 1 Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
             ["Hyrule Castle Butterfly Pack 1 Butterfly 2"] = function () return can_use_sticks() and soul_butterfly() end,
             ["Hyrule Castle Butterfly Pack 2 Butterfly 1"] = function () return can_use_sticks() and soul_butterfly() end,
@@ -7051,7 +7050,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Hyrule Field"] = function () return not setting('entrance', 'overworld') end,
-            ["Zora River"] = function () return is_adult() or has_explosives_or_hammer() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() end,
+            ["Zora River"] = function () return is_adult() or has_explosives_or_hammer() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() or has_ice_arrow_platforms()end,
         },
         ["locations"] = {
             ["Zora River GS Tree"] = function () return gs() and is_child() and can_damage_skull() end,
@@ -7067,10 +7066,10 @@ function _oot_logic()
             ["Zora River Grass Pack Bush 10"] = function () return can_cut_grass() end,
             ["Zora River Grass Pack Bush 11"] = function () return can_cut_grass() end,
             ["Zora River Grass Pack Bush 12"] = function () return can_cut_grass() end,
-            ["Zora River Wonder Item Front 1"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Front 2"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Front 3"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Front 4"] = function () return is_child() and can_swim_or_sink() end,
+            ["Zora River Wonder Item Front 1"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Front 2"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Front 3"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Front 4"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
             ["Zora River Entrance Boulders"] = function () return has_explosives_or_hammer() end,
             ["Zora River Entrance"] = function () return true end,
         },
@@ -7089,8 +7088,8 @@ function _oot_logic()
             ["Zora River Behind Falls"] = function () return (setting('SongeventOot', 'false') and can_play_zelda()) or (setting('SongeventOot', 'true') and (can_play_zelda() and has('SONG_DOMAIN_ZELDA')) or (can_play_epona() and has('SONG_DOMAIN_EPONA')) or (can_play_saria() and has('SONG_DOMAIN_SARIA')) or (can_play_sun() and has('SONG_DOMAIN_SUN')) or (can_play_time() and has('SONG_DOMAIN_TIME')) or (can_play_storms() and has('SONG_DOMAIN_STORMS')) or (can_play_tp_forest() and has('SONG_DOMAIN_MINUET')) or (can_play_tp_fire() and has('SONG_DOMAIN_BOLERO')) or (can_play_tp_water() and has('SONG_DOMAIN_SERENADE')) or (can_play_tp_spirit() and has('SONG_DOMAIN_REQUIEM')) or (can_play_tp_shadow() and has('SONG_DOMAIN_NOCTURNE')) or (can_play_tp_light() and has('SONG_DOMAIN_PRELUDE')) or (can_play_healing() and has('SONG_DOMAIN_HEALING')) or (can_play_soaring() and has('SONG_DOMAIN_SOARING')) or (can_play_sonata() and has('SONG_DOMAIN_SONATA')) or (can_play_lullaby_half() and has('SONG_DOMAIN_HALFLULLABY')) or (can_play_lullaby() and has('SONG_DOMAIN_LULLABY')) or (can_play_bossanova() and has('SONG_DOMAIN_BOSSANOVA')) or (can_play_elegy() and has('SONG_DOMAIN_ELEGY')) or (can_play_oath() and has('SONG_DOMAIN_OATH'))) or ((trick('OOT_ZR_FALLS_HOOK') and hookshot_anywhere())) or ((trick('OOT_DOMAIN_CUCCO') and is_child())) or ((trick('OOT_DOMAIN_HOVER') and has_hover_boots())) end,
             ["Lost Woods"] = function () return (can_dive_small() or hookshot_anywhere()) and not setting('entrance', 'sc') end,
             ["Zora River Storms Grotto"] = function () return hidden_grotto_storms() and not setting('entrance', 'grotto') and has_Shovel() end,
-            ["Zora River Open Grotto"] = function () return is_adult() or is_child()and soul_cucco() and not setting('entrance', 'grotto') and has_Shovel() end,
-            ["Zora River Boulder Grotto"] = function () return has_explosives_or_hammer() and (is_adult() or is_child()and soul_cucco()) and not setting('entrance', 'grotto') and has_Shovel() end,
+            ["Zora River Open Grotto"] = function () return is_adult() or is_child() and (soul_cucco() or has_ice_arrow_platforms()) and not setting('entrance', 'grotto') and has_Shovel() end,
+            ["Zora River Boulder Grotto"] = function () return has_explosives_or_hammer() and (is_adult() or is_child() and (soul_cucco() or has_ice_arrow_platforms())) and not setting('entrance', 'grotto') and has_Shovel() end,
         },
         ["locations"] = {
             ["Zora River Bean Seller"] = function () return is_child() and can_use_wallet(1) and soul_bean_salesman() end,
@@ -7112,33 +7111,33 @@ function _oot_logic()
             ["Zora River Rupee 2"] = function () return is_adult() and can_swim_or_sink() end,
             ["Zora River Rupee 3"] = function () return is_adult() and can_swim_or_sink() end,
             ["Zora River Rupee 4"] = function () return is_adult() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 01"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 02"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 03"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 04"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 05"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 06"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 07"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 08"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 09"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 10"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 11"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 12"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 13"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 14"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 15"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 16"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 17"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 18"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 19"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 20"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 21"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 22"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 23"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 24"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 25"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 26"] = function () return is_child() and can_swim_or_sink() end,
-            ["Zora River Wonder Item Back 27"] = function () return is_child() and can_swim_or_sink() end,
+            ["Zora River Wonder Item Back 01"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 02"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 03"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 04"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 05"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 06"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 07"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 08"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 09"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 10"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 11"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 12"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 13"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 14"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 15"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 16"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 17"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 18"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 19"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 20"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 21"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 22"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 23"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 24"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 25"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 26"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
+            ["Zora River Wonder Item Back 27"] = function () return is_child() and (can_swim_or_sink() or has_ice_arrow_platforms()) end,
             ["Zora River Rock Circle"] = function () return true end,
             ["Zora River Fairy Fountain Rock Circle"] = function () return true end,
             ["Zora River Grotto Boulder"] = function () return has_explosives_or_hammer() end,
@@ -7149,9 +7148,9 @@ function _oot_logic()
             ["Zora River Butterfly Near Waterfall 1"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
             ["Zora River Butterfly Near Waterfall 2"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
             ["Zora River Butterfly Near Waterfall 3"] = function () return is_child() and can_use_sticks() and soul_butterfly() end,
-            ["Zora River Open Grotto Entry"] = function () return (is_adult() or is_child()and soul_cucco()) and has_Shovel() end,
+            ["Zora River Open Grotto Entry"] = function () return (is_adult() or is_child() and (soul_cucco() or has_ice_arrow_platforms())) and has_Shovel() end,
             ["Zora River Storms Grotto Entry"] = function () return hidden_grotto_storms() and has_Shovel() end,
-            ["Zora River Boulder Grotto Entry"] = function () return has_explosives_or_hammer() and (is_adult() or is_child()and soul_cucco()) and has_Shovel() end,
+            ["Zora River Boulder Grotto Entry"] = function () return has_explosives_or_hammer() and (is_adult() or is_child() and (soul_cucco() or has_ice_arrow_platforms())) and has_Shovel() end,
             ["Zora River SC Entry"] = function () return can_dive_small() or hookshot_anywhere() end,
             ["Zora River Gossip Stone"] = function () return is_adult() or is_child()and soul_cucco() end,
             ["Zora River Gossip Fairy"] = function () return (is_adult() or is_child()and soul_cucco()) and (can_play_sun() or can_play_zelda() or can_play_epona() or can_play_time()) end,
@@ -7339,7 +7338,7 @@ function _oot_logic()
             ["Lake Hylia Near Shortcut"] = function () return is_child() and (can_dive_small() or longshot_anywhere() or (trick('OOT_LAKE_SHORTCUT') and hookshot_anywhere())) or time_travel_at_will() or (is_adult() and setting('openZdShortcut')) end,
             ["Laboratory"] = function () return rusty_key(RUSTY_LAB) and not setting('entrance', 'interior_most') end,
             ["Water Temple"] = function () return (has_iron_boots() and has_tunic_zora() and (can_hookshot() or setting('Dungeonwater', 'open')) or (trick('OOT_WATER_GOLD_SCALE') and is_adult() and (can_longshot() or setting('Dungeonwater', 'open')) and has_scale_raw(2))) and not setting('entrance', 'dungeon_major') end,
-            ["Lake Hylia Near Pond"] = function () return can_swim() and (is_child() or lake_water_control()) or (is_adult() and (scarecrow_hookshot() or hookshot_anywhere() or climb_anywhere())) or can_ride_bean(BEAN_LAKE_HYLIA) end,
+            ["Lake Hylia Near Pond"] = function () return can_swim() and (is_child() or lake_water_control()) or (is_adult() and (scarecrow_hookshot() or hookshot_anywhere() or climb_anywhere())) or can_ride_bean(BEAN_LAKE_HYLIA) or (is_child() and has_ice_arrow_platforms()) end,
             ["Lake Hylia Grotto"] = function () return not setting('entrance', 'grotto') and has_Shovel() end,
         },
         ["locations"] = {
@@ -7348,11 +7347,11 @@ function _oot_logic()
             ["Lake Hylia Fire Arrow"] = function () return is_adult() and can_use_bow() and (lake_water_control() or scarecrow_longshot() or longshot_anywhere() or climb_anywhere()) end,
             ["Lake Hylia HP"] = function () return can_ride_bean(BEAN_LAKE_HYLIA) or (is_adult() and scarecrow_hookshot()) or hookshot_anywhere() end,
             ["Lake Hylia GS Lab Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (trick('OOT_LAB_WALL_GS') and (can_use_sword() or can_use_sticks())) or (time_travel_at_will() and (scarecrow_hookshot() or hookshot_anywhere() or can_ride_bean(BEAN_LAKE_HYLIA)) and (has_explosives_or_hammer() or can_use_din() or can_use_slingshot()))) end,
-            ["Lake Hylia GS Island"] = function () return is_child() and gs_night() and can_damage_skull() and (can_swim() or (has_iron_boots() and can_longshot()) or (time_travel_at_will() and (scarecrow_longshot() or hookshot_anywhere() or climb_anywhere()))) end,
+            ["Lake Hylia GS Island"] = function () return is_child() and gs_night() and can_damage_skull() and (can_swim() or (has_iron_boots() and can_longshot()) or (time_travel_at_will() and (scarecrow_longshot() or hookshot_anywhere() or climb_anywhere() or has_ice_arrow_platforms()))) end,
             ["Lake Hylia GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Lake Hylia Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Lake Hylia GS Big Tree"] = function () return is_adult() and gs_night() and (can_longshot() or (climb_anywhere() and can_damage_skull())) end,
-            ["Lake Hylia Island Big Fairy"] = function () return can_play_sun() and (is_child() and (can_swim() or (has_iron_boots() and longshot_anywhere())) or (is_adult() and (lake_water_control() and can_swim() or scarecrow_longshot() or hookshot_anywhere() or climb_anywhere()))) end,
+            ["Lake Hylia Island Big Fairy"] = function () return can_play_sun() and (is_child() and (can_swim() or (has_iron_boots() and longshot_anywhere())) or (is_adult() and (lake_water_control() and can_swim() or scarecrow_longshot() or hookshot_anywhere() or climb_anywhere()or has_ice_arrow_platforms()))) end,
             ["Lake Hylia Pot 1"] = function () return is_child() end,
             ["Lake Hylia Pot 2"] = function () return is_child() end,
             ["Lake Hylia Grass 1"] = function () return can_cut_grass() end,
@@ -7408,8 +7407,8 @@ function _oot_logic()
             ["Lake Hylia Gossip Stone"] = function () return true end,
             ["Lake Hylia Gossip Fairy"] = function () return can_play_sun() or can_play_zelda() or can_play_epona() or can_play_time() end,
             ["Lake Hylia Gossip Big Fairy"] = function () return can_play_storms() end,
-            ["Lake Hylia Rock"] = function () return (can_swim() and is_child()) or is_adult() and ((can_hookshot() and scarecrow_hookshot()) or hookshot_anywhere() or can_use_beans() or climb_anywhere()) end,
-            ["Water Temple Front"] = function () return (has_iron_boots() and has_tunic_zora() and (can_hookshot() or setting('Dungeonwater', 'open')) or (trick('OOT_WATER_GOLD_SCALE') and is_adult() and (can_longshot() or setting('Dungeonwater', 'open')) and has_scale_raw(2))) and not setting('entrance', 'dungeon_major') end,
+            ["Lake Hylia Rock"] = function () return ((can_swim()or has_ice_arrow_platforms()) and is_child()) or is_adult() and ((can_hookshot() and scarecrow_hookshot()) or hookshot_anywhere() or can_use_beans() or climb_anywhere()) end,
+            ["Water Temple Entry"] = function () return (has_iron_boots() and has_tunic_zora() and (can_hookshot() or setting('Dungeonwater', 'open')) or (trick('OOT_WATER_GOLD_SCALE') and is_adult() and (can_longshot() or setting('Dungeonwater', 'open')) and has_scale_raw(2))) and not setting('entrance', 'dungeon_major') end,
         },
         ["age_change"] = true,
     },
@@ -7797,7 +7796,7 @@ function _oot_logic()
             ["BUGS"] = function () return is_child() and has_bottle() end,
         },
         ["exits"] = {
-            ["Gerudo Valley Falls"] = function () return is_child() or can_swim_or_sink() end,
+            ["Gerudo Valley Falls"] = function () return is_child() or can_swim_or_sink() or has_ice_arrow_platforms() end,
             ["Hyrule Field"] = function () return not setting('entrance', 'overworld') end,
             ["Gerudo Valley After Bridge"] = function () return can_longshot() or can_ride_epona() or (is_adult() and carpenters_rescued()) or (is_child() and (has_hover_boots() and trick('OOT_VALLEY_GATE_HOVER') or can_hookshot())) or time_travel_at_will() end,
             ["Octorok Grotto Ledge"] = function () return true end,
@@ -7806,7 +7805,7 @@ function _oot_logic()
             ["Gerudo Valley Rocks"] = function () return true end,
             ["Gerudo Valley Rocks in Water"] = function () return is_adult or has_bombchu end,
             ["Gerudo Valley Crate HP"] = function () return is_child() and soul_cucco() or can_longshot() or climb_anywhere() end,
-            ["Gerudo Valley Waterfall HP"] = function () return is_child() or can_swim() or can_longshot() or (has_iron_boots() and can_hookshot()) end,
+            ["Gerudo Valley Waterfall HP"] = function () return (is_child() and soul_cucco()) or can_swim() or can_longshot() or (has_iron_boots() and can_hookshot()) or has_ice_arrow_platforms() end,
             ["Gerudo Valley GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Gerudo Valley Soil Fairies"] = function () return is_child() and can_use_beans() and can_play_storms() end,
             ["Gerudo Valley GS Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (climb_anywhere() and (can_use_sword_master() or (age_sword_adult() and has('SWORD_BIGGORON')) or has_explosives() or can_use_din() or can_use_sticks() or can_use_slingshot()))) end,
@@ -7853,7 +7852,7 @@ function _oot_logic()
     },
     ["Octorok Grotto Ledge"] = {
         ["exits"] = {
-            ["Gerudo Valley Falls"] = function () return can_swim_or_sink() end,
+            ["Gerudo Valley Falls"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
             ["Gerudo Valley"] = function () return climb_anywhere() end,
             ["Octorok Grotto"] = function () return can_lift_silver() and not setting('entrance', 'grotto') and has_Shovel() end,
         },
@@ -7889,7 +7888,7 @@ function _oot_logic()
             ["Lake Hylia"] = function () return not setting('entrance', 'sc') end,
         },
         ["locations"] = {
-            ["Gerudo Valley SC"] = function () return can_swim_or_sink() end,
+            ["Gerudo Valley SC"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
         },
         ["age_change"] = false,
     },
@@ -8137,14 +8136,14 @@ function _oot_logic()
     },
     ["Desert Colossus Oasis"] = {
         ["locations"] = {
-            ["Desert Colossus Oasis Fairy 1"] = function () return can_swim_or_sink() end,
-            ["Desert Colossus Oasis Fairy 2"] = function () return can_swim_or_sink() end,
-            ["Desert Colossus Oasis Fairy 3"] = function () return can_swim_or_sink() end,
-            ["Desert Colossus Oasis Fairy 4"] = function () return can_swim_or_sink() end,
-            ["Desert Colossus Oasis Fairy 5"] = function () return can_swim_or_sink() end,
-            ["Desert Colossus Oasis Fairy 6"] = function () return can_swim_or_sink() end,
-            ["Desert Colossus Oasis Fairy 7"] = function () return can_swim_or_sink() end,
-            ["Desert Colossus Oasis Fairy 8"] = function () return can_swim_or_sink() end,
+            ["Desert Colossus Oasis Fairy 1"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Desert Colossus Oasis Fairy 2"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Desert Colossus Oasis Fairy 3"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Desert Colossus Oasis Fairy 4"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Desert Colossus Oasis Fairy 5"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Desert Colossus Oasis Fairy 6"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Desert Colossus Oasis Fairy 7"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
+            ["Desert Colossus Oasis Fairy 8"] = function () return can_swim_or_sink() or has_ice_arrow_platforms() end,
         },
         ["age_change"] = true,
     },
@@ -8745,7 +8744,7 @@ function _oot_logic()
             ["Water Temple Main"] = function () return true end,
         },
         ["locations"] = {
-            ["Water Temple Entry"] = function () return true end,
+            ["Water Temple Enter"] = function () return true end,
         },
         ["age_change"] = true,
     },
@@ -8869,7 +8868,7 @@ function _oot_logic()
     ["Water Temple Waterfalls"] = {
         ["exits"] = {
             ["Water Temple Blocks"] = function () return true end,
-            ["Water Temple Waterfalls Ledge"] = function () return is_adult() and (has_hover_boots() or climb_anywhere() or hookshot_anywhere()) or (is_child() and (has_iron_boots() and (climb_anywhere() or hookshot_anywhere()))) end,
+            ["Water Temple Waterfalls Ledge"] = function () return is_adult() and (has_hover_boots() or climb_anywhere() or hookshot_anywhere()) or (is_child() and (has_iron_boots() and (climb_anywhere() or hookshot_anywhere()))) or has_ice_arrow_platforms() end,
         },
         ["age_change"] = true,
     },
@@ -8997,6 +8996,9 @@ function _oot_logic()
         ["exits"] = {
             ["Kakariko Well"] = function () return true end,
             ["Bottom of the Well Entrance"] = function () return true end,
+        },
+        ["locations"] = {
+            ["Bottom of the Well Enter"] = function () return true end,
         },
         ["age_change"] = true,
     },
@@ -9600,7 +9602,7 @@ function _oot_logic()
             ["Dodongo Cavern Entrance"] = function () return true end,
         },
         ["locations"] = {
-            ["Dodongo Cavern Enter"] = function () return has_bombflowers() or has_explosives end,
+            ["Dodongo Cavern Enter"] = function () return true end,
             ["MQ Dodongo Cavern Lobby Scrub Front"] = function () return business_scrub(28) end,
             ["MQ Dodongo Cavern Lobby Scrub Back"] = function () return business_scrub(29) end,
             ["MQ Dodonge Cavern Lobby Boulders"] = function () return has_explosives_or_hammer() end,
@@ -10645,6 +10647,7 @@ function _oot_logic()
         ["locations"] = {
             ["MQ Forest Temple First Room Chest"] = function () return can_hit_triggers_distance() or can_hookshot() or has_explosives() or has_hover_boots() or can_use_din() or (has_weapon() and (has('MAGIC_UPGRADE') or has('SHARED_MAGIC_UPGRADE'))) end,
             ["MQ Forest Temple GS Entryway"] = function () return gs() and can_collect_distance() end,
+            ["Forest Temple Enter"] = function () return true end,
         },
         ["age_change"] = true,
     },
@@ -12186,6 +12189,9 @@ function _oot_logic()
             ["Graveyard Upper"] = function () return true end,
             ["Shadow Temple Entrance"] = function () return true end,
         },
+        ["locations"] = {
+            ["Shadow Temple Enter"] = function () return true end,
+        },
         ["age_change"] = true,
     },
     ["Shadow Temple Entrance"] = {
@@ -13040,6 +13046,9 @@ function _oot_logic()
             ["Water Temple Main Room Middle Floor"] = function () return event('WATER_LEVEL_MID') or (has_iron_boots() and has_tunic_zora()) or (event('WATER_LEVEL_LOW') and hookshot_anywhere()) end,
             ["Water Temple Main Room Bottom Floor"] = function () return event('WATER_LEVEL_LOW') or (has_iron_boots() and has_tunic_zora()) end,
             ["Water Temple High Water Level Ledge"] = function () return longshot_anywhere() end,
+        },
+        ["locations"] = {
+            ["Water Temple Enter"] = function () return true end,
         },
         ["age_change"] = true,
     },
