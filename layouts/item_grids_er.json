@@ -428,22 +428,26 @@
             "item_margin": "1,2",
             "rows": [
                 [
-                    "OOT_entrance_song_bolero",
                     "OOT_entrance_song_minuet",
-                    "OOT_entrance_song_nocturne",
-                    "OOT_entrance_song_prelude",
+                    "OOT_entrance_song_bolero",
+                    "OOT_entrance_song_serenade",
                     "OOT_entrance_song_requiem",
-                    "OOT_entrance_song_serenade"
+                    "OOT_entrance_song_nocturne",
+                    "OOT_entrance_song_prelude"
                 ],
                 [
+                    "MM_entrance_owl_town",                    
+                    "MM_entrance_owl_swmp",                     
+                    "MM_entrance_owl_wood",
+                    "MM_entrance_owl_milk",
+                    "MM_entrance_owl_mtn"
+                ],
+                [      
+                    "MM_entrance_owl_snow",         
                     "MM_entrance_owl_bay",
                     "MM_entrance_owl_cape",
                     "MM_entrance_owl_ikana",
-                    "MM_entrance_owl_milk",
-                    "MM_entrance_owl_mtn",
-                    "MM_entrance_owl_snow",
-                    "MM_entrance_owl_stone",
-                    "MM_entrance_owl_swmp"   
+                    "MM_entrance_owl_stone" 
                 ]
             ]
         }

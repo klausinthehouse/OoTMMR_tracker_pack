@@ -435,6 +435,11 @@
       },
       {
         "type": "item",
+        "item": "setting_EasyHives",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_climbMostSurfacesOot",
         "height": 16
       },
@@ -451,6 +456,11 @@
       {
         "type": "item",
         "item": "setting_hookshotAnywhereOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_IceArrowPlatforms",
         "height": 16
       },
       {
