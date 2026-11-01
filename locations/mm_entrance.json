@@ -1289,7 +1289,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
-                    "size": 10
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_grotto"
                     ],
@@ -1412,7 +1412,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
-                    "size": 10
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -1540,7 +1540,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
-                    "size": 10
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -1663,7 +1663,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
-                    "size": 10
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -1786,7 +1786,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
-                    "size": 10
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -2154,7 +2154,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
-                    "size": 10
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                   
@@ -2277,7 +2277,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
-                    "size": 10
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                   
@@ -2400,7 +2400,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
-                    "size": 10
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_most"
                    ],                   
@@ -2523,7 +2523,7 @@
                 "map_locations": [
                   {
                     "map": "termina_er",
-                    "size": 10
+                    "size": 10,
                     "visibility_rules": [
                       "setting_entrance_interior_extra"
                    ],                   
@@ -4514,7 +4514,7 @@
               {
                 "map": "termina_er",
                     "visibility_rules": [
-                      "setting_entrance_unused_on"
+                      "setting_entrance_overworld"
                    ],                   
                 "x": 500,
                 "y": 265
@@ -4575,7 +4575,7 @@
               {
                 "map": "termina_er",
                     "visibility_rules": [
-                      "setting_entrance_unused_on"
+                      "setting_entrance_overworld"
                    ],                   
                 "x": 470,
                 "y": 265
@@ -11687,6 +11687,226 @@
             ]
           },
           {
+             "name": "South Great Bay -> Water Void",
+                "access_rules": [
+                  "$mm|Great Bay Coast Pot 01"
+                ],
+                "short_name": "GB Water Void South",
+                "sections": [              
+                 {
+                    "name": "Dungeons",      
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_dungeon",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Grottos",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_grottos",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "Bosses",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_boss",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Interior",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "overworld",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                 },
+                  {
+                   "name": "Warpsongs",                    
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_warp",
+                    "item_count": 1               
+                 }       
+            ],
+            "map_locations": [
+              {
+                "map": "termina_er",
+                "visibility_rules": [
+                  "setting_entrance_wm"
+               ],
+                "x": 250,
+                "y": 260
+              }
+            ]
+          },
+          {
+             "name": "North Great Bay -> Water Void",
+                "access_rules": [
+                  "$mm|Great Bay Coast Pot 01"
+                ],
+                "short_name": "GB Water Void North",
+                "sections": [              
+                 {
+                    "name": "Dungeons",      
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_dungeon",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Grottos",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_grottos",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "Bosses",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_boss",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Interior",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "overworld",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                 },
+                  {
+                   "name": "Warpsongs",                    
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_warp",
+                    "item_count": 1               
+                 }       
+            ],
+            "map_locations": [
+              {
+                "map": "termina_er",
+                "visibility_rules": [
+                  "setting_entrance_wm"
+               ],
+                "x": 280,
+                "y": 170
+              }
+            ]
+          },
+          {
+             "name": "Zora Cape -> Water Void",
+                "access_rules": [
+                  "$mm|Great Bay Coast Pot 01"
+                ],
+                "short_name": "ZC Water Void",
+                "sections": [              
+                 {
+                    "name": "Dungeons",      
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_dungeon",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Grottos",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_grottos",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "Bosses",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_boss",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Interior",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "overworld",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                 },
+                  {
+                   "name": "Warpsongs",                    
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_warp",
+                    "item_count": 1               
+                 }       
+            ],
+            "map_locations": [
+              {
+                "map": "termina_er",
+                "visibility_rules": [
+                  "setting_entrance_wm"
+               ],
+                "x": 270,
+                "y": 380
+              }
+            ]
+          },
+          {
+             "name": "Pinnacle Rock -> Water Void",
+                "access_rules": [
+                  "$mm|Pinnacle Rock Enter"
+                ],
+                "short_name": "GB Water Void North",
+                "sections": [              
+                 {
+                    "name": "Dungeons",      
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_dungeon",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Grottos",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_grottos",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "Bosses",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_boss",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Interior",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "overworld",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                 },
+                  {
+                   "name": "Warpsongs",                    
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_warp",
+                    "item_count": 1               
+                 }       
+            ],
+            "map_locations": [
+              {
+                "map": "termina_er",
+                "visibility_rules": [
+                  "setting_entrance_wm"
+               ],
+                "x": 260,
+                "y": 210
+              }
+            ]
+          },
+          {
             "name": "Fisherman House -> Great Bay Coast",
                 "access_rules": [
                   "$mm|Fishers Hut Enter"
@@ -17055,7 +17275,7 @@
               {
                 "map": "termina_er",
                 "visibility_rules": [
-                      "setting_entrance_ow"
+                      "setting_entrance_icr"
                    ],
                 "x": 895,
                 "y": 405
@@ -17104,7 +17324,7 @@
               {
                 "map": "termina_er",
                 "visibility_rules": [
-                      "setting_entrance_ow"
+                      "setting_entrance_icr"
                    ],
                 "x": 915,
                 "y": 405

@@ -4705,7 +4705,7 @@
               {
                 "map": "oot_er_exits",                
                 "visibility_rules": [
-                  "setting_entrance_ow"
+                  "setting_entrance_cof"
                 ],
                 "x": 660,
                 "y": 1155
@@ -8970,7 +8970,7 @@
               {
                 "map": "oot_er_exits",                
                 "visibility_rules": [
-                  "setting_entrance_ow"
+                  "setting_entrance_cof"
                 ],
                 "x": 1880,
                 "y": 105
