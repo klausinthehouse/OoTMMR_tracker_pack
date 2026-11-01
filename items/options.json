@@ -6245,6 +6245,25 @@
     ]
   },
   {
+    "name": "Entrance Shuffle Wallmasters",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_wm_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_wm_on.png",
+        "codes": "setting_entrance_wm",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Entrance Shuffle Warp Songs",
     "type": "progressive",
     "allow_disabled": false,
@@ -6288,6 +6307,63 @@
       {
         "img": "images/setting_entrance_ow_on.png",
         "codes": "setting_entrance_ow",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Ikana Castle Roof",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_icr_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_icr_on.png",
+        "codes": "setting_entrance_icr",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Child Owl Flight",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_cof_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_cof_on.png",
+        "codes": "setting_entrance_cof",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrance Shuffle Water Voids",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_entrance_wv_off.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_entrance_wv_on.png",
+        "codes": "setting_entrance_wv",
         "inherit_codes": false
       }
     ]
