@@ -3270,7 +3270,8 @@
                 "item_count": 4
               },
               {
-                "name": "Ranch Soil-Items (Wall) - Day 1",                    
+                "name": "Ranch Soil-Items (Wall) - Day 1", 
+                "short_name": "Soil Day 1",                   
                 "access_rules": [
                   "$mm|Romani Ranch Soft Soil Day 1"
                 ],
@@ -3282,7 +3283,8 @@
                 "item_count": 1
               },
               {
-                "name": "Ranch Soil-Items (Wall) - Day 2-3",                    
+                "name": "Ranch Soil-Items (Wall) - Day 2-3", 
+                "short_name": "Soil Day 2/3",                   
                 "access_rules": [
                   "$mm|Romani Ranch Soft Soil Day 2-3"
                 ],
@@ -5667,7 +5669,7 @@
                 ],
                 "chest_unopened_img": "images/system/snow.png",
                 "chest_opened_img": "images/system/snow_grey.png",
-                "item_count": 2
+                "item_count": 1
               },
               {
                 "name": "Big Snowball Twin Island second and third Day",
@@ -6557,6 +6559,18 @@
                 "item_count": 5
               },
               {
+                "name": "Rocks in shallow water",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Great Bay Coast shallow Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 5
+              },
+              {
                 "name": "Rocks underwater",
                 "chest_unopened_img": "images/system/Rock.png",
                 "chest_opened_img": "images/system/Rock_grey.png",
@@ -6566,8 +6580,20 @@
                 "visibility_rules": [
                   "setting_rockmm_overworld"
                 ],
-                "item_count": 19
-              }    
+                "item_count": 21
+              },
+              {
+                "name": "Rocks underwater after Clear",
+                "chest_unopened_img": "images/system/Rock.png",
+                "chest_opened_img": "images/system/Rock_grey.png",
+                "access_rules": [
+                  "$mm|Great Bay Coast Underwater Rocks"
+                ],
+                "visibility_rules": [
+                  "setting_rockmm_overworld"
+                ],
+                "item_count": 2
+              } 
             ],
             "map_locations": [
               {
@@ -6703,8 +6729,41 @@
                     "visibility_rules": [
                       "setting_rockmm_overworld"
                     ],
-                    "item_count": 2
-                  }                   
+                    "item_count": 3
+                  },                  
+              {
+                "name": "Gossip-Hint",
+                "access_rules": [
+                  "$mm|Great Bay Coast Gossip Stone"
+                ],
+                "chest_unopened_img": "images/gossip_stone.png",
+                "chest_opened_img": "images/gossip_stone_check.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Fairy",
+                "access_rules": [
+                  "$mm|Great Bay Coast Gossip Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipFairyShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              },   
+              {
+                "name": "Gossip-Big Fairy",
+                "access_rules": [
+                  "$mm|Great Bay Coast Gossip Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_GossipBigFairyShuffleMm_overworld"
+                ],
+                "chest_unopened_img": "images/BigFairy.png",
+                "chest_opened_img": "images/BigFairyGreyscale.png",
+                "item_count": 1
+              }                   
                 ],
                 "map_locations": [
                   {
@@ -6739,7 +6798,7 @@
                     ],
                     "chest_unopened_img": "images/system/tree.png",
                     "chest_opened_img": "images/system/tree_grey.png",                
-                    "item_count": 3
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -6764,40 +6823,7 @@
                     "chest_unopened_img": "images/pot.png",
                     "chest_opened_img": "images/pot_grey.png",
                     "item_count": 2
-                  },
-              {
-                "name": "Gossip-Hint",
-                "access_rules": [
-                  "$mm|Great Bay Coast Gossip Stone"
-                ],
-                "chest_unopened_img": "images/gossip_stone.png",
-                "chest_opened_img": "images/gossip_stone_check.png",
-                "item_count": 1
-              },   
-              {
-                "name": "Gossip-Fairy",
-                "access_rules": [
-                  "$mm|Great Bay Coast Gossip Fairy"
-                ],
-                "visibility_rules": [
-                  "setting_GossipFairyShuffleMm_overworld"
-                ],
-                "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyGreyscale.png",
-                "item_count": 1
-              },   
-              {
-                "name": "Gossip-Big Fairy",
-                "access_rules": [
-                  "$mm|Great Bay Coast Gossip Big Fairy"
-                ],
-                "visibility_rules": [
-                  "setting_GossipBigFairyShuffleMm_overworld"
-                ],
-                "chest_unopened_img": "images/BigFairy.png",
-                "chest_opened_img": "images/BigFairyGreyscale.png",
-                "item_count": 1
-              }   
+                  }
                 ],
                 "map_locations": [
                   {
@@ -6998,7 +7024,7 @@
                   {
                     "name": "Grotto Boulder",                    
                     "access_rules": [
-                      "$mm|Zora Cape Boulder"
+                      "$mm|Zora Cape Boulders"
                     ],
                     "visibility_rules": [
                       "setting_BoulderMm_overworld"
@@ -7406,11 +7432,18 @@
                 "short_name": "Cape Ledge",
                 "sections": [
                   {
-                    "name": "Zora Cape Ledge Chests",
+                    "name": "Zora Cape Ledge Chest 1",
                     "access_rules": [
                       "$mm|Zora Cape Ledge Chest 1"
                     ],
-                    "item_count": 2
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Zora Cape Ledge Chest 2",
+                    "access_rules": [
+                      "$mm|Zora Cape Ledge Chest 2"
+                    ],
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [

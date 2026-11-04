@@ -474,7 +474,7 @@
               },
               {
                 "name": "Rock behind Know it all House",
-                "short_name": "Behind House",
+                "short_name": "Behind KIA",
                 "access_rules": [
                   "$oot|Kokiri Forest Child Rocks"
                 ],
@@ -538,8 +538,8 @@
                 "item_count": 3
               },
               {
-                "name": "Rocks behind Sarias House",
-                "short_name": "Behind Sarias",
+                "name": "Sarias Rocks",
+                "short_name": "Sarias",
                 "access_rules": [
                   "$oot|Kokiri Forest Child Rocks"
                 ],
