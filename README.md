@@ -67,10 +67,10 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Ganon Trials as Checks
 - OOT Ice Arrow Platform Logic
 - Bow/Slingshot break Hives Logic
+- Rearanging OOT-Keys
 
 ## TODOs:
 
-- [ ] Rearanging OOT-Keys
 - [ ] Bugtesting
 - [ ] Clean Up Code
 
