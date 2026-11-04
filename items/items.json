@@ -3308,6 +3308,21 @@
     ]
   },
   {
+    "name": "Rusted Key Mayors Salon",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_mayorsresidencesalon.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_mayorsresidencesalon.png",
+        "codes": "MM_RUSTY_SALON"
+      }
+    ]
+  },
+  {
     "name": "Rusted Key milk Bar",
     "type": "progressive",
     "allow_disabled": false,

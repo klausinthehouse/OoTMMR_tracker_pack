@@ -189,13 +189,13 @@
     {
       "name": "MM Swamp Skulltula House",
       "type": "toggle",
-      "img": "images/items/mm_skulltulla_woodfall.png",
+      "img": "images/items/mm_skulltulla_swamp.png",
       "codes": "MM_entrance_dungeon_swamp"
     },
     {
       "name": "MM Ocean Skulltula House",
       "type": "toggle",
-      "img": "images/items/mm_skulltulla_greatbay.png",
+      "img": "images/items/mm_skulltulla_ocean.png",
       "codes": "MM_entrance_dungeon_ocean"
     },
     {
