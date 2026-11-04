@@ -4501,7 +4501,7 @@ function _mm_logic()
             ["Clock Town East"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {
-            ["Mayor's Office Kafei's Mask"] = function () return soul_npc(SOUL_NPC_AROMA) and rusty_key(RUSTY_KAFEI) end,
+            ["Mayor's Office Kafei's Mask"] = function () return soul_npc(SOUL_NPC_AROMA) and rusty_key(RUSTY_SALON) end,
             ["Mayor's Office HP"] = function () return soul_npc(SOUL_NPC_MAYOR_DOTOUR) and has('MASK_COUPLE') and rusty_key(RUSTY_OFFICE) end,
             ["Mayor's Office Enter"] = function () return rusty_key(RUSTY_MAYOR) end,
         },
@@ -7040,7 +7040,7 @@ function _mm_logic()
             ["Great Bay Coast Grass 4"] = function () return true end,
             ["Great Bay Coast Grass 5"] = function () return true end,
             ["Great Bay Coast Trees"] = function () return true end,            
-            ["Great Bay Grotto Entry"] = function () return has_Shovel() end,
+            ["Great Bay Grotto Entry"] = function () return has_Shovel end,
             ["Great Bay Coast Fortress Entry"] = function () return underwater_walking() end,
         },
         ["age_change"] = false,
@@ -7403,7 +7403,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Zora Cape Ledge Chest 1"] = function () return can_hookshot() end,
-            ["Zora Cape Ledge Chest 2"] = function () return can_hookshot() end,
+            ["Zora Cape Ledge Chest 2"] = function () return can_hookshot() and MASK_DEKU() end,
         },
         ["age_change"] = false,
     },

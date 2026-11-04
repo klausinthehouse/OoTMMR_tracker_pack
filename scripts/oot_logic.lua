@@ -5428,7 +5428,7 @@ function _oot_logic()
             ["Market Pot House"] = function () return rusty_key(RUSTY_POT) and not setting('entrance', 'interior_most') end,
         },
         ["locations"] = {            
-            ["Market Pot House Entry"] = function () return rusty_key(RUSTY_POT) and not setting('entrance', 'interior_most') end,
+            ["Market Pot House Entry"] = function () return rusty_key(RUSTY_POT) end,
             ["Market Entry"] = function () return true end,            
         },
         ["age_change"] = false,
