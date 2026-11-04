@@ -3422,6 +3422,11 @@
       },
       {
         "type": "item",
+        "item": "OOT_RUSTY_POT",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "OOT_RUSTY_CASTLE",
         "height": 16
       },
@@ -3462,6 +3467,21 @@
       },
       {
         "type": "item",
+        "item": "OOT_RUSTY_RANCH",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_STABLES",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "OOT_RUSTY_SILO",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "OOT_RUSTY_MALON",
         "height": 16
       },
@@ -3483,26 +3503,6 @@
       {
         "type": "item",
         "item": "OOT_RUSTY_MASK",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_POT",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_RANCH",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_STABLES",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "OOT_RUSTY_SILO",
         "height": 16
       },
       {
@@ -3625,6 +3625,11 @@
       {
         "type": "item",
         "item": "MM_RUSTY_OFFICE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_SALON",
         "height": 16
       },
       {
@@ -3836,6 +3841,21 @@
       {
         "type": "item",
         "item": "setting_entrance_ow",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_icr",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_cof",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_wv",
         "height": 16
       },
       {
