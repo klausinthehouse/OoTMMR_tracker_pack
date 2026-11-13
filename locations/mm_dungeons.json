@@ -6,8 +6,8 @@
       {
         "map": "termina",
         "size": 20,
-        "x": 494,
-        "y": 518
+        "x": 750,
+        "y": 492
       }
     ],
     "sections": [
@@ -1124,8 +1124,8 @@
       {
         "map": "termina",
         "size": 20,
-        "x": 290,
-        "y": 340
+        "x": 436,
+        "y": 275
       }
     ]
   },
@@ -1558,8 +1558,8 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 320,
-        "y": 260,
+        "x": 357,
+        "y": 165,
         "size": 20
       }
     ]
@@ -1736,8 +1736,8 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 836,
-        "y": 238,
+        "x": 930,
+        "y": 245,
         "size": 20
       }
     ]
@@ -1878,8 +1878,8 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 831,
-        "y": 300,
+        "x": 926,
+        "y": 320,
         "size": 19
       }
     ]
@@ -2247,8 +2247,8 @@
       {
         "map": "termina",
         "size": 20,
-        "x": 540,
-        "y": 302
+        "x": 185,
+        "y": 530
       }
     ]
   },
@@ -2795,8 +2795,8 @@
         "force_invisibility_rules": [
          "setting_DungeonWF_complete"
          ],
-        "x": 542,
-        "y": 478
+        "x": 627,
+        "y": 523
       }
     ]
   },
@@ -3436,8 +3436,8 @@
         "force_invisibility_rules": [
          "setting_DungeonGB_complete"
          ],
-        "x": 100,
-        "y": 350
+        "x": 263,
+        "y": 346
       }
     ]
   },
@@ -4187,8 +4187,8 @@
         "force_invisibility_rules": [
          "setting_DungeonST_complete"
          ],
-        "x": 956,
-        "y": 213
+        "x": 935,
+        "y": 135
       }
     ]
   },
@@ -4882,8 +4882,8 @@
         "force_invisibility_rules": [
          "setting_DungeonSH_complete"
          ],
-        "x": 488,
-        "y": 35
+        "x": 474,
+        "y": 34
       }
     ]
   }

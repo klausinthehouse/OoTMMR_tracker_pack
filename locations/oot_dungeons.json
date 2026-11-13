@@ -111,7 +111,7 @@
           "$oot|Deku Tree Heart Main Room Upper"
         ],
         "visibility_rules": [
-          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_BottomoftheWell_false"
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DekuTree_false"
         ],
         "chest_unopened_img": "images/heart.png",
         "chest_opened_img": "images/heart_grey.png",
@@ -124,7 +124,7 @@
           "$oot|Deku Tree Grass Basement Main 1"
         ],
         "visibility_rules": [
-          "setting_shuffleGrassOot_dungeon,setting_mq_DekuTree_false"
+          "setting_shuffleGrassOot_dungeon,setting_mq__false"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -266,7 +266,7 @@
           "$oot|MQ Deku Tree Heart Lobby"
         ],
         "visibility_rules": [
-          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_BottomoftheWell_true"
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/heart.png",
         "chest_opened_img": "images/heart_grey.png",
@@ -745,8 +745,8 @@
         "force_invisibility_rules": [
          "setting_DungeondekuTree_complete"
          ],
-        "x": 2420,
-        "y": 880
+        "x": 2100,
+        "y": 1515
       }
     ]
   },
@@ -1772,8 +1772,8 @@
         "force_invisibility_rules": [
          "setting_Dungeondodongo_complete"
          ],
-        "x": 1675,
-        "y": 240
+        "x": 1694,
+        "y": 172
       }
     ]
   },
@@ -2558,8 +2558,8 @@
         "force_invisibility_rules": [
          "setting_Dungeonjabujabu_complete"
          ],
-        "x": 2475,
-        "y": 330
+        "x": 2496,
+        "y": 706
       }
     ]
   },
@@ -3317,8 +3317,8 @@
       {
         "map": "oot",
         "size": 50,
-        "x": 2505,
-        "y": 275
+        "x": 2378,
+        "y": 622
       }
     ]
   },
@@ -3989,8 +3989,8 @@
         "force_invisibility_rules": [
          "setting_Dungeonforest_complete"
          ],
-        "x": 2145,
-        "y": 595
+        "x": 2666,
+        "y": 1146
       }
     ]
   },
@@ -4972,8 +4972,8 @@
         "force_invisibility_rules": [
          "setting_Dungeonfire_complete"
          ],
-        "x": 1930,
-        "y": 60
+        "x": 2520,
+        "y": 36
       }
     ]
   },
@@ -6110,8 +6110,8 @@
         "force_invisibility_rules": [
          "setting_Dungeonwater_complete"
          ],
-        "x": 1020,
-        "y": 1370
+        "x": 580,
+        "y": 1334
       }
     ]
   },
@@ -7413,8 +7413,8 @@
         "force_invisibility_rules": [
          "setting_Dungeonshadow_complete"
          ],
-        "x": 2165,
-        "y": 345
+        "x": 2248,
+        "y": 528
       }
     ]
   },
@@ -7789,7 +7789,7 @@
       },
       {
         "name": "Child Bridge Boulders", 
-        "short_name": "Child Crawl",                   
+        "short_name": "Child Bridge",                   
         "access_rules": [
           "$oot|MQ Spirit Temple Child Bridge Boulders"
         ],
@@ -8652,8 +8652,8 @@
         "force_invisibility_rules": [
          "setting_Dungeonspirit_complete"
          ],
-        "x": 115,
-        "y": 300
+        "x": 15,
+        "y": 564
       }
     ]
   },
@@ -9026,7 +9026,7 @@
       },      
       {
         "name": "Alcove Boulders", 
-        "short_name": "Child Crawl",                   
+        "short_name": "Alcove",                   
         "access_rules": [
           "$oot|MQ Bottom of the Well Alcove Boulders"
         ],
@@ -9221,7 +9221,7 @@
           "$ootmq|MQ Bottom of the Well Grass Dead-Hand 1"
         ],
         "visibility_rules": [
-          ",setting_shuffleGrassOot_dungeon,setting_mq_BottomoftheWell_true"
+          "setting_shuffleGrassOot_dungeon,setting_mq_BottomoftheWell_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -9295,8 +9295,8 @@
       {
         "map": "oot",
         "size": 50,
-        "x": 1870,
-        "y": 385
+        "x": 1762,
+        "y": 514
       }
     ]
   },
@@ -10312,8 +10312,8 @@
       {
         "map": "oot",
         "size": 50,
-        "x": 1429,
-        "y": 75
+        "x": 808,
+        "y": 114
       }
     ]
   },
@@ -10991,8 +10991,8 @@
       {
         "map": "oot",
         "size": 50,
-        "x": 470,
-        "y": 445
+        "x": 638,
+        "y": 780
       }
     ]
   }
