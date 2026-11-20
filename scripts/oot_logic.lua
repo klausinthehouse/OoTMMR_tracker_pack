@@ -3274,7 +3274,7 @@ function _oot_logic()
     },
     ["Fire Temple Maze Upper"] = {
         ["exits"] = {
-            ["Fire Temple Ring"] = function () return small_keys_fire(6) and (is_adult() or climb_anywhere() or hookshot_anywhere()) end,
+            ["Fire Temple Ring"] = function () return small_keys_fire(5) and (is_adult() or climb_anywhere() or hookshot_anywhere()) end,
             ["Fire Temple Scarecrow"] = function () return scarecrow_hookshot() or hookshot_anywhere() or climb_anywhere() end,
         },
         ["locations"] = {
@@ -3297,7 +3297,7 @@ function _oot_logic()
     },
     ["Fire Temple Ring"] = {
         ["exits"] = {
-            ["Fire Temple Before Miniboss"] = function () return small_keys_fire(7) or hookshot_anywhere() or climb_anywhere() end,
+            ["Fire Temple Before Miniboss"] = function () return small_keys_fire(6) or hookshot_anywhere() or climb_anywhere() end,
             ["Fire Temple Pillar Ledge"] = function () return has_hover_boots() or hookshot_anywhere() or climb_anywhere() end,
         },
         ["locations"] = {
@@ -4773,7 +4773,6 @@ function _oot_logic()
             ["Kokiri Shop"] = function () return has('entrance_interior_kf_shop') end,
             ["House of Twins"] = function () return has('entrance_interior_kf_twin') end,
             ["Fairy Fountain Din"] = function () return has('entrance_interior_cg_fairy') end,
-            ["Hyrule Castle Courtyard"] = function () return has('entrance_interior_cg_zelda') end,
             ["Market Back Alley East Home"] = function () return has('entrance_interior_hm_alley') end,
             ["Market Bazaar"] = function () return has('entrance_interior_hm_bazaar') end,
             ["Market Bombchu Shop"] = function () return has('entrance_interior_hm_bomb') end,
@@ -5850,7 +5849,7 @@ function _oot_logic()
         ["exits"] = {
             ["Market Castle Entry"] = function () return not setting('entrance', 'unused_on') end,
             ["Near Fairy Fountain Din"] = function () return has_explosives_or_hammer() end,
-            ["Hyrule Castle Courtyard"] = function () return (woke_talon_child() or (has_hover_boots() and (soul_talon() or setting('skipZelda'))) or climb_anywhere() or hookshot_anywhere()) and not setting('entrance', 'interior_extra') end,
+            ["Hyrule Castle Courtyard"] = function () return (woke_talon_child() or (has_hover_boots() and (soul_talon() or setting('skipZelda'))) or climb_anywhere() or hookshot_anywhere()) and not setting('entrance', 'unused_on') end,
             ["Hyrule Castle Near Grotto"] = function () return true end,
         },
         ["locations"] = {
@@ -6431,7 +6430,7 @@ function _oot_logic()
             ["Kakariko Crate Adult Back 2"] = function () return is_adult() end,
             ["Kakariko Crate Adult Back 3"] = function () return is_adult() end,
             ["Kakariko Granny Shop Entry"] = function () return is_adult() and rusty_key(RUSTY_GRANNY) end,
-            ["Kakariko Potion Shop Back Entry"] = function () return is_adult() and is_day() and rusty_key(RUSTY_ADULT_POTION_BACK) and not setting('entrance', 'interior_extra') end,
+            ["Kakariko Potion Shop Back Entry"] = function () return is_adult() and is_day() and rusty_key(RUSTY_ADULT_POTION_BACK) end,
             ["Kakariko Crate Adult Back 4"] = function () return is_adult() end,
         },
         ["age_change"] = true,

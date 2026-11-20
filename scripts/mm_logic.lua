@@ -3743,7 +3743,7 @@ function _mm_logic()
             ["Zora Hall"] = function () return has('entrance_overworld_zh') end,
             ["Japas' Room"] = function () return has('entrance_interior_zh_japas') end,
             ["Lulu's Room"] = function () return has('entrance_interior_zh_lulu') end,
-            ["Evan's Room"] = function () return has('entrance_interior_lh_mikau') end,
+            ["Evan's Room"] = function () return has('entrance_interior_zh_evan') end,
             ["Zora Shop"] = function () return has('entrance_interior_zh_shop') end,
             ["Tijo's Room"] = function () return has('entrance_interior_zh_tijo') end,
             ["Ikana Fairy Fountain"] = function () return has('entrance_interior_ic_fairy') end,
