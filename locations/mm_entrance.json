@@ -53,9 +53,6 @@
                   },
                   {
                    "name": "overworld",
-                    "visibility_rules": [
-                      "setting_mixed_overworld"
-                   ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_overworld",
                     "item_count": 1               
@@ -1394,10 +1391,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -1522,10 +1516,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -1645,10 +1636,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -1768,10 +1756,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -1891,10 +1876,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -2136,10 +2118,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -2259,10 +2238,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -2382,10 +2358,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -2505,10 +2478,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -2633,10 +2603,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -2756,10 +2723,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -2879,10 +2843,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -3002,10 +2963,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -3125,10 +3083,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -3248,10 +3203,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -3498,10 +3450,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -3621,10 +3570,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",          
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                      
+                    "name": "Interior",    
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -5293,10 +5239,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",      
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -5417,9 +5360,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],             
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -6283,10 +6223,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",         
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -6406,10 +6343,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -6529,10 +6463,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -6652,10 +6583,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -7027,10 +6955,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",      
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -7150,10 +7075,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -7273,10 +7195,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -8634,10 +8553,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -8757,10 +8673,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -8880,10 +8793,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -9311,10 +9221,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -9687,10 +9594,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -9810,10 +9714,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",  
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -10423,10 +10324,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -10546,10 +10444,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -10669,10 +10564,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -10791,10 +10683,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",      
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -11159,10 +11048,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -11941,10 +11827,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -12497,10 +12380,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -12558,10 +12438,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -12645,68 +12522,6 @@
                     ],
                     "x": 400,
                     "y": 100
-                  }
-                ]
-              },
-              {
-                "name": "Pirate Fortress Sewers Start -> Pirate Fortress",
-                "access_rules": [
-                  "$mm|Pirate Fortress Sewers Enter"
-                ],
-                "short_name": "Sewers Start -> PF",
-                "sections": [              
-                 {
-                    "name": "Dungeons",
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_dungeon",
-                    "item_count": 1               
-                  },
-                  {
-                    "name": "Grottos",
-                    "visibility_rules": [
-                      "setting_mixed_grotto"
-                    ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_grottos",
-                    "item_count": 1               
-                  },
-                  {
-                   "name": "Bosses",
-                   "visibility_rules": [
-                     "setting_entrance_Boss, setting_mixed_dungeon"
-                    ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_boss",
-                    "item_count": 1               
-                  },
-                  {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_interior",
-                    "item_count": 1               
-                  },
-                  {
-                   "name": "overworld",
-                    "visibility_rules": [
-                      "setting_mixed_overworld"
-                   ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_overworld",
-                    "item_count": 1               
-                 }        
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina_er",
-                    "size": 10,                 
-                   "visibility_rules": [
-                      "setting_entrance_pf, setting_entrance_interior_extra"
-                    ],
-                    "x": 400,
-                    "y": 85
                   }
                 ]
               },
@@ -12803,10 +12618,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                     
+                    "name": "Interior",   
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -12902,10 +12714,7 @@
                 "short_name": "Telescope -> PF",
                 "sections": [              
                  {
-                    "name": "Dungeons",                
-                   "visibility_rules": [
-                      "setting_mixed_dungeon"
-                    ],
+                    "name": "Dungeons",    
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_dungeon",
                     "item_count": 1               
@@ -12929,16 +12738,16 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",                   
-                   "visibility_rules": [
-                      "setting_mixed_interior"
-                    ],          
+                    "name": "Interior",     
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
                   },
                   {
                    "name": "overworld",
+                    "visibility_rules": [
+                      "setting_mixed_overworld"
+                   ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_overworld",
                     "item_count": 1               
@@ -13052,10 +12861,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -13853,10 +13659,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -13976,10 +13779,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -14099,10 +13899,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -14223,9 +14020,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -14346,9 +14140,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -14468,10 +14259,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -14591,10 +14379,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -15766,10 +15551,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -16184,10 +15966,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -16307,10 +16086,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -16430,10 +16206,7 @@
                     "item_count": 1               
                   },
                   {
-                    "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],                   
+                    "name": "Interior", 
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -16554,9 +16327,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                      "setting_mixed_interior"
-                   ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               

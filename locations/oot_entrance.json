@@ -105,9 +105,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -473,9 +470,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -596,9 +590,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -719,9 +710,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -842,9 +830,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -965,9 +950,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -4391,9 +4373,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -4514,9 +4493,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -4999,9 +4975,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -5122,9 +5095,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -5245,9 +5215,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -6013,9 +5980,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -6136,9 +6100,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -6259,9 +6220,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -6381,9 +6339,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -6504,9 +6459,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -6627,9 +6579,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -6750,9 +6699,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -6873,9 +6819,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -6995,9 +6938,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -7057,9 +6997,6 @@
               },
               {
                 "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_interior",
                 "item_count": 1               
@@ -7483,21 +7420,18 @@
                     "capture_item_layout": "tracker_capture_boss",
                     "item_count": 1               
                   },
-              {
-                "name": "Interior",
-                "visibility_rules": [
-                  "setting_mixed_interior"
-                ],
-                "capture_item": true,
-                "capture_item_layout": "tracker_capture_interior",
-                "item_count": 1               
-              },
-              {
-                "name": "overworld",
-                "capture_item": true,
-                "capture_item_layout": "tracker_capture_overworld",
-                "item_count": 1               
-              }       
+                  {
+                    "name": "Interior",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "overworld",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                  }       
                     ],
                     "map_locations": [
                       {
@@ -8780,9 +8714,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -8869,53 +8800,53 @@
           },
           {
             "name": "Death Mountain Crater -> Death Mountain Summit",
-                "access_rules": [
-                  "$oot|Death Mountain Crater Rock Circle"
-                ],
-                "short_name": "DMC -> DMS",
-                "sections": [              
-                 {
-                    "name": "Dungeons",                
-                   "visibility_rules": [
-                      "setting_mixed_dungeon"
-                    ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_dungeon",
-                    "item_count": 1               
-                  },
-                  {
-                    "name": "Grottos",
-                    "visibility_rules": [
-                      "setting_mixed_grotto"
-                    ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_grottos",
-                    "item_count": 1               
-                  },
-                  {
-                   "name": "Bosses",
-                   "visibility_rules": [
-                     "setting_entrance_Boss, setting_mixed_dungeon"
-                    ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_boss",
-                    "item_count": 1               
-                  },
-                  {
-                    "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_interior",
-                    "item_count": 1               
-                  },
-                  {
-                   "name": "overworld",
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_overworld",
-                    "item_count": 1               
-                 }     
+              "access_rules": [
+                "$oot|Death Mountain Crater Rock Circle"
+              ],
+              "short_name": "DMC -> DMS",
+              "sections": [              
+               {
+                  "name": "Dungeons",                
+                  "visibility_rules": [
+                    "setting_mixed_dungeon"
+                  ],
+                  "capture_item": true,
+                  "capture_item_layout": "tracker_capture_dungeon",
+                  "item_count": 1               
+                },
+                {
+                  "name": "Grottos",
+                  "visibility_rules": [
+                    "setting_mixed_grotto"
+                  ],
+                  "capture_item": true,
+                  "capture_item_layout": "tracker_capture_grottos",
+                  "item_count": 1               
+                },
+                {
+                 "name": "Bosses",
+                 "visibility_rules": [
+                   "setting_entrance_Boss, setting_mixed_dungeon"
+                  ],
+                  "capture_item": true,
+                  "capture_item_layout": "tracker_capture_boss",
+                  "item_count": 1               
+                },
+                {
+                  "name": "Interior",
+                  "visibility_rules": [
+                "setting_mixed_interior"
+                  ],
+                  "capture_item": true,
+                  "capture_item_layout": "tracker_capture_interior",
+                  "item_count": 1               
+                },
+                {
+                 "name": "overworld",
+                  "capture_item": true,
+                  "capture_item_layout": "tracker_capture_overworld",
+                  "item_count": 1               
+               }     
             ],
             "map_locations": [
               {
@@ -9324,9 +9255,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -9575,9 +9503,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -10136,9 +10061,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -10259,9 +10181,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -10630,9 +10549,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -10698,9 +10614,6 @@
                   },
                   {
                    "name": "overworld",
-                    "visibility_rules": [
-                      "setting_mixed_overworld"
-                   ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_overworld",
                     "item_count": 1               
@@ -10814,9 +10727,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -10967,7 +10877,7 @@
                 "access_rules": [
                   "$oot|Treasure Chest Game Entry"
                 ],
-                "short_name": "Chest Game -> Market",
+                "short_name": "Market -> Chest Game",
                 "sections": [              
                  {
                     "name": "Dungeons",                
@@ -11028,7 +10938,7 @@
                 "access_rules": [
                   "$oot|Treasure Chest Game Enter"
                 ],
-                "short_name": "Market -> Chest Game",
+                "short_name": "Chest Game -> Market",
                 "sections": [              
                  {
                     "name": "Dungeons",                
@@ -11059,9 +10969,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -11182,9 +11089,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -11305,9 +11209,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -11428,9 +11329,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -11551,9 +11449,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -11799,23 +11694,20 @@
                 "capture_item_layout": "tracker_capture_boss",
                 "item_count": 1               
               },
-                  {
-                    "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_interior",
-                    "item_count": 1               
-                  },
-                  {
-                   "name": "overworld",
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_overworld",
-                    "item_count": 1               
-                 }
-        ],
-        "map_locations": [
+              {
+                "name": "Interior",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+               "name": "overworld",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+             }
+           ], 
+            "map_locations": [
           {
             "map": "oot_er_exits",
                 "size": 25,
@@ -11927,9 +11819,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -12170,21 +12059,18 @@
                 "capture_item_layout": "tracker_capture_boss",
                 "item_count": 1               
               },
-                  {
-                    "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_interior",
-                    "item_count": 1               
-                  },
-                  {
-                   "name": "overworld",
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_overworld",
-                    "item_count": 1               
-                 } 
+              {
+                "name": "Interior",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+               "name": "overworld",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+             } 
             ],
             "map_locations": [
               {
@@ -12421,21 +12307,18 @@
                 "capture_item_layout": "tracker_capture_boss",
                 "item_count": 1               
               },
-                  {
-                    "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_interior",
-                    "item_count": 1               
-                  },
-                  {
-                   "name": "overworld",
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_overworld",
-                    "item_count": 1               
-                 } 
+              {
+                "name": "Interior",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_interior",
+                "item_count": 1               
+              },
+              {
+                "name": "overworld",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1               
+             } 
             ],
             "map_locations": [
               {
@@ -13758,9 +13641,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -13771,9 +13651,9 @@
                     "capture_item_layout": "tracker_capture_overworld",
                     "item_count": 1               
                  }       
-            ],
-            "map_locations": [
-              {
+               ],
+                "map_locations": [
+                 {
                 "map": "oot_er_exits",
                 "size": 25,         
                     "visibility_rules": [
@@ -14070,9 +13950,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -14684,9 +14561,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
@@ -15607,9 +15481,6 @@
                   },
                   {
                     "name": "Interior",
-                    "visibility_rules": [
-                  "setting_mixed_interior"
-                    ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_interior",
                     "item_count": 1               
