@@ -3427,6 +3427,11 @@
       },
       {
         "type": "item",
+        "item": "OOT_RUSTY_SKULLTULA",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "OOT_RUSTY_CASTLE",
         "height": 16
       },
@@ -3507,11 +3512,6 @@
       },
       {
         "type": "item",
-        "item": "OOT_RUSTY_SKULLTULA",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "OOT_RUSTY_TREASURE",
         "height": 16
       },
@@ -3530,11 +3530,6 @@
       {
         "type": "item",
         "item": "MM_RUSTY_GRAVE",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MM_RUSTY_BLACKSMITH",
         "height": 16
       },
       {
@@ -3624,6 +3619,11 @@
       },
       {
         "type": "item",
+        "item": "MM_RUSTY_MAYOR_BED",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "MM_RUSTY_OFFICE",
         "height": 16
       },
@@ -3635,6 +3635,11 @@
       {
         "type": "item",
         "item": "MM_RUSTY_MILKBAR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MM_RUSTY_BLACKSMITH",
         "height": 16
       },
       {
