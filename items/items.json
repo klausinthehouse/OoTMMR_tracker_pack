@@ -3293,6 +3293,21 @@
     ]
   },
   {
+    "name": "Rusted Key Mayors Bedroom",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rusty_bedroom.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_rusty_bedroom.png",
+        "codes": "MM_RUSTY_MAYOR_BED"
+      }
+    ]
+  },
+  {
     "name": "Rusted Key Mayors Office",
     "type": "progressive",
     "allow_disabled": false,

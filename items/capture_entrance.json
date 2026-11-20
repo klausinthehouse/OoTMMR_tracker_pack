@@ -1215,10 +1215,10 @@
       "codes": "MM_entrance_interior_zh_lulu"
     },
     {
-      "name": "MM Zora Hall Mikaus Room",
+      "name": "MM Zora Hall Evans Room",
       "type": "toggle",
-      "img": "images/entrance_interior_zh_mikau.png",
-      "codes": "MM_entrance_interior_zh_mikau"
+      "img": "images/entrance_interior_zh_evan.png",
+      "codes": "MM_entrance_interior_zh_evan"
     },
     {
       "name": "MM Zora Hall Shop",
