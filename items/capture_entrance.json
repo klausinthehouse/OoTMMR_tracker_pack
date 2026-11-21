@@ -803,7 +803,7 @@
     {
       "name": "OOT Goron City Main Entrance",
       "type": "toggle",
-      "img": "images/entrance_overworld_GC.png",
+      "img": "images/entrance_overworld_gc.png",
       "codes": "OOT_entrance_overworld_gc"
     },
     {
