@@ -465,11 +465,6 @@ function _mm_logic()
         ["progressiveShieldsOot_progressive"] = false,
         ["progressiveSwordsOot_goron"] = true,
         ["progressiveSwordsOot_progressive"] = false,
-        ["erBoss_none"] = true,
-        ["erDungeons_none"] = true,
-        ["erIndoors_none"] = true,
-        ["erRegions_none"] = true,
-        ["erIkanaCastle"] = false,
         ["smallKeyShuffleChestGame_vanilla"] = true,
         ["progressiveSwordsOot_separate"] = true,
         ["progressiveShieldsMm_separate"] = true,
@@ -1607,7 +1602,7 @@ function _mm_logic()
 	end
 
 	function is_spring()
-		return flag_on(MM_REGION_NORTH_CLEARED) and flag_off(MM_REGION_NORTH_CURSED) and (setting('erBoss', 'none') and setting('regionState', 'dungeonBeaten') and event('BOSS_GOHT') or event('CLEAR_STATE_SNOWHEAD'))
+		return flag_on(MM_REGION_NORTH_CLEARED) and flag_off(MM_REGION_NORTH_CURSED) and setting('regionState', 'dungeonBeaten') and event('BOSS_GOHT') or event('CLEAR_STATE_SNOWHEAD')
 	end
 
 	function is_swamp_poisoned()
@@ -1615,7 +1610,7 @@ function _mm_logic()
 	end
 
 	function is_swamp_cleared()
-		return flag_on(MM_REGION_SWAMP_CLEARED) and flag_off(MM_REGION_SWAMP_CURSED) and (setting('erBoss', 'none') and setting('regionState', 'dungeonBeaten') and event('BOSS_ODOLWA') or event('CLEAR_STATE_WOODFALL'))
+		return flag_on(MM_REGION_SWAMP_CLEARED) and flag_off(MM_REGION_SWAMP_CURSED) and setting('regionState', 'dungeonBeaten') and event('BOSS_ODOLWA') or event('CLEAR_STATE_WOODFALL')
 	end
 
 	function is_ocean_cursed()
@@ -1623,7 +1618,7 @@ function _mm_logic()
 	end
 
 	function is_ocean_cleared()
-		return flag_on(MM_REGION_OCEAN_CLEARED) and flag_off(MM_REGION_OCEAN_CURSED) and (setting('erBoss', 'none') and setting('regionState', 'dungeonBeaten') and event('BOSS_GYORG') or event('CLEAR_STATE_GREAT_BAY'))
+		return flag_on(MM_REGION_OCEAN_CLEARED) and flag_off(MM_REGION_OCEAN_CURSED) and setting('regionState', 'dungeonBeaten') and event('BOSS_GYORG') or event('CLEAR_STATE_GREAT_BAY')
 	end
 
 	function is_valley_cursed()
@@ -1631,7 +1626,7 @@ function _mm_logic()
 	end
 
 	function is_valley_cleared()
-		return flag_on(MM_REGION_VALLEY_CLEARED) and flag_off(MM_REGION_VALLEY_CURSED) and (setting('erBoss', 'none') and setting('regionState', 'dungeonBeaten') and event('BOSS_TWINMOLD') or event('CLEAR_STATE_IKANA'))
+		return flag_on(MM_REGION_VALLEY_CLEARED) and flag_off(MM_REGION_VALLEY_CURSED) and setting('regionState', 'dungeonBeaten') and event('BOSS_TWINMOLD') or event('CLEAR_STATE_IKANA')
 	end
 
 	function is_child()
@@ -2135,11 +2130,7 @@ function _mm_logic()
 		return setting('moonCrash', 'cycle') or can_play_time() or (event('MAJORA') and trick('MM_MAJORA_LOGIC') and (not is_goal_triforce()))
 	end
 
-	function can_reset_time_dungeon()
-		return cond(setting('erMoon'), (trick('MM_MAJORA_LOGIC') and event('MAJORA') and (not is_goal_triforce()) or setting('moonCrash', 'cycle')) and (before(NIGHT3_AM_12_00) or can_use_farore() or setting('autoInvert', 'always')) or can_play_time(), can_reset_time())
-	end
-
-	function can_reset_time_on_moon()
+    function can_reset_time_on_moon()
 		return can_play_time() or (event('MAJORA') and trick('MM_MAJORA_LOGIC') and (not is_goal_triforce()))
 	end
 
@@ -2424,11 +2415,7 @@ function _mm_logic()
 	end
 
 	function er_enabled()
-		return setting('entrance', 'dungeon_major') or setting('entrance', 'dungeon_minor') or setting('entrance', 'gc_castle') or setting('entrance', 'gc_tower') or setting('entrance', 'moon') or setting('entrance', 'sh') or setting('entrance', 'pf') or setting('entrance', 'btw') or setting('entrance', 'ic') or setting('entrance', 'ss') or setting('entrance', 'overworld') or setting('entrance', 'market') or setting('entrance', 'sc') or setting('entrance', 'grotto') or setting('entrance', 'interior_most') or setting('entrance', 'Interior_extra') or setting('entrance', 'tele') or setting('entrance', 'gameswitch') or setting('entrance', 'Boss') or setting('entrance', 'child') or setting('entrance', 'adult') or setting('entrance', 'wm') or setting('entrance', 'song_oot') or setting('entrance', 'song_mm') or setting('entrance', 'ow')
-	end
-
-	function dungeon_er()
-		return setting('erMajorDungeons') or setting('erSpiderHouses') or setting('erBeneathWell') or setting('erPirateFortress') or setting('erSecretShrine') or setting('erIkanaCastle') or (setting('erDungeons', 'full') and (setting('erMinorDungeons') or setting('erGanonCastle') or setting('erGanonTower')))
+		return setting('entrance', 'dungeon_major') or setting('entrance', 'dungeon_minor') or setting('entrance', 'moon') or setting('entrance', 'sh') or setting('entrance', 'pf') or setting('entrance', 'btw') or setting('entrance', 'ic') or setting('entrance', 'ss') or setting('entrance', 'overworld') or setting('entrance', 'sc') or setting('entrance', 'grotto') or setting('entrance', 'interior_most') or setting('entrance', 'Interior_extra') or setting('entrance', 'tele') or setting('entrance', 'gameswitch') or setting('entrance', 'Boss') or setting('entrance', 'wm') or setting('entrance', 'song_mm') or setting('entrance', 'ow')
 	end
 
 	function soul_enemy(x)
@@ -3298,12 +3285,12 @@ function _mm_logic()
             ["Clock Tower Platform"] = function () return false end,
         },
         ["locations"] = {
-            ["Clock Tower Roof Skull Kid Ocarina"] = function () return cond(setting('shufflePotsMm', 'none'), has('MASK_DEKU') and (has('MAGIC_UPGRADE') or has('SHARED_MAGIC_UPGRADE')) or has_weapon_range(), has_weapon_range()) and (can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle')) end,
-            ["Clock Tower Roof Skull Kid Song of Time"] = function () return cond(setting('shufflePotsMm', 'none'), has('MASK_DEKU') and (has('MAGIC_UPGRADE') or has('SHARED_MAGIC_UPGRADE')) or has_weapon_range(), has_weapon_range()) and (can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle')) end,
-            ["Clock Tower Roof Pot 1"] = function () return can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle') end,
-            ["Clock Tower Roof Pot 2"] = function () return can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle') end,
-            ["Clock Tower Roof Pot 3"] = function () return can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle') end,
-            ["Clock Tower Roof Pot 4"] = function () return can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle') end,
+            ["Clock Tower Roof Skull Kid Ocarina"] = function () return cond(setting('shufflePotsMm', 'none'), has('MASK_DEKU') and (has('MAGIC_UPGRADE') or has('SHARED_MAGIC_UPGRADE')) or has_weapon_range(), has_weapon_range()) and (can_play_time() or event('MAJORA')) or setting('moonCrash', 'cycle') end,
+            ["Clock Tower Roof Skull Kid Song of Time"] = function () return cond(setting('shufflePotsMm', 'none'), has('MASK_DEKU') and (has('MAGIC_UPGRADE') or has('SHARED_MAGIC_UPGRADE')) or has_weapon_range(), has_weapon_range()) and (can_play_time() or event('MAJORA')) or setting('moonCrash', 'cycle') end,
+            ["Clock Tower Roof Pot 1"] = function () return can_play_time() or event('MAJORA') or setting('moonCrash', 'cycle') end,
+            ["Clock Tower Roof Pot 2"] = function () return can_play_time() or event('MAJORA') or setting('moonCrash', 'cycle') end,
+            ["Clock Tower Roof Pot 3"] = function () return can_play_time() or event('MAJORA') or setting('moonCrash', 'cycle') end,
+            ["Clock Tower Roof Pot 4"] = function () return can_play_time() or event('MAJORA') or setting('moonCrash', 'cycle') end,
         },
         ["age_change"] = false,
     },
@@ -4060,7 +4047,7 @@ function _mm_logic()
     ["Clock Town Near Clock Tower"] = {
         ["exits"] = {
             ["GLOBAL"] = function () return true end,
-            ["Clock Tower"] = function () return cond(setting('erIndoorsGameLinks'), true) end,
+            ["Clock Tower"] = function () return not setting('entrance', 'gameswitch') end,
             ["Clock Town South"] = function () return true end,
             ["Clock Tower Platform"] = function () return true end,
             ["Owl Clock Town"] = function () return true end,
@@ -4560,7 +4547,7 @@ function _mm_logic()
     ["Stock Pot Inn"] = {
         ["events"] = {
             ["SETUP_MEET"] = function () return soul_anju() and has('MASK_KAFEI') and between(DAY1_PM_01_45, NIGHT1_PM_09_00) end,
-            ["MEET_ANJU"] = function () return soul_anju() and event('SETUP_MEET') and cond(setting('erIndoorsExtra'), between(NIGHT1_AM_12_00, DAY2_AM_06_00), between(NIGHT1_AM_12_00, DAY2_AM_06_00) and (has('ROOM_KEY') or has('MASK_DEKU') or has_hover_boots() or event('SPI_ROOF_FARORE') or trick('MM_STOCK_POT_WAIT'))) end,
+            ["MEET_ANJU"] = function () return soul_anju() and event('SETUP_MEET') and (has('ROOM_KEY') or has('MASK_DEKU') or has_hover_boots() or event('SPI_ROOF_FARORE') or trick('MM_STOCK_POT_WAIT')) end,
             ["DELIVER_PENDANT"] = function () return soul_anju() and has('PENDANT_OF_MEMORIES') and (between(DAY2_AM_06_00, NIGHT2_PM_09_00) or between(DAY3_AM_06_00, DAY3_AM_11_30)) end,
             ["BUGS"] = function () return true end,
             ["FISH"] = function () return true end,
@@ -4578,7 +4565,7 @@ function _mm_logic()
             ["Stock Pot Inn Couple's Mask"] = function () return event('SUN_MASK') and event('DELIVER_PENDANT') and event('MEET_ANJU') and after(NIGHT3_AM_04_00) end,
             ["Stock Pot Inn Grandma HP 1"] = function () return soul_old_hag() and rusty_key(RUSTY_GRANDMA) and has('MASK_ALL_NIGHT') and grandma_story_1() end,
             ["Stock Pot Inn Grandma HP 2"] = function () return soul_old_hag() and rusty_key(RUSTY_GRANDMA) and has('MASK_ALL_NIGHT') and grandma_story_2() end,
-            ["Stock Pot Inn ??? HP"] = function () return soul_npc(SOUL_NPC_TOILET_HAND) and cond(setting('erIndoorsExtra'), has_paper() and (clock_night3() or has('ROOM_KEY') or has('MASK_DEKU') or has_hover_boots() or event('SPI_ROOF_FARORE') or trick('MM_STOCK_POT_WAIT'))) end,
+            ["Stock Pot Inn ??? HP"] = function () return soul_npc(SOUL_NPC_TOILET_HAND) and has_paper() and (clock_night3() or has('ROOM_KEY') or has('MASK_DEKU') or has_hover_boots() or event('SPI_ROOF_FARORE') or trick('MM_STOCK_POT_WAIT')) end,
             ["Stock Pot Inn Wonder Item 1"] = function () return has_mask_zora() and has_magic() end,
             ["Stock Pot Inn Wonder Item 2"] = function () return has_mask_zora() and has_magic() end,
             ["Stock Pot Inn Wonder Item 3"] = function () return has_mask_zora() and has_magic() end,
@@ -5545,7 +5532,7 @@ function _mm_logic()
     },
     ["Tourist Information"] = {
         ["events"] = {
-            ["BOAT_RIDE"] = function () return (soul_npc(SOUL_NPC_TOURIST_CENTER) and event('PICTURE_SWAMP') or (event('KOUME') and (not setting('erIndoorsExtra') or can_use_wallet(1)))) and is_swamp_poisoned() end,
+            ["BOAT_RIDE"] = function () return (soul_npc(SOUL_NPC_TOURIST_CENTER) and event('PICTURE_SWAMP') or (event('KOUME') or can_use_wallet(1))) and is_swamp_poisoned() end,
         },
         ["exits"] = {
             ["Swamp Front"] = function () return not setting('entrance', 'Interior_extra') end,
@@ -6245,8 +6232,8 @@ function _mm_logic()
             ["RUPEES"] = function () return can_use_light_arrows() and (soul_tektite() or soul_wolfos() or (can_break_snowballs() and soul_enemy(SOUL_ENEMY_SNAPPER))) or is_spring() end,
         },
         ["exits"] = {
-            ["Mountain Village"] = function () return not setting('entrance', 'overworld') end,
-            ["Goron Village"] = function () return not setting('entrance', 'overworld') end,
+            ["Mountain Village"] = function () return not setting('entrance', 'unused_on') end,
+            ["Goron Village"] = function () return not setting('entrance', 'unused_on') end,
             ["Near Goron Race"] = function () return has_mask_goron() or scarecrow_hookshot() or short_hook_anywhere() end,
             ["Near Ramp Grotto"] = function () return has_mask_goron() or short_hook_anywhere() end,
             ["Twin Islands Frozen Grotto"] = function () return (is_spring() or (is_winter() and (can_use_fire_short_range() or has_hot_water_mtn() or has_hot_water_er() or has_hot_water_farore() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE'))))) and has_Shovel() and not setting('entrance', 'grotto') end,
@@ -6343,15 +6330,15 @@ function _mm_logic()
             ["Twin Islands"] = function () return not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
-            ["Twin Islands Frozen Grotto Chest"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
-            ["Twin Islands Frozen Grotto Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
+            ["Twin Islands Frozen Grotto Chest"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL')) end,
+            ["Twin Islands Frozen Grotto Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL')) end,
             ["Twin Islands Frozen Grotto Enter"] = function () return true end,
         },
         ["age_change"] = false,
     },
     ["Near Goron Race"] = {
         ["events"] = {
-            ["TRIAL_BOULDER"] = function () return can_use_keg() or (setting('erOverworld', 'none') and event('POWDER_KEG_TRIAL')) end,
+            ["TRIAL_BOULDER"] = function () return can_use_keg() and event('POWDER_KEG_TRIAL') end,
         },
         ["exits"] = {
             ["Twin Islands"] = function () return true end,
@@ -6359,7 +6346,7 @@ function _mm_logic()
             ["Near Ramp Grotto"] = function () return true end,
         },
         ["locations"] = {
-            ["Goron Race Entry"] = function () return (event('TRIAL_BOULDER') or (short_hook_anywhere() and trick('MM_HARD_HOOKSHOT'))) and not setting('entrance', 'interior_most') end,
+            ["Goron Race Entry"] = function () return (event('TRIAL_BOULDER') or (short_hook_anywhere() and trick('MM_HARD_HOOKSHOT'))) end,
             },
         ["age_change"] = false,
     },
@@ -6369,7 +6356,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Twin Islands"] = function () return true end,
-            ["Twin Islands Ramp Grotto"] = function () return (stone_of_agony() and (has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none')) or can_hammer())) and has_Shovel() and not setting('entrance', 'grotto') end,
+            ["Twin Islands Ramp Grotto"] = function () return (stone_of_agony() and (has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL')) or can_hammer())) and has_Shovel() and not setting('entrance', 'grotto') end,
         },
         ["locations"] = {
             ["Twin Islands Small Snowball Ramp 1"] = function () return is_winter() end,
@@ -6390,7 +6377,7 @@ function _mm_logic()
             ["RUPEES"] = function () return can_break_snowballs() or (can_use_light_arrows() and soul_tektite()) end,
         },
         ["exits"] = {
-            ["Twin Islands"] = function () return not setting('entrance', 'overworld') end,
+            ["Twin Islands"] = function () return not setting('entrance', 'unused_on') end,
             ["Front of Lone Peak Shrine"] = function () return is_winter() end,
             ["Goron Shrine"] = function () return (soul_goron() and first_day() or has_mask_goron() or can_hammer()) and not setting('entrance', 'interior_most') end,
         },
@@ -6421,7 +6408,7 @@ function _mm_logic()
             ["Goron Village Small Snowball 10"] = function () return is_winter() end,
             ["Goron Village Small Snowball 11"] = function () return is_winter() end,
             ["Goron Village Small Snowball 12"] = function () return is_winter() end,
-            ["Goron Shrine Entry"] = function () return (soul_goron() and first_day() or has_mask_goron() or can_hammer()) and not setting('entrance', 'interior_most') end,
+            ["Goron Shrine Entry"] = function () return soul_goron() and first_day() or has_mask_goron() or can_hammer() end,
         },
         ["age_change"] = false,
     },
@@ -7328,7 +7315,7 @@ function _mm_logic()
             ["Zora Cape Trees"] = function () return true end,
             ["Zora Cape Rocks"] = function () return true end,
             ["Zora Cape Boulders"] = function () return can_break_boulders() end,
-            ["Zora Cape Large Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
+            ["Zora Cape Large Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL')) end,
             ["Zora Cape Gossip Stone"] = function () return true end,
             ["Zora Cape Gossip Fairy"] = function () return can_play_sun() or can_play_healing or can_play_epona() or can_play_time() end,
             ["Zora Cape Gossip Big Fairy"] = function () return can_play_storms() end,
@@ -7381,7 +7368,7 @@ function _mm_logic()
     },
     ["Great Bay Near Fairy Fountain"] = {
         ["exits"] = {
-            ["Zora Cape"] = function () return has_explosives() or trick_keg_explosives() or (not setting('erIndoorsMajor')) end,
+            ["Zora Cape"] = function () return has_explosives() or trick_keg_explosives() end,
             ["Great Bay Fairy Fountain"] = function () return not setting('entrance', 'interior_most') end,
         },
         ["age_change"] = false,
@@ -7818,7 +7805,7 @@ function _mm_logic()
             ["DAMPE_BIG_POE"] = function () return soul_dampe() and soul_poe() and can_kill_big_poe() and is_night3() end,
         },
         ["exits"] = {
-            ["Ikana Graveyard"] = function () return rusty_key(RUSTY_DAMPE) and not setting('entrance', 'Interior_extra') end,
+            ["Ikana Graveyard"] = function () return rusty_key(RUSTY_DAMPE) and not setting('entrance', 'unused_on') end,
             ["Beneath The Graveyard Night 3 Wallmaster"] = function () return soul_wallmaster() end,
         },
         ["locations"] = {
@@ -7852,7 +7839,7 @@ function _mm_logic()
             ["Ikana Valley"] = function () return not setting('entrance', 'overworld') end,
         },
         ["locations"] = {            
-            ["Road to Ikana Large Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL') and setting('erOverworld', 'none') and setting('erGrottos', 'none')) end,
+            ["Road to Ikana Large Boulders"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL')) end,
             ["Road to Ikana Up"] = function () return true end,
         },
         ["age_change"] = false,

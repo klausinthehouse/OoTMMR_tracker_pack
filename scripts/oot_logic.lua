@@ -4843,8 +4843,8 @@ function _oot_logic()
             ["Haunted Wasteland End"] = function () return has('entrance_overworld_wasteland') end,
         },
         ["locations"] = {            
-            ["SPAWN A"] = function () return is_adult end,
-            ["SPAWN C"] = function () return is_child()end,
+            ["SPAWN A"] = function () return setting('entrance', 'child') end,
+            ["SPAWN C"] = function () return setting('entrance', 'child') end,
         },
         ["age_change"] = false,
     },
