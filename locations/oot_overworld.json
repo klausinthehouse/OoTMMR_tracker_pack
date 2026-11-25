@@ -1152,14 +1152,16 @@
               {
                 "name": "Give Cojiro",
                 "access_rules": [
-                  "$oot|Lost Woods Odd Mushroom"
+                  "$oot|Lost Woods Odd Mushroom",
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Give Odd Potion",
                 "access_rules": [
-                  "$oot|Lost Woods Poacher's Saw"
+                  "$oot|Lost Woods Poacher's Saw",
+                  "{OOT_gossip_stone}"
                 ],
                 "item_count": 1
               },
@@ -5328,21 +5330,24 @@
                   {
                     "name": "Biggoron Broken Sword",
                     "access_rules": [
-                      "$oot|Death Mountain Trail Prescription"
+                      "$oot|Death Mountain Trail Prescription",
+                      "{OOT_gossip_stone}"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Biggoron Eyedrops",
                     "access_rules": [
-                      "$oot|Death Mountain Trail Claim Check"
+                      "$oot|Death Mountain Trail Claim Check",
+                      "{OOT_gossip_stone}"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Biggoron Claim Check",
                     "access_rules": [
-                      "$oot|Death Mountain Trail Biggoron Sword"
+                      "$oot|Death Mountain Trail Biggoron Sword",
+                      "{OOT_gossip_stone}"
                     ],
                     "item_count": 1
                   },
@@ -5475,7 +5480,7 @@
                 "item_count": 5
               },
               {
-                "name": "GC Maze Silver Boulders",                    
+                "name": "GC Maze Silver Boulders (x29)",                    
                 "access_rules": [
                   "$oot|Goron City Silver Boulders"
                 ],
@@ -5484,7 +5489,7 @@
                 ],
                 "chest_unopened_img": "images/system/SilverBoulder.png",
                 "chest_opened_img": "images/system/SilverBoulder_grey.png",
-                "item_count": 29
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -5630,7 +5635,7 @@
               {
                 "map": "oot",
                 "x": 2153,
-                "y": 185
+                "y": 195
               }
             ]
           },
@@ -7328,7 +7333,7 @@
               },
               {
                 "name": "ZR Timetravel Frogs",
-                "short_name": "Play SoT",
+                "short_name": "Play Time",
                 "access_rules": [
                   "$oot|Zora River Frogs Song of Time"
                 ],                
@@ -7428,8 +7433,8 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1712,
-                "y": 704
+                "x": 1725,
+                "y": 710
               }
             ]
           },

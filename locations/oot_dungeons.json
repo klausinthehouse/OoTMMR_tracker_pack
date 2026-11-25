@@ -8165,19 +8165,6 @@
         "item_count": 2
       },
       {
-        "name": "Climb Wall Hearts",
-        "short_name": "Wall Hearts",
-        "access_rules": [
-          "$oot|Spirit Temple Heart 1"
-        ],
-        "visibility_rules": [
-          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_false"
-        ],
-        "chest_unopened_img": "images/heart.png",
-        "chest_opened_img": "images/heart_grey.png",
-        "item_count": 2
-      },
-      {
         "name": "Child Climb Pot",
         "short_name": "Child Climb",
         "access_rules": [
@@ -8500,6 +8487,19 @@
           "setting_mq_SpiritTemple_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Shifting Wall Hearts",
+        "short_name": "Over Shift-Wall",
+        "access_rules": [
+          "$oot|Spirit Temple Heart 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleFreeHeartsOot_dungeon,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/heart.png",
+        "chest_opened_img": "images/heart_grey.png",
+        "item_count": 2
       },
       {
         "name": "Songevent Boss Key Chest",

@@ -15390,7 +15390,7 @@
                 "map": "termina_er",
                     "size": 10,
                     "visibility_rules": [
-                      "setting_entrance_grotto"
+                      "setting_entrance_unused_on"
                     ],
                 "x": 805,
                 "y": 145
@@ -16249,7 +16249,7 @@
                   {
                     "name": "Grottos",
                     "visibility_rules": [
-                      "setting_entrance_grotto"
+                      "setting_mixed_grotto"
                     ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_grottos",
@@ -16310,7 +16310,7 @@
                   {
                     "name": "Grottos",
                     "visibility_rules": [
-                      "setting_entrance_grotto"
+                      "setting_mixed_grotto"
                     ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_grottos",
@@ -16420,6 +16420,9 @@
                 "sections": [              
                  {
                     "name": "Dungeons",
+                    "visibility_rules": [
+                      "setting_mixed_dungeon"
+                   ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_dungeon",
                     "item_count": 1               
@@ -16453,9 +16456,6 @@
                   },
                   {
                    "name": "overworld",
-                    "visibility_rules": [
-                      "setting_mixed_overworld"
-                   ],
                     "capture_item": true,
                     "capture_item_layout": "tracker_capture_overworld",
                     "item_count": 1               
@@ -17003,6 +17003,68 @@
                   }
                 ]
               },
+              {
+                "name": "Ikana Castle -> Boss",
+                "access_rules": [
+                  "$mm|Ancient Castle of Ikana Boss Pot 1"
+                ],
+                "short_name": "Castle -> Boss",
+                "sections": [              
+                 {
+                    "name": "Dungeons",                
+                   "visibility_rules": [
+                      "setting_mixed_dungeon"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_dungeon",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Grottos",
+                    "visibility_rules": [
+                      "setting_mixed_grotto"
+                    ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_grottos",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "Bosses",
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_boss",
+                    "item_count": 1               
+                  },
+                  {
+                    "name": "Interior",                   
+                    "visibility_rules": [
+                      "setting_mixed_interior"
+                   ],                     
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_interior",
+                    "item_count": 1               
+                  },
+                  {
+                   "name": "overworld",
+                    "visibility_rules": [
+                      "setting_mixed_overworld"
+                   ],
+                    "capture_item": true,
+                    "capture_item_layout": "tracker_capture_overworld",
+                    "item_count": 1               
+                 }                          
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "termina_er",
+                   "visibility_rules": [
+                     "setting_entrance_Boss",
+                     "setting_entrance_ic"
+                    ],
+                            "x": 905,
+                            "y": 435
+                          }
+                        ]
+                      },
           {
             "name": "Ikana Castle Left Roof Hole -> Ikana Castle",
                 "access_rules": [
@@ -17358,7 +17420,7 @@
                 "access_rules": [
                   "$mm|Stone Tower Temple Boss Entry"
                 ],
-                "short_name": "ST -> Inv. STT",
+                "short_name": "Inv. STT -> Boss",
                 "sections": [              
                  {
                     "name": "Dungeons",                
