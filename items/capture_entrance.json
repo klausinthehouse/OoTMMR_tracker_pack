@@ -71,6 +71,12 @@
       "img": "images/entrance_boss_twinmold.png",
       "codes": "MM_entrance_boss_twinmold"
     },
+    {
+      "name": "MM Igos du Ikana",
+      "type": "toggle",
+      "img": "images/entrance_boss_igos.png",
+      "codes": "MM_entrance_boss_igos"
+    },
 
     {
       "name": "OOT Deku Tree",
