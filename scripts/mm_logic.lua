@@ -2608,7 +2608,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Ancient Castle of Ikana Behind Block"] = function () return true end,
-            ["Ancient Castle of Ikana Throne Room"] = function () return true end,
+            ["Ancient Castle of Ikana Throne Room"] = function () return not setting('entrance', 'boss') end,
         },
         ["locations"] = {
             ["Ancient Castle of Ikana Boss Pot 1"] = function () return true end,
@@ -3686,7 +3686,8 @@ function _mm_logic()
             ["Woodfall Temple Boss"] = function () return has('entrance_boss_odolwa') end,
             ["Snowhead Temple Boss"] = function () return has('entrance_boss_goht') end,
             ["Great Bay Temple Boss"] = function () return has('entrance_boss_gyorg') end,
-            ["Stone Tower Temple Boss"] = function () return has('entrance_boss_twinmold') end,
+            ["Stone Tower Temple Boss"] = function () return has('entrance_boss_twinmold') end,            
+            ["Ancient Castle of Ikana Throne Room"] = function () return has('entrance_boss_igos') end,
             ["Deku Palace Cage"] = function () return has('entrance_interior_dp_monkey') end,
             ["Deku Palace Throne"] = function () return has('entrance_interior_dp_throne') end,
             ["Swamp Archery"] = function () return has('entrance_interior_ss_shoot') end,
