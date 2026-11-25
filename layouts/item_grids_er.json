@@ -168,6 +168,7 @@
                     "MM_entrance_boss_odolwa",
                     "MM_entrance_boss_goht",
                     "MM_entrance_boss_gyorg",
+                    "MM_entrance_boss_igos",
                     "MM_entrance_boss_twinmold"       
                 ]
             ]
@@ -185,37 +186,21 @@
                     "OOT_entrance_interior_kf_kia",
                     "OOT_entrance_interior_kf_mido",
                     "OOT_entrance_interior_kf_saria",
-                    "OOT_entrance_interior_kf_shop",
                     "OOT_entrance_interior_kf_twin"                    
                 ],
                 [
                     "OOT_entrance_interior_hm_guard",
-                    "OOT_entrance_interior_hm_bazaar",
-                    "OOT_entrance_interior_hm_potion",
                     "OOT_entrance_interior_hm_shoot",
                     "OOT_entrance_interior_hm_bowl",
-                    "OOT_entrance_interior_hm_chest"
-                    
-                ],
-                [                    
+                    "OOT_entrance_interior_hm_chest",
                     "OOT_entrance_interior_hm_alley",
-                    "OOT_entrance_interior_hm_bomb",
                     "OOT_entrance_interior_hm_doglady",
-                    "OOT_entrance_interior_hm_tot",
-                    "OOT_entrance_interior_cg_fairy",
-                    "OOT_entrance_interior_ogc_fairy"                      
+                    "OOT_entrance_interior_hm_tot"                    
                 ],
-                [
-                    "OOT_entrance_interior_llr_house",
-                    "OOT_entrance_interior_llr_silo",
-                    "OOT_entrance_interior_llr_stable"
-                ],
-                [                    
-                    "OOT_entrance_interior_kak_bazaar",
+                [               
                     "OOT_entrance_interior_kak_house",
                     "OOT_entrance_interior_kak_impa",
                     "OOT_entrance_interior_kak_impa_back",
-                    "OOT_entrance_interior_kak_potion",
                     "OOT_entrance_interior_kak_shoot",
                     "OOT_entrance_interior_kak_skull",
                     "OOT_entrance_interior_kak_windmill",
@@ -223,91 +208,101 @@
                     "OOT_entrance_interior_gy_hut"
                 ],
                 [
+                    "OOT_entrance_interior_llr_house",
+                    "OOT_entrance_interior_llr_silo",
+                    "OOT_entrance_interior_llr_stable",
+                    "OOT_entrance_interior_lh_fish",
+                    "OOT_entrance_interior_lh_lab",                    
+                    "OOT_entrance_interior_gv_tent"                       
+                ],
+                [
+                    "OOT_entrance_interior_hm_bomb",
+                    "OOT_entrance_interior_kf_shop",
+                    "OOT_entrance_interior_hm_bazaar",
+                    "OOT_entrance_interior_hm_potion",     
+                    "OOT_entrance_interior_kak_bazaar",
+                    "OOT_entrance_interior_kak_potion",
+                    "OOT_entrance_interior_gc_shop",
+                    "OOT_entrance_interior_zd_shop"                    
+                ],
+                [                
+                    "OOT_entrance_interior_cg_fairy",
                     "OOT_entrance_interior_dm_fairy",
                     "OOT_entrance_interior_dmc_fairy",
-                    "OOT_entrance_interior_gc_shop"
-                ],
-                [
-                    "OOT_entrance_interior_lh_fish",
-                    "OOT_entrance_interior_lh_lab",
-                    "OOT_entrance_interior_zd_shop",
-                    "OOT_entrance_interior_zf_fairy"
-                ],
-                [
+                    "OOT_entrance_interior_zf_fairy", 
                     "OOT_entrance_interior_dc_fairy",
-                    "OOT_entrance_interior_gv_tent"
+                    "OOT_entrance_interior_ogc_fairy"
                 ],
                 [
                     "MM_entrance_interior_ss_shoot",
-                    "MM_entrance_interior_ss_shop",
-                    "MM_entrance_interior_ss_touri"
-                ],
-                [
+                    "MM_entrance_interior_ss_touri",
                     "MM_entrance_interior_dp_monkey",
                     "MM_entrance_interior_dp_throne",
-                    "MM_entrance_interior_dp_race",
-                    "MM_entrance_interior_wf_fairy"
+                    "MM_entrance_interior_dp_race"
                 ],
-                [                    
-                    "MM_entrance_interior_ct_bomb",
-                    "MM_entrance_interior_ct_shop",
-                    "MM_entrance_interior_ct_curio",
-                    "MM_entrance_interior_ct_post",
-                    "MM_entrance_interior_ct_sword",                    
-                    "MM_entrance_interior_ct_lottery",
-                    "MM_entrance_interior_ct_fairy",
-                    "MM_entrance_interior_ct_kafei",
-                    "MM_entrance_interior_kafei_tele"
-                    
-                ],
-                [
+                [          
                     "MM_entrance_interior_ct_mayor",
                     "MM_entrance_interior_ct_milk",
                     "MM_entrance_interior_ct_chest",                                 
                     "MM_entrance_interior_ct_hd",
                     "MM_entrance_interior_ct_inn",
-                    "MM_entrance_interior_ct_shoot",
-                    "MM_entrance_interior_tf_obs",
-                    "MM_entrance_interior_obs_tele"
+                    "MM_entrance_interior_ct_shoot",  
+                    "MM_entrance_interior_ct_post",
+                    "MM_entrance_interior_ct_sword",                    
+                    "MM_entrance_interior_ct_lottery",
+                    "MM_entrance_interior_ct_kafei",
+                    "MM_entrance_interior_kafei_tele"
                 ],
-                [
+                [   
+                    "MM_entrance_interior_tf_obs",
+                    "MM_entrance_interior_obs_tele",
                     "MM_entrance_interior_rr_cucco",
                     "MM_entrance_interior_rr_dog",
                     "MM_entrance_interior_rr_house",
                     "MM_entrance_interior_rr_stable"
+                    
                 ],
-                [                                      
+                [
                     "MM_entrance_interior_mv_smith",
                     "MM_entrance_interior_mv_gy",
                     "MM_entrance_interior_ti_race",
                     "MM_entrance_interior_gv_island",
-                    "MM_entrance_interior_gv_shrine",
-                    "MM_entrance_interior_gs_shop",                                     
-                    "MM_entrance_interior_sh_fairy"                    
+                    "MM_entrance_interior_gv_shrine"
                 ],
                 [
                     "MM_entrance_interior_gb_fisher",
                     "MM_entrance_interior_gb_lab",                    
-                    "MM_entrance_interior_zc_beaver",
-                    "MM_entrance_interior_zc_fairy",                    
+                    "MM_entrance_interior_zc_beaver",                   
                     "MM_entrance_interior_pf_sewer",
                     "MM_entrance_interior_pf_lookout",
                     "MM_entrance_interior_pf_tele"
                 ],
                 [
-                    "MM_entrance_interior_zh_shop",
                     "MM_entrance_interior_zh_tijo",
                     "MM_entrance_interior_zh_japas",
                     "MM_entrance_interior_zh_evan", 
-                    "MM_entrance_interior_zh_lulu"                   
-                    
+                    "MM_entrance_interior_zh_lulu"    
                 ],
-                [
-                    "MM_entrance_interior_ic_fairy",
+                [   
                     "MM_entrance_interior_ic_music",
                     "MM_entrance_interior_ic_poe",
-                    "MM_entrance_interior_ic_spring"
-                ]
+                    "MM_entrance_interior_ic_spring"                   
+                ],                      
+                [       
+                    "MM_entrance_interior_ct_bomb",
+                    "MM_entrance_interior_ct_shop",
+                    "MM_entrance_interior_ct_curio", 
+                    "MM_entrance_interior_ss_shop",                 
+                    "MM_entrance_interior_gs_shop", 
+                    "MM_entrance_interior_zh_shop" 
+                ],
+                [   
+                    "MM_entrance_interior_ct_fairy",
+                    "MM_entrance_interior_wf_fairy",                      
+                    "MM_entrance_interior_sh_fairy",
+                    "MM_entrance_interior_zc_fairy",           
+                    "MM_entrance_interior_ic_fairy"
+                ]    
             ]
         }
     },
@@ -326,13 +321,13 @@
                     "OOT_entrance_overworld_sfm_back"                   
                 ],
                 [
-                    "OOT_entrance_overworld_cg",
                     "OOT_entrance_overworld_hf",
                     "OOT_entrance_overworld_llr",
                     "OOT_entrance_overworld_market",
                     "OOT_entrance_overworld_market_alley",
                     "OOT_entrance_overworld_market_front",
-                    "OOT_entrance_overworld_market_tot"                        
+                    "OOT_entrance_overworld_market_tot",
+                    "OOT_entrance_overworld_cg"                      
                 ],
                 [
                     "OOT_entrance_overworld_kak",
@@ -342,45 +337,45 @@
                 [
                     "OOT_entrance_overworld_dm_path",
                     "OOT_entrance_overworld_dm_smt",
-                    "OOT_entrance_overworld_dmc_lwr",
-                    "OOT_entrance_overworld_dmc_upr",
                     "OOT_entrance_overworld_gc",
                     "OOT_entrance_overworld_gc_back",
-                    "OOT_entrance_overworld_gc_sc"
+                    "OOT_entrance_overworld_gc_sc",
+                    "OOT_entrance_overworld_dmc_lwr",
+                    "OOT_entrance_overworld_dmc_upr"
                 ],
                 [
                     "OOT_entrance_overworld_lh",
                     "OOT_entrance_overworld_lh_pond",
+                    "OOT_entrance_overworld_zr",
+                    "OOT_entrance_overworld_zr_back",
                     "OOT_entrance_overworld_zd",
                     "OOT_entrance_overworld_zd_back",
-                    "OOT_entrance_overworld_zf",
-                    "OOT_entrance_overworld_zr",
-                    "OOT_entrance_overworld_zr_back"
+                    "OOT_entrance_overworld_zf"
                 ],
                 [
-                    "OOT_entrance_overworld_dc",
-                    "OOT_entrance_overworld_gf",
-                    "OOT_entrance_overworld_gv_back",
                     "OOT_entrance_overworld_gv_front",
-                    "OOT_entrance_overworld_wasteland" 
+                    "OOT_entrance_overworld_gv_back",
+                    "OOT_entrance_overworld_gf",
+                    "OOT_entrance_overworld_wasteland" ,
+                    "OOT_entrance_overworld_dc"
                 ],
                 [
-                    "MM_entrance_overworld_dp",
                     "MM_entrance_overworld_ss",
                     "MM_entrance_overworld_ss_back",
                     "MM_entrance_overworld_ss_path",
-                    "MM_entrance_overworld_wf",
-                    "MM_entrance_overworld_wom"
+                    "MM_entrance_overworld_wom",
+                    "MM_entrance_overworld_dp",
+                    "MM_entrance_overworld_wf"
                 ],
                 [
-                    "MM_entrance_overworld_ct_e",
                     "MM_entrance_overworld_ct_n",
-                    "MM_entrance_overworld_ct_pool",
                     "MM_entrance_overworld_ct_s",
                     "MM_entrance_overworld_ct_w",
+                    "MM_entrance_overworld_ct_e",
+                    "MM_entrance_overworld_ct_pool",
                     "MM_entrance_overworld_tf",
-                    "MM_entrance_overworld_tf_n",
                     "MM_entrance_overworld_tf_obs",
+                    "MM_entrance_overworld_tf_n",
                     "MM_entrance_overworld_tf_w"
                 ],
                 [
@@ -390,14 +385,14 @@
                     "MM_entrance_overworld_rr"
                 ],
                 [
-                    "MM_entrance_overworld_gv",
-                    "MM_entrance_overworld_mv",
                     "MM_entrance_overworld_mv_path",
                     "MM_entrance_overworld_mv_path_back",
-                    "MM_entrance_overworld_sh",
+                    "MM_entrance_overworld_mv",
+                    "MM_entrance_overworld_ti",
+                    "MM_entrance_overworld_gv",
                     "MM_entrance_overworld_sh_path",
                     "MM_entrance_overworld_sh_path_back",
-                    "MM_entrance_overworld_ti"
+                    "MM_entrance_overworld_sh"
                 ],
                 [
                     "MM_entrance_overworld_gb",
@@ -408,12 +403,12 @@
                     "MM_entrance_overworld_zh_back"
                 ],
                 [
-                    "MM_entrance_overworld_ic_lwr",
-                    "MM_entrance_overworld_ic_upr",
                     "MM_entrance_overworld_ic_path_back",
                     "MM_entrance_overworld_ic_path_front",
                     "MM_entrance_overworld_ic_path_upr",
                     "MM_entrance_overworld_igy",
+                    "MM_entrance_overworld_ic_lwr",
+                    "MM_entrance_overworld_ic_upr",
                     "MM_entrance_overworld_st",
                     "MM_entrance_overworld_st_inv"
                 ]

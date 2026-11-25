@@ -3526,7 +3526,12 @@
     "type": "array",
     "orientation": "vertical",
     "item_margin": "1,2",
-    "content": [            
+    "content": [
+      {
+        "type": "item",
+        "item": "MM_RUSTY_OBSERVATORY",
+        "height": 16
+      },        
       {
         "type": "item",
         "item": "MM_RUSTY_GRAVE",
@@ -3645,11 +3650,6 @@
       {
         "type": "item",
         "item": "MM_RUSTY_MUSIC",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MM_RUSTY_OBSERVATORY",
         "height": 16
       },
       {
