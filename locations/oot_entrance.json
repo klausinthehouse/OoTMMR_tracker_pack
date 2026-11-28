@@ -7198,7 +7198,7 @@
                     "visibility_rules": [
                       "setting_entrance_overworld"
                    ],
-                        "x": 1650,
+                        "x": 1630,
                         "y": 340
                   }
                 ]
@@ -13172,9 +13172,9 @@
             ]
           },
           {
-            "name": "Zora River -> Storms Grotto",
+            "name": "Zora River -> Scrub Grotto",
                 "access_rules": [
-                  "$oot|Zora River Storms Grotto Enter"
+                  "$oot|Zora River Storms Grotto Entry"
                 ],
                 "short_name": "ZR -> ZR Storms",
                 "sections": [              
@@ -13233,9 +13233,9 @@
             ]
           },
           {
-            "name": "Storms Grotto -> Zora River",
+            "name": "Scrub Grotto -> Zora River",
                 "access_rules": [
-                  "$oot|Zora River Storms Grotto Entry"
+                  "$oot|Zora River Storms Grotto Enter"
                 ],
                 "short_name": "ZR Storms -> ZR",
                 "sections": [              
@@ -16532,12 +16532,12 @@
                 "capture_item_layout": "tracker_capture_overworld",
                 "item_count": 1               
               },
-                  {
-                   "name": "Warpsongs",                    
-                    "capture_item": true,
-                    "capture_item_layout": "tracker_capture_warp",
-                    "item_count": 1               
-                 }   
+              {
+                "name": "Warpsongs",                    
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_warp",
+                "item_count": 1               
+              }   
         ],
         "map_locations": [
           {

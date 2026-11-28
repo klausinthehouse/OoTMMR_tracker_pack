@@ -3169,7 +3169,7 @@
         "item_count": 1
       },
       {
-        "name": "Green Valve Room Pot 1",
+        "name": "Green Valve Room Pots",
         "access_rules": [
           "$mm|Great Bay Temple Pot Green Pipe 1 1"
         ],
@@ -3178,19 +3178,7 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
-        "item_count": 1
-      },
-      {
-        "name": "Green Valve Room Pots 2-4",
-        "access_rules": [
-          "$mm|Great Bay Temple Pot Green Pipe 1 2"
-        ],
-        "visibility_rules": [
-          "setting_shufflePotsMm_dungeon"
-        ],
-        "chest_unopened_img": "images/pot.png",
-        "chest_opened_img": "images/pot_grey.png",
-        "item_count": 3
+        "item_count": 4
       },
       {
         "name": "Green Valve Room Barrels",
@@ -3309,7 +3297,7 @@
       },
       {
         "name": "Seesaw Room Barrel",
-        "short_name": "Waterwheel Barrels",
+        "short_name": "Seesaw Room",
         "chest_unopened_img": "images/system/Barrel.png",
         "chest_opened_img": "images/system/Barrel_grey.png",
         "access_rules": [
