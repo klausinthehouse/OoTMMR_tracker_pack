@@ -233,13 +233,6 @@
                     "OOT_entrance_interior_dc_fairy",
                     "OOT_entrance_interior_ogc_fairy"
                 ],
-                [
-                    "MM_entrance_interior_ss_shoot",
-                    "MM_entrance_interior_ss_touri",
-                    "MM_entrance_interior_dp_monkey",
-                    "MM_entrance_interior_dp_throne",
-                    "MM_entrance_interior_dp_race"
-                ],
                 [          
                     "MM_entrance_interior_ct_mayor",
                     "MM_entrance_interior_ct_milk",
@@ -252,6 +245,13 @@
                     "MM_entrance_interior_ct_lottery",
                     "MM_entrance_interior_ct_kafei",
                     "MM_entrance_interior_kafei_tele"
+                ],
+                [
+                    "MM_entrance_interior_ss_shoot",
+                    "MM_entrance_interior_ss_touri",
+                    "MM_entrance_interior_dp_monkey",
+                    "MM_entrance_interior_dp_throne",
+                    "MM_entrance_interior_dp_race"
                 ],
                 [   
                     "MM_entrance_interior_tf_obs",
