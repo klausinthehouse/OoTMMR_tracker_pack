@@ -2234,7 +2234,7 @@ function _oot_logic()
 	end
 
 	function king_zora_moved()
-		return event('KING_ZORA_LETTER') or setting('zoraKing', 'open') or (setting('zoraKing', 'adult') and is_adult())
+		return event('KING_ZORA_LETTER') or setting('zoraKing', 'open') or (setting('zoraKing', 'adult') and is_adult()) or not soul_npc(SOUL_NPC_KING_ZORA)
 	end
 
 	function business_scrub(id)
@@ -2535,7 +2535,7 @@ function _oot_logic()
 	end
 
 	function evade_gerudo()
-		return can_use_bow() or can_hookshot() or has('GERUDO_CARD') or can_use_mask_stone()
+		return can_use_bow() or can_hookshot() or has('GERUDO_CARD') or can_use_mask_stone() or not soul_npc(SOUL_NPC_THIEVES)
 	end
 
 	function break_hive_low()
@@ -4843,8 +4843,8 @@ function _oot_logic()
             ["Haunted Wasteland End"] = function () return has('entrance_overworld_wasteland') end,
         },
         ["locations"] = {            
-            ["SPAWN A"] = function () return setting('entrance', 'child') end,
-            ["SPAWN C"] = function () return setting('entrance', 'child') end,
+            ["SPAWN A"] = function () return setting('entrance', 'adult') and (setting('startingAge', 'child') or time_travel_at_will()) end,
+            ["SPAWN C"] = function () return setting('entrance', 'child') and (setting('startingAge', 'adult') or time_travel_at_will()) end,
         },
         ["age_change"] = false,
     },
@@ -5072,6 +5072,7 @@ function _oot_logic()
             ["Deku Tree"] = function () return (setting('Dungeondekutree', 'open') or (is_child() and setting('Dungeondekutree', 'vanilla')) or event('MIDO_MOVED')) and (is_child() or setting('openDungeonsOot', 'dekuTreeAdult')) and not setting('entrance', 'dungeon_major') end,
         },
         ["locations"] = {
+            ["Near Deku Tree Gossip Stone"] = function () return true end,
             ["Near Deku Tree Gossip Fairy"] = function () return can_play_sun() or can_play_zelda() or can_play_epona() or can_play_time() end,
             ["Near Deku Tree Gossip Big Fairy"] = function () return can_play_storms() end,
             ["Deku Tree Entry"] = function () return (setting('Dungeondekutree', 'open') or (is_child() and setting('Dungeondekutree', 'vanilla')) or event('MIDO_MOVED')) and (is_child() or setting('openDungeonsOot', 'dekuTreeAdult')) end,
@@ -6958,7 +6959,7 @@ function _oot_logic()
             ["Goron City Maze Gossip Fairy"] = function () return (has_explosives_or_hammer() or can_lift_silver() or climb_anywhere() or hookshot_anywhere()) and (can_play_sun() or can_play_zelda() or can_play_epona() or can_play_time()) end,
             ["Goron City Maze Gossip Big Fairy"] = function () return (has_explosives_or_hammer() or can_lift_silver() or climb_anywhere() or hookshot_anywhere()) and can_play_storms() end,
             ["Goron City Silver Boulders"] = function () return can_lift_silver() end,
-            ["Goron City Shortcut Boulders"] = function () return has_explosives_or_hammer() or has_bombflowers end,
+            ["Goron City Shortcut Boulders"] = function () return has_explosives_or_hammer() or has_bombflowers() or has_bow() end,
             ["Goron City Big Pot HP"] = function () return is_child() and has_bombs() and (event('DARUNIA_TORCH') or has_fire()) end,
             ["Goron City Tunic"] = function () return is_adult() and (has_explosives() or can_use_bow() or has_goron_bracelet()) and soul_goron_child() end,
             ["Goron City Bomb Bag"] = function () return is_child() and has_explosives() and soul_goron() end,

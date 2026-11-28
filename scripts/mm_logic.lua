@@ -6643,7 +6643,7 @@ function _mm_logic()
             ["FAIRY"] = function () return true end,
         },
         ["exits"] = {
-            ["Path to Snowhead Back"] = function () return not setting('entrance', 'overworld') end,
+            ["Path to Snowhead Back"] = function () return not setting('entrance', 'unused_on') end,
             ["Snowhead"] = function () return (blizzard_stopped() or (has_iron_boots() and trick('MM_LULLABY_SKIP_IRONS'))) and has_mask_goron() end,
             ["Snowhead Near Fairy Fountain"] = function () return (blizzard_stopped() or (has_iron_boots() and trick('MM_LULLABY_SKIP_IRONS'))) and has_mask_goron() end,
             ["Owl Snowhead"] = function () return true end,
@@ -7677,7 +7677,7 @@ function _mm_logic()
             ["Ikana Graveyard Grass 4"] = function () return true end,
             ["Ikana Graveyard Grass 5"] = function () return true end,
             ["Ikana Graveyard Rock Circle"] = function () return true end,
-            ["Ikana Graveyard Wall Rocks"] = function () return has_explosives end,
+            ["Ikana Graveyard Wall Rocks"] = function () return has_explosives() end,
             ["Ikana Graveyard Grass Pack Grass 1"] = function () return true end,
             ["Ikana Graveyard Grass Pack Grass 2"] = function () return true end,
             ["Ikana Graveyard Grass Pack Grass 3"] = function () return true end,
